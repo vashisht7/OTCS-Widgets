@@ -1,5 +1,4 @@
 # otcssamples Module
-
 This is a CS UI Extension project.
 
 ## Pre-requisites
