@@ -1,0 +1,36 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .cs-perspective-panel .conws-header-toolbar .conws-comment-icon a:focus {
+  outline: 1px dotted #ffffff;
+  outline-offset: -1px;
+}
+
+.conws-comment-icon .cs-text {
+  max-width: 1.2rem;
+  margin-top: 0.5rem;
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+
+.binf-widgets .cs-perspective-panel .conws-header-toolbar .conws-comment-icon .conws-comment-icon *:focus {
+  outline: none;
+}
+
+.binf-widgets .cs-perspective-panel .conws-header-wrapper .conws-header-toolbar .conws-comment-icon .esoc-column-social-comment-wrapper {
+  padding: 0;
+}
+
+.conws-header-toolbar .conws-comment-icon .esoc-socialactions-comment .cs-text {
+  margin-top: 3px;
+  color: #ffffff;
+}
+
+.binf-widgets .cs-perspective-panel .conws-header-toolbar .conws-tabletoolbar .esoc-socialactions-comment .cs-text {
+  display: none;
+}
+
+.binf-widgets .csui-permissions-level.cs-dialog .tile-header {
+  display: block;
+}

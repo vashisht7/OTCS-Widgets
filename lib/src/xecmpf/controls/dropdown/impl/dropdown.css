@@ -1,0 +1,43 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.xecmpf-dropdown.binf-dropdown {
+  cursor: pointer;
+}
+
+.xecmpf-dropdown.binf-dropdown > .binf-dropdown-toggle {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333333;
+  background-color: transparent;
+  font-weight: bold;
+  min-width: 7.5em;
+}
+
+.xecmpf-dropdown.binf-dropdown > .binf-dropdown-toggle:hover,
+.xecmpf-dropdown.binf-dropdown > .binf-dropdown-toggle:focus {
+  text-decoration: none;
+  color: #333333;
+}
+
+.xecmpf-dropdown.binf-dropdown > .binf-dropdown-toggle .icon-expandArrowDown {
+  margin-left: 4px;
+}
+
+.xecmpf-dropdown.binf-dropdown .binf-dropdown-menu {
+  margin: 0;
+  border-radius: 0;
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+  border: none;
+}
+
+.xecmpf-dropdown.binf-dropdown ul {
+  list-style: none;
+}
+
+.xecmpf-dropdown.binf-dropdown .binf-dropdown-menu li a:hover {
+  background-color: #bac9ce;
+}

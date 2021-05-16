@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>ZIP & Download</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../../themes/carbonfiber/theme.css">
+  <style>
+    #content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+  <script src="../../../../lib/require.js"></script>
+  <script src="../../../../config.js" data-csui-path="../../../../"></script>
+</head>
+
+<body class="binf-widgets">
+  <div id="content">
+    <button id="zip-download" class="binf-btn-primary binf-btn-lg" type="button">Zip & Download</button>
+  </div>
+  <script>
+    require.config({
+      deps: ['csui/lib/require.config!csui/csui-extensions.json'],
+      config: {
+        'csui/utils/contexts/factories/connector': {
+          connection: {
+            url: '//server/otcs/cs/api/v1',
+            supportPath: '/support',
+            session: {
+              ticket: 'dummy'
+            }
+          }
+        }
+      }
+    });
+    require(['csui/lib/underscore', 'csui/lib/jquery', 'csui/lib/binf/js/binf', 'csui/lib/backbone', 'csui/lib/marionette',
+      'csui/utils/commands/zipanddownload', 'csui/utils/contexts/page/page.context',
+        'csui/models/nodes', 'csui/utils/contexts/factories/node', './zip.download.mock.js'],
+      function (_, $, binf,Backbone, Marionette, ZipAndDownload,
+        PageContext, NodesCollection, NodeModelFactory, mock) {
+        mock.enable();
+        var pageContext = new PageContext(),
+          node = pageContext.getModel(NodeModelFactory, {
+            attributes: {
+              id: 18330101 // ref murdock NRaskoti
+            }
+          });
+        node.fetch().done(function (response) {
+          $("#zip-download").bind("click", function () {
+            var nodes = new NodesCollection([node]);
+            var status = {
+              context: pageContext,
+              nodes: nodes
+            };
+            var cmd = new ZipAndDownload();
+            cmd.execute(status);
+          });
+        });
+      });
+  </script>
+</body>
+
+</html>
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

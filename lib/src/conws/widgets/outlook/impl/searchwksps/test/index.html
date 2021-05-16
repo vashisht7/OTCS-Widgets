@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <script src="../../../../../../csui/lib/require.js"></script>
+    <script src="../../../../../../csui/config.js" data-csui-path="../../../../../../csui"></script>
+
+    <script>
+        require.config({
+            paths: {
+                conwsoutlook: '../../../../..'
+            },
+            config: {
+                'csui/utils/contexts/factories/connector': {
+                    connection: {
+                        url: 'https://ecmlink18dev.opentext.net/otcs/cs.exe/api',
+                        supportPath: '/support',
+                        session: {
+                            ticket: 'vknqWkEsnpAyPy+kuVX4Vy3vMybS3mgOAyioUmQeye5iFjr5a78fbjcGnTyK4JgEA+oUX4u5IYqfcGNuI2/S6iiVe/TdWX8w'
+                        }
+                    }
+                }
+            }
+        });
+
+        require([
+            'csui/lib/marionette', 'csui/utils/contexts/page/page.context',
+            '../recentwksps.view', './recentwksps.mock.js'
+        ], function(Marionette, PageContext, RecentWkspsView, RecentWkspsMock) {
+            // Wrap the widget placeholder
+            var contentRegion = new Marionette.Region({
+                    el: '#content'
+                }),
+                // Create the data managing context
+                context = new PageContext(),
+                // Create the widget instance
+                recentView = new RecentWkspsView({
+                    context: context
+                });
+
+            // Show the widget on the page
+            contentRegion.show(recentView);
+            // Mock the REST API responses
+            RecentWkspsMock.enable();
+            // Load data from the server
+            context.fetch();
+
+        });
+    </script>
+
+</head>
+<body>
+    <div class="container-fluid">
+        test
+        <div class="row">
+            <div id="content" class="col-sm-5 col-md-4 col-lg-3"></div>
+        </div>
+    </div>
+</body>
+</html>
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

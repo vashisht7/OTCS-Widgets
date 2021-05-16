@@ -1,0 +1,174 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .csui-inlineform-parent {
+  height: 100%;
+  width: 100%;
+}
+
+.binf-widgets .csui-inlineform {
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: 0;
+  margin-left: 0;
+  width: 100%;
+  z-index: 4;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.csui-inlineform > form {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.csui-inlineform .icon {
+  vertical-align: text-bottom;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.binf-widgets form.csui-inlineform-group,
+.binf-widgets .csui-inlineform-group {
+  width: 100%;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  height: 100%;
+  align-items: center;
+}
+
+.csui-inlineform-group > input {
+  outline: 0;
+  border: 1px solid #a7a9ac;
+  border-radius: 5px;
+  box-shadow: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  flex: 1 1 auto;
+  -webkit-flex: 1 1 auto;
+  max-width: 30em;
+}
+
+.csui-inlineform-group > input:focus {
+  border: 2px solid darkgrey;
+  box-shadow: none;
+}
+
+.csui-inlineform-group:first-child {
+  margin-top: 0;
+}
+
+.csui-inlineform-group .csui-btn.binf-btn {
+  padding: 0 0.75rem;
+  height: 1.125rem;
+  min-height: 1.125rem;
+  line-height: 1rem;
+}
+
+.csui-inlineform-group .csui-btn-metadata,
+.csui-inlineform-group .csui-btn-edit-cancel {
+  padding: 0;
+  background-color: transparent;
+  margin-left: 0.5em;
+}
+
+.csui-inlineform-group .csui-btn.binf-btn {
+  margin-left: 1em;
+  pointer-events: auto;
+  flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+  border-radius: 0.625rem;
+  border-color: #0072aa;
+  background-color: white;
+  color: #0072aa;
+  min-width: 3.25rem;
+  font-size: 0.75rem;
+  height: 1.125rem;
+}
+
+.csui-inlineform-group .csui-btn.binf-btn.csui-btn-save {
+  margin-left: 3.25em;
+}
+
+.csui-inlineform-group .csui-btn.binf-btn.csui-btn-cancel {
+  margin-right: 2.25em;
+}
+
+.csui-inlineform-group .csui-btn.binf-btn:hover {
+  color: #004b71;
+  border-color: #004b71;
+}
+
+.csui-inlineform-group .csui-btn.binf-btn:focus {
+  box-shadow: none;
+  outline: 1px dotted #333333;
+  outline-offset: 2px;
+}
+
+
+
+.binf-widgets .csui-inlineform-group-error .binf-text-danger {
+  max-width: 420px;
+  white-space: normal;
+  word-break: break-word;
+  margin-top: 8px;
+  background: #ffffff;
+  color: #DF3324;
+  font-size: 11px;
+  line-height: 12px;
+  border-radius: 2px;
+  border-left: 2px solid #DF3324;
+  padding: 2px 6px;
+  box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.3);
+}
+
+.binf-widgets .csui-inlineform-group-error .binf-text-danger span{
+  margin-right: 0;
+  line-height: 12px;
+}
+
+.csui-btn-save.binf-btn[disabled] {
+  cursor: default;
+  pointer-events: none;
+}
+
+.binf-widgets .csui-inlineform-group .csui-inlineform-input-name.csui-inlineform-error {
+  border: 1px solid #DF3324;
+  border-radius: 3px;
+  padding: 0 8px;
+}
+
+.binf-widgets .csui-form-error {
+  margin-top: 4px;
+}
+
+.binf-widgets .target-browse .csui-form-error {
+  margin-top: 7px;
+  height: 28px;
+}
+
+.binf-widgets .csui-inlineform-group-error {
+  padding-bottom: 4px;
+}
+
+.binf-widgets .target-browse .csui-inlineform-group-error {
+  padding-bottom: 7px;
+}
+
+.binf-widgets .csui-inlineform-group > input {
+  height: 28px;
+  border: 1px solid #757575;
+  border-radius: 3px;
+  padding: 0px 8px;
+}
+
+.binf-widgets .csui-inlineform-group > input:focus {
+  border: 2px solid #757575;
+  outline: none;
+}

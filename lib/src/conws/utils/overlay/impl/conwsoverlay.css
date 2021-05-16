@@ -1,0 +1,36 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+
+.conws-overlay-wrapper
+{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.conws-overlay-panel
+{
+  position: relative;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.conws-overlay-beforeshow .conws-overlay-wrapper,
+.conws-overlay-animating .conws-overlay-wrapper
+{
+  overflow-x: hidden;
+}
+
+.conws-overlay-animating .conws-overlay-wrapper .conws-overlay-panel
+{
+  -webkit-transition: left 0.4s;
+  transition: left 0.4s;
+}
+
+.conws-overlay-beforeshow .conws-overlay-wrapper .conws-overlay-panel
+{
+  left: 100%;
+}

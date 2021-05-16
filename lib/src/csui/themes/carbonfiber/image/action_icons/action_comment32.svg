@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#333333;}
+	.st2{fill:none;stroke:#2E3D98;}
+</style>
+<circle id="state" class="st0" cx="16" cy="16" r="14"/>
+<path id="metaphor" class="st1" d="M19.741,22.295h-3.873l-2.554,2.523c-0.431,0.425-1.074,0.55-1.632,0.317
+	c-0.558-0.233-0.922-0.779-0.922-1.384v-1.672C8.605,21.44,7.019,19.464,7.019,17.1v-2.956c0-2.886,2.364-5.194,5.241-5.194h7.481
+	c2.877,0,5.241,2.308,5.241,5.194V17.1C24.981,19.986,22.617,22.295,19.741,22.295z"/>
+<circle id="focus" class="st2" cx="16" cy="16" r="15.5"/>
+</svg>

@@ -1,0 +1,243 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .csui-pman-panel {
+  position: absolute;
+  top: 56px;
+  left: -300px;
+  width: 256px;
+  background-color: #ffffff;
+  border-radius: 0 3px 3px 0;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.7);
+  transition: all .5s ease;
+  height: calc(100vh - 72px);
+  z-index: 1;
+}
+
+.binf-widgets .csui-pman-panel.csui-pman-drag-start {
+  transform: translateX(-160px);
+}
+
+.binf-widgets .binf-active .csui-pman-panel {
+  left: 0; 
+}
+
+.binf-widgets .csui-pman-panel .csui-tab-pannel {
+  padding: 4px 0;
+  max-height: 100%;
+}
+
+.binf-widgets .csui-pman-panel .csui-layout-tab {
+  width: 100%;
+  height: 36px;
+  padding: 0 16px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 36px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.binf-widgets .csui-pman-panel .csui-AddWidget-tab {
+  width: 100%;
+  height: 32px;
+  padding: 0 16px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 32px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.binf-widgets .csui-pman-panel .csui-layout-tab:hover {
+  background-color: #b2bec5;
+}
+
+.binf-widgets .csui-pman-panel .csui-accordion {
+  width: 100%;
+}
+
+.binf-widgets .csui-pman-panel .csui-accordion-header {
+  width: 100%;
+  padding: 7px 16px;
+  height: 32px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 1px;
+  background-color: #99e3e3;
+}
+
+.binf-widgets .csui-pman-panel .csui-accordion-header .csui-accordion-header-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: calc(100% - 18px);
+  display: inline-block;
+}
+
+.binf-widgets .csui-pman-panel .csui-accordion-header .cs-icon {
+  float: right;
+  margin-left: auto;
+}
+
+.binf-widgets .csui-pman-panel .csui-accordion-header.csui-accordion-expand .icon-expandArrowDown {
+  display: none;
+}
+
+.binf-widgets .csui-pman-panel .csui-accordion-header .icon-expandArrowUp {
+  display: none;
+}
+
+.binf-widgets .csui-pman-panel .csui-accordion-header.csui-accordion-expand .icon-expandArrowUp {
+  display: block;
+}
+
+.binf-widgets .csui-pman-panel .csui-accordion-content .cs-module-list {
+  background: transparent;
+}
+
+.binf-widgets .csui-pman-list .binf-panel-heading {
+  padding: 16px 15px 8px;
+  border: 0 none;
+}
+
+.binf-widgets .csui-pman-panel .csui-list-pannel .csui-pman-list .cs-go-back {
+  display: block;
+  width: 18px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.binf-widgets .csui-pman-panel .csui-list-pannel .csui-pman-list .cs-content {
+  width: 100%;
+}
+
+.binf-widgets .csui-pman-panel .csui-list-pannel .csui-layout-item {
+  margin-bottom: 1px;
+  padding: 8px;
+  height: 150px;
+  cursor: pointer;
+  background-color: #ffffff;
+  position: relative;
+  border-radius: 3px;
+}
+
+.binf-widgets .csui-pman-panel .csui-list-pannel .csui-layout-item .csui-layout-icon {
+  height: 110px;
+  margin-top: 4px;
+  background-repeat: no-repeat;
+}
+
+.binf-widgets .csui-pman-panel .csui-list-pannel .csui-layout-item:hover .csui-layout-icon,
+.binf-widgets .csui-pman-panel .csui-list-pannel .csui-layout-item.binf-active:hover .csui-layout-icon {
+  background-position: 0 -116px;
+}
+
+.binf-widgets .csui-pman-panel .csui-list-pannel .csui-layout-item.binf-active .csui-layout-icon,
+.binf-widgets .csui-pman-panel .csui-list-pannel .csui-layout-item.binf-active:active .csui-layout-icon,
+.binf-widgets .csui-pman-panel .csui-list-pannel .csui-layout-item.binf-active .csui-layout-icon:active,
+.binf-widgets .csui-pman-panel .csui-list-pannel .csui-layout-item:focus .csui-layout-icon,
+.binf-widgets .csui-pman-panel .csui-list-pannel .csui-layout-item:active .csui-layout-icon,
+.binf-widgets .csui-pman-panel .csui-list-pannel .csui-layout-item .csui-layout-icon:active {
+  background-position: 0 -232px;
+}
+
+.binf-widgets .csui-pman-panel .csui-list-pannel .csui-layout-item > span {
+  line-height: 16px;
+  font-size: 11px;
+}
+
+.binf-widgets .csui-pman-panel .csui-list-pannel .cs-list-group {
+  padding: 8px;
+}
+
+.binf-widgets .csui-pman-panel .csui-list-pannel .csui-widget-item {
+  margin-bottom: 2px;
+  padding: 4px 16px;
+  height: 32px;
+  cursor: grab;
+  background-color: #eef2f4;
+  background-position: left;
+  background-size: auto;
+  font-size: 14px;
+  line-height: 24px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.binf-widgets .csui-pman-panel .csui-list-pannel .csui-layout-item.binf-active,
+.binf-widgets .csui-pman-panel .csui-list-pannel .csui-layout-item:hover,
+.binf-widgets .csui-pman-panel .csui-list-pannel .csui-widget-item:hover {
+  background-color: #b2bec5;
+}
+
+.binf-widgets .csui-template-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 220px;
+  z-index: -1;
+  background: #ffffff; 
+}
+.binf-widgets .csui-template-wrapper {
+  cursor: grabbing;
+  position: absolute;
+  top: 0;
+  z-index: -2;
+  background: transparent;
+}
+
+.binf-widgets .csui-template-wrapper:active {
+  cursor: grabbing;
+}
+
+.binf-widgets .csui-template-wrapper .csui-widget-template {
+  border: 3px solid #94bbea;
+  width: 220px;
+  height: 220px;
+}
+
+.binf-widgets .csui-widget-template .csui-template-header {
+  height: 48px;
+  background-color: #ffffff;
+  text-align: left;
+  padding: 12px 16px;
+  font-size: 20px;
+  line-height: 23px;
+  color: #7e929f;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.binf-widgets .csui-widget-template .csui-template-body {
+  height: 166px;
+  background-color: #f9f9f9;
+  color: #3f4950;
+  text-align: center;
+  padding: 32px 40px 94px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.binf-widgets .csui-pman-panel .csui-accordion-header.csui-accordion-expand {
+  background-color: #e7f8f8;
+}
+
+.binf-widgets .cs-module-list .csui-accordion-content {
+  max-height: 0;
+  transition: max-height 0.5s;
+  overflow: hidden;
+}
+
+.binf-widgets .cs-module-list .csui-accordion-visible .csui-accordion-content {
+  max-height: 500px; 
+}

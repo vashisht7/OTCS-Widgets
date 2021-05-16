@@ -1,0 +1,14 @@
+<div class="document-thumbnail-wrapper">
+  <div><a href="#" class="thumbnail_not_loaded thumbnail_empty" title="{{title}}" aria-label="{{document_name}}"></a></div>
+  <button class="wrapper"><img src="" class="img-doc-preview binf-hidden" alt="{{title}}" title="{{title}}" /></button>
+</div>
+{{#if enableCaption}}
+  <div class="document-thumbnail-caption">
+    {{#unless disableIcon}}
+      <span class="csui-type-icon {{icon}}" aria-hidden="true"></span>
+    {{/unless}}
+    <span class="document-name" title="{{name}}">{{name}}</span>
+  </div>
+{{/if}}
+
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

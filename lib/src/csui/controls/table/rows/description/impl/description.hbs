@@ -1,0 +1,28 @@
+{{#if descriptionAvailable}}
+    <div class="csui-description-colunm">
+        {{#if current_description}}
+            <span class="description {{truncate_fade_class}}" title="{{complete_description}}">
+                {{#if search_description}}
+                    {{{current_description}}}
+                {{else}}
+                    {{current_description}}
+                {{/if}}
+            </span>
+        {{/if}}
+    </div>
+{{/if}}
+{{#if summary_description_available}}
+    <div class="csui-summary-colunm">
+        {{#if current_summary}}
+            <span class="summary {{truncate_fade_class}}" title="{{complete_summary}}">
+                {{#if search_summary}}
+                    {{{current_summary}}}
+                {{else}}
+                    {{current_summary}}
+                {{/if}}
+            </span>
+        {{/if}}
+    </div>
+{{/if}}
+
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

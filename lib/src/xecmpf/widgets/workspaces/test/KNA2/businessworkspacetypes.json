@@ -1,0 +1,35 @@
+{
+  "links": {
+    "data": {
+      "self": {
+        "body": "",
+        "content_type": "",
+        "href": "\/api\/v2\/businessworkspacetypes?expand_templates=true&bo_type=KNA1&ext_system_id=D9A",
+        "method": "GET",
+        "name": ""
+      }
+    }
+  },
+  "results": [
+    {
+      "data": {
+        "properties": {
+          "templates": [
+            {
+              "id": 22232,
+              "name": "Customer - Document Template 1",
+              "subtype": 848
+            },
+            {
+              "id": 63157,
+              "name": "Customer - Document Template 2",
+              "subtype": 848
+            }
+          ],
+          "wksp_type_id": 1,
+          "wksp_type_name": "Customer"
+        }
+      }
+    }
+  ]
+}

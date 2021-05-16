@@ -1,0 +1,68 @@
+{{#if isSeparator}}
+{{else}}
+  {{#if hasIcon }}
+    {{#if renderIconAndText}}
+      <a {{#if submenu}}aria-haspopup="true" {{/if}} title="{{title}}" href="#"
+                         class="csui-toolitem {{disabledClass}} csui-toolitem-icon-text"
+                         tabindex="-1" data-cstabindex="-1">
+        {{#if svgId}}
+          <svg class="csui-svg-icon csui-svg-icon-normal" focusable="false">
+            <use xlink:href="{{spritePath}}#{{svgId}}"></use>
+          </svg>
+          <svg class="csui-svg-icon csui-svg-icon-hover" focusable="false">
+            <use xlink:href="{{spritePath}}#{{svgId}}.hover"></use>
+          </svg>
+          <svg class="csui-svg-icon csui-svg-icon-active" focusable="false">
+            <use xlink:href="{{spritePath}}#{{svgId}}.active"></use>
+          </svg>{{name}}
+        {{else}}
+          <span class="{{icon}}"></span>{{name}}
+        {{/if}}
+        {{#if submenu}} <span class="csui-caret"></span> {{/if}}
+      </a>
+    {{else}}
+      {{#if renderTextOnly}}
+        <a {{#if submenu}}aria-haspopup="true" {{/if}} href="#"
+                          class="csui-toolitem {{disabledClass}} csui-toolitem-textonly"
+                          data-cstabindex="-1" title="{{title}}">{{name}}
+          {{#if menuWithMoreOptions}}
+            <span class="csui-button-icon csui-icon-rightArrow icon-expandArrowUp"></span>
+          {{/if}}
+          {{#if submenu}} <span class="csui-caret"></span> {{/if}}
+        </a>
+      {{else}}
+        <a {{#if submenu}}aria-haspopup="true" {{/if}} href="#" title="{{title}}"
+                           class="csui-toolitem {{disabledClass}} csui-toolitem-icononly"
+                           data-cstabindex="-1" {{#if
+            toolItemAria}}aria-label="{{toolItemAria}}" {{else}}
+                           aria-label="{{title}}" {{/if}}
+          {{#if hasToolItemAriaExpand}}aria-expanded="{{toolItemAriaExpand}}" {{/if}}>
+          {{#if svgId}}
+            <svg class="csui-svg-icon csui-svg-icon-normal" focusable="false">
+              <use xlink:href="{{spritePath}}#{{svgId}}"></use>
+            </svg>
+            <svg class="csui-svg-icon csui-svg-icon-hover" focusable="false">
+              <use xlink:href="{{spritePath}}#{{svgId}}.hover"></use>
+            </svg>
+            <svg class="csui-svg-icon csui-svg-icon-active" focusable="false">
+              <use xlink:href="{{spritePath}}#{{svgId}}.active"></use>
+            </svg>
+          {{else}}
+            <span class="{{icon}}"></span>
+          {{/if}}
+        </a>
+      {{/if}}
+    {{/if}}
+  {{else}}
+    <a  {{#if submenu}}aria-haspopup="true" {{/if}} href="#"
+                       class="csui-toolitem {{disabledClass}} csui-toolitem-textonly"
+                       data-cstabindex="-1" title="{{title}}">{{name}}
+      {{#if menuWithMoreOptions}}
+        <span class="csui-button-icon csui-icon-rightArrow icon-expandArrowUp"></span>
+      {{/if}}
+      {{#if submenu}} <span class="csui-caret"></span> {{/if}}
+    </a>
+  {{/if}}
+{{/if}}
+
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

@@ -1,0 +1,29 @@
+<div class="binf-modal-dialog {{binfDialogSizeClassName}}" role="dialog" aria-modal="true" aria-hidden="false">
+  <div class="binf-modal-content">
+    <div class="tile-header binf-modal-header"></div>
+    <div class="binf-modal-body">
+      <div class="csui-preflight-table csui-preflight-table-body">
+        <div>{{itemsExcludedMessage}}</div>
+        <div>{{skippedTypes}}</div>
+      </div>
+    </div>
+    <div class="binf-hidden">
+      <div class="csui-preflight-table csui-preflight-table-header">
+        <div class="csui-preflight-cell csui-type">Type</div>
+        <div class="csui-preflight-cell csui-name">Name</div>
+      </div>
+      <div class="csui-preflight-table csui-preflight-table-body">
+        {{#each skippedTypes}}
+          <div class="csui-preflight-table-row">
+            <div class="csui-preflight-cell csui-type">
+              <span class="{{this.mimeIcon}}"></span>
+            </div>
+            <div class="csui-preflight-cell csui-name">{{this.typeName}}</div>
+          </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+  <div class="binf-modal-footer binf-hidden"></div>
+</div>
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

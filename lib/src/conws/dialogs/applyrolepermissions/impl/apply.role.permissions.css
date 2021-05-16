@@ -1,0 +1,17 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .binf-modal-body .conws-apply-role-permission-content {
+    line-height: 25px;
+    padding: 10px 32px 0 32px;
+    word-wrap: break-word;
+}
+
+.binf-widgets .conws-apply-role-permission-switch {
+    padding: 3px;
+}
+
+.binf-widgets .conws-apply-role-permission-switch .cs-form .alpaca-container-item > .binf-form-group.alpaca-field .alpaca-control-label {
+    width: 34%;
+    font-size: 16px;
+    color: #333333;
+}

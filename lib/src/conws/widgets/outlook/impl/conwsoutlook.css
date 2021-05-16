@@ -1,0 +1,874 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+
+.conwsoutlook-widget {
+    background: none;
+    font-size: 0.875em;
+    height: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+.wkspIcon {
+    height: 16px;
+    width: 16px;
+}
+
+.wkspHelpIcon {
+    height: 22px;
+    position: absolute;
+    right: 16px;
+    width: 22px;
+}
+
+body.conwsoutlook-widget .wkspInput, div.searchWksps-conwsoutlook .wkspInput {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 30px;
+    padding-left: 3px;
+    width: 100%;
+}
+
+body.conwsoutlook-widget .wkspInput:focus {
+    border: 2px solid #e0e0e0;
+    outline: none;
+}
+
+body.conwsoutlook-widget .wkspSearchInput, div.searchWksps-conwsoutlook .wkspSearchInput {
+    font-size: 0.875em;
+    padding-left: 1px;
+}
+
+.wkspItem:hover, .wkspFolderItem:hover {
+    background-color: #bac9ce;
+    cursor: pointer;
+}
+
+.wkspFolder-actionbar-bubble {
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
+.wkspFolder-actionbar > ul.wkspnav {
+    float: left;
+    padding-left: 0.1875em;
+    padding-right: 0.1875em;
+    padding-top: 0;
+    width: 100%;
+}
+
+body.conwsoutlook-widget .wkspFolder-actionbar, div.searchWksps-conwsoutlook .wkspFolder-actionbar {
+    float: right;
+    font-size: 1em;
+    margin-top: 1px;
+    height: 23px;
+    position: absolute;
+    right: 10px;
+    text-overflow: ellipsis;
+    top: -18px;
+    white-space: nowrap;
+}
+
+.wkspFolder-actiondiv {
+    position: absolute;
+    right: 8px;
+    top: 70%;
+}
+
+.wksp-dialog-header {
+    background-color: #ffffff;
+}
+
+
+
+div.wksp-dialog-body {
+    line-height: 130%;
+    margin: 10px 15px 5px 15px;
+}
+
+.errorMessage {
+    color: red;
+    white-space: pre;
+}
+
+.conwsoutlook-widget .wkspItemIcon, span.wkspItemIcon {
+    vertical-align: middle;
+    float:left;
+}
+
+.wkspItemIcon .icon{
+    
+    width: 24px;
+    height: 24px;    
+    float:left;
+    margin-top:4px;
+    margin-right:5px;
+}
+
+.conwsoutlook-widget .wkspFolderIcon, div.searchWksps-conwsoutlook .wkspFolderIcon {
+    width: 16px;
+    height:16px;
+    background-image: url('images/mime_folder.svg');
+    background-repeat: no-repeat;
+    margin-top:3px;
+    margin-right:5px;
+}
+
+.conwsoutlook-widget .wkspEmailFolderIcon, div.searchWksps-conwsoutlook .wkspEmailFolderIcon {
+    width: 16px;
+    height:16px;
+    background-image: url('images/email_folder.svg');
+    background-repeat: no-repeat;
+    margin-top:3px;
+    margin-right:5px;
+}
+
+.conwsoutlook-widget .listItemIcon{
+    width: 16px;
+    height: 16px;
+    margin-top: 3px;
+    margin-right: 5px;
+}
+
+.wkspnav > li > a {
+    color: #333333;
+    height: 26px;
+}
+
+.wkspnav > li > div {
+    padding: 3px 18px 0 18px;
+}
+
+.wksptile-nav ul li {
+    display: inline;
+}
+
+    .wksptile-nav ul li a {
+        color: #333333;
+    }
+
+.wksptile-nav .wkspnav-pills > li > a {
+    padding-top: 0;
+}
+
+a:hover {
+    color: #399;
+    text-decoration: none;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+.wkspInputWithClear {
+    position: relative;
+}
+
+.searchClear {
+    background: url('images/dismiss.svg') center no-repeat;
+    cursor: pointer;
+    display: none;
+    float: right;
+    height: 12px;
+    pointer-events: auto;
+    position: absolute;
+    right: 10px;
+    top: 9px;
+    vertical-align: middle;
+    width: 12px;
+    z-index: 10;
+}
+
+body.conwsoutlook-widget ::-webkit-input-placeholder {
+    color: #b7b7b7;
+}
+
+body.conwsoutlook-widget :-moz-placeholder {
+    color: #b7b7b7;
+    opacity: 1;
+}
+
+body.conwsoutlook-widget ::-moz-placeholder {
+    color: #b7b7b7;
+    opacity: 1;
+}
+
+body.conwsoutlook-widget .wkspInput:-ms-input-placeholder {
+    color: #b7b7b7;
+}
+
+div.wkspItem {
+    position: relative;
+    vertical-align: middle;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+div.listItemFolder {
+    line-height: 26px;
+}
+
+div.listItemWksp {
+    line-height: 32px;
+}
+
+div.wkspFolder-actiondiv {
+    text-indent: 0;
+}
+
+ul.wksptile-nav {
+    list-style: none;
+    margin: 0;
+}
+
+.conwsoutlook-widget .moreLink {
+    display: none;
+    font-size: 0.75em;
+    padding-left: 36px;
+}
+
+.conwsoutlook-widget .moreLinkWksp {
+    display: none;
+    font-size: 0.75em;
+    padding-left: 14px;
+}
+
+body.conwsoutlook-widget {
+    background: none;
+    min-width: 100px;
+}
+
+body.conwsoutlook-widget .binf-widgets {
+    min-width: 100px;
+}
+
+body.conwsoutlook-widget .binf-col-sm-4 {
+    padding-left: 0;
+}
+
+body.conwsoutlook-widget .binf-widgets .binf-modal  {
+    min-width: 100px;
+    position: fixed;
+}
+
+body.conwsoutlook-widget .load-container {
+    z-index: 1500;
+}
+
+body.conwsoutlook-widget .binf-modal-footer {
+    margin-bottom: 0;
+}
+
+body.conwsoutlook-widget .binf-panel-heading, div.searchWksps-conwsoutlook .binf-panel-heading {
+    background-color: #e2e2e2;
+}
+
+body.conwsoutlook-widget .wkspMessageArea, div.wksp-srch-results .wkspMessageArea {
+    display: none;
+    font-size: 0.875em;
+    padding: 10px;
+}
+
+.wkspSearch {
+    background-color: #f7f7f7;
+}
+
+body.conwsoutlook-widget .wkspSearchForm {
+    padding: 4px 20px 0 16px;
+}
+
+body.conwsoutlook-widget .wkspSearchInputType {
+    padding: 12px 20px 10px 16px;
+}
+
+body.conwsoutlook-widget .wkspSearchInputName {
+    padding: 2px 20px 4px 16px;
+}
+
+body.conwsoutlook-widget .wkspNameBox {
+    line-height: 0;
+    width: 100%;
+}
+
+body.conwsoutlook-widget .outlook-col {
+    min-width: 100px;
+    padding: 0;
+}
+
+body.conwsoutlook-widget .ListItem, div.wksp-srch-results .ListItem {
+    border-color: #dcdcdc;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+}
+
+body.conwsoutlook-widget .wkspSearchButton, div.searchWksps-conwsoutlook .wkspSearchButton {
+    padding-left: 8px;
+    outline: none;
+    vertical-align: middle;
+    width: 28px;
+}
+
+body.conwsoutlook-widget .rightFloatButton {
+    float: right;
+    padding-right: 30px;
+}
+
+body.conwsoutlook-widget .outlook-container {
+    padding: 0;
+}
+
+body.conwsoutlook-widget .outlook-heading {
+    border-bottom: white solid 1px;
+    font-size: 0.875em;
+    font-weight: bold;
+    line-height: 36px;
+    overflow: hidden;
+    padding: 0 0 0 10px;
+    position: relative;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+body.conwsoutlook-widget .searchIcon, div.searchWksps-conwsoutlook .searchIcon {
+    background:url('images/search.svg') center no-repeat;
+    cursor: pointer;
+    display: block;
+}
+
+span.wksp-expand-icon{
+    float:left;
+    padding-right:5px;
+}
+
+body.conwsoutlook-widget .toggleIcon, .wksp-srch-results .toggleIcon {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+}
+
+body.conwsoutlook-widget .toggleExpand, .wksp-srch-results .toggleExpand {
+    background:url('images/tree_expand.svg') center no-repeat;
+}
+
+body.conwsoutlook-widget .toggleExpand:hover {
+    background:url('images/tree_expand_mo.svg') center no-repeat;
+}
+
+body.conwsoutlook-widget .toggleExpand:active {
+    background:url('images/tree_expand_md.svg') center no-repeat;
+}
+
+body.conwsoutlook-widget .toggleCollapse {
+    background:url('images/tree_collapse.svg') center no-repeat;
+}
+
+body.conwsoutlook-widget .toggleCollapse:hover {
+    background:url('images/tree_collapse_mo.svg') center no-repeat;
+}
+
+body.conwsoutlook-widget .toggleCollapse:active {
+    background:url('images/tree_collapse_md.svg') center no-repeat;
+}
+
+body.conwsoutlook-widget .toggleEmpty {
+    background:url('images/tree_blank.svg') center no-repeat;
+}
+
+body.conwsoutlook-widget .wkspOpenIcon, div.searchWksps-conwsoutlook .wkspOpenIcon {
+    background:url('images/launch_in.svg') center no-repeat;
+}
+
+body.conwsoutlook-widget .wkspOpenIcon:hover, div.searchWksps-conwsoutlook .wkspOpenIcon:hover {
+    background:url('images/launch_in_mo.svg') center no-repeat;
+}
+
+body.conwsoutlook-widget .wkspOpenIcon:active, div.searchWksps-conwsoutlook .wkspOpenIcon:active {
+    background:url('images/launch_in_md.svg') center no-repeat;
+}
+
+
+body.conwsoutlook-widget .emailSaveIcon {
+    background:url('images/save.svg') center no-repeat;
+}
+
+body.conwsoutlook-widget .emailSaveIcon:hover {
+    background:url('images/save_mo.svg') center no-repeat;
+}
+
+body.conwsoutlook-widget .emailSaveIcon:hover {
+    background:url('images/save_md.svg') center no-repeat;
+}
+
+body.conwsoutlook-widget .wkspItemName, div.searchWksps-conwsoutlook .wkspItemName {
+    font-size: 0.875em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+}
+
+body.conwsoutlook-widget .wkspItemName:focus {
+    border: 1px dotted grey;
+}
+
+body.conwsoutlook-widget .wkspTypeSelect {
+    appearance: none;
+    background: #ffffff url('images/caret_down.svg') no-repeat 96% center;
+    background-size: 18px 18px;
+    color: #b7b7b7;
+    line-height: 1.75em;
+    padding-left: 5px;
+    
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+body.conwsoutlook-widget .wkspSearchSelect {
+    appearance: none;
+    background: #ffffff url('images/caret_down.svg') no-repeat 96% center;
+    background-size: 18px 18px;
+    line-height: 1.75em;
+    padding-left: 5px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+body.conwsoutlook-widget .wkspSearchName {
+    line-height: normal;
+    padding-left: 2px;
+}
+
+body.conwsoutlook-widget .wkspTypeSelect::-ms-expand, .wkspSearchSelect::-ms-expand {
+    display: none;
+}
+
+body.conwsoutlook-widget .wkspTypeSelect option, div.searchWksps-conwsoutlook .wkspTypeSelect option {
+    font-size: 0.875em;
+}
+
+body.conwsoutlook-widget .wkspTypeSelect option:first-child, div.searchWksps-conwsoutlook .wkspTypeSelect option:first-child {
+    color: #b7b7b7;
+}
+
+body.conwsoutlook-widget .wkspTypeSelect option:not(:first-child), div.searchWksps-conwsoutlook .wkspTypeSelect option:not(:first-child) {
+    color: #333333;
+    font-style: normal;
+}
+
+body.conwsoutlook-widget .wkspActionButton, div.searchWksps-conwsoutlook .wkspActionButton {
+    display: inline-block;
+    height: 20px;
+}
+
+body.conwsoutlook-widget .wkspActionSaveButton {
+    width: 30px;
+}
+
+body.conwsoutlook-widget .wksp-outer-border {
+    border-width: 6px;
+    height: 30px;
+    left: auto;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 30px;
+    top: 3px;
+    width: 30px;
+}
+
+body.conwsoutlook-widget .wksp-loader {
+    border-width: 6px;
+    bottom: 2px;
+    height: 22px;
+    right: 2px;
+    width: 22px;
+}
+
+
+body.conwsoutlook-widget .tile-header {
+    display: none;
+}
+
+body.conwsoutlook-widget .csui-saved-search-submit-container {
+    position: relative;
+}
+
+body.conwsoutlook-widget .tile {
+    box-shadow: 0 0 0 0;
+    -webkit-box-shadow: 0 0 0 0;
+}
+
+body.conwsoutlook-widget .tile:hover {
+    box-shadow: 0 0 0 0;
+    outline: none;
+    -webkit-box-shadow: 0 0 0 0;
+}
+
+body.conwsoutlook-widget .csui-saved-search-submit-container {
+    height: 32px;
+}
+
+body.conwsoutlook-widget .csui-custom-search-form-submit {
+    height: 1.5rem;
+}
+
+body.conwsoutlook-widget .binf-form-group {
+    font-size: 12px;
+    margin-top: 0;
+}
+
+body.conwsoutlook-widget .cs-field-write-inner  {
+    font-size: 12px;
+}
+
+body.conwsoutlook-widget .searchFormLabel {
+    color: #757575;
+    font-size: 12px;
+    margin: 2px 0 4px 0;
+}
+
+body.conwsoutlook-widget .customSearchButton{
+    bottom: 0;
+    cursor: pointer;
+    height:32px;   
+    position: fixed;
+    top: calc(100vh - 32px);
+    width:100%;
+}
+
+body.conwsoutlook-widget .mainPageContent {
+    min-height:100%; 
+    position:relative; 
+    padding-bottom:40px;
+
+}
+
+body.conwsoutlook-widget .wkspTypeDropdown{
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    font-size: 0.85em;
+    margin: 10px 0 0 20px;
+    max-height: 75vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    z-index: 1;
+}
+
+body.conwsoutlook-widget .wkspTypeDropdownTable{
+    margin-left: calc(-80vw);
+}
+
+.wkspTypeDropdown a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.wkspTypeDropdown a:hover {
+    background-color: #ddd;
+}
+
+body.conwsoutlook-widget .wkspTypeMsg{
+    font-size: 0.875em;
+    height: 14px;
+    width:90vw; 
+}
+
+body.conwsoutlook-widget .wkspTypeMsgDisplay{
+    display: flow-root list-item;
+    margin-top: 9px;
+    overflow-x: hidden;
+    padding-top: 4px;
+    text-overflow: ellipsis; 
+    white-space:nowrap; 
+}
+
+body.conwsoutlook-widget .headerIcon{
+    float:left;
+    height: 12px;
+    margin: 12px 8px 0 0;
+    width: 12px;
+}
+
+.forwardIcon{
+    background: url('images/forward.svg') no-repeat 96% center;
+}
+
+.backwardIcon{
+    background: url('images/backward.svg') no-repeat 96% center;
+    cursor: pointer;
+}
+
+.sectionToggleIcon{
+    background: url('images/caret_section_up.svg') no-repeat 96% center;
+    cursor: pointer;
+}
+
+.sectionExpended{
+    background: url('images/caret_section_down.svg') no-repeat 96% center;
+}
+
+.searchTypeIcon{
+    background: url('images/caret_down.svg') no-repeat 96% center;
+    cursor: pointer;
+    display: block;
+}
+
+.hiddenArea{
+    display: none;
+}
+
+.saveSectionButton{
+    cursor: pointer;
+    height:32px;   
+    text-align: center;
+    vertical-align: middle;
+}
+
+.saveDisplayArea{
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+
+.saveDisplayArea::-webkit-scrollbar {
+    background-color: #f5f5f5;
+    width: 11px;
+}
+
+.saveDisplayArea::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    border: solid 2px #f5f5f5;
+    background-color: #b9b9b9;
+}
+
+.saveDisplayArea::-webkit-scrollbar-thumb:hover {
+    background-color: #999999;
+}
+
+body.conwsoutlook-widget .nameEdit{
+    background:url('images/edit.svg') center no-repeat;
+    cursor: pointer;
+    float: right;
+    height: 30px;
+    margin: 4px 4px 0 0;
+    width: 30px;
+}
+
+body.conwsoutlook-widget .editCancelIcon {
+    background:url('images/edit_cancel.svg') center no-repeat;
+    height: 24px;
+    margin: 8px 5px 2px 0;
+    width: 24px;
+}
+
+body.conwsoutlook-widget .nameEdit[disabled]{
+    cursor: none;
+    background:url('images/tree_blank.svg') center no-repeat;
+    height: 18px;
+    margin: 9px 9px 2px 0;
+    pointer-events: none;
+    width: 18px;
+}
+
+body.conwsoutlook-widget .nameBox {
+    line-height: 150%;
+    overflow: hidden;
+    overflow-wrap: break-word;
+    resize: none;
+    white-space: normal;
+    width: 97%;
+    word-wrap: break-word;
+}
+
+body.conwsoutlook-widget .textReadonly{
+    border: none;
+}
+
+body.conwsoutlook-widget .textNoWrap{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.nameCheckbox {
+    display: flex;
+    height: 100%;
+    flex-grow: 1;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    border-color: inherit;
+    border-radius: 0;
+    border-style: none;
+    border-width: 0;
+    border-image: none;
+    background-color: transparent;
+    text-indent: inherit;
+    text-shadow: inherit;    
+}
+
+body.conwsoutlook-widget .emailSaveTable{
+    table-layout: fixed;
+    width: 100%;
+}
+
+body.conwsoutlook-widget .emailSaveIconTd{
+    vertical-align: top;
+    width: 24px;
+}
+
+body.conwsoutlook-widget .emailSaveNameTd{
+    padding: 5px 3px 0 5px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.emailSaveIcon:focus{
+    outline: 1px dotted grey;
+    outline-offset: 1px;
+}
+
+body.conwsoutlook-widget .checkbox{
+    display: flex;
+    border-width: 0;
+    background-color: transparent;
+    margin: 6px 0 0 0;
+    padding: 0;
+}
+
+body.conwsoutlook-widget .checkboxIcon {
+    background:url('images/checkbox.svg') center no-repeat;
+    height: 18px;
+    width: 18px;
+}
+
+body.conwsoutlook-widget .checkboxSelected {
+    background:url('images/checkbox_selected.svg') center no-repeat;
+}
+
+body.conwsoutlook-widget .checkboxMixed {
+    background:url('images/checkbox_mixed.svg') center no-repeat;
+}
+
+body.conwsoutlook-widget .checkboxDisabled {
+    background:url('images/checkbox_selected_dis.svg') center no-repeat;
+    cursor: default;
+}
+
+body.conwsoutlook-widget .warningIcon {
+    background:url('images/warning.svg') center no-repeat;
+    height: 20px;
+    margin: 0 5px 0 0;
+    width: 20px;
+}
+
+body.conwsoutlook-widget .buttonDisabled {
+    color: grey;
+    cursor: default;
+}
+
+body.conwsoutlook-widget .header-right{
+    position: relative;
+    width: 290px;
+    height: 32px;
+}
+
+body.conwsoutlook-widget .required-field-switch{
+    position: absolute;
+    right: 1px;
+}
+
+body.conwsoutlook-widget .cs-booleanfield{
+    display: inline;
+}
+
+body.conwsoutlook-widget .required-fields-switch{
+    display: inline-block;
+    padding: 0 3px 0 3px;
+    vertical-align: middle;
+}
+
+body.conwsoutlook-widget .only-required-fields-label{
+    float: left;
+    font-size: 14px;
+    line-height: 24px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+body.conwsoutlook-widget .metadataForm .customsearch-attr-container .cs-form .alpaca-container-item .alpaca-field.alpaca-field-object > label.alpaca-container-label{
+    display: block;
+    font-size: 16px;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+body.conwsoutlook-widget .metadataForm .customsearch-attr-container .cs-form .alpaca-container-item > .alpaca-field.alpaca-field-object{
+    margin-top: 0.5em;
+    padding-left: 10px;
+}
+
+body.conwsoutlook-widget .metadataForm .customsearch-attr-container{
+    position: inherit;
+}
+
+body.conwsoutlook-widget .cs-form .cs-form-doublecolumn .alpaca-field.alpaca-field-array .cs-form-set-container-supplemental_markings{
+    width: 100%;
+}
+
+body.conwsoutlook-widget .cs-form .cs-form-doublecolumn .alpaca-field.alpaca-field-array .alpaca-container-label{
+    font-size: 12px;
+    padding-left: 0;
+    text-align: left;
+    width: 100%;
+}
+
+body.conwsoutlook-widget .cs-form .cs-form-doublecolumn .alpaca-field.alpaca-field-array .cs-pull-left{
+    max-width: 100%;
+}
+
+body.conwsoutlook-widget .cs-form .cs-form-doublecolumn .alpaca-field.alpaca-field-array .alpaca-container{
+    width: 100%;
+}
+
+body.conwsoutlook-widget .metadataForm .csui-custom-view-search .cs-form .binf-help-block.alpaca-message{
+    text-align: left;
+}
+
+body::-webkit-scrollbar {
+    background-color: #f5f5f5;
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    border: solid 2px #f5f5f5;
+    background-color: #b9b9b9;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #999999;
+}
+
+body.conwsoutlook-widget .warningMessage{
+    padding: 10px 25px 10px 25px;
+    line-height: 120%;
+    background: cornsilk;
+    border-bottom: orange solid 1px;
+    margin: 0 3px 8px 3px;
+}
+
+body.conwsoutlook-widget .infoMessage{
+    padding: 15px 25px 8px 25px; 
+    line-height: 130%
+}
+
+body.conwsoutlook-widget .metadata-formitems{
+    padding: 0 10px 0 20px;
+}

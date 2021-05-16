@@ -1,0 +1,12 @@
+<div>
+  <div class="conws-role-details-avatar"></div>
+  <div class="member-details">
+    {{#if isUser}}
+      <span class="member-name" title="{{displayName}}"></span>
+    {{else}}
+      <span class="member-name" title="{{displayName}}">{{displayName}}</span>
+      <a class="member-email" href="mailto:{{email}}">{{email}}</a>
+    {{/if}}
+  </div>
+</div>
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

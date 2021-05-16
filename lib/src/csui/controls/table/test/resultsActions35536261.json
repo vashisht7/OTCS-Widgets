@@ -1,0 +1,210 @@
+{
+  "links": {
+    "data": {
+      "self": {
+        "body": "",
+        "content_type": "",
+        "href": "\/api\/v2\/nodes\/actions",
+        "method": "POST",
+        "name": ""
+      }
+    }
+  },
+  "results": {
+    "35536261": {
+      "data": {
+        "addcategory": {
+          "body": "",
+          "content_type": "",
+          "form_href": "",
+          "href": "\/api\/v2\/nodes\/35536261\/categories",
+          "method": "POST",
+          "name": "Add Category"
+        },
+        "AddClassifications": {
+          "body": "",
+          "content_type": "application\/x-www-form-urlencoded",
+          "form_href": "",
+          "href": "\/api\/v2\/nodes\/35536261\/classifications",
+          "method": "POST",
+          "name": "Add Classification"
+        },
+        "AddReminder": {
+          "body": "",
+          "content_type": "",
+          "form_href": "",
+          "href": "",
+          "method": "GET",
+          "name": "Reminder"
+        },
+        "AddRMClassifications": {
+          "body": "{\u0022displayPrompt\u0022:true,\u0022enabled\u0022:true,\u0022inheritfrom\u0022:true,\u0022managed\u0022:true}",
+          "content_type": "application\/x-www-form-urlencoded",
+          "form_href": "",
+          "href": "\/api\/v2\/nodes\/35536261\/rmclassifications",
+          "method": "POST",
+          "name": "Add RM Classification"
+        },
+        "ApplyHold": {
+          "body": "",
+          "content_type": "application\/x-www-form-urlencoded",
+          "form_href": "",
+          "href": "",
+          "method": "",
+          "name": "Apply Hold"
+        },
+        "AssignXRef": {
+          "body": "",
+          "content_type": "application\/x-www-form-urlencoded",
+          "form_href": "",
+          "href": "",
+          "method": "",
+          "name": "Assign Cross-Reference"
+        },
+        "Classify": {
+          "body": "{\u0022displayPrompt\u0022:false,\u0022enabled\u0022:false,\u0022inheritfrom\u0022:false,\u0022managed\u0022:false}",
+          "content_type": "application\/x-www-form-urlencoded",
+          "form_href": "",
+          "href": "\/api\/v2\/nodes\/35536261\/rmclassifications",
+          "method": "POST",
+          "name": "Add RM Classification"
+        },
+        "comment": {
+          "body": "",
+          "content_type": "",
+          "form_href": "",
+          "href": "",
+          "method": "POST",
+          "name": "Comments"
+        },
+        "copy": {
+          "body": "",
+          "content_type": "",
+          "form_href": "\/api\/v2\/forms\/nodes\/copy?id=35536261",
+          "href": "\/api\/v2\/nodes",
+          "method": "POST",
+          "name": "Copy"
+        },
+        "delete": {
+          "body": "",
+          "content_type": "",
+          "form_href": "",
+          "href": "\/api\/v2\/nodes\/35536261",
+          "method": "DELETE",
+          "name": "Delete"
+        },
+        "DispositionMove": {
+          "body": "",
+          "content_type": "application\/x-www-form-urlencoded",
+          "form_href": "",
+          "href": "",
+          "method": "",
+          "name": "Move"
+        },
+        "editpermissions": {
+          "body": "",
+          "content_type": "",
+          "form_href": "",
+          "href": "",
+          "method": "",
+          "name": "Edit Permissions"
+        },
+        "initiatedocumentworkflow": {
+          "body": "initiate_in_smartview",
+          "content_type": "",
+          "form_href": "",
+          "href": "",
+          "method": "",
+          "name": "",
+          "wfList": [
+            32514154,
+            11800382
+          ]
+        },
+        "move": {
+          "body": "",
+          "content_type": "",
+          "form_href": "\/api\/v2\/forms\/nodes\/move?id=35536261",
+          "href": "\/api\/v2\/nodes\/35536261",
+          "method": "PUT",
+          "name": "Move"
+        },
+        "open": {
+          "body": "",
+          "content_type": "",
+          "form_href": "",
+          "href": "\/api\/v2\/nodes\/35536261\/nodes",
+          "method": "GET",
+          "name": "Open"
+        },
+        "permissions": {
+          "body": "",
+          "content_type": "",
+          "form_href": "",
+          "href": "",
+          "method": "",
+          "name": "Permissions"
+        },
+        "properties": {
+          "body": "",
+          "content_type": "",
+          "form_href": "",
+          "href": "\/api\/v2\/nodes\/35536261",
+          "method": "GET",
+          "name": "Properties"
+        },
+        "RemoveClassification": {
+          "body": "",
+          "content_type": "application\/x-www-form-urlencoded",
+          "form_href": "",
+          "href": "\/api\/v2\/nodes\/35536261\/rmclassifications",
+          "method": "POST",
+          "name": "Remove Classificfation"
+        },
+        "rename": {
+          "body": "",
+          "content_type": "",
+          "form_href": "\/api\/v2\/forms\/nodes\/rename?id=35536261",
+          "href": "\/api\/v2\/nodes\/35536261",
+          "method": "PUT",
+          "name": "Rename"
+        },
+        "zipanddownload": {
+          "body": "",
+          "content_type": "",
+          "form_href": "",
+          "href": "\/api\/v2\/zipanddownload",
+          "method": "POST",
+          "name": "Zip and Download"
+        }
+      },
+      "map": {
+        "default_action": "open",
+        "more": [
+          "properties"
+        ]
+      },
+      "order": [
+        "initiatedocumentworkflow",
+        "open",
+        "addcategory",
+        "rename",
+        "copy",
+        "move",
+        "AddReminder",
+        "editpermissions",
+        "permissions",
+        "AddClassifications",
+        "AddRMClassifications",
+        "ApplyHold",
+        "AssignXRef",
+        "Classify",
+        "delete",
+        "DispositionMove",
+        "RemoveClassification",
+        "zipanddownload",
+        "comment"
+      ]
+    }
+  }
+}

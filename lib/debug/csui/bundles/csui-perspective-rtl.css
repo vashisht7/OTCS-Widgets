@@ -1,0 +1,852 @@
+.csui-pman-widget-callout-form .cs-form {
+  display: inline-block;
+}
+
+.perspective-editing .csui-pman-form-wrapper {
+  max-height: 50vh;
+}
+
+.perspective-editing .cs-form.perspective-widget-form {
+  background-color: inherit;
+}
+
+.perspective-editing .perspective-widget-form .cs-form-doublecolumn {
+  padding: 0px;
+}
+
+.perspective-editing .perspective-widget-form .binf-row.alpaca-field {
+  margin-bottom: 0.5em;
+  padding: 0px 16px;
+}
+
+.perspective-editing .perspective-widget-form .alpaca-container-item > .binf-form-group.alpaca-field .alpaca-control-label,
+.perspective-editing .perspective-widget-form .cs-form-doublecolumn .alpaca-field.alpaca-field-array .alpaca-container-label {
+  width: 100%;
+  text-align: right;
+  font-size: 12px;
+}
+
+.perspective-editing .perspective-widget-form .alpaca-container-item > .binf-form-group.alpaca-field > .binf-col-sm-9 {
+  width: 100%;
+}
+
+.perspective-editing .perspective-widget-form .cs-form-doublecolumn .alpaca-field.alpaca-field-array .alpaca-container {
+  width: 100%;
+}
+
+.perspective-widget-form .cs-form-doublecolumn .alpaca-field.alpaca-field-array .cs-array-item-field-wrapper {
+  max-width: inherit;
+}
+
+.perspective-editing .perspective-widget-form .binf-help-block.alpaca-message {
+  margin-right: 0px;
+}
+
+.binf-widgets .csui-pman-form-wrapper .csui-pman-form-header {
+  padding: 0px 16px;
+  padding-top: 14px;
+}
+
+.binf-widgets .csui-pman-form-wrapper .csui-pman-form-content {
+  padding-bottom: 14px;
+}
+
+.binf-widgets .csui-pman-form-header .csui-pman-form-title {
+  padding-bottom: 6px;
+  line-height: 24px;
+  font-size: 18px;
+  color: #333333; /* Darkest Grey */
+}
+
+.binf-widgets .csui-pman-form-header .csui-pman-form-description {
+  font-weight: bolder;
+  line-height: 14px;
+  font-size: 11px;
+  color: #333333; /* Darkest Grey */
+}
+
+.binf-widgets .csui-pman-form-header .csui-pman-config-unsupported .csui-state{
+  float: right;
+  padding-top: 6px;
+  padding-left: 8px;
+}
+
+.binf-widgets .csui-pman-form-header .csui-pman-config-unsupported .csui-state .csui-icon.csui-icon-notification-error-white {
+  width: 20px;
+  height: 20px;
+}
+
+.binf-widgets .csui-pman-form-header .csui-pman-config-unsupported .csui-error-message{
+  padding-top: 6px;
+  padding-left: 6px;
+  line-height: 16px;
+  font-size: 11px;
+  color: #DF3324;
+}
+
+.binf-widgets .csui-pman-form-header .csui-pman-config-unsupported .csui-error-message .csui-error-message-format{
+  font-weight: bold;
+}
+
+.perspective-editing .binf-popover.binf-right  .binf-popover-content.invalid-options {
+  border-color: #DF3324;
+}
+
+.perspective-editing .binf-popover.binf-left .binf-popover-content.invalid-options {
+  border-color: #DF3324;
+}
+
+.perspective-editing .binf-popover.binf-right > .binf-arrow.invalid-options:after {
+  border-left-color:#DF3324;
+}
+
+.perspective-editing .binf-popover.binf-left > .binf-arrow.invalid-options:after {
+  border-right-color:#DF3324;
+}
+
+.binf-widgets .csui-pman-form-wrapper .csui-pman-form-content .cs-textfield input {
+  width: auto;
+}
+
+.binf-widgets .csui-pman-form-wrapper .cs-field-write-inner input {
+  max-width: 100%;
+}
+.binf-widgets .csui-pman-panel {
+  position: absolute;
+  top: 56px;
+  right: -300px;
+  width: 256px;
+  background-color: #ffffff;
+  border-radius: 3px 0 0 3px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.7);
+  transition: all .5s ease;
+  height: calc(100vh - 72px);
+  z-index: 1;
+}
+
+.binf-widgets .csui-pman-panel.csui-pman-drag-start {
+  transform: translateX(160px);
+}
+
+.binf-widgets .binf-active .csui-pman-panel {
+  right: 0; /* Pull from left transition */
+}
+
+.binf-widgets .csui-pman-panel .csui-tab-pannel {
+  padding: 4px 0;
+  max-height: 100%;
+}
+
+.binf-widgets .csui-pman-panel .csui-layout-tab {
+  width: 100%;
+  height: 36px;
+  padding: 0 16px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 36px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.binf-widgets .csui-pman-panel .csui-AddWidget-tab {
+  width: 100%;
+  height: 32px;
+  padding: 0 16px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 32px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.binf-widgets .csui-pman-panel .csui-layout-tab:hover {
+  background-color: #b2bec5;
+}
+
+.binf-widgets .csui-pman-panel .csui-accordion {
+  width: 100%;
+}
+
+.binf-widgets .csui-pman-panel .csui-accordion-header {
+  width: 100%;
+  padding: 7px 16px;
+  height: 32px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 1px;
+  background-color: #99e3e3;
+}
+
+.binf-widgets .csui-pman-panel .csui-accordion-header .csui-accordion-header-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: calc(100% - 18px);
+  display: inline-block;
+}
+
+.binf-widgets .csui-pman-panel .csui-accordion-header .cs-icon {
+  float: left;
+  margin-right: auto;
+}
+
+.binf-widgets .csui-pman-panel .csui-accordion-header.csui-accordion-expand .icon-expandArrowDown {
+  display: none;
+}
+
+.binf-widgets .csui-pman-panel .csui-accordion-header .icon-expandArrowUp {
+  display: none;
+}
+
+.binf-widgets .csui-pman-panel .csui-accordion-header.csui-accordion-expand .icon-expandArrowUp {
+  display: block;
+}
+
+.binf-widgets .csui-pman-panel .csui-accordion-content .cs-module-list {
+  background: transparent;
+}
+
+.binf-widgets .csui-pman-list .binf-panel-heading {
+  padding: 16px 15px 8px;
+  border: 0 none;
+}
+
+.binf-widgets .csui-pman-panel .csui-list-pannel .csui-pman-list .cs-go-back {
+  display: block;
+  width: 18px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.binf-widgets .csui-pman-panel .csui-list-pannel .csui-pman-list .cs-content {
+  width: 100%;
+}
+
+.binf-widgets .csui-pman-panel .csui-list-pannel .csui-layout-item {
+  margin-bottom: 1px;
+  padding: 8px;
+  height: 150px;
+  cursor: pointer;
+  background-color: #ffffff;
+  position: relative;
+  border-radius: 3px;
+}
+
+.binf-widgets .csui-pman-panel .csui-list-pannel .csui-layout-item .csui-layout-icon {
+  height: 110px;
+  margin-top: 4px;
+  background-repeat: no-repeat;
+}
+
+.binf-widgets .csui-pman-panel .csui-list-pannel .csui-layout-item:hover .csui-layout-icon,
+.binf-widgets .csui-pman-panel .csui-list-pannel .csui-layout-item.binf-active:hover .csui-layout-icon {
+  background-position: 100% -116px;
+}
+
+.binf-widgets .csui-pman-panel .csui-list-pannel .csui-layout-item.binf-active .csui-layout-icon,
+.binf-widgets .csui-pman-panel .csui-list-pannel .csui-layout-item.binf-active:active .csui-layout-icon,
+.binf-widgets .csui-pman-panel .csui-list-pannel .csui-layout-item.binf-active .csui-layout-icon:active,
+.binf-widgets .csui-pman-panel .csui-list-pannel .csui-layout-item:focus .csui-layout-icon,
+.binf-widgets .csui-pman-panel .csui-list-pannel .csui-layout-item:active .csui-layout-icon,
+.binf-widgets .csui-pman-panel .csui-list-pannel .csui-layout-item .csui-layout-icon:active {
+  background-position: 100% -232px;
+}
+
+.binf-widgets .csui-pman-panel .csui-list-pannel .csui-layout-item > span {
+  line-height: 16px;
+  font-size: 11px;
+}
+
+.binf-widgets .csui-pman-panel .csui-list-pannel .cs-list-group {
+  padding: 8px;
+}
+
+.binf-widgets .csui-pman-panel .csui-list-pannel .csui-widget-item {
+  margin-bottom: 2px;
+  padding: 4px 16px;
+  height: 32px;
+  cursor: grab;
+  background-color: #eef2f4;
+  background-position: right;
+  background-size: auto;
+  font-size: 14px;
+  line-height: 24px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.binf-widgets .csui-pman-panel .csui-list-pannel .csui-layout-item.binf-active,
+.binf-widgets .csui-pman-panel .csui-list-pannel .csui-layout-item:hover,
+.binf-widgets .csui-pman-panel .csui-list-pannel .csui-widget-item:hover {
+  background-color: #b2bec5;
+}
+
+.binf-widgets .csui-template-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 220px;
+  height: 220px;
+  z-index: -1;
+  background: #ffffff; /*to cover the template*/
+}
+.binf-widgets .csui-template-wrapper {
+  cursor: grabbing;
+  position: absolute;
+  top: 0;
+  z-index: -2;
+  background: transparent;
+}
+
+.binf-widgets .csui-template-wrapper:active {
+  cursor: grabbing;
+}
+
+.binf-widgets .csui-template-wrapper .csui-widget-template {
+  border: 3px solid #94bbea;
+  width: 220px;
+  height: 220px;
+}
+
+.binf-widgets .csui-widget-template .csui-template-header {
+  height: 48px;
+  background-color: #ffffff;
+  text-align: right;
+  padding: 12px 16px;
+  font-size: 20px;
+  line-height: 23px;
+  color: #7e929f;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.binf-widgets .csui-widget-template .csui-template-body {
+  height: 166px;
+  background-color: #f9f9f9;
+  color: #3f4950;
+  text-align: center;
+  padding: 32px 40px 94px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.binf-widgets .csui-pman-panel .csui-accordion-header.csui-accordion-expand {
+  background-color: #e7f8f8;
+}
+
+.binf-widgets .cs-module-list .csui-accordion-content {
+  max-height: 0;
+  transition: max-height 0.5s;
+  overflow: hidden;
+}
+
+.binf-widgets .cs-module-list .csui-accordion-visible .csui-accordion-content {
+  max-height: 500px; /* Value bigger than expected height. Using for transition */
+}
+.pman-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.pman-container .pman-backdrop {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+}
+
+.pman-container .pman-header {
+  position: fixed;
+  width: 100%;
+  height: 64px;
+  z-index: 1151;
+}
+
+.pman-container .pman-tools-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.csui-pman-dnd-active .pman-container .pman-header .pman-trash-area {
+  visibility: visible;
+}
+
+.pman-container .pman-header .pman-trash-area {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pman-container .pman-header .pman-left-tools {
+  padding: 16px 32px 16px 0px;
+  position: relative;
+}
+
+.pman-container .pman-header .pman-right-tools {
+  padding: 16px 0px 16px 32px;
+  position: relative;
+}
+
+.pman-container .pman-header .pman-toolitem {
+  background: #ffffff;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  padding: 5px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+
+}
+
+.pman-container .pman-header .pman-toolitem .icon {
+  height: 22px;
+  width: 22px;
+  display: block;
+  background-color: #fff;
+  border: 1px solid transparent;
+}
+
+.pman-container .pman-toolitem .icon-toolbarAdd.binf-active {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.pman-container .pman-header .pman-header-backdrop {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  background: rgba(17, 17, 17, 0.95);
+}
+
+.binf-widgets .pman-header .binf-btn {
+  height: 32px;
+  background: #ffffff;
+  border-radius: 16px;
+  border: 0 none;
+  padding: 0 24px;
+  margin-right: 16px;
+  line-height: 24px;
+  font-size: 14px;
+  color: #232E72;
+}
+
+.binf-widgets .pman-header .binf-btn:hover, 
+.binf-widgets .pman-header .pman-left-tools .pman-toolitem:hover,
+.binf-widgets .pman-header .pman-left-tools .pman-toolitem:hover .icon-toolbarAdd {
+  background-color: #DFEEFA;
+  color: #627783;
+}
+
+.binf-widgets .pman-header .binf-btn:active,
+.binf-widgets .pman-header .pman-left-tools .pman-toolitem:active,
+.binf-widgets .pman-header .pman-left-tools .pman-toolitem:active .icon-toolbarAdd {
+  background-color: #A0A4BC;
+  color: #414979;
+}
+
+.binf-widgets .pman-header .binf-btn:disabled {
+  cursor: default;
+  pointer-events: none;
+}
+
+.binf-widgets .binf-btn.icon-save {
+  margin-right: 48px;
+}
+
+.pman-container .pman-header li {
+  display: block;
+  float: right;
+}
+
+.perspective-editing .csui-navbar,
+.perspective-editing .breadcrumb-wrap-visible {
+  visibility: hidden;
+}
+
+.binf-widgets.perspective-editing-transition {
+  overflow: hidden;
+}
+
+.perspective-editing .cs-perspective-panel {
+  z-index: 1150;
+}
+
+.perspective-editing .binf-popover {
+  z-index: 1160;
+}
+
+.perspective-editing .binf-widgets .binf-modal {
+  z-index: 1170;
+}
+
+/** Below styles for the spacing around perspective view for in-place editing to counter LCR explanded view. */
+.binf-widgets.perspective-editing .cs-perspective-panel .csui-perspective-breadcrumb {
+  display: none; /* Hide Breadcrumb in perspective editing */
+}
+
+.binf-widgets .cs-perspective-panel .cs-perspective {
+  transition: margin 200ms; /* To Animate space around perspective on entering edit mode */
+}
+
+.binf-widgets.perspective-editing .cs-perspective-panel .cs-perspective {
+  overflow: visible;
+  margin: 32px 0px 8px 0px; /* Flow */
+}
+
+.binf-widgets.perspective-editing .cs-perspective-panel .cs_perspective_no_left_right_margin .cs-perspective {
+  margin: 16px; /* L-C-R */
+}
+
+.binf-widgets.perspective-editing .cs-perspective,
+.binf-widgets.perspective-editing .cs-perspective-panel .cs-perspective > .binf-row {
+  overflow: visible; /* Allow content exceeding beyond perspective. For example, widget config callout  */
+}
+
+.binf-widgets.perspective-editing .pman-mode-personalize .pman-left-tools {
+  visibility: hidden;
+}.perspective-editing .csui-configure-perspective-widget {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.perspective-editing .csui-configure-perspective-widget.csui-has-editing-capability {
+  display: none;
+}
+
+.perspective-editing .binf-row > .csui-pman-editable-widget > .csui-configure-perspective-widget {
+  top: 7px; /* Cover the padding padded to binf-col-* */
+  bottom: 7px;
+  left: 7px;
+  right: 7px;
+}
+
+.binf-widgets .csui-perspective-placeholder.csui-widget-drop, .binf-widgets .pman-dnd-hover-placeholder .csui-perspective-placeholder {
+  border: 2px solid #09bcef;
+  background-color: rgba(157, 228, 249, 0.2);
+}
+
+.binf-widgets .csui-pman-widget-close {
+  display: none;
+  position: absolute;
+  left: -8px;
+  top: -8px;
+  width: 24px;
+  height: 24px;
+}
+
+.csui-pman-widget-close div {
+  height: 8px;
+  width: 8px;
+  cursor: pointer;
+}
+
+.perspective-editing .csui-configure-perspective-widget:hover .csui-pman-widget-close,
+.perspective-editing .csui-configure-perspective-widget.binf-active .csui-pman-widget-close {
+  display: inline-block;
+}
+
+.perspective-editing .csui-configure-perspective-widget.csui-widget-drop .csui-pman-widget-close {
+  display: none;
+}
+
+.perspective-editing .csui-drag-start .csui-configure-perspective-widget .csui-pman-widget-close {
+  display: none; /* Hide delete when re-ordering */
+}
+
+.perspective-editing .csui-configure-perspective-widget .csui-pman-widget-masking {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: move;
+  z-index: 1150; /* TODO required for HTML Tile. Get rid of this z-index */
+}
+
+.perspective-editing .csui-configure-perspective-widget.csui-pman-widget-mode-edit .csui-pman-widget-masking {
+  cursor: pointer;
+}
+
+.perspective-editing .csui-configure-perspective-widget .csui-pman-popover-holder {
+  position: absolute;
+  height: 100%;
+}
+
+.perspective-editing .csui-configure-perspective-widget .csui-pman-popover-right {
+  left: 25%;
+}
+
+.perspective-editing .csui-configure-perspective-widget .csui-pman-popover-left {
+  right: 25%;
+}
+
+.perspective-editing .csui-pman-placeholder-container .csui-pman-widget-close {
+  display: none !important;
+}
+
+.perspective-editing .csui-pman-editable-widget {
+  position: relative;
+}
+
+.perspective-editing .csui-pman-editable-widget .tile-content {
+  position: static;
+}
+
+.perspective-editing .pman-ms-popover {
+  display: -ms-grid !important;
+  -ms-grid-columns: min-content;
+}
+
+.perspective-editing .pman-widget-popover {
+  min-width: 252px;
+  max-width: 500px;
+  width: min-content;
+  width: -moz-min-content;
+}
+
+.perspective-editing .binf-popover {
+  background-color: #f7f7f7;
+  border-radius: 0px;
+  border: 0 none;
+  padding: 0px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+}
+
+.perspective-editing .binf-popover .binf-popover-content {
+  padding: 0px 0px;
+  min-width: inherit;
+  max-width: inherit;
+}
+
+.perspective-editing .binf-popover.binf-right .binf-popover-content {
+  border-right: 4px solid #09bcef;
+}
+
+.perspective-editing .binf-popover.binf-left .binf-popover-content {
+  border-left: 4px solid #09bcef;
+}
+
+html[dir="rtl"] .perspective-editing .binf-popover.binf-right .binf-popover-content {
+  border-left: 4px solid #09bcef;
+  border-right: 0px;
+}
+
+html[dir="rtl"] .perspective-editing .binf-popover.binf-left .binf-popover-content {
+  border-right: 4px solid #09bcef;
+  border-left: 0px;
+}
+
+.perspective-editing .binf-arrow:after {
+  background: inherit;
+}
+
+.perspective-editing .binf-popover.binf-right > .binf-arrow:after {
+  border-left-color: #09bcef;
+  overflow: hidden;
+}
+
+.perspective-editing .binf-popover.binf-left > .binf-arrow:after {
+  border-right-color: #09bcef;
+  overflow: hidden;
+}
+
+html[dir="rtl"] .perspective-editing .binf-popover.binf-right > .binf-arrow:after {
+  border-right-color: #09bcef;
+  overflow: hidden;
+}
+
+html[dir="rtl"] .perspective-editing .binf-popover.binf-left > .binf-arrow:after {
+  border-left-color: #09bcef;
+  overflow: hidden;
+}
+
+.perspective-editing .csui-pman-widget-error {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #F7F7F7;
+  display: none;
+}
+
+.perspective-editing .csui-pman-widget-error .csui-pman-widget-error-heading{
+  height: 48px;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #CBD3D9;
+  font-size: 20px;
+  line-height: 48px;
+  color: #00639B;
+  padding: 0 16px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.perspective-editing .csui-pman-widget-error .csui-pman-widget-error-body {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  height: calc(100% - 48px);
+  justify-content: center;
+  padding-bottom: 10%;
+}
+
+.perspective-editing .csui-pman-widget-error .csui-pman-widget-error-body .csui-pman-widget-error-icon {
+  width: 80px;
+  height: 80px;
+}
+
+.perspective-editing .csui-pman-widget-error .csui-pman-widget-error-body .csui-pman-widget-error-message {
+  margin-top: 12px;
+  font-size: 18px;
+  line-height: 20px;
+  color: #666666;
+  text-align: center;
+}
+
+.perspective-editing .binf-row > .csui-pman-editable-widget .csui-configure-perspective-widget.binf-perspective-has-error {
+  border-bottom: 4px solid #df3324;
+}
+
+.perspective-editing .csui-configure-perspective-widget.binf-perspective-has-error .csui-pman-widget-error {
+  display: block;
+}
+
+.perspective-editing .csui-configure-perspective-widget.csui-pman-widget-mode-personalize .csui-pman-widget-personalize-mask {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 24px;
+  display: none;
+}
+
+.perspective-editing .csui-configure-perspective-widget.csui-pman-widget-mode-personalize:hover .csui-pman-widget-personalize-mask {
+  background: linear-gradient(-180deg, rgba(255, 255, 255, 0.4) 0%, #FFFFFF 100%);
+  display: flex;
+}
+
+.perspective-editing .csui-configure-perspective-widget.csui-pman-widget-mode-personalize.csui-pman-widget-state-hidden .csui-pman-widget-personalize-mask {
+  background: linear-gradient(-180deg, rgba(130, 139, 193, 0.4) 0%, #828BC1 100%);
+  display: flex;
+}
+
+.perspective-editing .csui-configure-perspective-widget.csui-pman-widget-mode-personalize.csui-pman-widget-state-hidden:hover .csui-pman-widget-personalize-mask {
+  background: linear-gradient(-180deg, rgba(130, 139, 193, 0.2) 0%, rgba(130, 139, 193, 0.5) 100%);
+}
+
+.perspective-editing .csui-configure-perspective-widget .csui-pman-personalize-btn {
+  font-size: 14px;
+  line-height: 24px;
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  padding: 0px 24px;
+  border-radius: 16px;
+  color: #FFFFFF;
+}
+
+.perspective-editing .csui-configure-perspective-widget .csui-pman-personalize-btn.csui-pman-hide-widget {
+  background: #171F4C;
+}
+
+.perspective-editing .csui-configure-perspective-widget .csui-pman-personalize-btn.csui-pman-show-widget {
+  background: #232E72;
+  display: none; /* Dont show "Show widget" button on enabled widgets. Also show it only hover on hidden widgets. */
+}
+
+.perspective-editing .csui-configure-perspective-widget:hover .csui-pman-personalize-btn.csui-pman-show-widget {
+  background: #171F4C;
+}
+
+.perspective-editing .csui-configure-perspective-widget.csui-pman-widget-state-hidden .csui-pman-personalize-btn.csui-pman-hide-widget {
+  display: none; /* Dont show "Hide widget" button on hidden widgets */
+}
+
+.perspective-editing .csui-configure-perspective-widget.csui-pman-widget-state-hidden:hover .csui-pman-personalize-btn.csui-pman-show-widget {
+  display: block;
+}
+
+.binf-widgets .csui-perspective-placeholder {
+  height: 100%;
+  background: rgba(249, 249, 249, 0.2);
+  text-align: center;
+  border: dashed 2px #ffffff;
+}
+
+.binf-widgets .csui-placeholder-title {
+  position: relative;
+  top: calc(50% - 50px);
+  right: 0;
+  left: 0;
+  font-size: 18px !important;
+  line-height: 20px;
+  color: #ffffff;
+}
+.binf-widgets .csui-pman-widget {
+  height: 100%;
+  background: #ffffff;
+}
+
+.binf-widgets .binf-has-error .csui-pman-widget {
+  border: 1px solid #df3324;
+}
+
+.binf-widgets .csui-pman-widget-msg {
+  position: absolute;
+  top: calc(50% - 57px);
+  right: 0;
+  left: 0;
+  text-align: center;
+  color: #666666;
+  line-height: 20px;
+  font-size: 18px !important;
+}
+
+.binf-widgets .csui-pman-widget .tile-header {
+  padding: 0 12px;
+  background-color: #DCE4E8;
+  height: 48px;
+  border: 0 none;
+}
+
+.binf-widgets .csui-pman-widget .tile-header .tile-title {
+  float: right;
+  margin: 0;
+  display: table;
+  width: 100%;
+}
+
+.binf-widgets .csui-pman-widget .tile-title .csui-heading {
+  line-height: 32px;
+  vertical-align: middle;
+  color: #00639B;
+  font-weight: normal;
+}

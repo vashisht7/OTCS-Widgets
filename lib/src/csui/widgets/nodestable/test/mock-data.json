@@ -1,0 +1,3920 @@
+{
+  "users": {
+    "1000": {
+      "id": 1000,
+      "group_id": 1500,
+      "name": "Admin",
+      "personal_volume_id": 2003,
+      "photo_url": null,
+      "type": 0,
+      "role": "manager"
+    },
+    "1001": {
+      "id": 1001,
+      "business_email": "kristen@innovate.com",
+      "group_id": 1501,
+      "name": "Kristen",
+      "first_name": "Kristen",
+      "last_name": "Smith",
+      "office_location": "Grasbrunn",
+      "personal_volume_id": 2004,
+      "photo_url": "api/v1/members/1001/photo?v=1",
+      "type": 0,
+      "role": "contributor"
+    },
+    "1002": {
+      "id": 1002,
+      "business_email": "neil@innovate.com",
+      "group_id": 1503,
+      "name": "Neil",
+      "first_name": "Neil",
+      "last_name": "Lang",
+      "office_location": "London",
+      "personal_volume_id": 2005,
+      "photo_url": "api/v1/members/1002/photo?v=1",
+      "type": 0,
+      "role": "visitor"
+    },
+    "1003": {
+      "id": 1003,
+      "business_email": "nick@innovate.com",
+      "group_id": 1502,
+      "name": "Nick",
+      "first_name": "Nick",
+      "last_name": "Gallegos",
+      "office_location": "Waterloo",
+      "personal_volume_id": 2006,
+      "photo_url": "api/v1/members/1003/photo?v=1",
+      "type": 0,
+      "role": "manager"
+    },
+    "1004": {
+      "id": 1004,
+      "business_email": "josef@innovate.com",
+      "group_id": 1500,
+      "name": "Josef",
+      "first_name": "Josef",
+      "last_name": "Müller",
+      "office_location": "München",
+      "personal_volume_id": 2007,
+      "photo_url": null,
+      "type": 0
+    }
+  },
+  "groups": {
+    "1500": {
+      "id": 1500,
+      "name": "DefaultGroup",
+      "leader_id": "1000",
+      "type": 1
+    },
+    "1501": {
+      "id": 1501,
+      "name": "Contributors",
+      "leader_id": "1003",
+      "type": 1
+    },
+    "1502": {
+      "id": 1502,
+      "name": "Managers",
+      "leader_id": "1000",
+      "type": 1
+    },
+    "1503": {
+      "id": 1503,
+      "name": "Visitors",
+      "leader_id": "1003",
+      "type": 1
+    },
+    "1504": {
+      "id": 1504,
+      "group_id": 1500,
+      "name": "SubGroup",
+      "leader_id": "1000",
+      "type": 1
+    }
+  },
+  "userPerspectives": {
+    "Kristen": true,
+    "Neil": true,
+    "Nick": true,
+    "Josef": true
+  },
+  "userFavorites": {
+    "Admin": [
+      3001,
+      3002,
+      3003,
+      3004,
+      3005,
+      3101,
+      3201,
+      3301
+    ],
+    "Kristen": [
+      3001,
+      3002,
+      4001,
+      5001,
+      5101,
+      5102
+    ],
+    "Neil": [
+      3003,
+      3004,
+      5001,
+      5101
+    ],
+    "Nick": [
+      3005,
+      3101,
+      3201,
+      4001,
+      4101
+    ],
+    "Josef": []
+  },
+  "userAccessed": {
+    "Admin": [
+      3001,
+      3101,
+      3201,
+      7001
+    ],
+    "Kristen": [
+      4101,
+      5101
+    ],
+    "Neil": [
+      3001,
+      5101
+    ],
+    "Nick": [
+      3101,
+      5101,
+      5102
+    ],
+    "Josef": []
+  },
+  "userAssignments": {
+    "Admin": [
+      68993,
+      69000,
+      69001,
+      69002,
+      69003,
+      69004,
+      69005,
+      69443
+    ],
+    "Kristen": [
+      68993,
+      69002
+    ],
+    "Neil": [
+      69000,
+      69003
+    ],
+    "Nick": [
+      69001,
+      69443
+    ],
+    "Josef": []
+  },
+  "nodeMetadata": {
+    "container": {
+      "key": "container",
+      "name": "Container",
+      "read_only": true,
+      "sort": true,
+      "type": 5,
+      "type_name": "Boolean"
+    },
+    "create_date": {
+      "include_time": true,
+      "key": "create_date",
+      "name": "Created",
+      "read_only": true,
+      "sort": true,
+      "type": -7,
+      "type_name": "Date"
+    },
+    "create_user_id": {
+      "key": "create_user_id",
+      "name": "Created By",
+      "read_only": false,
+      "sort": true,
+      "type": 2,
+      "type_name": "Integer"
+    },
+    "description": {
+      "key": "description",
+      "multiline": true,
+      "multilingual": true,
+      "name": "Description",
+      "read_only": false,
+      "type": -1,
+      "type_name": "String"
+    },
+    "favorite": {
+      "key": "favorite",
+      "name": "Favorite",
+      "read_only": false,
+      "sort": true,
+      "type": 5,
+      "type_name": "Boolean"
+    },
+    "id": {
+      "key": "id",
+      "name": "ID",
+      "read_only": true,
+      "sort": true,
+      "type": 2,
+      "type_name": "Integer"
+    },
+    "modify_date": {
+      "include_time": true,
+      "key": "modify_date",
+      "name": "Modified",
+      "read_only": true,
+      "sort": true,
+      "type": -7,
+      "type_name": "Date"
+    },
+    "modify_user_id": {
+      "key": "modify_user_id",
+      "name": "Modified By",
+      "read_only": false,
+      "sort": true,
+      "type": 2,
+      "type_name": "Integer"
+    },
+    "name": {
+      "key": "name",
+      "multiline": false,
+      "multilingual": true,
+      "name": "Name",
+      "read_only": false,
+      "sort": true,
+      "type": -1,
+      "type_name": "String"
+    },
+    "owner_user_id": {
+      "key": "owner_user_id",
+      "name": "Owned By",
+      "read_only": false,
+      "sort": true,
+      "type": 2,
+      "type_name": "Integer"
+    },
+    "parent_id": {
+      "key": "parent_id",
+      "name": "Parent ID",
+      "read_only": false,
+      "sort": true,
+      "type": 2,
+      "type_name": "Integer"
+    },
+    "reserved": {
+      "key": "reserved",
+      "name": "Reserved",
+      "read_only": false,
+      "sort": true,
+      "type": 5,
+      "type_name": "Boolean"
+    },
+    "reserved_date": {
+      "include_time": true,
+      "key": "reserved_date",
+      "name": "Reserved",
+      "read_only": false,
+      "sort": true,
+      "type": -7,
+      "type_name": "Date"
+    },
+    "reserved_user_id": {
+      "key": "reserved_user_id",
+      "name": "Reserved By",
+      "read_only": false,
+      "sort": true,
+      "type": 2,
+      "type_name": "Integer"
+    },
+    "short_summary": {
+      "key": "short_summary",
+      "name": "Short Summary",
+      "type": -2,
+      "type_name": "List"
+    },
+    "summary": {
+      "key": "summary",
+      "name": "Summary",
+      "type": -2,
+      "type_name": "List"
+    },
+    "size": {
+      "key": "size",
+      "name": "Size",
+      "read_only": true,
+      "sort": true,
+      "type": 2,
+      "type_name": "Integer"
+    },
+    "type": {
+      "key": "type",
+      "name": "Type",
+      "read_only": true,
+      "sort": true,
+      "type": 2,
+      "type_name": "Integer"
+    },
+    "type_name": {
+      "key": "type_name",
+      "multiline": false,
+      "multilingual": false,
+      "name": "Type",
+      "read_only": true,
+      "type": -1,
+      "type_name": "String"
+    },
+    "volume_id": {
+      "key": "volume_id",
+      "name": "Volume ID",
+      "read_only": false,
+      "sort": true,
+      "type": 2,
+      "type_name": "Integer"
+    },
+    "wnd_comments": {
+      "key": "wnd_comments",
+      "name": "Comments",
+      "read_only": false,
+      "sort": false,
+      "type": 2,
+      "type_name": "Integer",
+      "definitions_order": 504
+    }
+  },
+  "nodeColumns": [
+    {
+      "key": "type",
+      "name": "Type",
+      "data_type": 2,
+      "sortable": true
+    },
+    {
+      "key": "name",
+      "name": "Name",
+      "data_type": -1,
+      "sortable": true
+    },
+    {
+      "key": "size",
+      "name": "Size",
+      "data_type": 2,
+      "sortable": true
+    },
+    {
+      "key": "modify_date",
+      "name": "Modified",
+      "data_type": -7,
+      "sortable": true
+    },
+    {
+      "key": "wnd_comments",
+      "name": "Comments",
+      "data_type": 2,
+      "sortable": false
+    }
+  ],
+  "nodeVersionMetadata": {
+    "create_date": {
+      "include_time": true,
+      "key": "create_date",
+      "name": "Created",
+      "sort": true,
+      "type": -7,
+      "type_name": "Date"
+    },
+    "description": {
+      "key": "description",
+      "name": "Description",
+      "type": -1,
+      "type_name": "String"
+    },
+    "file_create_date": {
+      "include_time": true,
+      "key": "file_create_date",
+      "name": "File Created",
+      "sort": true,
+      "type": -7,
+      "type_name": "Date"
+    },
+    "file_modify_date": {
+      "include_time": true,
+      "key": "file_modify_date",
+      "name": "File Modified",
+      "sort": true,
+      "type": -7,
+      "type_name": "Date"
+    },
+    "file_name": {
+      "key": "file_name",
+      "name": "File Name",
+      "sort": true,
+      "type": -1,
+      "type_name": "String"
+    },
+    "file_size": {
+      "key": "file_size",
+      "name": "File Size",
+      "sort": true,
+      "type": 2,
+      "type_name": "Integer"
+    },
+    "file_type": {
+      "key": "file_type",
+      "name": "File Type",
+      "sort": true,
+      "type": -1,
+      "type_name": "String"
+    },
+    "id": {
+      "key": "id",
+      "name": "ID",
+      "sort": true,
+      "type": 2,
+      "type_name": "Integer"
+    },
+    "locked": {
+      "key": "locked",
+      "name": "Locked",
+      "type": 5,
+      "type_name": "Boolean"
+    },
+    "locked_user_id": {
+      "key": "locked_user_id",
+      "name": "Locked By",
+      "type": 2,
+      "type_name": "Integer"
+    },
+    "mime_type": {
+      "key": "mime_type",
+      "name": "MIME Type",
+      "type": -1,
+      "type_name": "String"
+    },
+    "modify_date": {
+      "include_time": true,
+      "key": "modify_date",
+      "name": "Modified",
+      "sort": true,
+      "type": -7,
+      "type_name": "Date"
+    },
+    "name": {
+      "key": "name",
+      "multiline": false,
+      "multilingual": true,
+      "name": "Name",
+      "sort": true,
+      "type": -1,
+      "type_name": "String"
+    },
+    "owner_id": {
+      "key": "owner_id",
+      "name": "Owned By",
+      "sort": true,
+      "type": 2,
+      "type_name": "Integer"
+    },
+    "provider_id": {
+      "key": "provider_id",
+      "name": "Storage Provider ID",
+      "type": 2,
+      "type_name": "Integer"
+    },
+    "provider_name": {
+      "key": "provider_name",
+      "name": "Storage Provider",
+      "type": -1,
+      "type_name": "String"
+    },
+    "version_id": {
+      "key": "version_id",
+      "name": "Version ID",
+      "type": 2,
+      "type_name": "Integer"
+    },
+    "version_number": {
+      "key": "version_number",
+      "name": "Version Number",
+      "type": 2,
+      "type_name": "Integer"
+    },
+    "version_number_major": {
+      "key": "version_number_major",
+      "name": "Major Version Number",
+      "type": 2,
+      "type_name": "Integer"
+    },
+    "version_number_minor": {
+      "key": "version_number_minor",
+      "name": "Minor Version Number",
+      "type": 2,
+      "type_name": "Integer"
+    },
+    "version_number_name": {
+      "key": "version_number_name",
+      "name": "Version",
+      "type": -1,
+      "type_name": "String"
+    }
+  },
+  "nodeFacetMetadata": {
+    "70001": {
+      "name": "Container",
+      "items_to_show": 5,
+      "type": 5
+    },
+    "70002": {
+      "name": "Object Type",
+      "items_to_show": 5,
+      "type": 2
+    },
+    "70003": {
+      "name": "Document Type",
+      "items_to_show": 5,
+      "type": -1,
+      "required_filter": {
+        "70002": ["144"]
+      }
+    },
+    "70004": {
+      "name": "Created By",
+      "items_to_show": 5,
+      "type": 19
+    },
+    "70005": {
+      "name": "Modified By",
+      "items_to_show": 5,
+      "type": 19
+    },
+    "70006": {
+      "name": "Owned By",
+      "items_to_show": 5,
+      "type": 19
+    },
+    "70007": {
+      "name": "Reserved",
+      "items_to_show": 5,
+      "type": 5,
+      "required_filter": {
+        "70002": ["144"]
+      }
+    },
+    "70008": {
+      "name": "Favourite",
+      "items_to_show": 5,
+      "type": 5
+    }
+  },
+  "nodeTypes": {
+    "0": {
+      "type_name": "Folder",
+      "container": true
+    },
+    "1": {
+      "type_name": "Shortcut",
+      "container": false
+    },
+    "133": {
+      "type_name": "Category Volume",
+      "container": true
+    },
+    "136": {
+      "type_name": "Compound Document",
+      "container": true
+    },
+    "140": {
+      "type_name": "URL",
+      "container": false
+    },
+    "141": {
+      "type_name": "Enterprise Volume",
+      "container": true
+    },
+    "142": {
+      "type_name": "Personal Volume",
+      "container": true
+    },
+    "144": {
+      "type_name": "Document",
+      "container": false
+    },
+    "202": {
+      "type_name": "Project",
+      "container": true
+    },
+    "749": {
+      "type_name": "E-mail",
+      "container": false
+    },
+    "751": {
+      "type_name": "E-mail Folder",
+      "container": true
+    },
+    "5573": {
+      "type_name": "Wiki",
+      "container": true
+    },
+    "5574": {
+      "type_name": "Wiki Page",
+      "container": false
+    }
+  },
+  "addableNodeTypes": {
+    "0": [
+      0,
+      1,
+      136,
+      140,
+      144,
+      202,
+      751,
+      5573
+    ],
+    "133": [],
+    "136": [
+      1,
+      136,
+      144
+    ],
+    "141": [
+      0,
+      1,
+      136,
+      140,
+      144,
+      202,
+      751,
+      5573
+    ],
+    "142": [
+      0,
+      1,
+      136,
+      140,
+      144,
+      202,
+      751,
+      5573
+    ],
+    "202": [
+      0,
+      1,
+      136,
+      140,
+      144,
+      202,
+      751
+    ],
+    "751": [
+      749
+    ],
+    "5573": [
+      5574
+    ]
+  },
+  "nodeActionsPerType": {
+    "0": [
+      "browse",
+      "copy",
+      "delete",
+      "move",
+      "properties",
+      "permissions",
+      "rename"
+    ],
+    "1": [
+      "copy",
+      "delete",
+      "move",
+      "properties",
+      "rename"
+    ],
+    "133": [
+      "browse",
+      "properties"
+    ],
+    "136": [
+      "browse",
+      "copy",
+      "delete",
+      "move",
+      "properties",
+      "reserve",
+      "unreserve",
+      "rename"
+    ],
+    "140": [
+      "copy",
+      "delete",
+      "move",
+      "properties",
+      "rename"
+    ],
+    "141": [
+      "browse",
+      "properties"
+    ],
+    "142": [
+      "browse",
+      "properties"
+    ],
+    "144": [
+      "addversion",
+      "comment",
+      "copy",
+      "delete",
+      "download",
+      "edit",
+      "move",
+      "open",
+      "properties",
+      "rename",
+      "reserve",
+      "ShareCSObjects",
+      "permissions",
+      "unreserve"
+    ],
+    "202": [
+      "browse",
+      "delete",
+      "move",
+      "properties",
+      "permissions",
+      "rename"
+    ],
+    "749": [
+      "comment",
+      "copy",
+      "delete",
+      "download",
+      "move",
+      "properties",
+      "rename",
+      "permissions"
+    ],
+    "751": [
+      "browse",
+      "copy",
+      "delete",
+      "move",
+      "properties",
+      "permissions",
+      "rename"
+    ],
+    "5573": [
+      "copy",
+      "delete",
+      "move",
+      "open",
+      "properties",
+      "permissions",
+      "rename"
+    ],
+    "5574": [
+      "copy",
+      "delete",
+      "move",
+      "open",
+      "properties",
+      "rename",
+      "permissions"
+    ]
+  },
+  "nodeActionsPerMimeType": {
+    "application/vnd.openxmlformats-officedocument.wordprocessingml.document": [
+      "edit",
+      "editactivex",
+      "editofficeonline",
+      "editwebdav"
+    ],
+    "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": [
+      "edit",
+      "editactivex",
+      "editofficeonline",
+      "editwebdav"
+    ],
+    "application/vnd.openxmlformats-officedocument.presentationml.presentation": [
+      "edit",
+      "editactivex",
+      "editofficeonline",
+      "editwebdav"
+    ]
+  },
+  "nodeActionsPerRole": {
+    "visitor": [
+      "browse",
+      "download",
+      "open",
+      "properties"
+    ],
+    "contributor": [
+      "addversion",
+      "browse",
+      "copy",
+      "delete",
+      "download",
+      "edit",
+      "editactivex",
+      "editofficeonline",
+      "editwebdav",
+      "move",
+      "open",
+      "properties",
+      "rename"
+    ],
+    "manager": [
+      "addversion",
+      "browse",
+      "copy",
+      "delete",
+      "download",
+      "edit",
+      "editactivex",
+      "editofficeonline",
+      "editwebdav",
+      "move",
+      "open",
+      "properties",
+      "permissions",
+      "rename",
+      "reserve",
+      "ShareCSObjects",
+      "unreserve"
+    ]
+  },
+  "nodeActionNames": {
+    "edit": "Edit",
+    "editactivex": "Edit locally",
+    "editofficeonline": "Edit on-line",
+    "editwebdav": "Edit via WebDAV"
+  },
+  "volumes": {
+    "133": 2001,
+    "141": 2000,
+    "142": null
+  },
+  "nodes": {
+    "2000": {
+      "id": 2000,
+      "favorite": false,
+      "name": "Innovate",
+      "type": 141,
+      "create_date": "2014-07-10T14:11:31",
+      "create_user_id": 1000,
+      "description": "",
+      "modify_date": "2014-10-15T14:54:06",
+      "modify_user_id": 1000,
+      "parent_id": -1,
+      "perm_create": true,
+      "perm_delete": true,
+      "perm_delete_versions": true,
+      "perm_modify": true,
+      "perm_modify_attributes": true,
+      "perm_modify_permissions": true,
+      "perm_reserve": true,
+      "perm_see": true,
+      "perm_see_contents": true,
+      "volume_id": 2000
+    },
+    "2001": {
+      "id": 2001,
+      "favorite": false,
+      "name": "Categories",
+      "type": 133,
+      "create_date": "2014-07-10T14:12:31",
+      "create_user_id": 1000,
+      "description": "",
+      "modify_date": "2014-10-15T14:54:06",
+      "modify_user_id": 1000,
+      "parent_id": -1,
+      "perm_create": true,
+      "perm_delete": true,
+      "perm_delete_versions": true,
+      "perm_modify": true,
+      "perm_modify_attributes": true,
+      "perm_modify_permissions": true,
+      "perm_reserve": true,
+      "perm_see": true,
+      "perm_see_contents": true,
+      "volume_id": 2001
+    },
+    "2003": {
+      "id": 2003,
+      "favorite": false,
+      "name": "Chief's Home",
+      "type": 142,
+      "create_date": "2014-07-10T14:12:31",
+      "create_user_id": 1000,
+      "description": "",
+      "modify_date": "2014-10-15T14:54:06",
+      "modify_user_id": 1000,
+      "parent_id": -1,
+      "perm_create": true,
+      "perm_delete": true,
+      "perm_delete_versions": true,
+      "perm_modify": true,
+      "perm_modify_attributes": true,
+      "perm_modify_permissions": true,
+      "perm_reserve": true,
+      "perm_see": true,
+      "perm_see_contents": true,
+      "volume_id": 2003
+    },
+    "2004": {
+      "id": 2004,
+      "favorite": false,
+      "name": "Kristen's Home",
+      "type": 142,
+      "create_date": "2014-07-10T14:12:31",
+      "create_user_id": 1000,
+      "description": "",
+      "modify_date": "2014-10-15T14:54:06",
+      "modify_user_id": 1001,
+      "parent_id": -1,
+      "perm_create": true,
+      "perm_delete": true,
+      "perm_delete_versions": true,
+      "perm_modify": true,
+      "perm_modify_attributes": true,
+      "perm_modify_permissions": true,
+      "perm_reserve": true,
+      "perm_see": true,
+      "perm_see_contents": true,
+      "volume_id": 2004
+    },
+    "2005": {
+      "id": 2005,
+      "favorite": false,
+      "name": "Neil's Home",
+      "type": 142,
+      "create_date": "2014-07-10T14:12:31",
+      "create_user_id": 1000,
+      "description": "",
+      "modify_date": "2014-10-15T14:54:06",
+      "modify_user_id": 1002,
+      "parent_id": -1,
+      "perm_create": true,
+      "perm_delete": true,
+      "perm_delete_versions": true,
+      "perm_modify": true,
+      "perm_modify_attributes": true,
+      "perm_modify_permissions": true,
+      "perm_reserve": true,
+      "perm_see": true,
+      "perm_see_contents": true,
+      "volume_id": 2005
+    },
+    "2006": {
+      "id": 2006,
+      "favorite": false,
+      "name": "Nick's Home",
+      "type": 142,
+      "create_date": "2014-07-10T14:12:31",
+      "create_user_id": 1000,
+      "description": "",
+      "modify_date": "2014-10-15T14:54:06",
+      "modify_user_id": 1003,
+      "parent_id": -1,
+      "perm_create": true,
+      "perm_delete": true,
+      "perm_delete_versions": true,
+      "perm_modify": true,
+      "perm_modify_attributes": true,
+      "perm_modify_permissions": true,
+      "perm_reserve": true,
+      "perm_see": true,
+      "perm_see_contents": true,
+      "volume_id": 2006
+    },
+    "2007": {
+      "id": 2007,
+      "favorite": false,
+      "name": "Josef's Home",
+      "type": 142,
+      "create_date": "2012-07-10T14:12:31",
+      "create_user_id": 1000,
+      "description": "",
+      "modify_date": "2012-10-15T14:54:06",
+      "modify_user_id": 1004,
+      "parent_id": -1,
+      "perm_create": true,
+      "perm_delete": true,
+      "perm_delete_versions": true,
+      "perm_modify": true,
+      "perm_modify_attributes": true,
+      "perm_modify_permissions": true,
+      "perm_reserve": true,
+      "perm_see": true,
+      "perm_see_contents": true,
+      "volume_id": 2007
+    },
+    "3001": {
+      "id": 3001,
+      "favorite": true,
+      "name": "CarbonFibre Project",
+      "type": 202,
+      "create_date": "2014-11-10T14:12:31",
+      "create_user_id": 1000,
+      "description": "",
+      "modify_date": "2014-12-15T14:54:06",
+      "modify_user_id": 1003,
+      "parent_id": 2000,
+      "perm_create": true,
+      "perm_delete": true,
+      "perm_delete_versions": true,
+      "perm_modify": true,
+      "perm_modify_attributes": true,
+      "perm_modify_permissions": true,
+      "perm_reserve": true,
+      "perm_see": true,
+      "perm_see_contents": true,
+      "volume_id": 2000
+    },
+    "3002": {
+      "id": 3002,
+      "favorite": true,
+      "name": "Iteration Planning",
+      "type": 0,
+      "create_date": "2014-12-20T14:12:31",
+      "create_user_id": 1003,
+      "description": "",
+      "modify_date": "2014-12-20T15:42:33",
+      "modify_user_id": 1003,
+      "parent_id": 3001,
+      "perm_create": true,
+      "perm_delete": true,
+      "perm_delete_versions": true,
+      "perm_modify": true,
+      "perm_modify_attributes": true,
+      "perm_modify_permissions": true,
+      "perm_reserve": true,
+      "perm_see": true,
+      "perm_see_contents": true,
+      "volume_id": 3001
+    },
+    "3003": {
+      "id": 3003,
+      "favorite": true,
+      "name": "Architecture Design",
+      "type": 0,
+      "create_date": "2014-12-20T14:15:31",
+      "create_user_id": 1003,
+      "description": "",
+      "modify_date": "2014-12-29T21:03:45",
+      "modify_user_id": 1001,
+      "parent_id": 3001,
+      "perm_create": true,
+      "perm_delete": true,
+      "perm_delete_versions": true,
+      "perm_modify": true,
+      "perm_modify_attributes": true,
+      "perm_modify_permissions": true,
+      "perm_reserve": true,
+      "perm_see": true,
+      "perm_see_contents": true,
+      "volume_id": 3001
+    },
+    "3004": {
+      "id": 3004,
+      "favorite": true,
+      "name": "Team Workshops",
+      "type": 0,
+      "create_date": "2014-12-20T14:18:31",
+      "create_user_id": 1003,
+      "description": "",
+      "modify_date": "2015-03-04T22:24:36",
+      "modify_user_id": 1001,
+      "parent_id": 3001,
+      "perm_create": false,
+      "perm_delete": false,
+      "perm_delete_versions": false,
+      "perm_modify": false,
+      "perm_modify_attributes": false,
+      "perm_modify_permissions": false,
+      "perm_reserve": false,
+      "perm_see": true,
+      "perm_see_contents": true,
+      "volume_id": 3001
+    },
+    "3005": {
+      "id": 3005,
+      "favorite": true,
+      "name": "Project Policies",
+      "type": 0,
+      "create_date": "2014-12-20T14:21:31",
+      "create_user_id": 1003,
+      "description": "",
+      "modify_date": "2015-06-18T07:08:06",
+      "modify_user_id": 1003,
+      "parent_id": 3001,
+      "perm_create": true,
+      "perm_delete": true,
+      "perm_delete_versions": true,
+      "perm_modify": true,
+      "perm_modify_attributes": true,
+      "perm_modify_permissions": true,
+      "perm_reserve": true,
+      "perm_see": true,
+      "perm_see_contents": true,
+      "volume_id": 3001
+    },
+    "3006": {
+      "id": 3006,
+      "favorite": false,
+      "name": "Meeting Minutes",
+      "type": 0,
+      "create_date": "2014-12-20T14:21:31",
+      "create_user_id": 1003,
+      "description": "",
+      "modify_date": "2015-06-19T06:14:56",
+      "modify_user_id": 1001,
+      "parent_id": 3001,
+      "perm_create": true,
+      "perm_delete": true,
+      "perm_delete_versions": true,
+      "perm_modify": true,
+      "perm_modify_attributes": true,
+      "perm_modify_permissions": true,
+      "perm_reserve": true,
+      "perm_see": true,
+      "perm_see_contents": true,
+      "volume_id": 3001
+    },
+    "3051": {
+      "id": 3051,
+      "favorite": false,
+      "name": "Definition of Done.pdf",
+      "type": 144,
+      "create_date": "2015-03-13T17:24:13",
+      "create_user_id": 1002,
+      "description": "",
+      "modify_date": "2015-08-12T15:17:32",
+      "modify_user_id": 1003,
+      "parent_id": 3005,
+      "perm_create": true,
+      "perm_delete": true,
+      "perm_delete_versions": true,
+      "perm_modify": true,
+      "perm_modify_attributes": true,
+      "perm_modify_permissions": true,
+      "perm_reserve": true,
+      "perm_see": true,
+      "perm_see_contents": true,
+      "mime_type": "application/pdf",
+      "reserved": true,
+      "reserved_date": "2015-09-01T13:14:15",
+      "reserved_user_id": 1001,
+      "size": 125789,
+      "volume_id": 3001
+    },
+    "3101": {
+      "id": 3101,
+      "favorite": true,
+      "name": "Project Dashboard",
+      "type": 140,
+      "create_date": "2014-12-20T14:24:31",
+      "create_user_id": 1003,
+      "description": "",
+      "modify_date": "2015-07-13T11:10:01",
+      "modify_user_id": 1003,
+      "parent_id": 3001,
+      "perm_create": true,
+      "perm_delete": true,
+      "perm_delete_versions": true,
+      "perm_modify": true,
+      "perm_modify_attributes": true,
+      "perm_modify_permissions": true,
+      "perm_reserve": true,
+      "perm_see": true,
+      "perm_see_contents": true,
+      "url": "http://www.opentext.com",
+      "volume_id": 3001
+    },
+    "3201": {
+      "id": 3201,
+      "favorite": true,
+      "name": "Motivation.md",
+      "type": 144,
+      "create_date": "2014-12-20T14:27:31",
+      "create_user_id": 1001,
+      "description": "",
+      "modify_date": "2014-12-29T10:10:00",
+      "modify_user_id": 1001,
+      "parent_id": 3001,
+      "perm_create": true,
+      "perm_delete": true,
+      "perm_delete_versions": true,
+      "perm_modify": true,
+      "perm_modify_attributes": true,
+      "perm_modify_permissions": true,
+      "perm_reserve": true,
+      "perm_see": true,
+      "perm_see_contents": true,
+      "mime_type": "text/plain",
+      "reserved": false,
+      "reserved_date": null,
+      "reserved_user_id": null,
+      "size": 1234,
+      "volume_id": 3001
+    },
+    "3301": {
+      "id": 3301,
+      "favorite": true,
+      "name": "Shortcut to CarbonFibre Architecture",
+      "type": 1,
+      "create_date": "2014-12-21T13:14:14",
+      "create_user_id": 1001,
+      "description": "",
+      "modify_date": "2014-12-30T10:02:03",
+      "modify_user_id": 1001,
+      "original_id": 3003,
+      "parent_id": 2000,
+      "perm_create": true,
+      "perm_delete": true,
+      "perm_delete_versions": true,
+      "perm_modify": true,
+      "perm_modify_attributes": true,
+      "perm_modify_permissions": true,
+      "perm_reserve": true,
+      "perm_see": true,
+      "perm_see_contents": true,
+      "volume_id": 2000
+    },
+    "4001": {
+      "id": 4001,
+      "favorite": false,
+      "name": "Company Policies",
+      "type": 0,
+      "create_date": "2014-12-21T13:14:14",
+      "create_user_id": 1001,
+      "description": "",
+      "modify_date": "2014-12-31T08:11:34",
+      "modify_user_id": 1002,
+      "parent_id": 2000,
+      "perm_create": true,
+      "perm_delete": true,
+      "perm_delete_versions": true,
+      "perm_modify": true,
+      "perm_modify_attributes": true,
+      "perm_modify_permissions": true,
+      "perm_reserve": true,
+      "perm_see": true,
+      "perm_see_contents": true,
+      "volume_id": 2000
+    },
+    "4101": {
+      "id": 4101,
+      "favorite": false,
+      "name": "Organization.docx",
+      "type": 144,
+      "create_date": "2013-12-20T14:27:31",
+      "create_user_id": 1001,
+      "description": "",
+      "modify_date": "2015-02-12T09:32:23",
+      "modify_user_id": 1002,
+      "parent_id": 4001,
+      "perm_create": true,
+      "perm_delete": true,
+      "perm_delete_versions": true,
+      "perm_modify": true,
+      "perm_modify_attributes": true,
+      "perm_modify_permissions": true,
+      "perm_reserve": true,
+      "perm_see": true,
+      "perm_see_contents": true,
+      "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "reserved": false,
+      "reserved_date": null,
+      "reserved_user_id": null,
+      "size": 5678,
+      "volume_id": 2000
+    },
+    "5001": {
+      "id": 5001,
+      "favorite": false,
+      "name": "Development Materials",
+      "type": 0,
+      "create_date": "2014-12-09T13:14:14",
+      "create_user_id": 1002,
+      "description": "",
+      "modify_date": "2014-12-30T17:18:02",
+      "modify_user_id": 1003,
+      "parent_id": 2000,
+      "perm_create": true,
+      "perm_delete": true,
+      "perm_delete_versions": true,
+      "perm_modify": true,
+      "perm_modify_attributes": true,
+      "perm_modify_permissions": true,
+      "perm_reserve": true,
+      "perm_see": true,
+      "perm_see_contents": true,
+      "volume_id": 2000
+    },
+    "5101": {
+      "id": 5101,
+      "favorite": false,
+      "name": "Bootstrap Grid.pptx",
+      "type": 144,
+      "create_date": "2013-12-01T14:27:31",
+      "create_user_id": 1002,
+      "description": "",
+      "modify_date": "2014-12-22T23:01:00",
+      "modify_user_id": 1003,
+      "parent_id": 5001,
+      "perm_create": true,
+      "perm_delete": true,
+      "perm_delete_versions": true,
+      "perm_modify": true,
+      "perm_modify_attributes": true,
+      "perm_modify_permissions": true,
+      "perm_reserve": true,
+      "perm_see": true,
+      "perm_see_contents": true,
+      "mime_type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "reserved": false,
+      "reserved_date": null,
+      "reserved_user_id": null,
+      "size": 20364,
+      "volume_id": 2000
+    },
+    "5102": {
+      "id": 5102,
+      "favorite": false,
+      "name": "Callbacks & Promises.xlsx",
+      "type": 144,
+      "create_date": "2013-12-02T14:27:31",
+      "create_user_id": 1002,
+      "description": "",
+      "modify_date": "2013-12-22T07:45:13",
+      "modify_user_id": 1002,
+      "parent_id": 5001,
+      "perm_create": true,
+      "perm_delete": true,
+      "perm_delete_versions": true,
+      "perm_modify": true,
+      "perm_modify_attributes": true,
+      "perm_modify_permissions": true,
+      "perm_reserve": true,
+      "perm_see": true,
+      "perm_see_contents": true,
+      "mime_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "reserved": false,
+      "reserved_date": null,
+      "reserved_user_id": null,
+      "size": 43567,
+      "volume_id": 2000
+    },
+    "5103": {
+      "id": 5103,
+      "favorite": false,
+      "name": "Shortcut to Company Organization.docx",
+      "type": 1,
+      "create_date": "2013-12-02T14:27:31",
+      "create_user_id": 1002,
+      "description": "",
+      "modify_date": "2013-12-21T09:00:12",
+      "modify_user_id": 1001,
+      "original_id": 4101,
+      "parent_id": 5001,
+      "perm_create": true,
+      "perm_delete": true,
+      "perm_delete_versions": true,
+      "perm_modify": true,
+      "perm_modify_attributes": true,
+      "perm_modify_permissions": true,
+      "perm_reserve": true,
+      "perm_see": true,
+      "perm_see_contents": true,
+      "volume_id": 2000
+    },
+    "6001": {
+      "id": 6001,
+      "favorite": false,
+      "name": "Getting Started",
+      "type": 136,
+      "create_date": "2010-08-23T10:02:35",
+      "create_user_id": 1002,
+      "description": "First information for new employees.",
+      "modify_date": "2010-11-13T07:14:45",
+      "modify_user_id": 1003,
+      "parent_id": 2000,
+      "perm_create": false,
+      "perm_delete": true,
+      "perm_delete_versions": true,
+      "perm_modify": true,
+      "perm_modify_attributes": true,
+      "perm_modify_permissions": false,
+      "perm_reserve": true,
+      "perm_see": true,
+      "perm_see_contents": true,
+      "reserved": false,
+      "reserved_date": null,
+      "reserved_user_id": null,
+      "volume_id": 2000
+    },
+    "6101": {
+      "id": 6101,
+      "favorite": false,
+      "name": "Shortcut to Company Organization.docx",
+      "type": 1,
+      "create_date": "2013-12-02T14:27:31",
+      "create_user_id": 1002,
+      "description": "",
+      "modify_date": "2013-12-21T09:00:12",
+      "modify_user_id": 1001,
+      "original_id": 4101,
+      "parent_id": 6001,
+      "perm_create": true,
+      "perm_delete": true,
+      "perm_delete_versions": true,
+      "perm_modify": true,
+      "perm_modify_attributes": true,
+      "perm_modify_permissions": true,
+      "perm_reserve": true,
+      "perm_see": true,
+      "perm_see_contents": true,
+      "volume_id": 6001
+    },
+    "6102": {
+      "id": 6102,
+      "favorite": false,
+      "name": "Getting Started.mp4",
+      "type": 144,
+      "create_date": "2014-01-02T03:01:23",
+      "create_user_id": 1002,
+      "description": "",
+      "modify_date": "2014-01-03T04:02:05",
+      "modify_user_id": 1003,
+      "parent_id": 6001,
+      "perm_create": true,
+      "perm_delete": true,
+      "perm_delete_versions": true,
+      "perm_modify": true,
+      "perm_modify_attributes": true,
+      "perm_modify_permissions": true,
+      "perm_reserve": true,
+      "perm_see": true,
+      "perm_see_contents": true,
+      "mime_type": "video/mp4",
+      "reserved": false,
+      "reserved_date": null,
+      "reserved_user_id": null,
+      "size": 123456,
+      "volume_id": 6001
+    },
+    "7001": {
+      "id": 7001,
+      "favorite": false,
+      "name": "My wiki container",
+      "type": 5573,
+      "create_date": "2010-08-23T10:02:35",
+      "create_user_id": 1002,
+      "description": "My Wiki container.",
+      "modify_date": "2010-11-13T07:14:45",
+      "modify_user_id": 1000,
+      "parent_id": 2000,
+      "perm_create": true,
+      "perm_delete": true,
+      "perm_delete_versions": true,
+      "perm_modify": true,
+      "perm_modify_attributes": true,
+      "perm_modify_permissions": true,
+      "perm_reserve": true,
+      "perm_see": true,
+      "perm_see_contents": true,
+      "reserved": false,
+      "reserved_date": null,
+      "reserved_user_id": null,
+      "size": 3555,
+      "volume_id": 2000
+    },
+    "7002": {
+      "id": 7002,
+      "favorite": false,
+      "name": "My wiki page",
+      "type": 5574,
+      "create_date": "2010-08-23T10:02:35",
+      "create_user_id": 1002,
+      "description": "Wiki Page",
+      "modify_date": "2010-11-13T07:14:45",
+      "modify_user_id": 1000,
+      "parent_id": 7001,
+      "perm_create": true,
+      "perm_delete": true,
+      "perm_delete_versions": true,
+      "perm_modify": true,
+      "perm_modify_attributes": true,
+      "perm_modify_permissions": true,
+      "perm_reserve": true,
+      "perm_see": true,
+      "perm_see_contents": true,
+      "reserved": false,
+      "reserved_date": null,
+      "reserved_user_id": null,
+      "type_name": "Wiki Page",
+      "size": 123456,
+      "volume_id": -2000
+    },
+    "8001": {
+      "id": 8001,
+      "favorite": false,
+      "name": "001 MY Organization.docx",
+      "type": 144,
+      "create_date": "2013-12-20T14:27:31",
+      "create_user_id": 1000,
+      "description": "",
+      "modify_date": "2015-02-12T09:32:23",
+      "modify_user_id": 1002,
+      "parent_id": 2000,
+      "perm_create": true,
+      "perm_delete": true,
+      "perm_delete_versions": true,
+      "perm_modify": true,
+      "perm_modify_attributes": true,
+      "perm_modify_permissions": true,
+      "perm_reserve": true,
+      "perm_see": true,
+      "perm_see_contents": true,
+      "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "reserved": false,
+      "reserved_date": null,
+      "reserved_user_id": null,
+      "size": 5678,
+      "volume_id": -2000
+    }
+  },
+  "nodePerspectives": {
+    "3001": "tabbed.test",
+    "3002": "tabbed-flow.test",
+    "3003": "default.container-grid",
+    "3004": "container.lc_recently.accessed",
+    "3005": "container.with.recently.accessed.and.favorites",
+    "3006": "tabbed.test",
+    "4001": "container.with.tiles",
+    "5001": "container.with.recently.accessed"
+  },
+  "assignmentMetadata": {
+    "assignments": {
+      "date_due": {
+        "include_time": true,
+        "key": "date_due",
+        "name": "Due Date",
+        "read_only": true,
+        "required": false,
+        "type": -7,
+        "type_name": "Date"
+      },
+      "from_user_id": {
+        "key": "from_user_id",
+        "name": "From",
+        "read_only": false,
+        "required": false,
+        "type": 2,
+        "type_name": "Integer"
+      },
+      "assigned_member_id": {
+        "key": "assigned_member_id",
+        "name": "Assigned To",
+        "read_only": false,
+        "required": false,
+        "type": 2,
+        "type_name": "Integer"
+      },
+      "attachment_id": {
+        "key": "attachment_id",
+        "name": "Add Content Server Attachment:",
+        "read_only": false,
+        "required": false,
+        "type": 2,
+        "type_name": "Integer"
+      },
+      "create_date": {
+        "include_time": true,
+        "key": "create_date",
+        "name": "Created",
+        "read_only": true,
+        "required": false,
+        "type": -7,
+        "type_name": "Date"
+      },
+      "create_user_id": {
+        "key": "create_user_id",
+        "name": "Created By",
+        "read_only": false,
+        "required": false,
+        "type": 2,
+        "type_name": "Integer"
+      },
+      "description": {
+        "key": "description",
+        "name": "Description",
+        "read_only": false,
+        "required": false,
+        "type": -1,
+        "type_name": "String"
+      },
+      "id": {
+        "key": "id",
+        "name": "ID",
+        "read_only": false,
+        "required": false,
+        "type": 2,
+        "type_name": "Integer"
+      },
+      "milestone_id": {
+        "key": "milestone_id",
+        "name": "Milestone",
+        "read_only": false,
+        "required": false,
+        "type": 2,
+        "type_name": "Integer"
+      },
+      "modify_date": {
+        "include_time": true,
+        "key": "modify_date",
+        "name": "Modified",
+        "read_only": true,
+        "required": false,
+        "type": -7,
+        "type_name": "Date"
+      },
+      "modify_user_id": {
+        "key": "modify_user_id",
+        "name": "Modified By",
+        "read_only": false,
+        "required": false,
+        "type": 2,
+        "type_name": "Integer"
+      },
+      "name": {
+        "key": "name",
+        "name": "Name",
+        "read_only": false,
+        "required": false,
+        "type": -1,
+        "type_name": "String"
+      },
+      "owner_group_id": {
+        "key": "owner_group_id",
+        "name": "Owned By",
+        "read_only": false,
+        "required": false,
+        "type": 2,
+        "type_name": "Integer"
+      },
+      "owner_user_id": {
+        "key": "owner_user_id",
+        "name": "Owned By",
+        "read_only": false,
+        "required": false,
+        "type": 2,
+        "type_name": "Integer"
+      },
+      "parent_id": {
+        "key": "parent_id",
+        "name": "Location",
+        "read_only": false,
+        "required": false,
+        "type": 2,
+        "type_name": "Integer"
+      },
+      "priority": {
+        "key": "priority",
+        "name": "Priority",
+        "read_only": false,
+        "required": false,
+        "type": 2,
+        "type_name": "Integer"
+      },
+      "start_date": {
+        "include_time": true,
+        "key": "start_date",
+        "name": "Started Date",
+        "read_only": false,
+        "required": false,
+        "type": -7,
+        "type_name": "Date"
+      },
+      "status": {
+        "key": "status",
+        "name": "Status",
+        "read_only": false,
+        "required": false,
+        "type": 2,
+        "type_name": "Integer"
+      },
+      "type": {
+        "key": "type",
+        "name": "Type",
+        "read_only": true,
+        "required": false,
+        "type": 2,
+        "type_name": "Integer"
+      },
+      "type_name": {
+        "key": "type_name",
+        "name": "Type",
+        "read_only": true,
+        "required": false,
+        "type": -1,
+        "type_name": "String"
+      }
+    }
+  },
+  "assignments": {
+    "69000": {
+      "assignments": {
+        "date_due": "2015-09-01T14:00:00",
+        "from_user_id": 1000,
+        "assigned_member_id": 69984,
+        "create_date": "2015-03-10T14:03:51",
+        "create_user_id": 1000,
+        "id": 69000,
+        "milestone_id": 70005,
+        "modify_date": "2015-03-10T14:05:05",
+        "modify_user_id": 1000,
+        "name": "Project Sprinkler Charter",
+        "owner_group_id": 2426,
+        "owner_user_id": 1000,
+        "parent_id": 69988,
+        "priority": 50,
+        "start_date": "2015-03-10T14:03:05",
+        "status": 0,
+        "type": 206,
+        "type_name": "Task"
+      }
+    },
+    "68993": {
+      "assignments": {
+        "date_due": null,
+        "from_user_id": 1001,
+        "assigned_member_id": 64151,
+        "create_date": "2015-03-09T13:36:28",
+        "create_user_id": 1000,
+        "id": 68993,
+        "instructions": "",
+        "milestone_id": 0,
+        "modify_date": "2015-03-09T13:37:24",
+        "modify_user_id": 1000,
+        "name": "Repair Noa Classic",
+        "owner_group_id": 2426,
+        "owner_user_id": 1000,
+        "parent_id": 69551,
+        "priority": 100,
+        "start_date": "2015-03-09T13:35:16",
+        "status": 0,
+        "type": 206,
+        "type_name": "Task"
+      }
+    },
+    "69443": {
+      "assignments": {
+        "date_due": "2015-03-11T11:00:00",
+        "from_user_id": 1002,
+        "assigned_member_id": 64151,
+        "create_date": "2015-03-10T11:24:49",
+        "create_user_id": 1000,
+        "id": 69433,
+        "instructions": "Determine the Color for Shovel Handle",
+        "milestone_id": 69220,
+        "modify_date": "2015-03-10T11:42:02",
+        "modify_user_id": 1000,
+        "name": "Determine Optimal Color for Trowel Handle",
+        "owner_group_id": 2426,
+        "owner_user_id": 1000,
+        "parent_id": 68341,
+        "priority": 0,
+        "start_date": "2015-03-10T11:24:04",
+        "status": 0,
+        "type": 206,
+        "type_name": "Task"
+      }
+    },
+    "69001": {
+      "assignments": {
+        "date_due": "2015-03-28T09:43:44",
+        "from_user_id": 1003,
+        "create_date": null,
+        "create_user_id": null,
+        "id": 69001,
+        "modify_date": null,
+        "modify_user_id": null,
+        "name": "neil user step",
+        "owner_group_id": null,
+        "owner_user_id": null,
+        "parent_id": null,
+        "type": 153,
+        "type_name": null
+      }
+    },
+    "69002": {
+      "assignments": {
+        "date_due": "2015-03-28T09:42:24",
+        "from_user_id": 1000,
+        "create_date": null,
+        "create_user_id": null,
+        "id": 69002,
+        "modify_date": null,
+        "modify_user_id": null,
+        "name": "neil",
+        "owner_group_id": null,
+        "owner_user_id": null,
+        "parent_id": null,
+        "type": 153,
+        "type_name": null
+      }
+    },
+    "69003": {
+      "assignments": {
+        "date_due": "2015-06-18T14:54:08",
+        "from_user_id": 1001,
+        "create_date": null,
+        "create_user_id": null,
+        "id": 69003,
+        "modify_date": null,
+        "modify_user_id": null,
+        "name": "Install Pump X432 at Customer Site",
+        "owner_group_id": null,
+        "owner_user_id": null,
+        "parent_id": null,
+        "type": 153,
+        "type_name": null
+      }
+    },
+    "69004": {
+      "assignments": {
+        "date_due": "2015-06-19T14:54:08",
+        "from_user_id": 1002,
+        "create_date": null,
+        "create_user_id": null,
+        "id": 69004,
+        "modify_date": null,
+        "modify_user_id": null,
+        "name": "Install Pump X433 at Customer Site",
+        "owner_group_id": null,
+        "owner_user_id": null,
+        "parent_id": null,
+        "type": 153,
+        "type_name": null
+      }
+    },
+    "69005": {
+      "assignments": {
+        "date_due": "2015-06-20T14:54:08",
+        "from_user_id": 1003,
+        "create_date": null,
+        "create_user_id": null,
+        "id": 69005,
+        "modify_date": null,
+        "modify_user_id": null,
+        "name": "Install Pump X434 at Customer Site",
+        "owner_group_id": null,
+        "owner_user_id": null,
+        "parent_id": null,
+        "type": 153,
+        "type_name": null
+      }
+    }
+  },
+  "searchSlices": {
+    "data": {
+      "slice": 3537
+    },
+    "options": {
+      "fields": {
+        "slice": {
+          "label": "Search in:",
+          "optionLabels": [
+            "Enterprise",
+            "Enterprise [All Versions]"
+          ],
+          "type": "select"
+        }
+      }
+    },
+    "schema": {
+      "properties": {
+        "slice": {
+          "enum": [
+            3537,
+            3540
+          ],
+          "required": true
+        }
+      }
+    }
+  },
+  "searchSortLinks": {
+    "asc_create_date": {
+      "name": "Create At (Ascending)"
+    },
+    "asc_modify_date": {
+      "name": "Modified At (Ascending)"
+    },
+    "asc_name": {
+      "name": "Name (Ascending)"
+    },
+    "asc_size": {
+      "name": "Size (Ascending)"
+    },
+    "desc_create_date": {
+      "name": "Create At (Descending)"
+    },
+    "desc_modify_date": {
+      "name": "Modified At (Descending)"
+    },
+    "desc_name": {
+      "name": "Name (Descending)"
+    },
+    "desc_size": {
+      "name": "Size (Descending)"
+    },
+    "relevance": {
+      "name": "Relevance"
+    }
+  },
+  "relatedSalesOpportunities": [
+    {
+      "id": "120001",
+      "name": "Robotic Lawn Mower - HomeDep.",
+      "size": "1000 Items",
+      "categories": {
+        "sales_opportunity": {
+          "key": "SOPP-06478",
+          "price": "84,500.00",
+          "currency": "EUR",
+          "stage": "6. Create Price Proposal",
+          "closed_date": "09/05/2014"
+        }
+      }
+    },
+    {
+      "id": "120002",
+      "name": "Water Pumps - HomeDep.",
+      "size": "1500 Items",
+      "categories": {
+        "sales_opportunity": {
+          "key": "SOPP-06477",
+          "price": "12,000.00",
+          "currency": "EUR",
+          "stage": "5. Make Offer",
+          "closed_date": "05/23/2014"
+        }
+      }
+    },
+    {
+      "id": "120003",
+      "name": "Complete Sprinkler System",
+      "size": "1000 Items",
+      "categories": {
+        "sales_opportunity": {
+          "key": "SOPP-06479",
+          "price": "56,700.00",
+          "currency": "EUR",
+          "stage": "7. Sign Contract",
+          "closed_date": "06/12/2014"
+        }
+      }
+    },
+    {
+      "id": "120004",
+      "name": "Chainsaw Spare Parts",
+      "size": "800 Items",
+      "categories": {
+        "sales_opportunity": {
+          "key": "SOPP-06476",
+          "price": "3,500.00",
+          "currency": "EUR",
+          "stage": "4. Gather Requirements",
+          "closed_date": "09/11/2014"
+        }
+      }
+    },
+    {
+      "id": "120005",
+      "name": "Hobby Tools",
+      "size": "500 Items",
+      "categories": {
+        "sales_opportunity": {
+          "key": "SOPP-06475",
+          "price": "2,500.00",
+          "currency": "EUR",
+          "stage": "3. Make Contact",
+          "closed_date": "08/07/2014"
+        }
+      }
+    }
+  ],
+  "relatedProducts": [
+    {
+      "id": "120011",
+      "name": "Robotic Lawn Mower R40LI (4071)",
+      "categories": {
+        "product": {
+          "type": "GardenCare Product",
+          "price": "1645.00 EUR"
+        }
+      }
+    },
+    {
+      "id": "120012",
+      "name": "Robotic Lawn Mower R40LI (4072)",
+      "categories": {
+        "product": {
+          "type": "GardenCare Product",
+          "price": "1690.00 EUR"
+        }
+      }
+    },
+    {
+      "id": "120013",
+      "name": "Complete Sprinkler System (2720-20)",
+      "categories": {
+        "product": {
+          "type": "GardenCare Product",
+          "price": "321.00 EUR"
+        }
+      }
+    },
+    {
+      "id": "120014",
+      "name": "Complete Sprinkler System (2720-30)",
+      "categories": {
+        "product": {
+          "type": "GardenCare Product",
+          "price": "345.00 EUR"
+        }
+      }
+    },
+    {
+      "id": "120015",
+      "name": "Water Pump - W90 (4400)",
+      "categories": {
+        "product": {
+          "type": "GardenCare Product",
+          "price": "135.00 EUR"
+        }
+      }
+    }
+  ],
+  "relatedSalesOrders": [
+    {
+      "id": "120021",
+      "name": "AquaControur Automatic Set (2708-20)",
+      "categories": {
+        "sales_order": {
+          "type": "GardenCare Product",
+          "status": "On Track",
+          "target_date": "09/05/2014"
+        }
+      }
+    },
+    {
+      "id": "120022",
+      "name": "Water Pump - W90 (4400)",
+      "categories": {
+        "sales_order": {
+          "type": "GardenCare Product",
+          "status": "Delivered",
+          "target_date": "03/05/2014"
+        }
+      }
+    },
+    {
+      "id": "120023",
+      "name": "Water Pump - W90 (4400)",
+      "categories": {
+        "sales_order": {
+          "type": "GardenCare Product",
+          "status": "Retour",
+          "target_date": "04/05/2014"
+        }
+      }
+    },
+    {
+      "id": "120024",
+      "name": "Complete Sprinkler System (2720-30)",
+      "categories": {
+        "sales_order": {
+          "type": "GardenCare Product",
+          "status": "On Track",
+          "target_date": "05/23/2014"
+        }
+      }
+    },
+    {
+      "id": "120025",
+      "name": "Complete Sprinkler System (2720-30)",
+      "categories": {
+        "sales_order": {
+          "type": "GardenCare Product",
+          "status": "Delivered",
+          "target_date": "08/05/2014"
+        }
+      }
+    }
+  ],
+  "relatedEmployees": [
+    {
+      "id": "120031",
+      "name": "Armstrong, Liz",
+      "categories": {
+        "employee": {
+          "job": "Account Executive",
+          "photo": "../../prototypes/widgets/related.workspaces/impl/images/liz.png"
+        }
+      }
+    },
+    {
+      "id": "120032",
+      "name": "Bond, Peter",
+      "categories": {
+        "employee": {
+          "job": "Technical Account Manager",
+          "photo": "../../prototypes/widgets/related.workspaces/impl/images/peter.png"
+        }
+      }
+    },
+    {
+      "id": "120033",
+      "name": "Ellison, Harry",
+      "categories": {
+        "employee": {
+          "job": "Sales Manager",
+          "photo": "../../prototypes/widgets/related.workspaces/impl/images/harry.png"
+        }
+      }
+    },
+    {
+      "id": "120034",
+      "name": "Hogan, James",
+      "categories": {
+        "employee": {
+          "job": "Support Representative",
+          "photo": "../../prototypes/widgets/related.workspaces/impl/images/james.png"
+        }
+      }
+    },
+    {
+      "id": "120035",
+      "name": "Stewart, Kristen",
+      "categories": {
+        "employee": {
+          "job": "Accountant",
+          "photo": "../../prototypes/widgets/related.workspaces/impl/images/kristen.png"
+        }
+      }
+    },
+    {
+      "id": "120036",
+      "name": "Wilson, Neil",
+      "categories": {
+        "employee": {
+          "job": "Field Assistant",
+          "photo": "../../prototypes/widgets/related.workspaces/impl/images/neil.png"
+        }
+      }
+    }
+  ],
+  "generalSchema": {
+    "properties": {
+      "name": {
+        "maxLength": 248,
+        "minLength": 1,
+        "readonly": false,
+        "required": true,
+        "title": "Name",
+        "type": "string"
+      },
+      "description": {
+        "readonly": false,
+        "required": false,
+        "title": "Description",
+        "type": "string"
+      },
+      "create_date": {
+        "readonly": true,
+        "required": false,
+        "title": "Created",
+        "type": "string"
+      },
+      "create_user_id": {
+        "readonly": true,
+        "required": false,
+        "title": "Created By",
+        "type": "string"
+      },
+      "type": {
+        "readonly": true,
+        "required": false,
+        "title": "Type",
+        "type": "integer"
+      },
+      "type_name": {
+        "readonly": true,
+        "required": false,
+        "title": "Type",
+        "type": "string"
+      },
+      "modify_date": {
+        "readonly": true,
+        "required": false,
+        "title": "Modified",
+        "type": "string"
+      },
+      "owner_user_id": {
+        "readonly": true,
+        "required": false,
+        "title": "Owned By",
+        "type": "string"
+      }
+    },
+    "type": "object"
+  },
+  "generalOptions": {
+    "fields": {
+      "name": {
+        "hidden": false,
+        "hideInitValidationError": true,
+        "label": "Name",
+        "readonly": false,
+        "type": "text"
+      },
+      "description": {
+        "hidden": false,
+        "hideInitValidationError": true,
+        "label": "Description",
+        "readonly": false,
+        "type": "textarea"
+      },
+      "create_date": {
+        "hidden": false,
+        "hideInitValidationError": true,
+        "label": "Created",
+        "readonly": true,
+        "type": "datetime"
+      },
+      "create_user_id": {
+        "hidden": false,
+        "hideInitValidationError": true,
+        "label": "Created By",
+        "readonly": true,
+        "type": "text"
+      },
+      "type": {
+        "hidden": true,
+        "hideInitValidationError": true,
+        "label": "Type",
+        "readonly": true,
+        "type": "integer"
+      },
+      "type_name": {
+        "hidden": false,
+        "hideInitValidationError": true,
+        "label": "Type",
+        "readonly": true,
+        "type": "text"
+      },
+      "modify_date": {
+        "hidden": false,
+        "hideInitValidationError": true,
+        "label": "Modified",
+        "readonly": true,
+        "type": "datetime"
+      },
+      "owner_user_id": {
+        "hidden": false,
+        "hideInitValidationError": true,
+        "label": "Owned By",
+        "readonly": true,
+        "type": "text"
+      }
+    }
+  },
+  "versionSchema": {
+    "properties": {
+      "name": {
+        "maxLength": 248,
+        "minLength": 1,
+        "readonly": false,
+        "required": true,
+        "title": "Name",
+        "type": "string"
+      },
+      "create_date": {
+        "readonly": true,
+        "required": false,
+        "title": "Created",
+        "type": "string"
+      },
+      "create_user_id": {
+        "readonly": true,
+        "required": false,
+        "title": "Created By",
+        "type": "string"
+      },
+      "type_name": {
+        "readonly": true,
+        "required": false,
+        "title": "Type",
+        "type": "string"
+      },
+      "modify_date": {
+        "readonly": true,
+        "required": false,
+        "title": "Modified",
+        "type": "string"
+      },
+      "owner_user_id": {
+        "readonly": true,
+        "required": false,
+        "title": "Owned By",
+        "type": "string"
+      },
+      "size": {
+        "readonly": true,
+        "required": false,
+        "title": "Size",
+        "type": "string"
+      }
+    },
+    "type": "object"
+  },
+  "versionOptions": {
+    "fields": {
+      "name": {
+        "hidden": false,
+        "hideInitValidationError": true,
+        "label": "Name",
+        "readonly": false,
+        "type": "text"
+      },
+      "create_date": {
+        "hidden": false,
+        "hideInitValidationError": true,
+        "label": "Created",
+        "readonly": true,
+        "type": "datetime"
+      },
+      "create_user_id": {
+        "hidden": false,
+        "hideInitValidationError": true,
+        "label": "Created By",
+        "readonly": true,
+        "type": "text"
+      },
+      "type_name": {
+        "hidden": false,
+        "hideInitValidationError": true,
+        "label": "Type",
+        "readonly": true,
+        "type": "text"
+      },
+      "modify_date": {
+        "hidden": false,
+        "hideInitValidationError": true,
+        "label": "Modified",
+        "readonly": true,
+        "type": "datetime"
+      },
+      "owner_user_id": {
+        "hidden": false,
+        "hideInitValidationError": true,
+        "label": "Owned By",
+        "readonly": true,
+        "type": "text"
+      },
+      "size": {
+        "hidden": false,
+        "hideInitValidationError": true,
+        "label": "Size",
+        "readonly": true,
+        "type": "text"
+      }
+    }
+  },
+  "categories": {
+    "data": [
+      {
+        "id": 1361773,
+        "name": "00All- attribute types",
+        "cell_metadata": {
+          "data": {
+            "menu": "api\/v1\/nodes\/1258752\/categories\/1361773\/actions"
+          },
+          "definitions": {
+            "menu": {
+              "body": "",
+              "content_type": "",
+              "display_hint": "menu",
+              "display_href": "",
+              "handler": "menu",
+              "image": "",
+              "method": "GET",
+              "name": "",
+              "parameters": {},
+              "tab_href": ""
+            }
+          }
+        },
+        "menu": null
+      }
+    ]
+  },
+  "categoryData": {
+    "1361773_2": "2016-06-24T00:00:00",
+    "1361773_3": 18,
+    "1361773_4": null,
+    "1361773_5": null,
+    "1361773_6": "2016-07-10T20:30:00",
+    "1361773_7": 1,
+    "1361773_8": "a",
+    "1361773_9": 1001,
+    "1361773_10": [
+      "2016-07-11T00:00:00",
+      null
+    ],
+    "1361773_11": [
+      1,
+      89,
+      899
+    ],
+    "1361773_12": [
+      "c",
+      "b"
+    ],
+    "1361773_13": [
+      1000
+    ],
+    "1361773_14": [
+      "2016-06-09T20:30:00"
+    ],
+    "1361773_15": [
+      4,
+      7,
+      88
+    ],
+    "1361773_16": [
+      "b"
+    ],
+    "1361773_17": [
+      1002,
+      1000,
+      1004
+    ],
+    "1361773_18": [
+      {
+        "1361773_18_x_19": "w",
+        "1361773_18_x_20": null,
+        "1361773_18_x_21": false,
+        "1361773_18_x_22": "2017-10-18T04:13:07",
+        "1361773_18_x_23": 1002
+      },
+      {
+        "1361773_18_x_19": "t",
+        "1361773_18_x_20": null,
+        "1361773_18_x_21": false,
+        "1361773_18_x_22": "2017-07-13T05:25:41",
+        "1361773_18_x_23": 1000
+      }
+    ],
+    "1361773_24": [
+      {
+        "1361773_24_x_25": "2016-06-15T16:20:00",
+        "1361773_24_x_26": "gjjjjjjjjjjjjjjjjjjj",
+        "1361773_24_x_27": [
+          2
+        ],
+        "1361773_24_x_28": 1001
+      },
+      {
+        "1361773_24_x_25": "2017-04-04T04:05:01",
+        "1361773_24_x_26": "t",
+        "1361773_24_x_27": [
+          4
+        ],
+        "1361773_24_x_28": 1003
+      }
+    ],
+    "1361773_29": [
+      {
+        "1361773_29_x_30": null,
+        "1361773_29_x_31": true,
+        "1361773_29_x_32": "2017-07-28T00:00:00"
+      }
+    ],
+    "1361773_33": [
+      {
+        "1361773_33_x_34": "2017-08-31T03:00:00",
+        "1361773_33_x_35": null
+      }
+    ],
+    "1361773_18_1": null,
+    "1361773_18_2": null,
+    "1361773_24_1": null,
+    "1361773_24_2": null,
+    "1361773_29_1": null,
+    "1361773_33_1": null
+  },
+  "categoryOptions": {
+    "fields": {
+      "1361773_2": {
+        "hidden": false,
+        "hideInitValidationError": true,
+        "label": "Date: Field",
+        "readonly": false,
+        "type": "date"
+      },
+      "1361773_3": {
+        "hidden": false,
+        "hideInitValidationError": true,
+        "label": "Integer: Field",
+        "readonly": false,
+        "type": "integer"
+      },
+      "1361773_4": {
+        "hidden": false,
+        "hideInitValidationError": true,
+        "label": "Text: Popup",
+        "readonly": false,
+        "type": "select"
+      },
+      "1361773_5": {
+        "hidden": false,
+        "hideInitValidationError": true,
+        "label": "User: Field",
+        "readonly": false,
+        "type": "otcs_member_picker"
+      },
+      "1361773_6": {
+        "hidden": false,
+        "hideInitValidationError": true,
+        "label": "Date: Field -req",
+        "readonly": false,
+        "type": "datetime"
+      },
+      "1361773_7": {
+        "hidden": false,
+        "hideInitValidationError": true,
+        "label": "Integer: Field  req",
+        "readonly": false,
+        "type": "integer"
+      },
+      "1361773_8": {
+        "hidden": false,
+        "hideInitValidationError": true,
+        "label": "Text: Popup req",
+        "readonly": false,
+        "type": "select"
+      },
+      "1361773_9": {
+        "hidden": false,
+        "hideInitValidationError": true,
+        "label": "User: Field req",
+        "readonly": false,
+        "type": "otcs_member_picker",
+        "type_control": {
+          "action": "api\/v1\/members",
+          "method": "GET",
+          "name": "Navya Kuchana (navya)",
+          "parameters": {
+            "filter_types": [
+              0,
+              1
+            ],
+            "select_types": [
+              0,
+              1
+            ]
+          }
+        }
+      },
+      "1361773_10": {
+        "fields": {
+          "item": {
+            "type": "date"
+          }
+        },
+        "hidden": false,
+        "hideInitValidationError": true,
+        "items": {
+          "showMoveDownItemButton": false,
+          "showMoveUpItemButton": false
+        },
+        "label": "Date: Field  MV",
+        "readonly": false,
+        "toolbarSticky": true
+      },
+      "1361773_11": {
+        "fields": {
+          "item": {
+            "type": "integer"
+          }
+        },
+        "hidden": false,
+        "hideInitValidationError": true,
+        "items": {
+          "showMoveDownItemButton": false,
+          "showMoveUpItemButton": false
+        },
+        "label": "Integer: Field MV",
+        "readonly": false,
+        "toolbarSticky": true
+      },
+      "1361773_12": {
+        "fields": {
+          "item": {
+            "type": "select"
+          }
+        },
+        "hidden": false,
+        "hideInitValidationError": true,
+        "items": {
+          "showMoveDownItemButton": false,
+          "showMoveUpItemButton": false
+        },
+        "label": "Text: Popup MV",
+        "readonly": false,
+        "toolbarSticky": true
+      },
+      "1361773_13": {
+        "fields": {
+          "item": {
+            "type": "otcs_member_picker",
+            "type_control": {
+              "18092": {
+                "action": "api\/v1\/members",
+                "method": "GET",
+                "name": "dcs_fwork_user",
+                "parameters": {
+                  "filter_types": [
+                    0,
+                    1
+                  ],
+                  "select_types": [
+                    0,
+                    1
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "hidden": false,
+        "hideInitValidationError": true,
+        "items": {
+          "showMoveDownItemButton": false,
+          "showMoveUpItemButton": false
+        },
+        "label": "User: Field MV",
+        "readonly": false,
+        "toolbarSticky": true
+      },
+      "1361773_14": {
+        "fields": {
+          "item": {
+            "type": "datetime"
+          }
+        },
+        "hidden": false,
+        "hideInitValidationError": true,
+        "items": {
+          "showMoveDownItemButton": false,
+          "showMoveUpItemButton": false
+        },
+        "label": "Date: Field  MV req",
+        "readonly": false,
+        "toolbarSticky": true
+      },
+      "1361773_15": {
+        "fields": {
+          "item": {
+            "type": "integer"
+          }
+        },
+        "hidden": false,
+        "hideInitValidationError": true,
+        "items": {
+          "showMoveDownItemButton": false,
+          "showMoveUpItemButton": false
+        },
+        "label": "Integer: Field MV req",
+        "readonly": false,
+        "toolbarSticky": true
+      },
+      "1361773_16": {
+        "fields": {
+          "item": {
+            "type": "select"
+          }
+        },
+        "hidden": false,
+        "hideInitValidationError": true,
+        "items": {
+          "showMoveDownItemButton": false,
+          "showMoveUpItemButton": false
+        },
+        "label": "Text: Popup MV req",
+        "readonly": false,
+        "toolbarSticky": true
+      },
+      "1361773_17": {
+        "fields": {
+          "item": {
+            "type": "otcs_member_picker",
+            "type_control": {
+              "1000": {
+                "action": "api\/v1\/members",
+                "method": "GET",
+                "name": "Admin",
+                "parameters": {
+                  "filter_types": [
+                    0,
+                    1
+                  ],
+                  "select_types": [
+                    0,
+                    1
+                  ]
+                }
+              },
+              "208721": {
+                "action": "api\/v1\/members",
+                "method": "GET",
+                "name": "Johann Jakob Sulzer-Neuffert (Johann)",
+                "parameters": {
+                  "filter_types": [
+                    0,
+                    1
+                  ],
+                  "select_types": [
+                    0,
+                    1
+                  ]
+                }
+              },
+              "5030229": {
+                "action": "api\/v1\/members",
+                "method": "GET",
+                "name": "Ninja",
+                "parameters": {
+                  "filter_types": [
+                    0,
+                    1
+                  ],
+                  "select_types": [
+                    0,
+                    1
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "hidden": false,
+        "hideInitValidationError": true,
+        "items": {
+          "showMoveDownItemButton": false,
+          "showMoveUpItemButton": false
+        },
+        "label": "User: Field MV req",
+        "readonly": false,
+        "toolbarSticky": true
+      },
+      "1361773_18": {
+        "fields": {
+          "item": {
+            "fields": {
+              "1361773_18_x_19": {
+                "hidden": false,
+                "hideInitValidationError": true,
+                "label": "Text: Popup",
+                "readonly": false,
+                "type": "select"
+              },
+              "1361773_18_x_20": {
+                "hidden": false,
+                "hideInitValidationError": true,
+                "label": "Integer: Field",
+                "readonly": false,
+                "type": "integer"
+              },
+              "1361773_18_x_21": {
+                "hidden": false,
+                "hideInitValidationError": true,
+                "label": "Flag: Checkbox",
+                "readonly": false,
+                "type": "checkbox"
+              },
+              "1361773_18_x_22": {
+                "hidden": false,
+                "hideInitValidationError": true,
+                "label": "Date: Field",
+                "readonly": false,
+                "type": "datetime"
+              },
+              "1361773_18_x_23": {
+                "hidden": false,
+                "hideInitValidationError": true,
+                "label": "User: Field",
+                "readonly": false,
+                "type": "otcs_member_picker",
+                "type_control": {
+                  "34165": {
+                    "action": "api\/v1\/members",
+                    "method": "GET",
+                    "name": "Adding Theme (Theme_add)",
+                    "parameters": {
+                      "filter_types": [
+                        0,
+                        1
+                      ],
+                      "select_types": [
+                        0,
+                        1
+                      ]
+                    }
+                  },
+                  "205790": {
+                    "action": "api\/v1\/members",
+                    "method": "GET",
+                    "name": "Alexander Kornhardt (akornhar)",
+                    "parameters": {
+                      "filter_types": [
+                        0,
+                        1
+                      ],
+                      "select_types": [
+                        0,
+                        1
+                      ]
+                    }
+                  }
+                }
+              }
+            },
+            "type": "object"
+          }
+        },
+        "hideInitValidationError": true,
+        "items": {
+          "showMoveDownItemButton": false,
+          "showMoveUpItemButton": false
+        },
+        "label": "Set",
+        "toolbarSticky": true
+      },
+      "1361773_24": {
+        "fields": {
+          "item": {
+            "fields": {
+              "1361773_24_x_26": {
+                "hidden": false,
+                "hideInitValidationError": true,
+                "label": "Text: Field req",
+                "readonly": false,
+                "type": "text"
+              },
+              "1361773_24_x_25": {
+                "hidden": false,
+                "hideInitValidationError": true,
+                "label": "Date: Field req",
+                "readonly": false,
+                "type": "datetime"
+              },
+              "1361773_24_x_27": {
+                "fields": {
+                  "item": {
+                    "type": "select"
+                  }
+                },
+                "hidden": false,
+                "hideInitValidationError": true,
+                "items": {
+                  "showMoveDownItemButton": false,
+                  "showMoveUpItemButton": false
+                },
+                "label": "Integer: Popup req",
+                "readonly": false,
+                "toolbarSticky": true
+              },
+              "1361773_24_x_28": {
+                "hidden": false,
+                "hideInitValidationError": true,
+                "label": "User: Field req",
+                "readonly": false,
+                "type": "otcs_member_picker",
+                "type_control": {
+                  "12039": {
+                    "action": "api\/v1\/members",
+                    "method": "GET",
+                    "name": "CCSearch",
+                    "parameters": {
+                      "filter_types": [
+                        0,
+                        1
+                      ],
+                      "select_types": [
+                        0,
+                        1
+                      ]
+                    }
+                  },
+                  "54630": {
+                    "action": "api\/v1\/members",
+                    "method": "GET",
+                    "name": "dataflow_link_user1",
+                    "parameters": {
+                      "filter_types": [
+                        0,
+                        1
+                      ],
+                      "select_types": [
+                        0,
+                        1
+                      ]
+                    }
+                  }
+                }
+              }
+            },
+            "type": "object"
+          }
+        },
+        "hideInitValidationError": true,
+        "items": {
+          "showMoveDownItemButton": false,
+          "showMoveUpItemButton": false
+        },
+        "label": "Set - req",
+        "toolbarSticky": true
+      },
+      "1361773_29": {
+        "fields": {
+          "item": {
+            "fields": {
+              "1361773_29_x_30": {
+                "hidden": false,
+                "hideInitValidationError": true,
+                "label": "Int",
+                "readonly": false,
+                "type": "integer"
+              },
+              "1361773_29_x_31": {
+                "hidden": false,
+                "hideInitValidationError": true,
+                "label": "Flag",
+                "readonly": false,
+                "type": "checkbox"
+              },
+              "1361773_29_x_32": {
+                "hidden": false,
+                "hideInitValidationError": true,
+                "label": "Date-popup",
+                "optionLabels": [
+                  "2017-07-19",
+                  "2017-07-15",
+                  "2017-07-28",
+                  "2017-08-22",
+                  "2017-08-24"
+                ],
+                "readonly": false,
+                "type": "select"
+              }
+            },
+            "type": "object"
+          }
+        },
+        "hideInitValidationError": true,
+        "items": {
+          "showMoveDownItemButton": false,
+          "showMoveUpItemButton": false
+        },
+        "label": "Set with 3 attributes",
+        "toolbarSticky": true
+      },
+      "1361773_33": {
+        "fields": {
+          "item": {
+            "fields": {
+              "1361773_33_x_34": {
+                "hidden": false,
+                "hideInitValidationError": true,
+                "label": "Date&Time",
+                "readonly": false,
+                "type": "datetime"
+              },
+              "1361773_33_x_35": {
+                "hidden": false,
+                "hideInitValidationError": true,
+                "label": "Text-multi-line",
+                "readonly": false,
+                "type": "textarea"
+              }
+            },
+            "type": "object"
+          }
+        },
+        "hideInitValidationError": true,
+        "items": {
+          "showMoveDownItemButton": false,
+          "showMoveUpItemButton": false
+        },
+        "label": "Set with 2 attributes",
+        "toolbarSticky": true
+      },
+      "1361773_18_1": {
+        "hidden": true
+      },
+      "1361773_18_2": {
+        "hidden": true
+      },
+      "1361773_24_1": {
+        "hidden": true
+      },
+      "1361773_24_2": {
+        "hidden": true
+      },
+      "1361773_29_1": {
+        "hidden": true
+      },
+      "1361773_33_1": {
+        "hidden": true
+      }
+    },
+    "form": {
+      "attributes": {
+        "action": "api\/v1\/nodes\/1258752\/categories\/1361773",
+        "method": "PUT"
+      },
+      "renderForm": true
+    }
+  },
+  "categorySchema": {
+    "properties": {
+      "1361773_2": {
+        "readonly": false,
+        "required": false,
+        "title": "Date: Field",
+        "type": "string"
+      },
+      "1361773_3": {
+        "readonly": false,
+        "required": false,
+        "title": "Integer: Field",
+        "type": "integer"
+      },
+      "1361773_4": {
+        "enum": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ],
+        "readonly": false,
+        "required": false,
+        "title": "Text: Popup",
+        "type": "string"
+      },
+      "1361773_5": {
+        "readonly": false,
+        "required": false,
+        "title": "User: Field",
+        "type": "otcs_member_picker"
+      },
+      "1361773_6": {
+        "readonly": false,
+        "required": true,
+        "title": "Date: Field -req",
+        "type": "string"
+      },
+      "1361773_7": {
+        "readonly": false,
+        "required": true,
+        "title": "Integer: Field  req",
+        "type": "integer"
+      },
+      "1361773_8": {
+        "enum": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "readonly": false,
+        "required": true,
+        "title": "Text: Popup req",
+        "type": "string"
+      },
+      "1361773_9": {
+        "readonly": false,
+        "required": true,
+        "title": "User: Field req",
+        "type": "otcs_member_picker"
+      },
+      "1361773_10": {
+        "items": {
+          "defaultItems": 1,
+          "maxItems": 5,
+          "minItems": 1,
+          "type": "string"
+        },
+        "readonly": false,
+        "required": false,
+        "title": "Date: Field  MV",
+        "type": "array"
+      },
+      "1361773_11": {
+        "items": {
+          "defaultItems": 1,
+          "maxItems": 5,
+          "minItems": 1,
+          "type": "integer"
+        },
+        "readonly": false,
+        "required": false,
+        "title": "Integer: Field MV",
+        "type": "array"
+      },
+      "1361773_12": {
+        "items": {
+          "defaultItems": 1,
+          "enum": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "maxItems": 4,
+          "minItems": 1,
+          "type": "string"
+        },
+        "readonly": false,
+        "required": false,
+        "title": "Text: Popup MV",
+        "type": "array"
+      },
+      "1361773_13": {
+        "items": {
+          "defaultItems": 1,
+          "maxItems": 5,
+          "minItems": 1,
+          "type": "otcs_member_picker"
+        },
+        "readonly": false,
+        "required": false,
+        "title": "User: Field MV",
+        "type": "array"
+      },
+      "1361773_14": {
+        "items": {
+          "defaultItems": 1,
+          "maxItems": 5,
+          "minItems": 1,
+          "type": "string"
+        },
+        "readonly": false,
+        "required": true,
+        "title": "Date: Field  MV req",
+        "type": "array"
+      },
+      "1361773_15": {
+        "items": {
+          "defaultItems": 1,
+          "maxItems": 5,
+          "minItems": 1,
+          "type": "integer"
+        },
+        "readonly": false,
+        "required": true,
+        "title": "Integer: Field MV req",
+        "type": "array"
+      },
+      "1361773_16": {
+        "items": {
+          "defaultItems": 1,
+          "enum": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "maxItems": 3,
+          "minItems": 1,
+          "type": "string"
+        },
+        "readonly": false,
+        "required": true,
+        "title": "Text: Popup MV req",
+        "type": "array"
+      },
+      "1361773_17": {
+        "items": {
+          "defaultItems": 1,
+          "maxItems": 5,
+          "minItems": 1,
+          "type": "otcs_member_picker"
+        },
+        "readonly": false,
+        "required": true,
+        "title": "User: Field MV req",
+        "type": "array"
+      },
+      "1361773_18": {
+        "items": {
+          "defaultItems": 1,
+          "maxItems": 5,
+          "minItems": 1,
+          "properties": {
+            "1361773_18_x_19": {
+              "enum": [
+                "q",
+                "w",
+                "e",
+                "r",
+                "t"
+              ],
+              "readonly": false,
+              "required": false,
+              "title": "Text: Popup",
+              "type": "string"
+            },
+            "1361773_18_x_20": {
+              "readonly": false,
+              "required": false,
+              "title": "Integer: Field",
+              "type": "integer"
+            },
+            "1361773_18_x_21": {
+              "readonly": false,
+              "required": false,
+              "title": "Flag: Checkbox",
+              "type": "boolean"
+            },
+            "1361773_18_x_22": {
+              "readonly": false,
+              "required": true,
+              "title": "Date: Field",
+              "type": "string"
+            },
+            "1361773_18_x_23": {
+              "readonly": false,
+              "required": true,
+              "title": "User: Field",
+              "type": "otcs_member_picker"
+            }
+          },
+          "type": "object"
+        },
+        "title": "Set",
+        "type": "array"
+      },
+      "1361773_24": {
+        "items": {
+          "maxItems": 2,
+          "minItems": 2,
+          "properties": {
+            "1361773_24_x_26": {
+              "maxLength": 32,
+              "readonly": false,
+              "required": true,
+              "title": "Text: Field req",
+              "type": "string"
+            },
+            "1361773_24_x_25": {
+              "readonly": false,
+              "required": true,
+              "title": "Date: Field req",
+              "type": "string"
+            },
+            "1361773_24_x_27": {
+              "items": {
+                "defaultItems": 3,
+                "enum": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ],
+                "maxItems": 3,
+                "minItems": 1,
+                "type": "integer"
+              },
+              "readonly": false,
+              "required": false,
+              "title": "Integer: Popup req",
+              "type": "array"
+            },
+            "1361773_24_x_28": {
+              "readonly": false,
+              "required": true,
+              "title": "User: Field req",
+              "type": "otcs_member_picker"
+            }
+          },
+          "type": "object"
+        },
+        "title": "Set - req",
+        "type": "array"
+      },
+      "1361773_29": {
+        "items": {
+          "defaultItems": 1,
+          "maxItems": 5,
+          "minItems": 1,
+          "properties": {
+            "1361773_29_x_30": {
+              "readonly": false,
+              "required": false,
+              "title": "Int",
+              "type": "integer"
+            },
+            "1361773_29_x_31": {
+              "readonly": false,
+              "required": false,
+              "title": "Flag",
+              "type": "boolean"
+            },
+            "1361773_29_x_32": {
+              "enum": [
+                "2017-07-19T00:00:00",
+                "2017-07-15T00:00:00",
+                "2017-07-28T00:00:00",
+                "2017-08-22T00:00:00",
+                "2017-08-24T00:00:00"
+              ],
+              "readonly": false,
+              "required": false,
+              "title": "Date-popup",
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "title": "Set with 3 attributes",
+        "type": "array"
+      },
+      "1361773_33": {
+        "items": {
+          "defaultItems": 1,
+          "maxItems": 4,
+          "minItems": 1,
+          "properties": {
+            "1361773_33_x_34": {
+              "readonly": false,
+              "required": true,
+              "title": "Date&Time",
+              "type": "string"
+            },
+            "1361773_33_x_35": {
+              "readonly": false,
+              "required": false,
+              "title": "Text-multi-line",
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "title": "Set with 2 attributes",
+        "type": "array"
+      },
+      "1361773_18_1": {
+        "type": "string"
+      },
+      "1361773_18_2": {
+        "type": "string"
+      },
+      "1361773_24_1": {
+        "type": "string"
+      },
+      "1361773_24_2": {
+        "type": "string"
+      },
+      "1361773_29_1": {
+        "type": "string"
+      },
+      "1361773_33_1": {
+        "type": "string"
+      }
+    },
+    "type": "object"
+  },
+ "allCategories": {
+  "forms":[
+    {
+      "data":{
+        "name":"minion1.jpg",
+        "description":"",
+        "create_date":"2018-04-26T14:15:36",
+        "create_user_id":1000,
+        "type":144,
+        "type_name":"Document",
+        "modify_date":"2018-05-14T16:15:59",
+        "owner_user_id":1000,
+        "reserved_user_id":1000,
+        "reserved_date":"2018-04-30T11:26:55"
+      },
+      "options":{
+        "fields":{
+          "name":{
+            "hidden":false,
+            "hideInitValidationError":true,
+            "label":"Name",
+            "readonly":false,
+            "type":"text"
+          },
+          "description":{
+            "hidden":false,
+            "hideInitValidationError":true,
+            "label":"Description",
+            "readonly":false,
+            "type":"textarea"
+          },
+          "create_date":{
+            "hidden":false,
+            "hideInitValidationError":true,
+            "label":"Created",
+            "readonly":true,
+            "type":"datetime"
+          },
+          "create_user_id":{
+            "hidden":false,
+            "hideInitValidationError":true,
+            "label":"Created By",
+            "readonly":true,
+            "type":"otcs_user_picker",
+            "type_control":{
+              "action":"api\/v1\/members",
+              "method":"GET",
+              "name":"Admin",
+              "parameters":{
+                "filter_types":[
+                  0
+                ],
+                "select_types":[
+                  0
+                ]
+              }
+            }
+          },
+          "type":{
+            "hidden":true,
+            "hideInitValidationError":true,
+            "label":"Type",
+            "readonly":true,
+            "type":"integer"
+          },
+          "type_name":{
+            "hidden":false,
+            "hideInitValidationError":true,
+            "label":"Type",
+            "readonly":true,
+            "type":"text"
+          },
+          "modify_date":{
+            "hidden":false,
+            "hideInitValidationError":true,
+            "label":"Modified",
+            "readonly":true,
+            "type":"datetime"
+          },
+          "owner_user_id":{
+            "hidden":false,
+            "hideInitValidationError":true,
+            "label":"Owned By",
+            "readonly":true,
+            "type":"otcs_user_picker",
+            "type_control":{
+              "action":"api\/v1\/members",
+              "method":"GET",
+              "name":"Admin",
+              "parameters":{
+                "filter_types":[
+                  0
+                ],
+                "select_types":[
+                  0
+                ]
+              }
+            }
+          },
+          "reserved_user_id":{
+            "hidden":false,
+            "hideInitValidationError":true,
+            "label":"Reserved By",
+            "readonly":true,
+            "type":"otcs_member_picker",
+            "type_control":{
+              "action":"api\/v1\/members",
+              "method":"GET",
+              "name":"Admin",
+              "parameters":{
+                "filter_types":[
+                  0,
+                  1
+                ],
+                "select_types":[
+                  0,
+                  1
+                ]
+              }
+            }
+          },
+          "reserved_date":{
+            "hidden":false,
+            "hideInitValidationError":true,
+            "label":"Reserved",
+            "readonly":true,
+            "type":"datetime"
+          }
+        },
+        "form":{
+          "attributes":{
+            "action":"api\/v1\/nodes\/24400",
+            "method":"PUT"
+          },
+          "renderForm":true
+        }
+      },
+      "schema":{
+        "properties":{
+          "name":{
+            "maxLength":248,
+            "minLength":1,
+            "readonly":false,
+            "required":true,
+            "title":"Name",
+            "type":"string"
+          },
+          "description":{
+            "readonly":false,
+            "required":false,
+            "title":"Description",
+            "type":"string"
+          },
+          "create_date":{
+            "readonly":true,
+            "required":false,
+            "title":"Created",
+            "type":"string"
+          },
+          "create_user_id":{
+            "readonly":true,
+            "required":false,
+            "title":"Created By",
+            "type":"otcs_user_picker"
+          },
+          "type":{
+            "readonly":true,
+            "required":false,
+            "title":"Type",
+            "type":"integer"
+          },
+          "type_name":{
+            "readonly":true,
+            "required":false,
+            "title":"Type",
+            "type":"string"
+          },
+          "modify_date":{
+            "readonly":true,
+            "required":false,
+            "title":"Modified",
+            "type":"string"
+          },
+          "owner_user_id":{
+            "readonly":true,
+            "required":false,
+            "title":"Owned By",
+            "type":"otcs_user_picker"
+          },
+          "reserved_user_id":{
+            "readonly":true,
+            "required":false,
+            "title":"Reserved By",
+            "type":"otcs_member_picker"
+          },
+          "reserved_date":{
+            "readonly":true,
+            "required":false,
+            "title":"Reserved",
+            "type":"string"
+          }
+        },
+        "type":"object"
+      }
+    },
+    {
+      "data":{
+        "6390":{
+          "6390_3":12,
+          "6390_1":{
+            "version_number":2
+          }
+        },
+        "6963":{
+          "6963_2":"hello world",
+          "6963_1":{
+            "version_number":2
+          }
+        },
+        "30205":{
+          "30205_2":"2",
+          "30205_1":{
+            "version_number":2
+          }
+        }
+      },
+      "options":{
+        "fields":{
+          "6390":{
+            "fields":{
+              "6390_3":{
+                "hidden":false,
+                "hideInitValidationError":true,
+                "label":"Integer",
+                "readonly":false,
+                "type":"integer"
+              },
+              "6390_1":{
+                "hidden":true,
+                "hideInitValidationError":true,
+                "readonly":true,
+                "type":"object"
+              }
+            },
+            "hideInitValidationError":true,
+            "label":"Integer Field",
+            "type":"object"
+          },
+          "6963":{
+            "fields":{
+              "6963_2":{
+                "hidden":false,
+                "hideInitValidationError":true,
+                "label":"TextField",
+                "readonly":false,
+                "type":"text"
+              },
+              "6963_1":{
+                "hidden":true,
+                "hideInitValidationError":true,
+                "readonly":true,
+                "type":"object"
+              }
+            },
+            "hideInitValidationError":true,
+            "label":"Text*",
+            "type":"object"
+          },
+          "30205":{
+            "fields":{
+              "30205_2":{
+                "hidden":false,
+                "hideInitValidationError":true,
+                "label":"Select field",
+                "readonly":false,
+                "type":"select"
+              },
+              "30205_1":{
+                "hidden":true,
+                "hideInitValidationError":true,
+                "readonly":true,
+                "type":"object"
+              }
+            },
+            "hideInitValidationError":true,
+            "label":"select field",
+            "type":"object"
+          }
+        }
+      },
+      "role_name":"categories",
+      "schema":{
+        "properties":{
+          "6390":{
+            "properties":{
+              "6390_3":{
+                "readonly":false,
+                "required":true,
+                "title":"Integer",
+                "type":"integer"
+              },
+              "6390_1":{
+                "readonly":true,
+                "required":false,
+                "type":"object"
+              }
+            },
+            "title":"Integer Field",
+            "type":"object"
+          },
+          "6963":{
+            "properties":{
+              "6963_2":{
+                "maxLength":32,
+                "readonly":false,
+                "required":true,
+                "title":"TextField",
+                "type":"string"
+              },
+              "6963_1":{
+                "readonly":true,
+                "required":false,
+                "type":"object"
+              }
+            },
+            "title":"Text",
+            "type":"object"
+          },
+          "30205":{
+            "properties":{
+              "30205_2":{
+                "enum":[
+                  "1",
+                  "2",
+                  "3",
+                  "4",
+                  "5"
+                ],
+                "readonly":false,
+                "required":true,
+                "title":"Select field",
+                "type":"string"
+              },
+              "30205_1":{
+                "readonly":true,
+                "required":false,
+                "type":"object"
+              }
+            },
+            "title":"select field*",
+            "type":"object"
+          }
+        },
+        "title":"Categories",
+        "type":"object"
+      }
+    }
+  ]
+},
+  "effectivePermission": {
+    "results": {
+      "data": {
+        "permissions": {
+          "permissions": [
+            "add_items",
+            "delete",
+            "delete_versions",
+            "edit_attributes",
+            "edit_permissions",
+            "modify",
+            "reserve",
+            "add_major_version",
+            "see",
+            "see_contents"
+          ],
+          "right_id": 1000,
+          "type": null
+        }
+      }
+    }
+  },
+  "subTypes": {
+    "links": {
+      "data": {
+        "self": {
+          "body": "",
+          "content_type": "",
+          "href": "\/api\/v2\/nodes\/7715\/descendents\/subtypes\/exists?include_sub_items=false&sub_types=0",
+          "method": "GET",
+          "name": ""
+        }
+      }
+    },
+    "results": {
+      "data": {
+        "subtypes_info": [{
+          "id": 0,
+          "name": "Folder"
+        }],
+        "threshold_exceeded": false
+      }
+    }
+  },
+  "permissions": {
+    "results": {
+      "data": {
+        "permissions": [
+          {
+            "permissions": [
+              "add_items",
+              "delete",
+              "delete_versions",
+              "edit_attributes",
+              "edit_permissions",
+              "modify",
+              "reserve",
+              "add_major_version",
+              "see",
+              "see_contents"
+            ],
+            "right_id": 1000,
+            "right_id_expand": {
+              "birth_date": "1900-10-31T00:00:00",
+              "business_email": "123@opentext.com",
+              "business_fax": "67352895",
+              "business_phone": "0987909890",
+              "cell_phone": "9208409138",
+              "deleted": false,
+              "first_name": "Admin",
+              "gender": null,
+              "group_id": 1500,
+              "home_address_1": null,
+              "home_address_2": null,
+              "home_fax": null,
+              "home_phone": null,
+              "id": 1000,
+              "initials": "A",
+              "last_name": null,
+              "middle_name": null,
+              "name": "Admin",
+              "name_formatted": "Admin",
+              "office_location": "Waterloo..",
+              "pager": null,
+              "personal_email": null,
+              "personal_interests": null,
+              "personal_url_1": null,
+              "personal_url_2": null,
+              "personal_url_3": null,
+              "personal_website": null,
+              "photo_id": null,
+              "photo_url": null,
+              "time_zone": 6,
+              "title": "Murdock Administrator ",
+              "type": 0,
+              "type_name": "User"
+            },
+            "type": "owner"
+          },
+          {
+            "permissions": [],
+            "right_id": 1500,
+            "right_id_expand": {
+              "deleted": false,
+              "id": 1500,
+              "initials": "G",
+              "leader_id": null,
+              "name": "General",
+              "name_formatted": "General",
+              "type": 1,
+              "type_name": "Group"
+            },
+            "type": "group"
+          },
+          {
+            "permissions": [
+              "see",
+              "see_contents"
+            ],
+            "right_id": null,
+            "type": "public"
+          }
+        ],
+        "properties": {
+          "container": false,
+          "name": "Contacts_1518599949185",
+          "type": 5574
+        },
+        "versions": [
+          {
+            "version_id": 12232521
+          },
+          {
+            "version_id": 13186357
+          }
+        ]
+      }
+    }
+  },
+  "wikiContent": {
+    "response": "<p><a href='http://murdock.opentext.com/alpha/cs.exe/open/ravi'>link</a></p><p><a href='http://murdock.opentext.com/alpha/cs.exe/open/1282482'>link</a></p><table style='width: 100.0%;border: 1.0px solid;border-spacing: 1.0px;text-align: right;'><tbody><tr><td style='padding: 1.0px;'>sdsd sds dsd</td><td style='padding: 1.0px;'>&nbsp;</td></tr><tr><td style='padding: 1.0px;'>sd sds ds</td><td style='padding: 1.0px;'>&nbsp;</td></tr><tr><td style='padding: 1.0px;'>&nbsp;</td><td style='padding: 1.0px;'>&nbsp;</td></tr></tbody></table><p><span class='csui-big'>this is big tag content</span></p><p><span class='csui-big'>big content here</span></p><table style='width: 100.0%;border: 10.0px solid;border-spacing: 11.0px;'><tbody><tr><th style='padding: 12.0px;'>sd sdsd sds</th><th colspan='2' scope='col' style='padding: 12.0px;text-align: left;vertical-align: middle;border-color: red;'>&nbsp;</th></tr><tr><td style='padding: 12.0px;'>&nbsp;sds dsds</td><td style='padding: 12.0px;'>&nbsp;</td></tr><tr><td style='padding: 12.0px;'>&nbsp;</td><td style='padding: 12.0px;'>&nbsp;</td></tr></tbody></table><h2 id='link0' style='font-style: italic;'>111</h2><h3 id='link1' style='color: rgb(170,170,170);font-style: italic;'>222</h3><div style='background: rgb(238,238,238);border: 1.0px solid rgb(204,204,204);padding: 5.0px 10.0px;'>333</div><p><span class='marker'>444</span></p><p><small>555</small></p><p><big style='background-color: yellow;'>another big element</big></p><p>&nbsp;</p><h2>&nbsp;</h2><h2>&nbsp;</h2><h2>&nbsp;</h2><h2 id='link5'>What is Lorem Ipsum?</h2><p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard <strong>dummy </strong>text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p><h2 id='link6'>Why do we use it?</h2><p style='color: red;'>my content here my content here my content here It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p><p>&nbsp;</p><h2 id='link7'>Where does it come from?</h2><p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of 'de Finibus Bonorum et Malorum' (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, 'Lorem ipsum dolor sit amet..', comes from a line in section 1.10.32.</p><p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from 'de Finibus Bonorum et Malorum' by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>"
+  }
+}

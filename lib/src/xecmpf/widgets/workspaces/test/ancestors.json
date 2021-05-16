@@ -1,0 +1,28 @@
+{
+  "ancestors": [
+    {
+      "id": 2000,
+      "name": "Enterprise",
+      "volume_id": -2000,
+      "parent_id": -1,
+      "type": 141,
+      "type_name": "Enterprise Workspace"
+    },
+    {
+      "id": 22672,
+      "name": "Customer",
+      "volume_id": -2000,
+      "parent_id": 2000,
+      "type": 0,
+      "type_name": "Folder"
+    },
+    {
+      "id": 69422,
+      "name": "Early Workspace 2",
+      "volume_id": -2000,
+      "parent_id": 22672,
+      "type": 848,
+      "type_name": "Business Workspace"
+    }
+  ]
+}

@@ -1,0 +1,330 @@
+{
+  "$schema": "http://opentext.com/cs/json-schema/draft-04/schema#",
+  "title": "{{widgetTitle}}",
+  "description": "{{widgetDescription}}",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": "object",
+        "title": "{{tileTitle}}",
+        "description": "{{tileDescription}}"
+      },
+      "workspaceTypeId": {
+        "type": "integer",
+        "title": "{{workspacetypeTitle}}",
+        "description": "{{workspacetypeDescription}}"
+      },
+      "relationType": {
+        "type": "string",
+        "enum": [ "child", "parent" ],
+        "title": "{{relationTypeTitle}}",
+        "description": "{{relationTypeDescription}}"
+      },
+      "collapsedView": {
+        "type": "object",
+        "title": "{{collapsedViewTitle}}",
+        "description": "{{collapsedViewDescription}}",
+        "properties": {
+          "noResultsPlaceholder": {
+            "type": "object",
+            "title": "{{noResultsPlaceholderTitle}}",
+            "description": "{{noResultsPlaceholderDescription}}"
+          },
+          "preview": {
+            "type": "object",
+            "title": "{{previewPaneTitle}}",
+            "description": "{{previewPaneDescription}}",
+            "properties": {
+              "typeName": {
+                "type": "object",
+                "title": "{{previewTitle}}",
+                "description": "{{previewDescription}}"
+              },
+              "noMetadataMessage": {
+                "type": "object",
+                "title": "{{noMetadataMessageTitle}}",
+                "description": "{{noMetadataMessageDescription}}"
+              },
+              "roleId": {
+                "type": "string",
+                "title": "{{roleTitle}}",
+                "description": "{{roleDescription}}"
+              },
+              "noRoleMembersMessage": {
+                "type": "object",
+                "title": "{{noRoleMembersMessageTitle}}",
+                "description": "{{noRoleMembersMessageDesc}}"
+              },
+              "metadata": {
+                "type": "array",
+                "title": "{{metadataTitle}}",
+                "description": "{{metadataDescription}}",
+                "items": {
+                  "type": "object",
+                  "title": "{{CategoryOrAttributeTitle}}",
+                  "description": "{{CategoryOrAttributeDesc}}"
+                }
+              }
+            }
+          },
+          "orderBy": {
+            "type": "object",
+            "title": "{{orderTitle}}",
+            "description": "{{orderDescription}}",
+            "properties": {
+              "sortColumn": {
+                "type": "string",
+                "title": "{{sortColumnTitle}}",
+                "description": "{{sortColumnDescription}}"
+              },
+              "sortOrder": {
+                "type": "string",
+                "enum": [ "asc", "desc" ],
+                "title": "{{sortOrderTitle}}",
+                "description": "{{sortOrderDescription}}"
+              }
+            }
+          },
+          "title": {
+            "type": "object",
+            "title": "{{relatedWorkspaceTitle}}",
+            "description": "{{relatedWorkspaceDesc}}",
+            "properties": {
+              "value": {
+                "type": "string",
+                "title": "{{valueTitle}}",
+                "description": "{{valueDescription}}"
+              }
+            }
+          },
+          "description": {
+            "type": "object",
+            "title": "{{descriptionSectionTitle}}",
+            "description": "{{descriptionSectionDesc}}",
+            "properties": {
+              "value": {
+                "type": "string",
+                "title": "{{descriptionValueTitle}}",
+                "description": "{{descriptionFieldValue}}"
+              }
+            }
+          },
+          "topRight": {
+            "type": "object",
+            "title": "{{topRightSectionTitle}}",
+            "description": "{{topRightSectionDescription}}",
+            "properties": {
+              "label": {
+                "type": "object",
+                "title": "{{topRightLabel}}",
+                "description": "{{topRightLabelDesc}}"
+              },
+              "value": {
+                "type": "string",
+                "title": "{{topRightValue}}",
+                "description": "{{topRightValueDesc}}"
+              }
+            }
+          },
+          "bottomLeft": {
+            "type": "object",
+            "title": "{{bottomLeftTitle}}",
+            "description": "{{bottomLeftTitleDesc}}",
+            "properties": {
+              "label": {
+                "type": "object",
+                "title": "{{bottomLeftLabelTitle}}",
+                "description": "{{bottomLeftLabelDesc}}"
+              },
+              "value": {
+                "type": "string",
+                "title": "{{bottomLeftValue}}",
+                "description": "{{bottomLeftValueDesc}}"
+              }
+            }
+          },
+          "bottomRight": {
+            "type": "object",
+            "title": "{{bottomRightTitle}}",
+            "description": "{{bottomRightTitleDesc}}",
+            "properties": {
+              "label": {
+                "type": "object",
+                "title": "{{bottomRightLabel}}",
+                "description": "{{bottomRightLabelDesc}}"
+              },
+              "value": {
+                "type": "string",
+                "title": "{{bottomRightValue}}",
+                "description": "{{bottomRightValueDesc}}"
+              }
+            }
+          }
+        }
+      },
+      "expandedView": {
+        "type": "object",
+        "title": "{{expandedViewSectionTitle}}",
+        "description": "{{expandedViewSectionDesc}}",
+        "properties": {
+          "orderBy": {
+            "type": "object",
+            "title": "{{expandedViewOrderByTitle}}",
+            "description": "{{expandedViewOrderByDesc}}",
+            "properties": {
+              "sortColumn": {
+                "type": "string",
+                "title": "{{expandedViewSortColumnTitle}}",
+                "description": "{{expandedViewSortColumnDesc}}"
+              },
+              "sortOrder": {
+                "type": "string",
+                "enum": [ "asc", "desc" ],
+                "title": "Sort order",
+                "description": "{{expandedViewSortOrderDesc}}"
+              }
+            }
+          },
+          "customColumns": {
+            "type": "array",
+            "title": "{{customColumnsSectionTitle}}",
+            "description": "{{customColumnsSectionDesc}}",
+            "items": {
+              "type": "object",
+              "title": "{{customColumnsItemsTitle}}",
+              "description": "{{customColumnsItemsDesc}}",
+              "properties": {
+                "key": {
+                  "type": "string",
+                  "title": "{{customColumnsPropertiesTitle}}",
+                  "description": "{{customColumnsPropertiesDesc}}"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "options": {
+    "fields": {
+      "title": {
+        "type": "otcs_multilingual_string"
+      },
+      "workspaceTypeId": {
+        "type": "otconws_workspacetype_id"
+      },
+      "relationType": {
+        "type": "select",
+        "optionLabels": [ "Child", "Parent" ]
+      },
+      "collapsedView": {
+        "fields": {
+          "noResultsPlaceholder": {
+            "type": "otcs_multilingual_string"
+          },
+          "preview": {
+            "fields": {
+              "typeName": {
+                "type": "otcs_multilingual_string"
+              },
+              "noMetadataMessage": {
+                "type": "otcs_multilingual_string"
+              },
+              "noRoleMembersMessage": {
+                "type": "otcs_multilingual_string"
+              },
+              "metadata": {
+                "fields": {
+                  "item": {
+                    "type": "otconws_metadata"
+                  }
+                }
+              }
+            }
+          },
+          "orderBy": {
+            "fields": {
+              "sortColumn": {
+                "type": "otconws_customcolumn"
+              },
+              "sortOrder": {
+                "type": "select",
+                "optionLabels": [ "Ascending", "Descending" ]
+              }
+            }
+          },
+          "title": {
+            "fields": {
+              "value": {
+                "type": "otconws_customcolumn"
+              }
+            }
+          },
+          "description": {
+            "fields": {
+              "value": {
+                "type": "otconws_customcolumn"
+              }
+            }
+          },
+          "topRight": {
+            "fields": {
+              "label": {
+                "type": "otcs_multilingual_string"
+              },
+              "value": {
+                "type": "otconws_customcolumn"
+              }
+            }
+          },
+          "bottomLeft": {
+            "fields": {
+              "label": {
+                "type": "otcs_multilingual_string"
+              },
+              "value": {
+                "type": "otconws_customcolumn"
+              }
+            }
+          },
+          "bottomRight": {
+            "fields": {
+              "label": {
+                "type": "otcs_multilingual_string"
+              },
+              "value": {
+                "type": "otconws_customcolumn"
+              }
+            }
+          }
+        }
+      },
+      "expandedView": {
+        "fields": {
+          "orderBy": {
+            "fields": {
+              "sortColumn": {
+                "type": "otconws_customcolumn"
+              },
+              "sortOrder": {
+                "type": "select",
+                "optionLabels": [ "Ascending", "Descending" ]
+              }
+            }
+          },
+          "customColumns": {
+            "items": {
+              "fields": {
+                "key": {
+                  "type": "otconws_customcolumn"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

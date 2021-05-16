@@ -1,0 +1,74 @@
+<div id="saveDisplayArea" class="saveDisplayArea">
+    <div id="saveSelectionPanel" class="hiddenArea">
+        <div class="binf-panel-heading outlook-heading" >
+            <span class="headerIcon backwardIcon" tabindex="0" id="saveSectionBack" title="{{backLabel}}" aria-label="{{backLabel}}"></span>
+            <span id="saveSectionTitle"></span>
+        </div>
+        <div class="infoMessage">{{saveInfo}}</div>
+        
+        <div id="saveMessageArea" class="hiddenArea warningMessage">
+            <span class="headerIcon warningIcon"></span>
+            <span id="saveMessage" style="display: table;"></span>
+        </div>
+        
+        <div id="saveEmailDiv" style="padding: 5px 5px 5px 30px;">
+            <div style="padding: 5px 0 5px 0">{{saveEmailText}}</div>
+            <table style="width:100%;">
+                <tr>
+                    <td class="emailSaveNameTd" style="padding: 0;">
+                        <table id="emailName" class="emailSaveTable"></table>
+                    </td>
+                </tr>
+            </table>
+            
+        </div>
+        <div id="saveAttachmentDiv" style="padding: 10px 5px 5px 30px;">
+            <div style="padding: 5px 0 5px 0">{{saveAttachmentText}}</div>
+            <table style="width:100%;">
+                <tr id="attachmentOptionTr">
+                    <td class="emailSaveIconTd">
+                        <button type="button" id="saveAttachmentCheckbox" role="checkbox" class="checkbox csui-control csui-checkbox" tabindex="0" aria-label="{{saveLabel}}">
+                            <span class="checkboxIcon" id="saveAttachmentCheckboxIcon"></span>
+                        </button>
+                    </td>
+                    <td class="emailSaveNameTd"> 
+                        <span style="padding: 0 0 0 8px;">{{saveAttachmentOption}}</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="emailSaveNameTd" style="padding: 10px 3px 5px 0;">
+                        <table id="emailAttachment" class="emailSaveTable"></table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+    <div id="metadataPanel" class="hiddenArea metadataForm">
+        <div class="binf-panel-heading outlook-heading" >
+            <span class="headerIcon backwardIcon" tabindex="0" id="metadataFormBack" title="{{backLabel}}" aria-label="{{backLabel}}"></span>
+            <span>{{requiredFieldsTitle}}</span>
+        </div>
+        <div class="infoMessage">{{saveInfo}}</div>
+        <div id="metadataMessageArea" class="hiddenArea warningMessage">
+            <span class="headerIcon warningIcon"></span>
+            <span id="metadataMessage" style="display: table;"></span>
+        </div>
+        <div id="metadataDiv"></div>
+    </div>
+
+    <div id="saveResultPanel" class="hiddenArea">
+        <div class="binf-panel-heading outlook-heading" >
+            <span id="saveResultTitle"></span>
+        </div>    
+        <div id="saveResult" style="position:relative; padding: 0 25px 0 25px; line-height: 150%"></div>
+    </div>
+
+    <div class="wkspMessageArea" id="saveMsgArea"></div>
+</div>
+<div class="saveSectionButton outlook-heading binf-panel-heading" id="saveNextButton" tabindex="0"></div>
+
+
+
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

@@ -1,0 +1,68 @@
+<div class="csui-search-header">
+   <span class="csui-search-arrow-back-parent">
+   <span class="icon arrow_back cs-go-back" aria-label="{{messages.searchBackTooltip}}"
+         title="{{messages.searchBackTooltip}}" tabindex="0" role="button"></span>
+   </span>
+  {{#if messages.enableSearchFilter}}
+    <span class="csui-search-facet-filter-parent">
+      <span class="csui-search-filter icon icon-toolbarFilter" role="button"
+            aria-label="{{messages.filterAria}}" title="{{messages.searchFilterTooltip}}"
+            tabindex="0"></span>
+    </span>
+  {{/if}}
+  <div class="csui-search-header-title"></div>
+  <div class="csui-search-right-header-container">
+    <div class="csui-search-header-action csui-search-sorting" id="csui-search-sorting"></div>
+    <span class="csui-search-header-action icon icon-description-toggle binf-hidden"
+          aria-label="{{messages.descriptionTitle}}" title="{{messages.descriptionTitle}}"
+          role="button" tabindex="0"></span>
+    <div class="csui-search-header-action csui-tabular-view"
+         aria-label="{{messages.tabularViewIconTitle}}"
+         role="button" title="{{messages.tabularViewIconTitle}}" tabindex="0">
+      <svg class="csui-svg-icon csui-svg-icon-normal csui-icon-off" focusable="false">
+        <use
+            xlink:href="{{spritePath}}#themes--carbonfiber--image--generated_icons--action_table_tabular32"></use>
+      </svg>
+      <svg class="csui-svg-icon csui-svg-icon-hover csui-icon-off" focusable="false">
+        <use
+            xlink:href="{{spritePath}}#themes--carbonfiber--image--generated_icons--action_table_tabular32.hover"></use>
+      </svg>
+      <svg class="csui-svg-icon csui-svg-icon-active csui-icon-off" focusable="false">
+        <use
+            xlink:href="{{spritePath}}#themes--carbonfiber--image--generated_icons--action_table_tabular32.active"></use>
+      </svg>
+      <svg class="csui-svg-icon csui-svg-icon-normal csui-icon-on" focusable="false">
+        <use
+            xlink:href="{{spritePath}}#themes--carbonfiber--image--generated_icons--action_table_standard32"></use>
+      </svg>
+      <svg class="csui-svg-icon csui-svg-icon-hover csui-icon-on" focusable="false">
+        <use
+            xlink:href="{{spritePath}}#themes--carbonfiber--image--generated_icons--action_table_standard32.hover"></use>
+      </svg>
+      <svg class="csui-svg-icon csui-svg-icon-active csui-icon-on" focusable="false">
+        <use
+            xlink:href="{{spritePath}}#themes--carbonfiber--image--generated_icons--action_table_standard32.active"></use>
+      </svg>
+    </div>
+    {{#if messages.showSettings}}
+      <div class="csui-search-header-action csui-search-settings"
+           title="{{messages.settingsLabel}}" aria-label="{{messages.settingsLabel}}" tabindex="0" role="menu" aria-haspopup="true"
+           aria-expanded="false">
+        <svg class="csui-svg-icon csui-svg-icon-normal" focusable="false">
+          <use xlink:href="{{spritePath}}#themes--carbonfiber--image--generated_icons--action_settings32"></use>
+        </svg>
+        <svg class="csui-svg-icon csui-svg-icon-hover" focusable="false">
+          <use
+              xlink:href="{{spritePath}}#themes--carbonfiber--image--generated_icons--action_settings32.hover"></use>
+        </svg>
+        <svg class="csui-svg-icon csui-svg-icon-active" focusable="false">
+          <use
+              xlink:href="{{spritePath}}#themes--carbonfiber--image--generated_icons--action_settings32.active"></use>
+        </svg>
+        <div class="csui-settings-dropdown"></div>
+      </div>
+    {{/if}}
+  </div>
+</div>
+<div class="csui-table-rowselection-toolbar"></div>
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

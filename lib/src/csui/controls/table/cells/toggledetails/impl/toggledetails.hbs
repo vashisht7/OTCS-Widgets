@@ -1,0 +1,15 @@
+{{#if hasMetadataRow}}
+  <a class="expand-details-row-toggle" title="{{expandToggleTooltip}}" aria-label="{{expandToggleAria}}"
+     href="#csui-details-row-{{id}}" data-binf-toggle="collapse" aria-expanded="false"
+     aria-controls="csui-details-row-{{id}}">
+    <svg class="csui-icon csui-svg-icon" focusable="false">
+      {{#if rowIsExpanded}}
+        <use xlink:href="{{spritePath}}#controls--disclosure--impl--images--caret_up"></use>
+      {{else}}
+        <use xlink:href="{{spritePath}}#controls--disclosure--impl--images--caret_down"></use>
+      {{/if}}
+    </svg>
+  </a>
+{{/if}}
+
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

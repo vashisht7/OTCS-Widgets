@@ -1,0 +1,11 @@
+{{#if displayUrl}}
+  <a class="xecmpf-displayUrl-icon conws-quick_link {{#if displayUrlError}}
+    xecmpf-displayUrl-error {{/if}}" title="{{displayUrlTooltip}}"
+     aria-label="{{ariaLabelBusApplText}}" {{#if displayUrlError}}  href="#"  {{else}}
+     href="{{displayUrl}}" target="_blank"{{/if}}></a>
+{{else}}
+  <button class="xecmpf-displayUrl-icon conws-quick_link binf-btn binf-btn-default"
+          aria-label="{{ariaLabelBusApplText}}"></button>
+{{/if}}
+
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

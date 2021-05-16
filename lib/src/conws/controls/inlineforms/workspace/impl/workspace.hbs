@@ -1,0 +1,14 @@
+<div class="csui-inlineform-group conws-inlineform-group-workspace-name">
+  <input type="text" value="{{name}}" placeholder="{{namePlaceholder}}"
+         class="binf-form-control csui-inlineform-input-name">
+  <button class="csui-btn-metadata binf-btn"><span class="csui-icon icon-metadata"></span></button>
+  <button class="csui-btn-save csui-btn binf-btn">{{SaveButtonLabel}}</button>
+  <button class="csui-btn-cancel csui-btn binf-btn">{{CancelButtonLabel}}</button>
+</div>
+{{#if haveErrorMessage}}
+  <div class="csui-inlineform-group csui-inlineform-group-error">
+    <div class="binf-text-danger">{{errorMessage}}</div>
+  </div>
+{{/if}}
+
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

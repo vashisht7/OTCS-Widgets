@@ -1,0 +1,90 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .xecmpf-document-thumbnail .document-thumbnail-wrapper {
+  height: auto;
+  max-width: 280px;
+  margin: auto;
+  cursor: pointer;
+  text-align: center;
+}
+
+.xecmpf-document-thumbnail .document-thumbnail-wrapper img.img-doc-preview {
+  opacity: 50;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.3);
+}
+
+.xecmpf-document-thumbnail .document-thumbnail-wrapper button{
+    background: none;
+    color: inherit;
+    border: none;
+}
+
+.xecmpf-document-thumbnail .document-thumbnail-wrapper > button:focus{
+    outline: 1px dotted #333;
+    outline-offset: -1px;
+}
+
+.xecmpf-document-thumbnail .document-thumbnail-wrapper img.img-doc-preview:focus {
+  outline: none;
+}
+
+.xecmpf-document-thumbnail .document-thumbnail-wrapper .cs-form-img-border {
+  border: 1px outset #666666;
+}
+
+.xecmpf-document-thumbnail .document-thumbnail-wrapper .cs-form-img-border:focus {
+  border: 1px dotted #333333;
+}
+
+.xecmpf-document-thumbnail .document-thumbnail-wrapper .cs-form-img-vertical {
+  height: 100%;
+  max-height: 200px;
+  width: auto;
+  max-width: 280px;
+}
+
+.xecmpf-document-thumbnail .document-thumbnail-wrapper .cs-form-img-horizontal {
+  height: auto;
+  max-height: 200px;
+  max-width: 280px;
+}
+
+.xecmpf-document-thumbnail .document-thumbnail-wrapper .thumbnail_not_loaded {
+  display: inline-block;
+  height: 124px;
+  width: 150px;
+}
+
+.xecmpf-document-thumbnail .document-thumbnail-wrapper .thumbnail_not_loaded:focus {
+  align-items: center;
+  outline-color: white;
+}
+
+.xecmpf-document-thumbnail .document-thumbnail-wrapper .thumbnail_not_loaded.thumbnail_empty {
+  background-image: url('../../../image/icons/thumbnail_empty.svg');
+}
+
+.xecmpf-document-thumbnail .document-thumbnail-wrapper .thumbnail_not_loaded.thumbnail_missing {
+  background-image: url('../../../image/icons/thumbnail_missing.svg');
+}
+
+.xecmpf-document-thumbnail .document-thumbnail-caption {
+  cursor: default;
+  display: flex;
+  margin: 0.5rem 1rem;
+}
+
+.xecmpf-document-thumbnail .document-thumbnail-caption .document-name {
+  margin: 8px 0 0 4px;
+  width: calc(100% - 2rem);
+  color: #333333;
+  font-weight: bold;
+  white-space: normal;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+

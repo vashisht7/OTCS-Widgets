@@ -1,0 +1,36 @@
+<div class="cs-field-write">
+  <div class="cs-field-write-inner">
+    <ul>
+      {{#each items}}
+        <li>
+          <div class="cs-radio-item-container">
+          <label class="cs-label" for="w{{radioId}}">{{name}}
+            <input {{#if isReadOnly}} readonly {{/if}} type="radio" class="radio-item" name="w{{../radioGroupName}}" id="w{{radioId}}" value="{{id}}"  {{checked}}>
+            <span class="cs-radio-container"><span class="outer"><span class="inner"></span></span></span>
+          </label>
+          </div>          
+        </li>
+      {{/each}}
+    </ul>
+    <span class="validation-error-message {{#if validationErrorMsg}}{{else}}binf-hidden{{/if}}">{{validationErrorMsg}}</span>
+  </div>
+</div>
+
+<div class="cs-field-read">
+  <div class="cs-field-read-inner">
+    <ul>
+      {{#each items}}
+        <li>
+          <div class="cs-radio-item-container">
+          <label class="cs-label" for="r{{radioId}}">{{name}}
+            <input {{#if isReadOnly}} readonly {{/if}} type="radio" class="radio-item" name="r{{../radioGroupName}}" id="r{{radioId}}" value="{{id}}" {{checked}}>
+            <span class="cs-radio-container"><span class="outer"><span class="inner"></span></span></span>
+          </label>
+          </div>
+        </li>
+      {{/each}}
+    </ul>    
+  </div>
+</div>
+
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

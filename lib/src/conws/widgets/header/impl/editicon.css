@@ -1,0 +1,51 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .conws-popover {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.conws-popover .title {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.conws-popover .message {
+  margin-bottom: 15px;
+}
+
+.conws-popover .buttons .binf-left {
+  float: left;
+}
+
+.conws-popover .buttons .binf-right {
+  float: right;
+  margin-bottom: 15px;
+}
+
+.conws-popover .binf-btn {
+  border-radius: 25px;
+  min-width: 85px;
+  margin-left: 10px;
+}
+
+.conws-popover .reset {
+  margin-top: 7px;
+  cursor: pointer;
+  max-width: 6.25rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.conws-popover .upload {
+  max-width: 9.25rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.conws-popover .cancel {
+  max-width: 6.5rem;
+}

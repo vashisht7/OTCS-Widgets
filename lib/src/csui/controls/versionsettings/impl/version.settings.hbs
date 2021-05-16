@@ -1,0 +1,18 @@
+{{#if enabled}}
+<div class='csui-toolbar-control-settings'>
+    <div role="button" class="csui-toolbar-settings csui-acc-focusable"
+        title="{{settingLabel}}" aria-label="{{settingLabel}}">
+        <svg class="icon csui-svg-icon csui-svg-icon-normal" focusable="false">
+          <use xlink:href="{{spritePath}}#{{svgId}}"></use>
+        </svg>
+        <svg class="icon csui-svg-icon csui-svg-icon-hover" focusable="false">
+          <use xlink:href="{{spritePath}}#{{svgId}}.hover"></use>
+        </svg>
+        <svg class="icon csui-svg-icon csui-svg-icon-active" focusable="false">
+          <use xlink:href="{{spritePath}}#{{svgId}}.active"></use>
+        </svg>
+    </div>
+    <div class="csui-toolbar-control-settings-dropdown"></div>
+  </div>
+{{/if}}
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

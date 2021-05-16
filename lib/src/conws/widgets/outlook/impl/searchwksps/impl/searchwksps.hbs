@@ -1,0 +1,45 @@
+
+<div class="binf-panel-heading outlook-heading" >{{sectionTitle}} 
+    
+</div>
+<div class="wkspSearch">
+    <div class="wkspSearchInputName">
+        <table class="wkspNameBox">
+            <tr>
+                <td class="wkspInputWithClear">
+                    <input class="wkspInput wkspSearchInput wkspSearchName" id="wkspName" type="search" aria-label="{{wkspNamePlaceholder}}" placeholder="{{wkspNamePlaceholder}}" />
+                    <span class="searchClear wkspIcon" id="searchClearButton" title="{{searchClearTooltip}}" tabindex="0"></span>
+                </td>
+                <td class="wkspSearchButton">
+                    <span id="wkspTypeButton" class="wkspIcon searchTypeIcon" title="{{selectWkspType}}" tabindex="0"></span>
+                    <table class="wkspTypeDropdownTable"><tr>
+                        <td>
+                            <div id="typeDropdown" class="wkspTypeDropdown saveDisplayArea hiddenArea"></div>
+                        </td>
+                    </tr></table>
+                </td>
+                <td class="wkspSearchButton">
+                    <span id="searchButton" class="wkspIcon searchIcon" title="{{searchTooltip}}" tabindex="0"></span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <div id="wkspTypeMsg" class="wkspTypeMsg hiddenArea"></div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div class="binf-panel-heading outlook-heading hiddenArea" id="searchResultHeading">
+    <span class="headerIcon backwardIcon" tabindex="0" id="searchResultBackButton"></span>
+    <span >{{resultTitle}}</span>
+</div> 
+<div id="search-result"></div>
+
+<div class="wkspMessageArea" id="searchMsgArea"></div>
+
+
+
+
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

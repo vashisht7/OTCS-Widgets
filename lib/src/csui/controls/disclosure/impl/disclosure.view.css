@@ -1,0 +1,24 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .csui-control.csui-disclosure {
+  display: flex;
+  height: 100%;
+  flex-grow: 1;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0; 
+  margin: 0;
+  border-color: inherit;
+  border-radius: 0;
+  border-style: none;
+  border-width: 0;
+  border-image: none;
+  background-color: transparent;
+  text-indent: inherit;
+  text-shadow: inherit;
+}
+
+.binf-widgets .csui-control.csui-disclosure > .csui-icon {
+  width: 18px;
+  height: 18px;
+}

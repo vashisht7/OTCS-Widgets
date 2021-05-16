@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Business Workspace Header Widget</title>
+
+  <link rel="stylesheet" href="../../../../csui/themes/carbonfiber/theme.css">
+
+  <script src="../../../../csui/lib/require.js"></script>
+  <script src="../../../../csui/config.js" data-csui-path="../../../../csui"></script>
+  <script src="../../../../csui/helpers.js"></script>
+  <script>
+    require.config({
+      paths: {
+        xecmpf: '../../..',
+        esoc: '../../../../esoc',
+        conws: '../../../../conws'
+      },
+      config: {
+        'i18n': {
+          locale: 'en',
+          preferredLocales: 'en'
+        }
+      },
+      deps: [ 'csui/lib/require.config!csui/csui-extensions.json',
+        'csui/lib/require.config!conws/conws-extensions.json',
+        'csui/lib/require.config!xecmpf/xecmpf-extensions.json']
+    });
+
+    require([
+      'csui/lib/underscore',
+      'csui/lib/marionette',
+      'csui/utils/contexts/page/page.context',
+      'csui/perspectives/tabbed/tabbed.perspective.view',
+        'xecmpf/widgets/header/test/header.mock'
+    ], function (_, Marionette, PageContext, TabbedPerspectiveView, Mock) {
+
+      var contentRegion = new Marionette.Region({
+        el: "body"
+      });
+
+      var pageContext = new PageContext({
+        factories: {
+          connector: {
+            connection: {
+              url: '//server/otcs/cs/api/v1',
+              supportPath: '/support',
+              session: {
+                ticket: 'dummy'
+              }
+            }
+          },
+          node: {
+            attributes: {id: 51209, type: 848 }
+          }
+        }
+      });
+
+      var perspectiveConfig = {
+        "header": {
+          "widget": {
+            "type": "xecmpf/widgets/header",
+            "options": {
+              "workspace": {
+                "properties": {
+                  "title": "{name}",
+                  "type": "{business_properties.workspace_type_name}",
+                  "description": "{description}"
+                }
+              },
+              "completenessCheckSettings": {
+                "hideMissingDocsCheck": false,
+                "hideOutdatedDocsCheck":false,
+                "hideInProcessDocsCheck":false
+              },
+              "favoriteSettings": {
+                "hideFavorite": false
+              },
+              "headerwidget": {
+                "type": "metadata"
+              },
+              "metadataSettings": {
+                "hideEmptyFields": false,
+                "hideMetadata": false,
+                "metadata": [
+                  {
+                    "type": "group",
+                    "label": "Vendor",
+                    "attributes": [
+                      {
+                        "attributeId": 4,
+                        "categoryId": 92523,
+                        "label": "Name",
+                        "type": "attribute"
+                      },
+                      {
+                        "attributeId": 3,
+                        "categoryId": 92523,
+                        "label": "Object Key",
+                        "type": "attribute"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "group",
+                    "label": "Notification",
+                    "attributes": [
+                      {
+                        "attributeId": 3,
+                        "categoryId": 92523,
+                        "label": "Object Key",
+                        "type": "attribute"
+                      }
+                    ]
+                  }
+                ],
+                "metadataInColumns": "doubleCol"
+              }
+            }
+          }
+        },
+        "tabs": [
+//          {
+//            "title": "Overview",
+//            "columns": [
+//              {
+//                "sizes": {
+//                  "sm": 6,
+//                  "md": 4,
+//                  "lg": 4
+//                },
+//                "widget": {
+//                  "type": "myassignments"
+//                }
+//              }
+//            ]
+//          },
+//          {
+//            "title": "Documents",
+//            "columns": [
+//              {
+//                "sizes": {
+//                  "sm": 6,
+//                  "md": 4,
+//                  "lg": 4
+//                },
+//                "widget": {
+//                  "type": "recentlyaccessed"
+//                }
+//              }
+//            ]
+//          }
+        ]
+      };
+
+      Mock.enable();
+
+      var perspectiveView = new TabbedPerspectiveView(_.defaults({context: pageContext},
+          perspectiveConfig));
+
+      perspectiveView.widgetsResolved.always(function () {
+        contentRegion.show(perspectiveView);
+        pageContext.fetch();
+      });
+    });
+
+  </script>
+
+</head>
+<body class="binf-widgets">
+<a class="docRef" href="../doc/header.md">Documentation</a>
+</body>
+</html>
+
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

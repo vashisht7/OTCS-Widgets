@@ -1,0 +1,112 @@
+{
+  "links": {
+    "data": {
+      "self": {
+        "body": "",
+        "content_type": "",
+        "href": "\/api\/v2\/businessworkspaces\/385874",
+        "method": "GET",
+        "name": ""
+      }
+    }
+  },
+  "results": {
+    "actions": {
+      "data": {
+        "add-role": {
+          "body": "",
+          "content_type": "",
+          "form_href": "",
+          "href": "\/api\/v2\/businessworkspaces\/385874\/roles",
+          "method": "POST",
+          "name": "Add Role"
+        },
+        "delete-icon": {
+          "body": "",
+          "content_type": "",
+          "form_href": "",
+          "href": "\/api\/v2\/businessworkspaces\/385874\/icons",
+          "method": "DELETE",
+          "name": "Delete Icon"
+        },
+        "update-icon": {
+          "body": "",
+          "content_type": "",
+          "form_href": "",
+          "href": "\/api\/v2\/businessworkspaces\/385874\/icons",
+          "method": "PUT",
+          "name": "Update Icon"
+        },
+        "upload-icon": {
+          "body": "",
+          "content_type": "",
+          "form_href": "",
+          "href": "\/api\/v2\/businessworkspaces\/385874\/icons",
+          "method": "POST",
+          "name": "Upload Icon"
+        }
+      },
+      "map": {
+
+      },
+      "order": [
+
+      ]
+    },
+    "data": {
+      "business_properties": {
+        "business_object_type": "KNA1",
+        "business_object_type_id": 1,
+        "business_object_type_name": "Customer D9A",
+        "business_object_type_name_multilingual": {
+          "en": ""
+        },
+        "external_system_id": "D9A",
+        "external_system_name": "D9A",
+        "external_system_name_multilingual": {
+          "en": ""
+        },
+        "has_default_display": true,
+        "has_default_search": true,
+        "isEarly": true,
+        "workspace_type_id": 1,
+        "workspace_type_name": "Customer",
+        "workspace_type_name_multilingual": {
+          "en": ""
+        }
+      },
+      "properties": {
+        "container": true,
+        "container_size": 3,
+        "create_date": "2017-01-03T15:27:14",
+        "create_user_id": 1000,
+        "description": "",
+        "description_multilingual": {
+          "en": ""
+        },
+        "favorite": false,
+        "guid": null,
+        "icon": "\/img\/otsapxecm\/wksp_customer.png",
+        "icon_large": "\/img\/otsapxecm\/wksp_customer_large.png",
+        "id": 385874,
+        "modify_date": "2017-01-03T15:27:15",
+        "modify_user_id": 1000,
+        "name": "Customer - Document Template 1",
+        "name_multilingual": {
+          "en": "Customer - Document Template 1"
+        },
+        "owner_group_id": 1001,
+        "owner_user_id": 1000,
+        "parent_id": 22672,
+        "reserved": false,
+        "reserved_date": null,
+        "reserved_user_id": 0,
+        "rm_enabled": false,
+        "type": 848,
+        "type_name": "Business Workspace",
+        "versions_control_advanced": false,
+        "volume_id": -2000
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta charset="utf-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel="stylesheet" href="HTTP://<host>:<port>/<supportPath>/csui/themes/carbonfiber/theme.css" > 
+<script src="HTTP://<host>:<port>/OTCS/livelink/widgets?crossOrigin=true"></script>
+<script>
+ csui.setLanguage('en_US');
+ csui.onReady2(["csui/lib/jquery", 'csui/integration/folderbrowser/folderbrowser.widget', ''],
+ function ($, FolderBrowserWidget) {
+ 
+ csui.require.config({
+ config: {
+      // Back Button control
+     'csui/integration/folderbrowser/commands/go.to.node.history': {
+          enabled: true
+      },
+     // Search From Here control
+     'xecmpf/utils/commands/folderbrowse/search.container': {
+          enabled: true
+      },	
+     // Page Widget control	
+     'xecmpf/utils/commands/folderbrowse/open.full.page.workspace': {
+         enabled: true,
+         fullPageOverlay: true
+      }
+   }
+ });	
+
+ 			
+ var folderBrowser = new FolderBrowserWidget({
+	connection: {
+		url: 'http://<host>:<port>/OTCS/livelink/api/v1',
+		supportPath: '/<supportPath>',
+		credentials: {
+               username:'<username>',
+               password:'<password>'
+             }
+        
+		
+	},
+	start:{id:<nodeid>},
+    breadcrumb: false
+ });
+ folderBrowser.show({placeholder: '#content'});
+ });
+ </script>
+ </head> <body> <div id="content" style="height:100vh"></div> </body> </html>                                                                                                                                                                                                                                                                   
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

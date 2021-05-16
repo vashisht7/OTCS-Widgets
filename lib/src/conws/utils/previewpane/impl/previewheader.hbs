@@ -1,0 +1,20 @@
+<div>
+  {{#if typeName}}
+    <span class="conws-preview-header-typename">{{typeName}}</span>
+  {{/if}}
+  {{#if display_url}}
+    <a class="csui-icon conws-quick_link conws-preview-header-icon"
+       title="{{quickLinkTooltip}}"
+       href="{{display_url}}" target="_blank"></a>
+  {{/if}}
+</div>
+{{#if display_url}}
+  <a class="conws-preview-header-title narrow" title="{{name}}"
+     href="{{defaultActionUrl}}">{{name}}</a>
+{{else}}
+  <a class="conws-preview-header-title" title="{{name}}"
+     href="{{defaultActionUrl}}">{{name}}</a>
+{{/if}}
+
+
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

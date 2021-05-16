@@ -1,0 +1,100 @@
+{
+  "csui/models/server.module/server.module.collection": {
+    "modules": {
+      "conws": {
+        "version": "1.0"
+      }
+    }
+  },
+  "csui/utils/nodesprites": {
+    "extensions": {
+      "conws": [
+        "conws/utils/icons/icons"
+      ]
+    }
+  },
+  "csui/controls/tabletoolbar/tabletoolbar.view": {
+    "extensions": {
+      "conws": [
+        "conws/utils/commands/tabletoolbar.extension"
+      ]
+    }
+  },
+  "csui/utils/commands": {
+    "extensions": {
+      "conws": [
+        "conws/utils/commands/delete",
+        "conws/utils/commands/addconws",
+        "conws/utils/commands/addconwstemplate",
+        "conws/utils/commands/permissions/addoreditrole",
+        "conws/utils/commands/deleterelateditem",
+        "conws/utils/commands/addrelateditem",
+        "conws/utils/commands/permissions/deleterole",
+        "conws/utils/commands/permissions/edit.role.permissions"
+      ]
+    }
+  },
+  "csui/models/widget/widget.collection": {
+    "widgets": {
+      "conws": [
+        "conws/widgets/header",
+        "conws/widgets/relatedworkspaces",
+        "conws/widgets/team",
+        "conws/widgets/metadata",
+        "conws/widgets/myworkspaces",
+        "conws/widgets/configurationvolume"
+      ]
+    }
+  },
+  "csui/controls/table/inlineforms/inlineform.factory": {
+    "extensions": {
+      "conws": [
+        "conws/controls/inlineforms/workspace/workspace.view",
+        "conws/controls/inlineforms/conwstemplate/conwstemplate.view"
+      ]
+    }
+  },
+  "csui/controls/form/form.view": {
+    "extensions": {
+      "conws": [
+        "conws/controls/form/fields/alpaca/referencefield"
+      ]
+    }
+  },
+  "csui/widgets/permissions/impl/permissions.list/permissions.dropdown.menu.items": {
+    "extensions": {
+      "conws": [
+        "conws/utils/commands/permissions/permissions.dropdown.menu.items.extension"
+      ]
+    }
+  },
+  "csui/widgets/permissions/impl/permissions.list/toolbaritems": {
+    "extensions": {
+      "conws": [
+        "conws/utils/commands/permissions/permissions.list.toolbaritems.extension"
+      ]
+    }
+  },
+  "csui/controls/table/cells/cell.factory": {
+    "extensions": {
+      "conws": [
+        "conws/controls/table/cells/role/role.view",
+        "conws/controls/table/cells/permission/role.permission.level.view"
+      ]
+    }
+  },
+  "csui/controls/userpicker/userpicker.view": {
+    "extensions": {
+      "conws": [
+        "conws/controls/userpicker/role.view"
+      ]
+    }
+  },
+  "csui/utils/dragndrop.supported.subtypes": {
+    "extensions": {
+      "conws": [
+        "conws/utils/dragndrop/dragndrop.subtypes"
+      ]
+    }
+  }
+}

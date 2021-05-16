@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Nodes Table Widget</title>
+
+  <link rel="stylesheet" href="../../../themes/carbonfiber/theme.css">
+  <style>
+    body.binf-widgets {
+      /*padding-top: 1em;*/
+      margin: 0;
+      height: 100%;
+      overflow-y: hidden;
+    }
+
+    .binf-widgets .test-binf-row {
+      margin: 15px 0;
+      color: #ffffff;
+    }
+
+    .binf-widgets .grid-rows > .binf-row > .row-xs-full {
+      height: calc(100vh - 74px) !important;
+    }
+  </style>
+
+  <script src="../../../lib/require.js"></script>
+  <script src="../../../config.js" data-csui-path="../../.."></script>
+
+  <script>
+    // Help the test page waiting on all "deps" config sections.
+    var csuiCallbacks = [],
+        csuiBlocks    = 0;
+
+    window.blockCsui = function () {
+      ++csuiBlocks;
+    };
+
+    window.unBlockCsui = function () {
+      if (--csuiBlocks === 0) {
+        while (csuiCallbacks.length) {
+          csuiCallbacks.shift()();
+          if (csuiBlocks > 0) {
+            break;
+          }
+        }
+      }
+    };
+
+    window.csuiDemo = function (callback) {
+      if (csuiBlocks === 0) {
+        callback();
+      } else {
+        csuiCallbacks.push(callback);
+      }
+    };
+
+    window.blockCsui();
+    require.config({
+      deps: [
+        'csui/lib/require.config!csui/csui-extensions.json'
+      ],
+      callback: window.unBlockCsui
+    });
+  </script>
+  <script src="index.js"></script>
+</head>
+
+<body class="binf-widgets">
+<div class="binf-container-fluid grid-rows">
+  <div class="binf-row test-binf-row" id="navigation">
+    Navigation is here
+  </div>
+
+  <div class="binf-row" id="table">
+    <div class="binf-col-sm-12 row-xs-full" id="content"></div>
+  </div>
+
+  <div class="binf-row test-binf-row" id="footer">
+    Footer is here
+  </div>
+</div>
+</body>
+
+</html>
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

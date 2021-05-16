@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Dossier Widget</title>
+
+  <link rel="stylesheet" href="../../../../csui/themes/carbonfiber/theme.css">
+
+  <style>
+    #content {
+      height: 80vh;
+      margin: 1em;
+    }
+  </style>
+
+  <script src="../../../../csui/lib/require.js"></script>
+  <script src="../../../../csui/config.js" data-csui-path="../../../../csui"></script>
+  <script>
+    require.config({
+      paths: {
+        xecmpf: '../../..',
+        conws: '../../../../conws'
+      },
+      config: {
+        'csui/utils/contexts/factories/connector': {
+          connection: {
+            url: '//server/otcs/cs/api/v1',
+            supportPath: '/img',
+            session: {
+              ticket: 'dummy'
+            }
+          }
+        },
+        'csui/utils/contexts/factories/node': {
+          attributes: {id: 11111}
+        },
+        'xecmpf/widgets/dossier/impl/dropdown.items': {
+          groupByDocumentType: false
+        }
+      },
+      deps: [ 'csui/lib/require.config!csui/csui-extensions.json',
+        'csui/lib/require.config!conws/conws-extensions.json',
+        'csui/lib/require.config!xecmpf/xecmpf-extensions.json']
+    });
+
+    require(['csui/lib/marionette', 'csui/utils/contexts/page/page.context',
+      'xecmpf/widgets/dossier/dossier.view', 'dossiermock', 'documentsmock'
+    ], function (Marionette, PageContext,
+        DossierView, dossierMock, documentsMock) {
+
+      var contentRegion = new Marionette.Region({el: "#content"}),
+          pageContext   = new PageContext(),
+          options       = {
+            "context": pageContext,
+            data: {
+              //"groupBy": "create_date",
+              "groupBy": "classification",
+              "hideGroupByCriterionDropdown": false,
+              "hideMetadata": false,
+              "metadata": [
+                {
+                  "type": "category",
+                  "categoryId": 15064
+                }
+              ],
+              "hideEmptyFields": true,
+              "hideFavorite": false
+            }
+          },
+          dossierView   = new DossierView(options);
+
+      contentRegion.show(dossierView);
+      dossierMock.enable();
+      documentsMock.enable();
+      pageContext.fetch();
+    });
+  </script>
+</head>
+<body class="binf-widgets">
+<div class="binf-container-fluid grid-rows">
+  <div class="binf-row">
+    <div id="content"></div>
+  </div>
+</div>
+</body>
+
+</html>
+
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

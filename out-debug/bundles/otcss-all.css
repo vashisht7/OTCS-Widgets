@@ -1,0 +1,186 @@
+.binf-widgets .otcss--hello {
+  /* Make more space around the welcome message than the default Bootstrap
+     panel offers */
+  padding: 1em;
+  /* Make the panel look nicer */
+  background-color: #fff;
+  /* Fill up the parent tile extents. */
+  width: 100%;
+  height: 100%;
+}
+#title-header {
+    flex: 3;
+    padding: .35em;
+    font-size: 1.75em;
+    font-weight: 300;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background-color:#cce6f0;
+}
+ 
+.flex-containers {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+ 
+.flex-containers > div {
+    padding: 10px;
+  }
+ 
+.viewer-flex-container > div {
+    flex: 1;
+}
+ 
+.csv {
+    height: 460px; 
+}
+.selectDocument-fieldname{
+    text-align: center;
+}
+#selectDocument > div {
+    display: flex;
+    font: inherit;
+    width: 140px;
+    padding: 2px;
+    font-size: 16px;
+    line-height: 1;
+    border: 0;
+    border-radius: 2px;
+    height: 34px;
+    background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right #ddd;
+    -webkit-appearance: none;
+}
+  
+#selectDocument > span {
+    display: flex;
+    text-align: start;
+}
+.center-collapse-btn {
+    background-image: url(../widgets/noteview/impl/utils/circular.add.svg);
+  }
+.right-collapse-btn {
+    background-image: url(../widgets/noteview/impl/utils/circular.add1.svg);
+  }
+.cs-field-write{
+    width: 12em;
+}
+/* .selectDocument-fieldname{
+ 
+    background-image: url(http://localhost/img/otsapxecm/image/icons/mime_workspace.svg);
+ 
+}
+ 
+.tile-type-icon {
+    background-image: url(http://localhost/img/webreports/app/image/icons/title_webreports.svg);
+}
+ 
+.title-webreports {
+    background-image: url('http://localhost/img/webreports/app/image/icons/title_webreports.svg');
+}
+  */
+.textarea-widget {
+    /* Make more space around the welcome message than the default Bootstrap
+       panel offers */
+    /* Make the panel look nicer */
+    background-color: #fff;
+    /* Fill up the parent tile extents. */
+    width: 30%;
+    height: 30%;
+  }
+ 
+/* .fieldLabel{
+    height: 1em;
+}
+.fieldLabel, .selectDocument{ 
+    float:left;/*Add float left*
+} */.binf-widgets .otcsw--noteview {
+  /* Make more space around the welcome message than the default Bootstrap
+     panel offers */
+  padding: 1em;
+  /* Make the panel look nicer */
+  background-color: #fff;
+  /* Fill up the parent tile extents. */
+  
+}
+.leftColumn {
+  float: left;
+  padding: 1em;
+  width: 100%;
+  height: 560px;
+}
+
+.centerColumn{
+  float: left;
+  padding: 1em;
+  width: 100%;
+  height: 560px;
+}
+
+.rightColumn{
+  float: left;
+  padding: 1em;
+  width: 100%;    
+  height: 560px;
+}
+.flex-container {
+  display: flex;
+  background-color: white;
+}
+
+.viewer-flex-container {
+  display: flex;
+}
+
+.center-header-toolbar {
+  display: flex;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background-color: #dfe7ea;
+}
+
+.center-collapse-btn {
+  width: 50px;
+  float: left;
+}
+
+.right-collapse-btn {
+  width: 50px;
+  float: right;
+}
+
+.flex-container > div {
+  border:1px solid black;
+  margin: 2px;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}.binf-widgets .otcsw--getdeptnames {
+  /* Make more space around the welcome message than the default Bootstrap
+     panel offers */
+  padding: 1em;
+  /* Make the panel look nicer */
+  background-color: #fff;
+  /* Fill up the parent tile extents. */
+  width: 100%;
+  height: 100%;
+}
+.binf-widgets .otcsw--dps {
+  /* Make more space around the welcome message than the default Bootstrap
+     panel offers */
+  padding: 1em;
+  /* Make the panel look nicer */
+  background-color: #fff;
+  /* Fill up the parent tile extents. */
+  width: 100%;
+  height: 100%;
+}

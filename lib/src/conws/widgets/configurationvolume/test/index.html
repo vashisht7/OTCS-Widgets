@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Shortcuts Widget</title>
+
+  <style>
+    body.binf-widgets {
+      margin-top: 15px;
+    }
+  </style>
+  <link rel="stylesheet" href="../../../../csui/themes/carbonfiber/theme.css">
+
+  <script src="../../../../csui/lib/require.js"></script>
+  <script src="../../../../csui/config.js" data-csui-path="../../../../csui"></script>
+  <script src="../../../../csui/helpers.js"></script>
+  <script>
+
+    require.config({
+      deps: [
+        'csui/lib/require.config!csui/csui-extensions.json'
+      ]
+    });
+
+    require.config({
+      paths: {
+        conws: '../../..',
+        esoc: '../../../../esoc'
+      },
+      config: {
+        'csui/utils/contexts/factories/connector': {
+          connection: {
+            url: '//server/otcs/cs/api/v1',
+            supportPath: '/support',
+            session: {
+              ticket: 'dummy'
+            }
+          }
+        }
+      }
+    });
+
+    require([
+      "csui/lib/underscore",
+      "csui/lib/marionette",
+      "csui/utils/contexts/page/page.context",
+      "csui/utils/contexts/factories/node",
+      "./configuration.mock.data.js",
+      "../configurationvolume.view"
+    ], function (_,
+        Marionette,
+        PageContext,
+        NodeModelFactory,
+        ConfigurationMock,
+        ConfigurationView) {
+      'use strict';
+
+      ConfigurationMock.enable();
+      var pageContext = new PageContext()
+      var shortcutThemes = [
+        "csui-shortcut-theme-stone1",
+        "csui-shortcut-theme-stone2",
+        "csui-shortcut-theme-teal1",
+        "csui-shortcut-theme-teal2",
+        "csui-shortcut-theme-pink1",
+        "csui-shortcut-theme-pink2",
+        "csui-shortcut-theme-indigo1",
+        "csui-shortcut-theme-indigo2"
+      ];
+
+      var testInfo = _.map(_.range(8), function (val) {
+        var tmpWidget = new ConfigurationView({
+          context: pageContext,
+          data: {
+            "shortcutTheme": shortcutThemes[val]
+          }
+        });
+        return {
+          region: new Marionette.Region({el: "#content" + val}),
+          widget: tmpWidget
+        };
+      });
+
+      _.each(testInfo, function (info) {
+        info.region.show(info.widget);
+      });
+
+      pageContext.fetch();
+    });
+  </script>
+</head>
+
+<body class="binf-widgets">
+<div class="binf-container-fluid grid-rows">
+  <div class="binf-row">
+    <div class="binf-col-sm-5 binf-col-md-4 binf-col-lg-3" id="content0"></div>
+    <div class="binf-col-sm-5 binf-col-md-4 binf-col-lg-3" id="content1"></div>
+    <div class="binf-col-sm-5 binf-col-md-4 binf-col-lg-3" id="content2"></div>
+    <div class="binf-col-sm-5 binf-col-md-4 binf-col-lg-3" id="content3"></div>
+    <div class="binf-col-sm-5 binf-col-md-4 binf-col-lg-3" id="content4"></div>
+    <div class="binf-col-sm-5 binf-col-md-4 binf-col-lg-3" id="content5"></div>
+    <div class="binf-col-sm-5 binf-col-md-4 binf-col-lg-3" id="content6"></div>
+    <div class="binf-col-sm-5 binf-col-md-4 binf-col-lg-3" id="content7"></div>
+  </div>
+</div>
+</body>
+
+</html>
+
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

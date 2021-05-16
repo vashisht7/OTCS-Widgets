@@ -1,0 +1,29 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .team-table-cell-avatar {
+    min-width: 4rem;
+    max-width: 4rem;
+}
+
+.team-table-cell-avatar .status-indicator {
+  width: 0.875rem;
+  height: 0.875rem;
+  position: absolute;
+  margin-left: 1.5rem;
+}
+
+.team-table-cell-avatar .esoc-user-profile-pic-container img,
+.team-table-cell-avatar .esoc-user-profile-pic-container span{
+  height: 2rem;
+  width: 2rem;
+}
+
+.team-table-cell-avatar #status-indicator-new {
+  background-image: url('../../../image/icons/status_new.svg');
+  background-repeat: no-repeat;
+}
+
+.team-table-cell-avatar #status-indicator-inherited {
+  background-image: url('../../../image/icons/overlay_inherited.svg');
+  background-repeat: no-repeat;
+}

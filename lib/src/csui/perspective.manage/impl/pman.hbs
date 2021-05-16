@@ -1,0 +1,33 @@
+<div class="pman-backdrop"></div>
+<div class="pman-header">
+  <div class="pman-header-backdrop"></div>
+  <div class="pman-tools-container">
+    <div class="pman-left-tools">
+      <ul>
+        <li class="pman-toolitem">
+          <button class="icon icon-toolbarAdd" title="{{this.addWidget}}"></button>
+        </li>
+      </ul>
+      <div class="pman-pannel-wrapper"></div>
+    </div>
+    <div class="pman-right-tools">
+      <ul>
+      {{#if personalizeMode}}
+        <li>
+          <button class="binf-btn icon-reset" title="{{this.reset}}">{{this.reset}}</button>
+        </li>
+      {{/if}}
+        <li>
+          <button class="binf-btn icon-save" title="{{this.save}}">{{this.save}}</button>
+        </li>
+        <li>
+          <button class="binf-btn cancel-edit" title="{{this.cancel}}">{{this.cancel}}</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="pman-trash-area">
+    <div class="pman-trash-banner"></div>
+  </div>
+</div>
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

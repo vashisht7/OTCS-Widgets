@@ -1,0 +1,2582 @@
+{
+  "collection": {
+    "paging": {
+      "limit": 10,
+      "links": {
+        "next": {
+          "body": "",
+          "content_type": "",
+          "href": "\/api\/v2\/search?actions=addcategory&actions=addversion&actions=open&actions=copy&actions=delete&actions=download&actions=edit&actions=editactivex&actions=rename&actions=move&actions=permissions&actions=properties&actions=reserve&actions=unreserve&actions=collectioncancollect&actions=removefromcollection&expand=properties{original_id,owner_user_id,create_user_id,owner_id,reserved_user_id}&limit=10&options=highlight_summaries&options=facets&page=2&query_id=45823&cache_id=1162399406",
+          "method": "GET",
+          "name": "Next"
+        }
+      },
+      "page": 1,
+      "page_total": 13,
+      "range_max": 10,
+      "range_min": 1,
+      "result_header_string": "Results 1 to 10 of 125 sorted by Relevance",
+      "total_count": 125
+    },
+    "searching": {
+      "cache_id": 1162399406,
+      "facets": {
+        "available": [
+          {
+            "count": 5,
+            "count_exceeded": false,
+            "display_name": "Creation Date",
+            "facet_items": [
+              {
+                "count": 125,
+                "display_name": "Last 2 months",
+                "value": "lx2m"
+              },
+              {
+                "count": 125,
+                "display_name": "Last 6 months",
+                "value": "lw6m"
+              },
+              {
+                "count": 125,
+                "display_name": "Last 12 months",
+                "value": "lv1y"
+              },
+              {
+                "count": 125,
+                "display_name": "Last 3 years",
+                "value": "lu3y"
+              },
+              {
+                "count": 125,
+                "display_name": "Last 5 years",
+                "value": "lt5y"
+              }
+            ],
+            "name": "OTCreateDate",
+            "type": "Date"
+          },
+          {
+            "count": 62,
+            "count_exceeded": false,
+            "display_name": "Content Type",
+            "facet_items": [
+              {
+                "count": 125,
+                "display_name": "Business Workspace",
+                "value": "848"
+              }
+            ],
+            "name": "OTSubType",
+            "type": "Text"
+          },
+          {
+            "count": 17,
+            "count_exceeded": false,
+            "display_name": "Size",
+            "facet_items": [
+              {
+                "count": 125,
+                "display_name": "< 100 M",
+                "value": "all_t100m"
+              },
+              {
+                "count": 125,
+                "display_name": "< 10 M",
+                "value": "all_u10m"
+              },
+              {
+                "count": 125,
+                "display_name": "< 1 M",
+                "value": "all_v1m"
+              },
+              {
+                "count": 125,
+                "display_name": "< 100 K",
+                "value": "all_w100k"
+              },
+              {
+                "count": 125,
+                "display_name": "< 10 K",
+                "value": "all_x10k"
+              },
+              {
+                "count": 125,
+                "display_name": "< 1 K",
+                "value": "all_y1k"
+              },
+              {
+                "count": 125,
+                "display_name": "< 100",
+                "value": "all_z100b"
+              }
+            ],
+            "name": "OTObjectSize",
+            "type": "FileSize"
+          },
+          {
+            "count": 16,
+            "count_exceeded": false,
+            "display_name": "File Type",
+            "facet_items": [
+              {
+                "count": 125,
+                "display_name": "UNKNOWN",
+                "value": "UNKNOWN"
+              }
+            ],
+            "name": "OTFileType",
+            "type": "Text"
+          },
+          {
+            "count": 1,
+            "count_exceeded": false,
+            "display_name": "Container",
+            "facet_items": [
+              {
+                "count": 125,
+                "display_name": "xECMSAP Business Workspaces : Equipments",
+                "value": "25533"
+              }
+            ],
+            "name": "OTParentID",
+            "type": "Text"
+          }
+        ]
+      },
+      "result_title": "Search Result"
+    },
+    "sorting": {
+      "links": {
+        "asc_OTObjectDate": {
+          "body": "",
+          "content_type": "",
+          "href": "\/api\/v2\/search?actions=addcategory&actions=addversion&actions=open&actions=copy&actions=delete&actions=download&actions=edit&actions=editactivex&actions=rename&actions=move&actions=permissions&actions=properties&actions=reserve&actions=unreserve&actions=collectioncancollect&actions=removefromcollection&expand=properties{original_id,owner_user_id,create_user_id,owner_id,reserved_user_id}&limit=10&options=highlight_summaries&options=facets&page=1&query_id=45823&cache_id=1162399406&sort=asc_OTObjectDate",
+          "method": "GET",
+          "name": "Date (Ascending)"
+        },
+        "asc_OTObjectSize": {
+          "body": "",
+          "content_type": "",
+          "href": "\/api\/v2\/search?actions=addcategory&actions=addversion&actions=open&actions=copy&actions=delete&actions=download&actions=edit&actions=editactivex&actions=rename&actions=move&actions=permissions&actions=properties&actions=reserve&actions=unreserve&actions=collectioncancollect&actions=removefromcollection&expand=properties{original_id,owner_user_id,create_user_id,owner_id,reserved_user_id}&limit=10&options=highlight_summaries&options=facets&page=1&query_id=45823&cache_id=1162399406&sort=asc_OTObjectSize",
+          "method": "GET",
+          "name": "Size (Ascending)"
+        },
+        "desc_OTObjectDate": {
+          "body": "",
+          "content_type": "",
+          "href": "\/api\/v2\/search?actions=addcategory&actions=addversion&actions=open&actions=copy&actions=delete&actions=download&actions=edit&actions=editactivex&actions=rename&actions=move&actions=permissions&actions=properties&actions=reserve&actions=unreserve&actions=collectioncancollect&actions=removefromcollection&expand=properties{original_id,owner_user_id,create_user_id,owner_id,reserved_user_id}&limit=10&options=highlight_summaries&options=facets&page=1&query_id=45823&cache_id=1162399406&sort=desc_OTObjectDate",
+          "method": "GET",
+          "name": "Date (Descending)"
+        },
+        "desc_OTObjectSize": {
+          "body": "",
+          "content_type": "",
+          "href": "\/api\/v2\/search?actions=addcategory&actions=addversion&actions=open&actions=copy&actions=delete&actions=download&actions=edit&actions=editactivex&actions=rename&actions=move&actions=permissions&actions=properties&actions=reserve&actions=unreserve&actions=collectioncancollect&actions=removefromcollection&expand=properties{original_id,owner_user_id,create_user_id,owner_id,reserved_user_id}&limit=10&options=highlight_summaries&options=facets&page=1&query_id=45823&cache_id=1162399406&sort=desc_OTObjectSize",
+          "method": "GET",
+          "name": "Size (Descending)"
+        },
+        "relevance": {
+          "body": "",
+          "content_type": "",
+          "href": "\/api\/v2\/search?actions=addcategory&actions=addversion&actions=open&actions=copy&actions=delete&actions=download&actions=edit&actions=editactivex&actions=rename&actions=move&actions=permissions&actions=properties&actions=reserve&actions=unreserve&actions=collectioncancollect&actions=removefromcollection&expand=properties{original_id,owner_user_id,create_user_id,owner_id,reserved_user_id}&limit=10&options=highlight_summaries&options=facets&page=1&query_id=45823&cache_id=1162399406",
+          "method": "GET",
+          "name": "Relevance"
+        }
+      }
+    }
+  },
+  "links": {
+    "data": {
+      "self": {
+        "body": "",
+        "content_type": "",
+        "href": "\/api\/v2\/search?actions=addcategory&actions=addversion&actions=open&actions=copy&actions=delete&actions=download&actions=edit&actions=editactivex&actions=rename&actions=move&actions=permissions&actions=properties&actions=reserve&actions=unreserve&actions=collectioncancollect&actions=removefromcollection&expand=properties{original_id,owner_user_id,create_user_id,owner_id,reserved_user_id}&limit=10&options=highlight_summaries&options=facets&page=1&query_id=45823&cache_id=1162399406",
+        "method": "GET",
+        "name": ""
+      }
+    }
+  },
+  "results": [
+    {
+      "actions": {
+        "data": {
+          "addcategory": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "\/api\/v2\/nodes\/44807\/categories",
+            "method": "POST",
+            "name": "Add Category"
+          },
+          "copy": {
+            "body": "",
+            "content_type": "",
+            "form_href": "\/api\/v2\/forms\/nodes\/copy?id=44807",
+            "href": "\/api\/v2\/nodes",
+            "method": "POST",
+            "name": "Copy"
+          },
+          "delete": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "\/api\/v2\/nodes\/44807",
+            "method": "DELETE",
+            "name": "Delete"
+          },
+          "move": {
+            "body": "",
+            "content_type": "",
+            "form_href": "\/api\/v2\/forms\/nodes\/move?id=44807",
+            "href": "\/api\/v2\/nodes\/44807",
+            "method": "PUT",
+            "name": "Move"
+          },
+          "open": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "\/api\/v2\/nodes\/44807\/nodes",
+            "method": "GET",
+            "name": "Open"
+          },
+          "properties": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "\/api\/v2\/nodes\/44807",
+            "method": "GET",
+            "name": "Properties"
+          },
+          "rename": {
+            "body": "",
+            "content_type": "",
+            "form_href": "\/api\/v2\/forms\/nodes\/rename?id=44807",
+            "href": "\/api\/v2\/nodes\/44807",
+            "method": "PUT",
+            "name": "Rename"
+          }
+        },
+        "map": {
+          "default_action": "",
+          "more": [
+            "properties"
+          ]
+        },
+        "order": [
+          "open",
+          "addcategory",
+          "rename",
+          "copy",
+          "move",
+          "delete"
+        ]
+      },
+      "data": {
+        "properties": {
+          "container": true,
+          "container_size": 6,
+          "create_date": "2018-02-28T18:25:04",
+          "create_user_id": 25873,
+          "create_user_id_expand": {
+            "birth_date": null,
+            "business_email": "mtanwar@opentext.com",
+            "business_fax": null,
+            "business_phone": null,
+            "cell_phone": null,
+            "deleted": false,
+            "first_name": "Mayank",
+            "gender": null,
+            "group_id": 1001,
+            "home_address_1": null,
+            "home_address_2": null,
+            "home_fax": null,
+            "home_phone": null,
+            "id": 25873,
+            "last_name": "Tanwar",
+            "middle_name": null,
+            "name": "mtanwar",
+            "name_formatted": "Mayank  Tanwar (mtanwar)",
+            "office_location": "Hyderabad",
+            "pager": null,
+            "personal_email": null,
+            "personal_interests": null,
+            "personal_url_1": null,
+            "personal_url_2": null,
+            "personal_url_3": null,
+            "personal_website": null,
+            "photo_id": 33994,
+            "photo_url": "api\/v1\/members\/25873\/photo?v=33994.1",
+            "time_zone": 43,
+            "title": null,
+            "type": 0,
+            "type_name": "User"
+          },
+          "description": "",
+          "description_multilingual": {
+            "en": ""
+          },
+          "external_create_date": null,
+          "external_identity": "",
+          "external_identity_type": "",
+          "external_modify_date": null,
+          "external_source": "",
+          "favorite": false,
+          "id": 44807,
+          "mime_type": null,
+          "modify_date": "2018-03-05T18:31:00",
+          "modify_user_id": 1000,
+          "name": "Equipment 000000000010003552",
+          "name_multilingual": {
+            "en": "Equipment 000000000010003552"
+          },
+          "owner": "Mayank  Tanwar",
+          "owner_group_id": 1001,
+          "owner_user_id": 25873,
+          "owner_user_id_expand": {
+            "birth_date": null,
+            "business_email": "mtanwar@opentext.com",
+            "business_fax": null,
+            "business_phone": null,
+            "cell_phone": null,
+            "deleted": false,
+            "first_name": "Mayank",
+            "gender": null,
+            "group_id": 1001,
+            "home_address_1": null,
+            "home_address_2": null,
+            "home_fax": null,
+            "home_phone": null,
+            "id": 25873,
+            "last_name": "Tanwar",
+            "middle_name": null,
+            "name": "mtanwar",
+            "name_formatted": "Mayank  Tanwar (mtanwar)",
+            "office_location": "Hyderabad",
+            "pager": null,
+            "personal_email": null,
+            "personal_interests": null,
+            "personal_url_1": null,
+            "personal_url_2": null,
+            "personal_url_3": null,
+            "personal_website": null,
+            "photo_id": 33994,
+            "photo_url": "api\/v1\/members\/25873\/photo?v=33994.1",
+            "time_zone": 43,
+            "title": null,
+            "type": 0,
+            "type_name": "User"
+          },
+          "parent_id": 25533,
+          "permissions_model": "advanced",
+          "reserved": false,
+          "reserved_date": null,
+          "reserved_shared_collaboration": false,
+          "reserved_user_id": 0,
+          "rm_enabled": false,
+          "short_summary": [
+            ""
+          ],
+          "size": 6,
+          "size_formatted": "6 Items",
+          "summary": [
+            ""
+          ],
+          "type": 848,
+          "type_name": "Business Workspace",
+          "versions_control_advanced": false,
+          "volume_id": -2000
+        }
+      },
+      "links": {
+        "ancestors": [
+          {
+            "href": "api\/v1\/nodes\/2000",
+            "name": "Enterprise"
+          },
+          {
+            "href": "api\/v1\/nodes\/25422",
+            "name": "xECMSAP Business Workspaces"
+          },
+          {
+            "href": "api\/v1\/nodes\/25533",
+            "name": "Equipments"
+          }
+        ],
+        "ancestors_nodes": [
+          {
+            "href": "api\/v1\/nodes\/2000\/nodes",
+            "name": "Enterprise"
+          },
+          {
+            "href": "api\/v1\/nodes\/25422\/nodes",
+            "name": "xECMSAP Business Workspaces"
+          },
+          {
+            "href": "api\/v1\/nodes\/25533\/nodes",
+            "name": "Equipments"
+          }
+        ],
+        "parent": {
+          "href": "api\/v1\/nodes\/25533",
+          "name": "Equipments"
+        },
+        "parent_nodes": {
+          "href": "api\/v1\/nodes\/25533\/nodes",
+          "name": "Equipments"
+        }
+      },
+      "search_result_metadata": {
+        "current_version": null,
+        "object_href": null,
+        "object_id": "DataId=44807&Version=0",
+        "result_type": "264",
+        "source_id": "3988",
+        "version_type": null
+      }
+    },
+    {
+      "actions": {
+        "data": {
+          "addcategory": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "\/api\/v2\/nodes\/44815\/categories",
+            "method": "POST",
+            "name": "Add Category"
+          },
+          "copy": {
+            "body": "",
+            "content_type": "",
+            "form_href": "\/api\/v2\/forms\/nodes\/copy?id=44815",
+            "href": "\/api\/v2\/nodes",
+            "method": "POST",
+            "name": "Copy"
+          },
+          "delete": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "\/api\/v2\/nodes\/44815",
+            "method": "DELETE",
+            "name": "Delete"
+          },
+          "move": {
+            "body": "",
+            "content_type": "",
+            "form_href": "\/api\/v2\/forms\/nodes\/move?id=44815",
+            "href": "\/api\/v2\/nodes\/44815",
+            "method": "PUT",
+            "name": "Move"
+          },
+          "open": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "\/api\/v2\/nodes\/44815\/nodes",
+            "method": "GET",
+            "name": "Open"
+          },
+          "properties": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "\/api\/v2\/nodes\/44815",
+            "method": "GET",
+            "name": "Properties"
+          },
+          "rename": {
+            "body": "",
+            "content_type": "",
+            "form_href": "\/api\/v2\/forms\/nodes\/rename?id=44815",
+            "href": "\/api\/v2\/nodes\/44815",
+            "method": "PUT",
+            "name": "Rename"
+          }
+        },
+        "map": {
+          "default_action": "",
+          "more": [
+            "properties"
+          ]
+        },
+        "order": [
+          "open",
+          "addcategory",
+          "rename",
+          "copy",
+          "move",
+          "delete"
+        ]
+      },
+      "data": {
+        "properties": {
+          "container": true,
+          "container_size": 6,
+          "create_date": "2018-02-28T18:25:06",
+          "create_user_id": 25873,
+          "create_user_id_expand": {
+            "birth_date": null,
+            "business_email": "mtanwar@opentext.com",
+            "business_fax": null,
+            "business_phone": null,
+            "cell_phone": null,
+            "deleted": false,
+            "first_name": "Mayank",
+            "gender": null,
+            "group_id": 1001,
+            "home_address_1": null,
+            "home_address_2": null,
+            "home_fax": null,
+            "home_phone": null,
+            "id": 25873,
+            "last_name": "Tanwar",
+            "middle_name": null,
+            "name": "mtanwar",
+            "name_formatted": "Mayank  Tanwar (mtanwar)",
+            "office_location": "Hyderabad",
+            "pager": null,
+            "personal_email": null,
+            "personal_interests": null,
+            "personal_url_1": null,
+            "personal_url_2": null,
+            "personal_url_3": null,
+            "personal_website": null,
+            "photo_id": 33994,
+            "photo_url": "api\/v1\/members\/25873\/photo?v=33994.1",
+            "time_zone": 43,
+            "title": null,
+            "type": 0,
+            "type_name": "User"
+          },
+          "description": "",
+          "description_multilingual": {
+            "en": ""
+          },
+          "external_create_date": null,
+          "external_identity": "",
+          "external_identity_type": "",
+          "external_modify_date": null,
+          "external_source": "",
+          "favorite": false,
+          "id": 44815,
+          "mime_type": null,
+          "modify_date": "2018-02-28T18:25:06",
+          "modify_user_id": 1000,
+          "name": "Equipment 000000000010003553",
+          "name_multilingual": {
+            "en": "Equipment 000000000010003553"
+          },
+          "owner": "Mayank  Tanwar",
+          "owner_group_id": 1001,
+          "owner_user_id": 25873,
+          "owner_user_id_expand": {
+            "birth_date": null,
+            "business_email": "mtanwar@opentext.com",
+            "business_fax": null,
+            "business_phone": null,
+            "cell_phone": null,
+            "deleted": false,
+            "first_name": "Mayank",
+            "gender": null,
+            "group_id": 1001,
+            "home_address_1": null,
+            "home_address_2": null,
+            "home_fax": null,
+            "home_phone": null,
+            "id": 25873,
+            "last_name": "Tanwar",
+            "middle_name": null,
+            "name": "mtanwar",
+            "name_formatted": "Mayank  Tanwar (mtanwar)",
+            "office_location": "Hyderabad",
+            "pager": null,
+            "personal_email": null,
+            "personal_interests": null,
+            "personal_url_1": null,
+            "personal_url_2": null,
+            "personal_url_3": null,
+            "personal_website": null,
+            "photo_id": 33994,
+            "photo_url": "api\/v1\/members\/25873\/photo?v=33994.1",
+            "time_zone": 43,
+            "title": null,
+            "type": 0,
+            "type_name": "User"
+          },
+          "parent_id": 25533,
+          "permissions_model": "advanced",
+          "reserved": false,
+          "reserved_date": null,
+          "reserved_shared_collaboration": false,
+          "reserved_user_id": 0,
+          "rm_enabled": false,
+          "short_summary": [
+            ""
+          ],
+          "size": 6,
+          "size_formatted": "6 Items",
+          "summary": [
+            ""
+          ],
+          "type": 848,
+          "type_name": "Business Workspace",
+          "versions_control_advanced": false,
+          "volume_id": -2000
+        }
+      },
+      "links": {
+        "ancestors": [
+          {
+            "href": "api\/v1\/nodes\/2000",
+            "name": "Enterprise"
+          },
+          {
+            "href": "api\/v1\/nodes\/25422",
+            "name": "xECMSAP Business Workspaces"
+          },
+          {
+            "href": "api\/v1\/nodes\/25533",
+            "name": "Equipments"
+          }
+        ],
+        "ancestors_nodes": [
+          {
+            "href": "api\/v1\/nodes\/2000\/nodes",
+            "name": "Enterprise"
+          },
+          {
+            "href": "api\/v1\/nodes\/25422\/nodes",
+            "name": "xECMSAP Business Workspaces"
+          },
+          {
+            "href": "api\/v1\/nodes\/25533\/nodes",
+            "name": "Equipments"
+          }
+        ],
+        "parent": {
+          "href": "api\/v1\/nodes\/25533",
+          "name": "Equipments"
+        },
+        "parent_nodes": {
+          "href": "api\/v1\/nodes\/25533\/nodes",
+          "name": "Equipments"
+        }
+      },
+      "search_result_metadata": {
+        "current_version": null,
+        "object_href": null,
+        "object_id": "DataId=44815&Version=0",
+        "result_type": "264",
+        "source_id": "3988",
+        "version_type": null
+      }
+    },
+    {
+      "actions": {
+        "data": {
+          "addcategory": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "\/api\/v2\/nodes\/44823\/categories",
+            "method": "POST",
+            "name": "Add Category"
+          },
+          "copy": {
+            "body": "",
+            "content_type": "",
+            "form_href": "\/api\/v2\/forms\/nodes\/copy?id=44823",
+            "href": "\/api\/v2\/nodes",
+            "method": "POST",
+            "name": "Copy"
+          },
+          "delete": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "\/api\/v2\/nodes\/44823",
+            "method": "DELETE",
+            "name": "Delete"
+          },
+          "move": {
+            "body": "",
+            "content_type": "",
+            "form_href": "\/api\/v2\/forms\/nodes\/move?id=44823",
+            "href": "\/api\/v2\/nodes\/44823",
+            "method": "PUT",
+            "name": "Move"
+          },
+          "open": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "\/api\/v2\/nodes\/44823\/nodes",
+            "method": "GET",
+            "name": "Open"
+          },
+          "properties": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "\/api\/v2\/nodes\/44823",
+            "method": "GET",
+            "name": "Properties"
+          },
+          "rename": {
+            "body": "",
+            "content_type": "",
+            "form_href": "\/api\/v2\/forms\/nodes\/rename?id=44823",
+            "href": "\/api\/v2\/nodes\/44823",
+            "method": "PUT",
+            "name": "Rename"
+          }
+        },
+        "map": {
+          "default_action": "",
+          "more": [
+            "properties"
+          ]
+        },
+        "order": [
+          "open",
+          "addcategory",
+          "rename",
+          "copy",
+          "move",
+          "delete"
+        ]
+      },
+      "data": {
+        "properties": {
+          "container": true,
+          "container_size": 6,
+          "create_date": "2018-02-28T18:25:07",
+          "create_user_id": 25873,
+          "create_user_id_expand": {
+            "birth_date": null,
+            "business_email": "mtanwar@opentext.com",
+            "business_fax": null,
+            "business_phone": null,
+            "cell_phone": null,
+            "deleted": false,
+            "first_name": "Mayank",
+            "gender": null,
+            "group_id": 1001,
+            "home_address_1": null,
+            "home_address_2": null,
+            "home_fax": null,
+            "home_phone": null,
+            "id": 25873,
+            "last_name": "Tanwar",
+            "middle_name": null,
+            "name": "mtanwar",
+            "name_formatted": "Mayank  Tanwar (mtanwar)",
+            "office_location": "Hyderabad",
+            "pager": null,
+            "personal_email": null,
+            "personal_interests": null,
+            "personal_url_1": null,
+            "personal_url_2": null,
+            "personal_url_3": null,
+            "personal_website": null,
+            "photo_id": 33994,
+            "photo_url": "api\/v1\/members\/25873\/photo?v=33994.1",
+            "time_zone": 43,
+            "title": null,
+            "type": 0,
+            "type_name": "User"
+          },
+          "description": "",
+          "description_multilingual": {
+            "en": ""
+          },
+          "external_create_date": null,
+          "external_identity": "",
+          "external_identity_type": "",
+          "external_modify_date": null,
+          "external_source": "",
+          "favorite": false,
+          "id": 44823,
+          "mime_type": null,
+          "modify_date": "2018-02-28T18:25:07",
+          "modify_user_id": 1000,
+          "name": "Equipment 000000000010003554",
+          "name_multilingual": {
+            "en": "Equipment 000000000010003554"
+          },
+          "owner": "Mayank  Tanwar",
+          "owner_group_id": 1001,
+          "owner_user_id": 25873,
+          "owner_user_id_expand": {
+            "birth_date": null,
+            "business_email": "mtanwar@opentext.com",
+            "business_fax": null,
+            "business_phone": null,
+            "cell_phone": null,
+            "deleted": false,
+            "first_name": "Mayank",
+            "gender": null,
+            "group_id": 1001,
+            "home_address_1": null,
+            "home_address_2": null,
+            "home_fax": null,
+            "home_phone": null,
+            "id": 25873,
+            "last_name": "Tanwar",
+            "middle_name": null,
+            "name": "mtanwar",
+            "name_formatted": "Mayank  Tanwar (mtanwar)",
+            "office_location": "Hyderabad",
+            "pager": null,
+            "personal_email": null,
+            "personal_interests": null,
+            "personal_url_1": null,
+            "personal_url_2": null,
+            "personal_url_3": null,
+            "personal_website": null,
+            "photo_id": 33994,
+            "photo_url": "api\/v1\/members\/25873\/photo?v=33994.1",
+            "time_zone": 43,
+            "title": null,
+            "type": 0,
+            "type_name": "User"
+          },
+          "parent_id": 25533,
+          "permissions_model": "advanced",
+          "reserved": false,
+          "reserved_date": null,
+          "reserved_shared_collaboration": false,
+          "reserved_user_id": 0,
+          "rm_enabled": false,
+          "short_summary": [
+            ""
+          ],
+          "size": 6,
+          "size_formatted": "6 Items",
+          "summary": [
+            ""
+          ],
+          "type": 848,
+          "type_name": "Business Workspace",
+          "versions_control_advanced": false,
+          "volume_id": -2000
+        }
+      },
+      "links": {
+        "ancestors": [
+          {
+            "href": "api\/v1\/nodes\/2000",
+            "name": "Enterprise"
+          },
+          {
+            "href": "api\/v1\/nodes\/25422",
+            "name": "xECMSAP Business Workspaces"
+          },
+          {
+            "href": "api\/v1\/nodes\/25533",
+            "name": "Equipments"
+          }
+        ],
+        "ancestors_nodes": [
+          {
+            "href": "api\/v1\/nodes\/2000\/nodes",
+            "name": "Enterprise"
+          },
+          {
+            "href": "api\/v1\/nodes\/25422\/nodes",
+            "name": "xECMSAP Business Workspaces"
+          },
+          {
+            "href": "api\/v1\/nodes\/25533\/nodes",
+            "name": "Equipments"
+          }
+        ],
+        "parent": {
+          "href": "api\/v1\/nodes\/25533",
+          "name": "Equipments"
+        },
+        "parent_nodes": {
+          "href": "api\/v1\/nodes\/25533\/nodes",
+          "name": "Equipments"
+        }
+      },
+      "search_result_metadata": {
+        "current_version": null,
+        "object_href": null,
+        "object_id": "DataId=44823&Version=0",
+        "result_type": "264",
+        "source_id": "3988",
+        "version_type": null
+      }
+    },
+    {
+      "actions": {
+        "data": {
+          "addcategory": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "\/api\/v2\/nodes\/44831\/categories",
+            "method": "POST",
+            "name": "Add Category"
+          },
+          "copy": {
+            "body": "",
+            "content_type": "",
+            "form_href": "\/api\/v2\/forms\/nodes\/copy?id=44831",
+            "href": "\/api\/v2\/nodes",
+            "method": "POST",
+            "name": "Copy"
+          },
+          "delete": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "\/api\/v2\/nodes\/44831",
+            "method": "DELETE",
+            "name": "Delete"
+          },
+          "move": {
+            "body": "",
+            "content_type": "",
+            "form_href": "\/api\/v2\/forms\/nodes\/move?id=44831",
+            "href": "\/api\/v2\/nodes\/44831",
+            "method": "PUT",
+            "name": "Move"
+          },
+          "open": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "\/api\/v2\/nodes\/44831\/nodes",
+            "method": "GET",
+            "name": "Open"
+          },
+          "properties": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "\/api\/v2\/nodes\/44831",
+            "method": "GET",
+            "name": "Properties"
+          },
+          "rename": {
+            "body": "",
+            "content_type": "",
+            "form_href": "\/api\/v2\/forms\/nodes\/rename?id=44831",
+            "href": "\/api\/v2\/nodes\/44831",
+            "method": "PUT",
+            "name": "Rename"
+          }
+        },
+        "map": {
+          "default_action": "",
+          "more": [
+            "properties"
+          ]
+        },
+        "order": [
+          "open",
+          "addcategory",
+          "rename",
+          "copy",
+          "move",
+          "delete"
+        ]
+      },
+      "data": {
+        "properties": {
+          "container": true,
+          "container_size": 6,
+          "create_date": "2018-02-28T18:25:08",
+          "create_user_id": 25873,
+          "create_user_id_expand": {
+            "birth_date": null,
+            "business_email": "mtanwar@opentext.com",
+            "business_fax": null,
+            "business_phone": null,
+            "cell_phone": null,
+            "deleted": false,
+            "first_name": "Mayank",
+            "gender": null,
+            "group_id": 1001,
+            "home_address_1": null,
+            "home_address_2": null,
+            "home_fax": null,
+            "home_phone": null,
+            "id": 25873,
+            "last_name": "Tanwar",
+            "middle_name": null,
+            "name": "mtanwar",
+            "name_formatted": "Mayank  Tanwar (mtanwar)",
+            "office_location": "Hyderabad",
+            "pager": null,
+            "personal_email": null,
+            "personal_interests": null,
+            "personal_url_1": null,
+            "personal_url_2": null,
+            "personal_url_3": null,
+            "personal_website": null,
+            "photo_id": 33994,
+            "photo_url": "api\/v1\/members\/25873\/photo?v=33994.1",
+            "time_zone": 43,
+            "title": null,
+            "type": 0,
+            "type_name": "User"
+          },
+          "description": "",
+          "description_multilingual": {
+            "en": ""
+          },
+          "external_create_date": null,
+          "external_identity": "",
+          "external_identity_type": "",
+          "external_modify_date": null,
+          "external_source": "",
+          "favorite": false,
+          "id": 44831,
+          "mime_type": null,
+          "modify_date": "2018-02-28T18:25:08",
+          "modify_user_id": 1000,
+          "name": "Equipment 000000000010003555",
+          "name_multilingual": {
+            "en": "Equipment 000000000010003555"
+          },
+          "owner": "Mayank  Tanwar",
+          "owner_group_id": 1001,
+          "owner_user_id": 25873,
+          "owner_user_id_expand": {
+            "birth_date": null,
+            "business_email": "mtanwar@opentext.com",
+            "business_fax": null,
+            "business_phone": null,
+            "cell_phone": null,
+            "deleted": false,
+            "first_name": "Mayank",
+            "gender": null,
+            "group_id": 1001,
+            "home_address_1": null,
+            "home_address_2": null,
+            "home_fax": null,
+            "home_phone": null,
+            "id": 25873,
+            "last_name": "Tanwar",
+            "middle_name": null,
+            "name": "mtanwar",
+            "name_formatted": "Mayank  Tanwar (mtanwar)",
+            "office_location": "Hyderabad",
+            "pager": null,
+            "personal_email": null,
+            "personal_interests": null,
+            "personal_url_1": null,
+            "personal_url_2": null,
+            "personal_url_3": null,
+            "personal_website": null,
+            "photo_id": 33994,
+            "photo_url": "api\/v1\/members\/25873\/photo?v=33994.1",
+            "time_zone": 43,
+            "title": null,
+            "type": 0,
+            "type_name": "User"
+          },
+          "parent_id": 25533,
+          "permissions_model": "advanced",
+          "reserved": false,
+          "reserved_date": null,
+          "reserved_shared_collaboration": false,
+          "reserved_user_id": 0,
+          "rm_enabled": false,
+          "short_summary": [
+            ""
+          ],
+          "size": 6,
+          "size_formatted": "6 Items",
+          "summary": [
+            ""
+          ],
+          "type": 848,
+          "type_name": "Business Workspace",
+          "versions_control_advanced": false,
+          "volume_id": -2000
+        }
+      },
+      "links": {
+        "ancestors": [
+          {
+            "href": "api\/v1\/nodes\/2000",
+            "name": "Enterprise"
+          },
+          {
+            "href": "api\/v1\/nodes\/25422",
+            "name": "xECMSAP Business Workspaces"
+          },
+          {
+            "href": "api\/v1\/nodes\/25533",
+            "name": "Equipments"
+          }
+        ],
+        "ancestors_nodes": [
+          {
+            "href": "api\/v1\/nodes\/2000\/nodes",
+            "name": "Enterprise"
+          },
+          {
+            "href": "api\/v1\/nodes\/25422\/nodes",
+            "name": "xECMSAP Business Workspaces"
+          },
+          {
+            "href": "api\/v1\/nodes\/25533\/nodes",
+            "name": "Equipments"
+          }
+        ],
+        "parent": {
+          "href": "api\/v1\/nodes\/25533",
+          "name": "Equipments"
+        },
+        "parent_nodes": {
+          "href": "api\/v1\/nodes\/25533\/nodes",
+          "name": "Equipments"
+        }
+      },
+      "search_result_metadata": {
+        "current_version": null,
+        "object_href": null,
+        "object_id": "DataId=44831&Version=0",
+        "result_type": "264",
+        "source_id": "3988",
+        "version_type": null
+      }
+    },
+    {
+      "actions": {
+        "data": {
+          "addcategory": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "\/api\/v2\/nodes\/44839\/categories",
+            "method": "POST",
+            "name": "Add Category"
+          },
+          "copy": {
+            "body": "",
+            "content_type": "",
+            "form_href": "\/api\/v2\/forms\/nodes\/copy?id=44839",
+            "href": "\/api\/v2\/nodes",
+            "method": "POST",
+            "name": "Copy"
+          },
+          "delete": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "\/api\/v2\/nodes\/44839",
+            "method": "DELETE",
+            "name": "Delete"
+          },
+          "move": {
+            "body": "",
+            "content_type": "",
+            "form_href": "\/api\/v2\/forms\/nodes\/move?id=44839",
+            "href": "\/api\/v2\/nodes\/44839",
+            "method": "PUT",
+            "name": "Move"
+          },
+          "open": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "\/api\/v2\/nodes\/44839\/nodes",
+            "method": "GET",
+            "name": "Open"
+          },
+          "properties": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "\/api\/v2\/nodes\/44839",
+            "method": "GET",
+            "name": "Properties"
+          },
+          "rename": {
+            "body": "",
+            "content_type": "",
+            "form_href": "\/api\/v2\/forms\/nodes\/rename?id=44839",
+            "href": "\/api\/v2\/nodes\/44839",
+            "method": "PUT",
+            "name": "Rename"
+          }
+        },
+        "map": {
+          "default_action": "",
+          "more": [
+            "properties"
+          ]
+        },
+        "order": [
+          "open",
+          "addcategory",
+          "rename",
+          "copy",
+          "move",
+          "delete"
+        ]
+      },
+      "data": {
+        "properties": {
+          "container": true,
+          "container_size": 6,
+          "create_date": "2018-02-28T18:25:09",
+          "create_user_id": 25873,
+          "create_user_id_expand": {
+            "birth_date": null,
+            "business_email": "mtanwar@opentext.com",
+            "business_fax": null,
+            "business_phone": null,
+            "cell_phone": null,
+            "deleted": false,
+            "first_name": "Mayank",
+            "gender": null,
+            "group_id": 1001,
+            "home_address_1": null,
+            "home_address_2": null,
+            "home_fax": null,
+            "home_phone": null,
+            "id": 25873,
+            "last_name": "Tanwar",
+            "middle_name": null,
+            "name": "mtanwar",
+            "name_formatted": "Mayank  Tanwar (mtanwar)",
+            "office_location": "Hyderabad",
+            "pager": null,
+            "personal_email": null,
+            "personal_interests": null,
+            "personal_url_1": null,
+            "personal_url_2": null,
+            "personal_url_3": null,
+            "personal_website": null,
+            "photo_id": 33994,
+            "photo_url": "api\/v1\/members\/25873\/photo?v=33994.1",
+            "time_zone": 43,
+            "title": null,
+            "type": 0,
+            "type_name": "User"
+          },
+          "description": "",
+          "description_multilingual": {
+            "en": ""
+          },
+          "external_create_date": null,
+          "external_identity": "",
+          "external_identity_type": "",
+          "external_modify_date": null,
+          "external_source": "",
+          "favorite": false,
+          "id": 44839,
+          "mime_type": null,
+          "modify_date": "2018-02-28T18:25:09",
+          "modify_user_id": 1000,
+          "name": "Equipment 000000000010003556",
+          "name_multilingual": {
+            "en": "Equipment 000000000010003556"
+          },
+          "owner": "Mayank  Tanwar",
+          "owner_group_id": 1001,
+          "owner_user_id": 25873,
+          "owner_user_id_expand": {
+            "birth_date": null,
+            "business_email": "mtanwar@opentext.com",
+            "business_fax": null,
+            "business_phone": null,
+            "cell_phone": null,
+            "deleted": false,
+            "first_name": "Mayank",
+            "gender": null,
+            "group_id": 1001,
+            "home_address_1": null,
+            "home_address_2": null,
+            "home_fax": null,
+            "home_phone": null,
+            "id": 25873,
+            "last_name": "Tanwar",
+            "middle_name": null,
+            "name": "mtanwar",
+            "name_formatted": "Mayank  Tanwar (mtanwar)",
+            "office_location": "Hyderabad",
+            "pager": null,
+            "personal_email": null,
+            "personal_interests": null,
+            "personal_url_1": null,
+            "personal_url_2": null,
+            "personal_url_3": null,
+            "personal_website": null,
+            "photo_id": 33994,
+            "photo_url": "api\/v1\/members\/25873\/photo?v=33994.1",
+            "time_zone": 43,
+            "title": null,
+            "type": 0,
+            "type_name": "User"
+          },
+          "parent_id": 25533,
+          "permissions_model": "advanced",
+          "reserved": false,
+          "reserved_date": null,
+          "reserved_shared_collaboration": false,
+          "reserved_user_id": 0,
+          "rm_enabled": false,
+          "short_summary": [
+            ""
+          ],
+          "size": 6,
+          "size_formatted": "6 Items",
+          "summary": [
+            ""
+          ],
+          "type": 848,
+          "type_name": "Business Workspace",
+          "versions_control_advanced": false,
+          "volume_id": -2000
+        }
+      },
+      "links": {
+        "ancestors": [
+          {
+            "href": "api\/v1\/nodes\/2000",
+            "name": "Enterprise"
+          },
+          {
+            "href": "api\/v1\/nodes\/25422",
+            "name": "xECMSAP Business Workspaces"
+          },
+          {
+            "href": "api\/v1\/nodes\/25533",
+            "name": "Equipments"
+          }
+        ],
+        "ancestors_nodes": [
+          {
+            "href": "api\/v1\/nodes\/2000\/nodes",
+            "name": "Enterprise"
+          },
+          {
+            "href": "api\/v1\/nodes\/25422\/nodes",
+            "name": "xECMSAP Business Workspaces"
+          },
+          {
+            "href": "api\/v1\/nodes\/25533\/nodes",
+            "name": "Equipments"
+          }
+        ],
+        "parent": {
+          "href": "api\/v1\/nodes\/25533",
+          "name": "Equipments"
+        },
+        "parent_nodes": {
+          "href": "api\/v1\/nodes\/25533\/nodes",
+          "name": "Equipments"
+        }
+      },
+      "search_result_metadata": {
+        "current_version": null,
+        "object_href": null,
+        "object_id": "DataId=44839&Version=0",
+        "result_type": "264",
+        "source_id": "3988",
+        "version_type": null
+      }
+    },
+    {
+      "actions": {
+        "data": {
+          "addcategory": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "\/api\/v2\/nodes\/44847\/categories",
+            "method": "POST",
+            "name": "Add Category"
+          },
+          "copy": {
+            "body": "",
+            "content_type": "",
+            "form_href": "\/api\/v2\/forms\/nodes\/copy?id=44847",
+            "href": "\/api\/v2\/nodes",
+            "method": "POST",
+            "name": "Copy"
+          },
+          "delete": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "\/api\/v2\/nodes\/44847",
+            "method": "DELETE",
+            "name": "Delete"
+          },
+          "move": {
+            "body": "",
+            "content_type": "",
+            "form_href": "\/api\/v2\/forms\/nodes\/move?id=44847",
+            "href": "\/api\/v2\/nodes\/44847",
+            "method": "PUT",
+            "name": "Move"
+          },
+          "open": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "\/api\/v2\/nodes\/44847\/nodes",
+            "method": "GET",
+            "name": "Open"
+          },
+          "properties": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "\/api\/v2\/nodes\/44847",
+            "method": "GET",
+            "name": "Properties"
+          },
+          "rename": {
+            "body": "",
+            "content_type": "",
+            "form_href": "\/api\/v2\/forms\/nodes\/rename?id=44847",
+            "href": "\/api\/v2\/nodes\/44847",
+            "method": "PUT",
+            "name": "Rename"
+          }
+        },
+        "map": {
+          "default_action": "",
+          "more": [
+            "properties"
+          ]
+        },
+        "order": [
+          "open",
+          "addcategory",
+          "rename",
+          "copy",
+          "move",
+          "delete"
+        ]
+      },
+      "data": {
+        "properties": {
+          "container": true,
+          "container_size": 6,
+          "create_date": "2018-02-28T18:25:10",
+          "create_user_id": 25873,
+          "create_user_id_expand": {
+            "birth_date": null,
+            "business_email": "mtanwar@opentext.com",
+            "business_fax": null,
+            "business_phone": null,
+            "cell_phone": null,
+            "deleted": false,
+            "first_name": "Mayank",
+            "gender": null,
+            "group_id": 1001,
+            "home_address_1": null,
+            "home_address_2": null,
+            "home_fax": null,
+            "home_phone": null,
+            "id": 25873,
+            "last_name": "Tanwar",
+            "middle_name": null,
+            "name": "mtanwar",
+            "name_formatted": "Mayank  Tanwar (mtanwar)",
+            "office_location": "Hyderabad",
+            "pager": null,
+            "personal_email": null,
+            "personal_interests": null,
+            "personal_url_1": null,
+            "personal_url_2": null,
+            "personal_url_3": null,
+            "personal_website": null,
+            "photo_id": 33994,
+            "photo_url": "api\/v1\/members\/25873\/photo?v=33994.1",
+            "time_zone": 43,
+            "title": null,
+            "type": 0,
+            "type_name": "User"
+          },
+          "description": "",
+          "description_multilingual": {
+            "en": ""
+          },
+          "external_create_date": null,
+          "external_identity": "",
+          "external_identity_type": "",
+          "external_modify_date": null,
+          "external_source": "",
+          "favorite": false,
+          "id": 44847,
+          "mime_type": null,
+          "modify_date": "2018-02-28T18:25:10",
+          "modify_user_id": 1000,
+          "name": "Equipment 000000000010003557",
+          "name_multilingual": {
+            "en": "Equipment 000000000010003557"
+          },
+          "owner": "Mayank  Tanwar",
+          "owner_group_id": 1001,
+          "owner_user_id": 25873,
+          "owner_user_id_expand": {
+            "birth_date": null,
+            "business_email": "mtanwar@opentext.com",
+            "business_fax": null,
+            "business_phone": null,
+            "cell_phone": null,
+            "deleted": false,
+            "first_name": "Mayank",
+            "gender": null,
+            "group_id": 1001,
+            "home_address_1": null,
+            "home_address_2": null,
+            "home_fax": null,
+            "home_phone": null,
+            "id": 25873,
+            "last_name": "Tanwar",
+            "middle_name": null,
+            "name": "mtanwar",
+            "name_formatted": "Mayank  Tanwar (mtanwar)",
+            "office_location": "Hyderabad",
+            "pager": null,
+            "personal_email": null,
+            "personal_interests": null,
+            "personal_url_1": null,
+            "personal_url_2": null,
+            "personal_url_3": null,
+            "personal_website": null,
+            "photo_id": 33994,
+            "photo_url": "api\/v1\/members\/25873\/photo?v=33994.1",
+            "time_zone": 43,
+            "title": null,
+            "type": 0,
+            "type_name": "User"
+          },
+          "parent_id": 25533,
+          "permissions_model": "advanced",
+          "reserved": false,
+          "reserved_date": null,
+          "reserved_shared_collaboration": false,
+          "reserved_user_id": 0,
+          "rm_enabled": false,
+          "short_summary": [
+            ""
+          ],
+          "size": 6,
+          "size_formatted": "6 Items",
+          "summary": [
+            ""
+          ],
+          "type": 848,
+          "type_name": "Business Workspace",
+          "versions_control_advanced": false,
+          "volume_id": -2000
+        }
+      },
+      "links": {
+        "ancestors": [
+          {
+            "href": "api\/v1\/nodes\/2000",
+            "name": "Enterprise"
+          },
+          {
+            "href": "api\/v1\/nodes\/25422",
+            "name": "xECMSAP Business Workspaces"
+          },
+          {
+            "href": "api\/v1\/nodes\/25533",
+            "name": "Equipments"
+          }
+        ],
+        "ancestors_nodes": [
+          {
+            "href": "api\/v1\/nodes\/2000\/nodes",
+            "name": "Enterprise"
+          },
+          {
+            "href": "api\/v1\/nodes\/25422\/nodes",
+            "name": "xECMSAP Business Workspaces"
+          },
+          {
+            "href": "api\/v1\/nodes\/25533\/nodes",
+            "name": "Equipments"
+          }
+        ],
+        "parent": {
+          "href": "api\/v1\/nodes\/25533",
+          "name": "Equipments"
+        },
+        "parent_nodes": {
+          "href": "api\/v1\/nodes\/25533\/nodes",
+          "name": "Equipments"
+        }
+      },
+      "search_result_metadata": {
+        "current_version": null,
+        "object_href": null,
+        "object_id": "DataId=44847&Version=0",
+        "result_type": "264",
+        "source_id": "3988",
+        "version_type": null
+      }
+    },
+    {
+      "actions": {
+        "data": {
+          "addcategory": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "\/api\/v2\/nodes\/44855\/categories",
+            "method": "POST",
+            "name": "Add Category"
+          },
+          "copy": {
+            "body": "",
+            "content_type": "",
+            "form_href": "\/api\/v2\/forms\/nodes\/copy?id=44855",
+            "href": "\/api\/v2\/nodes",
+            "method": "POST",
+            "name": "Copy"
+          },
+          "delete": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "\/api\/v2\/nodes\/44855",
+            "method": "DELETE",
+            "name": "Delete"
+          },
+          "move": {
+            "body": "",
+            "content_type": "",
+            "form_href": "\/api\/v2\/forms\/nodes\/move?id=44855",
+            "href": "\/api\/v2\/nodes\/44855",
+            "method": "PUT",
+            "name": "Move"
+          },
+          "open": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "\/api\/v2\/nodes\/44855\/nodes",
+            "method": "GET",
+            "name": "Open"
+          },
+          "properties": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "\/api\/v2\/nodes\/44855",
+            "method": "GET",
+            "name": "Properties"
+          },
+          "rename": {
+            "body": "",
+            "content_type": "",
+            "form_href": "\/api\/v2\/forms\/nodes\/rename?id=44855",
+            "href": "\/api\/v2\/nodes\/44855",
+            "method": "PUT",
+            "name": "Rename"
+          }
+        },
+        "map": {
+          "default_action": "",
+          "more": [
+            "properties"
+          ]
+        },
+        "order": [
+          "open",
+          "addcategory",
+          "rename",
+          "copy",
+          "move",
+          "delete"
+        ]
+      },
+      "data": {
+        "properties": {
+          "container": true,
+          "container_size": 6,
+          "create_date": "2018-02-28T18:25:10",
+          "create_user_id": 25873,
+          "create_user_id_expand": {
+            "birth_date": null,
+            "business_email": "mtanwar@opentext.com",
+            "business_fax": null,
+            "business_phone": null,
+            "cell_phone": null,
+            "deleted": false,
+            "first_name": "Mayank",
+            "gender": null,
+            "group_id": 1001,
+            "home_address_1": null,
+            "home_address_2": null,
+            "home_fax": null,
+            "home_phone": null,
+            "id": 25873,
+            "last_name": "Tanwar",
+            "middle_name": null,
+            "name": "mtanwar",
+            "name_formatted": "Mayank  Tanwar (mtanwar)",
+            "office_location": "Hyderabad",
+            "pager": null,
+            "personal_email": null,
+            "personal_interests": null,
+            "personal_url_1": null,
+            "personal_url_2": null,
+            "personal_url_3": null,
+            "personal_website": null,
+            "photo_id": 33994,
+            "photo_url": "api\/v1\/members\/25873\/photo?v=33994.1",
+            "time_zone": 43,
+            "title": null,
+            "type": 0,
+            "type_name": "User"
+          },
+          "description": "",
+          "description_multilingual": {
+            "en": ""
+          },
+          "external_create_date": null,
+          "external_identity": "",
+          "external_identity_type": "",
+          "external_modify_date": null,
+          "external_source": "",
+          "favorite": false,
+          "id": 44855,
+          "mime_type": null,
+          "modify_date": "2018-02-28T18:25:11",
+          "modify_user_id": 1000,
+          "name": "Equipment 000000000010003558",
+          "name_multilingual": {
+            "en": "Equipment 000000000010003558"
+          },
+          "owner": "Mayank  Tanwar",
+          "owner_group_id": 1001,
+          "owner_user_id": 25873,
+          "owner_user_id_expand": {
+            "birth_date": null,
+            "business_email": "mtanwar@opentext.com",
+            "business_fax": null,
+            "business_phone": null,
+            "cell_phone": null,
+            "deleted": false,
+            "first_name": "Mayank",
+            "gender": null,
+            "group_id": 1001,
+            "home_address_1": null,
+            "home_address_2": null,
+            "home_fax": null,
+            "home_phone": null,
+            "id": 25873,
+            "last_name": "Tanwar",
+            "middle_name": null,
+            "name": "mtanwar",
+            "name_formatted": "Mayank  Tanwar (mtanwar)",
+            "office_location": "Hyderabad",
+            "pager": null,
+            "personal_email": null,
+            "personal_interests": null,
+            "personal_url_1": null,
+            "personal_url_2": null,
+            "personal_url_3": null,
+            "personal_website": null,
+            "photo_id": 33994,
+            "photo_url": "api\/v1\/members\/25873\/photo?v=33994.1",
+            "time_zone": 43,
+            "title": null,
+            "type": 0,
+            "type_name": "User"
+          },
+          "parent_id": 25533,
+          "permissions_model": "advanced",
+          "reserved": false,
+          "reserved_date": null,
+          "reserved_shared_collaboration": false,
+          "reserved_user_id": 0,
+          "rm_enabled": false,
+          "short_summary": [
+            ""
+          ],
+          "size": 6,
+          "size_formatted": "6 Items",
+          "summary": [
+            ""
+          ],
+          "type": 848,
+          "type_name": "Business Workspace",
+          "versions_control_advanced": false,
+          "volume_id": -2000
+        }
+      },
+      "links": {
+        "ancestors": [
+          {
+            "href": "api\/v1\/nodes\/2000",
+            "name": "Enterprise"
+          },
+          {
+            "href": "api\/v1\/nodes\/25422",
+            "name": "xECMSAP Business Workspaces"
+          },
+          {
+            "href": "api\/v1\/nodes\/25533",
+            "name": "Equipments"
+          }
+        ],
+        "ancestors_nodes": [
+          {
+            "href": "api\/v1\/nodes\/2000\/nodes",
+            "name": "Enterprise"
+          },
+          {
+            "href": "api\/v1\/nodes\/25422\/nodes",
+            "name": "xECMSAP Business Workspaces"
+          },
+          {
+            "href": "api\/v1\/nodes\/25533\/nodes",
+            "name": "Equipments"
+          }
+        ],
+        "parent": {
+          "href": "api\/v1\/nodes\/25533",
+          "name": "Equipments"
+        },
+        "parent_nodes": {
+          "href": "api\/v1\/nodes\/25533\/nodes",
+          "name": "Equipments"
+        }
+      },
+      "search_result_metadata": {
+        "current_version": null,
+        "object_href": null,
+        "object_id": "DataId=44855&Version=0",
+        "result_type": "264",
+        "source_id": "3988",
+        "version_type": null
+      }
+    },
+    {
+      "actions": {
+        "data": {
+          "addcategory": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "\/api\/v2\/nodes\/44863\/categories",
+            "method": "POST",
+            "name": "Add Category"
+          },
+          "copy": {
+            "body": "",
+            "content_type": "",
+            "form_href": "\/api\/v2\/forms\/nodes\/copy?id=44863",
+            "href": "\/api\/v2\/nodes",
+            "method": "POST",
+            "name": "Copy"
+          },
+          "delete": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "\/api\/v2\/nodes\/44863",
+            "method": "DELETE",
+            "name": "Delete"
+          },
+          "move": {
+            "body": "",
+            "content_type": "",
+            "form_href": "\/api\/v2\/forms\/nodes\/move?id=44863",
+            "href": "\/api\/v2\/nodes\/44863",
+            "method": "PUT",
+            "name": "Move"
+          },
+          "open": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "\/api\/v2\/nodes\/44863\/nodes",
+            "method": "GET",
+            "name": "Open"
+          },
+          "properties": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "\/api\/v2\/nodes\/44863",
+            "method": "GET",
+            "name": "Properties"
+          },
+          "rename": {
+            "body": "",
+            "content_type": "",
+            "form_href": "\/api\/v2\/forms\/nodes\/rename?id=44863",
+            "href": "\/api\/v2\/nodes\/44863",
+            "method": "PUT",
+            "name": "Rename"
+          }
+        },
+        "map": {
+          "default_action": "",
+          "more": [
+            "properties"
+          ]
+        },
+        "order": [
+          "open",
+          "addcategory",
+          "rename",
+          "copy",
+          "move",
+          "delete"
+        ]
+      },
+      "data": {
+        "properties": {
+          "container": true,
+          "container_size": 6,
+          "create_date": "2018-02-28T18:25:12",
+          "create_user_id": 25873,
+          "create_user_id_expand": {
+            "birth_date": null,
+            "business_email": "mtanwar@opentext.com",
+            "business_fax": null,
+            "business_phone": null,
+            "cell_phone": null,
+            "deleted": false,
+            "first_name": "Mayank",
+            "gender": null,
+            "group_id": 1001,
+            "home_address_1": null,
+            "home_address_2": null,
+            "home_fax": null,
+            "home_phone": null,
+            "id": 25873,
+            "last_name": "Tanwar",
+            "middle_name": null,
+            "name": "mtanwar",
+            "name_formatted": "Mayank  Tanwar (mtanwar)",
+            "office_location": "Hyderabad",
+            "pager": null,
+            "personal_email": null,
+            "personal_interests": null,
+            "personal_url_1": null,
+            "personal_url_2": null,
+            "personal_url_3": null,
+            "personal_website": null,
+            "photo_id": 33994,
+            "photo_url": "api\/v1\/members\/25873\/photo?v=33994.1",
+            "time_zone": 43,
+            "title": null,
+            "type": 0,
+            "type_name": "User"
+          },
+          "description": "",
+          "description_multilingual": {
+            "en": ""
+          },
+          "external_create_date": null,
+          "external_identity": "",
+          "external_identity_type": "",
+          "external_modify_date": null,
+          "external_source": "",
+          "favorite": false,
+          "id": 44863,
+          "mime_type": null,
+          "modify_date": "2018-02-28T18:25:12",
+          "modify_user_id": 1000,
+          "name": "Equipment 000000000010003559",
+          "name_multilingual": {
+            "en": "Equipment 000000000010003559"
+          },
+          "owner": "Mayank  Tanwar",
+          "owner_group_id": 1001,
+          "owner_user_id": 25873,
+          "owner_user_id_expand": {
+            "birth_date": null,
+            "business_email": "mtanwar@opentext.com",
+            "business_fax": null,
+            "business_phone": null,
+            "cell_phone": null,
+            "deleted": false,
+            "first_name": "Mayank",
+            "gender": null,
+            "group_id": 1001,
+            "home_address_1": null,
+            "home_address_2": null,
+            "home_fax": null,
+            "home_phone": null,
+            "id": 25873,
+            "last_name": "Tanwar",
+            "middle_name": null,
+            "name": "mtanwar",
+            "name_formatted": "Mayank  Tanwar (mtanwar)",
+            "office_location": "Hyderabad",
+            "pager": null,
+            "personal_email": null,
+            "personal_interests": null,
+            "personal_url_1": null,
+            "personal_url_2": null,
+            "personal_url_3": null,
+            "personal_website": null,
+            "photo_id": 33994,
+            "photo_url": "api\/v1\/members\/25873\/photo?v=33994.1",
+            "time_zone": 43,
+            "title": null,
+            "type": 0,
+            "type_name": "User"
+          },
+          "parent_id": 25533,
+          "permissions_model": "advanced",
+          "reserved": false,
+          "reserved_date": null,
+          "reserved_shared_collaboration": false,
+          "reserved_user_id": 0,
+          "rm_enabled": false,
+          "short_summary": [
+            ""
+          ],
+          "size": 6,
+          "size_formatted": "6 Items",
+          "summary": [
+            ""
+          ],
+          "type": 848,
+          "type_name": "Business Workspace",
+          "versions_control_advanced": false,
+          "volume_id": -2000
+        }
+      },
+      "links": {
+        "ancestors": [
+          {
+            "href": "api\/v1\/nodes\/2000",
+            "name": "Enterprise"
+          },
+          {
+            "href": "api\/v1\/nodes\/25422",
+            "name": "xECMSAP Business Workspaces"
+          },
+          {
+            "href": "api\/v1\/nodes\/25533",
+            "name": "Equipments"
+          }
+        ],
+        "ancestors_nodes": [
+          {
+            "href": "api\/v1\/nodes\/2000\/nodes",
+            "name": "Enterprise"
+          },
+          {
+            "href": "api\/v1\/nodes\/25422\/nodes",
+            "name": "xECMSAP Business Workspaces"
+          },
+          {
+            "href": "api\/v1\/nodes\/25533\/nodes",
+            "name": "Equipments"
+          }
+        ],
+        "parent": {
+          "href": "api\/v1\/nodes\/25533",
+          "name": "Equipments"
+        },
+        "parent_nodes": {
+          "href": "api\/v1\/nodes\/25533\/nodes",
+          "name": "Equipments"
+        }
+      },
+      "search_result_metadata": {
+        "current_version": null,
+        "object_href": null,
+        "object_id": "DataId=44863&Version=0",
+        "result_type": "264",
+        "source_id": "3988",
+        "version_type": null
+      }
+    },
+    {
+      "actions": {
+        "data": {
+          "addcategory": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "\/api\/v2\/nodes\/44871\/categories",
+            "method": "POST",
+            "name": "Add Category"
+          },
+          "copy": {
+            "body": "",
+            "content_type": "",
+            "form_href": "\/api\/v2\/forms\/nodes\/copy?id=44871",
+            "href": "\/api\/v2\/nodes",
+            "method": "POST",
+            "name": "Copy"
+          },
+          "delete": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "\/api\/v2\/nodes\/44871",
+            "method": "DELETE",
+            "name": "Delete"
+          },
+          "move": {
+            "body": "",
+            "content_type": "",
+            "form_href": "\/api\/v2\/forms\/nodes\/move?id=44871",
+            "href": "\/api\/v2\/nodes\/44871",
+            "method": "PUT",
+            "name": "Move"
+          },
+          "open": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "\/api\/v2\/nodes\/44871\/nodes",
+            "method": "GET",
+            "name": "Open"
+          },
+          "properties": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "\/api\/v2\/nodes\/44871",
+            "method": "GET",
+            "name": "Properties"
+          },
+          "rename": {
+            "body": "",
+            "content_type": "",
+            "form_href": "\/api\/v2\/forms\/nodes\/rename?id=44871",
+            "href": "\/api\/v2\/nodes\/44871",
+            "method": "PUT",
+            "name": "Rename"
+          }
+        },
+        "map": {
+          "default_action": "",
+          "more": [
+            "properties"
+          ]
+        },
+        "order": [
+          "open",
+          "addcategory",
+          "rename",
+          "copy",
+          "move",
+          "delete"
+        ]
+      },
+      "data": {
+        "properties": {
+          "container": true,
+          "container_size": 6,
+          "create_date": "2018-02-28T18:25:12",
+          "create_user_id": 25873,
+          "create_user_id_expand": {
+            "birth_date": null,
+            "business_email": "mtanwar@opentext.com",
+            "business_fax": null,
+            "business_phone": null,
+            "cell_phone": null,
+            "deleted": false,
+            "first_name": "Mayank",
+            "gender": null,
+            "group_id": 1001,
+            "home_address_1": null,
+            "home_address_2": null,
+            "home_fax": null,
+            "home_phone": null,
+            "id": 25873,
+            "last_name": "Tanwar",
+            "middle_name": null,
+            "name": "mtanwar",
+            "name_formatted": "Mayank  Tanwar (mtanwar)",
+            "office_location": "Hyderabad",
+            "pager": null,
+            "personal_email": null,
+            "personal_interests": null,
+            "personal_url_1": null,
+            "personal_url_2": null,
+            "personal_url_3": null,
+            "personal_website": null,
+            "photo_id": 33994,
+            "photo_url": "api\/v1\/members\/25873\/photo?v=33994.1",
+            "time_zone": 43,
+            "title": null,
+            "type": 0,
+            "type_name": "User"
+          },
+          "description": "",
+          "description_multilingual": {
+            "en": ""
+          },
+          "external_create_date": null,
+          "external_identity": "",
+          "external_identity_type": "",
+          "external_modify_date": null,
+          "external_source": "",
+          "favorite": false,
+          "id": 44871,
+          "mime_type": null,
+          "modify_date": "2018-02-28T18:25:13",
+          "modify_user_id": 1000,
+          "name": "Equipment 000000000010003560",
+          "name_multilingual": {
+            "en": "Equipment 000000000010003560"
+          },
+          "owner": "Mayank  Tanwar",
+          "owner_group_id": 1001,
+          "owner_user_id": 25873,
+          "owner_user_id_expand": {
+            "birth_date": null,
+            "business_email": "mtanwar@opentext.com",
+            "business_fax": null,
+            "business_phone": null,
+            "cell_phone": null,
+            "deleted": false,
+            "first_name": "Mayank",
+            "gender": null,
+            "group_id": 1001,
+            "home_address_1": null,
+            "home_address_2": null,
+            "home_fax": null,
+            "home_phone": null,
+            "id": 25873,
+            "last_name": "Tanwar",
+            "middle_name": null,
+            "name": "mtanwar",
+            "name_formatted": "Mayank  Tanwar (mtanwar)",
+            "office_location": "Hyderabad",
+            "pager": null,
+            "personal_email": null,
+            "personal_interests": null,
+            "personal_url_1": null,
+            "personal_url_2": null,
+            "personal_url_3": null,
+            "personal_website": null,
+            "photo_id": 33994,
+            "photo_url": "api\/v1\/members\/25873\/photo?v=33994.1",
+            "time_zone": 43,
+            "title": null,
+            "type": 0,
+            "type_name": "User"
+          },
+          "parent_id": 25533,
+          "permissions_model": "advanced",
+          "reserved": false,
+          "reserved_date": null,
+          "reserved_shared_collaboration": false,
+          "reserved_user_id": 0,
+          "rm_enabled": false,
+          "short_summary": [
+            ""
+          ],
+          "size": 6,
+          "size_formatted": "6 Items",
+          "summary": [
+            ""
+          ],
+          "type": 848,
+          "type_name": "Business Workspace",
+          "versions_control_advanced": false,
+          "volume_id": -2000
+        }
+      },
+      "links": {
+        "ancestors": [
+          {
+            "href": "api\/v1\/nodes\/2000",
+            "name": "Enterprise"
+          },
+          {
+            "href": "api\/v1\/nodes\/25422",
+            "name": "xECMSAP Business Workspaces"
+          },
+          {
+            "href": "api\/v1\/nodes\/25533",
+            "name": "Equipments"
+          }
+        ],
+        "ancestors_nodes": [
+          {
+            "href": "api\/v1\/nodes\/2000\/nodes",
+            "name": "Enterprise"
+          },
+          {
+            "href": "api\/v1\/nodes\/25422\/nodes",
+            "name": "xECMSAP Business Workspaces"
+          },
+          {
+            "href": "api\/v1\/nodes\/25533\/nodes",
+            "name": "Equipments"
+          }
+        ],
+        "parent": {
+          "href": "api\/v1\/nodes\/25533",
+          "name": "Equipments"
+        },
+        "parent_nodes": {
+          "href": "api\/v1\/nodes\/25533\/nodes",
+          "name": "Equipments"
+        }
+      },
+      "search_result_metadata": {
+        "current_version": null,
+        "object_href": null,
+        "object_id": "DataId=44871&Version=0",
+        "result_type": "264",
+        "source_id": "3988",
+        "version_type": null
+      }
+    },
+    {
+      "actions": {
+        "data": {
+          "addcategory": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "\/api\/v2\/nodes\/44879\/categories",
+            "method": "POST",
+            "name": "Add Category"
+          },
+          "copy": {
+            "body": "",
+            "content_type": "",
+            "form_href": "\/api\/v2\/forms\/nodes\/copy?id=44879",
+            "href": "\/api\/v2\/nodes",
+            "method": "POST",
+            "name": "Copy"
+          },
+          "delete": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "\/api\/v2\/nodes\/44879",
+            "method": "DELETE",
+            "name": "Delete"
+          },
+          "move": {
+            "body": "",
+            "content_type": "",
+            "form_href": "\/api\/v2\/forms\/nodes\/move?id=44879",
+            "href": "\/api\/v2\/nodes\/44879",
+            "method": "PUT",
+            "name": "Move"
+          },
+          "open": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "\/api\/v2\/nodes\/44879\/nodes",
+            "method": "GET",
+            "name": "Open"
+          },
+          "properties": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "\/api\/v2\/nodes\/44879",
+            "method": "GET",
+            "name": "Properties"
+          },
+          "rename": {
+            "body": "",
+            "content_type": "",
+            "form_href": "\/api\/v2\/forms\/nodes\/rename?id=44879",
+            "href": "\/api\/v2\/nodes\/44879",
+            "method": "PUT",
+            "name": "Rename"
+          }
+        },
+        "map": {
+          "default_action": "",
+          "more": [
+            "properties"
+          ]
+        },
+        "order": [
+          "open",
+          "addcategory",
+          "rename",
+          "copy",
+          "move",
+          "delete"
+        ]
+      },
+      "data": {
+        "properties": {
+          "container": true,
+          "container_size": 6,
+          "create_date": "2018-02-28T18:25:13",
+          "create_user_id": 25873,
+          "create_user_id_expand": {
+            "birth_date": null,
+            "business_email": "mtanwar@opentext.com",
+            "business_fax": null,
+            "business_phone": null,
+            "cell_phone": null,
+            "deleted": false,
+            "first_name": "Mayank",
+            "gender": null,
+            "group_id": 1001,
+            "home_address_1": null,
+            "home_address_2": null,
+            "home_fax": null,
+            "home_phone": null,
+            "id": 25873,
+            "last_name": "Tanwar",
+            "middle_name": null,
+            "name": "mtanwar",
+            "name_formatted": "Mayank  Tanwar (mtanwar)",
+            "office_location": "Hyderabad",
+            "pager": null,
+            "personal_email": null,
+            "personal_interests": null,
+            "personal_url_1": null,
+            "personal_url_2": null,
+            "personal_url_3": null,
+            "personal_website": null,
+            "photo_id": 33994,
+            "photo_url": "api\/v1\/members\/25873\/photo?v=33994.1",
+            "time_zone": 43,
+            "title": null,
+            "type": 0,
+            "type_name": "User"
+          },
+          "description": "",
+          "description_multilingual": {
+            "en": ""
+          },
+          "external_create_date": null,
+          "external_identity": "",
+          "external_identity_type": "",
+          "external_modify_date": null,
+          "external_source": "",
+          "favorite": false,
+          "id": 44879,
+          "mime_type": null,
+          "modify_date": "2018-02-28T18:25:14",
+          "modify_user_id": 1000,
+          "name": "Equipment 000000000010003561",
+          "name_multilingual": {
+            "en": "Equipment 000000000010003561"
+          },
+          "owner": "Mayank  Tanwar",
+          "owner_group_id": 1001,
+          "owner_user_id": 25873,
+          "owner_user_id_expand": {
+            "birth_date": null,
+            "business_email": "mtanwar@opentext.com",
+            "business_fax": null,
+            "business_phone": null,
+            "cell_phone": null,
+            "deleted": false,
+            "first_name": "Mayank",
+            "gender": null,
+            "group_id": 1001,
+            "home_address_1": null,
+            "home_address_2": null,
+            "home_fax": null,
+            "home_phone": null,
+            "id": 25873,
+            "last_name": "Tanwar",
+            "middle_name": null,
+            "name": "mtanwar",
+            "name_formatted": "Mayank  Tanwar (mtanwar)",
+            "office_location": "Hyderabad",
+            "pager": null,
+            "personal_email": null,
+            "personal_interests": null,
+            "personal_url_1": null,
+            "personal_url_2": null,
+            "personal_url_3": null,
+            "personal_website": null,
+            "photo_id": 33994,
+            "photo_url": "api\/v1\/members\/25873\/photo?v=33994.1",
+            "time_zone": 43,
+            "title": null,
+            "type": 0,
+            "type_name": "User"
+          },
+          "parent_id": 25533,
+          "permissions_model": "advanced",
+          "reserved": false,
+          "reserved_date": null,
+          "reserved_shared_collaboration": false,
+          "reserved_user_id": 0,
+          "rm_enabled": false,
+          "short_summary": [
+            ""
+          ],
+          "size": 6,
+          "size_formatted": "6 Items",
+          "summary": [
+            ""
+          ],
+          "type": 848,
+          "type_name": "Business Workspace",
+          "versions_control_advanced": false,
+          "volume_id": -2000
+        }
+      },
+      "links": {
+        "ancestors": [
+          {
+            "href": "api\/v1\/nodes\/2000",
+            "name": "Enterprise"
+          },
+          {
+            "href": "api\/v1\/nodes\/25422",
+            "name": "xECMSAP Business Workspaces"
+          },
+          {
+            "href": "api\/v1\/nodes\/25533",
+            "name": "Equipments"
+          }
+        ],
+        "ancestors_nodes": [
+          {
+            "href": "api\/v1\/nodes\/2000\/nodes",
+            "name": "Enterprise"
+          },
+          {
+            "href": "api\/v1\/nodes\/25422\/nodes",
+            "name": "xECMSAP Business Workspaces"
+          },
+          {
+            "href": "api\/v1\/nodes\/25533\/nodes",
+            "name": "Equipments"
+          }
+        ],
+        "parent": {
+          "href": "api\/v1\/nodes\/25533",
+          "name": "Equipments"
+        },
+        "parent_nodes": {
+          "href": "api\/v1\/nodes\/25533\/nodes",
+          "name": "Equipments"
+        }
+      },
+      "search_result_metadata": {
+        "current_version": null,
+        "object_href": null,
+        "object_id": "DataId=44879&Version=0",
+        "result_type": "264",
+        "source_id": "3988",
+        "version_type": null
+      }
+    }
+  ]
+}

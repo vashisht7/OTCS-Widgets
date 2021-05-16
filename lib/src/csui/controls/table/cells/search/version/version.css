@@ -1,0 +1,20 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.csui-search-results .csui-nodetable .csui-table-cell-version .csui-search-results-version {
+    max-width: 64px;
+    color: #627783;
+}
+
+.csui-search-results .csui-table-cell-version .csui-search-version-label {
+    color: #627783;
+    font-weight: bold;
+}
+
+.csui-search-results .csui-table-cell-version .csui-search-version-label:hover,
+.csui-search-results .csui-table-cell-version .csui-search-version-label:focus{
+    color: #ffffff;
+}
+
+.csui-search-results .csui-table-cell-version {
+    width: 64px;
+}

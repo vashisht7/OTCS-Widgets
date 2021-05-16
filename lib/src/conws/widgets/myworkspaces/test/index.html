@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>My Workspaces Widget</title>
+
+  <link rel="stylesheet" href="../../../../csui/themes/carbonfiber/theme.css">
+
+  <script src="../../../../csui/lib/require.js"></script>
+  <script src="../../../../csui/config.js" data-csui-path="../../../../csui"></script>
+  <style>
+    .docRef {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      color: #ffffff;
+    }
+
+    .container {
+      position: absolute;
+      top: 50px;
+    }
+  </style>
+  <script>
+    require.config({
+      paths: {
+        conws: '../../..',
+        esoc:'../../../../esoc'
+      },
+      config: {
+        'csui/utils/contexts/factories/connector': {
+          connection: {
+            url: '//server/otcs/cs/api/v1',
+            supportPath: '/support',
+            session: {
+              ticket: 'dummy'
+            }
+          }
+        },
+        'csui/utils/nodesprites': {
+          extensions: {
+            conws: [
+              'conws/utils/icons/icons'
+            ]
+          }
+        }
+      }
+    });
+
+    require(["csui/lib/marionette", 'csui/utils/contexts/page/page.context',
+      "../myworkspaces.view", "./myworkspaces.mock.data.manager",
+      "../../../utils/previewpane/test/preview.mock.js"
+    ], function (Marionette, PageContext, MyWorkspacesView, DataManager) {
+
+      var pageContext       = new PageContext(),
+          title1            = "Sales Opportunity",
+          workspaceTypeId1  = 0,
+          contentRegion1    = new Marionette.Region({
+            el: "#content1"
+          }),
+          myWorkspacesView1 = new MyWorkspacesView({
+            context: pageContext,
+            data: {
+              title: {
+                "en": "Sales Opportunity",
+                "de": "Geschäftsmöglichkeiten"
+              },
+              workspaceTypeId: workspaceTypeId1,
+              "collapsedView": {
+                "noResultsPlaceholder" : {
+                  "en" : "No workspaces found.",
+                  "de" : "Keine Objekte gefunden."
+                },
+                preview: {
+                  debug      : true,
+                  typeName   : "Sales Opportunity",
+                  debugNoHide: false,
+                  metadata: [{
+                    type: 'category',
+                    categoryId: 401978
+                  }],
+                  roleId: 'Sales'
+                }
+              },
+              expandedView: {
+                pageSize: 20,
+                customColumns: [
+                  {
+                    key: "{124_1}"
+                  },
+                  {
+                    key: "{wnd_modifiedby}"
+                  },
+                  {
+                    key: "{123_2}"
+                  },
+                  {
+                    key: "{123_1}"
+                  }
+                ]
+              }
+            }
+          }),
+          title2            = "Sales Order",
+          workspaceTypeId2  = 1,
+          contentRegion2    = new Marionette.Region({
+            el: "#content2"
+          }),
+          myWorkspacesView2 = new MyWorkspacesView({
+            context: pageContext,
+            data: {
+              title: title2,
+              workspaceTypeId: workspaceTypeId2,
+              collapsedView : {
+                noResultsPlaceholder: {
+                  en : 'No data available.',
+                  de : 'Keine Daten gefunden.'
+                }
+              }
+            }
+          }),
+          title3            = "Insurance with a really long name",
+          workspaceTypeId3  = 2,
+          contentRegion3    = new Marionette.Region({
+            el: "#content3"
+          }),
+          myWorkspacesView3 = new MyWorkspacesView({
+            context: pageContext,
+            data: {
+              title: title3,
+              expandedView: {
+                orderBy: {
+                  sortColumn: "{name}",
+                  sortOrder: "desc"
+                }
+              },
+              workspaceTypeId: workspaceTypeId3
+            }
+          }),
+          title4            = "Tools",
+          workspaceTypeId4  = 3,
+          contentRegion4    = new Marionette.Region({
+            el: "#content4"
+          }),
+          myWorkspacesView4 = new MyWorkspacesView({
+            context: pageContext,
+            data: {
+              title: title4,
+              workspaceTypeId: workspaceTypeId4
+            }
+          });
+      contentRegion1.show(myWorkspacesView1);
+      contentRegion2.show(myWorkspacesView2);
+      contentRegion3.show(myWorkspacesView3);
+      contentRegion4.show(myWorkspacesView4);
+      myWorkspacesView1.listenTo(myWorkspacesView1, 'execute:defaultAction', function (node) {
+        alert("Default action executed for workspace: " + node);
+      });
+      myWorkspacesView2.listenTo(myWorkspacesView2, 'execute:defaultAction', function (node) {
+        alert("Default action executed for workspace: " + node);
+      });
+      myWorkspacesView3.listenTo(myWorkspacesView3, 'execute:defaultAction', function (node) {
+        alert("Default action executed for workspace: " + node);
+      });
+      myWorkspacesView4.listenTo(myWorkspacesView4, 'execute:defaultAction', function (node) {
+        alert("Default action executed for workspace: " + node);
+      });
+      // Provide mock rest calls for 257 items
+      DataManager.test(457, title1, workspaceTypeId1, true);
+      DataManager.test(0, title2, workspaceTypeId2, false);
+      DataManager.test(110, title3, workspaceTypeId3, false);
+      DataManager.test(33, title4, workspaceTypeId4, false);
+
+      pageContext.fetch();
+
+    });
+  </script>
+</head>
+
+<body class="binf-widgets">
+
+<a class="docRef" href="../doc/myworkspaces.md">Documentation</a>
+
+<div class="container container-fluid grid-rows">
+  <div class="row">
+    <div class="col-sm-6 col-md-5 col-lg-4" id="content1"></div>
+    <div class="col-sm-6 col-md-5 col-lg-4" id="content2"></div>
+    <div class="col-sm-6 col-md-5 col-lg-4" id="content3"></div>
+    <div class="col-sm-6 col-md-5 col-lg-4" id="content4"></div>
+  </div>
+</div>
+</body>
+
+</html>
+
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

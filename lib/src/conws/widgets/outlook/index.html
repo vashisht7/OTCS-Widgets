@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" style="scrollbar-width: thin">
+<head>
+    <meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>BusinessWorkspaces</title>
+
+    
+    <script src="https://appsforoffice.microsoft.com/lib/1.1/hosted/Office.js" type="application/javascript"></script>
+
+    <script>document.write("<script type='text/javascript' src='config.js?v=" + Date.now() + "'><\/script>");</script>
+    
+    
+    <script src="../../../csui/bundles/csui-loader.js" data-csui-path="../../../csui"></script>
+    <script src="../../../csui/bundles/csui-app-index.js"></script>
+    <script src="../../bundles/conws-index.js"></script>
+    <link rel="stylesheet" href="../../../csui/themes/carbonfiber/theme.css">
+
+    <script>
+        // Global variable representing the current email. This item is initialized on the landing page.
+        var EmailError;
+        window.viewDisplayed = false;
+        var clientLocale = (window.navigator.languages ? window.navigator.languages[0] :
+							window.navigator.userLanguage || window.navigator.language).toLowerCase();
+        var SupportedLanguages = ['en_us', 'ar', 'ca_es', 'zh_cn', 'nl', 'fi_fi', 'fr', 'de', 'it', 'ja', 'kk_kz', 'ko_kr', 'pt', 'ru_ru', 'es', 'sv', 'zh_tw', 'uk_ua'];
+        if (clientLocale !== "en-us") {
+            if (SupportedLanguages) {
+                var langInstalled = false;
+                var csClientLocal = clientLocale.replace("-", "_");
+                if (SupportedLanguages.indexOf(csClientLocal) > -1) {
+                    langInstalled = true;
+                } else if (clientLocale.indexOf("-") > 0) {
+                    clientLocale = clientLocale.substring(0, clientLocale.indexOf("-"));
+                    if (SupportedLanguages.indexOf(clientLocale) > -1) {
+                        langInstalled = true;
+                    }
+                }
+
+                if (langInstalled) {
+                    document.write("<script type='text/javascript' src='../../bundles/nls/" + clientLocale + "/conws-index.js'><\/script>");
+                    document.write("<script type='text/javascript' src='../../../csui/bundles/nls/" + clientLocale + "/csui-core-index.js'><\/script>");
+                }
+            }
+        }
+
+        var getQueryParameter = function (param) {
+            var result = window.location.search.match(
+                        new RegExp("(\\?|&)" + param + "(\\[\\])?=([^&]*)")
+                    );
+
+            return result ? result[3] : "";
+        }
+
+        window.xECMRule = {
+            enabled: true,
+            match: ".*\\[(.*)\\]\\s*(.*):",
+            method: "RegEx",
+            property: "subject",
+            retrieveMethod: "capturingGroup",
+            retrieve: ".*\\[(.*)\\]\\s*(.*):",
+            wkspTypeGroup: 1,
+            wkspNameGroup: 2,
+            weight: 30 
+        }
+
+        var cgi = getQueryParameter("cgiPath");
+        if (!window.ContentServerUrl && cgi) {
+            window.ContentServerUrl = window.location.origin + "/" + cgi;
+        }
+
+        var paths = window.location.pathname.split('/');
+        var supportPath = paths[0] ? paths[0] : (paths.length > 1 ? paths[1] : "");
+        var traceEnabled = typeof(Storage) === 'undefined' ? false : localStorage.getItem('outlookTraceEnabled') ? localStorage.getItem('outlookTraceEnabled') === 'true' : false;
+        if (!window.ContentServerSupportPath) {
+            window.ContentServerSupportPath = supportPath;
+        }
+
+        csui.require.config({
+            paths: {
+                conws: '../..'
+            },
+            config: {
+                'csui/utils/contexts/factories/connector': {
+                    connection: {
+                        url: window.ContentServerUrl + '/api/v1',
+                        supportPath: window.ContentServerSupportPath
+                    }
+                },
+                i18n: {
+                    locale: clientLocale
+                },
+                'csui/controls/form/form.view': {
+                    'extensions': {
+                        "conws": [
+                            "conws/controls/form/fields/alpaca/referencefield"
+                        ],
+                        'csui': [
+							"csui/controls/form/fields/alpaca/alpuserfield"
+                        ]
+                    }
+                },
+                'csui/utils/log': {
+                    page: traceEnabled,
+                    level: 'INFO',
+                    performanceTimeStamp: false,
+                    moduleNameStamp: false,
+                    server: false,
+                    window: false
+                }
+            },
+            deps: [
+              'csui/lib/require.config!csui/csui-extensions.json'
+            ]
+        });
+
+        csui.require([
+            'csui/lib/jquery', 'csui/lib/marionette', 'csui/utils/contexts/page/page.context',
+            'conws/widgets/outlook/conwsoutlook.view', 'conws/widgets/outlook/impl/utils/emailservice'
+        ], function($, Marionette, PageContext, ConWsEmailView, EmailService) {
+
+            if (!window.ContentServerUrl || !window.ContentServerSupportPath) {
+                $('#topMessage').html("<br/>" + EmailService.constants.cs_config_missing);
+                return;
+            }
+
+            var officeInitialized = false;
+
+            Office.initialize = function (reason) {
+
+                if (window.viewDisplayed) {
+                    window.viewDisplayed = false;
+                    setTimeout(function () { location = location; });
+                }
+
+                officeInitialized = true;
+                $(document).ready(function () {
+                    EmailService.getCurrentMailboxItem().then(
+                        function (data) {
+                            window.CurrentEmailItem = data.currentEmail;
+                            window.currentUser = data.currentUser;
+                            window.SettingStorage = window.localStorage;
+                            setTimeout(function() { showWidget(); });
+                        },
+                        function (error) {
+                            EmailError = error;
+                            $('#topMessage').html(EmailService.constants.retrieve_email_error + error);
+                        }
+                    );
+
+                    Office.context.mailbox.addHandlerAsync(Office.EventType.ItemChanged, EmailService.emailItemChanged);
+                });
+            };
+            setTimeout(function () {
+                if (!officeInitialized) {
+                    // Not in Office context, but still show the widget
+                    showWidget();
+                }
+            }, 250);
+
+            function showWidget() {
+                // Create the data managing context
+                var context = new PageContext();
+                context.EmailError = EmailError;
+                // Wrap the widget placeholder
+                var contentRegion = new Marionette.Region({
+                    el: '#content'
+                }),
+                    // Create the widget instance
+                    emailView = new ConWsEmailView({
+                        context: context
+                    });
+
+                // Show the widget on the page
+                contentRegion.show(emailView);
+            }
+        });
+    </script>
+
+</head>
+<body class="conwsoutlook-widget binf-widgets" style="background: none; min-width: 100px;" tabindex="0" id="conwsoutlook-body">
+    <h1 style="display:none">BusinessWorkspaces</h1>
+    <div id="content"></div>
+    <div id="topMessage"></div>
+    <div id="blockingSpinner" class="load-container binf-hidden">
+        <div class="outer-border">
+            <div class="loader">
+            </div> 
+        </div>
+    </div>
+    <iframe id='ssoFrame' style="visibility:hidden;display:none" sandbox="allow-same-origin allow-forms allow-scripts"></iframe>
+</body>
+</html>
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

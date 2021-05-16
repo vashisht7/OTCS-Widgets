@@ -1,0 +1,18 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .xecmpf-header-toolbar {
+  background-color: #ffffff;
+  color: #333333;
+  display: flex;
+  display: -webkit-flex;
+  min-width: 0px;
+  height: 3em;
+  margin: auto;
+}
+
+.binf-widgets .xecmpf-header-toolbar > div {
+  flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+  display: flex;
+  display: -webkit-flex;
+}

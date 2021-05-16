@@ -1,0 +1,266 @@
+{
+  "forms": [
+    {
+      "data": {
+        "name": "Materials",
+        "description": "",
+        "create_date": "2018-03-06T14:39:13",
+        "create_user_id": 1000,
+        "type": 848,
+        "type_name": "Business Workspace",
+        "modify_date": "2018-03-06T14:39:14",
+        "owner_user_id": 1000
+      },
+      "options": {
+        "fields": {
+          "name": {
+            "hidden": false,
+            "hideInitValidationError": true,
+            "label": "Name",
+            "readonly": false,
+            "type": "text"
+          },
+          "description": {
+            "hidden": false,
+            "hideInitValidationError": true,
+            "label": "Description",
+            "readonly": false,
+            "type": "textarea"
+          },
+          "create_date": {
+            "hidden": false,
+            "hideInitValidationError": true,
+            "label": "Created",
+            "readonly": true,
+            "type": "datetime"
+          },
+          "create_user_id": {
+            "hidden": false,
+            "hideInitValidationError": true,
+            "label": "Created By",
+            "readonly": true,
+            "type": "otcs_user_picker",
+            "type_control": {
+              "action": "api/v1/members",
+              "method": "GET",
+              "name": "Admin",
+              "parameters": {
+                "filter_types": [
+                  0
+                ],
+                "select_types": [
+                  0
+                ]
+              }
+            }
+          },
+          "type": {
+            "hidden": true,
+            "hideInitValidationError": true,
+            "label": "Type",
+            "readonly": true,
+            "type": "integer"
+          },
+          "type_name": {
+            "hidden": false,
+            "hideInitValidationError": true,
+            "label": "Type",
+            "readonly": true,
+            "type": "text"
+          },
+          "modify_date": {
+            "hidden": false,
+            "hideInitValidationError": true,
+            "label": "Modified",
+            "readonly": true,
+            "type": "datetime"
+          },
+          "owner_user_id": {
+            "hidden": false,
+            "hideInitValidationError": true,
+            "label": "Owned By",
+            "readonly": true,
+            "type": "otcs_user_picker",
+            "type_control": {
+              "action": "api/v1/members",
+              "method": "GET",
+              "name": "Admin",
+              "parameters": {
+                "filter_types": [
+                  0
+                ],
+                "select_types": [
+                  0
+                ]
+              }
+            }
+          }
+        },
+        "form": {
+          "attributes": {
+            "action": "api/v1/nodes/531185",
+            "method": "PUT"
+          },
+          "renderForm": true
+        }
+      },
+      "schema": {
+        "properties": {
+          "name": {
+            "maxLength": 248,
+            "minLength": 1,
+            "readonly": false,
+            "required": true,
+            "title": "Name",
+            "type": "string"
+          },
+          "description": {
+            "readonly": false,
+            "required": false,
+            "title": "Description",
+            "type": "string"
+          },
+          "create_date": {
+            "readonly": true,
+            "required": false,
+            "title": "Created",
+            "type": "string"
+          },
+          "create_user_id": {
+            "readonly": true,
+            "required": false,
+            "title": "Created By",
+            "type": "otcs_user_picker"
+          },
+          "type": {
+            "readonly": true,
+            "required": false,
+            "title": "Type",
+            "type": "integer"
+          },
+          "type_name": {
+            "readonly": true,
+            "required": false,
+            "title": "Type",
+            "type": "string"
+          },
+          "modify_date": {
+            "readonly": true,
+            "required": false,
+            "title": "Modified",
+            "type": "string"
+          },
+          "owner_user_id": {
+            "readonly": true,
+            "required": false,
+            "title": "Owned By",
+            "type": "otcs_user_picker"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "data": {
+        "511687": {
+          "511687_2": "FERT",
+          "511687_3": "02004",
+          "511687_4": "HP Jornada 820",
+          "511687_5": null,
+          "511687_6": "000000000000000089"
+        }
+      },
+      "options": {
+        "fields": {
+          "511687": {
+            "fields": {
+              "511687_2": {
+                "hidden": false,
+                "hideInitValidationError": true,
+                "label": "Category",
+                "readonly": false,
+                "type": "text"
+              },
+              "511687_3": {
+                "hidden": false,
+                "hideInitValidationError": true,
+                "label": "Group",
+                "readonly": false,
+                "type": "text"
+              },
+              "511687_4": {
+                "hidden": false,
+                "hideInitValidationError": true,
+                "label": "Description",
+                "readonly": false,
+                "type": "text"
+              },
+              "511687_5": {
+                "hidden": false,
+                "hideInitValidationError": true,
+                "label": "Language",
+                "readonly": false,
+                "type": "text"
+              },
+              "511687_6": {
+                "hidden": false,
+                "hideInitValidationError": true,
+                "label": "Number",
+                "readonly": false,
+                "type": "text"
+              }
+            }
+          }
+        }
+      },
+      "role_name": "categories",
+      "schema": {
+        "properties": {
+          "511687": {
+            "properties": {
+              "511687_2": {
+                "maxLength": 32,
+                "readonly": false,
+                "required": false,
+                "title": "Category",
+                "type": "string"
+              },
+              "511687_3": {
+                "maxLength": 32,
+                "readonly": false,
+                "required": false,
+                "title": "Group",
+                "type": "string"
+              },
+              "511687_4": {
+                "maxLength": 32,
+                "readonly": false,
+                "required": true,
+                "title": "Description",
+                "type": "string"
+              },
+              "511687_5": {
+                "maxLength": 32,
+                "readonly": false,
+                "required": false,
+                "title": "Language",
+                "type": "string"
+              },
+              "511687_6": {
+                "maxLength": 32,
+                "readonly": false,
+                "required": false,
+                "title": "Number",
+                "type": "string"
+              }
+            },
+            "title": "Material Attributes",
+            "type": "object"
+          }
+        },
+        "title": "Categories",
+        "type": "object"
+      }
+    }
+  ]
+}

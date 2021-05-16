@@ -1,0 +1,172 @@
+{
+  "links": {
+    "data": {
+      "self": {
+        "body": "",
+        "content_type": "",
+        "href": "\/api\/v2\/nodes\/69422?actions",
+        "method": "GET",
+        "name": ""
+      }
+    }
+  },
+  "results": {
+    "actions": {
+      "data": {
+        "audit": {
+          "body": "",
+          "content_type": "",
+          "form_href": "",
+          "href": "\/api\/v2\/nodes\/69422\/audit?limit=1000",
+          "method": "GET",
+          "name": "Audit"
+        },
+        "copy": {
+          "body": "",
+          "content_type": "",
+          "form_href": "\/api\/v2\/forms\/nodes\/copy?id=69422",
+          "href": "\/api\/v2\/nodes",
+          "method": "POST",
+          "name": "Copy"
+        },
+        "delete": {
+          "body": "",
+          "content_type": "",
+          "form_href": "",
+          "href": "\/api\/v2\/nodes\/69422",
+          "method": "DELETE",
+          "name": "Delete"
+        },
+        "makefavorite": {
+          "body": "",
+          "content_type": "",
+          "form_href": "",
+          "href": "\/api\/v2\/members\/favorites\/69422",
+          "method": "POST",
+          "name": "Add to Favorites"
+        },
+        "more": {
+          "body": "",
+          "content_type": "",
+          "form_href": "",
+          "href": "",
+          "method": "",
+          "name": "..."
+        },
+        "move": {
+          "body": "",
+          "content_type": "",
+          "form_href": "\/api\/v2\/forms\/nodes\/move?id=69422",
+          "href": "\/api\/v2\/nodes\/69422",
+          "method": "PUT",
+          "name": "Move"
+        },
+        "open": {
+          "body": "",
+          "content_type": "",
+          "form_href": "",
+          "href": "\/api\/v2\/nodes\/69422\/nodes",
+          "method": "GET",
+          "name": "Open"
+        },
+        "properties": {
+          "body": "",
+          "content_type": "",
+          "form_href": "",
+          "href": "\/api\/v2\/nodes\/69422",
+          "method": "GET",
+          "name": "Properties"
+        },
+        "rename": {
+          "body": "",
+          "content_type": "",
+          "form_href": "\/api\/v2\/forms\/nodes\/rename?id=69422",
+          "href": "\/api\/v2\/nodes\/69422",
+          "method": "PUT",
+          "name": "Rename"
+        }
+      },
+      "map": {
+        "default_action": "",
+        "more": [
+          "properties",
+          "audit"
+        ]
+      },
+      "order": [
+        "open",
+        "rename",
+        "makefavorite",
+        "copy",
+        "move",
+        "delete",
+        "more"
+      ]
+    },
+    "data": {
+      "columns": [
+        {
+          "data_type": 2,
+          "key": "type",
+          "name": "Type",
+          "sort_key": "x3210"
+        },
+        {
+          "data_type": -1,
+          "key": "name",
+          "name": "Name",
+          "sort_key": "x3207"
+        },
+        {
+          "data_type": -1,
+          "key": "size_formatted",
+          "name": "Size",
+          "sort_key": "x3208"
+        },
+        {
+          "data_type": 401,
+          "key": "modify_date",
+          "name": "Modified",
+          "sort_key": "x3206"
+        },
+        {
+          "data_type": -1,
+          "key": "nickname",
+          "name": "Nickname"
+        }
+      ],
+      "properties": {
+        "container": true,
+        "container_size": 3,
+        "create_date": "2016-09-22T08:59:40",
+        "create_user_id": 1000,
+        "description": "",
+        "description_multilingual": {
+          "en": ""
+        },
+        "favorite": false,
+        "id": 69422,
+        "mime_type": null,
+        "modify_date": "2016-09-22T08:59:40",
+        "modify_user_id": 1000,
+        "name": "Early Workspace 2",
+        "name_multilingual": {
+          "en": "Early Workspace 2"
+        },
+        "owner_group_id": 1001,
+        "owner_user_id": 1000,
+        "parent_id": 22672,
+        "reserved": false,
+        "reserved_date": null,
+        "reserved_user_id": 0,
+        "size": 3,
+        "size_formatted": "3 Items",
+        "type": 848,
+        "type_name": "Business Workspace",
+        "versions_control_advanced": false,
+        "volume_id": -2000,
+        "wnd_nickname": null
+      }
+    }
+  }
+}

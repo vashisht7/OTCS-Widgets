@@ -1,0 +1,56 @@
+<div class="conws-header-wrapper">
+  <div class="conws-header-metadata{{#if hasChildView}}-childview{{/if}}">
+    <div class="conws-header-image">
+      {{#if canChange}}
+        <div class="conws-header-edit" tabindex="0" role="button" data-binf-toggle="popover"
+             aria-label="{{iconMsg}}">
+          <div class="header-image">
+            <img src="{{iconData}}" alt="{{type}}" class="{{iconClass}}">
+          </div>
+          <div class="header-editor">
+            <span class="icon-edit"></span>
+          </div>
+        </div>
+        <input class="conws-header-icon-file" title="{{chooseInpFileTitle}}" type="file"
+               accept="{{iconFileTypes}}" style="display:none">
+      {{else}}
+        <img src="{{iconData}}" alt="{{type}}" class="{{iconClass}}">
+      {{/if}}
+    </div>
+    <div class="conws-header-title-section">
+      <div class="conws-header-title">
+        <h1 title="{{title}}">{{title}}</h1>
+
+        <div class="conws-header-child-displayUrl"></div>
+      </div>
+
+       <div class="conws-header-toolbar"></div>
+      
+    </div>
+    {{#if hasMetadata}}
+      <div class="conws-header-metadata-container">
+        {{#if hasWorkspaceType}}
+          <div class="conws-header-type">
+            <p title="{{type}}">{{type}}</p>
+          </div>
+        {{/if}}
+        {{#if hasDescription}}
+          {{#unless isDescriptionEmpty}}
+            <div class="conws-header-desc"></div>
+          {{/unless}}
+        {{/if}}
+        {{#if hasMetadataExtension}}
+          <div class="conws-header-metadata-extension"></div>
+        {{/if}}
+      </div>
+    {{/if}}
+  </div>
+
+  {{#if hasChildView}}
+    <div class="conws-header-childView-container">
+      <div id="conws-header-childview"></div>
+    </div>
+  {{/if}}
+</div>
+
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

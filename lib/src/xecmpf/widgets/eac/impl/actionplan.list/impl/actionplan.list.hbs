@@ -1,0 +1,12 @@
+{{#if showAddActionPlan}}
+  <div class="cs-header xecmpf-eac-action-plan-header-region">
+    <div class="xecmpf-eac-action-plan-header">
+      <span class="cs-title xecmpf-eac-action-plan-header-text">{{ actionPlansListHeader }}</span>
+      <div title="{{ newActionPlanLabel }}" aria-label="{{ newActionPlanLabel }}" tabindex="0" role="button" class="binf-btn csui-groups-header-plus xecmpf-eac-add-action-plan-btn">
+        <span class="icon icon-toolbarAdd"></span>
+      </div>
+    </div> 
+  </div>
+{{/if}}
+<div class="cs-content xecmpf-eac-action-plan-list binf-flex-column" role="navigation" aria-label="{{actionPlansGroup}}"></div>
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

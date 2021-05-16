@@ -1,0 +1,36 @@
+{{#if enabled}}
+  <div class='csui-favorite-star-view-container csui-favorite-popover-container'>
+    {{#if selected}}
+      <button type="button" class="csui-favorite-star selected csui-acc-focusable"
+        {{#if focusable}}tabindex="0" {{else}}tabindex="-1"{{/if}}
+              title="{{removeFav}}" aria-label="{{removeFav}}">
+        <svg class="icon csui-svg-icon csui-svg-icon-normal" focusable="false">
+          <use xlink:href="{{spritePath}}#{{svgId}}"></use>
+        </svg>
+        <svg class="icon csui-svg-icon csui-svg-icon-hover" focusable="false">
+          <use xlink:href="{{spritePath}}#{{svgId}}.hover"></use>
+        </svg>
+        <svg class="icon csui-svg-icon csui-svg-icon-active" focusable="false">
+          <use xlink:href="{{spritePath}}#{{svgId}}.active"></use>
+        </svg>
+      </button>
+    {{else}}
+      <button type="button" class="csui-favorite-star csui-acc-focusable"
+        {{#if focusable}}tabindex="0" {{else}}tabindex="-1"{{/if}}
+        {{#unless showInFavoritesTable}}aria-haspopup="dialog"{{/unless}}
+              title="{{addFav}}" aria-label="{{addFav}}">
+        <svg class="icon csui-svg-icon csui-svg-icon-normal" focusable="false">
+          <use xlink:href="{{spritePath}}#{{svgId}}"></use>
+        </svg>
+        <svg class="icon csui-svg-icon csui-svg-icon-hover" focusable="false">
+          <use xlink:href="{{spritePath}}#{{svgId}}.hover"></use>
+        </svg>
+        <svg class="icon csui-svg-icon csui-svg-icon-active" focusable="false">
+          <use xlink:href="{{spritePath}}#{{svgId}}.active"></use>
+        </svg>
+      </button>
+    {{/if}}
+  </div>
+{{/if}}
+
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

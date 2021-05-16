@@ -1,0 +1,124 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .csui-table-searchbox {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: row;
+  margin-left: -5px;
+  margin-right: 0.5em;
+  max-width: 100%;
+}
+
+.binf-widgets .csui-table-searchbox .fadeout {
+  z-index: 1;
+  right: calc(3em - 23px);
+  top: calc(50% - 10px);
+  display: inline-block;
+}
+
+.csui-table-searchbox.binf-hidden {
+  max-width: 0;
+}
+
+.csui-table-searchbox:not(.binf-hidden) {
+  transition: max-width 0.2s linear 0s;
+  max-width: 100%;
+  position: relative;
+}
+
+.binf-widgets .csui-table-column-search {
+  position: relative;
+  display: inline-flex;
+  flex-direction: row;
+}
+
+.csui-table-column-search .csui-table-search-input {
+  display: inline-flex;
+  flex: 1 1 auto;
+  height: 2em;
+  line-height: normal;
+  outline: 0;
+  border: 1px solid #a7a9ac;
+  border-radius: calc(1em - 9px);
+  padding-left: 30px;
+  padding-right: calc(3em - 17px);
+  width: calc(100% - 2em);
+  margin: 0;
+  max-width: 100%;
+}
+
+.csui-table-column-search .csui-table-search-input:focus {
+  outline: 0;
+}
+
+.binf-widgets .sbclearer {
+  color: #d3d3d3;
+  position: absolute;
+  height: 100%;
+  right: 6px;
+  line-height: 1.4em;
+  font-size: 1.4em;
+  pointer-events: auto;
+}
+
+.sbclearer.formfield_clear {
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 0.9em;
+  top: 0;
+  z-index: 2;
+}
+
+.csui-table-column-search > .csui-table-search-icon {
+  display: inline-flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.csui-table-column-search .icon {
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 32px;
+  width: 32px;
+}
+
+.csui-table-search-input::-ms-clear {
+  display: none;
+}
+
+.binf-widgets .binf-table.dataTable > thead > tr > th > div.csui-table-column-search.csui-searchbox-shown {
+  overflow: visible;
+}
+
+.binf-widgets .csui-table-searchbox .binf-dropdown-menu.typeahead > li > a {
+  padding: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.binf-widgets .csui-table-searchbox .binf-dropdown-menu > li {
+  margin: 0;
+  padding: 1em;
+  border: 1px solid #dddddd;
+  border-bottom: 0.063em solid #e6e6e6;
+  height: auto;
+}
+
+.binf-widgets .csui-table-searchbox .binf-dropdown-menu > li.binf-active {
+  background-color: #bac9ce;
+  cursor: pointer;
+}
+
+.binf-widgets .csui-table-searchbox ul.binf-dropdown-menu {
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+
+.binf-widgets .csui-table-column-search .icon-search-placeholder {
+  position: absolute;
+  width: 32px;
+  height: 100%;
+  cursor: auto;
+}

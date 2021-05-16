@@ -1,0 +1,427 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+
+.binf-widgets .conws-bosearch
+{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.binf-widgets .conws-bosearch:not(.csui-content-without-header)
+{
+  height: 100%;
+}
+
+.binf-widgets .conws-bosearch-wrapper
+{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.conws-bosearch.workspace_reference_edit .conws-bosearch-wrapper
+{
+  top: -3px;
+  height: calc(100% + 3px);
+}
+
+.conws-bosearch.business_attachment_add .conws-bosearch-wrapper
+{
+  top: -3px;
+  
+  height: calc(100% + 3px - 2em);
+}
+
+.conws-bosearch .conws-bosearch-panel
+{
+  position: relative;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.conws-bosearch-animating .conws-bosearch .conws-bosearch-panel
+{
+  -webkit-transition: left 0.4s;
+  transition: left 0.4s;
+}
+
+.conws-bosearch-beforeshow .conws-bosearch .conws-bosearch-panel
+{
+  left: 100%;
+}
+
+.binf-widgets .conws-bosearch-form
+{
+  position: absolute;
+  width: 16rem;
+  height: 100%;
+}
+
+.binf-widgets .cs-metadata .conws-bosearch-form
+{
+  position: absolute;
+  width: 20%;
+  min-width: 15.5em;
+  height: 100%;
+}
+
+.conws-bosearch-form .ps-scrollbar-y-rail
+{
+  z-index: 1;
+}
+
+.conws-bosearch-form .conws-right-shadow{
+  position: absolute;
+  width:1rem;
+  right:0px;
+  top:0px;
+  height:100%;
+  background: -webkit-linear-gradient(left,rgba(65,64,66,0),rgba(65,64,66,0.2)); 
+  background: -o-linear-gradient(right,rgba(65,64,66,0),rgba(65,64,66,0.2)); 
+  background: -moz-linear-gradient(right,rgba(65,64,66,0),rgba(65,64,66,0.2)); 
+  background: linear-gradient(to right, rgba(65,64,66,0), rgba(65,64,66,0.2)); 
+}
+
+.binf-widgets .conws-bosearch-result
+{
+  position: absolute;
+  right: 0;
+  width: calc(100% - 16rem);
+  height: 100%;
+}
+
+.binf-widgets .cs-metadata .conws-bosearch-result
+{
+  position: absolute;
+  right: 0;
+  width: calc(100% - 20%);
+  max-width: calc(100% - 15.5em);
+  height: 100%;
+}
+
+.binf-widgets .conws-bosearchform,
+.binf-widgets .conws-boresultlist,
+.binf-widgets .conws-boresultlist-body 
+{
+  height: 100%;
+}
+
+.binf-widgets .conws-bosearchheader
+{
+  background-color: #f5f5f5;
+  white-space: nowrap;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+.conws-bosearchheader >.conws-spacer
+{
+  display: inline-block;
+  vertical-align: middle;
+  height: 3rem;
+  width: 0;
+}
+.binf-widgets .conws-bosearch-title
+{
+  display: none;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-style: normal;
+  vertical-align: middle;
+  
+  width: 100%;
+  height: 2em;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  background-color: #f5f5f5;
+  white-space: nowrap;
+  text-align: center;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+.conws-bosearch.display-title .conws-bosearch-title{
+  display: inline-block;
+}
+
+.binf-widgets .conws-bosearchheader-title {
+  display: inline-block;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-style: normal;
+  vertical-align: middle;
+  
+  width: calc(100% - (2 * .5rem));
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.binf-widgets .conws-bosearchfields
+{
+  
+  
+  height: calc(100% - 3rem);
+}
+
+.binf-widgets .conws-bosearchfields .cs-form .alpaca-container-item > .binf-form-group.alpaca-field >*,
+.binf-widgets .conws-bosearchfields .cs-form .alpaca-container-item > .binf-form-group.alpaca-field .binf-col-sm-9
+{
+  display: block;
+  clear: both;
+  text-align: left;
+  width: 100%;
+}
+
+.binf-widgets .conws-bosearchfields-zero{
+  height: calc(100% - 3rem);
+  text-align: center;
+  align-items: center;
+  display:flex;
+}
+
+.conws-bosearchfields .cs-form .alpaca-container-item > .binf-form-group.alpaca-field .alpaca-control-label
+{
+  font-size: .875rem;
+  color: #757575;
+  line-height: 1rem;
+  height: 1rem;
+  padding-left: 0;
+}
+.conws-bosearchfields .cs-form .binf-row.alpaca-field
+{
+  margin-bottom: 0;
+}
+
+.conws-bosearchfields .cs-form .binf-row.alpaca-field >*
+{
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+.conws-bosearchfields .cs-form .binf-form-group
+{
+  margin-bottom: 0.5em;
+}
+
+.binf-widgets .conws-bosearchfield-input
+{
+  padding-top: 0.25em;
+}
+
+.conws-bosearch.business_attachment_add .conws-bosearchform-body
+{
+  height: calc(100% - 6.8em);
+}
+
+@media only screen and (max-width: 1120px) {
+  
+  .cs-metadata .conws-bosearch .binf-modal-footer {
+    height: 5em;
+  }
+  
+  .cs-metadata .conws-bosearch.business_attachment_add .conws-bosearchform-body{
+    height: calc(100% - 8.3em);
+  }
+  .binf-widgets .cs-metadata .binf-modal-footer .binf-btn + .binf-btn{
+    margin-left: 0;
+  }
+
+}
+
+
+@media only screen and (max-width: 1250px) {
+  
+  div[data-csui-widget_type="search.results"] .cs-metadata .conws-bosearch .binf-modal-footer {
+    height: 5em;
+  }
+  
+  div[data-csui-widget_type="search.results"] .cs-metadata .conws-bosearch.business_attachment_add .conws-bosearchform-body{
+    height: calc(100% - 8.3em);
+  }
+  .binf-widgets .cs-metadata .binf-modal-footer .binf-btn + .binf-btn{
+    margin-left: 0;
+  }
+
+}
+
+.conws-bosearch .binf-modal-footer
+{
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+
+.binf-widgets .cs-dialog .conws-bosearch-wrapper .binf-modal-footer .binf-btn.binf-btn-primary {
+  margin-left: 0;
+} 
+
+
+.conws-bosearch .conws-bosearch-wrapper  .binf-modal-footer .binf-btn {
+  max-width: 6.75em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.binf-widgets .cs-dialog .conws-bosearch-wrapper .binf-modal-footer.conws-bosearchform-footer .binf-btn {
+  padding: 0 20px;
+}
+
+.binf-widgets .conws-boresulttable
+{
+  
+  height: 100%;
+}
+
+.conws-boresultlist.conws-with-footer .conws-boresulttable
+{
+  
+  
+  height: calc(100% - 3.9em);
+}
+
+
+.conws-bosearch.display-title .conws-boresultlist.conws-with-attachbtn .conws-boresulttable
+{
+  
+  
+  height: calc(100% - 6.7em);
+}
+
+
+.conws-bosearch.display-title .conws-boresultlist.conws-with-footer.conws-with-attachbtn .conws-boresulttable{
+  
+  
+  height: calc(100% - 9.7em);
+}
+
+.conws-boresultlist:not(.conws-with-footer) .conws-boresultfooter .conws-boresultfooter-message-container
+{
+  display: none;
+}
+
+.conws-boresultlist:not(.conws-with-footer).conws-with-attachbtn .conws-boresultfooter .conws-boresultfooter-message-container
+{
+  display: none;
+}
+
+.conws-boresultlist.conws-with-footer .conws-boresultfooter
+{
+  height: 6em;
+  width: 100%;
+  background-color: #0071AA;
+}
+
+.conws-boresultlist.conws-with-attachbtn .conws-boresultfooter
+{
+  height: 6em;
+  width: 100%;
+  background-color: #f5f5f5;
+}
+
+.conws-boresultfooter .conws-boresultfooter-attach-container
+{
+  
+  height: 3.6em;
+  display:none;
+  text-align: right;
+  background-color:  #f5f5f5;
+}
+
+.conws-boresultlist .conws-boresultfooter-message-container
+{
+  height: 3em;
+  width: 100%;
+  background-color:  #0071AA;
+ 
+}
+
+.conws-boresultlist .conws-boresultfooter-message
+{
+  color: #FFFFFF;
+  text-align: center;
+  background-color:  #0071AA;
+ 
+}
+
+.binf-widgets .conws-boresultbanner-container
+{
+  width: 100%;
+  height: 100%;
+  transform: translateY(50%);
+}
+
+.binf-widgets .conws-boresultbanner
+{
+  font-size: 1.125rem;
+  
+  font-weight: 300;
+  
+  color: #333333;
+  line-height: 1.375rem;
+  text-align: center;
+  transform: translateY(-50%);
+  padding: 1em;
+}
+
+.conws-boresulttable .csui-nodetable table.dataTable > thead >tr
+{
+  font-size: .875rem;
+  color: #333333;
+}
+
+.conws-boresulttable .csui-nodetable table.dataTable > tbody >tr.odd,
+.conws-boresulttable .csui-nodetable table.dataTable > tbody >tr.even
+{
+  font-size: .875rem;
+  color: #333333;
+  line-height: 1rem;
+  height: 3rem;
+  width: 100%;
+  padding-left: .375rem;
+  padding-right: .375rem;
+}
+
+.conws-boresulttable .csui-nodetable table.dataTable > tbody >tr:not(.csui-details-row):not(.conws-boresulttable-disabled-row):hover,
+.conws-boresulttable .csui-nodetable table.dataTable > tbody >tr:not(.csui-details-row):not(.conws-boresulttable-disabled-row) >td:hover
+{
+  cursor: auto;
+}
+
+.conws-boresulttable .csui-nodetable table.dataTable > tbody >tr.conws-boresulttable-disabled-row, .conws-boresulttable .csui-nodetable table.dataTable > tbody >tr.conws-boresulttable-disabled-row + tr.csui-details-row {
+  opacity: 0.7;    
+  color: #757575;
+  font-style: italic;
+  cursor: auto;
+}
+
+.binf-widgets .binf-table.dataTable tr.conws-boresulttable-disabled-row:not(.csui-details-row) > td.csui-table-cell-last-visible {
+  margin:0;
+  padding:0;
+}
+
+.binf-widgets .binf-table.dataTable tr.conws-boresulttable-disabled-row:not(.csui-details-row) > td.csui-table-cell-last-visible a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-align: center;
+}
+
+.conws-boresulttable-disabled-row .csui-table-cell-_toggledetails a.expand-details-row-toggle span {
+  height: 50%;
+  margin-right: 10px;
+  position: relative;
+  top: calc(50% - 9px);
+}
+
+.binf-widgets .cs-metadata{
+  height: 100%;
+  overflow: hidden;
+}
+
+.conws-with-attachbtn.conws-with-footer .conws-boresultfooter-attach-container.binf-modal-footer {
+  Padding-top: 0;
+}

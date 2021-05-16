@@ -1,0 +1,9 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .conws-icon-facets-volume {
+  background-image: url('test.facets_volume.svg');
+}
+
+.binf-widgets .conws-icon-facets-volume_nonselectable {
+  background-image: url('test.facets_volume_nonselectable32.svg');
+}

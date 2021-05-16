@@ -1,0 +1,168 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .csui-audit {
+  font-size: 16px;
+  font-weight: normal;
+  height: calc(100% - 4em);
+  flex: 1 1000 auto;
+  -ms-flex: 1 1000 auto;
+  -webkit-flex: 1 1000 auto;
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  padding-left: 3em;
+  padding-right: 3em;
+  margin-top: 4rem;
+}
+
+.csui-audit #tabletoolbar {
+  flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-flex-direction: row;
+  width: 100%;
+}
+
+.csui-audit .csui-audit-table {
+  flex: 1 1000 auto;
+  -ms-flex: 1 1000 auto;
+  -webkit-flex: 1 1000 auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.csui-audit .csui-audit-table > div {
+  overflow: hidden;
+}
+
+.csui-audit .csui-audit-pagination {
+  height: auto;
+  flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+}
+
+.csui-audit .csui-audit-table .csui-icon.mime_audit_no_edit {
+  cursor: default;
+}
+
+.binf-widgets .csui-audit .csui-table-searchbox .binf-dropdown-menu.typeahead > li > a {
+  font-family: OpenText Sans;
+  font-size: 14px;
+  line-height: 24px;
+  align-items: center;
+}
+
+.binf-widgets .csui-audit .csui-table-searchbox .binf-dropdown-menu.typeahead#user-picker-ul > li {
+  border: 0;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.binf-widgets .csui-audit .csui-table-searchbox .binf-dropdown-menu > li.binf-active {
+  background: #b9c4cb;
+  cursor: pointer;
+}
+
+.binf-widgets .csui-audit .binf-dropdown-menu > .binf-active > a {
+  color: #333333;
+  text-decoration: none;
+  outline: 0;
+  background-color: #b9c4cb;
+}
+
+.binf-widgets .csui-audit .search-box.csui-table-searchbox ul {
+  background: #ffffff;
+  width: 100%;
+}
+
+.binf-widgets .csui-audit .search-box.csui-table-searchbox ul {
+  padding: 4px 0;
+  border: 0;
+}
+
+.binf-widgets .csui-audit .search-box.csui-table-searchbox ul#event-picker-ul li:not(.csui-typeahead-no-results) {
+  margin-bottom: 2px;
+  padding: 4px 16px;
+  border: 0px;
+  overflow: auto;
+  height: auto;
+}
+
+.csui-audit .csui-audit-table div:focus {
+  outline: 1px dotted #333333;
+  outline-offset: -1px;
+}
+
+.binf-widgets .csui-audit .binf-dropdown-menu > li > a:hover {
+  background-color: inherit
+}
+
+.binf-widgets .csui-audit .csui-table-searchbox .typeahead.scroll-container {
+  top: 26px;
+  left: 0;
+  display: block;
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+  border-radius: 0px 0px 3px 3px;
+  overflow: hidden;
+}
+
+.binf-widgets .csui-audit .typeahead > ul.binf-dropdown-menu {
+  position: static;
+  width: 100%;
+}
+
+.binf-widgets .csui-audit .csui-table-search-icon {
+  cursor: pointer;
+}
+
+.binf-widgets .csui-audit .csui-table-searchbox .binf-dropdown-menu li.csui-typeahead-no-results {
+  padding: 10px;
+  background-color: #3b73af;
+  color: #ffffff;
+  border: 0;
+  line-height: 25px;
+}
+
+.csui-audit-table .csui-nodetable.csui-table-spacing-medium .binf-table thead tr > :first-child > .csui-focusable-table-column-header {
+  padding: 0 0 0 12px;
+}
+
+.csui-audit-table .csui-nodetable.csui-table-spacing-medium .binf-table thead tr .csui-focusable-table-column-header {
+  padding: 0 0 0 8px;
+}
+
+.csui-audit-table .binf-table thead tr .csui-table-column-text {
+  padding-right: 8px
+}
+
+.csui-audit-table .csui-table-column-search.csui-searchbox-shown {
+  width: 100%;
+}
+
+.csui-audit-table .csui-table-column-search > .csui-table-search-icon {
+  flex: none;
+}
+
+.csui-audit-table .search-box.csui-table-searchbox {
+  max-width: 368px;
+}
+
+.csui-audit-table .binf-table.dataTable > thead > tr > th.csui-table-cell-generic-text > div {
+  overflow: visible;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    <title>Boolean test</title>
+
+    <link href="../../../themes/carbonfiber/theme.css" rel="stylesheet">
+
+    <style>
+        .binf-widgets {
+            background: none;
+            background-color: #ccc;
+        }
+
+        #booleanLabel {
+            margin-bottom: 10px;
+        }
+        #descriptionLabel {
+            margin-top: 10px;
+        }
+
+        #content {
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+    </style>
+
+    <script src="../../../lib/require.js"></script>
+    <script data-csui-path="../../.." src="../../../config.js"></script>
+
+    <script>
+      require([
+        'csui/lib/underscore', 'csui/lib/backbone', 'csui/lib/marionette', '../fields/booleanfield.view'
+      ], function (_, Backbone, Marionette, BooleanFieldView) {
+        'use strict';
+
+        function logEventInfo(event) {
+          console.log(event.type + " on " + event.target.tagName + " @ " + new Date().getTime() % 60000);
+        }
+
+        var initialState = false;
+        var model = new Backbone.Model({data: initialState, id: 'id123'}),
+
+          contentRegion = new Marionette.Region({el: '#content'}),
+
+          field = new BooleanFieldView({
+            model: model,
+            labelId: 'booleanLabel',
+            descriptionId: 'descriptionLabel'
+          });
+
+        contentRegion.show(field);
+/*
+        var inp = document.getElementsByTagName('input')[0];
+        inp.addEventListener('focus', logEventInfo);
+        inp.addEventListener('blur', logEventInfo);
+*/
+        setInterval(logStateDifferences, 20);
+
+        var checkNum = 0, checkChangedNum = -1000000, lastDiffers = false, lastAriaChecked = initialState;
+        function logStateDifferences() {
+          ++checkNum;
+          var inp = document.getElementsByTagName('input')[0];
+          var checked = inp.checked;
+          var ariaChecked = inp.getAttribute('aria-checked') == "true";
+          var differsNow = checked!=ariaChecked;
+
+          // after a change, or when a difference is detected, log the state for some time ...
+          // the weird change to the .checked happens after 100ms
+          if (ariaChecked !==lastAriaChecked || differsNow !== lastDiffers) {
+            lastDiffers = differsNow;
+            checkChangedNum = checkNum;
+            lastAriaChecked = ariaChecked;
+          }
+
+          if (Math.abs(checkNum-checkChangedNum)<=8) {
+            var start = differsNow ? "!ERROR! " : "CORRECT ";
+            var d = new Date();
+            var when = d.toLocaleTimeString() + "." + ("000" + d.getMilliseconds()).substr(-3);
+            console.log(start + " checked: " + checked + ", aria-checked: " + ariaChecked + " at " + when);
+          }
+        }
+
+      });
+
+    </script>
+</head>
+
+<body>
+
+<p>
+    <a href="#wohin">Start</a>
+</p>
+<div class="binf-widgets" style="">
+
+    <div class="binf-container-fluid grid-rows">
+        <div class="binf-row" id="booleanLabel">The boolean:</div>
+        <div class="binf-row" id="content"></div>
+        <div class="binf-row" id="descriptionLabel">This is the description, explaining what the boolean is all about.</div>
+    </div>
+</div>
+<p>
+    <a href="#wohin2">End</a>
+</p>
+
+</body>
+
+</html>
+
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

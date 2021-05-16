@@ -1,0 +1,2579 @@
+{
+  "node": {
+    "links": {
+      "data": {
+        "self": {
+          "body": "",
+          "content_type": "",
+          "href": "\/api\/v2\/nodes\/6254?expand=node&expand=user&actions=",
+          "method": "GET",
+          "name": ""
+        }
+      }
+    },
+    "results": {
+      "actions": {
+        "data": {
+          "addversion": {
+            "body": "",
+            "content_type": "",
+            "form_href": "\/api\/v2\/forms\/nodes\/versions\/create?id=6254",
+            "href": "\/api\/v2\/nodes\/6254\/versions",
+            "method": "POST",
+            "name": "Add Version"
+          },
+          "audit": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "\/api\/v2\/nodes\/6254\/audit?limit=1000",
+            "method": "GET",
+            "name": "Audit"
+          },
+          "comment": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "",
+            "method": "POST",
+            "name": "Comments"
+          },
+          "copy": {
+            "body": "",
+            "content_type": "",
+            "form_href": "\/api\/v2\/forms\/nodes\/copy?id=6254",
+            "href": "\/api\/v2\/nodes",
+            "method": "POST",
+            "name": "Copy"
+          },
+          "docview": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "?func=doc.viewdoc&nodeid=6254",
+            "method": "GET",
+            "name": "View"
+          },
+          "download": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "\/api\/v2\/nodes\/6254\/content?download",
+            "method": "GET",
+            "name": "Download"
+          },
+          "edit": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "?func=Edit.Edit&nodeid=6254",
+            "method": "GET",
+            "name": "Edit"
+          },
+          "makefavorite": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "\/api\/v2\/members\/favorites\/6254",
+            "method": "POST",
+            "name": "Add to Favorites"
+          },
+          "more": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "",
+            "method": "",
+            "name": "..."
+          },
+          "move": {
+            "body": "",
+            "content_type": "",
+            "form_href": "\/api\/v2\/forms\/nodes\/move?id=6254",
+            "href": "\/api\/v2\/nodes\/6254",
+            "method": "PUT",
+            "name": "Move"
+          },
+          "open": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "\/api\/v2\/nodes\/6254\/content",
+            "method": "GET",
+            "name": "Open"
+          },
+          "properties": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "\/api\/v2\/nodes\/6254",
+            "method": "GET",
+            "name": "Properties"
+          },
+          "rename": {
+            "body": "",
+            "content_type": "",
+            "form_href": "\/api\/v2\/forms\/nodes\/rename?id=6254",
+            "href": "\/api\/v2\/nodes\/6254",
+            "method": "PUT",
+            "name": "Rename"
+          },
+          "unreserve": {
+            "body": "reserved_user_id=null",
+            "content_type": "application\/x-www-form-urlencoded",
+            "form_href": "",
+            "href": "\/api\/v2\/nodes\/6254",
+            "method": "PUT",
+            "name": "Unreserve"
+          },
+          "versions": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "\/api\/v2\/nodes\/6254\/versions",
+            "method": "GET",
+            "name": "Versions"
+          }
+        },
+        "map": {
+          "default_action": "open",
+          "more": [
+            "properties",
+            "audit",
+            "versions"
+          ]
+        },
+        "order": [
+          "docview",
+          "open",
+          "edit",
+          "download",
+          "addversion",
+          "rename",
+          "makefavorite",
+          "copy",
+          "move",
+          "unreserve",
+          "comment",
+          "more"
+        ]
+      },
+      "data": {
+        "columns": [
+          {
+            "data_type": 2,
+            "key": "type",
+            "name": "Type",
+            "sort_key": "x61031"
+          },
+          {
+            "data_type": -1,
+            "key": "187420_4",
+            "name": "Subject",
+            "sort_key": "x197408"
+          },
+          {
+            "data_type": 2,
+            "key": "187420_3",
+            "name": "Organization"
+          },
+          {
+            "data_type": -1,
+            "key": "187420_5",
+            "name": "Status",
+            "sort_key": "x186712"
+          },
+          {
+            "data_type": -1,
+            "key": "187420_6",
+            "name": "Publisher"
+          },
+          {
+            "data_type": -1,
+            "key": "name",
+            "name": "Name",
+            "sort_key": "x61028"
+          },
+          {
+            "data_type": -1,
+            "key": "186529_2",
+            "name": "Manual Description",
+            "sort_key": "x197409"
+          },
+          {
+            "data_type": -1,
+            "key": "size_formatted",
+            "name": "Size",
+            "sort_key": "x61029"
+          },
+          {
+            "data_type": 401,
+            "key": "modify_date",
+            "name": "Modified",
+            "sort_key": "x61027"
+          },
+          {
+            "data_type": 2,
+            "key": "version",
+            "name": "Version"
+          },
+          {
+            "data_type": 5,
+            "key": "187420_7",
+            "name": "Rights Management",
+            "sort_key": "x197953"
+          },
+          {
+            "data_type": 2,
+            "key": "187420_12",
+            "name": "Reviewer Name",
+            "sort_key": "x208790"
+          },
+          {
+            "data_type": 2,
+            "key": "187420_13",
+            "name": "Reviewed at",
+            "sort_key": "x208716"
+          },
+          {
+            "data_type": 2,
+            "key": "comments",
+            "name": "Comments"
+          }
+        ],
+        "properties": {
+          "container": false,
+          "container_size": 0,
+          "create_date": "2003-10-03T12:18:09",
+          "create_user_id": 1000,
+          "description": "Add Version done via drop\/paste on 03\/10\/2003 12:11:05 PM",
+          "description_multilingual": {
+            "en": "Add Version done via drop\/paste on 03\/10\/2003 12:11:05 PM",
+            "ja": ""
+          },
+          "favorite": false,
+          "id": 6254,
+          "mime_type": "application\/msword",
+          "modify_date": "2016-05-02T09:52:36",
+          "modify_user_id": 1000,
+          "name": "0402_blk.doc",
+          "name_multilingual": {
+            "en": "0402_blk.doc",
+            "ja": ""
+          },
+          "owner_group_id": 1001,
+          "owner_user_id": 1000,
+          "parent_id": 6521,
+          "reserved": true,
+          "reserved_date": "2016-07-12T18:19:07",
+          "reserved_user_id": 1000,
+          "size": 626688,
+          "size_formatted": "612 KB",
+          "type": 144,
+          "type_name": "Document",
+          "versions_control_advanced": false,
+          "volume_id": -2000,
+          "wnd_att_690t_3": null,
+          "wnd_att_690t_6": null,
+          "wnd_comments": null,
+          "wnd_version": 1,
+          "wnf_att_6832_2": null,
+          "wnf_att_690t_4": null,
+          "wnf_att_690t_5": null,
+          "wnf_att_690t_7": null,
+          "wnf_att_690t_d": null,
+          "wnf_att_690t_f": null
+        },
+        "versions": [
+          {
+            "create_date": "2003-10-03T12:18:09",
+            "description": "Add Version done via drop\/paste on 03\/10\/2003 12:11:05 PM",
+            "file_create_date": "1999-07-02T16:37:00",
+            "file_modify_date": "1999-07-02T16:37:00",
+            "file_name": "0402_blk.doc",
+            "file_size": 626688,
+            "file_type": "DOC",
+            "id": 6254,
+            "locked": false,
+            "locked_date": null,
+            "locked_user_id": null,
+            "mime_type": "application\/msword",
+            "modify_date": "2003-10-03T12:18:09",
+            "name": "0402_blk.doc",
+            "owner_id": 1000,
+            "provider_id": 6255,
+            "version_id": 6256,
+            "version_number": 1,
+            "version_number_major": 0,
+            "version_number_minor": 1,
+            "version_number_name": "1"
+          }
+        ]
+      }
+    }
+  },
+  "search":{
+    "collection": {
+      "paging": {
+        "limit": 10,
+        "links": {
+          "next": {
+            "body": "",
+            "content_type": "",
+            "href": "/api/v2/search?actions=addcategory&actions=open&actions=edit&actions=download&actions=reserve&actions=unreserve&actions=addversion&actions=copy&actions=move&actions=delete&actions=properties&expand=properties%7Boriginal_id%2Cowner_user_id%2Ccreate_user_id%2Cowner_id%2Creserved_user_id%7D&options=%7B%27highlight_summaries%27%7D&location_id1=30154&where=*&limit=10&page=2&cache_id=1417764264",
+            "method": "GET",
+            "name": "Next"
+          }
+        },
+        "page": 1,
+        "page_total": 11,
+        "range_max": 10,
+        "range_min": 1,
+        "result_header_string": "Results 1 to 10 of 108 sorted by Relevance",
+        "total_count": 108
+      },
+      "searching": {
+        "cache_id": 1417764264,
+        "result_title": "Search Results in 'worksapce' for: *"
+      },
+      "sorting": {
+        "links": {
+          "asc_OTObjectDate": {
+            "body": "",
+            "content_type": "",
+            "href": "/api/v2/search?actions=addcategory&actions=open&actions=edit&actions=download&actions=reserve&actions=unreserve&actions=addversion&actions=copy&actions=move&actions=delete&actions=properties&expand=properties%7Boriginal_id%2Cowner_user_id%2Ccreate_user_id%2Cowner_id%2Creserved_user_id%7D&options=%7B%27highlight_summaries%27%7D&location_id1=30154&where=*&limit=10&page=1&cache_id=1417764264&sort=asc_OTObjectDate",
+            "method": "GET",
+            "name": "Date (Ascending)"
+          },
+          "asc_OTObjectSize": {
+            "body": "",
+            "content_type": "",
+            "href": "/api/v2/search?actions=addcategory&actions=open&actions=edit&actions=download&actions=reserve&actions=unreserve&actions=addversion&actions=copy&actions=move&actions=delete&actions=properties&expand=properties%7Boriginal_id%2Cowner_user_id%2Ccreate_user_id%2Cowner_id%2Creserved_user_id%7D&options=%7B%27highlight_summaries%27%7D&location_id1=30154&where=*&limit=10&page=1&cache_id=1417764264&sort=asc_OTObjectSize",
+            "method": "GET",
+            "name": "Size (Ascending)"
+          },
+          "desc_OTObjectDate": {
+            "body": "",
+            "content_type": "",
+            "href": "/api/v2/search?actions=addcategory&actions=open&actions=edit&actions=download&actions=reserve&actions=unreserve&actions=addversion&actions=copy&actions=move&actions=delete&actions=properties&expand=properties%7Boriginal_id%2Cowner_user_id%2Ccreate_user_id%2Cowner_id%2Creserved_user_id%7D&options=%7B%27highlight_summaries%27%7D&location_id1=30154&where=*&limit=10&page=1&cache_id=1417764264&sort=desc_OTObjectDate",
+            "method": "GET",
+            "name": "Date (Descending)"
+          },
+          "desc_OTObjectSize": {
+            "body": "",
+            "content_type": "",
+            "href": "/api/v2/search?actions=addcategory&actions=open&actions=edit&actions=download&actions=reserve&actions=unreserve&actions=addversion&actions=copy&actions=move&actions=delete&actions=properties&expand=properties%7Boriginal_id%2Cowner_user_id%2Ccreate_user_id%2Cowner_id%2Creserved_user_id%7D&options=%7B%27highlight_summaries%27%7D&location_id1=30154&where=*&limit=10&page=1&cache_id=1417764264&sort=desc_OTObjectSize",
+            "method": "GET",
+            "name": "Size (Descending)"
+          },
+          "relevance": {
+            "body": "",
+            "content_type": "",
+            "href": "/api/v2/search?actions=addcategory&actions=open&actions=edit&actions=download&actions=reserve&actions=unreserve&actions=addversion&actions=copy&actions=move&actions=delete&actions=properties&expand=properties%7Boriginal_id%2Cowner_user_id%2Ccreate_user_id%2Cowner_id%2Creserved_user_id%7D&options=%7B%27highlight_summaries%27%7D&location_id1=30154&where=*&limit=10&page=1&cache_id=1417764264",
+            "method": "GET",
+            "name": "Relevance"
+          }
+        }
+      }
+    },
+    "links": {
+      "data": {
+        "self": {
+          "body": "",
+          "content_type": "",
+          "href": "/api/v2/search?actions=addcategory&actions=open&actions=edit&actions=download&actions=reserve&actions=unreserve&actions=addversion&actions=copy&actions=move&actions=delete&actions=properties&expand=properties%7Boriginal_id%2Cowner_user_id%2Ccreate_user_id%2Cowner_id%2Creserved_user_id%7D&options=%7B%27highlight_summaries%27%7D&location_id1=30154&where=*&limit=10&page=1&cache_id=1417764264",
+          "method": "GET",
+          "name": ""
+        }
+      }
+    },
+    "results": [
+      {
+        "actions": {
+          "data": {
+            "addcategory": {
+              "body": "",
+              "content_type": "",
+              "form_href": "",
+              "href": "/api/v2/nodes/30154/categories",
+              "method": "POST",
+              "name": "Add Category"
+            },
+            "copy": {
+              "body": "",
+              "content_type": "",
+              "form_href": "/api/v2/forms/nodes/copy?id=30154",
+              "href": "/api/v2/nodes",
+              "method": "POST",
+              "name": "Copy"
+            },
+            "delete": {
+              "body": "",
+              "content_type": "",
+              "form_href": "",
+              "href": "/api/v2/nodes/30154",
+              "method": "DELETE",
+              "name": "Delete"
+            },
+            "move": {
+              "body": "",
+              "content_type": "",
+              "form_href": "/api/v2/forms/nodes/move?id=30154",
+              "href": "/api/v2/nodes/30154",
+              "method": "PUT",
+              "name": "Move"
+            },
+            "open": {
+              "body": "",
+              "content_type": "",
+              "form_href": "",
+              "href": "/api/v2/nodes/30154/nodes",
+              "method": "GET",
+              "name": "Open"
+            },
+            "properties": {
+              "body": "",
+              "content_type": "",
+              "form_href": "",
+              "href": "/api/v2/nodes/30154",
+              "method": "GET",
+              "name": "Properties"
+            }
+          },
+          "map": {
+            "default_action": "open",
+            "more": [
+              "properties"
+            ]
+          },
+          "order": [
+            "open",
+            "addcategory",
+            "copy",
+            "move",
+            "delete"
+          ]
+        },
+        "data": {
+          "properties": {
+            "container": true,
+            "container_size": 7,
+            "create_date": "2016-11-08T16:48:00",
+            "create_user_id": 1000,
+            "create_user_id_expand": {
+              "birth_date": null,
+              "business_email": null,
+              "business_fax": null,
+              "business_phone": null,
+              "cell_phone": null,
+              "first_name": null,
+              "gender": null,
+              "group_id": 1001,
+              "home_address_1": null,
+              "home_address_2": null,
+              "home_fax": null,
+              "home_phone": null,
+              "id": 1000,
+              "last_name": null,
+              "middle_name": null,
+              "name": "Admin",
+              "name_formatted": "Admin",
+              "office_location": null,
+              "pager": null,
+              "personal_email": null,
+              "personal_interests": null,
+              "personal_url_1": null,
+              "personal_url_2": null,
+              "personal_url_3": null,
+              "personal_website": null,
+              "photo_url": null,
+              "time_zone": null,
+              "title": null,
+              "type": 0,
+              "type_name": "User"
+            },
+            "description": "",
+            "description_multilingual": {
+              "en": ""
+            },
+            "favorite": false,
+            "id": 30154,
+            "mime_type": null,
+            "modify_date": "2016-12-07T11:41:46",
+            "modify_user_id": 1000,
+            "name": "worksapce",
+            "name_multilingual": {
+              "en": "worksapce"
+            },
+            "owner_group_id": 1001,
+            "owner_user_id": 1000,
+            "owner_user_id_expand": {
+              "birth_date": null,
+              "business_email": null,
+              "business_fax": null,
+              "business_phone": null,
+              "cell_phone": null,
+              "first_name": null,
+              "gender": null,
+              "group_id": 1001,
+              "home_address_1": null,
+              "home_address_2": null,
+              "home_fax": null,
+              "home_phone": null,
+              "id": 1000,
+              "last_name": null,
+              "middle_name": null,
+              "name": "Admin",
+              "name_formatted": "Admin",
+              "office_location": null,
+              "pager": null,
+              "personal_email": null,
+              "personal_interests": null,
+              "personal_url_1": null,
+              "personal_url_2": null,
+              "personal_url_3": null,
+              "personal_website": null,
+              "photo_url": null,
+              "time_zone": null,
+              "title": null,
+              "type": 0,
+              "type_name": "User"
+            },
+            "parent_id": 2000,
+            "reserved": false,
+            "reserved_date": null,
+            "reserved_user_id": 0,
+            "reserved_user_id_expand": {},
+            "short_summary": [
+              ""
+            ],
+            "size": 7,
+            "size_formatted": "7 Items",
+            "summary": [
+              ""
+            ],
+            "type": 0,
+            "type_name": "Folder",
+            "versions_control_advanced": false,
+            "volume_id": -2000
+          }
+        },
+        "links": {
+          "ancestors": [
+            {
+              "href": "api/v1/nodes/2000",
+              "name": "Enterprise"
+            }
+          ],
+          "ancestors_nodes": [
+            {
+              "href": "api/v1/nodes/2000/nodes",
+              "name": "Enterprise"
+            }
+          ],
+          "parent": {
+            "href": "api/v1/nodes/2000",
+            "name": "Enterprise"
+          },
+          "parent_nodes": {
+            "href": "api/v1/nodes/2000/nodes",
+            "name": "Enterprise"
+          }
+        },
+        "search_result_metadata": {
+          "current_version": null,
+          "object_href": null,
+          "object_id": "DataId=30154&Version=0",
+          "result_type": "264",
+          "source_id": "5799",
+          "version_type": null
+        }
+      },
+      {
+        "actions": {
+          "data": {
+            "addcategory": {
+              "body": "",
+              "content_type": "",
+              "form_href": "",
+              "href": "/api/v2/nodes/70302/categories",
+              "method": "POST",
+              "name": "Add Category"
+            },
+            "copy": {
+              "body": "",
+              "content_type": "",
+              "form_href": "/api/v2/forms/nodes/copy?id=70302",
+              "href": "/api/v2/nodes",
+              "method": "POST",
+              "name": "Copy"
+            },
+            "delete": {
+              "body": "",
+              "content_type": "",
+              "form_href": "",
+              "href": "/api/v2/nodes/70302",
+              "method": "DELETE",
+              "name": "Delete"
+            },
+            "move": {
+              "body": "",
+              "content_type": "",
+              "form_href": "/api/v2/forms/nodes/move?id=70302",
+              "href": "/api/v2/nodes/70302",
+              "method": "PUT",
+              "name": "Move"
+            },
+            "open": {
+              "body": "",
+              "content_type": "",
+              "form_href": "",
+              "href": "/api/v2/nodes/70302/nodes",
+              "method": "GET",
+              "name": "Open"
+            },
+            "properties": {
+              "body": "",
+              "content_type": "",
+              "form_href": "",
+              "href": "/api/v2/nodes/70302",
+              "method": "GET",
+              "name": "Properties"
+            }
+          },
+          "map": {
+            "default_action": "open",
+            "more": [
+              "properties"
+            ]
+          },
+          "order": [
+            "open",
+            "addcategory",
+            "copy",
+            "move",
+            "delete"
+          ]
+        },
+        "data": {
+          "properties": {
+            "container": true,
+            "container_size": 0,
+            "create_date": "2016-11-21T16:42:34",
+            "create_user_id": 1000,
+            "create_user_id_expand": {
+              "birth_date": null,
+              "business_email": null,
+              "business_fax": null,
+              "business_phone": null,
+              "cell_phone": null,
+              "first_name": null,
+              "gender": null,
+              "group_id": 1001,
+              "home_address_1": null,
+              "home_address_2": null,
+              "home_fax": null,
+              "home_phone": null,
+              "id": 1000,
+              "last_name": null,
+              "middle_name": null,
+              "name": "Admin",
+              "name_formatted": "Admin",
+              "office_location": null,
+              "pager": null,
+              "personal_email": null,
+              "personal_interests": null,
+              "personal_url_1": null,
+              "personal_url_2": null,
+              "personal_url_3": null,
+              "personal_website": null,
+              "photo_url": null,
+              "time_zone": null,
+              "title": null,
+              "type": 0,
+              "type_name": "User"
+            },
+            "description": "",
+            "description_multilingual": {
+              "en": ""
+            },
+            "favorite": false,
+            "id": 70302,
+            "mime_type": null,
+            "modify_date": "2016-11-21T16:42:35",
+            "modify_user_id": 1000,
+            "name": "test",
+            "name_multilingual": {
+              "en": "test"
+            },
+            "owner_group_id": 1001,
+            "owner_user_id": 1000,
+            "owner_user_id_expand": {
+              "birth_date": null,
+              "business_email": null,
+              "business_fax": null,
+              "business_phone": null,
+              "cell_phone": null,
+              "first_name": null,
+              "gender": null,
+              "group_id": 1001,
+              "home_address_1": null,
+              "home_address_2": null,
+              "home_fax": null,
+              "home_phone": null,
+              "id": 1000,
+              "last_name": null,
+              "middle_name": null,
+              "name": "Admin",
+              "name_formatted": "Admin",
+              "office_location": null,
+              "pager": null,
+              "personal_email": null,
+              "personal_interests": null,
+              "personal_url_1": null,
+              "personal_url_2": null,
+              "personal_url_3": null,
+              "personal_website": null,
+              "photo_url": null,
+              "time_zone": null,
+              "title": null,
+              "type": 0,
+              "type_name": "User"
+            },
+            "parent_id": 44562,
+            "reserved": false,
+            "reserved_date": null,
+            "reserved_user_id": 0,
+            "reserved_user_id_expand": {},
+            "short_summary": [
+              ""
+            ],
+            "size": 0,
+            "size_formatted": "0 Items",
+            "summary": [
+              ""
+            ],
+            "type": 0,
+            "type_name": "Folder",
+            "versions_control_advanced": false,
+            "volume_id": 29716
+          }
+        },
+        "links": {
+          "ancestors": [
+            {
+              "href": "api/v1/nodes/2000",
+              "name": "Enterprise"
+            },
+            {
+              "href": "api/v1/nodes/30154",
+              "name": "worksapce"
+            },
+            {
+              "href": "api/v1/nodes/29716",
+              "name": "Opportunities Workspace"
+            },
+            {
+              "href": "api/v1/nodes/29717",
+              "name": "ERP"
+            },
+            {
+              "href": "api/v1/nodes/29721",
+              "name": "Equipment"
+            },
+            {
+              "href": "api/v1/nodes/44562",
+              "name": "100"
+            }
+          ],
+          "ancestors_nodes": [
+            {
+              "href": "api/v1/nodes/2000/nodes",
+              "name": "Enterprise"
+            },
+            {
+              "href": "api/v1/nodes/30154/nodes",
+              "name": "worksapce"
+            },
+            {
+              "href": "api/v1/nodes/29716/nodes",
+              "name": "Opportunities Workspace"
+            },
+            {
+              "href": "api/v1/nodes/29717/nodes",
+              "name": "ERP"
+            },
+            {
+              "href": "api/v1/nodes/29721/nodes",
+              "name": "Equipment"
+            },
+            {
+              "href": "api/v1/nodes/44562/nodes",
+              "name": "100"
+            }
+          ],
+          "parent": {
+            "href": "api/v1/nodes/44562",
+            "name": "100"
+          },
+          "parent_nodes": {
+            "href": "api/v1/nodes/44562/nodes",
+            "name": "100"
+          }
+        },
+        "search_result_metadata": {
+          "current_version": null,
+          "object_href": null,
+          "object_id": "DataId=70302&Version=0",
+          "result_type": "264",
+          "source_id": "5799",
+          "version_type": null
+        }
+      },
+      {
+        "actions": {
+          "data": {
+            "addcategory": {
+              "body": "",
+              "content_type": "",
+              "form_href": "",
+              "href": "/api/v2/nodes/44564/categories",
+              "method": "POST",
+              "name": "Add Category"
+            },
+            "copy": {
+              "body": "",
+              "content_type": "",
+              "form_href": "/api/v2/forms/nodes/copy?id=44564",
+              "href": "/api/v2/nodes",
+              "method": "POST",
+              "name": "Copy"
+            },
+            "delete": {
+              "body": "",
+              "content_type": "",
+              "form_href": "",
+              "href": "/api/v2/nodes/44564",
+              "method": "DELETE",
+              "name": "Delete"
+            },
+            "move": {
+              "body": "",
+              "content_type": "",
+              "form_href": "/api/v2/forms/nodes/move?id=44564",
+              "href": "/api/v2/nodes/44564",
+              "method": "PUT",
+              "name": "Move"
+            },
+            "open": {
+              "body": "",
+              "content_type": "",
+              "form_href": "",
+              "href": "/api/v2/nodes/44564/nodes",
+              "method": "GET",
+              "name": "Open"
+            },
+            "properties": {
+              "body": "",
+              "content_type": "",
+              "form_href": "",
+              "href": "/api/v2/nodes/44564",
+              "method": "GET",
+              "name": "Properties"
+            }
+          },
+          "map": {
+            "default_action": "open",
+            "more": [
+              "properties"
+            ]
+          },
+          "order": [
+            "open",
+            "addcategory",
+            "copy",
+            "move",
+            "delete"
+          ]
+        },
+        "data": {
+          "properties": {
+            "container": true,
+            "container_size": 1,
+            "create_date": "2016-11-16T09:09:43",
+            "create_user_id": 1000,
+            "create_user_id_expand": {
+              "birth_date": null,
+              "business_email": null,
+              "business_fax": null,
+              "business_phone": null,
+              "cell_phone": null,
+              "first_name": null,
+              "gender": null,
+              "group_id": 1001,
+              "home_address_1": null,
+              "home_address_2": null,
+              "home_fax": null,
+              "home_phone": null,
+              "id": 1000,
+              "last_name": null,
+              "middle_name": null,
+              "name": "Admin",
+              "name_formatted": "Admin",
+              "office_location": null,
+              "pager": null,
+              "personal_email": null,
+              "personal_interests": null,
+              "personal_url_1": null,
+              "personal_url_2": null,
+              "personal_url_3": null,
+              "personal_website": null,
+              "photo_url": null,
+              "time_zone": null,
+              "title": null,
+              "type": 0,
+              "type_name": "User"
+            },
+            "description": "",
+            "description_multilingual": {
+              "en": ""
+            },
+            "favorite": false,
+            "id": 44564,
+            "mime_type": null,
+            "modify_date": "2016-11-17T14:55:45",
+            "modify_user_id": 1000,
+            "name": "101",
+            "name_multilingual": {
+              "en": "101"
+            },
+            "owner_group_id": 1001,
+            "owner_user_id": 1000,
+            "owner_user_id_expand": {
+              "birth_date": null,
+              "business_email": null,
+              "business_fax": null,
+              "business_phone": null,
+              "cell_phone": null,
+              "first_name": null,
+              "gender": null,
+              "group_id": 1001,
+              "home_address_1": null,
+              "home_address_2": null,
+              "home_fax": null,
+              "home_phone": null,
+              "id": 1000,
+              "last_name": null,
+              "middle_name": null,
+              "name": "Admin",
+              "name_formatted": "Admin",
+              "office_location": null,
+              "pager": null,
+              "personal_email": null,
+              "personal_interests": null,
+              "personal_url_1": null,
+              "personal_url_2": null,
+              "personal_url_3": null,
+              "personal_website": null,
+              "photo_url": null,
+              "time_zone": null,
+              "title": null,
+              "type": 0,
+              "type_name": "User"
+            },
+            "parent_id": 44562,
+            "reserved": false,
+            "reserved_date": null,
+            "reserved_user_id": 0,
+            "reserved_user_id_expand": {},
+            "short_summary": [
+              ""
+            ],
+            "size": 1,
+            "size_formatted": "1 Item",
+            "summary": [
+              ""
+            ],
+            "type": 0,
+            "type_name": "Folder",
+            "versions_control_advanced": false,
+            "volume_id": 29716
+          }
+        },
+        "links": {
+          "ancestors": [
+            {
+              "href": "api/v1/nodes/2000",
+              "name": "Enterprise"
+            },
+            {
+              "href": "api/v1/nodes/30154",
+              "name": "worksapce"
+            },
+            {
+              "href": "api/v1/nodes/29716",
+              "name": "Opportunities Workspace"
+            },
+            {
+              "href": "api/v1/nodes/29717",
+              "name": "ERP"
+            },
+            {
+              "href": "api/v1/nodes/29721",
+              "name": "Equipment"
+            },
+            {
+              "href": "api/v1/nodes/44562",
+              "name": "100"
+            }
+          ],
+          "ancestors_nodes": [
+            {
+              "href": "api/v1/nodes/2000/nodes",
+              "name": "Enterprise"
+            },
+            {
+              "href": "api/v1/nodes/30154/nodes",
+              "name": "worksapce"
+            },
+            {
+              "href": "api/v1/nodes/29716/nodes",
+              "name": "Opportunities Workspace"
+            },
+            {
+              "href": "api/v1/nodes/29717/nodes",
+              "name": "ERP"
+            },
+            {
+              "href": "api/v1/nodes/29721/nodes",
+              "name": "Equipment"
+            },
+            {
+              "href": "api/v1/nodes/44562/nodes",
+              "name": "100"
+            }
+          ],
+          "parent": {
+            "href": "api/v1/nodes/44562",
+            "name": "100"
+          },
+          "parent_nodes": {
+            "href": "api/v1/nodes/44562/nodes",
+            "name": "100"
+          }
+        },
+        "search_result_metadata": {
+          "current_version": null,
+          "object_href": null,
+          "object_id": "DataId=44564&Version=0",
+          "result_type": "264",
+          "source_id": "5799",
+          "version_type": null
+        }
+      },
+      {
+        "actions": {
+          "data": {
+            "addcategory": {
+              "body": "",
+              "content_type": "",
+              "form_href": "",
+              "href": "/api/v2/nodes/46982/categories",
+              "method": "POST",
+              "name": "Add Category"
+            },
+            "copy": {
+              "body": "",
+              "content_type": "",
+              "form_href": "/api/v2/forms/nodes/copy?id=46982",
+              "href": "/api/v2/nodes",
+              "method": "POST",
+              "name": "Copy"
+            },
+            "delete": {
+              "body": "",
+              "content_type": "",
+              "form_href": "",
+              "href": "/api/v2/nodes/46982",
+              "method": "DELETE",
+              "name": "Delete"
+            },
+            "move": {
+              "body": "",
+              "content_type": "",
+              "form_href": "/api/v2/forms/nodes/move?id=46982",
+              "href": "/api/v2/nodes/46982",
+              "method": "PUT",
+              "name": "Move"
+            },
+            "open": {
+              "body": "",
+              "content_type": "",
+              "form_href": "",
+              "href": "/api/v2/nodes/46982/nodes",
+              "method": "GET",
+              "name": "Open"
+            },
+            "properties": {
+              "body": "",
+              "content_type": "",
+              "form_href": "",
+              "href": "/api/v2/nodes/46982",
+              "method": "GET",
+              "name": "Properties"
+            }
+          },
+          "map": {
+            "default_action": "open",
+            "more": [
+              "properties"
+            ]
+          },
+          "order": [
+            "open",
+            "addcategory",
+            "copy",
+            "move",
+            "delete"
+          ]
+        },
+        "data": {
+          "properties": {
+            "container": true,
+            "container_size": 0,
+            "create_date": "2016-11-17T14:55:43",
+            "create_user_id": 1000,
+            "create_user_id_expand": {
+              "birth_date": null,
+              "business_email": null,
+              "business_fax": null,
+              "business_phone": null,
+              "cell_phone": null,
+              "first_name": null,
+              "gender": null,
+              "group_id": 1001,
+              "home_address_1": null,
+              "home_address_2": null,
+              "home_fax": null,
+              "home_phone": null,
+              "id": 1000,
+              "last_name": null,
+              "middle_name": null,
+              "name": "Admin",
+              "name_formatted": "Admin",
+              "office_location": null,
+              "pager": null,
+              "personal_email": null,
+              "personal_interests": null,
+              "personal_url_1": null,
+              "personal_url_2": null,
+              "personal_url_3": null,
+              "personal_website": null,
+              "photo_url": null,
+              "time_zone": null,
+              "title": null,
+              "type": 0,
+              "type_name": "User"
+            },
+            "description": "",
+            "description_multilingual": {
+              "en": ""
+            },
+            "favorite": false,
+            "id": 46982,
+            "mime_type": null,
+            "modify_date": "2016-11-17T14:55:45",
+            "modify_user_id": 1000,
+            "name": "102",
+            "name_multilingual": {
+              "en": "102"
+            },
+            "owner_group_id": 1001,
+            "owner_user_id": 1000,
+            "owner_user_id_expand": {
+              "birth_date": null,
+              "business_email": null,
+              "business_fax": null,
+              "business_phone": null,
+              "cell_phone": null,
+              "first_name": null,
+              "gender": null,
+              "group_id": 1001,
+              "home_address_1": null,
+              "home_address_2": null,
+              "home_fax": null,
+              "home_phone": null,
+              "id": 1000,
+              "last_name": null,
+              "middle_name": null,
+              "name": "Admin",
+              "name_formatted": "Admin",
+              "office_location": null,
+              "pager": null,
+              "personal_email": null,
+              "personal_interests": null,
+              "personal_url_1": null,
+              "personal_url_2": null,
+              "personal_url_3": null,
+              "personal_website": null,
+              "photo_url": null,
+              "time_zone": null,
+              "title": null,
+              "type": 0,
+              "type_name": "User"
+            },
+            "parent_id": 44564,
+            "reserved": false,
+            "reserved_date": null,
+            "reserved_user_id": 0,
+            "reserved_user_id_expand": {},
+            "short_summary": [
+              ""
+            ],
+            "size": 0,
+            "size_formatted": "0 Items",
+            "summary": [
+              ""
+            ],
+            "type": 0,
+            "type_name": "Folder",
+            "versions_control_advanced": false,
+            "volume_id": 29716
+          }
+        },
+        "links": {
+          "ancestors": [
+            {
+              "href": "api/v1/nodes/2000",
+              "name": "Enterprise"
+            },
+            {
+              "href": "api/v1/nodes/30154",
+              "name": "worksapce"
+            },
+            {
+              "href": "api/v1/nodes/29716",
+              "name": "Opportunities Workspace"
+            },
+            {
+              "href": "api/v1/nodes/29717",
+              "name": "ERP"
+            },
+            {
+              "href": "api/v1/nodes/29721",
+              "name": "Equipment"
+            },
+            {
+              "href": "api/v1/nodes/44562",
+              "name": "100"
+            },
+            {
+              "href": "api/v1/nodes/44564",
+              "name": "101"
+            }
+          ],
+          "ancestors_nodes": [
+            {
+              "href": "api/v1/nodes/2000/nodes",
+              "name": "Enterprise"
+            },
+            {
+              "href": "api/v1/nodes/30154/nodes",
+              "name": "worksapce"
+            },
+            {
+              "href": "api/v1/nodes/29716/nodes",
+              "name": "Opportunities Workspace"
+            },
+            {
+              "href": "api/v1/nodes/29717/nodes",
+              "name": "ERP"
+            },
+            {
+              "href": "api/v1/nodes/29721/nodes",
+              "name": "Equipment"
+            },
+            {
+              "href": "api/v1/nodes/44562/nodes",
+              "name": "100"
+            },
+            {
+              "href": "api/v1/nodes/44564/nodes",
+              "name": "101"
+            }
+          ],
+          "parent": {
+            "href": "api/v1/nodes/44564",
+            "name": "101"
+          },
+          "parent_nodes": {
+            "href": "api/v1/nodes/44564/nodes",
+            "name": "101"
+          }
+        },
+        "search_result_metadata": {
+          "current_version": null,
+          "object_href": null,
+          "object_id": "DataId=46982&Version=0",
+          "result_type": "264",
+          "source_id": "5799",
+          "version_type": null
+        }
+      },
+      {
+        "actions": {
+          "data": {
+            "addcategory": {
+              "body": "",
+              "content_type": "",
+              "form_href": "",
+              "href": "/api/v2/nodes/132672/categories",
+              "method": "POST",
+              "name": "Add Category"
+            },
+            "copy": {
+              "body": "",
+              "content_type": "",
+              "form_href": "/api/v2/forms/nodes/copy?id=132672",
+              "href": "/api/v2/nodes",
+              "method": "POST",
+              "name": "Copy"
+            },
+            "delete": {
+              "body": "",
+              "content_type": "",
+              "form_href": "",
+              "href": "/api/v2/nodes/132672",
+              "method": "DELETE",
+              "name": "Delete"
+            },
+            "move": {
+              "body": "",
+              "content_type": "",
+              "form_href": "/api/v2/forms/nodes/move?id=132672",
+              "href": "/api/v2/nodes/132672",
+              "method": "PUT",
+              "name": "Move"
+            },
+            "open": {
+              "body": "",
+              "content_type": "",
+              "form_href": "",
+              "href": "/api/v2/nodes/132672/nodes",
+              "method": "GET",
+              "name": "Open"
+            },
+            "properties": {
+              "body": "",
+              "content_type": "",
+              "form_href": "",
+              "href": "/api/v2/nodes/132672",
+              "method": "GET",
+              "name": "Properties"
+            }
+          },
+          "map": {
+            "default_action": "open",
+            "more": [
+              "properties"
+            ]
+          },
+          "order": [
+            "open",
+            "addcategory",
+            "copy",
+            "move",
+            "delete"
+          ]
+        },
+        "data": {
+          "properties": {
+            "container": true,
+            "container_size": 0,
+            "create_date": "2016-12-01T14:30:31",
+            "create_user_id": 1000,
+            "create_user_id_expand": {
+              "birth_date": null,
+              "business_email": null,
+              "business_fax": null,
+              "business_phone": null,
+              "cell_phone": null,
+              "first_name": null,
+              "gender": null,
+              "group_id": 1001,
+              "home_address_1": null,
+              "home_address_2": null,
+              "home_fax": null,
+              "home_phone": null,
+              "id": 1000,
+              "last_name": null,
+              "middle_name": null,
+              "name": "Admin",
+              "name_formatted": "Admin",
+              "office_location": null,
+              "pager": null,
+              "personal_email": null,
+              "personal_interests": null,
+              "personal_url_1": null,
+              "personal_url_2": null,
+              "personal_url_3": null,
+              "personal_website": null,
+              "photo_url": null,
+              "time_zone": null,
+              "title": null,
+              "type": 0,
+              "type_name": "User"
+            },
+            "description": "",
+            "description_multilingual": {
+              "en": ""
+            },
+            "favorite": false,
+            "id": 132672,
+            "mime_type": null,
+            "modify_date": "2016-12-01T14:30:31",
+            "modify_user_id": 1000,
+            "name": "document",
+            "name_multilingual": {
+              "en": "document"
+            },
+            "owner_group_id": 1001,
+            "owner_user_id": 1000,
+            "owner_user_id_expand": {
+              "birth_date": null,
+              "business_email": null,
+              "business_fax": null,
+              "business_phone": null,
+              "cell_phone": null,
+              "first_name": null,
+              "gender": null,
+              "group_id": 1001,
+              "home_address_1": null,
+              "home_address_2": null,
+              "home_fax": null,
+              "home_phone": null,
+              "id": 1000,
+              "last_name": null,
+              "middle_name": null,
+              "name": "Admin",
+              "name_formatted": "Admin",
+              "office_location": null,
+              "pager": null,
+              "personal_email": null,
+              "personal_interests": null,
+              "personal_url_1": null,
+              "personal_url_2": null,
+              "personal_url_3": null,
+              "personal_website": null,
+              "photo_url": null,
+              "time_zone": null,
+              "title": null,
+              "type": 0,
+              "type_name": "User"
+            },
+            "parent_id": 30154,
+            "reserved": false,
+            "reserved_date": null,
+            "reserved_user_id": 0,
+            "reserved_user_id_expand": {},
+            "short_summary": [
+              ""
+            ],
+            "size": 0,
+            "size_formatted": "0 Items",
+            "summary": [
+              ""
+            ],
+            "type": 0,
+            "type_name": "Folder",
+            "versions_control_advanced": false,
+            "volume_id": -2000
+          }
+        },
+        "links": {
+          "ancestors": [
+            {
+              "href": "api/v1/nodes/2000",
+              "name": "Enterprise"
+            },
+            {
+              "href": "api/v1/nodes/30154",
+              "name": "worksapce"
+            }
+          ],
+          "ancestors_nodes": [
+            {
+              "href": "api/v1/nodes/2000/nodes",
+              "name": "Enterprise"
+            },
+            {
+              "href": "api/v1/nodes/30154/nodes",
+              "name": "worksapce"
+            }
+          ],
+          "parent": {
+            "href": "api/v1/nodes/30154",
+            "name": "worksapce"
+          },
+          "parent_nodes": {
+            "href": "api/v1/nodes/30154/nodes",
+            "name": "worksapce"
+          }
+        },
+        "search_result_metadata": {
+          "current_version": null,
+          "object_href": null,
+          "object_id": "DataId=132672&Version=0",
+          "result_type": "264",
+          "source_id": "5799",
+          "version_type": null
+        }
+      },
+      {
+        "actions": {
+          "data": {
+            "addcategory": {
+              "body": "",
+              "content_type": "",
+              "form_href": "",
+              "href": "/api/v2/nodes/29716/categories",
+              "method": "POST",
+              "name": "Add Category"
+            },
+            "copy": {
+              "body": "",
+              "content_type": "",
+              "form_href": "/api/v2/forms/nodes/copy?id=29716",
+              "href": "/api/v2/nodes",
+              "method": "POST",
+              "name": "Copy"
+            },
+            "delete": {
+              "body": "",
+              "content_type": "",
+              "form_href": "",
+              "href": "/api/v2/nodes/29716",
+              "method": "DELETE",
+              "name": "Delete"
+            },
+            "move": {
+              "body": "",
+              "content_type": "",
+              "form_href": "/api/v2/forms/nodes/move?id=29716",
+              "href": "/api/v2/nodes/29716",
+              "method": "PUT",
+              "name": "Move"
+            },
+            "open": {
+              "body": "",
+              "content_type": "",
+              "form_href": "",
+              "href": "/api/v2/nodes/29716/nodes",
+              "method": "GET",
+              "name": "Open"
+            },
+            "properties": {
+              "body": "",
+              "content_type": "",
+              "form_href": "",
+              "href": "/api/v2/nodes/29716",
+              "method": "GET",
+              "name": "Properties"
+            }
+          },
+          "map": {
+            "default_action": "",
+            "more": [
+              "properties"
+            ]
+          },
+          "order": [
+            "open",
+            "addcategory",
+            "copy",
+            "move",
+            "delete"
+          ]
+        },
+        "data": {
+          "properties": {
+            "container": true,
+            "container_size": 4,
+            "create_date": "2016-11-08T17:03:01",
+            "create_user_id": 1000,
+            "create_user_id_expand": {
+              "birth_date": null,
+              "business_email": null,
+              "business_fax": null,
+              "business_phone": null,
+              "cell_phone": null,
+              "first_name": null,
+              "gender": null,
+              "group_id": 1001,
+              "home_address_1": null,
+              "home_address_2": null,
+              "home_fax": null,
+              "home_phone": null,
+              "id": 1000,
+              "last_name": null,
+              "middle_name": null,
+              "name": "Admin",
+              "name_formatted": "Admin",
+              "office_location": null,
+              "pager": null,
+              "personal_email": null,
+              "personal_interests": null,
+              "personal_url_1": null,
+              "personal_url_2": null,
+              "personal_url_3": null,
+              "personal_website": null,
+              "photo_url": null,
+              "time_zone": null,
+              "title": null,
+              "type": 0,
+              "type_name": "User"
+            },
+            "description": "",
+            "description_multilingual": {
+              "en": ""
+            },
+            "favorite": false,
+            "id": 29716,
+            "mime_type": null,
+            "modify_date": "2016-11-09T13:28:47",
+            "modify_user_id": 1000,
+            "name": "Opportunities Workspace",
+            "name_multilingual": {
+              "en": "Opportunities Workspace"
+            },
+            "owner_group_id": 1001,
+            "owner_user_id": 1000,
+            "owner_user_id_expand": {
+              "birth_date": null,
+              "business_email": null,
+              "business_fax": null,
+              "business_phone": null,
+              "cell_phone": null,
+              "first_name": null,
+              "gender": null,
+              "group_id": 1001,
+              "home_address_1": null,
+              "home_address_2": null,
+              "home_fax": null,
+              "home_phone": null,
+              "id": 1000,
+              "last_name": null,
+              "middle_name": null,
+              "name": "Admin",
+              "name_formatted": "Admin",
+              "office_location": null,
+              "pager": null,
+              "personal_email": null,
+              "personal_interests": null,
+              "personal_url_1": null,
+              "personal_url_2": null,
+              "personal_url_3": null,
+              "personal_website": null,
+              "photo_url": null,
+              "time_zone": null,
+              "title": null,
+              "type": 0,
+              "type_name": "User"
+            },
+            "parent_id": 30154,
+            "reserved": false,
+            "reserved_date": null,
+            "reserved_user_id": 0,
+            "reserved_user_id_expand": {},
+            "short_summary": [
+              ""
+            ],
+            "size": 4,
+            "size_formatted": "4 Items",
+            "summary": [
+              ""
+            ],
+            "type": 848,
+            "type_name": "Business Workspace",
+            "versions_control_advanced": false,
+            "volume_id": -2000
+          }
+        },
+        "links": {
+          "ancestors": [
+            {
+              "href": "api/v1/nodes/2000",
+              "name": "Enterprise"
+            },
+            {
+              "href": "api/v1/nodes/30154",
+              "name": "worksapce"
+            }
+          ],
+          "ancestors_nodes": [
+            {
+              "href": "api/v1/nodes/2000/nodes",
+              "name": "Enterprise"
+            },
+            {
+              "href": "api/v1/nodes/30154/nodes",
+              "name": "worksapce"
+            }
+          ],
+          "parent": {
+            "href": "api/v1/nodes/30154",
+            "name": "worksapce"
+          },
+          "parent_nodes": {
+            "href": "api/v1/nodes/30154/nodes",
+            "name": "worksapce"
+          }
+        },
+        "search_result_metadata": {
+          "current_version": null,
+          "object_href": null,
+          "object_id": "DataId=29716&Version=0",
+          "result_type": "264",
+          "source_id": "5799",
+          "version_type": null
+        }
+      },
+      {
+        "actions": {
+          "data": {
+            "addcategory": {
+              "body": "",
+              "content_type": "",
+              "form_href": "",
+              "href": "/api/v2/nodes/39062/categories",
+              "method": "POST",
+              "name": "Add Category"
+            },
+            "copy": {
+              "body": "",
+              "content_type": "",
+              "form_href": "/api/v2/forms/nodes/copy?id=39062",
+              "href": "/api/v2/nodes",
+              "method": "POST",
+              "name": "Copy"
+            },
+            "delete": {
+              "body": "",
+              "content_type": "",
+              "form_href": "",
+              "href": "/api/v2/nodes/39062",
+              "method": "DELETE",
+              "name": "Delete"
+            },
+            "move": {
+              "body": "",
+              "content_type": "",
+              "form_href": "/api/v2/forms/nodes/move?id=39062",
+              "href": "/api/v2/nodes/39062",
+              "method": "PUT",
+              "name": "Move"
+            },
+            "open": {
+              "body": "",
+              "content_type": "",
+              "form_href": "",
+              "href": "/api/v2/nodes/39062/nodes",
+              "method": "GET",
+              "name": "Open"
+            },
+            "properties": {
+              "body": "",
+              "content_type": "",
+              "form_href": "",
+              "href": "/api/v2/nodes/39062",
+              "method": "GET",
+              "name": "Properties"
+            }
+          },
+          "map": {
+            "default_action": "",
+            "more": [
+              "properties"
+            ]
+          },
+          "order": [
+            "open",
+            "addcategory",
+            "copy",
+            "move",
+            "delete"
+          ]
+        },
+        "data": {
+          "properties": {
+            "container": true,
+            "container_size": 2,
+            "create_date": "2016-11-09T12:17:14",
+            "create_user_id": 1000,
+            "create_user_id_expand": {
+              "birth_date": null,
+              "business_email": null,
+              "business_fax": null,
+              "business_phone": null,
+              "cell_phone": null,
+              "first_name": null,
+              "gender": null,
+              "group_id": 1001,
+              "home_address_1": null,
+              "home_address_2": null,
+              "home_fax": null,
+              "home_phone": null,
+              "id": 1000,
+              "last_name": null,
+              "middle_name": null,
+              "name": "Admin",
+              "name_formatted": "Admin",
+              "office_location": null,
+              "pager": null,
+              "personal_email": null,
+              "personal_interests": null,
+              "personal_url_1": null,
+              "personal_url_2": null,
+              "personal_url_3": null,
+              "personal_website": null,
+              "photo_url": null,
+              "time_zone": null,
+              "title": null,
+              "type": 0,
+              "type_name": "User"
+            },
+            "description": "",
+            "description_multilingual": {
+              "en": ""
+            },
+            "favorite": false,
+            "id": 39062,
+            "mime_type": null,
+            "modify_date": "2016-11-09T13:30:05",
+            "modify_user_id": 1000,
+            "name": "Royal Bank",
+            "name_multilingual": {
+              "en": "Royal Bank"
+            },
+            "owner_group_id": 1001,
+            "owner_user_id": 1000,
+            "owner_user_id_expand": {
+              "birth_date": null,
+              "business_email": null,
+              "business_fax": null,
+              "business_phone": null,
+              "cell_phone": null,
+              "first_name": null,
+              "gender": null,
+              "group_id": 1001,
+              "home_address_1": null,
+              "home_address_2": null,
+              "home_fax": null,
+              "home_phone": null,
+              "id": 1000,
+              "last_name": null,
+              "middle_name": null,
+              "name": "Admin",
+              "name_formatted": "Admin",
+              "office_location": null,
+              "pager": null,
+              "personal_email": null,
+              "personal_interests": null,
+              "personal_url_1": null,
+              "personal_url_2": null,
+              "personal_url_3": null,
+              "personal_website": null,
+              "photo_url": null,
+              "time_zone": null,
+              "title": null,
+              "type": 0,
+              "type_name": "User"
+            },
+            "parent_id": 30154,
+            "reserved": false,
+            "reserved_date": null,
+            "reserved_user_id": 0,
+            "reserved_user_id_expand": {},
+            "short_summary": [
+              ""
+            ],
+            "size": 2,
+            "size_formatted": "2 Items",
+            "summary": [
+              ""
+            ],
+            "type": 848,
+            "type_name": "Business Workspace",
+            "versions_control_advanced": false,
+            "volume_id": -2000
+          }
+        },
+        "links": {
+          "ancestors": [
+            {
+              "href": "api/v1/nodes/2000",
+              "name": "Enterprise"
+            },
+            {
+              "href": "api/v1/nodes/30154",
+              "name": "worksapce"
+            }
+          ],
+          "ancestors_nodes": [
+            {
+              "href": "api/v1/nodes/2000/nodes",
+              "name": "Enterprise"
+            },
+            {
+              "href": "api/v1/nodes/30154/nodes",
+              "name": "worksapce"
+            }
+          ],
+          "parent": {
+            "href": "api/v1/nodes/30154",
+            "name": "worksapce"
+          },
+          "parent_nodes": {
+            "href": "api/v1/nodes/30154/nodes",
+            "name": "worksapce"
+          }
+        },
+        "search_result_metadata": {
+          "current_version": null,
+          "object_href": null,
+          "object_id": "DataId=39062&Version=0",
+          "result_type": "264",
+          "source_id": "5799",
+          "version_type": null
+        }
+      },
+      {
+        "actions": {
+          "data": {
+            "addcategory": {
+              "body": "",
+              "content_type": "",
+              "form_href": "",
+              "href": "/api/v2/nodes/39179/categories",
+              "method": "POST",
+              "name": "Add Category"
+            },
+            "copy": {
+              "body": "",
+              "content_type": "",
+              "form_href": "/api/v2/forms/nodes/copy?id=39179",
+              "href": "/api/v2/nodes",
+              "method": "POST",
+              "name": "Copy"
+            },
+            "delete": {
+              "body": "",
+              "content_type": "",
+              "form_href": "",
+              "href": "/api/v2/nodes/39179",
+              "method": "DELETE",
+              "name": "Delete"
+            },
+            "move": {
+              "body": "",
+              "content_type": "",
+              "form_href": "/api/v2/forms/nodes/move?id=39179",
+              "href": "/api/v2/nodes/39179",
+              "method": "PUT",
+              "name": "Move"
+            },
+            "open": {
+              "body": "",
+              "content_type": "",
+              "form_href": "",
+              "href": "/api/v2/nodes/39179/nodes",
+              "method": "GET",
+              "name": "Open"
+            },
+            "properties": {
+              "body": "",
+              "content_type": "",
+              "form_href": "",
+              "href": "/api/v2/nodes/39179",
+              "method": "GET",
+              "name": "Properties"
+            }
+          },
+          "map": {
+            "default_action": "",
+            "more": [
+              "properties"
+            ]
+          },
+          "order": [
+            "open",
+            "addcategory",
+            "copy",
+            "move",
+            "delete"
+          ]
+        },
+        "data": {
+          "properties": {
+            "container": true,
+            "container_size": 2,
+            "create_date": "2016-11-09T12:16:59",
+            "create_user_id": 1000,
+            "create_user_id_expand": {
+              "birth_date": null,
+              "business_email": null,
+              "business_fax": null,
+              "business_phone": null,
+              "cell_phone": null,
+              "first_name": null,
+              "gender": null,
+              "group_id": 1001,
+              "home_address_1": null,
+              "home_address_2": null,
+              "home_fax": null,
+              "home_phone": null,
+              "id": 1000,
+              "last_name": null,
+              "middle_name": null,
+              "name": "Admin",
+              "name_formatted": "Admin",
+              "office_location": null,
+              "pager": null,
+              "personal_email": null,
+              "personal_interests": null,
+              "personal_url_1": null,
+              "personal_url_2": null,
+              "personal_url_3": null,
+              "personal_website": null,
+              "photo_url": null,
+              "time_zone": null,
+              "title": null,
+              "type": 0,
+              "type_name": "User"
+            },
+            "description": "",
+            "description_multilingual": {
+              "en": ""
+            },
+            "favorite": false,
+            "id": 39179,
+            "mime_type": null,
+            "modify_date": "2016-11-09T13:29:02",
+            "modify_user_id": 1000,
+            "name": "Innovate Corp",
+            "name_multilingual": {
+              "en": "Innovate Corp"
+            },
+            "owner_group_id": 1001,
+            "owner_user_id": 1000,
+            "owner_user_id_expand": {
+              "birth_date": null,
+              "business_email": null,
+              "business_fax": null,
+              "business_phone": null,
+              "cell_phone": null,
+              "first_name": null,
+              "gender": null,
+              "group_id": 1001,
+              "home_address_1": null,
+              "home_address_2": null,
+              "home_fax": null,
+              "home_phone": null,
+              "id": 1000,
+              "last_name": null,
+              "middle_name": null,
+              "name": "Admin",
+              "name_formatted": "Admin",
+              "office_location": null,
+              "pager": null,
+              "personal_email": null,
+              "personal_interests": null,
+              "personal_url_1": null,
+              "personal_url_2": null,
+              "personal_url_3": null,
+              "personal_website": null,
+              "photo_url": null,
+              "time_zone": null,
+              "title": null,
+              "type": 0,
+              "type_name": "User"
+            },
+            "parent_id": 30154,
+            "reserved": false,
+            "reserved_date": null,
+            "reserved_user_id": 0,
+            "reserved_user_id_expand": {},
+            "short_summary": [
+              ""
+            ],
+            "size": 2,
+            "size_formatted": "2 Items",
+            "summary": [
+              ""
+            ],
+            "type": 848,
+            "type_name": "Business Workspace",
+            "versions_control_advanced": false,
+            "volume_id": -2000
+          }
+        },
+        "links": {
+          "ancestors": [
+            {
+              "href": "api/v1/nodes/2000",
+              "name": "Enterprise"
+            },
+            {
+              "href": "api/v1/nodes/30154",
+              "name": "worksapce"
+            }
+          ],
+          "ancestors_nodes": [
+            {
+              "href": "api/v1/nodes/2000/nodes",
+              "name": "Enterprise"
+            },
+            {
+              "href": "api/v1/nodes/30154/nodes",
+              "name": "worksapce"
+            }
+          ],
+          "parent": {
+            "href": "api/v1/nodes/30154",
+            "name": "worksapce"
+          },
+          "parent_nodes": {
+            "href": "api/v1/nodes/30154/nodes",
+            "name": "worksapce"
+          }
+        },
+        "search_result_metadata": {
+          "current_version": null,
+          "object_href": null,
+          "object_id": "DataId=39179&Version=0",
+          "result_type": "264",
+          "source_id": "5799",
+          "version_type": null
+        }
+      },
+      {
+        "actions": {
+          "data": {
+            "addcategory": {
+              "body": "",
+              "content_type": "",
+              "form_href": "",
+              "href": "/api/v2/nodes/39188/categories",
+              "method": "POST",
+              "name": "Add Category"
+            },
+            "copy": {
+              "body": "",
+              "content_type": "",
+              "form_href": "/api/v2/forms/nodes/copy?id=39188",
+              "href": "/api/v2/nodes",
+              "method": "POST",
+              "name": "Copy"
+            },
+            "delete": {
+              "body": "",
+              "content_type": "",
+              "form_href": "",
+              "href": "/api/v2/nodes/39188",
+              "method": "DELETE",
+              "name": "Delete"
+            },
+            "move": {
+              "body": "",
+              "content_type": "",
+              "form_href": "/api/v2/forms/nodes/move?id=39188",
+              "href": "/api/v2/nodes/39188",
+              "method": "PUT",
+              "name": "Move"
+            },
+            "open": {
+              "body": "",
+              "content_type": "",
+              "form_href": "",
+              "href": "/api/v2/nodes/39188/nodes",
+              "method": "GET",
+              "name": "Open"
+            },
+            "properties": {
+              "body": "",
+              "content_type": "",
+              "form_href": "",
+              "href": "/api/v2/nodes/39188",
+              "method": "GET",
+              "name": "Properties"
+            }
+          },
+          "map": {
+            "default_action": "",
+            "more": [
+              "properties"
+            ]
+          },
+          "order": [
+            "open",
+            "addcategory",
+            "copy",
+            "move",
+            "delete"
+          ]
+        },
+        "data": {
+          "properties": {
+            "container": true,
+            "container_size": 2,
+            "create_date": "2016-11-09T12:17:28",
+            "create_user_id": 1000,
+            "create_user_id_expand": {
+              "birth_date": null,
+              "business_email": null,
+              "business_fax": null,
+              "business_phone": null,
+              "cell_phone": null,
+              "first_name": null,
+              "gender": null,
+              "group_id": 1001,
+              "home_address_1": null,
+              "home_address_2": null,
+              "home_fax": null,
+              "home_phone": null,
+              "id": 1000,
+              "last_name": null,
+              "middle_name": null,
+              "name": "Admin",
+              "name_formatted": "Admin",
+              "office_location": null,
+              "pager": null,
+              "personal_email": null,
+              "personal_interests": null,
+              "personal_url_1": null,
+              "personal_url_2": null,
+              "personal_url_3": null,
+              "personal_website": null,
+              "photo_url": null,
+              "time_zone": null,
+              "title": null,
+              "type": 0,
+              "type_name": "User"
+            },
+            "description": "",
+            "description_multilingual": {
+              "en": ""
+            },
+            "favorite": false,
+            "id": 39188,
+            "mime_type": null,
+            "modify_date": "2016-11-09T13:30:55",
+            "modify_user_id": 1000,
+            "name": "BM Automobile",
+            "name_multilingual": {
+              "en": "BM Automobile"
+            },
+            "owner_group_id": 1001,
+            "owner_user_id": 1000,
+            "owner_user_id_expand": {
+              "birth_date": null,
+              "business_email": null,
+              "business_fax": null,
+              "business_phone": null,
+              "cell_phone": null,
+              "first_name": null,
+              "gender": null,
+              "group_id": 1001,
+              "home_address_1": null,
+              "home_address_2": null,
+              "home_fax": null,
+              "home_phone": null,
+              "id": 1000,
+              "last_name": null,
+              "middle_name": null,
+              "name": "Admin",
+              "name_formatted": "Admin",
+              "office_location": null,
+              "pager": null,
+              "personal_email": null,
+              "personal_interests": null,
+              "personal_url_1": null,
+              "personal_url_2": null,
+              "personal_url_3": null,
+              "personal_website": null,
+              "photo_url": null,
+              "time_zone": null,
+              "title": null,
+              "type": 0,
+              "type_name": "User"
+            },
+            "parent_id": 30154,
+            "reserved": false,
+            "reserved_date": null,
+            "reserved_user_id": 0,
+            "reserved_user_id_expand": {},
+            "short_summary": [
+              ""
+            ],
+            "size": 2,
+            "size_formatted": "2 Items",
+            "summary": [
+              ""
+            ],
+            "type": 848,
+            "type_name": "Business Workspace",
+            "versions_control_advanced": false,
+            "volume_id": -2000
+          }
+        },
+        "links": {
+          "ancestors": [
+            {
+              "href": "api/v1/nodes/2000",
+              "name": "Enterprise"
+            },
+            {
+              "href": "api/v1/nodes/30154",
+              "name": "worksapce"
+            }
+          ],
+          "ancestors_nodes": [
+            {
+              "href": "api/v1/nodes/2000/nodes",
+              "name": "Enterprise"
+            },
+            {
+              "href": "api/v1/nodes/30154/nodes",
+              "name": "worksapce"
+            }
+          ],
+          "parent": {
+            "href": "api/v1/nodes/30154",
+            "name": "worksapce"
+          },
+          "parent_nodes": {
+            "href": "api/v1/nodes/30154/nodes",
+            "name": "worksapce"
+          }
+        },
+        "search_result_metadata": {
+          "current_version": null,
+          "object_href": null,
+          "object_id": "DataId=39188&Version=0",
+          "result_type": "264",
+          "source_id": "5799",
+          "version_type": null
+        }
+      },
+      {
+        "actions": {
+          "data": {
+            "addcategory": {
+              "body": "",
+              "content_type": "",
+              "form_href": "",
+              "href": "/api/v2/nodes/39284/categories",
+              "method": "POST",
+              "name": "Add Category"
+            },
+            "copy": {
+              "body": "",
+              "content_type": "",
+              "form_href": "/api/v2/forms/nodes/copy?id=39284",
+              "href": "/api/v2/nodes",
+              "method": "POST",
+              "name": "Copy"
+            },
+            "delete": {
+              "body": "",
+              "content_type": "",
+              "form_href": "",
+              "href": "/api/v2/nodes/39284",
+              "method": "DELETE",
+              "name": "Delete"
+            },
+            "move": {
+              "body": "",
+              "content_type": "",
+              "form_href": "/api/v2/forms/nodes/move?id=39284",
+              "href": "/api/v2/nodes/39284",
+              "method": "PUT",
+              "name": "Move"
+            },
+            "open": {
+              "body": "",
+              "content_type": "",
+              "form_href": "",
+              "href": "/api/v2/nodes/39284/nodes",
+              "method": "GET",
+              "name": "Open"
+            },
+            "properties": {
+              "body": "",
+              "content_type": "",
+              "form_href": "",
+              "href": "/api/v2/nodes/39284",
+              "method": "GET",
+              "name": "Properties"
+            }
+          },
+          "map": {
+            "default_action": "",
+            "more": [
+              "properties"
+            ]
+          },
+          "order": [
+            "open",
+            "addcategory",
+            "copy",
+            "move",
+            "delete"
+          ]
+        },
+        "data": {
+          "properties": {
+            "container": true,
+            "container_size": 2,
+            "create_date": "2016-11-09T12:38:03",
+            "create_user_id": 1000,
+            "create_user_id_expand": {
+              "birth_date": null,
+              "business_email": null,
+              "business_fax": null,
+              "business_phone": null,
+              "cell_phone": null,
+              "first_name": null,
+              "gender": null,
+              "group_id": 1001,
+              "home_address_1": null,
+              "home_address_2": null,
+              "home_fax": null,
+              "home_phone": null,
+              "id": 1000,
+              "last_name": null,
+              "middle_name": null,
+              "name": "Admin",
+              "name_formatted": "Admin",
+              "office_location": null,
+              "pager": null,
+              "personal_email": null,
+              "personal_interests": null,
+              "personal_url_1": null,
+              "personal_url_2": null,
+              "personal_url_3": null,
+              "personal_website": null,
+              "photo_url": null,
+              "time_zone": null,
+              "title": null,
+              "type": 0,
+              "type_name": "User"
+            },
+            "description": "",
+            "description_multilingual": {
+              "en": ""
+            },
+            "favorite": false,
+            "id": 39284,
+            "mime_type": null,
+            "modify_date": "2016-11-09T13:42:10",
+            "modify_user_id": 1000,
+            "name": "Opportunities BWS",
+            "name_multilingual": {
+              "en": "Opportunities BWS"
+            },
+            "owner_group_id": 1001,
+            "owner_user_id": 1000,
+            "owner_user_id_expand": {
+              "birth_date": null,
+              "business_email": null,
+              "business_fax": null,
+              "business_phone": null,
+              "cell_phone": null,
+              "first_name": null,
+              "gender": null,
+              "group_id": 1001,
+              "home_address_1": null,
+              "home_address_2": null,
+              "home_fax": null,
+              "home_phone": null,
+              "id": 1000,
+              "last_name": null,
+              "middle_name": null,
+              "name": "Admin",
+              "name_formatted": "Admin",
+              "office_location": null,
+              "pager": null,
+              "personal_email": null,
+              "personal_interests": null,
+              "personal_url_1": null,
+              "personal_url_2": null,
+              "personal_url_3": null,
+              "personal_website": null,
+              "photo_url": null,
+              "time_zone": null,
+              "title": null,
+              "type": 0,
+              "type_name": "User"
+            },
+            "parent_id": 30154,
+            "reserved": false,
+            "reserved_date": null,
+            "reserved_user_id": 0,
+            "reserved_user_id_expand": {},
+            "short_summary": [
+              ""
+            ],
+            "size": 2,
+            "size_formatted": "2 Items",
+            "summary": [
+              ""
+            ],
+            "type": 848,
+            "type_name": "Business Workspace",
+            "versions_control_advanced": false,
+            "volume_id": -2000
+          }
+        },
+        "links": {
+          "ancestors": [
+            {
+              "href": "api/v1/nodes/2000",
+              "name": "Enterprise"
+            },
+            {
+              "href": "api/v1/nodes/30154",
+              "name": "worksapce"
+            }
+          ],
+          "ancestors_nodes": [
+            {
+              "href": "api/v1/nodes/2000/nodes",
+              "name": "Enterprise"
+            },
+            {
+              "href": "api/v1/nodes/30154/nodes",
+              "name": "worksapce"
+            }
+          ],
+          "parent": {
+            "href": "api/v1/nodes/30154",
+            "name": "worksapce"
+          },
+          "parent_nodes": {
+            "href": "api/v1/nodes/30154/nodes",
+            "name": "worksapce"
+          }
+        },
+        "search_result_metadata": {
+          "current_version": null,
+          "object_href": null,
+          "object_id": "DataId=39284&Version=0",
+          "result_type": "264",
+          "source_id": "5799",
+          "version_type": null
+        }
+      }
+    ]
+  }
+}

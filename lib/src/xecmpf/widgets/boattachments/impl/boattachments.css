@@ -1,0 +1,50 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .xecmpf-businessattachments .xecmpf-attachmentstitleicondefault {
+  background-position: center;
+  width: 38px;
+  font-size: 2.5em;
+  float: left;
+  height: auto;
+  margin-right: 0;
+  position: relative;
+  left: 0;
+  top: 0;
+  display: table-cell;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+.binf-widgets .xecmpf-businessattachments .tile-header .tile-title {
+  margin: 0;
+}
+
+.binf-widgets .xecmpf-icon-boattachment-overlay {
+  background-image: url(../../../image/icons/boattachment-overlay.svg);
+  bottom: 0px;
+  position: absolute;
+}
+
+.binf-widgets .xecmpf-businessattachments  .xecmpf-attachmentstitlebaricon,
+.binf-widgets .xecmpf-businessattachments .xecmpf-attachmentstitleicon {
+  top: 4px;
+  height: auto;
+  width: auto;
+}
+
+.binf-widgets .xecmpf-businessattachments .title-wrapper .tile-type-image.xecmpf-attachmentstitlebaricon {
+  top: 0px;
+}
+
+.binf-widgets .xecmpf-businessattachments  .xecmpf-attachmentstitlebaricon .tile-type-icon-img {
+  position: initial;
+  margin: 0px 0px 0px 0px;
+}
+
+.binf-widgets .xecmpf-businessattachments  .xecmpf-attachmentstitlebaricon .tile-type-icon-img img {
+  width: 36px;
+  height: 36px;
+}
+.binf-widgets .xecmpf-businessattachments .csui-icon-group .csui-icon {
+  top: 0px;
+}

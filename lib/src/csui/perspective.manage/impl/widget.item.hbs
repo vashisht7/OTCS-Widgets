@@ -1,0 +1,21 @@
+<div class="csui-accordion-header" title="{{this.title}}">
+  <div class="csui-accordion-header-title">{{this.title}}</div>
+  <div class="csui-button-icon cs-icon icon-expandArrowDown"></div>
+  <div class="csui-button-icon cs-icon icon-expandArrowUp"></div>
+</div>
+<div class="csui-accordion-content">
+  <div class="cs-content csui-list-pannel">
+    <div class="cs-list-group">
+      {{#each widgets}}
+        <div>
+          <div class="csui-widget-item icon-draggable-handle"
+               title="{{attributes.title}}" {{#if ../draggable}} draggable="true"{{/if}}>
+            <span>{{attributes.title}}</span>
+            <div class="csui-layout-icon {{attributes.icon}}"></div>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+</div>
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

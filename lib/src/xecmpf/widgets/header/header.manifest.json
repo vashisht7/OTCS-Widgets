@@ -1,0 +1,201 @@
+{
+  "$schema": "http://opentext.com/cs/json-schema/draft-04/schema#",
+  "title": "Header",
+  "description": "Header widget for business workspaces",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "workspace": {
+        "type": "object",
+        "title": "Workspace",
+        "description": "Workspace specific options",
+        "properties": {
+          "properties": {
+            "type": "object",
+            "title": "Properties",
+            "description": "Configuration properties",
+            "properties": {
+              "title": {
+                "type": "string",
+                "title": "Title",
+                "default": "{name}",
+                "description": "Name of the business workspace"
+              },
+              "type": {
+                "type": "string",
+                "title": "Type",
+                "default": "{business_properties.workspace_type_name}",
+                "description": "Name of the workspace type"
+              },
+              "description": {
+                "type": "string",
+                "title": "Description",
+                "default": "{description}",
+                "description": "Description of the business workspace"
+              }
+            }
+          }
+        }
+      },
+      "completenessCheckSettings": {
+        "type": "object",
+        "title": "Completeness check",
+        "description": "Completeness check configuration",
+        "properties": {
+          "hideMissingDocsCheck": {
+            "title": "Hide missing documents check",
+            "description": "Option to show or hide the missing document check",
+            "type": "boolean",
+            "default": false
+          },
+          "hideOutdatedDocsCheck": {
+            "title": "Hide outdated documents check",
+            "description": "Option to show or hide the outdated document check. This option will be effective only if the Extended ECM for SAP SuccessFactors module is installed on the system",
+            "type": "boolean",
+            "default": false
+          },
+          "hideInProcessDocsCheck": {
+            "title": "Hide In process documents check",
+            "description": "Option to show or hide the In process document check. This option will be effective only if the Extended ECM for SAP SuccessFactors module is installed on the system",
+            "type": "boolean",
+            "default": false
+          }
+        }
+      },
+      "headerwidget": {
+        "type": "object",
+        "title": "Widget",
+        "description": "Additional widget that can be embedded in the header widget",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "none",
+              "activityfeed",
+              "metadata"
+            ],
+            "default": "none",
+            "title": "Embed widget",
+            "description": "Widget to be embedded in the header widget"
+          }
+        }
+      },
+      "metadataSettings": {
+        "type": "object",
+        "title": "Metadata",
+        "description": "Header metadata configuration",
+        "properties": {  
+          "metadataInColumns":{          
+            "type": "string",			
+            "enum": [
+              "singleCol",
+              "doubleCol"
+            ],
+            "default": "doubleCol",
+            "title": "Show Metadata In Columns",
+            "description": "Show Metadata In Columns"
+        },      
+          "hideMetadata": {
+            "type": "boolean",
+            "enum": [
+              true,
+              false
+            ],
+            "default": false,
+            "title": "Hide Metadata",
+            "description": "Hide metadata on header"
+          },
+          "hideEmptyFields": {
+            "type": "boolean",
+            "enum": [
+              true,
+              false
+            ],
+            "default": false,
+            "title": "Hide empty fields",
+            "description": "Display only fields with values"
+          },
+          "metadata": {
+            "type": "array",
+            "title": "Metadata",
+            "description": "Metadata displayed in Header widget",
+            "items": {
+              "type": "object",
+              "title": "Category or attribute",
+              "description": "Category or attribute with metadata"
+            }
+          }
+        }
+      },
+      "favoriteSettings": {
+        "type": "object",
+        "title": "Favorite",
+        "description": "Favorite configuration",
+        "properties": {
+          "hideFavorite": {
+            "type": "boolean",
+            "enum": [
+              true,
+              false
+            ],
+            "default": false,
+            "title": "Hide Favorite",
+            "description": "Option to hide the favorite icon on the header"
+          }
+        }
+      }
+    }
+  },
+  "options": {
+    "fields": {
+      "workspace": {
+        "fields": {
+          "properties": {
+            "fields": {
+              "title": {
+                "type": "otconws_metadata_string"
+              },
+              "type": {
+                "type": "otconws_metadata_string"
+              },
+              "description": {
+                "type": "otconws_metadata_string"
+              }
+            }
+          }
+        }
+      },
+      "metadataSettings": {
+        "fields": {
+            "metadata": {
+              "fields": {                        
+                "item": {
+                  "type": "otconws_metadata"          
+                }
+              }
+            },
+          "metadataInColumns": {
+            "type": "select",            
+            "optionLabels": [
+              "Single",
+              "Double"
+            ]
+          }
+        }
+      },
+      
+      "headerwidget": {
+        "fields": {
+          "type": {
+            "type": "select",
+            "optionLabels": [
+              "None",
+              "Activity Feed",
+              "Metadata"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

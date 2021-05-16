@@ -1,0 +1,30 @@
+/*
+ Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+ For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+*/
+
+.scayt-lang-list > div
+{
+    padding-bottom: 6px !important;
+}
+
+.scayt-lang-list > div input
+{
+    margin-right: 4px;
+}
+
+#scayt_about_
+{
+    margin: 30px auto 0 auto;
+}
+
+#scayt_about_ p
+{
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.cke_dialog_contents_body div[name=dictionaries] .cke_dialog_ui_hbox_last > a.cke_dialog_ui_button
+{
+    margin-top: 0;
+}

@@ -1,0 +1,23 @@
+{
+  "data": {
+    "categories_add": "api/v1/forms/nodes/categories/create?id=51209"
+  },
+  "definitions": {
+    "categories_add": {
+      "body": "",
+      "content_type": "",
+      "display_hint": "",
+      "display_href": "",
+      "handler": "node_picker_form",
+      "image": "",
+      "method": "GET",
+      "name": "Add Categories",
+      "parameters": {},
+      "tab_href": ""
+    }
+  },
+  "definitions_map": {},
+  "definitions_order": [
+    "categories_add"
+  ]
+}

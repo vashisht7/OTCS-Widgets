@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>MembersPicker</title>
+
+  <link rel="stylesheet" href="../../../themes/carbonfiber/theme.css">
+  <script src="../../../lib/require.js"></script>
+  <script src="../../../config.js" data-csui-path="../../.."></script>
+
+  <script>
+    require.config({
+      deps: [
+        'csui/lib/require.config!csui/csui-extensions.json'
+      ]
+    });
+
+    require.config({
+      config: {
+        'csui/utils/contexts/factories/connector': {
+          connection: {
+            url: '//server/otcs/cs/api/v1',
+              supportPath: '/support',
+              session: {
+                ticket: 'dummy'
+              }
+          }
+        }
+      }
+    });
+    require(['csui/lib/jquery', "csui/lib/marionette", 'csui/utils/contexts/page/page.context', './members.picker.mock.data.js',
+    'csui/models/node/node.model', 'i18n!csui/utils/commands/nls/localized.strings',
+    'csui/dialogs/members.picker/members.picker.wizard', 'csui/utils/contexts/factories/connector'
+    ], function ($, Marionette, PageContext, MembersPickerMock, NodeModel, lang,
+      MembersPickerDialog, ConnectorFactory) {
+            MembersPickerMock.enable();
+            var membersPickerDialog,
+                dialogClass = "cs-permission-group-picker",
+                dialogTitle = "Add users or groups",
+                displayName = "Users and Groups",
+                context = new PageContext(),
+                connector = context.getObject(ConnectorFactory),
+                node = new NodeModel({id: 37474}, {connector: connector}),
+                startLocations = ['all.members', 'member.groups'];
+            membersPickerDialog = new MembersPickerDialog({
+              command: 'adduserorgroup',
+              context: context,
+              connector: connector,
+              dialogClass: dialogClass,
+              displayName: displayName,
+              dialogTitle: dialogTitle,
+              startLocation: 'all.members',
+              adduserorgroup: true,
+              addButtonLabel: lang.AddButtonLabel,
+              startLocations: startLocations,
+              nodeModel: node,
+            });
+            membersPickerDialog.show();
+    });
+</script>
+</head>
+
+<body class="binf-widgets">
+</body>
+
+</html>
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

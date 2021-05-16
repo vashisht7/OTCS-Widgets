@@ -1,0 +1,115 @@
+{
+	"$schema": "http://opentext.com/cs/json-schema/draft-04/schema#",
+	"title": "{{tileTitle}}",
+	"description": "{{tileDescription}}",
+	"schema": {
+		"type": "object",
+		"properties": {
+      "title": {
+        "type": "object",
+        "title": "{{titleSection}}",
+        "description": "{{titleDescription}}"
+      },
+      "workspaceTypeId": {
+        "type": "integer",
+        "title": "Workspace type",
+        "description": "{{WorkspaceTypeDesc}}"
+      },
+      "collapsedView": {
+        "type": "object",
+        "title": "{{collapsedViewTitle}}",
+        "description": "{{collapsedViewDesc}}",
+        "properties": {
+          "noResultsPlaceholder": {
+            "type": "object",
+            "title": "Message for empty result",
+            "description": "{{noResultsPlaceholderDesc}}"
+          }
+        }
+      },
+      "expandedView": {
+        "type": "object",
+        "title": "{{expandedViewTitle}}",
+        "description": "{{expandedViewDesc}}",
+        "properties": {
+          "orderBy": {
+            "type": "object",
+            "title": "{{orderBySectionTitle}}",
+            "description": "{{orderBySectionDesc}}",
+            "properties": {
+              "sortColumn": {
+                "type": "string",
+                "title": "{{sortColumnSectionTitle}}",
+                "description": "{{sortColumnSectionDesc}}"
+              },
+              "sortOrder": {
+                "type": "string",
+                "enum": [ "asc", "desc" ],
+                "title": "{{sortOrderSectionTitle}}",
+                "description": "{{sortOrderSectionDesc}}"
+              }
+            }
+          },
+          "customColumns": {
+            "type": "array",
+            "title": "{{customColumnsTitle}}",
+            "description": "{{customColumnsDesc}}",
+            "items": {
+              "type": "object",
+              "title": "{{itemsSectionTitle}}",
+              "description": "{{itemsSectionDesc}}",
+              "properties": {
+                "key": {
+                  "type": "string",
+                  "title": "{{keyTitle}}",
+                  "description": "{{keyDescription}}"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+	},
+  "options": {
+    "fields": {
+      "title": {
+        "type": "otcs_multilingual_string"
+      },
+      "workspaceTypeId": {
+        "type": "otconws_workspacetype_id"
+      },
+      "collapsedView": {
+        "fields": {
+          "noResultsPlaceholder": {
+            "type": "otcs_multilingual_string"
+          }
+        }
+      },
+      "expandedView": {
+        "fields": {
+          "orderBy": {
+            "fields": {
+              "sortColumn": {
+                "type": "otconws_customcolumn"
+              },
+              "sortOrder": {
+                "type": "select",
+                "optionLabels": [ "Ascending", "Descending" ]
+              }
+            }
+          },
+          "customColumns": {
+            "items": {
+              "fields": {
+                "key": {
+                  "type": "otconws_customcolumn"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

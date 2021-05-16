@@ -1,0 +1,24 @@
+{{#if imageUrl}}
+  <img src="{{imageUrl}}" class="csui-icon" alt="" aria-hidden="true">
+{{else}}
+  {{#if mainSvgId}}
+    <svg class="csui-icon csui-svg-icon" focusable="false">
+      <use xlink:href="{{spritePath}}#{{mainSvgId}}"></use>
+    </svg>
+  {{else}}
+    <span class="{{mainClassName}}"></span>
+  {{/if}}
+{{/if}}
+{{#if overlaySvgIds}}
+  {{#each overlaySvgIds}}
+    <svg class="csui-icon csui-svg-icon" focusable="false">
+      <use xlink:href="{{../spritePath}}#{{this}}"></use>
+    </svg>
+  {{/each}}
+{{else}}
+  {{#each overlayClassNames}}
+    <span class="{{this}}"></span>
+  {{/each}}
+{{/if}}
+
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

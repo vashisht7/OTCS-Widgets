@@ -1,0 +1,79 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .xecmpf_workspacestable {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.binf-widgets .xecmpf_workspacestable #outertablecontainer {
+  height: 100%;
+  width: 100%;
+  float: right;
+}
+
+.binf-widgets .xecmpf_workspacestable #innertablecontainer {
+  height: 100%;
+  width: 100%;
+  flex: 1 1000 auto;
+  -webkit-flex: 1 1000 auto;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+}
+
+.binf-widgets .xecmpf_workspacestable #tableview {
+  flex: 1 1000 auto;
+  -webkit-flex: 1 1000 auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.binf-widgets .xecmpf_workspacestable #tableview > div {
+  overflow: hidden;
+  flex: 1 1 auto;
+  -webkit-flex: 1 1 auto;
+}
+
+.binf-widgets .xecmpf_workspacestable .csui-tabletoolbar {
+  height: 3em;
+}
+
+.binf-widgets .xecmpf_workspacestable #paginationview {
+  height: auto;
+  flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+}
+
+.binf-widgets .xecmpf_workspacestable #paginationview .binf-pagination {
+  margin: 0;
+}
+
+.binf-widgets .xecmpf_workspacestable #tabletoolbar .toolbarlabel {
+  padding-left:0.4em;
+}
+
+.binf-widgets .xecmpf_workspacestable .binf-dropdown.binf-open .binf-dropdown-menu #toolitem  {
+  display: block;
+}
+
+.binf-widgets .xecmpf_workspacestable #toolitem {
+  display: none;
+}
+
+.binf-widgets .xecmpf_workspacestable .csui-table-column-search .csui-table-search-input {
+  font-size: inherit;
+}

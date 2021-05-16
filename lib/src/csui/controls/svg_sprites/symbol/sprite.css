@@ -1,0 +1,327 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.svg-controls--checkbox--impl--images--checkbox-dims {
+	width: 18px;
+	height: 18px;
+}
+
+.svg-controls--checkbox--impl--images--checkbox_all_selected-dims {
+	width: 18px;
+	height: 18px;
+}
+
+.svg-controls--checkbox--impl--images--checkbox_disabled-dims {
+	width: 32px;
+	height: 32px;
+}
+
+.svg-controls--checkbox--impl--images--checkbox_mixed-dims {
+	width: 18px;
+	height: 18px;
+}
+
+.svg-controls--checkbox--impl--images--checkbox_on24_dis-dims {
+	width: 18px;
+	height: 18px;
+}
+
+.svg-controls--checkbox--impl--images--checkbox_partial_dis-dims {
+	width: 18px;
+	height: 18px;
+}
+
+.svg-controls--checkbox--impl--images--checkbox_selected-dims {
+	width: 18px;
+	height: 18px;
+}
+
+.svg-controls--disclosure--impl--images--caret_down-dims {
+	width: 18px;
+	height: 18px;
+}
+
+.svg-controls--disclosure--impl--images--caret_up-dims {
+	width: 18px;
+	height: 18px;
+}
+
+.svg-controls--form--fields--alpaca--test--alpnodepickerfield--test.facets_volume-dims {
+	width: 32px;
+	height: 32px;
+}
+
+.svg-controls--form--fields--alpaca--test--alpnodepickerfield--test.facets_volume_nonselectable32-dims {
+	width: 32px;
+	height: 32px;
+}
+
+.svg-controls--form--fields--alpaca--test--alptypeaheadfield--test.mime_workspace-dims {
+	width: 32px;
+	height: 32px;
+}
+
+.svg-controls--globalmessage--impl--images--close-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-controls--globalmessage--impl--images--dismiss-dims {
+	width: 30px;
+	height: 30px;
+}
+
+.svg-controls--globalmessage--impl--images--dismiss_white-dims {
+	width: 30px;
+	height: 30px;
+}
+
+.svg-controls--globalmessage--impl--images--notification--formfield_clear24-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-controls--globalmessage--impl--images--notification--formfield_clear24_dis-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-controls--globalmessage--impl--images--notification--formfield_clear24_dummy-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-controls--globalmessage--impl--images--notification--formfield_clear24_md-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-controls--globalmessage--impl--images--notification--formfield_clear24_mo-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-controls--globalmessage--impl--images--notification--notification_error_red-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-controls--globalmessage--impl--images--notification--notification_information-dims {
+	width: 32px;
+	height: 32px;
+}
+
+.svg-controls--globalmessage--impl--images--notification--notification_question24-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-controls--globalmessage--impl--images--notification--notification_success-dims {
+	width: 32px;
+	height: 32px;
+}
+
+.svg-controls--globalmessage--impl--images--notification--notification_success24-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-controls--globalmessage--impl--images--notification--notification_warning-dims {
+	width: 32px;
+	height: 32px;
+}
+
+.svg-controls--globalmessage--impl--images--notification--status_completed-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-controls--globalmessage--impl--images--notification_confirmation_white-dims {
+	width: 32px;
+	height: 32px;
+}
+
+.svg-controls--globalmessage--impl--images--notification_error-dims {
+	width: 32px;
+	height: 32px;
+}
+
+.svg-controls--globalmessage--impl--images--notification_error_white-dims {
+	width: 32px;
+	height: 32px;
+}
+
+.svg-controls--globalmessage--impl--images--notification_information-dims {
+	width: 32px;
+	height: 32px;
+}
+
+.svg-controls--globalmessage--impl--images--notification_information_white-dims {
+	width: 32px;
+	height: 32px;
+}
+
+.svg-controls--globalmessage--impl--images--notification_success-dims {
+	width: 32px;
+	height: 32px;
+}
+
+.svg-controls--globalmessage--impl--images--notification_success_white-dims {
+	width: 32px;
+	height: 32px;
+}
+
+.svg-controls--globalmessage--impl--images--notification_warning-dims {
+	width: 32px;
+	height: 32px;
+}
+
+.svg-controls--globalmessage--impl--images--notification_warning_white-dims {
+	width: 32px;
+	height: 32px;
+}
+
+.svg-controls--globalmessage--impl--progresspanel--impl--images--circle_close-dims {
+	width: 28px;
+	height: 28px;
+}
+
+.svg-controls--globalmessage--impl--progresspanel--impl--images--notification--notification_warning-dims {
+	width: 32px;
+	height: 32px;
+}
+
+.svg-controls--list--test--images--icons--mime_document-dims {
+	width: 32px;
+	height: 32px;
+}
+
+.svg-controls--list--test--images--icons--mime_excel-dims {
+	width: 32px;
+	height: 32px;
+}
+
+.svg-controls--list--test--images--icons--mime_folder-dims {
+	width: 32px;
+	height: 32px;
+}
+
+.svg-controls--list--test--images--icons--mime_pdf-dims {
+	width: 32px;
+	height: 32px;
+}
+
+.svg-controls--selected.count--impl--images--close-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-controls--signin--impl--css--image--formfield_clear-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-controls--signin--impl--css--image--formfield_error-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-controls--signin--impl--css--image--signin-cs-dims {
+	width: 279px;
+	height: 32px;
+}
+
+.svg-controls--thumbnail--content--favorite--impl--images--switch_favorite24-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-controls--thumbnail--content--favorite--impl--images--switch_favorite24_md-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-controls--thumbnail--content--favorite--impl--images--switch_favorite24_mo-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-controls--thumbnail--content--favorite--impl--images--switch_favorite_on24-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-controls--thumbnail--content--favorite--impl--images--switch_favorite_on24_md-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-controls--thumbnail--content--favorite--impl--images--switch_favorite_on24_mo-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-controls--thumbnail--content--select--impl--images--checkbox-dims {
+	width: 18px;
+	height: 18px;
+}
+
+.svg-controls--thumbnail--content--select--impl--images--checkbox_all_selected-dims {
+	width: 18px;
+	height: 18px;
+}
+
+.svg-controls--thumbnail--content--select--impl--images--checkbox_disabled-dims {
+	width: 18px;
+	height: 18px;
+}
+
+.svg-controls--thumbnail--content--select--impl--images--checkbox_mixed-dims {
+	width: 18px;
+	height: 18px;
+}
+
+.svg-controls--thumbnail--content--select--impl--images--checkbox_selected-dims {
+	width: 18px;
+	height: 18px;
+}
+
+.svg-controls--thumbnail--content--thumbnail.icon--util--images--play_arrow-dims {
+	width: 37.01px;
+	height: 42px;
+}
+
+.svg-controls--tree--impl--images--checkbox-dims {
+	width: 18px;
+	height: 18px;
+}
+
+.svg-controls--tree--impl--images--checkbox24_dis-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-controls--tree--impl--images--checkbox_all_selected-dims {
+	width: 18px;
+	height: 18px;
+}
+
+.svg-controls--tree--impl--images--checkbox_disabled-dims {
+	width: 18px;
+	height: 18px;
+}
+
+.svg-controls--tree--impl--images--checkbox_mixed-dims {
+	width: 18px;
+	height: 18px;
+}
+
+.svg-controls--tree--impl--images--checkbox_on24_dis-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-controls--tree--impl--images--checkbox_selected-dims {
+	width: 18px;
+	height: 18px;
+}
+

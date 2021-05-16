@@ -1,0 +1,16 @@
+<div class="csui-user-container">
+  <div class="csui-profileimg binf-pull-left">
+    <span class="csui-icon-paceholder csui-icon conws-mime_roles" aria-label="{{ariaUserLabel}}"></span>
+  </div>
+  <div class="member-info csui-fadeout{{#if disabled}} binf-disabled{{/if}} ">
+    <div class="">
+      <span class="csui-user-display-name csui-role" aria-label="{{ariaUserLabel}}">{{name}}</span>
+    </div>
+  </div>
+  {{#if includeInlineToolBarPlaceholder}}
+  {{#unless addOwnerOrGroup}}
+  <div class="{{inlineToolBarPlaceholderClass}} binf-hidden"></div>
+  {{/unless}}
+  {{/if}}
+</div>
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

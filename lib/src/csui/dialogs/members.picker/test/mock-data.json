@@ -1,0 +1,585 @@
+{
+  "result1": {
+        "collection": {
+            "paging": {
+                "limit": 20,
+                "page": 1,
+                "page_total": 1,
+                "range_max": 10,
+                "range_min": 1,
+                "total_count": 10
+            }
+        },
+        "links": {
+            "data": {
+                "self": {
+                    "body": "",
+                    "content_type": "",
+                    "href": "/api/v2/members?limit=20&page=1",
+                    "method": "GET",
+                    "name": ""
+                }
+            }
+        },
+        "results": [
+            {
+                "data": {
+                    "properties": {
+                        "deleted": false,
+                        "id": 999,
+                        "initials": "[",
+                        "leader_id": null,
+                        "name": "[Content Server Administration]",
+                        "name_formatted": "[Content Server Administration]",
+                        "type": 1,
+                        "type_name": "Group"
+                    }
+                }
+            },
+            {
+                "data": {
+                    "properties": {
+                        "birth_date": null,
+                        "business_email": null,
+                        "business_fax": null,
+                        "business_phone": null,
+                        "cell_phone": null,
+                        "deleted": false,
+                        "first_name": null,
+                        "gender": null,
+                        "group_id": 999,
+                        "home_address_1": null,
+                        "home_address_2": null,
+                        "home_fax": null,
+                        "home_phone": null,
+                        "id": 1000,
+                        "initials": "A",
+                        "last_name": null,
+                        "middle_name": null,
+                        "name": "Admin",
+                        "name_formatted": "Admin",
+                        "office_location": null,
+                        "pager": null,
+                        "personal_email": null,
+                        "personal_interests": null,
+                        "personal_url_1": null,
+                        "personal_url_2": null,
+                        "personal_url_3": null,
+                        "personal_website": null,
+                        "photo_id": null,
+                        "photo_url": null,
+                        "time_zone": null,
+                        "title": null,
+                        "type": 0,
+                        "type_name": "User"
+                    }
+                }
+            },
+            {
+                "data": {
+                    "properties": {
+                        "deleted": false,
+                        "id": 1001,
+                        "initials": "D",
+                        "leader_id": null,
+                        "name": "DefaultGroup",
+                        "name_formatted": "DefaultGroup",
+                        "type": 1,
+                        "type_name": "Group"
+                    }
+                }
+            },
+            {
+                "data": {
+                    "properties": {
+                        "deleted": false,
+                        "id": 2001,
+                        "initials": "B",
+                        "leader_id": null,
+                        "name": "Business Administrators",
+                        "name_formatted": "Business Administrators",
+                        "type": 1,
+                        "type_name": "Group"
+                    }
+                }
+            },
+            {
+                "data": {
+                    "properties": {
+                        "deleted": false,
+                        "id": 2079,
+                        "initials": "e",
+                        "leader_id": null,
+                        "name": "eLink",
+                        "name_formatted": "eLink",
+                        "type": 1,
+                        "type_name": "Group"
+                    }
+                }
+            },
+            {
+                "data": {
+                    "properties": {
+                        "birth_date": null,
+                        "business_email": "dsfsfsdf",
+                        "business_fax": null,
+                        "business_phone": "sdfsdfds",
+                        "cell_phone": "sdfsdfsdfsd",
+                        "deleted": false,
+                        "first_name": null,
+                        "gender": null,
+                        "group_id": 999,
+                        "home_address_1": null,
+                        "home_address_2": null,
+                        "home_fax": null,
+                        "home_phone": null,
+                        "id": 10013,
+                        "initials": "a",
+                        "last_name": null,
+                        "middle_name": null,
+                        "name": "arabic",
+                        "name_formatted": "arabic",
+                        "office_location": "dsfsdfs",
+                        "pager": null,
+                        "personal_email": null,
+                        "personal_interests": null,
+                        "personal_url_1": null,
+                        "personal_url_2": null,
+                        "personal_url_3": null,
+                        "personal_website": null,
+                        "photo_id": null,
+                        "photo_url": null,
+                        "time_zone": -1,
+                        "title": null,
+                        "type": 0,
+                        "type_name": "User"
+                    }
+                }
+            },
+            {
+                "data": {
+                    "properties": {
+                        "birth_date": null,
+                        "business_email": "pvootla@opentext.com",
+                        "business_fax": null,
+                        "business_phone": "123456789",
+                        "cell_phone": null,
+                        "deleted": false,
+                        "first_name": "Pravallika",
+                        "gender": null,
+                        "group_id": 1001,
+                        "home_address_1": null,
+                        "home_address_2": null,
+                        "home_fax": null,
+                        "home_phone": null,
+                        "id": 14537,
+                        "initials": "u",
+                        "last_name": "vootla",
+                        "middle_name": null,
+                        "name": "user2",
+                        "name_formatted": "user2",
+                        "office_location": "hyderabad",
+                        "pager": null,
+                        "personal_email": null,
+                        "personal_interests": null,
+                        "personal_url_1": null,
+                        "personal_url_2": null,
+                        "personal_url_3": null,
+                        "personal_website": null,
+                        "photo_id": null,
+                        "photo_url": null,
+                        "time_zone": 43,
+                        "title": null,
+                        "type": 0,
+                        "type_name": "User"
+                    }
+                }
+            },
+            {
+                "data": {
+                    "properties": {
+                        "birth_date": null,
+                        "business_email": "last@opentext.com",
+                        "business_fax": null,
+                        "business_phone": "89786756453423",
+                        "cell_phone": null,
+                        "deleted": false,
+                        "first_name": "lastuser",
+                        "gender": null,
+                        "group_id": 1001,
+                        "home_address_1": null,
+                        "home_address_2": null,
+                        "home_fax": null,
+                        "home_phone": null,
+                        "id": 14538,
+                        "initials": "u",
+                        "last_name": "lastname",
+                        "middle_name": null,
+                        "name": "user4",
+                        "name_formatted": "user4",
+                        "office_location": null,
+                        "pager": null,
+                        "personal_email": null,
+                        "personal_interests": null,
+                        "personal_url_1": null,
+                        "personal_url_2": null,
+                        "personal_url_3": null,
+                        "personal_website": null,
+                        "photo_id": null,
+                        "photo_url": null,
+                        "time_zone": 16,
+                        "title": null,
+                        "type": 0,
+                        "type_name": "User"
+                    }
+                }
+            },
+            {
+                "data": {
+                    "properties": {
+                        "birth_date": null,
+                        "business_email": "sbhuvana@opentext.com",
+                        "business_fax": null,
+                        "business_phone": "987654321",
+                        "cell_phone": null,
+                        "deleted": false,
+                        "first_name": "srividya",
+                        "gender": null,
+                        "group_id": 1001,
+                        "home_address_1": null,
+                        "home_address_2": null,
+                        "home_fax": null,
+                        "home_phone": null,
+                        "id": 14649,
+                        "initials": "u",
+                        "last_name": "bhuvanagiri",
+                        "middle_name": null,
+                        "name": "user3",
+                        "name_formatted": "user3",
+                        "office_location": "hyderabad",
+                        "pager": null,
+                        "personal_email": null,
+                        "personal_interests": null,
+                        "personal_url_1": null,
+                        "personal_url_2": null,
+                        "personal_url_3": null,
+                        "personal_website": null,
+                        "photo_id": null,
+                        "photo_url": null,
+                        "time_zone": 18,
+                        "title": null,
+                        "type": 0,
+                        "type_name": "User"
+                    }
+                }
+            },
+            {
+                "data": {
+                    "properties": {
+                        "birth_date": null,
+                        "business_email": "user@opentext.com",
+                        "business_fax": null,
+                        "business_phone": "9848022338",
+                        "cell_phone": null,
+                        "deleted": false,
+                        "first_name": "userfirstname",
+                        "gender": null,
+                        "group_id": 999,
+                        "home_address_1": null,
+                        "home_address_2": null,
+                        "home_fax": null,
+                        "home_phone": null,
+                        "id": 14978,
+                        "initials": "u",
+                        "last_name": "userlastname",
+                        "middle_name": "u",
+                        "name": "user1",
+                        "name_formatted": "user1",
+                        "office_location": "hyderabad",
+                        "pager": null,
+                        "personal_email": null,
+                        "personal_interests": null,
+                        "personal_url_1": null,
+                        "personal_url_2": null,
+                        "personal_url_3": null,
+                        "personal_website": null,
+                        "photo_id": null,
+                        "photo_url": null,
+                        "time_zone": 20,
+                        "title": null,
+                        "type": 0,
+                        "type_name": "User"
+                    }
+                }
+            }
+        ]
+  },
+  "result2": {
+    "links": {
+        "data": {
+            "self": {
+                "body": "",
+                "content_type": "",
+                "href": "/api/v2/members/memberof?limit=20&page=1",
+                "method": "GET",
+                "name": ""
+            }
+        }
+    },
+    "results": [
+        {
+            "data": {
+                "properties": {
+                    "id": 2001,
+                    "initials": "B",
+                    "name": "Business Administrators",
+                    "name_formatted": "Business Administrators",
+                    "type": 1,
+                    "type_name": "Group"
+                }
+            }
+        },
+        {
+            "data": {
+                "properties": {
+                    "id": 999,
+                    "initials": "[",
+                    "name": "[Content Server Administration]",
+                    "name_formatted": "[Content Server Administration]",
+                    "type": 1,
+                    "type_name": "Group"
+                }
+            }
+        }
+    ]
+  },
+  "result3": {
+    "collection": {
+        "paging": {
+            "limit": 20,
+            "page": 1,
+            "page_total": 1,
+            "range_max": 1,
+            "range_min": 1,
+            "total_count": 1
+        },
+        "sorting": {
+            "sort": [
+                {
+                    "key": "sort",
+                    "value": "asc_asc_name"
+                }
+            ]
+        }
+    },
+    "links": {
+        "data": {
+            "self": {
+                "body": "",
+                "content_type": "",
+                "href": "/api/v2/members/2001/members?limit=20&page=1",
+                "method": "GET",
+                "name": ""
+            }
+        }
+    },
+    "results": [
+        {
+            "data": {
+                "properties": {
+                    "group_id": 999,
+                    "id": 1000,
+                    "initials": "A",
+                    "name": "Admin",
+                    "name_formatted": "Admin",
+                    "type": 0,
+                    "type_name": "User"
+                }
+            }
+        }
+    ]
+  },
+  "result4": {
+    "collection": {
+        "paging": {
+            "limit": 20,
+            "page": 1,
+            "page_total": 1,
+            "range_max": 5,
+            "range_min": 1,
+            "total_count": 5
+        },
+        "sorting": {
+            "sort": [
+                {
+                    "key": "sort",
+                    "value": "asc_asc_name"
+                }
+            ]
+        }
+    },
+    "links": {
+        "data": {
+            "self": {
+                "body": "",
+                "content_type": "",
+                "href": "/api/v2/members/999/members?limit=20&page=1&sort=asc_name",
+                "method": "GET",
+                "name": ""
+            }
+        }
+    },
+    "results": [
+        {
+            "data": {
+                "properties": {
+                    "group_id": 999,
+                    "id": 1000,
+                    "initials": "A",
+                    "name": "Admin",
+                    "name_formatted": "Admin",
+                    "type": 0,
+                    "type_name": "User"
+                }
+            }
+        },
+        {
+            "data": {
+                "properties": {
+                    "id": 1001,
+                    "initials": "D",
+                    "name": "DefaultGroup",
+                    "name_formatted": "DefaultGroup",
+                    "type": 1,
+                    "type_name": "Group"
+                }
+            }
+        },
+        {
+            "data": {
+                "properties": {
+                    "group_id": 999,
+                    "id": 10013,
+                    "initials": "a",
+                    "name": "arabic",
+                    "name_formatted": "arabic",
+                    "type": 0,
+                    "type_name": "User"
+                }
+            }
+        },
+        {
+            "data": {
+                "properties": {
+                    "first_name": "userfirstname",
+                    "group_id": 999,
+                    "id": 14978,
+                    "initials": "u",
+                    "last_name": "userlastname",
+                    "middle_name": "u",
+                    "name": "user1",
+                    "name_formatted": "user1",
+                    "type": 0,
+                    "type_name": "User"
+                }
+            }
+        },
+        {
+            "data": {
+                "properties": {
+                    "group_id": 1001,
+                    "id": 14538,
+                    "initials": "u",
+                    "last_name": "lastname",
+                    "middle_name": null,
+                    "name": "user4",
+                    "name_formatted": "user4",
+                    "type": 0,
+                    "type_name": "User"
+                }
+            }
+        }
+    ]
+  },
+  "result5": {
+        "collection": {
+            "paging": {
+                "limit": 20,
+                "page": 1,
+                "page_total": 1,
+                "range_max": 3,
+                "range_min": 1,
+                "total_count": 3
+            },
+            "sorting": {
+                "sort": [
+                    {
+                        "key": "sort",
+                        "value": "asc_asc_name"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "data": {
+                "self": {
+                    "body": "",
+                    "content_type": "",
+                    "href": "/api/v2/members/1001/members?limit=20&page=1&sort=asc_name",
+                    "method": "GET",
+                    "name": ""
+                }
+            }
+        },
+        "results": [
+            {
+                "data": {
+                    "properties": {
+                        "first_name": "Pravallika",
+                        "group_id": 1001,
+                        "id": 14537,
+                        "initials": "u",
+                        "last_name": "vootla",
+                        "middle_name": null,
+                        "name": "user2",
+                        "name_formatted": "user2",
+                        "type": 0,
+                        "type_name": "User"
+                    }
+                }
+            },
+            {
+                "data": {
+                    "properties": {
+                        "first_name": "srividya",
+                        "group_id": 1001,
+                        "id": 14649,
+                        "initials": "u",
+                        "last_name": "bhuvanagiri",
+                        "middle_name": null,
+                        "name": "user3",
+                        "name_formatted": "user3",
+                        "type": 0,
+                        "type_name": "User"
+                    }
+                }
+            },
+            {
+                "data": {
+                    "properties": {
+                        "first_name": "lastuser",
+                        "group_id": 1001,
+                        "id": 14538,
+                        "initials": "u",
+                        "last_name": "lastname",
+                        "middle_name": null,
+                        "name": "user4",
+                        "name_formatted": "user4",
+                        "type": 0,
+                        "type_name": "User"
+                    }
+                }
+            }
+        ]
+  }
+}

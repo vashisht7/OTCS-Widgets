@@ -1,0 +1,67 @@
+{
+  "$schema": "http://opentext.com/cs/json-schema/draft-04/schema#",
+  "title": "{{title}}",
+  "description": "{{description}}",
+  "kind": "fullpage",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "containerId": {
+        "title": "{{containerIdTitle}}",
+        "description": "{{containerIdDescription}}",
+        "type": "integer"
+      }
+    }
+  },
+  "options": {
+    "fields": {
+      "containerId": {
+        "type": "otcs_node_picker",
+        "type_control": {
+          "parameters": {
+            "select_types": [-1]
+          }
+        }
+      }
+    }
+  },
+  "actions": [
+    {
+      "toolItems": "csui/widgets/nodestable/toolbaritems",
+      "toolItemMasks": "csui/widgets/nodestable/toolbaritems.masks",
+      "toolbars": [
+        {
+          "id": "tableHeaderToolbar",
+          "title": "{{tableHeaderToolbarTitle}}",
+          "description": "{{tableHeaderToolbarDescription}}"
+        },
+        {
+          "id": "inlineActionbar",
+          "title": "{{inlineActionbarTitle}}",
+          "description": "{{inlineActionbarDescription}}"
+        },
+        {
+          "id": "leftToolbar",
+          "title": "{{leftToolbarTitle}}",
+          "description": "{{leftToolbarDescription}}"
+        },
+        {
+          "id": "rightToolbar",
+          "title": "{{rightToolbarTitle}}",
+          "description": "{{rightToolbarDescription}}"
+        }
+      ]
+    },
+    {
+      "toolItems": "csui/widgets/nodestable/headermenuitems",
+      "toolItemMasks": "csui/widgets/nodestable/headermenuitems.mask",
+      "toolbars": [
+        {
+          "id": "headerMenuToolbar",
+          "title": "{{headerMenuTitle}}",
+          "description": "{{headerMenuDescription}}"
+        }
+      ]
+    }
+  ]
+}

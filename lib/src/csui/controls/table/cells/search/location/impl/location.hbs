@@ -1,0 +1,24 @@
+{{#if showLocation}}
+{{#if defaultAction}}
+  <div class="csui-table-cell-location-div">
+    <a href="{{defaultActionUrl}}"
+       class="csui-table-cell-location-value csui-table-cell-default-action
+       csui-table-cell-location-justify-div"
+       title="{{location}}" aria-label="{{locationAria}}">
+      <span class ="csui-icon-type" />
+      <span class="csui-table-cell-location-link-text">{{location}}</span>
+    </a>
+  </div>
+{{else}}
+  <div class="csui-table-cell-location-div">
+    <div class="csui-table-cell-location-justify-div">
+      <span class ="csui-icon-type" />
+      <p class="csui-table-cell-location-value csui-table-cell-no-default-action" title="{{location}}"
+         aria-label="{{nameNoOpenAria}}">{{location}}</p>
+    </div>
+  </div>
+{{/if}}
+{{/if}}
+
+
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

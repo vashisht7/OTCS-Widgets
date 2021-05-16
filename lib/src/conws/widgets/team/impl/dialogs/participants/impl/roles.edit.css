@@ -1,0 +1,267 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .conws-modal-dialog.conws-roles-edit {
+  top: 118px;
+}
+
+.conws-roles-remove-item:focus, .conws-roles-edit-item:focus, .conws-roles-readonly-item:focus  {
+  border: 1px dotted #333333;
+  outline: 0;
+}
+
+.conws-roles-remove-item, .conws-roles-edit-item, .conws-roles-readonly-item {
+  border: 1px solid transparent;
+  outline: 0;
+  margin: 0rem 0.125rem 0rem 0.125rem;
+}
+
+.binf-widgets .conws-roles-edit-canedit-selectitem {
+  background-color: #bac9ce;
+}
+
+.conws-roles-readonly-item span {
+  padding-left: 0.5rem;
+}
+
+.conws-roles-edit div.binf-modal-content {
+  border-radius: 0rem;
+  min-width: 18rem;
+  max-height: 420px;
+  min-height: 300px;
+  height: calc(100vh - 300px);
+}
+
+.conws-roles-edit .binf-modal-header {
+  border-bottom: 0.0625rem solid #a9a9a9;
+  background-color: #f5f5f5;
+  height: 48px;
+}
+
+.conws-roles-edit .binf-modal-header h2 {
+  font-size: 1.125rem;
+  font-style: normal;
+  color: #333333;
+  line-height: 1rem;
+}
+
+.conws-roles-edit .binf-modal-content .binf-modal-body {
+  overflow-y: hidden;
+  padding: 0rem;
+  margin: 0rem;
+  height: calc(100% - 112px);
+}
+
+.conws-roles-edit .binf-modal-content .binf-modal-body .conws-roles-edit-canedit {
+  height: 100%;
+}
+
+
+
+.binf-widgets .conws-roles-edit-readonly {
+  padding: 0.0rem 1.5rem;
+  max-height: 16.4rem;
+  min-height: 6rem;
+  overflow-y: hidden;
+  position: relative;
+}
+
+.conws-roles-edit-readonly li {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  border-bottom: 0.063rem solid #e6e6e6;
+  line-height: 3rem;
+  font-size: 0.875rem;
+  font-style: normal;
+  color: #414042;
+}
+
+
+
+.binf-widgets .conws-roles-edit-left {
+  width: 50%;
+  float: left;
+}
+
+.binf-widgets .conws-roles-edit-right {
+  width: 50%;
+  height: 100%;
+  float: right;
+}
+
+.binf-widgets .conws-roles-edit-canedit-left {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+.binf-widgets .conws-roles-edit-canedit-header {
+  overflow-x: hidden;
+  height: 3rem;
+  border-bottom: 0.0625rem solid #a9a9a9;
+  padding: 1rem 0rem 1rem 0.5rem;
+  background-color: #e6e6e6;
+  padding-right: 12px;
+}
+
+.binf-widgets .conws-roles-edit-canedit-content {
+  height: calc(100% - 48px);
+  overflow: hidden;
+  position: relative;
+}
+
+.binf-widgets .conws-roles-edit-canedit-separator {
+  border-right: 0.0625rem solid #a9a9a9;
+}
+
+
+
+.conws-roles-edit-remove-list li {
+  height: 3rem;
+  padding: 0.25rem 0.3125rem 0.25rem 0.3125rem;
+}
+
+.binf-widgets .conws-roles-edit-canedit-setitem, .binf-widgets .conws-roles-edit-canedit-setitem-inherit {
+  background: #e7f1d9;
+  height: 100%;
+  padding-left: 0.5rem;
+  border: 0.0625rem solid #8cc53e;
+  border-radius: 0.1875rem;
+  cursor: default;
+  position: relative;
+}
+
+.conws-roles-edit-remove-list:focus{
+  border: 0.0625rem solid #1079ae;
+}
+
+.binf-widgets .conws-roles-edit-canedit-setitem a {
+  width: 0.625rem;
+  height: 0.625rem;
+  position: absolute;
+  top: 50%;
+  right: 0.5rem;
+  transform: translate(0, -50%);
+}
+
+.binf-widgets .conws-roles-edit-canedit-setitem .conws-roles-edit-canedit-name {
+  overflow: hidden;
+  white-space: pre;
+  max-width: 90%;
+  text-overflow: ellipsis;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+
+  font-size: 0.875rem;
+  font-style: normal;
+  color: #414042;
+  line-height: 1rem;
+}
+
+.binf-widgets .conws-roles-edit-canedit-setitem-inherit .conws-roles-edit-canedit-name {
+  overflow: hidden;
+  white-space: pre;
+  max-width: 70%;
+  text-overflow: ellipsis;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+
+  font-size: 0.875rem;
+  font-style: normal;
+  color: #414042;
+  line-height: 1rem;
+}
+
+.binf-widgets .conws-roles-edit-canedit-setitem-inherit .conws-roles-edit-canedit-inherit {
+  height: 0.75rem;
+  line-height: 0.75rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-size: 0.5rem;
+  color: #ffffff;
+  border-radius: 0.125rem;
+  background-color: #1079ae;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  right: 0.5rem;
+  transform: translate(0, -50%);
+}
+
+.binf-widgets .conws-roles-edit-canedit-empty {
+  margin: 1rem;
+}
+
+.conws-roles-edit-canedit-empty h2 {
+  font-size: 1rem;
+  font-style: normal;
+  color: #f05822;
+  line-height: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.conws-roles-edit-canedit-empty h4 {
+  color: #333333;
+  font-size: 0.75rem;
+}
+
+.binf-widgets .conws-roles-edit-canedit-empty span {
+  background-size: cover;
+  width: 0.75rem;
+  height: 0.75rem;
+  float: left;
+  margin-right: 0.2rem;
+  margin-top: 0.2rem;
+}
+
+.conws-roles-edit-canedit-empty .conws-roles-edit-canedit-empty-text {
+  margin-left: 1rem;
+}
+
+
+
+.conws-roles-edit-canedit-content .conws-roles-edit-list li {
+  height: 100%;
+  width: 99%;
+}
+
+.conws-roles-edit-canedit-content .conws-roles-edit-list li a {
+  padding: 0rem 0.5rem 0rem 1rem;
+  white-space: pre;
+}
+
+.binf-widgets .conws-roles-edit-canedit-selectitem {
+  height: 2.875rem;
+  line-height: 2.875rem;
+  width: 100%;
+  cursor: pointer;
+  border-top: 0.0625rem solid #ffffff;
+  border-bottom: 0.0625rem solid #ffffff;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.conws-roles-edit-canedit-selectitem:hover {
+  background-color: #bac9ce;
+}
+
+.conws-roles-edit-canedit-selectitem:focus {
+  border: 0.0625rem solid #0072aa;
+  background-color: #bac9ce;
+}
+
+.conws-roles-edit-canedit-selectitem:active {
+  background-color: #dfe7ae;
+}
+
+.binf-widgets a.conws-roles-edit-canedit-selectitem {
+  display: block;
+  text-decoration: none;
+  color: #333333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+

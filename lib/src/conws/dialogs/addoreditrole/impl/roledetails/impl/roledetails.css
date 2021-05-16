@@ -1,0 +1,39 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .csui-permissions-level.conws-addoreditrole-dialog.cs-dialog .conws-addoreditrole-roledetails-left {
+    float: left;
+    width: 60%;
+    padding-left: 24.5px;
+}
+
+.binf-widgets .csui-permissions-level.conws-addoreditrole-dialog.cs-dialog .conws-addoreditrole-roledetails-right {
+    float: right;
+    width: 40%;
+}
+
+.conws-addoreditrole-roledetails .conws-addoreditrole-roledetails-left .cs-form-doublecolumn .alpaca-container-item {
+    padding-bottom: 10px;
+}
+
+.conws-addoreditrole-roledetails .conws-addoreditrole-roledetails-right .cs-form .binf-form-group.alpaca-field {
+    padding-top: 25px;
+}
+
+.binf-widgets .csui-permissions-level.conws-addoreditrole-dialog.cs-dialog .conws-addoreditrole-roledetails .conws-addoreditrole-roledetails-left .cs-form .alpaca-container-item>.binf-form-group.alpaca-field .alpaca-control-label {
+    width: 100%;
+    text-align: left;
+    font-size: 12px;
+}
+
+.binf-widgets .csui-permissions-level.conws-addoreditrole-dialog.cs-dialog .conws-addoreditrole-roledetails .conws-addoreditrole-roledetails-left .binf-help-block .alpaca-message {
+    width: 100%;
+    text-align: left;
+}
+
+.binf-widgets .csui-permissions-level.conws-addoreditrole-dialog.cs-dialog .conws-addoreditrole-roledetails .conws-addoreditrole-roledetails-left .cs-form .alpaca-container-item>.binf-form-group.alpaca-field>.binf-col-sm-9 {
+    width: 100%;
+}
+
+.conws-addoreditrole-roledetails .conws-addoreditrole-roledetails-left .cs-form .alpaca-container-item .binf-help-block.alpaca-message {
+    margin-left: 0;
+}

@@ -1,0 +1,21 @@
+<div class="authenticate-description" id="authenticateDescLabelAndUserID">
+  {{authenticateDescLabelAndUser}}
+</div>
+<div class="authenticate-description" id="authenticateEnterPasswordID">
+  {{authenticateEnterPassword}}
+</div>
+<div class="authenticate-label">
+<span class="binf-glyphicon binf-glyphicon-star"></span>
+  {{label}}
+</div>
+<div class="authenticate-textbox">
+  <input type="password" class="authenticate-input" placeholder="{{placeholder}}"
+         aria-label="{{ariaLabel}}" aria-required="true"
+         aria-labelledby="authenticateDescLabelAndUserID authenticateEnterPasswordID"></input>
+  <div class="has-error-label binf-hidden" role="alert" aria-hidden="true">
+   <span id="error">
+    {{authenticateFailed}}
+    </span>
+  </div>
+</div>
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

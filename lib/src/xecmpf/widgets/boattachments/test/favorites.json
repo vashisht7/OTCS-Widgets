@@ -1,0 +1,14 @@
+{
+    "links": {
+        "data": {
+            "self": {
+                "body": "",
+                "content_type": "",
+                "href": "/api/v2/members/favorites?actions=addcategory&actions=addversion&actions=open&actions=copy&actions=delete&actions=download&actions=edit&actions=editactivex&actions=rename&actions=move&actions=permissions&actions=properties&actions=reserve&actions=unreserve&actions=collectioncancollect&actions=removefromcollection&expand=properties{original_id,parent_id,reserved_user_id}&fields=favorites{name,tab_id}&fields=properties&fields=versions{mime_type,owner_id}.element(0)&sort=order",
+                "method": "GET",
+                "name": ""
+            }
+        }
+    },
+    "results": []
+}

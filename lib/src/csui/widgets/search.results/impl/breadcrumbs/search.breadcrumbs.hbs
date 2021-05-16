@@ -1,0 +1,21 @@
+<li class="binf-dropdown binf-hidden binf-search-breadcrumb-ddmenu">
+  <a href="#" class="binf-dropdown-toggle csui-subcrumb csui-acc-focusable"
+     data-binf-toggle="dropdown" title="{{subcrumbTooltip}}">...</a>
+  <ul class="binf-dropdown-menu" role="menu">
+    {{#each crumbs}}
+    <li role="menuitem" class="csui-breadcrumb-menu binf-hidden">
+      <a class='csui-breadcrumb csui-acc-focusable' href="{{this.attributes.node_link_url}}"
+         data-id="{{this.attributes.id}}"
+         title="{{this.attributes.name}}">{{this.attributes.name}}</a>
+    {{/each}}
+  </ul>
+</li>
+
+{{#each crumbs}}
+  <li class="tail">
+    <a class="csui-breadcrumb csui-acc-focusable" href="{{this.attributes.node_link_url}}"
+       data-id="{{this.attributes.id}}"
+       title="{{this.attributes.name}}">{{this.attributes.name}}</a>
+  </li>
+{{/each}}
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

@@ -1,0 +1,139 @@
+{
+  "csui/models/server.module/server.module.collection": {
+    "modules": {
+      "xecmpf": {
+        "version": "16.0.0"
+      }
+    }
+  },
+  "csui/models/widget/widget.collection": {
+    "widgets": {
+      "xecmpf": [
+        "xecmpf/widgets/boattachments",
+        "xecmpf/widgets/dossier",
+        "xecmpf/widgets/header",
+        "xecmpf/widgets/scan",
+        "xecmpf/widgets/eac"
+      ]
+    }
+  },
+  "csui/controls/table/cells/cell.factory": {
+    "extensions": {
+      "xecmpf": [
+        "xecmpf/widgets/boattachments/impl/boattachment.table/tablecell/createdby.view",
+        "xecmpf/widgets/boattachments/impl/boattachment.table/tablecell/modifiedby.view",
+        "xecmpf/controls/table/cells/eac.actionplan.view"
+      ]
+    }
+  },
+  "csui/controls/table/inlineforms/inlineform.factory": {
+    "extensions": {
+      "xecmpf": []
+    }
+  },
+  "csui/utils/commands": {
+    "extensions": {
+      "xecmpf": [
+        "xecmpf/utils/commands/folderbrowse/open.full.page.workspace",
+        "xecmpf/utils/commands/folderbrowse/search.container",
+        "xecmpf/utils/commands/folderbrowse/go.to.workspace.history",
+        "xecmpf/utils/commands/workspaces/workspace.delete",
+        "xecmpf/utils/commands/boattachments/boattachments.create",
+        "xecmpf/utils/commands/eac/eac.refresh",
+        "xecmpf/utils/commands/eac/eac.back",
+        "xecmpf/widgets/boattachments/impl/boattachment.table/commands/snapshot"
+      ]
+    }
+  },
+  "csui/widgets/nodestable/toolbaritems": {
+    "extensions": {
+      "xecmpf": [
+        "xecmpf/widgets/integration/folderbrowse/toolbaritems"
+      ]
+    }
+  },
+  "csui/controls/tabletoolbar/tabletoolbar.view": {
+    "extensions": {
+      "xecmpf": []
+    }
+  },
+  "csui/widgets/metadata/metadata.panels": {
+    "extensions": {
+      "xecmpf": [
+        "xecmpf/widgets/myattachments/metadata.property.panels"
+      ]
+    }
+  },
+  "csui/widgets/metadata/metadata.property.panels": {
+    "extensions": {
+      "xecmpf": [
+        "xecmpf/controls/property.panels/reference/reference.panel"
+      ]
+    }
+  },
+  "csui/utils/contexts/perspective/search.perspectives": {
+    "extensions": {
+      "xecmpf": [
+        "xecmpf/utils/perspective/custom.search.perspective"
+      ]
+    }
+  },
+  "csui/dialogs/node.picker/start.locations/start.location.collection": {
+    "startLocations": {
+      "xecmpf": [
+        "xecmpf/dialogs/node.picker/start.locations/businessobjecttypes.container",
+        "xecmpf/dialogs/node.picker/start.locations/extended.ecm.volume.container"
+      ]
+    }
+  },
+  "csui/utils/contexts/perspective/node.perspectives": {
+    "extensions": {
+      "xecmpf": [
+        "xecmpf/utils/perspective/eventactionnode.perspective"
+      ]
+    }
+  },  
+  
+  "csui/perspectives/tabbed/tabbed.perspective.view" : {
+    "unSupportedWidgets": {
+      "xecmpf": [
+        "xecmpf/widgets/scan"
+      ]
+    }
+  },
+  "csui/perspectives/flow/flow.perspective.view" : {
+    "unSupportedWidgets": {
+      "xecmpf": [
+        "xecmpf/widgets/scan"
+      ]
+    }
+  },
+  "csui/perspectives/grid/grid.perspective.view" : {
+    "unSupportedWidgets": {
+     "xecmpf": [
+        "xecmpf/widgets/scan"
+      ]
+    }
+  },
+  "csui/perspectives/left-center-right/left-center-right.perspective.view" : {
+    "unSupportedWidgets": {
+      "xecmpf": [
+        "xecmpf/widgets/scan"
+      ]
+    }
+  },
+  "csui/perspectives/tabbed-flow/tabbed-flow.perspective.view": {
+    "unSupportedWidgets": {
+     "xecmpf": [
+        "xecmpf/widgets/scan"
+      ]
+    }
+  },
+  "csui/perspectives/single/single.perspective.view": {
+    "unSupportedWidgets": {
+     "xecmpf": [
+        "xecmpf/widgets/scan"
+      ]
+    }
+  }
+}

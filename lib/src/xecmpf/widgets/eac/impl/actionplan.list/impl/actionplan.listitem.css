@@ -1,0 +1,67 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .xecmpf-eac-action-plan-list li.xecmpf-eac-action-plan-list-item {
+    position: relative;
+    display: flex;
+    flex: 1 1 auto;
+    max-width: 100%;
+    height: 42px;
+    min-height: 42px;
+    align-items: center;
+    font-size: 14px;
+}
+.binf-widgets .xecmpf-eac-action-plan-list li.xecmpf-eac-action-plan-list-item .xecmpf-eac-action-plan-list-item-selection-marker {
+    display: flex;
+    flex: 0 0 4px;
+    height: 100%;
+}
+.binf-widgets .xecmpf-eac-action-plan-list .xecmpf-eac-action-plan-list-item a:visited, .binf-widgets .xecmpf-eac-action-plan-list .xecmpf-eac-action-plan-list-item a:hover {
+    text-decoration: none;
+    color: #333333;
+    outline: 0;
+}
+
+.binf-widgets .xecmpf-eac-action-plan-list li.xecmpf-eac-action-plan-list-item .xecmpf-eac-action-plan-name-link {
+    color: #333333;
+    flex: 1 1 auto;
+    display: flex;
+    white-space: nowrap;
+    height: inherit;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 19px;
+    font-size: 14px;
+    line-height: 18px;
+}
+.binf-widgets .xecmpf-eac-action-plan-list li.xecmpf-eac-action-plan-list-item .xecmpf-eac-action-plan-list-item-delete-btn {
+    position: absolute;
+    top: 13px;
+    right: 4%;
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    display: none;
+}
+.binf-widgets .xecmpf-eac-action-plan-list li.xecmpf-eac-action-plan-list-item .xecmpf-eac-action-plan-list-item-delete-btn .icon {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+
+
+
+.binf-widgets .xecmpf-eac-action-plan-list li.xecmpf-eac-action-plan-list-item:hover {    
+    background-color: #b2bec5;
+}
+.binf-widgets .xecmpf-eac-action-plan-list li.xecmpf-eac-action-plan-list-item:hover .xecmpf-eac-action-plan-list-item-delete-btn.binf-btn {
+    display: block;
+}
+.binf-widgets .xecmpf-eac-action-plan-list li.xecmpf-eac-action-plan-list-item.binf-active {
+    background-color: #dfe7ea; 
+}
+.xecmpf-eac-action-plan-list li.xecmpf-eac-action-plan-list-item.binf-active .xecmpf-eac-action-plan-list-item-selection-marker {
+    background-color: #7b9ab0;
+}
+
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    
+    <link rel="stylesheet" href="https://ecmlink18dev.opentext.net/img/csui/themes/carbonfiber/theme.css">
+    <link rel="stylesheet" href="../../../../csui/themes/carbonfiber/theme.css">
+    <script src="../../../../csui/lib/require.js"></script>
+    <script src="../../../../csui/config.js" data-csui-path="../../../../csui"></script>
+
+    
+    <script src="https://appsforoffice.microsoft.com/lib/1.1/hosted/Office.debug.js" type="application/javascript"></script>
+
+    <script>
+         //window.AllowExpand = false;
+        require.config({
+            paths: {
+                conws: '../../..',
+                conwsoutlook: '../../..'
+            },
+            config: {
+                'csui/utils/contexts/factories/connector': {
+                    connection: {
+                        url: 'http://localhost/otcs/cs.exe/api/v1',
+                        supportPath: '/img',
+                        session: {
+                            ticket: "LYFIAYZ1ofe9wvPI80E1hopLV1KI7kK02LgHGdhulS2u3Qy29GCT9Q/D9is+erLBle1EHNsAcFGYM2kSQUx3bnd9QaJtZBqv"
+                        }
+                    }
+                }
+            }
+        });
+
+        require([
+            'csui/lib/marionette', 'csui/utils/contexts/page/page.context',
+            '../conwsoutlook.view', './conwsoutlook.mock.js'
+        ], function(Marionette, PageContext, HelloView, HelloMock) {
+            // Wrap the widget placeholder
+           
+            var contentRegion = new Marionette.Region({
+                    el: '#content'
+                }),
+                // Create the data managing context
+                context = new PageContext(),
+                // Create the widget instance
+                helloView = new HelloView({
+                    context: context,
+                    isExpandable: false
+                });
+
+            // Show the widget on the page
+            contentRegion.show(helloView);
+            //// Mock the REST API responses
+            //HelloMock.enable();
+            //// Load data from the server
+            //context.fetch();
+
+        });
+    </script>
+
+</head>
+<body class="conwsoutlook-widget binf-widgets">
+    <div id="content" style="background-color:#fff">
+        
+    </div>
+</body>
+</html>
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

@@ -1,0 +1,243 @@
+{
+  "links": {
+    "data": {
+      "self": {
+        "body": "",
+        "content_type": "",
+        "href": "\/api\/v2\/businessworkspaces?limit=30&page=1&sort=desc_name&where_name=contains_X&metadata&expanded_view=true&where_is_early=true&where_bo_type=KNA1&where_ext_system_id=D9A",
+        "method": "GET",
+        "name": ""
+      }
+    }
+  },
+  "meta_data": {
+    "properties": {
+      "create_date": {
+        "align": "center",
+        "name": "Created",
+        "persona": "",
+        "type": -7,
+        "width_weight": 0
+      },
+      "description": {
+        "align": "left",
+        "name": "Description",
+        "persona": "",
+        "type": -1,
+        "width_weight": 100
+      },
+      "favorite": {
+        "align": "center",
+        "name": "Favorite",
+        "persona": "",
+        "type": 5,
+        "width_weight": 0
+      },
+      "icon": {
+        "align": "center",
+        "name": "Icon",
+        "persona": "",
+        "type": -1,
+        "width_weight": 0
+      },
+      "id": {
+        "align": "right",
+        "name": "DataID",
+        "persona": "node",
+        "sort": false,
+        "type": 2,
+        "width_weight": 0
+      },
+      "mime_type": {
+        "align": "left",
+        "name": "MIME Type",
+        "persona": "",
+        "type": -1,
+        "width_weight": 0
+      },
+      "modify_date": {
+        "align": "left",
+        "name": "Modified",
+        "persona": "",
+        "sort": true,
+        "type": -7,
+        "width_weight": 0
+      },
+      "name": {
+        "align": "left",
+        "name": "Name",
+        "persona": "",
+        "sort": true,
+        "type": -1,
+        "width_weight": 100
+      },
+      "original_id": {
+        "align": "left",
+        "name": "Original ID",
+        "persona": "node",
+        "type": 2,
+        "width_weight": 0
+      },
+      "parent_id": {
+        "align": "left",
+        "name": "Parent ID",
+        "persona": "node",
+        "type": 2,
+        "width_weight": 0
+      },
+      "reserved": {
+        "align": "center",
+        "name": "Reserve",
+        "persona": "",
+        "type": 5,
+        "width_weight": 0
+      },
+      "reserved_date": {
+        "align": "center",
+        "name": "Reserved",
+        "persona": "",
+        "type": -7,
+        "width_weight": 0
+      },
+      "reserved_user_id": {
+        "align": "center",
+        "name": "Reserved By",
+        "persona": "member",
+        "type": 2,
+        "width_weight": 0
+      },
+      "size": {
+        "align": "right",
+        "name": "Size",
+        "persona": "",
+        "sort": false,
+        "type": 2,
+        "width_weight": 0
+      },
+      "type": {
+        "align": "center",
+        "name": "Type",
+        "persona": "",
+        "sort": false,
+        "type": 2,
+        "width_weight": 0
+      },
+      "volume_id": {
+        "align": "left",
+        "name": "VolumeID",
+        "persona": "node",
+        "type": 2,
+        "width_weight": 0
+      },
+      "wnd_att_r7q_g": {
+        "align": "center",
+        "name": "Test",
+        "sort": false,
+        "type": -1,
+        "width_weight": 1
+      },
+      "wnd_comments": {
+        "align": "center",
+        "name": "Comments",
+        "sort": false,
+        "type": 2,
+        "width_weight": 1
+      },
+      "wnd_createdate": {
+        "align": "center",
+        "name": "Creation Date",
+        "sort": false,
+        "type": -7,
+        "width_weight": 1
+      },
+      "wnd_createdby": {
+        "align": "center",
+        "name": "Created By",
+        "persona": "user",
+        "sort": false,
+        "type": 2,
+        "width_weight": 0
+      },
+      "wnd_modifiedby": {
+        "align": "center",
+        "name": "Modified By",
+        "persona": "user",
+        "sort": false,
+        "type": 2,
+        "width_weight": 0
+      },
+      "wnd_nickname": {
+        "align": "center",
+        "name": "Nickname",
+        "sort": false,
+        "type": -1,
+        "width_weight": 1
+      },
+      "wnd_owner": {
+        "align": "center",
+        "name": "Owner",
+        "persona": "user",
+        "sort": false,
+        "type": 2,
+        "width_weight": 0
+      },
+      "wnd_version": {
+        "align": "center",
+        "name": "Version",
+        "sort": false,
+        "type": 2,
+        "width_weight": 1
+      },
+      "wnf_emailfrom": {
+        "align": "center",
+        "name": "Test 2",
+        "sort": false,
+        "type": -1,
+        "width_weight": 1
+      },
+      "wnf_readydate": {
+        "align": "center",
+        "name": "Added to Package",
+        "sort": false,
+        "type": -7,
+        "width_weight": 1
+      },
+      "wnf_wksp_modify_date": {
+        "align": "center",
+        "name": "ModDate",
+        "sort": true,
+        "type": -7,
+        "width_weight": 1
+      },
+      "wnf_wksp_name_en": {
+        "align": "center",
+        "name": "Workspace Name en",
+        "sort": true,
+        "type": -1,
+        "width_weight": 1
+      },
+      "wnf_wksp_type_id": {
+        "align": "center",
+        "name": "Workspace Type ID",
+        "sort": false,
+        "type": 2,
+        "width_weight": 1
+      }
+    }
+  },
+  "paging": {
+    "limit": 30,
+    "page": 1,
+    "page_total": 1,
+    "range_max": 0,
+    "range_min": 0,
+    "total_count": 0
+  },
+  "results": [
+
+  ],
+  "wksp_info": {
+    "wksp_type_icon": null,
+    "wksp_type_icon_content_type": "type_base64_content"
+  }
+}

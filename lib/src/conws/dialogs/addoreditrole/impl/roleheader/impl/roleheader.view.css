@@ -1,0 +1,44 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .csui-permissions-level.conws-addoreditrole-dialog.cs-dialog .conws-addoreditrole-wizardstep-header {
+    position: relative;
+    top: -16px;
+}
+
+.binf-widgets .csui-permissions-level.conws-addoreditrole-dialog.cs-dialog .dashed-border {
+    height: 18px;
+    border-bottom: 1px dashed;
+}
+
+.binf-widgets .csui-permissions-level.conws-addoreditrole-dialog.cs-dialog .conws-addoreditrole-wizardstep-header span {
+    display: inline-block;
+    height: 32px;
+    padding: 0 8px;
+    font-size: 13px;
+    line-height: 24px;
+    vertical-align: middle;    
+    background: white;    
+}
+
+.binf-widgets .csui-permissions-level.conws-addoreditrole-dialog.cs-dialog .conws-addoreditrole-wizardstep-header-active {
+    font-weight: bold;
+}
+
+.conws-addoreditrole-wizardstep-header .conws-addoreditrole-wizardstep3 {
+    position: absolute;
+    right: 0;
+}
+
+.conws-addoreditrole-wizardstep-header .conws-addoreditrole-wizardstep2 {
+    position: absolute;
+    right: 45%;
+}
+
+.binf-widgets .csui-permissions-level.conws-addoreditrole-dialog.cs-dialog .conws-addoreditrole-roledetails-header,
+.binf-widgets .csui-permissions-level.conws-addoreditrole-dialog.cs-dialog .conws-addoreditrole-rolepermissions-header,
+.binf-widgets .csui-permissions-level.conws-addoreditrole-dialog.cs-dialog  .conws-addoreditrole-roleparticipants-header
+{
+    height: 32px;
+    padding: 0 16px;
+    position: relative;
+}

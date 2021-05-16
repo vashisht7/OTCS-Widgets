@@ -1,0 +1,11 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+
+.binf-widgets .relatedworkspaces .binf-modal-content .tile-header.binf-modal-header {
+  display: none;
+}
+
+
+.binf-widgets .conwsworkspacestable.relatedworkspaces .binf-modal-body {
+  height: 100%;
+}

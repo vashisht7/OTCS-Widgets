@@ -1,0 +1,22 @@
+<div class="xecmpf-document-preview"></div>
+
+<div class="xecmpf-document-metadata">
+  {{#unless hideFavorite}}
+    <div class="document-favorite">
+      {{#if favorite}}
+           <a href="#" class="socialFav selected" title="{{removeFav}}" aria-label="{{removeFav}}">
+          <span class="icon icon-socialFav"></span>
+        </a>
+      {{else}}
+        <a href="#" class="socialFav notselected" tabindex="0" title="{{addFav}}" aria-label="{{addFav}}">
+          <span class="icon icon-socialFavOpen"></span>
+        </a>
+      {{/if}}
+    </div>
+  {{/unless}}
+  {{#unless hideMetadata}}
+    <div class="document-category-attributes"></div>
+  {{/unless}}
+</div>
+
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

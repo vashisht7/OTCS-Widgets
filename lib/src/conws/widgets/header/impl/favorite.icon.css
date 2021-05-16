@@ -1,0 +1,51 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .cs-perspective-panel .conws-header-toolbar .conws-tabletoolbar .csui-favorite-star-view-container .csui-favorite-star:focus {
+  outline: 1px dotted #ffffff;
+  outline-offset: -1px;
+}
+
+
+.binf-widgets .cs-perspective-panel .conws-header-toolbar .csui-toolbar .csui-favorite-star-view-container .icon.icon-socialFav {
+  background: url('../../../image/icons/switch_favourite_header_on.svg') no-repeat center;
+  height:22px;
+}
+
+.binf-widgets .cs-perspective-panel .conws-header-toolbar .csui-toolbar .csui-favorite-star-view-container .icon.icon-socialFavOpen {
+  background: url('../../../image/icons/switch_favourite_header.svg') no-repeat center;
+  height: 22px;
+}
+
+.binf-widgets .cs-perspective-panel .conws-header .conws-header-toolbar .csui-favorite-star-view-container .csui-favorite-star {
+  padding: 0px;
+}
+
+.binf-widgets .cs-perspective-panel .conws-header-toolbar .csui-favorite-star-view-container .csui-favorite-star .icon-socialFavOpen {
+  padding: 10px;
+}
+
+.binf-widgets .cs-perspective-panel .conws-header .conws-tabletoolbar .csui-toolbar.binf-nav > li#Favorite2 {
+  padding: 0 10px;
+}
+
+.binf-widgets .cs-perspective-panel .conws-header-toolbar-extension .csui-favorite-star-view-container .csui-favorite-star .icon-socialFavOpen {
+  margin-top: -7px;
+}
+
+.binf-widgets .cs-perspective-panel .cs-collapse .conws-header .csui-toolbar .icon-socialFavOpen {
+  margin-top: -6px;
+}
+
+
+
+.binf-widgets .cs-perspective-panel .conws-header-toolbar-extension .csui-favorite-star-view-container .binf-popover {
+  top: 0px !important;
+}
+
+.conws-header .conws-header-toolbar .csui-favorite-star-view-container .binf-popover {
+  top: -12px !important;
+}
+
+.cs-collapse .conws-header .conws-header-toolbar .csui-favorite-star-view-container .binf-popover .binf-arrow {
+  top: calc(50% - 47px) !important;
+}

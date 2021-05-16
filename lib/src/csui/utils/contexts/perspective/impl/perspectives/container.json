@@ -1,0 +1,8 @@
+{
+  "type": "left-center-right",
+  "options": {
+    "center": {
+      "type": "csui/widgets/nodestable"
+    }
+  }
+}

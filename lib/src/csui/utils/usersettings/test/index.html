@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    <title>User Settings Dialog</title>
+
+    <link href="../../../themes/carbonfiber/theme.css" rel="stylesheet">
+
+    <style>
+        .csui-usersettings {
+            background-color: #fff;
+        }
+        div.binf-container-fluid grid-rows { padding-top: 30px; }
+    </style>
+
+    <script src="../../../lib/require.js"></script>
+    <script data-csui-path="../../.." src="../../../config.js"></script>
+
+    <script>
+      require([
+        'csui/lib/backbone', 'csui/lib/marionette', '../usersettings.tab.view'
+      ], function (Backbone, Marionette, UserSettingsView) {
+        'use strict';
+
+        var userSettingsView, region, cbView, cbRegion;
+
+        userSettingsView = new UserSettingsView();
+        region = new Marionette.Region({el: '#userSettings'});
+        region.show(userSettingsView);
+      });
+
+    </script>
+</head>
+
+<body class="binf-widgets">
+
+<a href="start.html">Start</a>
+
+<div class="binf-container-fluid grid-rows">
+    <div class="binf-row">
+        <div class="binf-col-sm-5 binf-col-md-4 binf-col-lg-3" id="userSettings"></div>
+    </div>
+</div>
+
+<a href="end.html">End</a>
+
+</body>
+
+</html>
+
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

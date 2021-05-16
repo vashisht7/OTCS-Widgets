@@ -1,0 +1,113 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .conws-team .title-team {
+  background-image: url('image/icons/title_team.svg');
+}
+
+.binf-widgets .conws-team.cs-dialog {
+  overflow: auto;
+}
+
+.binf-widgets .conws-team .mime-team {
+  background-image: url('image/icons/mime_team.svg');
+}
+
+.binf-widgets .conws-team .binf-modal-header {
+  height: 90px;
+}
+
+.binf-widgets .conws-team .binf-modal-header div.tile-title {
+  width: 0px !important;
+}
+
+.binf-widgets .conws-team .binf-modal-header > span {
+  width: 3.5rem;
+  border-radius: 5%;
+}
+
+.binf-widgets .conws-team .cs-header-control {
+  width: calc(100% - 22.5rem);
+  margin-left: 0px;
+}
+
+.binf-widgets .conws-team .tile-type-image {
+  width: 3rem;
+  height: 100%;
+  background-position: center;
+  font-size: 2.5em;
+  float: left;
+  margin-right: 10px;
+  position: relative;
+  left: 0;
+  display: table-cell;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+.binf-widgets .conws-team .tile-type-image > img {
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 5%;
+}
+
+.binf-widgets .conws-team .emptyview {
+  text-align: center;
+  margin: 3.75rem 1rem 1rem;
+}
+
+.binf-widgets .conws-teamtables {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.binf-widgets .conws-teamtables .binf-tab-content {
+  height: calc(100vh - 300px);
+}
+
+.binf-widgets .conws-teamtables .binf-nav > li > a:hover,
+.binf-widgets .conws-teamtables .binf-nav > li > a:focus {
+  text-decoration: none;
+  background-color: #ffffff;
+}
+
+.binf-widgets .conws-teamtables .binf-nav-tabs > li.binf-active > a {
+  border: 0px solid #dddddd;
+  border-bottom: 3px solid;
+}
+
+.binf-widgets .conws-teamtables .binf-nav-tabs {
+  margin-top: -47px;
+  margin-right: 5rem;
+}
+
+.binf-widgets .conws-teamtables .binf-tab-pane {
+  height: 100%;
+}
+
+.binf-widgets .conws-teamtables .binf-tab-content .binf-tab-pane {
+  flex-shrink: 1000;
+  height: 100%;
+  min-height: 320px;
+  overflow-y: hidden;
+}
+
+.binf-widgets .conws-teamtables #rolesview,
+.binf-widgets .conws-teamtables #participantsview {
+  height: calc(100% - 42px);
+  overflow-y: hidden;
+}
+
+.binf-widgets .conws-teamtables .csui-nodetable table.dataTable > tbody > tr > td {
+  min-height: 3rem;
+}
+
+.binf-widgets .conws-teamtables .csui-nodetable table.dataTable .dataTables_empty {
+  padding-top: 5rem;
+  white-space: normal;
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 300;
+  color: #757575;
+}

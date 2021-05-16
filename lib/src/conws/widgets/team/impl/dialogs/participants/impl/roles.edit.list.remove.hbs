@@ -1,0 +1,36 @@
+<div>
+  {{#if setRoles}}
+    <ul>
+      {{#each setRoles}}
+        <li class="conws-roles-remove-item">
+          {{#if inherited_from_id}}
+            <div class="conws-roles-edit-canedit-setitem-inherit">
+              <div class="conws-roles-edit-canedit-name" title="{{name}}">{{name}}</div>
+              <div class="conws-roles-edit-canedit-inherit">{{../../captions.RoleInherited}}</div>
+            </div>
+          {{else}}
+            <div class="conws-roles-edit-canedit-setitem conws-roles-edit-itemaction-remove">
+              <div class="conws-roles-edit-canedit-name" title="{{name}}">{{name}}</div>
+              <a href="#" class="csui-icon inline-edit-icon binf-close" data-id="{{id}}"
+                 title="{{../../removeRole}}" aria-label="{{../../removeRole}}"></a>
+            </div>
+          {{/if}}
+        </li>
+      {{/each}}
+    </ul>
+  {{else}}
+    {{#if removeParticipant}}
+      <div class="conws-roles-edit-canedit-empty">
+        <span class="csui-icon csui-icon-notification-warning"
+              title="{{captions.RemoveParticipantWarning}}" aria-label="{{captions.RemoveParticipantWarning}}">
+        </span>
+        <div class="conws-roles-edit-canedit-empty-text">
+          <h2>{{captions.RemoveParticipant1}}</h2>
+          <h4>{{captions.RemoveParticipant2}}</h4>
+        </div>
+      </div>
+    {{/if}}
+  {{/if}}
+</div>
+
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

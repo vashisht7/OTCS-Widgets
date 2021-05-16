@@ -1,0 +1,162 @@
+[
+  {
+    "signature": "Properties",
+    "name": "Props",
+    "icon": "icon icon-toolbar-metadata"
+  },
+  {
+    "signature": "CopyLink",
+    "name": "Copy Link"
+  },
+  {
+    "signature": "CopyLink",
+    "name": "Copy Link"
+  },
+  {
+    "signature": "CopyLink",
+    "name": "Copy Link"
+  },
+  {
+    "signature": "CopyLink",
+    "name": "Copy Link"
+  },
+  {
+    "signature": "EmailLink2",
+    "name": "Link1",
+    "icon": "icon icon-toolbar-share"
+  },
+  {
+    "signature": "Sub1",
+    "name": "Sub1",
+    "subItemOf": "EmailLink2"
+  },
+  {
+    "signature": "Sub2",
+    "name": "Sub2",
+    "subItemOf": "EmailLink2"
+  },
+  {
+    "signature": "Sub21",
+    "name": "Sub21",
+    "subItemOf": "Sub2"
+  },
+  {
+    "signature": "Sub22",
+    "name": "Sub22",
+    "subItemOf": "Sub2"
+  },
+  {
+    "signature": "EmailLink",
+    "name": "Actions",
+    "subItems": [
+      {
+        "name": "Item 1"
+      },
+      {
+        "name": "Item 2"
+      },
+      {
+        "name": "Item 3"
+      },
+      {
+        "name": "Item 4"
+      },
+      {
+        "name": "Item 5"
+      },
+      {
+        "name": "Item 6",
+        "subItems": [
+          {
+            "name": "Item 1"
+          },
+          {
+            "name": "Item 2",
+            "subItems": [
+              {
+                "name": "Item 1"
+              },
+              {
+                "name": "Item 2"
+              }
+            ]
+          },
+          {
+            "name": "Item 3"
+          },
+          {
+            "name": "Item 4"
+          },
+          {
+            "name": "Item 5",
+            "subItems": [
+              {
+                "name": "Item 1"
+              },
+              {
+                "name": "Item 2"
+              },
+              {
+                "name": "Item 3",
+                "subItems": [
+                  {
+                    "name": "Item 1"
+                  },
+                  {
+                    "name": "Item 2"
+                  },
+                  {
+                    "name": "Item 3"
+                  },
+                  {
+                    "name": "Item 4"
+                  },
+                  {
+                    "name": "Item 5",
+                    "subItems": [
+                      {
+                        "name": "Item 1"
+                      },
+                      {
+                        "name": "Item 2"
+                      },
+                      {
+                        "name": "Item 3"
+                      },
+                      {
+                        "name": "Item 4"
+                      },
+                      {
+                        "name": "Item 5"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Item 4"
+              },
+              {
+                "name": "Item 5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Item 7"
+      },
+      {
+        "name": "Item 8"
+      },
+      {
+        "name": "Item 9"
+      }
+    ]
+  },
+  {
+    "signature": "EmailLink3",
+    "name": "Email Link22",
+    "subItemOf": "EmailLink"
+  }
+]

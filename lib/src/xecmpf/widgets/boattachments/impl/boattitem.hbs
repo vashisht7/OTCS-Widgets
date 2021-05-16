@@ -1,0 +1,85 @@
+<div class="xecmpf-attachmentitem-action-area">
+  <a class="xecmpf-nostyle" href="{{defaultActionUrl}}">
+    <div class="xecmpf-attachmentitem-border">
+        <div class="xecmpf-attachmentitem-top">
+            <span class="csui-type-icon {{icon}}" aria-hidden="true"></span>
+            <div class="xecmpf-title xecmpf-left">
+          {{#if title.value}}
+              <span class="xecmpf-value">{{title.value}}</span>
+              {{#if reserved_by}}
+                  <span class="csui-icon icon-reserved_self" title="{{reserved_by}}"></span>
+              {{/if}}
+              {{#if reserved_by_other}}
+                  <span class="csui-icon icon-reserved_other" title="{{reserved_by_other}}"></span>
+              {{/if}}
+          {{/if}}
+          {{#if title.label}}
+            <span class="xecmpf-label">{{title.label}}</span>
+          {{/if}}
+          {{#if description.value}}
+            
+            <div class="xecmpf-description-spacer"></div>
+          {{/if}}
+        </div>
+
+        {{#if topRight}}
+          <div class="xecmpf-right">
+            {{#if topRight.value}}
+              <span class="xecmpf-value">{{topRight.value}}</span>
+              {{#if topRight.label}}
+                
+                <div class="xecmpf-spacer"></div>
+              {{/if}}
+            {{/if}}
+            {{#if topRight.label}}
+              <span class="xecmpf-label">{{topRight.label}}</span>
+            {{/if}}
+          </div>
+        {{/if}}
+      </div>
+
+      <div class="xecmpf-attachmentitem-center">
+        {{#if description.value}}
+          <div class="xecmpf-body">{{description.value}}</div>
+        {{/if}}
+      </div>
+
+      <div class="xecmpf-attachmentitem-bottom">
+        {{#if bottomLeft}}
+          <div class="xecmpf-left">
+            {{#if bottomLeft.label}}
+              <span class="xecmpf-label">{{bottomLeft.label}}</span>
+              {{#if bottomLeft.value}}
+                
+                <div class="xecmpf-spacer"></div>
+              {{/if}}
+            {{/if}}
+            {{#if bottomLeft.value}}
+              <span class="xecmpf-value">{{bottomLeft.value}}</span>
+            {{/if}}
+          </div>
+        {{/if}}
+        {{#if bottomRight}}
+          <div class="xecmpf-right">
+            {{#if bottomRight.label}}
+              <span class="xecmpf-label">{{bottomRight.label}}</span>
+              {{#if bottomRight.value}}
+                
+                <div class="xecmpf-spacer"></div>
+              {{/if}}
+            {{/if}}
+            {{#if bottomRight.value}}
+              <span class="xecmpf-value">{{bottomRight.value}}</span>
+            {{/if}}
+          </div>
+        {{/if}}
+      </div>
+    </div>
+  </a>
+</div>
+
+{{#if notLastItem}}
+  <div class="xecmpf-attachmentitem-divider"></div>
+{{/if}}
+
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

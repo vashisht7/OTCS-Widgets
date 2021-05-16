@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Lazy Actions</title>
+  <link rel="stylesheet" href="../../../../csui/themes/carbonfiber/theme.css">
+  <script src="../../../../csui/lib/require.js"></script>
+  <script data-csui-path="../../../../csui" src="../../../../csui/config.js"></script>
+  <script src="../../../../csui/helpers.js"></script>
+
+  <script type="text/javascript">
+    require.config({
+      paths: {
+        xecmpf: '../../../../src',
+        esoc: '../../../../esoc',
+        conws: '../../../../src',
+        csui: '../../../../csui'
+      },
+      deps: [
+        'csui/lib/require.config!csui/csui-extensions.json'
+      ],
+       
+
+        'csui/utils/contexts/factories/node': {
+          attributes: { id: 2000 }
+        }
+      }
+    );
+
+    csui.onReady(
+      ['csui/lib/marionette','csui/lib/underscore', 'csui/utils/contexts/factories/connector', '../lazyToolbar.view',
+        'csui/utils/contexts/page/page.context', 'csui/controls/toolbar/toolitems.factory', "csui/utils/commands", 'csui/behaviors/default.action/impl/defaultaction',
+        'csui/lib/backbone','csui/models/node/node.model','csui/utils/authenticators/basic.authenticator'],
+      function (Marionette, _,Connector, LazyToolbarView, PageContext, ToolItemsFactory, AllCommands, DefaultActionController,Backbone, NodeModel, BasicAuthenticator) {
+        
+        var context = new PageContext({
+        factories: {
+          connector: {
+            connection: {
+              url: 'http://murdock.opentext.com/alpha/cs.exe/api/v1',
+              supportPath: '/alphasupport'
+            }
+          },
+          node: {
+            attributes: {id: 2000}
+          }
+        }
+      });
+        var Authenticator = new BasicAuthenticator();       
+        var connector = context.getObject(Connector, Authenticator);
+        var defaultActionController = new DefaultActionController();
+      var commands           = defaultActionController.commands,
+          defaultActionItems = defaultActionController.actionItems;
+
+        connector.connection = {
+              url: 'http://murdock.opentext.com/alpha/cs.exe/api/v1',
+              supportPath: '/alphasupport'
+            };
+
+        var node = new NodeModel({ id: 184910 }, 
+        {
+          connector:connector,  //commands: defaultActionController.commands,
+              // Fetch action permissions for non-default actions with a delay
+              defaultActionCommands: defaultActionItems.getAllCommandSignatures(commands),
+              delayRestCommands: true
+        });
+
+        node.fetch({async:false});
+
+        var contentRegion = new Marionette.Region({
+          el: '#content'
+        });
+
+
+        var testToolbar = new ToolItemsFactory({
+          menu: [
+          
+            {
+              signature: "properties",
+              name: "properties",
+              index: 2
+            },
+            {
+              signature: "CopyLink",
+              name: "Copy Link",
+              index: 1
+            },
+          ]
+        },
+          {
+            maxItemsShown: 0,
+            dropDownIcon: "icon icon-toolbar-more",
+            addGroupSeparators: false,
+            LazyActions: true
+          });         
+
+
+        context.fetch().then(function () {
+          var delayedToolbarViewOptions = _.extend({
+          toolbarItems: testToolbar,
+          container: node,
+          originatingView: this,
+          context: context,
+          model: node,
+          commands: AllCommands,
+        }, testToolbar.options, { role: 'menu' });
+
+
+            var lazyToolbarView = new LazyToolbarView(delayedToolbarViewOptions);
+            contentRegion.show(lazyToolbarView);
+        });
+      }
+    );
+  </script>
+</head>
+
+<body class="binf-widgets">
+  <div class="binf-container-fluid grid-rows">
+    <div class="binf-row">
+      <div class="binf-col-sm-8 binf-col-md-8 binf-col-lg-8" id="content"></div>
+    </div>
+  </div>
+</body>
+
+</body>
+
+</html>
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

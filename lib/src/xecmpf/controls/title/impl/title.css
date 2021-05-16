@@ -1,0 +1,52 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .title-wrapper {
+  background-color: #ffffff;
+  color: #333333;
+  display: flex;
+  display: -webkit-flex;
+  min-width: 0px;
+  height: 3em;
+  align-items: center;
+  margin: auto;
+}
+
+.binf-widgets .title-wrapper > div {
+  display: flex;
+  display: -webkit-flex;
+  flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+  align-items: center;
+}
+
+
+.binf-widgets .title-wrapper .tile-type-icon {
+  padding: 0px;
+  padding-left: 0.625em;
+}
+
+.binf-widgets .title-wrapper .title-name {
+  display: flex;
+  display: -webkit-flex;
+  flex: 1 1 auto;
+  -webkit-flex: 1 1 auto;
+  min-width: 0;
+  height: 100%;
+  align-items: center;
+}
+
+.binf-widgets .title-wrapper .title-name .title-name-block {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 300;
+  margin: 0;
+  position: relative;
+  font-size: 1.5em;
+  line-height: 63px;
+  -ms-text-overflow: ellipsis;
+  padding-left: 0.33em;
+  padding-right: 0.33em;
+}
+

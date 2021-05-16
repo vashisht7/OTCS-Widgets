@@ -1,0 +1,86 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+
+.binf-widgets .cs-dialog.csui-version-control-dialog .binf-modal-content .tile-header {
+  padding: 16px 16px 16px 32px;
+  height: auto;
+  display: inline-block;
+}
+
+.binf-widgets .cs-dialog.csui-version-control-dialog .binf-modal-content .tile-header .modal-header-item {
+  font-weight: initial;
+  color: #333333;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 48px;
+}
+
+
+.binf-widgets .binf-modal.csui-version-control-dialog {
+  z-index: 1300;
+  overflow: auto;
+}
+
+.binf-widgets .csui-version-control-dialog .binf-modal-dialog {
+  margin-top: 96px;
+  width: 544px;
+}
+
+.binf-widgets .cs-dialog.csui-version-control-dialog .binf-modal-content {
+  border-radius: 3px;
+}
+
+.binf-widgets .cs-dialog.csui-version-control-dialog .binf-modal-content .binf-modal-body {
+  min-height: 70px;
+  padding: 0 32px 24px;
+  margin-right: 0;
+  margin-top: 16px
+}
+
+.csui-version-control-dialog .csui-minor-example {
+  font-size: 12px;
+  padding-left: 30px;
+}
+
+.binf-widgets .csui-version-control-dialog .tile-header .tile-title {
+  margin-left: 6px;
+}
+
+.binf-widgets .csui-add-version-update .binf-row input {
+  cursor: pointer;
+}
+
+.binf-widgets .csui-add-version-update {
+  margin-bottom: 10px;
+}
+
+.binf-widgets .csui-version-control-dialog .tile-header,
+.binf-widgets .csui-version-control-dialog .binf-modal-footer {
+  background: transparent;
+  border: none;
+}
+
+.binf-widgets .csui-version-control-dialog.cs-dialog .tile-header .binf-modal-title .icon {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 32px;
+  width: 32px;
+  float: left;
+}
+
+.binf-widgets .csui-version-control-dialog.cs-dialog .tile-header .binf-modal-title .title-text {
+  margin-left: 15px;
+  width: calc(100% - 47px);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  float: left;
+  line-height: 32px;
+  font-size: 1.3em;
+}
+
+.binf-widgets .csui-version-control-dialog .binf-modal-footer {
+  padding: 16px 24px 16px 32px;
+  border-bottom: 4px solid #111b57;
+}

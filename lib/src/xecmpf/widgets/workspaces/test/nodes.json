@@ -1,0 +1,835 @@
+{
+  "data": [
+    {
+      "volume_id": {
+        "container": true,
+        "container_size": 3,
+        "create_date": "2016-09-22T08:59:40",
+        "create_user_id": 1000,
+        "description": "",
+        "description_multilingual": {
+          "en": ""
+        },
+        "favorite": false,
+        "guid": null,
+        "icon": "\/img\/otsapxecm\/wksp_customer.png",
+        "icon_large": "\/img\/otsapxecm\/wksp_customer_large.png",
+        "id": 69422,
+        "modify_date": "2016-09-22T08:59:40",
+        "modify_user_id": 1000,
+        "name": "Early Workspace 2",
+        "name_multilingual": {
+          "en": "Early Workspace 2"
+        },
+        "owner_group_id": 1001,
+        "owner_user_id": 1000,
+        "parent_id": 22672,
+        "reserved": false,
+        "reserved_date": null,
+        "reserved_user_id": 0,
+        "type": 848,
+        "type_name": "Business Workspace",
+        "versions_control_advanced": false,
+        "volume_id": -2000
+      },
+      "id": 69423,
+      "parent_id": {
+        "container": true,
+        "container_size": 3,
+        "create_date": "2016-09-22T08:59:40",
+        "create_user_id": 1000,
+        "description": "",
+        "description_multilingual": {
+          "en": ""
+        },
+        "favorite": false,
+        "guid": null,
+        "icon": "\/img\/otsapxecm\/wksp_customer.png",
+        "icon_large": "\/img\/otsapxecm\/wksp_customer_large.png",
+        "id": 69422,
+        "modify_date": "2016-09-22T08:59:40",
+        "modify_user_id": 1000,
+        "name": "Early Workspace 2",
+        "name_multilingual": {
+          "en": "Early Workspace 2"
+        },
+        "owner_group_id": 1001,
+        "owner_user_id": 1000,
+        "parent_id": 22672,
+        "reserved": false,
+        "reserved_date": null,
+        "reserved_user_id": 0,
+        "type": 848,
+        "type_name": "Business Workspace",
+        "versions_control_advanced": false,
+        "volume_id": -2000
+      },
+      "name": "Folder 1",
+      "type": 0,
+      "description": "",
+      "create_date": "2016-09-19T17:36:10",
+      "modify_date": "2016-09-22T08:59:41",
+      "reserved": false,
+      "reserved_user_id": 0,
+      "reserved_date": null,
+      "icon": "\/img\/webdoc\/folder.gif",
+      "mime_type": null,
+      "original_id": 0,
+      "wnd_owner": 1000,
+      "wnd_createdby": 1000,
+      "wnd_createdate": "2016-09-19T17:36:10",
+      "wnd_modifiedby": 1000,
+      "wnd_version": null,
+      "wnd_comments": null,
+      "wnf_readydate": null,
+      "wnf_wksp_type_id": null,
+      "wnf_wksp_name_en": null,
+      "wnd_nickname": null,
+      "wnd_att_r7q_g": null,
+      "wnf_emailfrom": null,
+      "wnf_wksp_modify_date": null,
+      "type_name": "Folder",
+      "container": true,
+      "size": 0,
+      "perm_see": true,
+      "perm_see_contents": true,
+      "perm_modify": true,
+      "perm_modify_attributes": true,
+      "perm_modify_permissions": true,
+      "perm_create": true,
+      "perm_delete": true,
+      "perm_delete_versions": true,
+      "perm_reserve": true,
+      "favorite": false,
+      "size_formatted": "0 Items",
+      "reserved_user_login": null,
+      "action_url": "\/v1\/actions\/69423",
+      "parent_id_url": "\/v1\/nodes\/-69422",
+      "commands": {
+        "comment": {
+          "body": "",
+          "content_type": "application\/x-www-form-urlencoded",
+          "href": "",
+          "href_form": "",
+          "method": "POST",
+          "name": "Comments"
+        },
+        "copy": {
+          "body": "",
+          "content_type": "",
+          "href": "",
+          "href_form": "api\/v1\/forms\/nodes\/copy?id=69423",
+          "method": "",
+          "name": "Copy"
+        },
+        "default": {
+          "body": "",
+          "content_type": "",
+          "href": "api\/v1\/nodes\/69423\/nodes",
+          "href_form": "",
+          "method": "GET",
+          "name": "Open"
+        },
+        "delete": {
+          "body": "",
+          "content_type": "",
+          "href": "api\/v1\/nodes\/69423",
+          "href_form": "",
+          "method": "DELETE",
+          "name": "Delete"
+        },
+        "move": {
+          "body": "",
+          "content_type": "",
+          "href": "",
+          "href_form": "api\/v1\/forms\/nodes\/move?id=69423",
+          "method": "",
+          "name": "Move"
+        },
+        "properties": {
+          "body": "",
+          "content_type": "",
+          "href": "",
+          "href_form": "",
+          "method": "",
+          "name": "Properties"
+        },
+        "properties_audit": {
+          "body": "",
+          "content_type": "",
+          "href": "api\/v1\/nodes\/69423\/audit?limit=1000",
+          "href_form": "",
+          "method": "GET",
+          "name": "Audit"
+        },
+        "properties_categories": {
+          "body": "",
+          "content_type": "",
+          "href": "",
+          "href_form": "api\/v1\/forms\/nodes\/categories\/update?id=69423&category_id=22342",
+          "method": "",
+          "name": "Categories"
+        },
+        "properties_classifications": {
+          "body": "",
+          "content_type": "",
+          "href": "api\/v1\/nodes\/69423\/classifications",
+          "href_form": "",
+          "method": "GET",
+          "name": "Classifications"
+        },
+        "properties_general": {
+          "body": "",
+          "content_type": "",
+          "href": "",
+          "href_form": "api\/v1\/forms\/nodes\/properties\/general?id=69423",
+          "method": "",
+          "name": "General"
+        },
+        "properties_rmclassifications": {
+          "body": "",
+          "content_type": "",
+          "href": "",
+          "href_form": "api\/v1\/forms\/nodes\/properties\/rmclassifications?id=69423",
+          "method": "",
+          "name": "Records Detail"
+        },
+        "rename": {
+          "body": "",
+          "content_type": "",
+          "href": "",
+          "href_form": "\/api\/v1\/forms\/nodes\/rename?id=69423",
+          "method": "",
+          "name": "Rename"
+        }
+      },
+      "commands_map": {
+        "properties": [
+          "properties_general",
+          "properties_audit",
+          "properties_categories",
+          "properties_classifications",
+          "properties_rmclassifications"
+        ]
+      },
+      "commands_order": [
+        "default",
+        "rename",
+        "copy",
+        "move",
+        "delete",
+        "comment",
+        "properties"
+      ],
+      "wnd_nickname_formatted": null
+    },
+    {
+      "volume_id": {
+        "container": true,
+        "container_size": 3,
+        "create_date": "2016-09-22T08:59:40",
+        "create_user_id": 1000,
+        "description": "",
+        "description_multilingual": {
+          "en": ""
+        },
+        "favorite": false,
+        "guid": null,
+        "icon": "\/img\/otsapxecm\/wksp_customer.png",
+        "icon_large": "\/img\/otsapxecm\/wksp_customer_large.png",
+        "id": 69422,
+        "modify_date": "2016-09-22T08:59:40",
+        "modify_user_id": 1000,
+        "name": "Early Workspace 2",
+        "name_multilingual": {
+          "en": "Early Workspace 2"
+        },
+        "owner_group_id": 1001,
+        "owner_user_id": 1000,
+        "parent_id": 22672,
+        "reserved": false,
+        "reserved_date": null,
+        "reserved_user_id": 0,
+        "type": 848,
+        "type_name": "Business Workspace",
+        "versions_control_advanced": false,
+        "volume_id": -2000
+      },
+      "id": 69424,
+      "parent_id": {
+        "container": true,
+        "container_size": 3,
+        "create_date": "2016-09-22T08:59:40",
+        "create_user_id": 1000,
+        "description": "",
+        "description_multilingual": {
+          "en": ""
+        },
+        "favorite": false,
+        "guid": null,
+        "icon": "\/img\/otsapxecm\/wksp_customer.png",
+        "icon_large": "\/img\/otsapxecm\/wksp_customer_large.png",
+        "id": 69422,
+        "modify_date": "2016-09-22T08:59:40",
+        "modify_user_id": 1000,
+        "name": "Early Workspace 2",
+        "name_multilingual": {
+          "en": "Early Workspace 2"
+        },
+        "owner_group_id": 1001,
+        "owner_user_id": 1000,
+        "parent_id": 22672,
+        "reserved": false,
+        "reserved_date": null,
+        "reserved_user_id": 0,
+        "type": 848,
+        "type_name": "Business Workspace",
+        "versions_control_advanced": false,
+        "volume_id": -2000
+      },
+      "name": "Folder 2",
+      "type": 0,
+      "description": "",
+      "create_date": "2016-09-22T08:57:39",
+      "modify_date": "2016-09-22T08:59:41",
+      "reserved": false,
+      "reserved_user_id": 0,
+      "reserved_date": null,
+      "icon": "\/img\/webdoc\/folder.gif",
+      "mime_type": null,
+      "original_id": 0,
+      "wnd_owner": 1000,
+      "wnd_createdby": 1000,
+      "wnd_createdate": "2016-09-22T08:57:39",
+      "wnd_modifiedby": 1000,
+      "wnd_version": null,
+      "wnd_comments": null,
+      "wnf_readydate": null,
+      "wnf_wksp_type_id": null,
+      "wnf_wksp_name_en": null,
+      "wnd_nickname": null,
+      "wnd_att_r7q_g": null,
+      "wnf_emailfrom": null,
+      "wnf_wksp_modify_date": null,
+      "type_name": "Folder",
+      "container": true,
+      "size": 0,
+      "perm_see": true,
+      "perm_see_contents": true,
+      "perm_modify": true,
+      "perm_modify_attributes": true,
+      "perm_modify_permissions": true,
+      "perm_create": true,
+      "perm_delete": true,
+      "perm_delete_versions": true,
+      "perm_reserve": true,
+      "favorite": false,
+      "size_formatted": "0 Items",
+      "reserved_user_login": null,
+      "action_url": "\/v1\/actions\/69424",
+      "parent_id_url": "\/v1\/nodes\/-69422",
+      "commands": {
+        "comment": {
+          "body": "",
+          "content_type": "application\/x-www-form-urlencoded",
+          "href": "",
+          "href_form": "",
+          "method": "POST",
+          "name": "Comments"
+        },
+        "copy": {
+          "body": "",
+          "content_type": "",
+          "href": "",
+          "href_form": "api\/v1\/forms\/nodes\/copy?id=69424",
+          "method": "",
+          "name": "Copy"
+        },
+        "default": {
+          "body": "",
+          "content_type": "",
+          "href": "api\/v1\/nodes\/69424\/nodes",
+          "href_form": "",
+          "method": "GET",
+          "name": "Open"
+        },
+        "delete": {
+          "body": "",
+          "content_type": "",
+          "href": "api\/v1\/nodes\/69424",
+          "href_form": "",
+          "method": "DELETE",
+          "name": "Delete"
+        },
+        "move": {
+          "body": "",
+          "content_type": "",
+          "href": "",
+          "href_form": "api\/v1\/forms\/nodes\/move?id=69424",
+          "method": "",
+          "name": "Move"
+        },
+        "properties": {
+          "body": "",
+          "content_type": "",
+          "href": "",
+          "href_form": "",
+          "method": "",
+          "name": "Properties"
+        },
+        "properties_audit": {
+          "body": "",
+          "content_type": "",
+          "href": "api\/v1\/nodes\/69424\/audit?limit=1000",
+          "href_form": "",
+          "method": "GET",
+          "name": "Audit"
+        },
+        "properties_categories": {
+          "body": "",
+          "content_type": "",
+          "href": "",
+          "href_form": "api\/v1\/forms\/nodes\/categories\/update?id=69424&category_id=22342",
+          "method": "",
+          "name": "Categories"
+        },
+        "properties_classifications": {
+          "body": "",
+          "content_type": "",
+          "href": "api\/v1\/nodes\/69424\/classifications",
+          "href_form": "",
+          "method": "GET",
+          "name": "Classifications"
+        },
+        "properties_general": {
+          "body": "",
+          "content_type": "",
+          "href": "",
+          "href_form": "api\/v1\/forms\/nodes\/properties\/general?id=69424",
+          "method": "",
+          "name": "General"
+        },
+        "properties_rmclassifications": {
+          "body": "",
+          "content_type": "",
+          "href": "",
+          "href_form": "api\/v1\/forms\/nodes\/properties\/rmclassifications?id=69424",
+          "method": "",
+          "name": "Records Detail"
+        },
+        "rename": {
+          "body": "",
+          "content_type": "",
+          "href": "",
+          "href_form": "\/api\/v1\/forms\/nodes\/rename?id=69424",
+          "method": "",
+          "name": "Rename"
+        }
+      },
+      "commands_map": {
+        "properties": [
+          "properties_general",
+          "properties_audit",
+          "properties_categories",
+          "properties_classifications",
+          "properties_rmclassifications"
+        ]
+      },
+      "commands_order": [
+        "default",
+        "rename",
+        "copy",
+        "move",
+        "delete",
+        "comment",
+        "properties"
+      ],
+      "wnd_nickname_formatted": null
+    },
+    {
+      "volume_id": {
+        "container": true,
+        "container_size": 3,
+        "create_date": "2016-09-22T08:59:40",
+        "create_user_id": 1000,
+        "description": "",
+        "description_multilingual": {
+          "en": ""
+        },
+        "favorite": false,
+        "guid": null,
+        "icon": "\/img\/otsapxecm\/wksp_customer.png",
+        "icon_large": "\/img\/otsapxecm\/wksp_customer_large.png",
+        "id": 69422,
+        "modify_date": "2016-09-22T08:59:40",
+        "modify_user_id": 1000,
+        "name": "Early Workspace 2",
+        "name_multilingual": {
+          "en": "Early Workspace 2"
+        },
+        "owner_group_id": 1001,
+        "owner_user_id": 1000,
+        "parent_id": 22672,
+        "reserved": false,
+        "reserved_date": null,
+        "reserved_user_id": 0,
+        "type": 848,
+        "type_name": "Business Workspace",
+        "versions_control_advanced": false,
+        "volume_id": -2000
+      },
+      "id": 69425,
+      "parent_id": {
+        "container": true,
+        "container_size": 3,
+        "create_date": "2016-09-22T08:59:40",
+        "create_user_id": 1000,
+        "description": "",
+        "description_multilingual": {
+          "en": ""
+        },
+        "favorite": false,
+        "guid": null,
+        "icon": "\/img\/otsapxecm\/wksp_customer.png",
+        "icon_large": "\/img\/otsapxecm\/wksp_customer_large.png",
+        "id": 69422,
+        "modify_date": "2016-09-22T08:59:40",
+        "modify_user_id": 1000,
+        "name": "Early Workspace 2",
+        "name_multilingual": {
+          "en": "Early Workspace 2"
+        },
+        "owner_group_id": 1001,
+        "owner_user_id": 1000,
+        "parent_id": 22672,
+        "reserved": false,
+        "reserved_date": null,
+        "reserved_user_id": 0,
+        "type": 848,
+        "type_name": "Business Workspace",
+        "versions_control_advanced": false,
+        "volume_id": -2000
+      },
+      "name": "Folder 3",
+      "type": 0,
+      "description": "",
+      "create_date": "2016-09-22T08:57:53",
+      "modify_date": "2016-09-22T08:59:41",
+      "reserved": false,
+      "reserved_user_id": 0,
+      "reserved_date": null,
+      "icon": "\/img\/webdoc\/folder.gif",
+      "mime_type": null,
+      "original_id": 0,
+      "wnd_owner": 1000,
+      "wnd_createdby": 1000,
+      "wnd_createdate": "2016-09-22T08:57:53",
+      "wnd_modifiedby": 1000,
+      "wnd_version": null,
+      "wnd_comments": null,
+      "wnf_readydate": null,
+      "wnf_wksp_type_id": null,
+      "wnf_wksp_name_en": null,
+      "wnd_nickname": null,
+      "wnd_att_r7q_g": null,
+      "wnf_emailfrom": null,
+      "wnf_wksp_modify_date": null,
+      "type_name": "Folder",
+      "container": true,
+      "size": 0,
+      "perm_see": true,
+      "perm_see_contents": true,
+      "perm_modify": true,
+      "perm_modify_attributes": true,
+      "perm_modify_permissions": true,
+      "perm_create": true,
+      "perm_delete": true,
+      "perm_delete_versions": true,
+      "perm_reserve": true,
+      "favorite": false,
+      "size_formatted": "0 Items",
+      "reserved_user_login": null,
+      "action_url": "\/v1\/actions\/69425",
+      "parent_id_url": "\/v1\/nodes\/-69422",
+      "commands": {
+        "comment": {
+          "body": "",
+          "content_type": "application\/x-www-form-urlencoded",
+          "href": "",
+          "href_form": "",
+          "method": "POST",
+          "name": "Comments"
+        },
+        "copy": {
+          "body": "",
+          "content_type": "",
+          "href": "",
+          "href_form": "api\/v1\/forms\/nodes\/copy?id=69425",
+          "method": "",
+          "name": "Copy"
+        },
+        "default": {
+          "body": "",
+          "content_type": "",
+          "href": "api\/v1\/nodes\/69425\/nodes",
+          "href_form": "",
+          "method": "GET",
+          "name": "Open"
+        },
+        "delete": {
+          "body": "",
+          "content_type": "",
+          "href": "api\/v1\/nodes\/69425",
+          "href_form": "",
+          "method": "DELETE",
+          "name": "Delete"
+        },
+        "move": {
+          "body": "",
+          "content_type": "",
+          "href": "",
+          "href_form": "api\/v1\/forms\/nodes\/move?id=69425",
+          "method": "",
+          "name": "Move"
+        },
+        "properties": {
+          "body": "",
+          "content_type": "",
+          "href": "",
+          "href_form": "",
+          "method": "",
+          "name": "Properties"
+        },
+        "properties_audit": {
+          "body": "",
+          "content_type": "",
+          "href": "api\/v1\/nodes\/69425\/audit?limit=1000",
+          "href_form": "",
+          "method": "GET",
+          "name": "Audit"
+        },
+        "properties_categories": {
+          "body": "",
+          "content_type": "",
+          "href": "",
+          "href_form": "api\/v1\/forms\/nodes\/categories\/update?id=69425&category_id=22342",
+          "method": "",
+          "name": "Categories"
+        },
+        "properties_classifications": {
+          "body": "",
+          "content_type": "",
+          "href": "api\/v1\/nodes\/69425\/classifications",
+          "href_form": "",
+          "method": "GET",
+          "name": "Classifications"
+        },
+        "properties_general": {
+          "body": "",
+          "content_type": "",
+          "href": "",
+          "href_form": "api\/v1\/forms\/nodes\/properties\/general?id=69425",
+          "method": "",
+          "name": "General"
+        },
+        "properties_rmclassifications": {
+          "body": "",
+          "content_type": "",
+          "href": "",
+          "href_form": "api\/v1\/forms\/nodes\/properties\/rmclassifications?id=69425",
+          "method": "",
+          "name": "Records Detail"
+        },
+        "rename": {
+          "body": "",
+          "content_type": "",
+          "href": "",
+          "href_form": "\/api\/v1\/forms\/nodes\/rename?id=69425",
+          "method": "",
+          "name": "Rename"
+        }
+      },
+      "commands_map": {
+        "properties": [
+          "properties_general",
+          "properties_audit",
+          "properties_categories",
+          "properties_classifications",
+          "properties_rmclassifications"
+        ]
+      },
+      "commands_order": [
+        "default",
+        "rename",
+        "copy",
+        "move",
+        "delete",
+        "comment",
+        "properties"
+      ],
+      "wnd_nickname_formatted": null
+    }
+  ],
+  "definitions": {
+    "create_date": {
+      "align": "center",
+      "name": "Created",
+      "persona": "",
+      "type": -7,
+      "width_weight": 0
+    },
+    "description": {
+      "align": "left",
+      "name": "Description",
+      "persona": "",
+      "type": -1,
+      "width_weight": 100
+    },
+    "favorite": {
+      "align": "center",
+      "name": "Favorite",
+      "persona": "",
+      "type": 5,
+      "width_weight": 0
+    },
+    "icon": {
+      "align": "center",
+      "name": "Icon",
+      "persona": "",
+      "type": -1,
+      "width_weight": 0
+    },
+    "id": {
+      "align": "right",
+      "name": "DataID",
+      "persona": "node",
+      "sort": false,
+      "type": 2,
+      "width_weight": 0
+    },
+    "mime_type": {
+      "align": "left",
+      "name": "MIME Type",
+      "persona": "",
+      "type": -1,
+      "width_weight": 0
+    },
+    "modify_date": {
+      "align": "left",
+      "name": "Modified",
+      "persona": "",
+      "sort": true,
+      "type": -7,
+      "width_weight": 0
+    },
+    "name": {
+      "align": "left",
+      "name": "Name",
+      "persona": "",
+      "sort": true,
+      "type": -1,
+      "width_weight": 100
+    },
+    "original_id": {
+      "align": "left",
+      "name": "Original ID",
+      "persona": "node",
+      "type": 2,
+      "width_weight": 0
+    },
+    "parent_id": {
+      "align": "left",
+      "name": "Parent ID",
+      "persona": "node",
+      "type": 2,
+      "width_weight": 0
+    },
+    "reserved": {
+      "align": "center",
+      "name": "Reserve",
+      "persona": "",
+      "type": 5,
+      "width_weight": 0
+    },
+    "reserved_date": {
+      "align": "center",
+      "name": "Reserved",
+      "persona": "",
+      "type": -7,
+      "width_weight": 0
+    },
+    "reserved_user_id": {
+      "align": "center",
+      "name": "Reserved By",
+      "persona": "member",
+      "type": 2,
+      "width_weight": 0
+    },
+    "size": {
+      "align": "right",
+      "name": "Size",
+      "persona": "",
+      "sort": true,
+      "sort_key": "size",
+      "type": 2,
+      "width_weight": 0
+    },
+    "size_formatted": {
+      "align": "right",
+      "name": "Size",
+      "persona": "",
+      "sort": true,
+      "sort_key": "size",
+      "type": 2,
+      "width_weight": 0
+    },
+    "type": {
+      "align": "center",
+      "name": "Type",
+      "persona": "",
+      "sort": true,
+      "type": 2,
+      "width_weight": 0
+    },
+    "volume_id": {
+      "align": "left",
+      "name": "VolumeID",
+      "persona": "node",
+      "type": 2,
+      "width_weight": 0
+    },
+    "wnd_nickname": {
+      "align": "center",
+      "name": "Nickname",
+      "sort": false,
+      "type": -1,
+      "width_weight": 1
+    }
+  },
+  "definitions_map": {
+    "name": [
+      "menu"
+    ]
+  },
+  "definitions_order": [
+    "type",
+    "name",
+    "size_formatted",
+    "modify_date",
+    "wnd_nickname"
+  ],
+  "limit": 30,
+  "page": 1,
+  "page_total": 1,
+  "range_max": 3,
+  "range_min": 1,
+  "sort": "asc_name",
+  "total_count": 3,
+  "where_facet": [
+
+  ],
+  "where_name": "",
+  "where_type": [
+
+  ]
+}

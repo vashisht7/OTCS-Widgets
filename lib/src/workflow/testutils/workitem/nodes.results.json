@@ -1,0 +1,85 @@
+{"links":{
+  "data":{
+    "self":{
+      "body":"",
+      "content_type":"",
+      "href":"\/api\/v2\/nodes\/9048?actions=addclassifications&actions=sharewithotcore&actions=stopsharing&actions=getsharedetails&actions=releaseshare&actions=open&actions=addcategory&actions=addversion&actions=copy&actions=delete&actions=download&actions=zipanddownload&actions=edit&actions=editactivex&actions=rename&actions=move&actions=permissions&actions=properties&actions=reserve&actions=unreserve&actions=editpermissions&actions=collectioncancollect&actions=removefromcollection&actions=comment&actions=physobjrequest&actions=physobjborrow&actions=physobjacknowledge&actions=physobjpickup&actions=physobjcancelrequested&actions=finalizerecord&actions=applyhold&actions=removehold&actions=assignxref&actions=addrmclassifications&actions=classify&actions=removeclassification&actions=dispositionmove&actions=followup&actions=addreminder&actions=setasdefaultpage&actions=unsetasdefaultpage&actions=initiateworkflow&actions=editworkflowmap&actions=initiatedocumentworkflow&actions=openform&expand=properties{original_id}&fields=properties&fields=versions{owner_id}.element(0)&state=true",
+      "method":"GET",
+      "name":""}
+  }
+},
+  "results":{
+    "actions":{
+      "data":{
+        "addcategory":{
+          "body":"",
+          "content_type":"",
+          "form_href":"",
+          "href":"\/api\/v2\/nodes\/9048\/categories",
+          "method":"POST",
+          "name":"Add Category"
+        },
+        "comment":
+        {"body":"","content_type":"","form_href":"","href":"","method":"POST","name":"Comments"},
+        "delete":{"body":"","content_type":"","form_href":"","href":"\/api\/v2\/nodes\/9048","method":"DELETE","name":"Delete"},
+        "editpermissions":{"body":"","content_type":"","form_href":"","href":"","method":"","name":"Edit Permissions"},
+        "editworkflowmap":{"body":"","content_type":"","form_href":"","href":"","method":"","name":""},
+        "initiateworkflow":{"body":"initiate_in_smartview","content_type":"","form_href":"","href":"","method":"","name":""},
+        "permissions":{"body":"","content_type":"","form_href":"","href":"","method":"","name":"Permissions"},
+        "properties":{"body":"","content_type":"","form_href":"","href":"\/api\/v2\/nodes\/9048","method":"GET","name":"Properties"},
+        "rename":{"body":"","content_type":"","form_href":"\/api\/v2\/forms\/nodes\/rename?id=9048","href":"\/api\/v2\/nodes\/9048","method":"PUT","name":"Rename"}
+      },
+      "map":{
+        "default_action":"initiateworkflow",
+        "more":["properties"]
+      },
+      "order":["editworkflowmap","initiateworkflow","addcategory","rename","editpermissions","permissions","delete","comment"]
+    },
+    "data":{
+      "properties":{
+        "advanced_versioning":null,
+        "container":false,
+        "container_size":1,
+        "create_date":"2017-09-26T16:06:04",
+        "create_user_id":1000,
+        "description":"",
+        "description_multilingual":{"en":""},
+        "external_create_date":null,
+        "external_identity":"",
+        "external_identity_type":"",
+        "external_modify_date":null,
+        "external_source":"",
+        "favorite":false,
+        "id":9048,
+        "mime_type":null,
+        "modify_date":"2019-07-23T08:41:22",
+        "modify_user_id":1000,
+        "name":"WF_Review",
+        "name_multilingual":{"en":"WF_Review"},
+        "owner":"Admin",
+        "owner_group_id":999,
+        "owner_user_id":1000,
+        "parent_id":8260,
+        "permissions_model":"advanced",
+        "reserved":false,
+        "reserved_date":null,
+        "reserved_shared_collaboration":false,
+        "reserved_user_id":0,
+        "size":null,
+        "size_formatted":"12 KB",
+        "type":128,
+        "type_name":"Initiate Workflow",
+        "versionable":true,
+        "versions_control_advanced":false,
+        "volume_id":-2000},
+      "versions":{
+        "owner_id":2180
+      }
+    },
+    "state":{
+      "properties":{
+        "metadata_token":""
+      }
+    }
+  }
+}

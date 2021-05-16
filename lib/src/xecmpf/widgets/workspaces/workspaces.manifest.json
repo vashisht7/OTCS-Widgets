@@ -1,0 +1,25 @@
+{
+  "$schema": "http://opentext.com/cs/json-schema/draft-04/schema#",
+  "title": "Workspaces Creation and Completion Widget",
+  "description": "User gets a list of early workspaces so he can select one workspace to complete the reference. If the user does not find an appropriate early workspace he can create a new workspace.",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "busObjectId": {
+        "type": "string",
+        "title": "Business object id",
+        "description": "ID of a business object"
+      },
+      "busObjectType": {
+        "type": "string",
+        "title": "Business object type",
+        "description": "Type of a business object"
+      },
+      "extSystemId": {
+        "type": "string",
+        "title": "External system id",
+        "description": "ID of an external system"
+      }
+    }
+  }
+}

@@ -1,0 +1,87 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets div.conws-item-member.binf-list-group-item {
+  min-height: 2.25rem;
+  padding: 0rem;
+  margin-top: 0rem;
+  margin-right: 0.75rem;
+  margin-bottom: 0.75rem;
+  margin-left: 1rem;
+}
+
+.binf-widgets div.conws-item-member.binf-list-group-item:first-child {
+  margin-top: 0.3125rem;
+}
+
+.binf-widgets .conws-item-member .conws-user-avatar, .conws-item-member .conws-role-avatar {
+  float: left;
+  margin-right: 0.75rem;
+  height: 2rem;
+  width: 2rem;
+}
+
+.binf-widgets .conws-item-member .conws-role-avatar .cs-icon-add {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url('../../../../../../image/icons/mime_roles.svg');
+}
+
+.binf-widgets .conws-item-member .cs-left {
+  display: inline-block;
+  width: calc(100% - 3rem);
+}
+
+.conws-item-member .cs-right {
+  float: right;
+  text-align: right;
+}
+
+.conws-item-member .cs-key {
+  margin-bottom: 10px;
+}
+
+.conws-item-member .cs-title {
+
+}
+
+.conws-item-member .cs-name, .conws-item-member .cs-email, .conws-item-member .cs-name .esoc-user-display-name {
+  font-size: 1rem;
+  color: #333333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+  display: inline-block;
+}
+
+.conws-item-member .cs-role {
+  white-space: pre;
+}
+
+.conws-item-member .esoc-user-profile-pic-container span, .conws-item-member .esoc-user-profile-pic-container img {
+  height: 2rem;
+  width: 2rem;
+}
+
+.conws-item-member .cs-name a {
+  color: #333333;
+}
+
+.conws-item-member .cs-stage {
+  font-size: 0.75rem;
+  font-style: normal;
+  color: #333333;
+  line-height: 1rem;
+}
+
+.conws-item-member .cs-stage > .cs-value {
+  float: left;
+  max-width: calc(100% - 2rem);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-right: 0.0626rem;
+  white-space: pre;
+}
+

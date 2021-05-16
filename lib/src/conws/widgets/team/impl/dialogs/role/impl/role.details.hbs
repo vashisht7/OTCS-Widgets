@@ -1,0 +1,51 @@
+<div class="binf-modal-content">
+    <div class="binf-modal-header">
+        <h2 class="binf-modal-title">{{captions.Title}}</h2>
+    </div>
+    <div class="binf-modal-body">
+        <div class="conws-role-details-canedit">
+            <div class="conws-role-details-canedit-left conws-role-details-left conws-role-details-canedit-separator">
+                <div class="conws-role-details-rolename">
+                    <h3>{{captions.RoleName}}</h3>
+                    {{#if readonly}}
+                        <div class="conws-role-details-rolename-text">
+                            <div class="general-text">{{model.name}}</div>
+                        </div>
+                    {{else}}
+                        <input type="text" value="{{model.name}}" />
+                    {{/if}}
+                </div>
+                <div class="conws-role-details-roledescription">
+                    <h3>{{captions.Description}}</h3>
+                    {{#if readonly}}
+                        <div class="conws-role-details-roledescription-text">
+                            <div class="general-text">{{model.description}}</div>
+                        </div>
+                    {{else}}
+                        <textarea rows="8">{{model.description}}</textarea>
+                    {{/if}}
+                </div>
+                {{#unless hideTeamLead}}
+                    <div class="conws-role-details-rolepermissions">
+                        <h3>{{captions.Permissions}}</h3>
+                        <div class="conws-role-details-permissions">
+                            <div class="conws-role-details-teamlead-caption general-text" id="{{labelId}}">{{captions.TeamLead}}</div>
+                            <div class="conws-role-details-teamlead-switch"></div>
+                        </div>
+                    </div>
+                {{/unless}}
+            </div>
+            <div class="conws-role-details-canedit-right conws-role-details-right">
+                <div class="conws-role-details-header">
+                    <div class="conws-role-details-participants-region"></div>
+                </div>
+                <div class="conws-role-details-canedit-content">
+                    <div class="conws-role-details-participants-list-region"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="conws-role-details-buttons-region"></div>
+</div>
+
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

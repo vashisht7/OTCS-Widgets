@@ -1,0 +1,100 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .csui-shortcut-container .csui-shortcut-item {
+  flex-grow: 1;
+  background-color: rgba(247, 247, 247, 0.82);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #333333;
+  text-decoration: none;
+}
+
+.binf-widgets .csui-shortcut-container .csui-shortcut-item:hover {
+  outline: 1px solid #94bbea;
+  outline-offset: 2px
+}
+
+.binf-widgets .csui-shortcut-container .csui-shortcut-item:focus {
+  text-decoration: none;
+  color: #333333;
+  outline: 1px solid #ffffff;
+}
+
+.binf-widgets .csui-shortcut-container .csui-shortcut-item:active {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px
+}
+
+.binf-widgets .csui-shortcut-container .csui-shortcut-item:not(.csui-disabled) {
+  cursor: pointer;
+}
+
+.binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-disabled {
+  pointer-events: none;
+}
+
+.binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-disabled .tile-title {
+  color: #757575;
+}
+
+.binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-disabled .tile-icon {
+  opacity: 0.5;
+}
+
+.binf-widgets .csui-shortcut-container .csui-shortcut-item .tile-icon {
+  display: flex;
+  align-items: center;
+}
+
+.binf-widgets .csui-shortcut-container .csui-shortcut-item .tile-icon .icon {
+  background-repeat: no-repeat;
+  background-position: center 45%;
+}
+
+.binf-widgets.perspective-editing .csui-pman-editable-widget .csui-shortcut-container .csui-shortcut-item {
+  overflow: visible; 
+}
+
+.binf-widgets.perspective-editing .csui-pman-editable-widget .csui-shortcut-container .csui-shortcut-item.csui-pman-shortcut-new {
+  background: rgba(249, 249, 249, 0.2);
+  border: 2px dashed #ffffff;
+  outline: none;
+}
+
+.binf-widgets.perspective-editing .csui-pman-editable-widget .csui-shortcut-container .csui-pman-shortcut-new.csui-pman-shortcut-error {
+  border: 1px solid #ffffff;
+}
+
+.binf-widgets.perspective-editing .csui-large.csui-pman-shortcut-new .binf-perspective-has-error .csui-pman-widget-error {
+  background: none;
+}
+
+.binf-widgets.perspective-editing .csui-large.csui-pman-shortcut-new .binf-perspective-has-error .csui-pman-widget-error-body {
+  height: 100%;
+  padding-bottom: 0;
+}
+
+.binf-widgets.perspective-editing .csui-large.csui-pman-shortcut-new .binf-perspective-has-error .csui-pman-widget-error-message {
+  color: #ffffff;
+}
+
+.binf-widgets.perspective-editing .csui-pman-editable-widget .csui-large.csui-pman-shortcut-new .binf-perspective-has-error:hover .csui-pman-widget-close {
+ display: inline-block;
+}
+
+.binf-widgets.perspective-editing .csui-large.csui-pman-shortcut-new .binf-perspective-has-error .csui-pman-widget-error-heading,
+.binf-widgets.perspective-editing .csui-pman-editable-widget .csui-shortcut-container .csui-shortcut-item.csui-pman-shortcut-new .csui-pman-widget-close {
+  display: none;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .binf-widgets .csui-shortcut-container .csui-shortcut-item:hover {
+    outline: 2px solid #111b58;
+    box-shadow: 0px 0px 0px 3px #94bbea;
+  }
+
+  .binf-widgets .csui-shortcut-container .csui-shortcut-item:active {
+    outline: 2px solid #111b58 !important;
+    box-shadow: 0px 0px 0px 4px #ffffff;
+  }
+}

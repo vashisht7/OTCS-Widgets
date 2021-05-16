@@ -1,0 +1,209 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .csui-table-actionbar {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  float: right;
+  width: 100%;
+}
+
+.binf-widgets .csui-table-actionbar-bubble {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: calc(4em - 36px); 
+  z-index: 1;
+  width: 100%;
+}
+
+.binf-widgets .csui-table-actionbar-bubble .tile-nav li.binf-dropdown.binf-open {
+  box-shadow: none;
+}
+
+.binf-widgets .csui-table-actionbar-bubble .tile-nav li.binf-dropdown.binf-open ul {
+  z-index: 1003;
+}
+
+.binf-widgets .csui-table-actionbar-bubble .tile-nav li.binf-dropdown.binf-open ul li a {
+  white-space: normal;
+}
+
+.binf-widgets .csui-table-actionbar-bubble .tile-nav li.binf-dropdown .binf-dropdown-menu.csui-perfect-scrolling {
+  overflow: hidden;
+}
+
+.csui-table-actionbar-bubble.csui-state-loading,
+.csui-table-actionbar-bubble.csui-state-failed {
+  display: inline-flex;
+  background-color: #bac9ce;
+  pointer-events: none;
+}
+
+.csui-table-actionbar.csui-state-loading > ul > li.csui-toolbar-state,
+.csui-table-actionbar.csui-state-failed > ul > li.csui-toolbar-state {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.csui-table-actionbar.csui-state-loading > ul > li.csui-toolbar-state {
+  animation: csui-table-actionbar-state-fade-in-and-out 1.5s ease-in-out;
+  animation-iteration-count: infinite;
+  opacity: 1
+}
+
+@keyframes csui-table-actionbar-state-fade-in-and-out {
+  from {
+    opacity: .5;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: .5;
+  }
+}
+
+.csui-table-actionbar > ul.binf-nav {
+  padding-left: 0.1875em;
+  padding-right: 0.1875em;
+  display: flex;
+  align-items: center;
+}
+
+.csui-table-actionbar > ul.binf-nav > li.binf-open > a {
+  box-shadow: none;
+  border-radius: 2em;
+}
+
+.csui-table-actionbar > ul.binf-nav .icon {
+  font-size: inherit;
+  position: relative;
+  vertical-align: baseline;
+  margin: 0;
+}
+
+.csui-table-actionbar.binf-disabled > ul.binf-nav > li > a > .icon {
+  opacity: 0.5;
+}
+
+.csui-table-actionbar.binf-disabled > ul.binf-nav > li > a, .binf-widgets .csui-table-actionbar .binf-dropdown ul.binf-dropdown-menu > li > a.binf-disabled,
+.binf-widgets .csui-table-actionbar ul > li > a.binf-disabled {
+  pointer-events: none;
+  color: #777777;
+}
+
+.binf-widgets .csui-table-actionbar ul > li > a.binf-disabled > .icon {
+  opacity: 0.5;
+}
+
+.binf-widgets .csui-table-actionbar li.binf-disabled {
+  cursor: default;
+}
+
+.binf-widgets .csui-table-actionbar .binf-disabled:hover {
+  background-color: transparent;
+}
+
+.csui-table-actionbar > ul.binf-nav > li > a {
+  padding: 0 0.1em;
+  margin: auto 0;
+  display: flex;
+  align-self: center;
+  height: inherit;
+}
+
+.csui-table-actionbar > ul.binf-nav > li > a:focus,
+.csui-table-actionbar > ul.binf-nav > li > a:hover {
+  background-color: transparent;
+}
+
+.csui-table-actionbar > ul.binf-nav > li.binf-divider {
+  width: 1px;
+  height: 1.5em;
+  background-color: #7c9599;
+}
+
+.csui-table-actionbar > ul.binf-nav > li:first-child {
+  padding-left: 0;
+}
+
+.csui-table-actionbar > ul.binf-nav > li:last-child {
+  padding-right: 0;
+}
+
+.csui-table-actionbar > ul.binf-nav > li:hover {
+  background-color: transparent;
+}
+
+.csui-table-actionbar .icon, .csui-table-actionbar .csui-svg-icon {
+  vertical-align: text-bottom;
+  display: inline-block;
+}
+
+.csui-table-actionbar .csui-svg-icon {
+  width: calc(2em + 4px); 
+  height: calc(2em + 4px);
+}
+
+.csui-table-actionbar .icon {
+  width: calc(1em + 7px); 
+  height: calc(1em + 7px);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.binf-widgets .csui-toolitem .csui-svg-icon-normal,
+.binf-widgets a.binf-dropdown-toggle .csui-svg-icon-normal {
+  display: block;
+}
+
+.binf-widgets .csui-toolitem .csui-svg-icon-hover,
+.binf-widgets .csui-toolitem .csui-svg-icon-active,
+.binf-widgets a.binf-dropdown-toggle .csui-svg-icon-hover,
+.binf-widgets a.binf-dropdown-toggle .csui-svg-icon-active {
+  display: none;
+}
+
+
+.binf-widgets .csui-toolitem:hover .csui-svg-icon-normal,
+.binf-widgets .csui-toolitem:hover .csui-svg-icon-active,
+.binf-widgets a.binf-dropdown-toggle:hover .csui-svg-icon-normal,
+.binf-widgets a.binf-dropdown-toggle:hover .csui-svg-icon-active {
+  display: none;
+}
+
+
+.binf-widgets .csui-toolitem:hover .csui-svg-icon-hover,
+.binf-widgets a.binf-dropdown-toggle:hover .csui-svg-icon-hover {
+  display: block;
+}
+
+
+.binf-widgets .csui-toolitem:active .csui-svg-icon-normal,
+.binf-widgets .csui-toolitem:active .csui-svg-icon-hover,
+.binf-widgets a.binf-dropdown-toggle:active .csui-svg-icon-normal,
+.binf-widgets a.binf-dropdown-toggle:active .csui-svg-icon-hover {
+  display: none;
+}
+
+
+.binf-widgets .csui-toolitem:active .csui-svg-icon-active,
+.binf-widgets a.binf-dropdown-toggle:active .csui-svg-icon-active {
+  display: block;
+}
+
+.csui-table-actionbar ul.binf-dropdown-menu > li > a > span.icon {
+  margin-right: 0.5em;
+}
+
+.csui-navbar.binf-navbar.csui-zero-zindex,
+#breadcrumb-wrap.csui-zero-zindex,
+.csui-search-tool-container.csui-zero-zindex {
+  z-index: 0;
+}

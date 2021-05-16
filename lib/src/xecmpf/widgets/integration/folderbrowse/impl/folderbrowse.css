@@ -1,0 +1,125 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+
+.xecmpf-icon-search {
+  background-image: url('images/toolbar_search32.svg');
+}
+
+.xecmpf-icon-search-md {
+  background-image: url('images/toolbar_search_md32.svg');
+}
+
+.binf-widgets .csui-folderbrowser .csui-tabletoolbar .csui-search-button .xecmpf-icon-search,
+.binf-widgets .csui-folderbrowser .csui-tabletoolbar .csui-searchbox-holder .icon-global-search.xecmpf-icon-search,
+.binf-widgets .csui-folderbrowser .csui-tabletoolbar .csui-search-button .xecmpf-icon-search-md {
+  background-size: 30px;
+  background-position: center;
+  width: 34px;
+  height: 47px;
+  top: 0;
+  right: 14px;
+}
+
+.csui-folderbrowser .csui-tabletoolbar .csui-searchbox-holder .csui-search-box .search-bar-content {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.csui-folderbrowser .csui-nodestable .csui-alternating-toolbars {
+  flex: 0 0 47px;
+}
+
+.binf-widgets .csui-nodestable .csui-alternating-toolbars.csui-show-header {
+  flex: 0 0 94px;
+}
+
+.csui-folderbrowser .csui-tabletoolbar .binf-nav .csui-search-box {
+
+  display: block;
+}
+
+.csui-folderbrowser .csui-tabletoolbar .binf-nav .csui-search-box .search-bar {
+  padding-top: 0;
+  margin-right: 28px;
+  width: calc(100% - 50px);
+}
+
+.csui-folderbrowser .csui-tabletoolbar .binf-nav .csui-search-box .csui-input {
+  padding: 2px 30px 2px 10px;
+  border: 1px solid #333333;
+  color: #333333;
+  height: 30px;
+}
+.csui-folderbrowser .csui-tabletoolbar .binf-nav .csui-search-box .csui-input::placeholder {
+  color: #333333;
+  font-style: italic;
+}
+
+.csui-folderbrowser .csui-tabletoolbar .binf-nav .csui-search-box .csui-clearer {
+  right: 0em;
+  color: #333333;
+}
+
+
+
+
+
+.binf-modal-body .xecm-full-page-workspace {
+  height: calc(100vh - 40px);
+}
+
+#xecmpf-display_wksp.xecmpf-page .xecm-full-page-workspace
+{
+  height: 100%
+}
+
+
+
+
+
+.csui-folderbrowser .cs-search-results-wrapper {
+  height: 100%
+}
+
+.csui-folderbrowser .csui-search-results-body {
+  height: 100%
+}
+
+.csui-folderbrowser .cs-search-results-wrapper .binf-container-fluid {
+  height: calc(100% - 86px);
+}
+
+.csui-folderbrowser .csui-search-results-body {
+  height: 100%;
+}
+
+.csui-folderbrowser .csui-search-custom-results {
+  height: calc(100% - 43px);
+}
+
+.csui-folderbrowser .csui-search-results.binf-panel {
+  margin-bottom: 0px;
+  height: 100%;
+}
+
+.csui-folderbrowser #csui-search-custom-results {
+  height: 100%
+}
+
+.csui-folderbrowser .csui-search-results-body .csui-search-results-content {
+  height: calc(100% - 43px);
+}
+
+.csui-folderbrowser .cs-search-results-wrapper .csui-search-results .csui-result-list,
+.csui-folderbrowser .cs-search-results-wrapper .csui-search-results .binf-list-group.list-group-height-noresults {
+  height: calc(100% - 50px);
+}
+
+@media (min-width: 1024px) {
+  .csui-folderbrowser .cs-search-results-wrapper .csui-search-results .csui-result-list,
+  .csui-folderbrowser .cs-search-results-wrapper .csui-search-results .binf-list-group.list-group-height-noresults {
+    height: calc(100% - 50px);
+  }
+}
+
+

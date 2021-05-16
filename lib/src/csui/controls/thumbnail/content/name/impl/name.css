@@ -1,0 +1,15 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.csui-thumbnail-name-justify-div.csui-thumbnail-no-default-action {
+  cursor: auto;
+  color: #757575;
+  white-space: normal;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+  line-height: 18px;
+}
+
+.csui-overview-container .csui-thumbnail-name-justify-div.csui-thumbnail-no-default-action {
+  color: #333;
+}

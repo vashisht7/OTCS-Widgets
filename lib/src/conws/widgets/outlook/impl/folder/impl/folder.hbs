@@ -1,0 +1,27 @@
+
+<div class="List-item">
+    <div class="wkspItem listItemFolder" id="wkspFolderItem" data-id="{{id}}">
+        <span class="wksp-expand-icon" data-id="{{id}}"><div id="toggleIcon" class="{{toggleStatus}}" tabindex="{{tabIndex}}" title="{{typeName}}" data-id="{{id}}" /></span>
+        <span class="wkspItemIcon" data-id="{{id}}">
+            <div class="{{iconClass}}" data-id="{{id}}"></div>
+        </span>
+        
+        <div data-id="{{id}}" class="wkspItemName"  tabindex="0" id="folderNameDiv" title="{{name}}" data-id="{{id}}">{{name}} </div>
+        <div class="wkspFolder-actiondiv binf-fade" data-id="{{id}}" style="display:none">
+            <div id="folderActionBar" class="wkspFolder-actionbar wkspFolder-actionbar-bubble" >
+                <ul class="wksptile-nav wkspnav wksptile-pills">
+                    
+                    <li class="needsclick">
+                        <div >
+                            <a href="#" id="saveEmailButton" title="{{saveTitle}} " aria-label="{{saveTitle}}" data-id="{{id}}" tabindex="0" >
+                                <div class="wkspIcon emailSaveIcon" data-id="noToggle" />
+                            </a>            
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="subFolders"></div>
+</div>
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

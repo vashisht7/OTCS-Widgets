@@ -1,0 +1,54 @@
+{
+  "data": [
+    {
+      "id": 22342,
+      "name": "Customer",
+      "cell_metadata": {
+        "data": {
+          "menu": "api\/v1\/nodes\/69422\/categories\/22342\/actions"
+        },
+        "definitions": {
+          "menu": {
+            "body": "",
+            "content_type": "",
+            "display_hint": "menu",
+            "display_href": "",
+            "handler": "menu",
+            "image": "",
+            "method": "GET",
+            "name": "",
+            "parameters": {
+
+            },
+            "tab_href": ""
+          }
+        }
+      },
+      "menu": null
+    }
+  ],
+  "definitions": {
+    "id": {
+      "key": "id",
+      "name": "ID",
+      "persona": "node",
+      "type": 2,
+      "width_weight": 0
+    },
+    "name": {
+      "key": "name",
+      "name": "Name",
+      "persona": "",
+      "type": -1,
+      "width_weight": 100
+    }
+  },
+  "definitions_map": {
+    "name": [
+      "menu"
+    ]
+  },
+  "definitions_order": [
+    "name"
+  ]
+}

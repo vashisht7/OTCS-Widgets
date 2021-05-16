@@ -1,0 +1,67 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets #xecmpf-display_wksp {
+    height: 100%;
+}
+
+.binf-widgets #xecmpf-display_wksp #display_wksp_content {
+    height: calc(100%);
+}
+
+.binf-widgets #xecmpf-display_wksp #csui-folderbrowser-core div.csui-fb-nodestable {
+    height: 100%;
+}
+
+
+
+
+.binf-widgets .xecmpf-page .binf-widgets.xecm-page-widget.xecm-full-page-workspace.xecm-no-iframe-wrap .cs-perspective-panel .tile-content {
+  background-color: #f7f7f7;
+}
+
+.binf-widgets .xecmpf-page .binf-widgets.xecm-page-widget.xecm-full-page-workspace.xecm-no-iframe-wrap .cs-perspective-panel .tile-title {
+  margin: 0;
+}
+
+.binf-widgets .xecmpf-page .binf-widgets.xecm-page-widget.xecm-full-page-workspace.xecm-no-iframe-wrap .cs-perspective-panel .tile,
+.binf-widgets .xecmpf-page .binf-widgets.xecm-page-widget.xecm-full-page-workspace.xecm-no-iframe-wrap .cs-perspective-panel .tile:hover {
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, .3) !important;
+}
+
+.binf-widgets .xecmpf-page .binf-widgets.xecm-page-widget.xecm-full-page-workspace.xecm-no-iframe-wrap .cs-perspective-panel .tile:active {
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, .3) !important;
+}
+
+.binf-widgets .xecmpf-page .binf-widgets.xecm-page-widget.xecm-full-page-workspace.xecm-no-iframe-wrap .cs-perspective-panel .tile-header {
+  padding: 0 16px !important;
+}
+
+.binf-widgets.csui-maximized-widget-mode .binf-widgets.xecm-page-widget.xecm-full-page-workspace.xecm-no-iframe-wrap .cs-perspective-panel .cs-tabbed-perspective.cs-collapse:not(.cs-tabbed-flow-perspective) > .cs-content {
+  top: 0;
+}
+
+.binf-widgets.csui-maximized-widget-mode .binf-widgets.xecm-page-widget.xecm-full-page-workspace.xecm-no-iframe-wrap .cs-perspective-panel .cs-tabbed-perspective.csui-breadcrumbs-visible > .cs-header.conws-header-widget + .cs-content > .tab-panel > .binf-tab-content > .binf-tab-pane > .binf-row > * {
+  height: calc(100vh - 6.5px);
+}
+
+.binf-widgets.csui-maximized-widget-mode .binf-widgets.xecm-page-widget.xecm-full-page-workspace.xecm-no-iframe-wrap .cs-perspective-panel .cs-tabbed-perspective.csui-breadcrumbs-visible>.cs-header.conws-header-widget+.cs-content>.tab-panel>.binf-tab-content>.binf-tab-pane .csui-maximized-row .csui-maximized-column {
+  height: calc(110vh + 6px);
+}
+.binf-widgets.csui-support-maximize-widget .binf-widgets.xecm-page-widget.xecm-full-page-workspace.xecm-no-iframe-wrap .cs-simplelist .binf-panel-heading {
+  background-color: #ffffff !important;
+}
+
+.binf-widgets.csui-support-maximize-widget .binf-widgets.xecm-page-widget.xecm-full-page-workspace.xecm-no-iframe-wrap .cs-perspective-panel .metadata-sidebar .cs-simplelist .binf-panel-heading {
+  background-color: #ffffff;
+  border: 1px dotted transparent;
+  border-bottom: 1px solid #cccccc;
+}
+
+.binf-widgets.csui-support-maximize-widget .binf-widgets.xecm-page-widget.xecm-full-page-workspace.xecm-no-iframe-wrap .cs-perspective-panel .cs-tabbed-perspective.csui-breadcrumbs-visible > .cs-header.conws-header-widget + .cs-content > .tab-panel > .binf-tab-content > .binf-tab-pane > .binf-row > * {
+  height: calc(100vh - 20px);
+}
+
+.binf-widgets.csui-support-maximize-widget .binf-widgets.xecm-page-widget.xecm-full-page-workspace.xecm-no-iframe-wrap .csui-search-box .search-icon {
+  right: 8px;
+  top: calc(50% - 13px);
+}

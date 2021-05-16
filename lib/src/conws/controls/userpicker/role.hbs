@@ -1,0 +1,25 @@
+{{#if lightWeight}}
+<div class="member-info{{#if disabled}} binf-disabled{{/if}} binf-pull-left">
+  <span class="name binf-pull-left" title="{{name}}">{{name}}</span>
+</div>
+{{else}}
+<div class="member-picture{{#if disabled}} binf-disabled{{/if}} binf-pull-left">
+  <span class="csui-icon conws-mime_roles"></span>
+</div>
+<div class="member-info{{#if disabled}} binf-disabled{{/if}} binf-pull-left">
+  <span class="name binf-pull-left" title="{{name}}">{{name}}</span>
+  <span class="group-title binf-pull-left" title="{{role-title}}">{{role-title}}</span>
+  {{#if isWorkspace}}
+  {{#if leader}}
+  <span class="leader-title binf-pull-left" title="{{leader-title}}">{{leader-title}}</span>
+  {{/if}}
+  {{#if isInheritedRole}}
+  <span class="leader-title binf-pull-left" title="{{isInheritedRole-title}}">{{isInheritedRole-title}}</span>
+  {{/if}}
+  {{#if disabled}}
+  <span class="message binf-pull-left">{{disabled-message}}</span>
+  {{/if}}
+  {{/if}}
+</div>
+{{/if}}
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

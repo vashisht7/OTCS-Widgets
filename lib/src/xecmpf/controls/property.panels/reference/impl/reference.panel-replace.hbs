@@ -1,0 +1,21 @@
+<div class="conws-reference-metadata"></div>
+{{#if change_reference}}
+  <div class="conws-reference-buttons">
+    <div class="conws-label-buttons">{{reference_buttons_label}}</div>
+
+    {{!-- Seen in the create business workspace dialog --}}
+    {{#if allow_remove_reference_from_create}}
+      <button type="button" class="binf-btn binf-btn-default remove">{{remove_button_title}}</button>
+    {{/if}}
+
+    <button type="button" class="binf-btn binf-btn-default replace">{{replace_button_title}}</button>
+
+    {{!-- Seen in the properties panel under Reference section --}}
+    {{!-- Requirement is that the Remove button must be placed after the replace button in this section --}}
+    {{#if allow_remove_reference_from_edit}}
+      <button type="button" class="binf-btn binf-btn-default remove">{{remove_button_title}}</button>
+    {{/if}}
+
+  </div>
+{{/if}}
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

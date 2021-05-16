@@ -1,0 +1,87 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .csui-nodetable.csui-table-spacing-narrow .csui-table-cell-_select {
+  min-width: calc(6px + 12px + 6px); 
+  max-width: calc(6px + 12px + 6px); 
+}
+
+.binf-widgets .csui-nodetable.csui-table-spacing-medium .csui-table-cell-_select {
+  min-width: calc(8px + 14px + 8px); 
+  max-width: calc(8px + 14px + 8px); 
+}
+
+.binf-widgets .csui-nodetable.csui-table-spacing-wide .csui-table-cell-_select {
+  min-width: calc(14px + 18px + 14px); 
+  max-width: calc(14px + 18px + 14px); 
+}
+
+.binf-widgets .csui-nodetable.csui-table-spacing-narrow .csui-table-cell-_select:first-child,
+.binf-widgets .csui-nodetable.csui-table-spacing-narrow .csui-table-cell-_select.csui-table-cell-last-visible {
+  min-width: calc(20px + 12px + 6px); 
+  max-width: calc(20px + 12px + 6px); 
+}
+
+.binf-widgets .csui-nodetable.csui-table-spacing-medium .csui-table-cell-_select:first-child,
+.binf-widgets .csui-nodetable.csui-table-spacing-medium .csui-table-cell-_select.csui-table-cell-last-visible {
+  min-width: calc(20px + 14px + 8px); 
+  max-width: calc(20px + 14px + 8px); 
+}
+
+.binf-widgets .csui-nodetable.csui-table-spacing-wide .csui-table-cell-_select:first-child,
+.binf-widgets .csui-nodetable.csui-table-spacing-wide .csui-table-cell-_select.csui-table-cell-last-visible {
+  min-width: calc(20px + 18px + 14px); 
+  max-width: calc(20px + 18px + 14px); 
+}
+
+.csui-table-cell-_select > .csui-checkbox-view {
+  overflow-x: visible;
+}
+
+.binf-widgets .csui-nodetable .binf-table tr > .csui-table-cell-_select > .csui-checkbox-view {
+  padding: 0;
+}
+
+
+.csui-nodetable.csui-table-spacing-narrow .binf-table tr > .csui-table-cell-_select .csui-checkbox {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.csui-nodetable.csui-table-spacing-medium .binf-table tr > .csui-table-cell-_select .csui-checkbox {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.csui-nodetable.csui-table-spacing-wide .binf-table tr > .csui-table-cell-_select .csui-checkbox {
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+
+.csui-nodetable .binf-table tr > .csui-table-cell-_select:first-child .csui-checkbox {
+  padding-left: 20px;
+}
+
+
+.csui-nodetable .binf-table tr > .csui-table-cell-_select.csui-table-cell-last-visible .csui-checkbox {
+  padding-right: 20px;
+}
+
+.binf-widgets .csui-nodetable.csui-wrap-text .csui-control-view.csui-checkbox-view {
+  height: auto;
+}
+
+.csui-nodetable.csui-table-spacing-narrow .csui-table-cell-_select .csui-control-view.csui-checkbox-view .csui-checkbox .csui-icon {
+  width: 12px;
+  height: 12px;
+}
+
+.csui-nodetable.csui-table-spacing-medium .csui-table-cell-_select .csui-control-view.csui-checkbox-view .csui-checkbox .csui-icon {
+  width: 14px;
+  height: 14px;
+}
+
+.csui-nodetable.csui-table-spacing-wide .csui-table-cell-_select .csui-control-view.csui-checkbox-view .csui-checkbox .csui-icon {
+  width: 18px;
+  height: 18px;
+}

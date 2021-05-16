@@ -1,0 +1,106 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .wf-proxy-user-form {
+  padding: 20px 88px 0 0;
+  overflow: hidden;
+  height: inherit;
+}
+
+.binf-widgets .wf-proxy-user-form .binf-control-label,
+.binf-widgets .wf-proxy-user-form .binf-form-group > .binf-col-sm-9 {
+  width: 100% !important;
+  text-align: left !important;
+}
+
+.binf-widgets .wf-proxy-user-view-form .alpaca-container-item > .binf-form-group.alpaca-field .alpaca-control-label {
+  height: 100%;
+}
+
+.binf-widgets .wf-proxy-user-form .binf-control-label,
+.binf-widgets .wf-proxy-user-form .binf-form-group > .binf-col-sm-9 {
+  width: 100% !important;
+  text-align: left !important;
+}
+
+.binf-widgets .wf-proxy-user-form .binf-control-label {
+  font-size: 14px;
+  color: #757575;
+  line-height: 18px !important;
+  margin-bottom: -1px;
+}
+
+.binf-widgets .wf-proxy-user-form .binf-form-group > .binf-col-sm-9 {
+  font-size: 16px;
+  color: #333333;
+  margin: 0px;
+  padding: 0px 0px 32px 0px;
+  line-height: 16px;
+}
+
+.binf-widgets .esoc-simple-user-widget-dialog .wf-proxy-user .cs-field-read a {
+  text-decoration: none;
+}
+
+.binf-widgets .esoc-simple-user-widget-dialog .wf-proxy-user .cs-field-read a:hover {
+  text-decoration: underline;
+}
+
+.binf-widgets .wf-proxy-user-form .cs-field-read-content .image_user_placeholder {
+  font-size: 12px;
+  height: 24px;
+  width: 24px;
+}
+
+.binf-widgets .wf-proxy-user-form .cs-field-read-content .image_user_placeholder {
+  font-size: 12px;
+}
+
+.binf-widgets .esoc-user-profile-tab-content .wf-proxy-user-tab-view .wf-proxy-user-empty-message,
+.binf-widgets .esoc-simple-user-widget-form-body .wf-proxy-user-tab-view .wf-proxy-user-empty-message {
+  text-align: center;
+  padding: 32px 32px 32px 0;
+  font-style: italic;
+}
+
+.binf-widgets .esoc-user-profile-tab-content .wf-proxy-user-form {
+  background-color: #f7f7f7;
+}
+
+.binf-widgets .esoc-user-profile-tab-content .wf-proxy-user .binf-control-label {
+  color: #333333;
+  font-wight: bold;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.binf-widgets .esoc-user-profile-tab-content .wf-proxy-user .binf-form-group {
+  align-items: center;
+  display: inline-flex;
+  width: 50%;
+}
+
+.binf-widgets .esoc-user-profile-tab-content .wf-proxy-user .alpaca-control .cs-name {
+  align-items: center;
+}
+
+
+.binf-widgets .esoc-user-profile-tab-content .wf-proxy-user .cs-userfield {
+  line-height: 24px;
+}
+
+.binf-widgets .esoc-user-profile-tab-content .wf-proxy-user .csui-icon-edit {
+  margin-top: 0 !important;
+}
+
+
+.binf-widgets .esoc-user-profile-tab-content .wf-proxy-user .esoc-user-mini-profile {
+  font-size: 14px;
+  line-height: 1.2;
+  color: #333333;
+}
+
+.binf-widgets .esoc-user-profile-tab-content .wf-proxy-user .cs-field-read-content {
+  font-size: 14px;
+  color: #666666;
+  padding: 2px;
+}

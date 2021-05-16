@@ -1,0 +1,31 @@
+
+<div class="List-item" >
+    <div class="listItemWksp wkspItem"  id="wkspItem" >
+        <span class="wksp-expand-icon" data-id="{{id}}"><div id="toggleIcon" tabindex="{{tabIndex}}" class="{{toggleStatus}}" title="{{typeName}}" data-id="{{id}}" /></span>
+        <span class="wkspItemIcon"><div class="{{iconClass}}" title="{{typeName}}"></div></span>
+        <div class="listItemWkspName wkspItemName"  tabindex="0" id="wkspNameDiv" title="{{name}}" data-id="{{id}}">{{name}} </div>
+        <div class="wkspFolder-actiondiv binf-fade" style="display:none">
+            <div id="wkspActionBar" class="wkspFolder-actionbar wkspFolder-actionbar-bubble" >
+                <ul class="wksptile-nav wkspnav wksptile-pills">
+                    <li class="needsclick wkspActionButton wkspActionSaveButton" id="wkspSaveMenuItem" style="display:none">
+                        <div>
+                            <a href="#" id="saveEmailButton" data-id="{{id}}" tabindex="0" aria-label="{{saveButtonTitle}}" >
+                                <div class="wkspIcon emailSaveIcon" data-id="noToggle" />
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="needsclick wkspActionButton">
+                        <div>
+                            <a href="{{linkToWS}}" id="wkspOpenButton" title="{{openLinkTitle}}" aria-label="{{openLinkTitle}}" data-id="{{id}}" tabindex="0" target="_blank">
+                                <div class="wkspIcon wkspOpenIcon" data-id="noToggle" />
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="subFolders"></div>
+</div>
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

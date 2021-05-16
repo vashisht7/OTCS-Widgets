@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Header control</title>
+  <link rel="stylesheet" href="../../../../csui/themes/carbonfiber/theme.css">
+  <script src="../../../../../csui/lib/require.js"></script>
+
+  <script data-csui-path="../../../../../csui" src="../../../../../csui/config.js"></script>
+  <script src="../../../../../csui/helpers.js"></script>
+
+  <script type="text/javascript">
+    require.config({
+      paths: {
+        xecmpf: '../../..',
+        conws: '../../../../conws',
+        csui: '../../../../csui',
+        esoc: '../../../../esoc',
+        greet: '../../..',
+        hbs: '../../../../csui/lib/hbs',
+        css: '../../../../csui/lib/css',
+        i18n: '../../../../csui/lib/i18n',
+        json: '../../../../csui/lib/json',
+        txt: '../../../../csui/lib/text',
+        'csui-ext': '../../../../csui/utils/load-extensions/load-extensions'
+      },
+      config: {
+        'csui/utils/contexts/factories/connector': {
+          url: '//server/otcs/cs/api/v1',
+          crossDomain: true,
+          supportPath: '/support',
+          session: {
+            ticket: 'dummy'
+          }
+          /*credentials: {
+            username: "Admin",
+            password: "livelink"
+          }*/
+        }
+      }
+    });
+
+    require(['csui/lib/marionette',
+      'csui/utils/commands',
+      'csui/controls/dialog/dialog.view',
+      '../dialogheader.view',
+      'xecmpf/controls/headertoolbar/headertoolbar.view',
+      'xecmpf/controls/title/title.view',
+      'xecmpf/controls/headertoolbar/test/toolbaritems',
+      'xecmpf/controls/headertoolbar/test/commands/test_add'
+    ], function (Marionette, Commands, DialogView, HeaderView, HeaderToolbarView, TilteView,
+        toolbaritems, AddCommand) {
+
+      var contentRegion = new Marionette.Region({
+        el: '#content'
+      });
+
+      var commands = Commands;
+      commands.add(new AddCommand());
+
+      var headerToolbarView = new HeaderToolbarView({
+        commands: commands,
+        toolbarItems: toolbaritems
+      });
+
+      var headerToolbarView1 = new HeaderToolbarView({
+        commands: commands,
+        toolbarItems: toolbaritems
+      });
+
+      var tilteView = new TilteView({
+        icon: 'title-assignments',
+        title: "Business Attachments"
+      });
+
+      var headerView = new HeaderView({
+        iconRight: 'icon-tileCollapse',
+        hideDialogClose: false,
+        leftView: headerToolbarView,
+        centerView: tilteView,
+        rightView: headerToolbarView1
+      });
+
+      var dialogView = new DialogView({
+        title: 'Medium Size',
+        largeSize: true,
+        bodyMessage: 'A message for medium size, nothing special here.',
+        headerView: headerView
+      });
+
+      contentRegion.show(dialogView);
+    });
+
+    require.config({
+      deps: ['csui/lib/require.config!csui/csui-extensions.json']
+    });
+
+  </script>
+</head>
+
+<body class="binf-widgets">
+
+<div class="binf-container-fluid grid-rows">
+  <div class="binf-row">
+    <div class="binf-col-sm-8 binf-col-md-8 binf-col-lg-8" id="content"></div>
+  </div>
+</div>
+
+</body>
+</html>
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

@@ -1,0 +1,130 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+
+#xecmpf-dossier,
+#xecmpf-dossier:hover,
+#xecmpf-dossier:active,
+#xecmpf-dossier:focus {
+  box-shadow: none;
+  outline: none;
+  background: transparent;
+  overflow: visible;
+}
+
+#xecmpf-dossier > .tile-header {
+  height: 4rem;
+  background: #ffffff;
+  border: none;
+}
+
+#xecmpf-dossier > .tile-header .search-box {
+  left: auto;
+  width: 20em;
+  top: 12px;  
+  right: 30px;
+}
+
+#xecmpf-dossier > .tile-content {
+  background: rgba(255, 255, 255, 0.7);
+  height: calc(100% - 4rem);
+  border: none;
+}
+
+#xecmpf-dossier > .tile-content > .binf-list-group {
+  height: 100%;
+  padding: 1em 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+
+#xecmpf-dossier .tile-expand {
+  display: none
+}
+
+
+#xecmpf-dossier .binf-list-group *,
+#xecmpf-dossier .binf-list-group *:hover,
+#xecmpf-dossier .binf-list-group *:active,
+#xecmpf-dossier .binf-list-group *:focus {
+  box-shadow: none;
+  outline-color: black;
+}
+
+#xecmpf-dossier .binf-list-group .xecmpf-documents-tile {
+  width: 20em;
+  min-width: 20em;
+  background: transparent;
+  border: none;
+  margin-left: 1em;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#xecmpf-dossier .binf-list-group .xecmpf-documents-tile:last-of-type {
+  margin-right: 1em;
+}
+
+
+#xecmpf-dossier > .tile-header .dossier-properties {
+  position: absolute;
+  left: 20px;
+  color: #666666;
+  height: 1.1em;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+
+#xecmpf-dossier > .tile-header .dossier-properties .count {
+  font-size: large;
+}
+
+#xecmpf-dossier > .tile-header .dossier-properties .count:not(:first-of-type) {
+  margin-left: 1em;
+}
+
+#xecmpf-dossier > .tile-header .dossier-properties .count-label {
+  font-size: 0.750em;
+  margin-left: 0.3em;
+}
+
+
+#xecmpf-dossier .dossier-dropdown-wrapper {
+  position: absolute;
+  right: 48px;
+  height: 3em;
+  top: 8px;
+  display: flex;
+  align-items: center;
+}
+
+#xecmpf-dossier .dossier-dropdown-wrapper .dossier-dropdown-label {
+  margin-right: 8px;
+}
+
+#xecmpf-dossier .dossier-dropdown-wrapper .dossier-dropdown {
+  display: inline-block;
+}
+
+#xecmpf-dossier .dossier-dropdown-wrapper .dossier-dropdown .dropdown-menu-item.binf-active {
+  display: none;
+}
+
+
+#xecmpf-dossier .caret-left {
+  background-image: url("../../../image/icons/left_scroll_caret.svg");
+}
+
+#xecmpf-dossier .caret-right {
+  background-image: url("../../../image/icons/right_scroll_caret.svg");
+}
+
+#xecmpf-dossier .cs-scroll-control {
+  background: rgba(255, 255, 255, .5);
+  opacity: 1;
+}
+
+#xecmpf-dossier .cs-scroll-control .cs-scroll-control-icon {
+  opacity: 0.7;
+}

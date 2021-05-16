@@ -1,0 +1,20 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+
+.csui-field-otconws_workspacetype_id .csui-typeaheadpicker-item .csui-icon {
+    height: 2em;
+    width: 2em;
+}
+
+.csui-field-otconws_workspacetype_id .csui-control-typeaheadpicker .binf-dropdown-menu > li {
+    padding: 1px;
+}
+
+.csui-field-otconws_workspacetype_id .csui-typeaheadpicker-item .item-info.fullweight {
+    padding-left: 3px;
+}
+
+.csui-field-otconws_workspacetype_id .csui-typeaheadpicker-item .item-info .name {
+    display: inline;
+    white-space: nowrap;
+}

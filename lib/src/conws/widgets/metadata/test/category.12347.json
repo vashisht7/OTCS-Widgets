@@ -1,0 +1,107 @@
+{
+  "content": [
+    {
+      "data": {
+        "12347_1": "MS",
+        "12347_2": "Hardware",
+        "12347_3": {
+          "12347_3_1_5": "Waldstrasse",
+          "12347_3_1_6": "Munich",
+          "12347_3_1_7": "81234"
+        }
+      },
+      "options": {
+        "fields": {
+          "12347_1": {
+            "hidden": false,
+            "hideInitValidationError": true,
+            "label": "Company Code",
+            "readonly": false,
+            "type": "text"
+          },
+          "12347_2": {
+            "hidden": false,
+            "hideInitValidationError": true,
+            "label": "Business Area",
+            "readonly": false,
+            "type": "text"
+          },
+          "12347_3": {
+            "type": "object",
+            "label": "Location",
+            "fields": {
+              "12347_3_1_5": {
+                "hidden": false,
+                "hideInitValidationError": true,
+                "label": "Street",
+                "readonly": false,
+                "type": "text"
+              },
+              "12347_3_1_6": {
+                "hidden": false,
+                "hideInitValidationError": true,
+                "label": "City",
+                "readonly": false,
+                "type": "text"
+              },
+              "12347_3_1_7": {
+                "hidden": false,
+                "hideInitValidationError": true,
+                "label": "Postal Code",
+                "readonly": false,
+                "type": "text"
+              }
+            }
+          }
+        },
+        "form": {
+          "attributes": {
+            "action": "api\/v1\/nodes\/182623\/categories\/186455",
+            "method": "PUT"
+          },
+          "renderForm": true
+        }
+      },
+      "schema": {
+        "properties": {
+          "12347_1": {
+            "maxLength": 32,
+            "readonly": false,
+            "required": false,
+            "type": "string"
+          },
+          "12347_2": {
+            "maxLength": 32,
+            "readonly": false,
+            "required": false,
+            "type": "string"
+          },
+          "12347_3": {
+            "maxLength": 32,
+            "readonly": false,
+            "required": false,
+            "type": "string"
+          },
+          "12347_4": {
+            "type": "object",
+            "properties": {
+              "12347_4_1_5": {
+                "maxLength": 32,
+                "readonly": false,
+                "required": false,
+                "type": "string"
+              },
+              "12347_4_1_6": {
+                "maxLength": 32,
+                "readonly": false,
+                "required": false,
+                "type": "string"
+              }
+            }
+          }
+        },
+        "type": "object"
+      }
+    }
+  ]
+}

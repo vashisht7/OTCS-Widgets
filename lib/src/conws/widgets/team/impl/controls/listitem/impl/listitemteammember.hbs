@@ -1,0 +1,18 @@
+<div class="conws-user-avatar"></div>
+<div class="cs-left">
+    <div class="cs-title">
+      {{#if isUser}}
+        <span class="cs-name" title="{{name}}"></span>
+      {{else}}
+        <span class="cs-name" title="{{name}}">{{name}}</span>
+      {{/if}}
+    </div>
+    {{#if stage.value}}
+        <div class="cs-stage">
+            <span class="cs-value" title="{{stage.value}}">{{stage.value}}</span>
+            <span class="cs-label">{{stage.label}}</span>
+        </div>
+    {{/if}}
+</div>
+
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

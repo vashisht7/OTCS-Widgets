@@ -1,0 +1,317 @@
+{
+  "$schema": "http://opentext.com/cs/json-schema/draft-04/schema#",
+  "title": "Business Attachments",
+  "description": "Shows business attachments for a business object",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": "object",
+        "title": "Title",
+        "description": "Title of the business attachments widget"
+      },
+      "businessattachment": {
+        "type": "object",
+        "title": "Business attachment",
+        "description": "Business attachment specific options",
+        "properties": {
+          "properties": {
+            "type": "object",
+            "title": "Properties",
+            "description": "Configuration properties",
+            "properties": {
+              "busObjectId": {
+                "type": "string",
+                "title": "Business object id",
+                "default": "",
+                "description": "ID of the business object whose business attachments are displayed"
+              },
+              "busObjectType": {
+                "type": "string",
+                "title": "Business object type",
+                "default": "",
+                "description": "Type of the business object"
+              },
+              "extSystemId": {
+                "type": "string",
+                "title": "Business application ID",
+                "default": "",
+                "description": "Business application of the business object"
+              }
+            }
+          }
+        }
+      },
+      "collapsedView": {
+        "type": "object",
+        "title": "Collapsed view",
+        "description": "Options for the collapsed view of this widget",
+        "properties": {
+          "noResultsPlaceholder": {
+            "type": "object",
+            "title": "Message for empty result",
+            "description": "Message if there are no business attachments to display"
+          },
+          "orderBy": {
+            "type": "object",
+            "title": "Order by",
+            "description": "Sort order of the displayed business attachments",
+            "properties": {
+              "sortColumn": {
+                "type": "string",
+                "title": "Column",
+                "description": "Column to order by"
+              },
+              "sortOrder": {
+                "type": "string",
+                "enum": [
+                  "asc",
+                  "desc"
+                ],
+                "title": "Sort order",
+                "description": "Sort order to be used"
+              }
+            }
+          },
+          "title": {
+            "type": "object",
+            "title": "Business attachment title",
+            "description": "Title of the business attachment in collapsed view",
+            "properties": {
+              "value": {
+                "type": "string",
+                "title": "Title",
+                "description": "Value for the Title field"
+              }
+            }
+          },
+          "description": {
+            "type": "object",
+            "title": "Business attachment description",
+            "description": "Description of the business attachment in collapsed view",
+            "properties": {
+              "value": {
+                "type": "string",
+                "title": "Description",
+                "description": "Value for the description field"
+              }
+            }
+          },
+          "topRight": {
+            "type": "object",
+            "title": "Top right metadata field",
+            "description": "Metadata displayed in top right metadata field in collapsed view",
+            "properties": {
+              "label": {
+                "type": "object",
+                "title": "Label",
+                "description": "Label for the metadata field"
+              },
+              "value": {
+                "type": "string",
+                "title": "Value",
+                "description": "Value for the top right metadata field"
+              }
+            }
+          },
+          "bottomLeft": {
+            "type": "object",
+            "title": "Bottom left  metadata field",
+            "description": "Metadata displayed in bottom left metadata field in collapsed view",
+            "properties": {
+              "label": {
+                "type": "object",
+                "title": "Label",
+                "description": "Label for the metadata field"
+              },
+              "value": {
+                "type": "string",
+                "title": "Value",
+                "description": "Value for the bottom left metadata field"
+              }
+            }
+          },
+          "bottomRight": {
+            "type": "object",
+            "title": "Bottom right metadata field",
+            "description": "Metadata displayed in bottom right metadata field in collapsed view",
+            "properties": {
+              "label": {
+                "type": "object",
+                "title": "Label",
+                "description": "Label for the metadata field"
+              },
+              "value": {
+                "type": "string",
+                "title": "Value",
+                "description": "Value for the bottom right metadata  metadata field"
+              }
+            }
+          }
+        }
+      },
+      "expandedView": {
+        "type": "object",
+        "title": "Expanded view",
+        "description": "Options for the expanded view of this widget",
+        "properties": {
+          "orderBy": {
+            "type": "object",
+            "title": "Order by",
+            "description": "Sort order of the displayed business attachments",
+            "properties": {
+              "sortColumn": {
+                "type": "string",
+                "title": "Column",
+                "description": "Column to order by"
+              },
+              "sortOrder": {
+                "type": "string",
+                "enum": [
+                  "asc",
+                  "desc"
+                ],
+                "title": "Sort order",
+                "description": "Sort order to be used"
+              }
+            }
+          }
+        }
+      },
+      "snapshot": {
+        "type": "object",
+        "title": "Snapshot",
+        "description": "Options for the snapshots of Business Attachments",
+        "properties": {
+          "parentFolderName": {
+            "type": "string",
+            "title": "Parent folder name",
+            "description": "Folder in business workspace, where Snapshots are created."
+          },
+          "folderNamePrefix": {
+            "type": "string",
+            "title": "Snapshot name prefix",
+            "description": "The name of a snapshot consists of the prefix and a timestamp."
+          }
+        }
+      }
+    }
+  },
+  "options": {
+    "fields": {
+      "businessattachment": {
+        "fields": {
+          "properties": {
+            "fields": {
+              "busObjectId": {
+                "type": "otconws_metadata_string"
+              },
+              "busObjectType": {
+                "type": "otconws_metadata_string"
+              },
+              "extSystemId": {
+                "type": "otconws_metadata_string"
+              }
+            }
+          }
+        }
+      },
+      "title": {
+        "type": "otcs_multilingual_string"
+      },
+      "collapsedView": {
+        "fields": {
+          "noResultsPlaceholder": {
+            "type": "otcs_multilingual_string"
+          },
+          "orderBy": {
+            "fields": {
+              "sortColumn": {
+                "type": "otconws_customcolumn"
+              },
+              "sortOrder": {
+                "type": "select",
+                "optionLabels": [
+                  "Ascending",
+                  "Descending"
+                ]
+              }
+            }
+          },
+          "title": {
+            "fields": {
+              "value": {
+                "type": "otconws_customcolumn"
+              }
+            }
+          },
+          "description": {
+            "fields": {
+              "value": {
+                "type": "otconws_customcolumn"
+              }
+            }
+          },
+          "topRight": {
+            "fields": {
+              "label": {
+                "type": "otcs_multilingual_string"
+              },
+              "value": {
+                "type": "otconws_customcolumn"
+              }
+            }
+          },
+          "bottomLeft": {
+            "fields": {
+              "label": {
+                "type": "otcs_multilingual_string"
+              },
+              "value": {
+                "type": "otconws_customcolumn"
+              }
+            }
+          },
+          "bottomRight": {
+            "fields": {
+              "label": {
+                "type": "otcs_multilingual_string"
+              },
+              "value": {
+                "type": "otconws_customcolumn"
+              }
+            }
+          }
+        }
+      },
+      "expandedView": {
+        "fields": {
+          "orderBy": {
+            "fields": {
+              "sortColumn": {
+                "type": "otconws_customcolumn"
+              },
+              "sortOrder": {
+                "type": "select",
+                "optionLabels": [
+                  "Ascending",
+                  "Descending"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "snapshot": {
+        "fields": {
+          "parentFolderName": {
+            "type": "text"
+          },
+          "folderNamePrefix": {
+            "type": "text"
+          }
+        }
+      }
+    }
+  }
+}

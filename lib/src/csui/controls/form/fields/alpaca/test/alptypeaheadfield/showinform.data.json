@@ -1,0 +1,136 @@
+{
+
+  "response_businessworkspacetypes": {
+    "links": {
+      "data": {
+        "self": {
+          "body": "",
+          "content_type": "",
+          "href": "/api/v2/businessworkspacetypes",
+          "method": "GET",
+          "name": ""
+        }
+      }
+    },
+    "results": [
+      {
+        "data": {
+          "properties": {
+            "rm_enabled": false,
+            "wksp_type_id": 3,
+            "wksp_type_name": "Car Workspace Type"
+          },
+          "wksp_info": {
+            "wksp_type_icon": null,
+            "wksp_type_icon_content_type": "type_base64_content"
+          }
+        }
+      },
+      {
+        "data": {
+          "properties": {
+            "rm_enabled": false,
+            "wksp_type_id": 5,
+            "wksp_type_name": "Company Workspace Type"
+          },
+          "wksp_info": {
+            "wksp_type_icon": null,
+            "wksp_type_icon_content_type": "type_base64_content"
+          }
+        }
+      },
+      {
+        "data": {
+          "properties": {
+            "rm_enabled": false,
+            "wksp_type_id": 6,
+            "wksp_type_name": "Contact Wksp Type"
+          },
+          "wksp_info": {
+            "wksp_type_icon": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NDTwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOC4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NDTwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQ08c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0NCSB2aWV3Qm94PSIwIDAgMzIgMzIiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NDTxnIGlkPSJQcHQiPg0NPC9nPg0NPGcgaWQ9IlNtYWxsX0ZvbGRlciI+DQ08L2c+DQ08Zz4NDQk8Zz4NDQkJPGc+DQ0JCQk8cGF0aCBmaWxsPSIjQjM2NjAxIiBkPSJNMS41LDI3LjVWNi41MTNjMC0xLjExLDAuODk3LTIuMDEzLDItMi4wMTNoNy44OTdjMC40NjcsMCwwLjkzNiwwLjE2NywxLjMxOSwwLjQ3MmwzLjY2OCwzLjIzOQ0NCQkJCUMxNi42NDYsOC40MTcsMTYuODE5LDguNSwxNyw4LjVoMTAuNWMxLjEwMywwLDIsMC44OTcsMiwydjE3SDEuNXoiLz4NDQkJCTxnPg0NCQkJCTxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0xMS4zOTcsNWMwLjM2NiwwLDAuNzIyLDAuMTM2LDEuMDA5LDAuMzY0bDMuNjQ4LDMuMjIyQzE2LjM0MSw4LjgxMywxNi42MzQsOSwxNyw5aDEwLjUNDQkJCQkJYzAuODI4LDAsMS41LDAuNjcyLDEuNSwxLjVWMjdIMlY2LjUxM0MyLDUuNjg0LDIuNjcyLDUsMy41LDVIMTEuMzk3IE0xMS4zOTcsNEgzLjVDMi4xMjEsNCwxLDUuMTI3LDEsNi41MTNWMjd2MWgxaDI3aDF2LTENDQkJCQkJVjEwLjVDMzAsOS4xMjIsMjguODc4LDgsMjcuNSw4SDE3Yy0wLjAyNywwLTAuMTAyLTAuMDI0LTAuMzA1LTAuMTgzbC0zLjYyNi0zLjIwM2wtMC4wMi0wLjAxOEwxMy4wMjcsNC41OA0NCQkJCQlDMTIuNTU1LDQuMjA2LDExLjk3Niw0LDExLjM5Nyw0TDExLjM5Nyw0eiIvPg0NCQkJPC9nPg0NCQk8L2c+DQ0JPC9nPg0NCTxnPg0NCQk8cGF0aCBmaWxsPSIjRTM5OTJFIiBkPSJNMywyNmgyNVYxMmMwLTAuNTUyLTAuNDQ4LTEtMS0xSDRjLTAuNTUyLDAtMSwwLjQ0OC0xLDFWMjZ6Ii8+DQ0JPC9nPg0NCTxnPg0NCQk8cG9seWdvbiBmaWxsPSIjREQ4MTAwIiBwb2ludHM9IjMsMjYgMjgsMjYgMjgsMTMgCQkiLz4NDQk8L2c+DQ08L2c+DQ08ZyBpZD0iZmF2ZV9pY29uXy1fc2VsZWN0ZWQiPg0NPC9nPg0NPC9zdmc+DQ0=",
+            "wksp_type_icon_content_type": "type_base64_content"
+          }
+        }
+      },
+      {
+        "data": {
+          "properties": {
+            "rm_enabled": false,
+            "wksp_type_id": 1,
+            "wksp_type_name": "Contract"
+          },
+          "wksp_info": {
+            "wksp_type_icon": "data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHRpdGxlPmNvbGxhYm9yYXRlMjRfY2xhc3NpYzwvdGl0bGU+PHBhdGggZD0iTTIwLDEwSDE5VjYuN0E2LjcsNi43LDAsMCwwLDEyLjMsMGgtLjZBNi43LDYuNywwLDAsMCw1LDYuN1YxMEg0YS45NDUuOTQ1LDAsMCwwLTEsMVYyM2EuOTQ1Ljk0NSwwLDAsMCwxLDFIMjBhLjk0NS45NDUsMCwwLDAsMS0xVjExQS45NDUuOTQ1LDAsMCwwLDIwLDEwWk03LDYuN0E0LjcsNC43LDAsMCwxLDExLjcsMmguNkE0LjcsNC43LDAsMCwxLDE3LDYuN1YxMEg3WiIgc3R5bGU9ImZpbGw6IzYyNzc4MyIvPjxwYXRoIGQ9Ik0xNSwxOGExLjk4NywxLjk4NywwLDAsMC0xLjUuNjkxbC0yLjU0NS0xLjI3MmExLjk1MSwxLjk1MSwwLDAsMCwwLS44MzZMMTMuNSwxNS4zMDlhMS45NzMsMS45NzMsMCwxLDAtLjQ1NC0uODkxTDEwLjUsMTUuNjkxYTIsMiwwLDEsMCwwLDIuNjE5bDIuNTQ1LDEuMjcyQTIsMiwwLDEsMCwxNSwxOFoiIHN0eWxlPSJmaWxsOiNmZmYiLz48L3N2Zz4=",
+            "wksp_type_icon_content_type": "type_base64_content"
+          }
+        }
+      },
+      {
+        "data": {
+          "properties": {
+            "rm_enabled": false,
+            "wksp_type_id": 4,
+            "wksp_type_name": "Person Workspace Type"
+          },
+          "wksp_info": {
+            "wksp_type_icon": null,
+            "wksp_type_icon_content_type": "type_base64_content"
+          }
+        }
+      },
+      {
+        "data": {
+          "properties": {
+            "rm_enabled": false,
+            "wksp_type_id": 498,
+            "wksp_type_name": "Service Notification Wksp Type"
+          },
+          "wksp_info": {
+            "wksp_type_icon": null,
+            "wksp_type_icon_content_type": "type_base64_content"
+          }
+        }
+      },
+      {
+        "data": {
+          "properties": {
+            "rm_enabled": false,
+            "wksp_type_id": 2,
+            "wksp_type_name": "Wksp Type 002"
+          },
+          "wksp_info": {
+            "wksp_type_icon": null,
+            "wksp_type_icon_content_type": "type_base64_content"
+          }
+        }
+      },
+      {
+        "data": {
+          "properties": {
+            "rm_enabled": false,
+            "wksp_type_id": 497,
+            "wksp_type_name": "Wksp Type 003"
+          },
+          "wksp_info": {
+            "wksp_type_icon": null,
+            "wksp_type_icon_content_type": "type_base64_content"
+          }
+        }
+      },
+      {
+        "data": {
+          "properties": {
+            "rm_enabled": false,
+            "wksp_type_id": 496,
+            "wksp_type_name": "WskpTest001"
+          },
+          "wksp_info": {
+            "wksp_type_icon": null,
+            "wksp_type_icon_content_type": "type_base64_content"
+          }
+        }
+      }
+    ]
+  }
+
+}

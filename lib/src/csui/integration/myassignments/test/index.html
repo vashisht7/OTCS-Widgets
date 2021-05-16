@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>MyAssignments - Test</title>
+
+  
+  <link rel="stylesheet" href="../../../themes/carbonfiber/theme.css">
+
+  <script src="../../../lib/require.js"></script>
+  <script src="../../../config.js" data-csui-path="../../.."></script>
+  <script src="../../../helpers.js"></script>
+
+  <script>
+
+    require.config({
+      deps: ['csui/lib/require.config!csui/csui-extensions.json'],
+      config: {
+        "csui/widgets/myassignments/myassignments.view": {
+          openInPerspective: false
+        }
+      },
+      callback: function() {
+        csui.onReady2(['csui/widgets/myassignments/myassignments.view',
+            'csui/lib/marionette', 'csui/utils/contexts/page/page.context',
+            'csui/utils/connector', 'csui/utils/authenticators/interactive.credentials.authenticator'
+          ],
+          function (MyAssignmentsView, Marionette, PageContext, Connector, Authenticator)  {
+
+            var connection = {
+                url: "http://murdoch.opentext.com/alpha/cs.exe/api/v1",
+                supportPath: "/img",
+              },
+              connector = new Connector({
+                connection: connection
+              });
+
+            var contentRegion = new Marionette.Region({ el: "#browser" }),
+              pageContext = new PageContext({ factories: { connector: connector } });
+            var options = {
+              context: pageContext
+            };
+
+            var appView = new MyAssignmentsView(options);
+            contentRegion.show(appView);
+            pageContext.fetch();
+
+          });
+      }
+    });
+
+
+  </script>
+
+</head>
+
+<body class="binf-widgets">
+<form>
+  <div>
+    <div style="width: 180px;float:left;">a<br>b<br></div>
+    <div style="width: 100%; margin-left:220px">
+      <table style="width: 100%; ">
+        <tbody>
+        <tr><td style="width: 100%; ">
+          <div id="browser" style="height: 500px; width: 500px"></div>
+        </td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</form>
+</body>
+</html>
+
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

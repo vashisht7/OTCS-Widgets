@@ -1,0 +1,13 @@
+<button type="button" role="checkbox" class="csui-control csui-checkbox"
+    {{#if ariaLabelledBy}}
+        aria-labelledBy="{{ariaLabelledBy}}"
+    {{else}}
+        aria-label="{{ariaLabel}}"
+    {{/if}}
+    {{disabled}}
+        title="{{title}}" aria-checked="{{ariaChecked}}" >
+  <svg class="csui-icon csui-svg-icon" focusable="false">
+    <use xlink:href="{{spritePath}}#{{iconClass}}"></use>
+  </svg>
+</button>
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

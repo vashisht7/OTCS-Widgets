@@ -1,0 +1,1018 @@
+{
+  "available_actions": [
+    {
+      "parameterless": true,
+      "read_only": false,
+      "type": "delete",
+      "type_name": "Delete",
+      "webnode_signature": null
+    },
+    {
+      "parameterless": false,
+      "read_only": false,
+      "type": "create",
+      "type_name": "Create",
+      "webnode_signature": null
+    },
+    {
+      "parameterless": false,
+      "read_only": false,
+      "type": "update",
+      "type_name": "Update",
+      "webnode_signature": null
+    }
+  ],
+  "data": {
+    "birth_date": null,
+    "business_email": null,
+    "business_fax": null,
+    "business_phone": null,
+    "cell_phone": null,
+    "deleted": false,
+    "display_name": "Admin",
+    "first_name": null,
+    "gender": null,
+    "group_id": 1001,
+    "home_address_1": null,
+    "home_address_2": null,
+    "home_fax": null,
+    "home_phone": null,
+    "id": 1000,
+    "last_name": "N\/A",
+    "middle_name": null,
+    "name": "Admin",
+    "office_location": null,
+    "pager": null,
+    "personal_email": null,
+    "personal_interests": null,
+    "personal_url_1": null,
+    "personal_url_2": null,
+    "personal_url_3": null,
+    "personal_website": null,
+    "photo_url": null,
+    "privilege_login": true,
+    "privilege_modify_groups": true,
+    "privilege_modify_users": true,
+    "privilege_public_access": true,
+    "privilege_system_admin_rights": true,
+    "privilege_user_admin_rights": true,
+    "time_zone": null,
+    "title": null,
+    "type": 0,
+    "type_name": "User"
+  },
+  "definitions": {
+    "birth_date": {
+      "allow_undefined": false,
+      "bulk_shared": false,
+      "default_value": null,
+      "description": null,
+      "hidden": false,
+      "include_time": true,
+      "key": "birth_date",
+      "key_value_pairs": false,
+      "multi_value": false,
+      "name": "Birthday",
+      "persona": "",
+      "read_only": false,
+      "required": false,
+      "type": -7,
+      "type_name": "Date",
+      "valid_values": [
+
+      ],
+      "valid_values_name": [
+
+      ]
+    },
+    "business_email": {
+      "allow_undefined": false,
+      "bulk_shared": false,
+      "default_value": null,
+      "description": null,
+      "hidden": false,
+      "key": "business_email",
+      "key_value_pairs": false,
+      "max_length": null,
+      "min_length": null,
+      "multiline": false,
+      "multilingual": false,
+      "multi_value": false,
+      "name": "Business E-mail",
+      "password": false,
+      "persona": "",
+      "read_only": false,
+      "regex": "",
+      "required": false,
+      "type": -1,
+      "type_name": "String",
+      "valid_values": [
+
+      ],
+      "valid_values_name": [
+
+      ]
+    },
+    "business_fax": {
+      "allow_undefined": false,
+      "bulk_shared": false,
+      "default_value": null,
+      "description": null,
+      "hidden": false,
+      "key": "business_fax",
+      "key_value_pairs": false,
+      "max_length": null,
+      "min_length": null,
+      "multiline": false,
+      "multilingual": false,
+      "multi_value": false,
+      "name": "Business Fax",
+      "password": false,
+      "persona": "",
+      "read_only": false,
+      "regex": "",
+      "required": false,
+      "type": -1,
+      "type_name": "String",
+      "valid_values": [
+
+      ],
+      "valid_values_name": [
+
+      ]
+    },
+    "business_phone": {
+      "allow_undefined": false,
+      "bulk_shared": false,
+      "default_value": null,
+      "description": null,
+      "hidden": false,
+      "key": "business_phone",
+      "key_value_pairs": false,
+      "max_length": null,
+      "min_length": null,
+      "multiline": false,
+      "multilingual": false,
+      "multi_value": false,
+      "name": "Business Phone",
+      "password": false,
+      "persona": "",
+      "read_only": false,
+      "regex": "",
+      "required": false,
+      "type": -1,
+      "type_name": "String",
+      "valid_values": [
+
+      ],
+      "valid_values_name": [
+
+      ]
+    },
+    "cell_phone": {
+      "allow_undefined": false,
+      "bulk_shared": false,
+      "default_value": null,
+      "description": null,
+      "hidden": false,
+      "key": "cell_phone",
+      "key_value_pairs": false,
+      "max_length": null,
+      "min_length": null,
+      "multiline": false,
+      "multilingual": false,
+      "multi_value": false,
+      "name": "Cell Phone",
+      "password": false,
+      "persona": "",
+      "read_only": false,
+      "regex": "",
+      "required": false,
+      "type": -1,
+      "type_name": "String",
+      "valid_values": [
+
+      ],
+      "valid_values_name": [
+
+      ]
+    },
+    "deleted": {
+      "allow_undefined": false,
+      "bulk_shared": false,
+      "default_value": null,
+      "description": null,
+      "hidden": false,
+      "key": "deleted",
+      "key_value_pairs": false,
+      "multi_value": false,
+      "name": "Deleted",
+      "persona": "",
+      "read_only": true,
+      "required": false,
+      "type": 5,
+      "type_name": "Boolean",
+      "valid_values": [
+
+      ],
+      "valid_values_name": [
+
+      ]
+    },
+    "first_name": {
+      "allow_undefined": false,
+      "bulk_shared": false,
+      "default_value": null,
+      "description": null,
+      "hidden": false,
+      "key": "first_name",
+      "key_value_pairs": false,
+      "max_length": null,
+      "min_length": null,
+      "multiline": false,
+      "multilingual": false,
+      "multi_value": false,
+      "name": "First Name",
+      "password": false,
+      "persona": "",
+      "read_only": false,
+      "regex": "",
+      "required": false,
+      "type": -1,
+      "type_name": "String",
+      "valid_values": [
+
+      ],
+      "valid_values_name": [
+
+      ]
+    },
+    "gender": {
+      "allow_undefined": false,
+      "bulk_shared": false,
+      "default_value": null,
+      "description": null,
+      "hidden": false,
+      "key": "gender",
+      "key_value_pairs": false,
+      "max_value": null,
+      "min_value": null,
+      "multi_value": false,
+      "name": "Gender",
+      "persona": "",
+      "read_only": false,
+      "required": false,
+      "type": 2,
+      "type_name": "Integer",
+      "valid_values": [
+
+      ],
+      "valid_values_name": [
+
+      ]
+    },
+    "group_id": {
+      "allow_undefined": false,
+      "bulk_shared": false,
+      "default_value": null,
+      "description": null,
+      "hidden": false,
+      "key": "group_id",
+      "key_value_pairs": false,
+      "max_value": null,
+      "min_value": null,
+      "multi_value": false,
+      "name": "Group",
+      "persona": "group",
+      "read_only": false,
+      "required": false,
+      "type": 2,
+      "type_name": "Integer",
+      "valid_values": [
+
+      ],
+      "valid_values_name": [
+
+      ]
+    },
+    "home_address_1": {
+      "allow_undefined": false,
+      "bulk_shared": false,
+      "default_value": null,
+      "description": null,
+      "hidden": false,
+      "key": "home_address_1",
+      "key_value_pairs": false,
+      "max_length": null,
+      "min_length": null,
+      "multiline": false,
+      "multilingual": false,
+      "multi_value": false,
+      "name": "Home Address",
+      "password": false,
+      "persona": "",
+      "read_only": false,
+      "regex": "",
+      "required": false,
+      "type": -1,
+      "type_name": "String",
+      "valid_values": [
+
+      ],
+      "valid_values_name": [
+
+      ]
+    },
+    "home_address_2": {
+      "allow_undefined": false,
+      "bulk_shared": false,
+      "default_value": null,
+      "description": null,
+      "hidden": false,
+      "key": "home_address_2",
+      "key_value_pairs": false,
+      "max_length": null,
+      "min_length": null,
+      "multiline": false,
+      "multilingual": false,
+      "multi_value": false,
+      "name": "Home Address",
+      "password": false,
+      "persona": "",
+      "read_only": false,
+      "regex": "",
+      "required": false,
+      "type": -1,
+      "type_name": "String",
+      "valid_values": [
+
+      ],
+      "valid_values_name": [
+
+      ]
+    },
+    "home_fax": {
+      "allow_undefined": false,
+      "bulk_shared": false,
+      "default_value": null,
+      "description": null,
+      "hidden": false,
+      "key": "home_fax",
+      "key_value_pairs": false,
+      "max_length": null,
+      "min_length": null,
+      "multiline": false,
+      "multilingual": false,
+      "multi_value": false,
+      "name": "Home Fax",
+      "password": false,
+      "persona": "",
+      "read_only": false,
+      "regex": "",
+      "required": false,
+      "type": -1,
+      "type_name": "String",
+      "valid_values": [
+
+      ],
+      "valid_values_name": [
+
+      ]
+    },
+    "home_phone": {
+      "allow_undefined": false,
+      "bulk_shared": false,
+      "default_value": null,
+      "description": null,
+      "hidden": false,
+      "key": "home_phone",
+      "key_value_pairs": false,
+      "max_length": null,
+      "min_length": null,
+      "multiline": false,
+      "multilingual": false,
+      "multi_value": false,
+      "name": "Home Phone",
+      "password": false,
+      "persona": "",
+      "read_only": false,
+      "regex": "",
+      "required": false,
+      "type": -1,
+      "type_name": "String",
+      "valid_values": [
+
+      ],
+      "valid_values_name": [
+
+      ]
+    },
+    "id": {
+      "allow_undefined": false,
+      "bulk_shared": false,
+      "default_value": null,
+      "description": null,
+      "hidden": false,
+      "key": "id",
+      "key_value_pairs": false,
+      "max_value": null,
+      "min_value": null,
+      "multi_value": false,
+      "name": "ID",
+      "persona": "",
+      "read_only": false,
+      "required": true,
+      "type": 2,
+      "type_name": "Integer",
+      "valid_values": [
+
+      ],
+      "valid_values_name": [
+
+      ]
+    },
+    "last_name": {
+      "allow_undefined": false,
+      "bulk_shared": false,
+      "default_value": null,
+      "description": null,
+      "hidden": false,
+      "key": "last_name",
+      "key_value_pairs": false,
+      "max_length": null,
+      "min_length": null,
+      "multiline": false,
+      "multilingual": false,
+      "multi_value": false,
+      "name": "Last Name",
+      "password": false,
+      "persona": "",
+      "read_only": false,
+      "regex": "",
+      "required": false,
+      "type": -1,
+      "type_name": "String",
+      "valid_values": [
+
+      ],
+      "valid_values_name": [
+
+      ]
+    },
+    "middle_name": {
+      "allow_undefined": false,
+      "bulk_shared": false,
+      "default_value": null,
+      "description": null,
+      "hidden": false,
+      "key": "middle_name",
+      "key_value_pairs": false,
+      "max_length": null,
+      "min_length": null,
+      "multiline": false,
+      "multilingual": false,
+      "multi_value": false,
+      "name": "Middle Name",
+      "password": false,
+      "persona": "",
+      "read_only": false,
+      "regex": "",
+      "required": false,
+      "type": -1,
+      "type_name": "String",
+      "valid_values": [
+
+      ],
+      "valid_values_name": [
+
+      ]
+    },
+    "name": {
+      "allow_undefined": false,
+      "bulk_shared": false,
+      "default_value": null,
+      "description": null,
+      "hidden": false,
+      "key": "name",
+      "key_value_pairs": false,
+      "max_length": null,
+      "min_length": null,
+      "multiline": false,
+      "multilingual": false,
+      "multi_value": false,
+      "name": "Name",
+      "password": false,
+      "persona": "",
+      "read_only": false,
+      "regex": "",
+      "required": true,
+      "type": -1,
+      "type_name": "String",
+      "valid_values": [
+
+      ],
+      "valid_values_name": [
+
+      ]
+    },
+    "office_location": {
+      "allow_undefined": false,
+      "bulk_shared": false,
+      "default_value": null,
+      "description": null,
+      "hidden": false,
+      "key": "office_location",
+      "key_value_pairs": false,
+      "max_length": null,
+      "min_length": null,
+      "multiline": false,
+      "multilingual": false,
+      "multi_value": false,
+      "name": "OfficeLocation",
+      "password": false,
+      "persona": "",
+      "read_only": false,
+      "regex": "",
+      "required": false,
+      "type": -1,
+      "type_name": "String",
+      "valid_values": [
+
+      ],
+      "valid_values_name": [
+
+      ]
+    },
+    "pager": {
+      "allow_undefined": false,
+      "bulk_shared": false,
+      "default_value": null,
+      "description": null,
+      "hidden": false,
+      "key": "pager",
+      "key_value_pairs": false,
+      "max_length": null,
+      "min_length": null,
+      "multiline": false,
+      "multilingual": false,
+      "multi_value": false,
+      "name": "Pager",
+      "password": false,
+      "persona": "",
+      "read_only": false,
+      "regex": "",
+      "required": false,
+      "type": -1,
+      "type_name": "String",
+      "valid_values": [
+
+      ],
+      "valid_values_name": [
+
+      ]
+    },
+    "personal_email": {
+      "allow_undefined": false,
+      "bulk_shared": false,
+      "default_value": null,
+      "description": null,
+      "hidden": false,
+      "key": "personal_email",
+      "key_value_pairs": false,
+      "max_length": null,
+      "min_length": null,
+      "multiline": false,
+      "multilingual": false,
+      "multi_value": false,
+      "name": "Personal Email",
+      "password": false,
+      "persona": "",
+      "read_only": false,
+      "regex": "",
+      "required": false,
+      "type": -1,
+      "type_name": "String",
+      "valid_values": [
+
+      ],
+      "valid_values_name": [
+
+      ]
+    },
+    "personal_interests": {
+      "allow_undefined": false,
+      "bulk_shared": false,
+      "default_value": null,
+      "description": null,
+      "hidden": false,
+      "key": "personal_interests",
+      "key_value_pairs": false,
+      "max_length": null,
+      "min_length": null,
+      "multiline": false,
+      "multilingual": false,
+      "multi_value": false,
+      "name": "Interests",
+      "password": false,
+      "persona": "",
+      "read_only": false,
+      "regex": "",
+      "required": false,
+      "type": -1,
+      "type_name": "String",
+      "valid_values": [
+
+      ],
+      "valid_values_name": [
+
+      ]
+    },
+    "personal_url_1": {
+      "allow_undefined": false,
+      "bulk_shared": false,
+      "default_value": null,
+      "description": null,
+      "hidden": false,
+      "key": "personal_url_1",
+      "key_value_pairs": false,
+      "max_length": null,
+      "min_length": null,
+      "multiline": false,
+      "multilingual": false,
+      "multi_value": false,
+      "name": "Favorites",
+      "password": false,
+      "persona": "",
+      "read_only": false,
+      "regex": "",
+      "required": false,
+      "type": -1,
+      "type_name": "String",
+      "valid_values": [
+
+      ],
+      "valid_values_name": [
+
+      ]
+    },
+    "personal_url_2": {
+      "allow_undefined": false,
+      "bulk_shared": false,
+      "default_value": null,
+      "description": null,
+      "hidden": false,
+      "key": "personal_url_2",
+      "key_value_pairs": false,
+      "max_length": null,
+      "min_length": null,
+      "multiline": false,
+      "multilingual": false,
+      "multi_value": false,
+      "name": "Favorites",
+      "password": false,
+      "persona": "",
+      "read_only": false,
+      "regex": "",
+      "required": false,
+      "type": -1,
+      "type_name": "String",
+      "valid_values": [
+
+      ],
+      "valid_values_name": [
+
+      ]
+    },
+    "personal_url_3": {
+      "allow_undefined": false,
+      "bulk_shared": false,
+      "default_value": null,
+      "description": null,
+      "hidden": false,
+      "key": "personal_url_3",
+      "key_value_pairs": false,
+      "max_length": null,
+      "min_length": null,
+      "multiline": false,
+      "multilingual": false,
+      "multi_value": false,
+      "name": "Favorites",
+      "password": false,
+      "persona": "",
+      "read_only": false,
+      "regex": "",
+      "required": false,
+      "type": -1,
+      "type_name": "String",
+      "valid_values": [
+
+      ],
+      "valid_values_name": [
+
+      ]
+    },
+    "personal_website": {
+      "allow_undefined": false,
+      "bulk_shared": false,
+      "default_value": null,
+      "description": null,
+      "hidden": false,
+      "key": "personal_website",
+      "key_value_pairs": false,
+      "max_length": null,
+      "min_length": null,
+      "multiline": false,
+      "multilingual": false,
+      "multi_value": false,
+      "name": "Home Page",
+      "password": false,
+      "persona": "",
+      "read_only": false,
+      "regex": "",
+      "required": false,
+      "type": -1,
+      "type_name": "String",
+      "valid_values": [
+
+      ],
+      "valid_values_name": [
+
+      ]
+    },
+    "privilege_login": {
+      "allow_undefined": false,
+      "bulk_shared": false,
+      "default_value": null,
+      "description": null,
+      "hidden": false,
+      "key": "privilege_login",
+      "key_value_pairs": false,
+      "multi_value": false,
+      "name": "Log-in",
+      "persona": "",
+      "read_only": false,
+      "required": false,
+      "type": 5,
+      "type_name": "Boolean",
+      "valid_values": [
+
+      ],
+      "valid_values_name": [
+
+      ]
+    },
+    "privilege_modify_groups": {
+      "allow_undefined": false,
+      "bulk_shared": false,
+      "default_value": null,
+      "description": null,
+      "hidden": false,
+      "key": "privilege_modify_groups",
+      "key_value_pairs": false,
+      "multi_value": false,
+      "name": "Create\/Modify Groups",
+      "persona": "",
+      "read_only": false,
+      "required": false,
+      "type": 5,
+      "type_name": "Boolean",
+      "valid_values": [
+
+      ],
+      "valid_values_name": [
+
+      ]
+    },
+    "privilege_modify_users": {
+      "allow_undefined": false,
+      "bulk_shared": false,
+      "default_value": null,
+      "description": null,
+      "hidden": false,
+      "key": "privilege_modify_users",
+      "key_value_pairs": false,
+      "multi_value": false,
+      "name": "Create\/Modify Users",
+      "persona": "",
+      "read_only": false,
+      "required": false,
+      "type": 5,
+      "type_name": "Boolean",
+      "valid_values": [
+
+      ],
+      "valid_values_name": [
+
+      ]
+    },
+    "privilege_public_access": {
+      "allow_undefined": false,
+      "bulk_shared": false,
+      "default_value": null,
+      "description": null,
+      "hidden": false,
+      "key": "privilege_public_access",
+      "key_value_pairs": false,
+      "multi_value": false,
+      "name": "Public Access",
+      "persona": "",
+      "read_only": false,
+      "required": false,
+      "type": 5,
+      "type_name": "Boolean",
+      "valid_values": [
+
+      ],
+      "valid_values_name": [
+
+      ]
+    },
+    "privilege_system_admin_rights": {
+      "allow_undefined": false,
+      "bulk_shared": false,
+      "default_value": null,
+      "description": null,
+      "hidden": false,
+      "key": "privilege_system_admin_rights",
+      "key_value_pairs": false,
+      "multi_value": false,
+      "name": "System Administration Rights",
+      "persona": "",
+      "read_only": false,
+      "required": false,
+      "type": 5,
+      "type_name": "Boolean",
+      "valid_values": [
+
+      ],
+      "valid_values_name": [
+
+      ]
+    },
+    "privilege_user_admin_rights": {
+      "allow_undefined": false,
+      "bulk_shared": false,
+      "default_value": null,
+      "description": null,
+      "hidden": false,
+      "key": "privilege_user_admin_rights",
+      "key_value_pairs": false,
+      "multi_value": false,
+      "name": "User Administration Rights",
+      "persona": "",
+      "read_only": false,
+      "required": false,
+      "type": 5,
+      "type_name": "Boolean",
+      "valid_values": [
+
+      ],
+      "valid_values_name": [
+
+      ]
+    },
+    "time_zone": {
+      "allow_undefined": false,
+      "bulk_shared": false,
+      "default_value": -1,
+      "description": null,
+      "hidden": false,
+      "key": "time_zone",
+      "key_value_pairs": false,
+      "max_value": null,
+      "min_value": null,
+      "multi_value": false,
+      "name": "TimeZone",
+      "persona": "",
+      "read_only": false,
+      "required": false,
+      "type": 2,
+      "type_name": "Integer",
+      "valid_values": [
+
+      ],
+      "valid_values_name": [
+
+      ]
+    },
+    "title": {
+      "allow_undefined": false,
+      "bulk_shared": false,
+      "default_value": null,
+      "description": null,
+      "hidden": false,
+      "key": "title",
+      "key_value_pairs": false,
+      "max_length": null,
+      "min_length": null,
+      "multiline": false,
+      "multilingual": false,
+      "multi_value": false,
+      "name": "Title",
+      "password": false,
+      "persona": "",
+      "read_only": false,
+      "regex": "",
+      "required": false,
+      "type": -1,
+      "type_name": "String",
+      "valid_values": [
+
+      ],
+      "valid_values_name": [
+
+      ]
+    },
+    "type": {
+      "allow_undefined": false,
+      "bulk_shared": false,
+      "default_value": null,
+      "description": null,
+      "hidden": false,
+      "key": "type",
+      "key_value_pairs": false,
+      "max_value": null,
+      "min_value": null,
+      "multi_value": false,
+      "name": "Type",
+      "persona": "",
+      "read_only": true,
+      "required": false,
+      "type": 2,
+      "type_name": "Integer",
+      "valid_values": [
+
+      ],
+      "valid_values_name": [
+
+      ]
+    },
+    "type_name": {
+      "allow_undefined": false,
+      "bulk_shared": false,
+      "default_value": null,
+      "description": null,
+      "hidden": false,
+      "key": "type_name",
+      "key_value_pairs": false,
+      "max_length": null,
+      "min_length": null,
+      "multiline": false,
+      "multilingual": false,
+      "multi_value": false,
+      "name": "Type",
+      "password": false,
+      "persona": "",
+      "read_only": true,
+      "regex": "",
+      "required": false,
+      "type": -1,
+      "type_name": "String",
+      "valid_values": [
+
+      ],
+      "valid_values_name": [
+
+      ]
+    }
+  },
+  "definitions_order": [
+    "id",
+    "type",
+    "type_name",
+    "name",
+    "deleted",
+    "first_name",
+    "last_name",
+    "middle_name",
+    "group_id",
+    "title",
+    "business_email",
+    "business_phone",
+    "business_fax",
+    "office_location",
+    "time_zone",
+    "privilege_login",
+    "privilege_public_access",
+    "privilege_modify_users",
+    "privilege_modify_groups",
+    "privilege_user_admin_rights",
+    "privilege_system_admin_rights",
+    "birth_date",
+    "cell_phone",
+    "personal_url_1",
+    "personal_url_2",
+    "personal_url_3",
+    "gender",
+    "home_address_1",
+    "home_address_2",
+    "home_fax",
+    "personal_website",
+    "home_phone",
+    "personal_interests",
+    "pager",
+    "personal_email"
+  ],
+  "type": 0,
+  "type_name": "User"
+}

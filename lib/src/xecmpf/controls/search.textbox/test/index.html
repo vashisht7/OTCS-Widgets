@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Search Box control</title>
+  <link rel="stylesheet" href="../../../../csui/themes/carbonfiber/theme.css">
+  <script src="../../../../../csui/lib/require.js"></script>
+
+  <script data-csui-path="../../../../../csui" src="../../../../../csui/config.js"></script>
+  <script src="../../../../../csui/helpers.js"></script>
+
+  <script type="text/javascript">
+    require.config({
+      paths: {
+        xecmpf: '../../..',
+        conws: '../../../../conws',
+        csui: '../../../../csui',
+        esoc: '../../../../esoc',
+        greet: '../../..',
+        hbs: '../../../../csui/lib/hbs',
+        css: '../../../../csui/lib/css',
+        i18n: '../../../../csui/lib/i18n',
+        json: '../../../../csui/lib/json',
+        txt: '../../../../csui/lib/text',
+        'csui-ext': '../../../../csui/utils/load-extensions/load-extensions'
+      },
+      config: {
+        'csui/utils/contexts/factories/connector': {
+          url: '//server/otcs/cs/api/v1',
+          crossDomain: true,
+          supportPath: '/support',
+          session: {
+            ticket: 'dummy'
+          }
+          /*credentials: {
+            username: "Admin",
+            password: "livelink"
+          }*/
+        }
+      }
+    });
+
+    require(['csui/lib/marionette', '../search.textbox.view',
+    'csui/utils/contexts/page/page.context'
+    ],function( Marionette, SearchTextBoxView, PageContext) {
+
+      var contentRegion = new Marionette.Region({
+        el: '#content'
+      });
+      
+      var pageContext = new PageContext({
+        factories: {
+          connector: {
+            connection: {
+              url: '//server/otcs/cs/api/v1',
+              supportPath: '/support',
+              session: {
+                ticket: 'dummy'
+              }
+            }
+          }
+        }
+      });
+      var searchTextBoxView = new SearchTextBoxView({
+        context: pageContext,
+        originatingView: self,
+        data: {
+          icon: 'title-assignments',
+          title: 'Title Control',
+          nodeId: 2000
+        }
+      });
+      searchTextBoxView.render();
+      contentRegion.show(searchTextBoxView);
+    });
+
+    require.config({
+      deps: ['csui/lib/require.config!csui/csui-extensions.json']
+    });
+
+  </script>
+</head>
+
+<body class="binf-widgets">
+
+<div class="binf-container-fluid grid-rows">
+  <div class="binf-row">
+    <div class="binf-col-sm-8 binf-col-md-8 binf-col-lg-8" id="content"></div>
+  </div>
+</div>
+
+</body>
+</html>
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

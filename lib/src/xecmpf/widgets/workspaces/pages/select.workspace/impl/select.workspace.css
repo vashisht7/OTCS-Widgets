@@ -1,0 +1,16 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets #xecmpf-select_wksp {
+    height: 100%
+}
+
+.binf-widgets #xecmpf-select_wksp #content {
+    height: 100%
+}
+.binf-widgets  #xecmpf-select_wksp .csui-table-cell-date {
+    max-width: 13.5em;
+    min-width: 13.5em;
+}
+
+
+

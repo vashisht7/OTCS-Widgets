@@ -1,0 +1,190 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+
+#xecmpf-header .conws-header-addon {
+  float: right;
+  padding: 0 1.75rem;
+}
+
+
+
+#conws-header-childview .xecmpf-form-metadata {
+  height: 100%;
+  max-height: 144px;
+}
+
+#conws-header-childview .xecmpf-form-metadata * {
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+  border: none;
+  cursor: default;
+  line-height: 14px;
+  font-weight: 500;
+}
+
+#conws-header-childview .xecmpf-form-metadata .cs-form {
+  background: transparent;
+}
+
+#conws-header-childview .xecmpf-form-metadata .cs-form .alpaca-control-label,
+#conws-header-childview .xecmpf-form-metadata .cs-form .alpaca-control .cs-field-read-inner .btn-container,
+#conws-header-childview .xecmpf-form-metadata .cs-form input {
+  background: transparent;
+  font-size: 0.875em;
+  font-weight: bold;
+  line-height: 28px;
+  height: 28px;
+}
+
+#xecmpf-header #conws-header-childview .xecmpf-form-metadata .alpaca-control-label {
+  color: #c3e5f6;
+  padding-right: 16px;
+  text-align: left;
+  width: auto;
+  font-weight: 800;
+}
+
+#xecmpf-header #conws-header-childview .xecmpf-form-metadata .alpaca-control {
+  color: #ffffff;
+  text-align: left;
+}
+
+#conws-header-childview .xecmpf-form-metadata .alpaca-icon-required.binf-glyphicon {
+  display: none;
+}
+
+#xecmpf-header .xecmpf-form-metadata .cs-form .alpaca-container-item > .alpaca-field.alpaca-field-object > legend {
+  top: 0;
+  font-size: 1em;
+  font-weight: bold;
+  color: #757575;
+  text-align: left;
+  padding-bottom: 1em;
+  padding-left: 1em;
+}
+
+#xecmpf-header #conws-header-childview .xecmpf-form-metadata .alpaca-control-label,
+#xecmpf-header .cs-form .cs-form-doublecolumn .alpaca-field.alpaca-field-array .alpaca-container-label {
+  font-size: 12px;
+  color: #c3e5f6;
+  line-height: 14px;
+  max-width: 50%;
+  padding-right: 16px;
+  text-align: left;
+  width: auto;
+  font-weight: 800;
+}
+
+#conws-header-childview .xecmpf-form-metadata .cs-form .cs-form-doublecolumn .alpaca-field.alpaca-field-array .alpaca-container-label {
+  padding-right: 16px;
+}
+
+#xecmpf-header .cs-form .cs-form-doublecolumn .alpaca-field.alpaca-field-array .alpaca-container-label {
+  font-size: 12px;
+  color: #c3e5f6;
+  line-height: 14px;
+}
+
+#xecmpf-header .cs-formfield.cs-textfield .cs-field-read button > span {
+  font-size: 12px;
+  color: #ffffff;
+  line-height: 14px;
+}
+
+.binf-widgets .cs-perspective-panel .conws-header .conws-tabletoolbar .csui-toolbar.binf-nav > li > .custom-view-region > div > div > button,
+.binf-widgets .cs-perspective-panel .conws-header .csui-toolbar.binf-nav > li > a.csui-toolitem {
+  padding: 0;
+}
+
+#xecmpf-header .xecmpf-form-metadata .cs-form .cs-formfield .cs-field-read button:focus {
+  outline: 1px dotted #ffffff;
+}
+
+#xecmpf-header .cs-form .cs-form-doublecolumn:not(.cs-form-leftcolumn):not(.cs-form-rightcolumn) .alpaca-container-item>.binf-form-group.alpaca-field>.binf-col-sm-9 {
+  width: calc(50% - 16px);
+}
+
+#xecmpf-header #conws-header-childview .xecmpf-form-metadata .cs-emptylist-container .cs-emptylist-placeholder {
+  display: none;
+}
+
+#xecmpf-header #conws-header-childview .xecmpf-form-metadata .cs-emptylist-container .cs-emptylist-text {
+  top: 112px;
+}
+
+#xecmpf-header #conws-header-childview .xecmpf-form-metadata .cs-emptylist-container .cs-emptylist-text .csui-no-result-message {
+  font-size: 16px;
+  color: #EFEFEF;
+  height: 17px;
+}
+
+#xecmpf-header #conws-header-childview .xecmpf-form-metadata .cs-emptylist-container {
+  background-image: url('../../../image/icons/nometadata.svg');
+  background-size: 96px 96px;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+
+.binf-widgets .cs-tabbed-perspective.csui-breadcrumbs-visible > .cs-header.conws-header-widget.xecmpf-completenesscheck-available + .cs-content > .tab-panel > .binf-tab-content > .binf-tab-pane:first-child > .binf-row > * {
+  height: calc(100vh - 62px - 32px - 48px - 160px - 30px + 34px);
+}
+
+
+.binf-widgets .cs-tabbed-perspective.csui-breadcrumbs-visible > .cs-header.conws-header-widget.conws-description-available.xecmpf-completenesscheck-available + .cs-content > .tab-panel > .binf-tab-content > .binf-tab-pane:first-child > .binf-row > * {
+  height: calc(100vh - 62px - 32px - 48px - 160px - 30px + 5px);
+}
+
+
+.binf-widgets .cs-tabbed-perspective.csui-breadcrumbs-visible > .cs-header.conws-header-widget.xecmpf-metadata-configured + .cs-content > .tab-panel > .binf-tab-content > .binf-tab-pane:first-child > .binf-row > *,
+.binf-widgets .cs-tabbed-perspective.csui-breadcrumbs-visible > .cs-header.conws-header-widget.xecmpf-metadata-configured-nodata.conws-description-available + .cs-content > .tab-panel > .binf-tab-content > .binf-tab-pane:first-child > .binf-row > *,
+.binf-widgets .cs-tabbed-perspective.csui-breadcrumbs-visible > .cs-header.conws-header-widget.xecmpf-metadata-configured-nodata.xecmpf-completenesscheck-available + .cs-content > .tab-panel > .binf-tab-content > .binf-tab-pane:first-child > .binf-row > *,
+.binf-widgets .cs-tabbed-perspective.csui-breadcrumbs-visible > .cs-header.conws-header-widget.conws-activityfeed-configured-nodata.xecmpf-completenesscheck-available + .cs-content > .tab-panel > .binf-tab-content > .binf-tab-pane:first-child > .binf-row > * {
+  height: calc(100vh - 62px - 32px - 48px - 160px - 30px);
+}
+
+
+.binf-widgets .cs-tabbed-perspective.csui-breadcrumbs-visible:not(.cs-collapse) > .cs-header.conws-header-widget.xecmpf-metadata-configured,
+.binf-widgets .cs-tabbed-perspective.csui-breadcrumbs-visible:not(.cs-collapse) > .cs-header.conws-header-widget.xecmpf-metadata-configured-nodata.conws-description-available,
+.binf-widgets .cs-tabbed-perspective.csui-breadcrumbs-visible:not(.cs-collapse) > .cs-header.conws-header-widget.xecmpf-metadata-configured-nodata.xecmpf-completenesscheck-available,
+.binf-widgets .cs-tabbed-perspective.csui-breadcrumbs-visible:not(.cs-collapse) > .cs-header.conws-header-widget.conws-activityfeed-configured-nodata.xecmpf-completenesscheck-available {
+  height: 160px;
+}
+
+
+.binf-widgets .cs-tabbed-perspective.csui-breadcrumbs-visible > .cs-header.conws-header-widget.xecmpf-metadata-configured-nodata:not(.conws-description-available):not(.xecmpf-completenesscheck-available) .conws-header-childView-container {
+  padding-top: 26px; 
+}
+
+.binf-widgets .cs-tabbed-perspective.csui-breadcrumbs-visible > .cs-header.conws-header-widget.xecmpf-metadata-configured-nodata:not(.conws-description-available):not(.xecmpf-completenesscheck-available) #xecmpf-header #conws-header-childview .xecmpf-form-metadata .cs-emptylist-container {
+  background-image: none;
+}
+
+.binf-widgets .cs-tabbed-perspective.csui-breadcrumbs-visible > .cs-header.conws-header-widget.xecmpf-metadata-configured-nodata:not(.conws-description-available):not(.xecmpf-completenesscheck-available) #xecmpf-header #conws-header-childview .xecmpf-form-metadata .cs-emptylist-text {
+  top: 0px;
+}
+
+
+.binf-widgets .cs-tabbed-perspective.csui-breadcrumbs-visible > .conws-header-widget.conws-activityfeed-configured-nodata.xecmpf-completenesscheck-available #xecmpf-header #conws-header-childview .esoc-empty-activityfeed-wrapper {
+  background-image: url('../../../image/icons/conws_no_activities.svg');
+  background-size: 96px 96px;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 120px;
+}
+
+.binf-widgets .cs-tabbed-perspective.csui-breadcrumbs-visible > .cs-header.conws-header-widget.conws-activityfeed-configured-nodata.xecmpf-completenesscheck-available #xecmpf-header #conws-header-childview .esoc-empty-activityfeed-message {
+  position: absolute;
+  bottom: 0px;
+  right: calc(50% - 94px);
+}
+
+.binf-widgets .cs-header #xecmpf-header #conws-header-childview .xecmpf-form-metadata .alpaca-field-textarea span.cs-field-textarea-data {
+  white-space: nowrap;
+}
+
+.binf-widgets .cs-header #xecmpf-header #conws-header-childview .xecmpf-form-metadata .alpaca-field-textarea .cs-icon.icon-expandArrowDown,
+.binf-widgets .cs-header #xecmpf-header #conws-header-childview .xecmpf-form-metadata .alpaca-field-textarea .cs-icon.icon-expandArrowUp {
+  display: none;
+}

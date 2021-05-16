@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Perspective Widget Manager Behavior</title>
+
+  <link rel="stylesheet" href="../../../themes/carbonfiber/theme.css">
+  <style data-csui-theme-overrides="true">
+    body.binf-widgets {
+      margin-top: 15px;
+    }
+
+    .csui-widget {
+      width: 100px;
+      height: 50px;
+      background-color: #eeeeee;
+    }
+
+    /* Preserve line breaks in the content view. */
+    .test-content.test-content {
+      white-space: pre-line;
+    }
+
+    /* Original tile provided margins, new one and dialog do not; add them. */
+    .test-content.test-content {
+      margin: 1em;
+    }
+
+    .binf-row .tile-content {
+      overflow-y: hidden;
+    }
+  </style>
+
+  <script id="node" type="text/x-handlebars-template">
+    <div class="csui-widget">Widget Here
+      <div>
+  </script>
+
+  <script id="content" type="text/plain">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In consectetur, nisl vel condimentum rutrum, ex ante elementum enim, a porttitor metus tellus quis eros. Nulla turpis nisl, dignissim eu tempus id, molestie et metus.
+
+    Nulla in lacinia augue. Phasellus leo sem, volutpat id pellentesque quis, bibendum quis neque. Suspendisse at neque elit. Maecenas elementum turpis nisl. Aenean nec congue diam. Morbi eget pulvinar purus.
+    
+    In molestie quam id imperdiet dapibus. Ut sagittis a nunc eu tristique. Cras maximus ipsum vel dui aliquam, et dignissim justo vestibulum. Mauris mattis maximus ex, at aliquet tellus molestie nec. Duis ac interdum mi. Fusce.
+    
+
+
+  </script>
+  <script src="../../../lib/require.js"></script>
+  <script src="../../../config.js" data-csui-path="../../.."></script>
+  <script>
+
+    require.config({
+      deps: [
+        'csui/lib/require.config!csui/csui-extensions.json'
+      ]
+    });
+
+    require.config({
+      config: {
+        'csui/utils/contexts/factories/connector': {
+          connection: {
+            url: '//server/otcs/cs/api/v1',
+            supportPath: '/support',
+            session: {
+              ticket: 'dummy'
+            }
+          }
+        },
+        i18n: {
+          loadableLocales: {root: true}
+        }
+      }
+    });
+
+    require([
+      'csui/lib/jquery', 'csui/lib/underscore', 'csui/lib/handlebars',
+      'csui/lib/backbone', 'csui/lib/marionette',
+      'csui/utils/contexts/page/page.context',
+      'csui/controls/tile/tile.view',
+      'csui/perspective.manage/behaviours/pman.widget.config.behaviour',
+      "json!./simple.widget.manifest.json",
+      "json!./selfconfigurable.widget.manifest.json",
+      "json!./unsupported.widget.manifest.json",
+    ], function ($, _, Handlebars, Backbone, Marionette, PageContext, TileView,
+        WidgetConfigBehaviour, simpleManifest, selfConfigurableManifest, unsupportedManifest) {
+      'use strict';
+      window.$ = $;
+
+      function prepareWidget(manifest, title) {
+        var ContentView = Marionette.View.extend({
+          className: 'test-content',
+          render: function () {
+            this.$el.html($('#content').html());
+            return this;
+          }
+        }), TileWidget  = TileView.extend({
+          icon: 'title-favourites',
+          title: title || 'Test Widget',
+          contentView: ContentView,
+          behaviors: {
+            WidgetConfigBehaviour: { // For widget editing
+              behaviorClass: WidgetConfigBehaviour,
+              manifest: manifest,
+              perspectiveSelector: '.binf-widgets',
+              widgetConfig: function () {
+                return {
+                  options: {}
+                };
+              }
+            }
+          },
+          getSupportedWidgetSizes: function (manifest, widget) {
+            return _.map(manifest.supportedKinds, function (suppKind, index) {
+              return {
+                kind: suppKind,
+                label: suppKind,
+                selected: index === 0
+              };
+            });
+          }
+        });
+        return TileWidget;
+      }
+
+      var single = new Marionette.Region({
+        el: "#simple"
+      });
+      single.show(new (prepareWidget(simpleManifest, 'Simple Widget'))());
+
+      var unsupported = new Marionette.Region({
+        el: "#unsupported"
+      });
+      unsupported.show(new (prepareWidget(unsupportedManifest, 'Unsupported Widget (manifest)'))());
+
+      var selfconfigurable = new Marionette.Region({
+        el: "#selfconfigurable"
+      });
+      selfconfigurable.show(new (prepareWidget(selfConfigurableManifest,
+          'Self Configurable widgets (Ex: Shortcut Group)'))());
+    });
+
+  </script>
+</head>
+
+<body class="binf-widgets perspective-editing">
+<div class="binf-container-fluid grid-rows">
+  <div class="binf-row">
+    <div class="binf-col-sm-5 binf-col-md-4 binf-col-lg-3" id="simple"></div>
+    <div class="binf-col-sm-5 binf-col-md-4 binf-col-lg-3" id="unsupported"></div>
+    <div class="binf-col-sm-5 binf-col-md-4 binf-col-lg-3" id="selfconfigurable"></div>
+    <div class="binf-col-sm-5 binf-col-md-4 binf-col-lg-3" id="tile4"></div>
+  </div>
+</div>
+</body>
+
+</html>
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

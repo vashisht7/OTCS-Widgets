@@ -1,0 +1,29 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.xecmpf-table-cell-action-plan .action-plan-edit {
+  color: #171f4c;
+  font-size: 0.875em;
+}
+
+.xecmpf-table-cell-action-plan .action-plan-edit:hover {
+  color: #0084ce;
+  text-decoration: underline;
+}
+
+.xecmpf-table-cell-action-plan {
+  justify-content: center;
+  text-align: center;
+  max-width: 10em;
+  min-width: 10em;
+}
+
+.binf-widgets .xecmpf-actionplan-details-wrapper {
+  min-height: 2.5em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  background-color: #ffffff;
+}

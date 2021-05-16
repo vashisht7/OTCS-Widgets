@@ -1,0 +1,59 @@
+{
+  "columns": [
+    {
+      "active_column": true,
+      "client_format": {
+        "type": "none"
+      },
+      "column_key": "performerid",
+      "count_column": false,
+      "data_type": 10,
+      "id": 1003,
+      "name": "performerid",
+      "name_formatted": "Performer"
+    },
+    {
+      "active_column": false,
+      "client_format": {
+        "type": "si"
+      },
+      "column_key": "count",
+      "count_column": true,
+      "data_type": 12,
+      "id": 1004,
+      "name": "Count"
+    }
+  ],
+  "data": [
+    {
+      "performerid": 326475,
+      "performerid_formatted": "Team Alpha",
+      "Count": 123500000,
+      "Count_formatted": "123500000"
+    },
+    {
+      "performerid": 463664,
+      "performerid_formatted": "Team Bravo",
+      "Count": 1755300000,
+      "Count_formatted": "1755300000"
+    },
+    {
+      "performerid": 364577,
+      "performerid_formatted": "Team Charlie",
+      "Count": 42500000,
+      "Count_formatted": "42500000"
+    },
+    {
+      "performerid": 453453,
+      "performerid_formatted": "Team Delta",
+      "Count": 61500000,
+      "Count_formatted": "61500000"
+    },
+    {
+      "performerid": 456456,
+      "performerid_formatted": "Team Echo",
+      "Count": 9500000,
+      "Count_formatted": "9500000"
+    }
+  ]
+}

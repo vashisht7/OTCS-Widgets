@@ -1,0 +1,170 @@
+{
+  "links": {
+    "data": {
+      "self": {
+        "body": "",
+        "content_type": "",
+        "href": "/api/v2/businessworkspaces/51209/missingdocuments",
+        "method": "GET",
+        "name": ""
+      }
+    }
+  },
+  "results": {
+    "data": [
+      {
+        "id": 119912,
+        "name": "Vendor D9A",
+        "parent_id": 732925,
+        "parent_id_expand": {
+          "container": true,
+          "container_size": 0,
+          "create_date": "2018-01-12T11:44:03",
+          "create_user_id": 1000,
+          "description": "",
+          "description_multilingual": {
+            "en": ""
+          },
+          "external_create_date": null,
+          "external_identity": "",
+          "external_identity_type": "",
+          "external_modify_date": null,
+          "external_source": "",
+          "favorite": false,
+          "guid": null,
+          "icon": "/img/webdoc/folder.gif",
+          "icon_large": "/img/webdoc/folder_large.gif",
+          "id": 732925,
+          "modify_date": "2018-03-06T14:51:51",
+          "modify_user_id": 1000,
+          "name": "x2",
+          "name_multilingual": {
+            "en": "x2"
+          },
+          "owner_group_id": 1001,
+          "owner_user_id": 1000,
+          "parent_id": -51209,
+          "reserved": false,
+          "reserved_date": null,
+          "reserved_user_id": 0,
+          "type": 0,
+          "type_name": "Folder",
+          "versions_control_advanced": false,
+          "volume_id": 51209
+        }
+      },
+      {
+        "id": 254534,
+        "name": "Notification D9A",
+        "parent_id": 732928,
+        "parent_id_expand": {
+          "container": true,
+          "container_size": 0,
+          "create_date": "2018-01-12T11:43:56",
+          "create_user_id": 1000,
+          "description": "",
+          "description_multilingual": {
+            "en": ""
+          },
+          "external_create_date": null,
+          "external_identity": "",
+          "external_identity_type": "",
+          "external_modify_date": null,
+          "external_source": "",
+          "favorite": false,
+          "guid": null,
+          "icon": "/img/webdoc/folder.gif",
+          "icon_large": "/img/webdoc/folder_large.gif",
+          "id": 732928,
+          "modify_date": "2018-03-06T14:51:51",
+          "modify_user_id": 1000,
+          "name": "x1",
+          "name_multilingual": {
+            "en": "x1"
+          },
+          "owner_group_id": 1001,
+          "owner_user_id": 1000,
+          "parent_id": -51209,
+          "reserved": false,
+          "reserved_date": null,
+          "reserved_user_id": 0,
+          "type": 0,
+          "type_name": "Folder",
+          "versions_control_advanced": false,
+          "volume_id": 51209
+        }
+      }
+    ],
+    "definitions": {
+      "id": {
+        "allow_undefined": false,
+        "bulk_shared": false,
+        "default_value": null,
+        "description": null,
+        "hidden": false,
+        "key": "id",
+        "max_length": null,
+        "min_length": null,
+        "multi_value": false,
+        "name": null,
+        "persona": "",
+        "read_only": true,
+        "required": false,
+        "type": -1,
+        "type_name": "Integer",
+        "valid_values": [],
+        "valid_values_name": []
+      },
+      "name": {
+        "allow_undefined": false,
+        "bulk_shared": false,
+        "default_value": null,
+        "description": null,
+        "hidden": false,
+        "key": "name",
+        "max_length": null,
+        "min_length": null,
+        "multi_value": false,
+        "multiline": false,
+        "multilingual": false,
+        "name": "Document Type",
+        "password": false,
+        "persona": "",
+        "read_only": true,
+        "regex": "",
+        "required": false,
+        "type": -1,
+        "type_name": "String",
+        "valid_values": [],
+        "valid_values_name": []
+      },
+      "parent_id": {
+        "allow_undefined": false,
+        "bulk_shared": false,
+        "default_value": null,
+        "description": null,
+        "hidden": false,
+        "key": "parent_id",
+        "max_length": null,
+        "min_length": null,
+        "multi_value": false,
+        "name": "Location",
+        "persona": "",
+        "read_only": true,
+        "required": false,
+        "type": -1,
+        "type_name": "Integer",
+        "valid_values": [],
+        "valid_values_name": []
+      }
+    },
+    "definitions_map": {},
+    "definitions_order": [
+      "id",
+      "name",
+      "parent_id"
+    ],
+    "total_count": 2,
+    "type": "missingDocuments"
+  }
+}

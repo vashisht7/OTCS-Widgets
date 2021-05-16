@@ -1,0 +1,118 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.cs-form.csui-general-form {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.metadata-inner-wrapper .cs-form.csui-general-form {
+  padding-top: 4px;
+}
+
+.binf-widgets .cs-form.csui-general-form:not(.csui-required-fields-only) {
+  min-height: 7.5em;
+}
+
+
+
+.cs-form .metadata-pane-container {
+  height: auto;
+  width: 100%;
+  margin-top: 54px;
+}
+
+.cs-form .metadata-pane-left {
+  height: 100%;
+}
+
+
+
+.cs-form .description_section .language-switcher {
+  margin-left: 0.5em;
+  margin-top: 5px;
+}
+
+.cs-form .description_section {
+  margin-bottom: 2em;
+}
+
+@media (min-width: 992px) {
+  .cs-form .description_section {
+    margin-bottom: 0;
+  }
+}
+
+.cs-form .description_section .alpaca-container-item > .binf-form-group.alpaca-field .alpaca-control-label {
+  text-align: right;
+  margin-bottom: 8px;
+  padding: 0 16px 0 0;
+  line-height: 1.5;
+}
+
+.csui-top-align-label .cs-form .description_section .alpaca-container-item > .binf-form-group.alpaca-field .alpaca-control-label {
+  text-align: left;
+  padding-left: 16px;
+}
+
+
+
+.cs-form #name_section {
+  height: auto;
+  margin-bottom: 3em;
+}
+
+.cs-form #name_section .binf-control-label {
+  width: 100%;
+  text-align: left;
+  padding-left: 6px;
+  padding-bottom: 0;
+}
+
+.cs-form #name_section .binf-col-sm-9 {
+  padding-left: 0;
+  padding-top: 0;
+}
+
+.cs-form #name_section .binf-form-group {
+  display: block;
+  text-align: left;
+  margin-top: 0;
+  height: auto;
+}
+
+.cs-form .thumbnail_section {
+  margin: 42px auto 1.5rem auto;
+}
+
+.csui-top-align-label .cs-form .thumbnail_section {
+  float: left;
+}
+
+.cs-form .thumbnail_section .default_thumbnail.thumbnail_disabled {
+cursor: default;
+}
+
+.cs-form .thumbnail_section .default_thumbnail {
+  display: inline-block;
+  height: 124px;
+  width: 150px;
+}
+
+.csui-top-align-label .cs-form .thumbnail_section .default_thumbnail {
+  float: left;
+}
+
+.cs-form .thumbnail_section .default_thumbnail.thumbnail_empty {
+  background-image: url('images/thumbnail_empty.svg');
+}
+
+.cs-form .thumbnail_section .default_thumbnail.thumbnail_missing {
+  background-image: url('images/thumbnail_missing.svg');
+}
+
+@media (max-width: 1100px) {
+  .cs-form .thumbnail_section {
+    margin-left: auto;
+  }
+}

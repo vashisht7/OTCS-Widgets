@@ -1,0 +1,45 @@
+{
+  "$schema": "http://opentext.com/cs/json-schema/draft-04/schema",
+  "title": "{{widgetTitle}}",
+  "description": "{{widgetDescription}}",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "businessobjecttypes": {
+        "title": "{{botypesTitle}}",
+        "description": "{{botypesDescription}}",
+        "type": "array",
+        "items":{
+          "type":"object",
+          "properties": {
+            "id":{
+              "type":"integer",
+			  "description": "{{botypeBrowseDescription}}",
+              "title":"{{botypeBrowseTitle}}"
+            }
+          }
+        }
+      }
+    }
+  },
+  "options": {
+    "fields": {
+      "businessobjecttypes": {
+        "items":{
+          "fields":{
+            "id":{
+              "type": "otcs_node_picker",
+              "type_control": {
+                "parameters": {
+                  "select_types": [889],
+                  "startLocation":"xecmpf/dialogs/node.picker/start.locations/businessobjecttypes.container"
+                }
+              }
+            }
+
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.xecmpf-savedquery-form {
+  height: 100%;
+}
+
+.xecmpf-savedquery-form .xecmpf-sq-select-container .cs-form {
+  padding-left: 16px;
+}
+
+.xecmpf-savedquery-form .xecmpf-sq-select-container .cs-form .alpaca-container-item > .binf-form-group.alpaca-field .alpaca-control-label {
+  width: 100%;
+  text-align: left;
+  padding: 0;
+  margin-top: 2px;
+  display: initial;
+}
+
+.xecmpf-savedquery-form .xecmpf-sq-select-container .cs-field-write-inner {
+  padding: 0;
+}
+
+.xecmpf-savedquery-form .xecmpf-sq-select-container .cs-form .alpaca-container-item > .binf-form-group.alpaca-field > .binf-col-sm-9 {
+  width: calc(92% - 2px);
+}
+
+.xecmpf-savedquery-form .xecmpf-sq-select-container {
+  height: 100px;
+}
+
+.xecmpf-savedquery-form .xecmpf-custom-search-container {
+  height: calc(100% - 100px);
+}

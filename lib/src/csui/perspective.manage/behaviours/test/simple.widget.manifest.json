@@ -1,0 +1,71 @@
+{
+  "$schema": "http://opentext.com/cs/json-schema/draft-04/schema#",
+  "title": "Test Widget",
+  "description": "{{widgetDescription}}",
+  "kind": "tile",
+  "supportedKinds": [
+    "tile",
+    "header",
+    "fullpage"
+  ],
+  "schema": {
+    "type": "object",
+    "properties": {
+      "shortcutTheme": {
+        "title": "Theme",
+        "description": "Theme Desc",
+        "type": "string",
+        "enum": [
+          "csui-shortcut-theme-stone1",
+          "csui-shortcut-theme-stone2",
+          "csui-shortcut-theme-teal1",
+          "csui-shortcut-theme-teal2",
+          "csui-shortcut-theme-pink1",
+          "csui-shortcut-theme-pink2",
+          "csui-shortcut-theme-indigo1",
+          "csui-shortcut-theme-indigo2"
+        ]
+      },
+      "type": {
+        "title": "Fallback",
+        "description": "Fallback Desc",
+        "type": "integer",
+        "enum": [
+          141,
+          142,
+          133
+        ],
+        "default": 141
+      },
+      "displayName": {
+        "title": "Displayname",
+        "type": "string"
+      }
+    }
+  },
+  "options": {
+    "fields": {
+      "shortcutTheme": {
+        "type": "select",
+        "optionLabels": [
+          "Stone1",
+          "Stone2",
+          "Teal1",
+          "Teal2",
+          "Pink1",
+          "Pink2",
+          "Indigo1",
+          "Indigo2"
+        ]
+      },
+      "type": {
+        "type": "select",
+        "optionLabels": [
+          "Enterprise",
+          "Personal",
+          "Category"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,687 @@
+{
+  "forms": [
+    {
+      "data": {
+        "bo_type": "KNA1",
+        "bo_type_id": 1,
+        "bo_type_name": "Customer D9A",
+        "description": "",
+        "ext_system_id": "D9A",
+        "ext_system_name": "D9A",
+        "name": "Customer Stefan Sch\u00e4fer",
+        "parent_id": 22672,
+        "type": 848
+      },
+      "options": {
+        "fields": {
+          "bo_type": {
+            "hidden": true,
+            "hideInitValidationError": true,
+            "label": "Business Object Type",
+            "readonly": true,
+            "type": "text"
+          },
+          "bo_type_id": {
+            "hidden": true,
+            "hideInitValidationError": true,
+            "label": "Business Object Type Id",
+            "readonly": true,
+            "type": "number"
+          },
+          "bo_type_name": {
+            "hidden": true,
+            "hideInitValidationError": true,
+            "label": "Business Object Type Name",
+            "readonly": true,
+            "type": "text"
+          },
+          "description": {
+            "hidden": false,
+            "hideInitValidationError": true,
+            "label": "Description",
+            "readonly": false,
+            "type": "textarea"
+          },
+          "ext_system_id": {
+            "hidden": true,
+            "hideInitValidationError": true,
+            "label": "External Sytem Id",
+            "readonly": true,
+            "type": "text"
+          },
+          "ext_system_name": {
+            "hidden": true,
+            "hideInitValidationError": true,
+            "label": "External System Name",
+            "readonly": true,
+            "type": "text"
+          },
+          "name": {
+            "hidden": false,
+            "hideInitValidationError": true,
+            "label": "Name",
+            "readonly": true,
+            "required": false,
+            "type": "text"
+          },
+          "parent_id": {
+            "hidden": true,
+            "hideInitValidationError": true,
+            "label": "Location",
+            "readonly": false,
+            "type": "number"
+          },
+          "type": {
+            "hidden": true,
+            "hideInitValidationError": true,
+            "type": "integer"
+          }
+        },
+        "form": {
+          "attributes": {
+            "action": "api\/v1\/nodes",
+            "method": "POST"
+          },
+          "renderForm": true
+        }
+      },
+      "schema": {
+        "properties": {
+          "bo_type": {
+            "readonly": true,
+            "required": false,
+            "title": "Business Object Type",
+            "type": "string"
+          },
+          "bo_type_id": {
+            "readonly": true,
+            "required": true,
+            "title": "Business Object Type Id",
+            "type": "integer"
+          },
+          "bo_type_name": {
+            "readonly": true,
+            "required": false,
+            "title": "Business Object Type Name",
+            "type": "string"
+          },
+          "description": {
+            "default": "",
+            "readonly": false,
+            "required": false,
+            "title": "Description",
+            "type": "string"
+          },
+          "ext_system_id": {
+            "readonly": true,
+            "required": false,
+            "title": "External Sytem Id",
+            "type": "string"
+          },
+          "ext_system_name": {
+            "readonly": true,
+            "required": false,
+            "title": "External System Name",
+            "type": "string"
+          },
+          "name": {
+            "maxLength": 248,
+            "minLength": 1,
+            "readonly": true,
+            "required": false,
+            "title": "Name",
+            "type": "string"
+          },
+          "parent_id": {
+            "readonly": false,
+            "required": true,
+            "title": "Location",
+            "type": "integer"
+          },
+          "type": {
+            "required": true,
+            "type": "integer"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "data": {
+        "record_date": null,
+        "status": null,
+        "status_date": null,
+        "received_date": null,
+        "essential": null,
+        "cycle_period": null,
+        "last_review_date": null,
+        "next_review_date": null,
+        "official": null,
+        "storage": null,
+        "accession": null,
+        "subject": null,
+        "rsi": null,
+        "originator": null,
+        "addressee": null,
+        "sent_to": null,
+        "establishment": null,
+        "rmclassification_id": null
+      },
+      "options": {
+        "fields": {
+          "record_date": {
+            "hidden": true,
+            "hideInitValidationError": true,
+            "label": "Record Date",
+            "readonly": false,
+            "type": "date"
+          },
+          "status": {
+            "hidden": true,
+            "hideInitValidationError": true,
+            "label": "Status",
+            "readonly": false,
+            "type": "text"
+          },
+          "status_date": {
+            "hidden": true,
+            "hideInitValidationError": true,
+            "label": "Status Date",
+            "readonly": false,
+            "type": "date"
+          },
+          "received_date": {
+            "hidden": true,
+            "hideInitValidationError": true,
+            "label": "Received Date",
+            "readonly": false,
+            "type": "date"
+          },
+          "essential": {
+            "hidden": true,
+            "hideInitValidationError": true,
+            "label": "Essential",
+            "readonly": false,
+            "type": "text"
+          },
+          "cycle_period": {
+            "hidden": true,
+            "hideInitValidationError": true,
+            "label": "Update Cycle Period",
+            "optionLabels": [
+              "Monthly",
+              "Semi-annual based on calend...",
+              "Quarterly based on calendar...",
+              "Annual based on calendar year",
+              "Daily",
+              "Weekly",
+              "Monthly",
+              "Semi-annual based on calend...",
+              "Quarterly based on calendar...",
+              "Annual based on calendar year",
+              "Daily",
+              "Weekly",
+              "Monthly",
+              "Semi-annual based on calend...",
+              "Quarterly based on calendar...",
+              "Annual based on calendar year",
+              "Daily",
+              "Weekly"
+            ],
+            "readonly": false,
+            "type": "select"
+          },
+          "last_review_date": {
+            "hidden": true,
+            "hideInitValidationError": true,
+            "label": "Last Review Date",
+            "readonly": false,
+            "type": "date"
+          },
+          "next_review_date": {
+            "hidden": true,
+            "hideInitValidationError": true,
+            "label": "Next Review Date",
+            "readonly": false,
+            "type": "date"
+          },
+          "official": {
+            "hidden": true,
+            "hideInitValidationError": true,
+            "label": "Official",
+            "readonly": false,
+            "type": "checkbox"
+          },
+          "storage": {
+            "hidden": true,
+            "hideInitValidationError": true,
+            "label": "Storage Medium",
+            "readonly": false,
+            "type": "text"
+          },
+          "accession": {
+            "hidden": true,
+            "hideInitValidationError": true,
+            "label": "Accession",
+            "readonly": false,
+            "type": "text"
+          },
+          "subject": {
+            "hidden": true,
+            "hideInitValidationError": true,
+            "label": "Subject",
+            "readonly": false,
+            "type": "textarea"
+          },
+          "rsi": {
+            "hidden": true,
+            "hideInitValidationError": true,
+            "label": "RSI",
+            "readonly": false,
+            "type": "text"
+          },
+          "originator": {
+            "hidden": true,
+            "hideInitValidationError": true,
+            "label": "Author or Originator",
+            "readonly": false,
+            "type": "text"
+          },
+          "addressee": {
+            "hidden": true,
+            "hideInitValidationError": true,
+            "label": "Addressee(s)",
+            "readonly": false,
+            "type": "textarea"
+          },
+          "sent_to": {
+            "hidden": true,
+            "hideInitValidationError": true,
+            "label": "Other Addressee(s)",
+            "readonly": false,
+            "type": "textarea"
+          },
+          "establishment": {
+            "hidden": true,
+            "hideInitValidationError": true,
+            "label": "Originating Organization",
+            "readonly": false,
+            "type": "text"
+          },
+          "rmclassification_id": {
+            "hidden": true,
+            "hideInitValidationError": true,
+            "label": "RM Classification",
+            "readonly": false,
+            "type": "number"
+          }
+        }
+      },
+      "role_name": "rmclassifications",
+      "schema": {
+        "properties": {
+          "record_date": {
+            "readonly": false,
+            "required": false,
+            "title": "Record Date",
+            "type": "string"
+          },
+          "status": {
+            "readonly": false,
+            "required": false,
+            "title": "Status",
+            "type": "string"
+          },
+          "status_date": {
+            "readonly": false,
+            "required": false,
+            "title": "Status Date",
+            "type": "string"
+          },
+          "received_date": {
+            "readonly": false,
+            "required": false,
+            "title": "Received Date",
+            "type": "string"
+          },
+          "essential": {
+            "readonly": false,
+            "required": false,
+            "title": "Essential",
+            "type": "string"
+          },
+          "cycle_period": {
+            "default": "",
+            "enum": [
+              1,
+              2,
+              3,
+              12,
+              365,
+              7,
+              1,
+              2,
+              3,
+              12,
+              365,
+              7,
+              1,
+              2,
+              3,
+              12,
+              365,
+              7
+            ],
+            "readonly": false,
+            "required": false,
+            "title": "Update Cycle Period",
+            "type": "integer"
+          },
+          "last_review_date": {
+            "readonly": false,
+            "required": false,
+            "title": "Last Review Date",
+            "type": "string"
+          },
+          "next_review_date": {
+            "readonly": false,
+            "required": false,
+            "title": "Next Review Date",
+            "type": "string"
+          },
+          "official": {
+            "default": false,
+            "readonly": false,
+            "required": false,
+            "title": "Official",
+            "type": "boolean"
+          },
+          "storage": {
+            "readonly": false,
+            "required": false,
+            "title": "Storage Medium",
+            "type": "string"
+          },
+          "accession": {
+            "readonly": false,
+            "required": false,
+            "title": "Accession",
+            "type": "string"
+          },
+          "subject": {
+            "readonly": false,
+            "required": false,
+            "title": "Subject",
+            "type": "string"
+          },
+          "rsi": {
+            "readonly": false,
+            "required": false,
+            "title": "RSI",
+            "type": "string"
+          },
+          "originator": {
+            "readonly": false,
+            "required": false,
+            "title": "Author or Originator",
+            "type": "string"
+          },
+          "addressee": {
+            "readonly": false,
+            "required": false,
+            "title": "Addressee(s)",
+            "type": "string"
+          },
+          "sent_to": {
+            "readonly": false,
+            "required": false,
+            "title": "Other Addressee(s)",
+            "type": "string"
+          },
+          "establishment": {
+            "readonly": false,
+            "required": false,
+            "title": "Originating Organization",
+            "type": "string"
+          },
+          "rmclassification_id": {
+            "readonly": false,
+            "required": false,
+            "title": "RM Classification",
+            "type": "integer"
+          }
+        },
+        "title": "RM Metadata",
+        "type": "object"
+      }
+    },
+    {
+      "data": {
+        "22342": {
+          "22342_10": null,
+          "22342_11": "0000003456",
+          "22342_12": "Stefan Sch\u00e4fer",
+          "22342_13": "Lyoner Strasse 78",
+          "22342_14": "Frankfurt",
+          "22342_15": "DE",
+          "22342_16": "60528",
+          "22342_17": [
+            null
+          ],
+          "22342_18": "Customer",
+          "22342_19": [
+            null
+          ]
+        }
+      },
+      "options": {
+        "fields": {
+          "22342": {
+            "fields": {
+              "22342_10": {
+                "hidden": false,
+                "hideInitValidationError": true,
+                "label": "Customer Number",
+                "maxLength": 10,
+                "readonly": false,
+                "type": "text"
+              },
+              "22342_11": {
+                "hidden": false,
+                "hideInitValidationError": true,
+                "label": "Object Key",
+                "maxLength": 32,
+                "readonly": true,
+                "type": "text"
+              },
+              "22342_12": {
+                "hidden": false,
+                "hideInitValidationError": true,
+                "label": "Name",
+                "maxLength": 32,
+                "readonly": true,
+                "type": "text"
+              },
+              "22342_13": {
+                "hidden": false,
+                "hideInitValidationError": true,
+                "label": "Street",
+                "maxLength": 32,
+                "readonly": true,
+                "type": "text"
+              },
+              "22342_14": {
+                "hidden": false,
+                "hideInitValidationError": true,
+                "label": "City",
+                "maxLength": 32,
+                "readonly": true,
+                "type": "text"
+              },
+              "22342_15": {
+                "hidden": false,
+                "hideInitValidationError": true,
+                "label": "Country",
+                "maxLength": 32,
+                "readonly": true,
+                "type": "text"
+              },
+              "22342_16": {
+                "hidden": false,
+                "hideInitValidationError": true,
+                "label": "Postal code",
+                "maxLength": 32,
+                "readonly": true,
+                "type": "text"
+              },
+              "22342_17": {
+                "fields": {
+                  "item": {
+                    "maxLength": 32,
+                    "type": "text"
+                  }
+                },
+                "hidden": false,
+                "hideInitValidationError": true,
+                "items": {
+                  "showMoveDownItemButton": false,
+                  "showMoveUpItemButton": false
+                },
+                "label": "Industry",
+                "readonly": true
+              },
+              "22342_18": {
+                "hidden": false,
+                "hideInitValidationError": true,
+                "label": "Status",
+                "optionLabels": [
+                  "Customer",
+                  "Prospect"
+                ],
+                "readonly": false,
+                "type": "radio"
+              },
+              "22342_19": {
+                "fields": {
+                  "item": {
+                    "maxLength": 32,
+                    "type": "text"
+                  }
+                },
+                "hidden": false,
+                "hideInitValidationError": true,
+                "items": {
+                  "showMoveDownItemButton": false,
+                  "showMoveUpItemButton": false
+                },
+                "label": "Sales organisation",
+                "readonly": false
+              }
+            },
+            "hideInitValidationError": true,
+            "label": "Customer",
+            "removeable": false,
+            "type": "object"
+          }
+        },
+        "role_name": "categories"
+      },
+      "role_name": "categories",
+      "schema": {
+        "properties": {
+          "22342": {
+            "properties": {
+              "22342_10": {
+                "maxLength": 10,
+                "readonly": false,
+                "required": false,
+                "title": "Customer Number",
+                "type": "string"
+              },
+              "22342_11": {
+                "maxLength": 32,
+                "readonly": true,
+                "required": false,
+                "title": "Object Key",
+                "type": "string"
+              },
+              "22342_12": {
+                "maxLength": 32,
+                "readonly": true,
+                "required": false,
+                "title": "Name",
+                "type": "string"
+              },
+              "22342_13": {
+                "maxLength": 32,
+                "readonly": true,
+                "required": false,
+                "title": "Street",
+                "type": "string"
+              },
+              "22342_14": {
+                "maxLength": 32,
+                "readonly": true,
+                "required": false,
+                "title": "City",
+                "type": "string"
+              },
+              "22342_15": {
+                "maxLength": 32,
+                "readonly": true,
+                "required": false,
+                "title": "Country",
+                "type": "string"
+              },
+              "22342_16": {
+                "maxLength": 32,
+                "readonly": true,
+                "required": false,
+                "title": "Postal code",
+                "type": "string"
+              },
+              "22342_17": {
+                "items": {
+                  "maxItems": 3,
+                  "maxLength": 32,
+                  "minItems": 1,
+                  "type": "string"
+                },
+                "readonly": true,
+                "required": false,
+                "title": "Industry",
+                "type": "array"
+              },
+              "22342_18": {
+                "enum": [
+                  "Customer",
+                  "Prospect"
+                ],
+                "readonly": false,
+                "required": false,
+                "title": "Status",
+                "type": "string"
+              },
+              "22342_19": {
+                "items": {
+                  "maxItems": 30,
+                  "maxLength": 32,
+                  "minItems": 1,
+                  "type": "string"
+                },
+                "readonly": false,
+                "required": false,
+                "title": "Sales organisation",
+                "type": "array"
+              }
+            },
+            "title": "Customer",
+            "type": "object"
+          }
+        },
+        "title": "Categories",
+        "type": "object"
+      }
+    }
+  ]
+}

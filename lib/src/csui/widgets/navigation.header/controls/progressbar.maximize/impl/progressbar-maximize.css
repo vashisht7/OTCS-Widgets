@@ -1,0 +1,114 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .csui-progressbar-maximize {
+	margin-right: 11px;
+}
+
+.binf-widgets .binf-navbar-right .csui-maximize .csui-button-icon.icon-progresspanel-pending {
+	background-image: none;
+}
+
+
+
+.binf-widgets .binf-navbar-right .csui-maximize {
+	width: 60px;
+	height: 60px;
+	position: relative;
+}
+
+.binf-widgets .csui-progressbar-animation {
+	font-size: 2.5em;
+	width: 40px;
+	height: 40px;
+	position: relative;
+	background-color: transparent;
+	border-radius: 50%;
+	border: 5px solid #004267;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.binf-widgets .csui-progressbar-pie-wrapper.progressbar {
+	position: relative;
+	margin: -5px 0 0 -5px;
+}
+
+.binf-widgets .csui-progressbar-pie-wrapper .csui-progressbar-pie {
+	height: 100%;
+	width: 100%;
+	clip: rect(0, 1em, 1em, 0.5em);
+	left: 0;
+	position: absolute;
+	top: 0;
+}
+
+.binf-widgets .csui-progressbar-pie-wrapper .csui-progressbar-pie .csui-progressbar-half-circle {
+	height: 100%;
+	width: 100%;
+	border: 5px solid #00b6ff;
+	border-radius: 50%;
+	clip: rect(0, 0.5em, 1em, 0);
+	left: 0;
+	position: absolute;
+	top: 0;
+}
+
+.binf-widgets .csui-progressbar-pie-wrapper.progress .csui-progressbar-pie .csui-progressbar-right-side {
+	transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+}
+
+.binf-widgets .csui-progressbar-pie-wrapper.progress .csui-progressbar-pie .csui-progressbar-half-circle {
+	border-color: #00b6ff;
+}
+
+.binf-widgets .csui-progressbar-pie-wrapper.progress .csui-progressbar-pie .csui-progressbar-left-side {
+	transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+}
+
+.binf-widgets .progressbar {
+	width: 40px;
+	height: 40px;
+	margin: 0;
+	padding: 0;
+}
+
+.binf-widgets .binf-navbar-right .csui-maximize .csui-button-icon {
+  background-color: transparent;
+  width: 60px;
+  height: 60px;
+  margin: 0;
+  padding: 0;
+  background-position: center;
+  background-size: 44px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.binf-widgets .binf-navbar-right .csui-maximize .csui-button-icon:active,
+.binf-widgets .binf-navbar-right .csui-maximize .csui-button-icon:focus {
+	outline: none;
+	border: 1px solid #e1e1e1;
+	border-radius: 50%;
+}
+
+.binf-widgets .binf-navbar-right .csui-maximize .csui-button-icon.icon-progresspanel-success {
+
+}
+
+.binf-widgets .binf-navbar-right .csui-maximize .csui-button-icon.icon-progresspanel-pending {
+	
+}
+
+.binf-widgets .binf-navbar-right .csui-maximize .csui-button-icon.csui-icon-notification-error {
+
+}
+
+@media all and (max-device-width: 768px) and (orientation: portrait) {
+	.binf-widgets .csui-progressbar-maximize {
+		margin-right: auto;
+	}
+}

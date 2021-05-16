@@ -1,0 +1,64 @@
+{
+  "businessworkspacetypes": [
+    {
+      "id": 438,
+      "name": "Parcel",
+      "templates": [
+        {
+          "id": 543190,
+          "name": "Parcel",
+          "subType": 848
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Customer WS",
+      "templates": [
+        {
+          "id": 25981,
+          "name": "Customer Workspace",
+          "subType": 848
+        },
+        {
+          "id": 219138,
+          "name": "Nested Customer",
+          "subType": 848
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "BUS2078 Workspace Type",
+      "templates": [
+        {
+          "id": 413849,
+          "name": "BUS-2078",
+          "subType": 848
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Contract Workspace Type",
+      "templates": [
+        {
+          "id": 29725,
+          "name": "Contract",
+          "subType": 848
+        }
+      ]
+    },
+    {
+      "id": 437,
+      "name": "Material",
+      "templates": [
+        {
+          "id": 502179,
+          "name": "Material",
+          "subType": 848
+        }
+      ]
+    }
+  ]
+}

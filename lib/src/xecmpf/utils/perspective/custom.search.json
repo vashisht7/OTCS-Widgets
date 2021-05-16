@@ -1,0 +1,25 @@
+{
+  "type": "grid",
+  "options": {
+    "rows": [
+      {
+        "columns": [
+          {
+            "sizes": {
+              "md": 12
+            },
+            "heights": {
+              "xs": "full"
+            },
+            "widget": {
+              "type": "xecmpf/widgets/integration/folderbrowse/search.results",
+              "options": {
+                "enableBackButton": true
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,331 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .csui-toolbar {
+  font-size: inherit;
+  flex: 1 1 auto;
+  display: flex;
+  height: inherit;
+  width: 100%;
+}
+
+.binf-widgets .csui-toolbar.binf-nav.csui-measuring {
+  overflow: hidden;
+}
+
+.binf-widgets .csui-item-name > .csui-item-name-readonly > .csui-item-name-block {
+  
+  
+}
+
+.binf-widgets .csui-toolbar.binf-nav > li > a > .csui-svg-icon,
+.binf-widgets .csui-toolbar.binf-nav > li > a > .icon,
+.binf-widgets .csui-toolbar.binf-nav > li > .custom-view-region > div > div > a > .icon,
+.binf-widgets .csui-toolbar.binf-nav > li > .custom-view-region > div > div > button > .icon {
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 2em; 
+  height: 2em;
+  margin: auto; 
+  font-size: 16px;
+}
+
+
+
+.binf-widgets .csui-toolbar .csui-svg-icon-normal {
+  display: block;
+}
+
+.binf-widgets .csui-toolbar .csui-svg-icon-hover,
+.binf-widgets .csui-toolbar .csui-svg-icon-active {
+  display: none;
+}
+
+
+.binf-widgets .csui-toolbar a:hover .csui-svg-icon-normal,
+.binf-widgets .csui-toolbar a:hover .csui-svg-icon-active {
+  display: none;
+}
+
+
+.binf-widgets .csui-toolbar a:hover .csui-svg-icon-hover {
+  display: block;
+}
+
+
+.binf-widgets .csui-toolbar a:active .csui-svg-icon-normal,
+.binf-widgets .csui-toolbar a:active .csui-svg-icon-hover {
+  display: none;
+}
+
+
+.binf-widgets .csui-toolbar a:active .csui-svg-icon-active {
+  display: block;
+}
+
+.binf-widgets .csui-tabletoolbar .csui-toolbar.binf-nav > li > .custom-view-region {
+  padding: 0;
+  margin: 0 6px;
+  cursor: pointer;
+}
+
+.binf-widgets .csui-tabletoolbar .csui-toolbar.binf-nav > li > .custom-view-region:focus {
+  outline: 1px dotted #333333;
+}
+
+
+.binf-widgets .csui-tabletoolbar .csui-toolbar.binf-nav > li > .custom-view-region > div > div > button {
+  padding: 0;
+  margin: 0;
+}
+
+.binf-widgets .csui-tabletoolbar .csui-toolbar.binf-nav > li > .custom-view-region > div > div > button:focus {
+  outline: 1px dotted #333333;
+}
+
+.binf-widgets .csui-toolbar.binf-nav > li {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+}
+
+.binf-widgets .csui-toolbar.binf-nav > li.binf-disabled {
+  cursor: default;
+}
+
+.binf-widgets .csui-toolbar.binf-nav > li > a,
+.binf-widgets .csui-toolbar.binf-nav > li > .custom-view-region {
+  display: flex;
+  height: auto;
+  min-width: 32px;
+  min-height: 32px;
+  align-items: center;
+  margin: auto 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.binf-widgets .csui-table-rowselection-toolbar .binf-nav.binf-nav-pills > li > a,
+.binf-widgets .csui-table-rowselection-toolbar-view .binf-nav.binf-nav-pills > li > a,
+.binf-widgets .csui-table-rowselection-toolbar .binf-nav.binf-nav-pills > li > .custom-view-region {
+  margin: 8px 0;
+  padding: 4px 20px;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+.binf-widgets .csui-toolbar.binf-nav.binf-disabled > li > a > .icon {
+  opacity: 0.5;
+}
+
+.binf-widgets .csui-toolbar.binf-nav.binf-disabled > li > a {
+  pointer-events: none;
+  color: #777777;
+}
+
+.csui-toolbar.binf-nav > li.binf-divider {
+  width: 0.125em;
+  background-color: #cccccc;
+  height: calc(100% - 1.2em);
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.csui-toolbar.binf-nav-pills > li + li {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.csui-toolbar.binf-nav-pills > li > a {
+  border-radius: 3px;
+}
+
+.binf-widgets .csui-toolbar.binf-nav .csui-toolbar-hide-child {
+  width: 0;
+  opacity: 0;
+}
+
+.binf-widgets .csui-toolbar.binf-nav .csui-flyout.binf-open {
+  box-shadow: none;
+}
+
+.binf-widgets .csui-toolbar.binf-nav .csui-flyout.binf-open .csui-toolitem {
+  white-space: nowrap;
+  z-index: initial;
+}
+
+.binf-widgets .csui-toolbar.binf-nav .csui-flyout.binf-open > a {
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+}
+
+.binf-widgets .csui-toolbar.binf-nav .csui-flyout.binf-open .binf-dropdown-menu .csui-toolitem:hover {
+  background-color: #bac9ce !important;
+}
+
+.binf-widgets .csui-toolbar.binf-nav .csui-flyout .csui-flyout-arrow {
+  padding-right: 8px;
+  padding-left: 14px;
+}
+
+.binf-widgets .csui-toolbar.binf-nav .csui-flyout-arrow .csui-button-icon {
+  width: 12px;
+  height: 12px;
+  margin-left: 6px;
+  margin-right: 0;
+}
+
+.binf-widgets .csui-toolbar.binf-nav .csui-flyout-arrow.binf-disabled {
+  pointer-events: none;
+  opacity: 0;
+}
+
+.binf-widgets .csui-toolbar.binf-nav .csui-flyout.binf-open .binf-dropdown-menu {
+  margin: 0;
+  border-radius: 0;
+  left: -1px;
+  border: 1px solid rgba(0, 0, 0, .15);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+
+.binf-widgets .csui-toolbar.binf-nav .csui-toolitem.binf-disabled {
+  pointer-events: none;
+  cursor: default;
+  color: #777777;
+}
+
+.binf-widgets .csui-toolbar .csui-loading-dots-wrapper {
+  min-height: 26px;
+  min-width: 46px;
+  display: block;
+  margin-left: 0;
+  padding: 0;
+  position: relative;
+  top: 0;
+  cursor: auto;
+  height: 100%
+}
+
+.csui-toolbar .csui-loading-dots {
+  position: absolute;
+  background-color: rgb(123, 154, 176);
+  width: 6px;
+  height: 6px;
+  top: calc(50% - 3px);
+  animation-name: bounce_loading;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  transform: scale(.3);
+  border-radius: 6px;
+}
+
+.csui-toolbar .csui-dot-1 {
+  left: 6px;
+  animation-delay: 1.07s;
+}
+
+.csui-toolbar .csui-dot-2 {
+  left: 14px;
+  animation-delay: 1.33s;
+}
+
+.csui-toolbar .csui-dot-3 {
+  left: 22px;
+  animation-delay: 1.6s;
+}
+
+@keyframes bounce_loading {
+  0% {
+    transform: scale(1);
+    background-color: rgba(46, 61, 152, 0.98);
+  }
+
+  100% {
+    transform: scale(.3);
+    background-color: rgb(123, 154, 176);
+  }
+}
+
+.binf-widgets .csui-toolbar .binf-dropdown > .binf-dropdown-menu li > a .csui-icon-rightArrow.csui-icon-rightArrow {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: 0;
+  margin-top: 2px;
+  background-repeat: no-repeat;
+  transform: rotate(90deg);
+}
+
+.binf-widgets .csui-toolbar.binf-nav > li > a:hover, .binf-widgets .csui-toolbar.binf-nav > li > a:focus {
+  background-color: transparent;
+}
+
+.binf-widgets .csui-toolbar.binf-nav .csui-toolitem-icononly,
+.binf-widgets .csui-toolbar.binf-nav.binf-nav-pills > li.csui-more-dropdown-wrapper > a.binf-dropdown-toggle {
+  padding: 0;
+  margin: 0 6px;
+  border-radius: 50%;
+}
+
+.binf-widgets .csui-toolbar.binf-nav.binf-nav-pills > li.csui-more-dropdown-wrapper > a.binf-dropdown-toggle {
+  height: 32px;
+}
+
+.binf-widgets .csui-toolbar .binf-open > .binf-dropdown-menu {
+  border-radius: 0;
+}
+
+.binf-widgets .csui-target-controls .binf-open > .binf-dropdown-menu {
+  margin: 0;
+}
+
+.binf-widgets .csui-rowselection-toolbar .csui-selected-counter-region,
+.binf-widgets .csui-table-rowselection-toolbar .csui-selected-counter-region {
+  padding-right: 10px;
+}
+
+.binf-widgets .csui-fav2-table .csui-toolbar {
+  padding-left: 10px;
+}
+
+.binf-widgets .csui-toolbar .binf-open > .binf-dropdown-menu.csui-more-dropdown-menu.csui-perfect-scrolling {
+  overflow: hidden;
+  position: absolute;
+}
+
+.binf-widgets .binf-dropdown-submenu > a:after {
+  display: none; 
+}
+
+.binf-widgets .binf-dropdown-submenu.binf-pull-down.binf-open > .binf-dropdown-menu {
+  top: 100%;
+  left: 0;
+}
+
+.binf-widgets .binf-dropdown-submenu.binf-pull-down.binf-open.binf-dropup > .binf-dropdown-menu {
+  top: auto;
+  bottom: 100%;
+  left: 0;
+}
+
+.binf-widgets .binf-dropdown-submenu.binf-open > .binf-dropdown-menu {
+  margin: 0;
+}
+
+.binf-widgets .binf-dropdown-submenu > a .csui-caret {
+  width: 10px;
+  min-width: 10px;
+  height: 10px;
+  margin-left: 6px;
+  margin-top: 6px;
+  align-self: flex-start;
+}
+
+.binf-widgets .binf-dropdown-submenu.binf-open > .binf-dropdown-menu.csui-fixed-submenu,
+.binf-widgets .binf-dropdown-submenu.binf-open.binf-dropdown > .binf-dropdown-menu.csui-fixed-submenu,
+.binf-widgets .binf-dropdown-submenu.binf-pull-down.binf-open.binf-dropup > .binf-dropdown-menu.csui-fixed-submenu {
+  bottom: auto;
+  right: auto;
+  left: auto;
+}

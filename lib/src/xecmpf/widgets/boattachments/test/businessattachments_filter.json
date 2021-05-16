@@ -1,0 +1,481 @@
+{
+  "actions": {
+
+  },
+  "links": {
+    "data": {
+      "self": {
+        "body": "",
+        "content_type": "",
+        "href": "\/api\/v2\/businessobjects\/D9A\/KNA1\/0000000272\/businessattachments?sort=asc_name&limit=30&page=1&where_name=contains_Check&metadata&expand=properties{ancestors,parent_id,reserved_user_id}",
+        "method": "GET",
+        "name": ""
+      }
+    }
+  },
+  "paging": {
+    "limit": 30,
+    "page": 1,
+    "page_total": 1,
+    "range_max": 1,
+    "range_min": 1,
+    "total_count": 1
+  },
+  "results": [
+    {
+      "actions": {
+        "data": {
+          "open": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "\/api\/v2\/nodes\/310415",
+            "method": "GET",
+            "name": "Open"
+          }
+        },
+        "map": {
+          "default_action": ""
+        },
+        "order": [
+          "open"
+        ]
+      },
+      "data": {
+        "ancestors": [
+          {
+            "container": true,
+            "container_size": 10,
+            "create_date": "2016-08-08T13:09:02",
+            "create_user_id": 1000,
+            "description": "",
+            "description_multilingual": {
+              "en": ""
+            },
+            "favorite": false,
+            "guid": null,
+            "icon": "\/img\/webdoc\/icon_library.gif",
+            "icon_large": "\/img\/webdoc\/icon_library_large.gif",
+            "id": 2000,
+            "modify_date": "2017-01-10T08:53:35",
+            "modify_user_id": 1000,
+            "name": "Enterprise",
+            "name_multilingual": {
+              "en": "Enterprise"
+            },
+            "owner_group_id": 1001,
+            "owner_user_id": 1000,
+            "parent_id": -1,
+            "reserved": false,
+            "reserved_date": null,
+            "reserved_user_id": 0,
+            "type": 141,
+            "type_name": "Enterprise Workspace",
+            "versions_control_advanced": false,
+            "volume_id": -2000
+          },
+          {
+            "container": true,
+            "container_size": 8,
+            "create_date": "2016-11-21T13:42:00",
+            "create_user_id": 1000,
+            "description": "",
+            "description_multilingual": {
+              "en": ""
+            },
+            "favorite": false,
+            "guid": null,
+            "icon": "\/img\/webdoc\/folder.gif",
+            "icon_large": "\/img\/webdoc\/folder_large.gif",
+            "id": 310414,
+            "modify_date": "2016-11-29T17:10:51",
+            "modify_user_id": 1000,
+            "name": "Demo Documents",
+            "name_multilingual": {
+              "en": "Demo Documents"
+            },
+            "owner_group_id": 1001,
+            "owner_user_id": 1000,
+            "parent_id": 2000,
+            "reserved": false,
+            "reserved_date": null,
+            "reserved_user_id": 0,
+            "type": 0,
+            "type_name": "Folder",
+            "versions_control_advanced": false,
+            "volume_id": -2000
+          },
+          {
+            "container": false,
+            "container_size": 0,
+            "create_date": "2016-11-21T13:45:03",
+            "create_user_id": 1000,
+            "description": "",
+            "description_multilingual": {
+              "en": ""
+            },
+            "favorite": false,
+            "guid": null,
+            "icon": "\/img\/webdoc\/apppdf.gif",
+            "icon_large": "\/img\/webdoc\/apppdf_large.gif",
+            "id": 310415,
+            "modify_date": "2016-11-23T14:26:31",
+            "modify_user_id": 1000,
+            "name": "Design Check Chart.pdf",
+            "name_multilingual": {
+              "en": "Design Check Chart.pdf"
+            },
+            "owner_group_id": 1001,
+            "owner_user_id": 1000,
+            "parent_id": 310414,
+            "reserved": true,
+            "reserved_date": "2017-01-05T18:52:08",
+            "reserved_user_id": 9692,
+            "type": 144,
+            "type_name": "Document",
+            "versions_control_advanced": false,
+            "volume_id": -2000
+          }
+        ],
+        "properties": {
+          "container": false,
+          "create_date": "2016-11-21T13:45:03",
+          "description": "",
+          "favorite": false,
+          "icon": "\/img\/webdoc\/apppdf.gif",
+          "id": 310415,
+          "mime_type": "application\/pdf",
+          "modify_date": "2016-11-23T14:26:31",
+          "name": "Design Check Chart.pdf",
+          "original_id": 0,
+          "parent_id": 310414,
+          "parent_id_expand": {
+            "container": true,
+            "container_size": 8,
+            "create_date": "2016-11-21T13:42:00",
+            "create_user_id": 1000,
+            "description": "",
+            "description_multilingual": {
+              "en": ""
+            },
+            "favorite": false,
+            "id": 310414,
+            "mime_type": null,
+            "modify_date": "2016-11-29T17:10:51",
+            "modify_user_id": 1000,
+            "name": "Demo Documents",
+            "name_multilingual": {
+              "en": "Demo Documents"
+            },
+            "owner_group_id": 1001,
+            "owner_user_id": 1000,
+            "parent_id": 2000,
+            "reserved": false,
+            "reserved_date": null,
+            "reserved_user_id": 0,
+            "size": 8,
+            "size_formatted": "8 Items",
+            "type": 0,
+            "type_name": "Folder",
+            "versions_control_advanced": false,
+            "volume_id": -2000,
+            "wnd_nickname": null
+          },
+          "perm_create": true,
+          "perm_delete": true,
+          "perm_delete_versions": true,
+          "perm_modify": true,
+          "perm_modify_attributes": true,
+          "perm_modify_permissions": true,
+          "perm_reserve": true,
+          "perm_see": true,
+          "perm_see_contents": true,
+          "reserved": true,
+          "reserved_date": "2017-01-05T18:52:08",
+          "reserved_user_id": 9692,
+          "reserved_user_id_expand": {
+            "birth_date": null,
+            "business_email": null,
+            "business_fax": null,
+            "business_phone": null,
+            "cell_phone": null,
+            "first_name": "Carsten",
+            "gender": null,
+            "group_id": 1001,
+            "home_address_1": null,
+            "home_address_2": null,
+            "home_fax": null,
+            "home_phone": null,
+            "id": 9692,
+            "last_name": "Knoblich",
+            "middle_name": null,
+            "name": "cknoblic",
+            "name_formatted": "cknoblic",
+            "office_location": null,
+            "pager": null,
+            "personal_email": null,
+            "personal_interests": null,
+            "personal_url_1": null,
+            "personal_url_2": null,
+            "personal_url_3": null,
+            "personal_website": null,
+            "photo_url": null,
+            "time_zone": -1,
+            "title": null,
+            "type": 0,
+            "type_name": "User"
+          },
+          "size": 194764,
+          "type": 144,
+          "type_name": "Document",
+          "volume_id": -2000,
+          "wnd_att_r7q_g": "SALINA",
+          "wnd_att_r7q_g_formatted": "SALINA",
+          "wnd_comments": "New customer reference program brochure",
+          "xecm_ba_comments": "New customer reference program brochure",
+          "wnd_createdate": "2016-11-21T13:45:03",
+          "wnd_createdate_formatted": "11\/21\/2016 01:45 PM",
+          "wnd_createdby": 1000,
+          "wnd_createdby_formatted": "Admin",
+          "wnd_modifiedby": 1000,
+          "wnd_modifiedby_formatted": "Admin",
+          "wnd_nickname": null,
+          "wnd_nickname_formatted": null,
+          "wnd_owner": 1000,
+          "wnd_owner_formatted": "Admin",
+          "wnd_version": 1,
+          "wnd_version_formatted": "1",
+          "wnf_emailfrom": null,
+          "wnf_emailfrom_formatted": null,
+          "wnf_readydate": null,
+          "wnf_readydate_formatted": null,
+          "wnf_wksp_modify_date": null,
+          "wnf_wksp_name_en": null,
+          "wnf_wksp_name_en_formatted": null,
+          "wnf_wksp_template_id": null,
+          "wnf_wksp_type_id": null,
+          "wnf_wksp_type_id_formatted": null
+        }
+      },
+      "metadata": {
+        "properties": {
+          "create_date": {
+            "align": "center",
+            "name": "Created",
+            "persona": "",
+            "type": -7,
+            "width_weight": 0
+          },
+          "description": {
+            "align": "left",
+            "name": "Description",
+            "persona": "",
+            "type": -1,
+            "width_weight": 100
+          },
+          "favorite": {
+            "align": "center",
+            "name": "Favorite",
+            "persona": "",
+            "type": 5,
+            "width_weight": 0
+          },
+          "icon": {
+            "align": "center",
+            "name": "Icon",
+            "persona": "",
+            "type": -1,
+            "width_weight": 0
+          },
+          "id": {
+            "align": "right",
+            "name": "DataID",
+            "persona": "node",
+            "sort": false,
+            "type": 2,
+            "width_weight": 0
+          },
+          "mime_type": {
+            "align": "left",
+            "name": "MIME Type",
+            "persona": "",
+            "type": -1,
+            "width_weight": 0
+          },
+          "modify_date": {
+            "align": "left",
+            "name": "Modified",
+            "persona": "",
+            "sort": true,
+            "type": -7,
+            "width_weight": 0
+          },
+          "name": {
+            "align": "left",
+            "name": "Name",
+            "persona": "",
+            "sort": true,
+            "type": -1,
+            "width_weight": 100
+          },
+          "original_id": {
+            "align": "left",
+            "name": "Original ID",
+            "persona": "node",
+            "type": 2,
+            "width_weight": 0
+          },
+          "parent_id": {
+            "align": "left",
+            "name": "Parent ID",
+            "persona": "node",
+            "type": 2,
+            "width_weight": 0
+          },
+          "reserved": {
+            "align": "center",
+            "name": "Reserve",
+            "persona": "",
+            "type": 5,
+            "width_weight": 0
+          },
+          "reserved_date": {
+            "align": "center",
+            "name": "Reserved",
+            "persona": "",
+            "type": -7,
+            "width_weight": 0
+          },
+          "reserved_user_id": {
+            "align": "center",
+            "name": "Reserved By",
+            "persona": "member",
+            "type": 2,
+            "width_weight": 0
+          },
+          "size": {
+            "align": "right",
+            "name": "Size",
+            "persona": "",
+            "sort": false,
+            "sort_key": "size",
+            "type": 2,
+            "width_weight": 0
+          },
+          "type": {
+            "align": "center",
+            "name": "Type",
+            "persona": "",
+            "sort": false,
+            "type": 2,
+            "width_weight": 0
+          },
+          "volume_id": {
+            "align": "left",
+            "name": "VolumeID",
+            "persona": "node",
+            "type": 2,
+            "width_weight": 0
+          },
+          "wnd_att_r7q_g": {
+            "align": "center",
+            "name": "Test",
+            "sort": false,
+            "type": -1,
+            "width_weight": 1
+          },
+          "wnd_comments": {
+            "align": "center",
+            "name": "Comments",
+            "sort": false,
+            "type": 2,
+            "width_weight": 1
+          },
+          "wnd_createdate": {
+            "align": "center",
+            "name": "Creation Date",
+            "sort": false,
+            "type": -7,
+            "width_weight": 1
+          },
+          "wnd_createdby": {
+            "align": "center",
+            "name": "Created By",
+            "persona": "user",
+            "sort": false,
+            "type": 2,
+            "width_weight": 0
+          },
+          "wnd_modifiedby": {
+            "align": "center",
+            "name": "Modified By",
+            "persona": "user",
+            "sort": false,
+            "type": 2,
+            "width_weight": 0
+          },
+          "wnd_nickname": {
+            "align": "center",
+            "name": "Nickname",
+            "sort": false,
+            "type": -1,
+            "width_weight": 1
+          },
+          "wnd_owner": {
+            "align": "center",
+            "name": "Owner",
+            "persona": "user",
+            "sort": false,
+            "type": 2,
+            "width_weight": 0
+          },
+          "wnd_version": {
+            "align": "center",
+            "name": "Version",
+            "sort": false,
+            "type": 2,
+            "width_weight": 1
+          },
+          "wnf_emailfrom": {
+            "align": "center",
+            "name": "Test 2",
+            "sort": false,
+            "type": -1,
+            "width_weight": 1
+          },
+          "wnf_readydate": {
+            "align": "center",
+            "name": "Added to Package",
+            "sort": false,
+            "type": -7,
+            "width_weight": 1
+          },
+          "wnf_wksp_modify_date": {
+            "align": "center",
+            "name": "ModDate",
+            "sort": true,
+            "type": -7,
+            "width_weight": 1
+          },
+          "wnf_wksp_name_en": {
+            "align": "center",
+            "name": "Workspace Name en",
+            "sort": true,
+            "type": -1,
+            "width_weight": 1
+          },
+          "wnf_wksp_type_id": {
+            "align": "center",
+            "name": "Workspace Type ID",
+            "sort": false,
+            "type": 2,
+            "width_weight": 1
+          }
+        }
+      },
+      "metadata_order": {
+        "properties": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-btn-primary.reference-generate-number {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 1em;
+  border: 1px solid #0072aa;
+  color: #0072aa;
+  padding: 2px 12px;
+  background-color: #ffffff;
+}
+
+.binf-widgets .binf-btn-primary.reference-generate-number:hover {
+  background-color: #ffffff;
+  border: 1px solid #004b71;
+  color: #004b71;
+  -webkit-box-shadow: inset 0 0 0 1px rgba(0, 75, 113, 1);
+  -moz-box-shadow: inset 0 0 0 1px rgba(0, 75, 113, 1);
+  box-shadow: inset 0 0 0 1px rgba(0, 75, 113, 1);
+}
+
+.binf-widgets .binf-btn-primary.reference-generate-number:focus {
+  background-color: #ffffff;
+  border: 1px solid #004b71;
+  color: #004b71;
+}
+
+.cursor-disabled {
+	cursor: not-allowed;
+}
+
+.binf-widgets .binf-btn-primary.reference-generate-number-disabled,
+.binf-widgets .binf-btn-primary.reference-generate-number-disabled:hover,
+ .binf-widgets .binf-btn-primary.reference-generate-number-disabled:focus {
+  background-color: #a9a9a9;
+  color: #ffffff;
+  box-shadow: none;
+  pointer-events: none;
+}
+
+.binf-widgets .conws-metadata .alpaca-field.alpaca-field-reference label,
+.binf-form-group.alpaca-field.alpaca-field-reference.alpaca-optional label {
+  pointer-events: none;
+}
+
+.cs-form .alpaca-container-item > .binf-form-group.alpaca-field.alpaca-field-reference > .binf-col-sm-9 {
+  overflow: visible;
+}
+
+.binf-widgets .cs-formfield.cs-referencefield {
+  height: 100%;
+}
+
+.binf-widgets .cs-formfield .reference-field-generate-read {
+  padding: 6px;
+}
+
+.binf-widgets .cs-formfield.cs-referencefield .reference-field-data button{
+	border:none;
+	background:white;
+	min-width:16px;
+	max-height:80px;
+	overflow:hidden;
+	padding:0px;
+	text-align:left;
+	text-overflow: ellipsis;
+	color:#666666;
+}
+
+.binf-widgets .cs-formfield.cs-referencefield .reference-field-data button:focus {
+	outline:1px dotted;
+}
+
+.binf-widgets .cs-formfield.cs-referencefield .reference-field-data button > span {
+	cursor: text;
+    white-space: nowrap;
+}
+
+
+

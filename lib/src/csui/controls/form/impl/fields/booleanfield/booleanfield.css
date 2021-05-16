@@ -1,0 +1,224 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .cs-booleanfield {
+  display: inline-flex;
+  width: 100%;
+  min-height: 31px;
+  min-width: 10em;
+}
+
+.cs-booleanfield .control-area {
+  width: auto;
+  height: auto;
+}
+
+.cs-booleanfield .control-area:focus-within {
+  outline: 1px dotted #333333;
+  outline-offset: -1px;
+}
+
+.cs-booleanfield .cs-field-inner {
+  display: -webkit-box; 
+  display: -moz-box; 
+  display: -ms-flexbox; 
+  display: -webkit-flex; 
+  display: flex; 
+
+  -moz-box-direction: row;
+  -webkit-box-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flexbox-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.binf-widgets .cs-booleanfield .cs-field-write .cs-field-inner {
+  position: relative;
+}
+
+.binf-widgets .cs-metadata-properties .apply-all,
+.binf-widgets .cs-metadata-properties .apply-all:focus,
+.binf-widgets .cs-metadata-properties .apply-all:active {
+  background-size: auto;
+}
+
+.cs-booleanfield .binf-switch:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.cs-formfield.cs-booleanfield .binf-switch.binf-switch-focused {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+
+  border: 2px solid #666666;
+  border-radius: 12px;
+}
+
+.cs-formfield.cs-booleanfield .edit-cancel {
+  margin-top: 5px;
+}
+
+.binf-widgets .binf-switch.binf-switch-wrapper.binf-switch-on .binf-switch-container {
+  background-color: #767676;
+  display: flex;
+  align-items: center;
+}
+
+.binf-widgets .binf-switch.binf-switch-wrapper.binf-switch-disabled {
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+.binf-widgets .binf-switch.binf-switch-wrapper.binf-switch-off {
+  background-color: #0072aa;
+}
+
+.cs-formfield.cs-booleanfield .binf-switch .binf-switch-handle-on {
+  background-color: #ffffff;
+  border-radius: 10px;
+  font-size: 13px;
+  width: 16px !important;
+  height: 16px;
+  color: white;
+  font-size: 0;
+  margin: 4px 3px 4px 3px;
+  padding: 8px;
+}
+
+.cs-formfield.cs-booleanfield .binf-switch .binf-switch-handle-off {
+  
+  background: #ffffff;
+  border-radius: 12px;
+  color: white;
+  font-size: 0;
+  padding: 0;
+  width: 16px !important;
+  height: 16px;
+  margin: 2px 3px 2px 5px;
+  padding: 8px;
+
+}
+
+.binf-switch.binf-switch-off .binf-switch-label {
+  width: 16px !important;
+  height: 16px;
+  color: white;
+  background-color: #0072aa;
+  line-height: 16px;
+  margin: -1px 2px 5px -7px;
+}
+
+.binf-widgets .binf-switch.binf-switch-on,
+.binf-widgets .binf-switch.binf-switch-on .binf-switch-container {
+  background-color: #767676;
+  display: flex;
+  align-items: center;
+}
+
+.binf-widgets .binf-switch.binf-switch-off,
+.binf-widgets .binf-switch.binf-switch-off .binf-switch-container {
+  background-color: #0072aa;
+  display: flex;
+  align-items: center;
+  width: 61px !important;
+}
+
+.binf-switch.binf-switch-wrapper.binf-switch-mini.binf-switch-on .binf-switch-label {
+  background-color: #767676;
+  padding: 8px;
+  background-position: 0;
+  background-repeat: no-repeat;
+}
+
+.cs-formfield.cs-booleanfield .binf-switch {
+  border-radius: 12px;
+  width: 46px !important;
+  font-size: 13px;
+  border-color: #a9a9a9;
+  height: 24px !important;
+  
+}
+
+.binf-switch.binf-switch-wrapper.binf-switch-mini .binf-switch-label {
+  font-size: 13px;
+}
+
+.binf-switch.binf-switch-wrapper.binf-switch-off .binf-switch-label {
+  padding: 0px 9px;
+  background-position: 3px 3px;
+  background-repeat: no-repeat;
+}
+
+.binf-switch.binf-switch-wrapper.binf-switch-off.binf-switch-mini.binf-switch-readonly .binf-switch-handle-on.binf-switch-primary {
+  padding: 8px 4px 8px 8px;
+  background-color: #337ab7;
+}
+
+.binf-switch.binf-switch-wrapper.binf-switch-off.binf-switch-mini.binf-switch-readonly .binf-switch-label {
+  padding: 2px 10px;
+}
+
+html[dir="rtl"] .binf-switch.binf-switch-wrapper.binf-switch-off .binf-switch-label {
+  padding: 0 12px;
+}
+
+html[dir="rtl"] .cs-formfield.cs-booleanfield .binf-switch-off .binf-switch-handle-off {
+  margin: 2px 0px;
+}
+
+@media all and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  
+  .binf-switch.binf-switch-wrapper.binf-switch-mini.binf-switch-on .binf-switch-label {
+    line-height: 18px;
+    padding: 9px;
+  }
+
+  .cs-formfield.cs-booleanfield .binf-switch .binf-switch-handle-off {
+    margin: 3px 3px 3px 5px;
+  }
+
+  .binf-switch.binf-switch-wrapper.binf-switch-off.binf-switch-mini.binf-switch-readonly .binf-switch-handle-off {
+    margin: 3px 3px 3px 4px;
+  }
+
+  .binf-switch.binf-switch-off .binf-switch-label {
+    margin: -1px 2px 4px -9px;
+    padding: 0px 9px 0px 11px !important;
+  }
+
+  .cs-formfield.cs-booleanfield .binf-switch .binf-switch-handle-on {
+    margin: 4px 3px 4px 3px;
+  }
+
+  .binf-switch.binf-switch-wrapper.binf-switch-off.binf-switch-mini.binf-switch-readonly .binf-switch-handle-on.binf-switch-primary {
+    padding: 8px 0px 8px 0px;
+  }
+
+  .binf-switch.binf-switch-wrapper.binf-switch-on.binf-switch-mini.binf-switch-readonly .binf-switch-label {
+    margin: 0px 8px 4px 4px;
+  }
+
+  .binf-switch.binf-switch-wrapper.binf-switch-off.binf-switch-mini.binf-switch-readonly .binf-switch-label {
+    padding: 2px 8px;
+  }
+
+  html[dir="rtl"] .cs-formfield.cs-booleanfield .binf-switch-off .binf-switch-handle-on {
+    margin : 4px -2px 4px -1px;
+  }
+
+  html[dir="rtl"] .binf-switch.binf-switch-wrapper.binf-switch-off .binf-switch-label {
+    padding: 0px 9px !important;
+    width : 21px !important;
+    margin: -1px 2px 5px 6px;
+  }
+
+  html[dir="rtl"] .cs-formfield.cs-booleanfield .binf-switch-off .binf-switch-handle-off {
+    margin: 3px -2px;
+    padding: 8px;
+  }
+
+}

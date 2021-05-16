@@ -1,0 +1,43 @@
+{
+  "$schema": "http://opentext.com/cs/json-schema/draft-04/schema#",
+  "title": "{{widgetTitle}}",
+  "description": "{{widgetDescription}}",
+  "kind": "tile",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "shortcutTheme": {
+        "title": "{{shortcutThemeTitle}}",
+        "description": "{{shortcutThemeDescription}}",
+        "type": "string",
+        "enum": [
+          "csui-shortcut-theme-stone1",
+          "csui-shortcut-theme-stone2",
+          "csui-shortcut-theme-teal1",
+          "csui-shortcut-theme-teal2",
+          "csui-shortcut-theme-pink1",
+          "csui-shortcut-theme-pink2",
+          "csui-shortcut-theme-indigo1",
+          "csui-shortcut-theme-indigo2"
+        ]
+      }
+    }
+  },
+  "options": {
+    "fields": {
+      "shortcutTheme": {
+        "type": "select",
+        "optionLabels": [
+          "{{shortcutThemeStone1}}",
+          "{{shortcutThemeStone2}}",
+          "{{shortcutThemeTeal1}}",
+          "{{shortcutThemeTeal2}}",
+          "{{shortcutThemePink1}}",
+          "{{shortcutThemePink2}}",
+          "{{shortcutThemeIndigo1}}",
+          "{{shortcutThemeIndigo2}}"
+        ]
+      }
+    }
+  }
+}

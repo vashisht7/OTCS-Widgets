@@ -1,0 +1,567 @@
+{
+  "id": {
+    "data": {
+      "deleted": false,
+      "display_name": "Admin",
+      "group_id": 1001,
+      "id": 1000,
+      "name": "Admin",
+      "privilege_login": true,
+      "privilege_modify_groups": true,
+      "privilege_modify_users": true,
+      "privilege_public_access": true,
+      "privilege_system_admin_rights": true,
+      "privilege_user_admin_rights": true,
+      "type": 0,
+      "type_name": "User"
+    },
+    "perspective": {
+      "options": {
+        "widgets": [
+          {
+            "type": "csui\/widgets\/welcome.placeholder"
+          },
+          {
+            "type": "csui\/widgets\/myassignments"
+          },
+          {
+            "type": "csui\/widgets\/favorites"
+          },
+          {
+            "options": {
+              "background": "cs-tile-background2",
+              "type": 141
+            },
+            "type": "csui\/widgets\/shortcut"
+          },
+          {
+            "options": {
+              "background": "cs-tile-background3",
+              "type": 142
+            },
+            "type": "csui\/widgets\/shortcut"
+          },
+          {
+            "type": "csui\/widgets\/recentlyaccessed"
+          }
+        ]
+      },
+      "type": "flow"
+    }
+  },
+  "permissions": {
+    "fullPermissions":  [
+              "add_items",
+              "delete",
+              "delete_versions",
+              "edit_attributes",
+              "edit_permissions",
+              "modify",
+              "add_major_version",
+              "reserve",
+              "see",
+              "see_contents"
+            ],
+    "readOnly":  ["see", "see_contents"]
+  },
+  "owner": {
+    "links": {
+      "data": {
+        "self": {
+          "body": "",
+          "content_type": "",
+          "href": "\/api\/v2\/nodes\/3752\/permissions\/owner",
+          "method": "PUT",
+          "name": ""
+        }
+      }
+    },
+    "results": {}
+  },
+  "actions": {
+    "data": {
+      "addcategory": {
+        "body": "",
+        "content_type": "",
+        "form_href": "",
+        "href": "\/api\/v2\/nodes\/11111\/categories",
+        "method": "POST",
+        "name": "Add Category"
+      },
+      "addversion": {
+        "body": "",
+        "content_type": "",
+        "form_href": "",
+        "href": "\/api\/v2\/nodes\/11111\/versions",
+        "method": "POST",
+        "name": "Add Version"
+      },
+      "copy": {
+        "body": "",
+        "content_type": "",
+        "form_href": "\/api\/v2\/forms\/nodes\/copy?id=11111",
+        "href": "\/api\/v2\/nodes",
+        "method": "POST",
+        "name": "Copy"
+      },
+      "delete": {
+        "body": "",
+        "content_type": "",
+        "form_href": "",
+        "href": "\/api\/v2\/nodes\/11111",
+        "method": "DELETE",
+        "name": "Delete"
+      },
+      "download": {
+        "body": "",
+        "content_type": "",
+        "form_href": "",
+        "href": "\/api\/v2\/nodes\/11111\/content?download",
+        "method": "GET",
+        "name": "Download"
+      },
+      "move": {
+        "body": "",
+        "content_type": "",
+        "form_href": "\/api\/v2\/forms\/nodes\/move?id=11111",
+        "href": "\/api\/v2\/nodes\/11111",
+        "method": "PUT",
+        "name": "Move"
+      },
+      "open": {
+        "body": "",
+        "content_type": "",
+        "form_href": "",
+        "href": "\/api\/v2\/nodes\/11111\/content",
+        "method": "GET",
+        "name": "Open"
+      },
+      "properties": {
+        "body": "",
+        "content_type": "",
+        "form_href": "",
+        "href": "\/api\/v2\/nodes\/11111",
+        "method": "GET",
+        "name": "Properties"
+      },
+      "permissions": {
+        "body": "",
+        "content_type": "",
+        "form_href": "",
+        "href": "\/api\/v2\/nodes\/11111\/permissions",
+        "method": "GET",
+        "name": "permissions"
+      },
+      "editpermissions": {
+        "body": "",
+        "content_type": "",
+        "form_href": "",
+        "href": "\/api\/v2\/nodes\/11111\/editpermissions",
+        "method": "GET",
+        "name": "editpermissions"
+      },
+      "rename": {
+        "body": "",
+        "content_type": "",
+        "form_href": "\/api\/v2\/forms\/nodes\/rename?id=11111",
+        "href": "\/api\/v2\/nodes\/11111",
+        "method": "PUT",
+        "name": "Rename"
+      },
+      "reserve": {
+        "body": "reserved_user_id=1000",
+        "content_type": "application\/x-www-form-urlencoded",
+        "form_href": "",
+        "href": "\/api\/v2\/nodes\/11111",
+        "method": "PUT",
+        "name": "Reserve"
+      }
+    },
+    "map": {"default_action": "open", "more": ["properties"]},
+    "order": ["open", "download", "addversion", "addcategory", "rename", "copy",
+      "move", "reserve", "delete", "permissions"]
+  },
+  "properties": {
+    "NTestFolder": {
+      "container": true,
+      "name": "00 Navya's Test folder",
+      "type": 0,
+      "versions_control_advanced": true
+    },
+    "testUser": {
+      "deleted": 0,
+      "id": 1001,
+      "name": "DefaultGroup",
+      "type": 1,
+      "type_name": "Group",
+      "name_formatted": "DefaultGroup",
+      "initials": "D",
+      "leader_id": {
+        "deleted": false,
+        "group_id": 1001,
+        "id": 6276,
+        "name": "testuser",
+        "name_formatted": "testuser",
+        "photo_url": "api\/v1\/members\/6276\/photo",
+        "time_zone": -1,
+        "type": 0,
+        "type_name": "User"
+      }
+    },
+    "Admin": {
+      "group_id": 1001,
+      "id": 1100,
+      "name": "Admin",
+      "name_formatted": "Admin",
+      "type": 0,
+      "type_name": "User"
+    },
+    "user": {
+      "deleted": 0,
+      "group_id": {
+        "deleted": false,
+        "id": 1456,
+        "name": "UserGroup",
+        "name_formatted": "UserGroup",
+        "type": 1,
+        "type_name": "Group"
+      },
+      "id": 1234,
+      "name": "user",
+      "type": 0,
+      "type_name": "User",
+      "name_formatted": "user"
+    },
+    "usera": {
+      "group_id": 1001,
+      "id": 10863,
+      "name": "usera",
+      "name_formatted": "usera",
+      "time_zone": -1,
+      "type": 0,
+      "type_name": "User"
+    },
+    "userb": {
+      "group_id": 1001,
+      "id": 10864,
+      "name": "userb",
+      "name_formatted": "userb",
+      "time_zone": -1,
+      "type": 0,
+      "type_name": "User"
+    },
+    "userc":  {
+      "group_id": 1001,
+      "id": 10865,
+      "name": "userc",
+      "name_formatted": "userc",
+      "time_zone": -1,
+      "type": 0,
+      "type_name": "User"
+    },
+    "userabc": {
+      "id": 10866,
+      "leader_id": null,
+      "name": "userabc",
+      "name_formatted": "userabc",
+      "type": 1,
+      "type_name": "Group"
+    },
+    "recommender": {
+      "id": 2244,
+      "name": "recommender",
+      "name_formatted": "Recommender",
+      "type": 1,
+      "type_name": "Group"
+    },
+    "recommender1": {
+      "group_id": 2244,
+      "id": 2245,
+      "name": "recommender1",
+      "name_formatted": "recommender1",
+      "time_zone": -1,
+      "type": 0,
+      "type_name": "User"
+    },
+    "recommender99": {  
+      "group_id": 2244,
+      "id": 2122,
+      "name": "recommender99",
+      "name_formatted": "recommender99",
+      "time_zone": -1,
+      "type": 0,
+      "type_name": "User"
+    },
+    "DefaultGroup": {
+      "deleted": false,
+      "id": 1001,
+      "leader_id": null,
+      "name": "DefaultGroup",
+      "name_formatted": "DefaultGroup",
+      "type": 1,
+      "type_name": "Group"
+    },
+    "Document": {
+      "container": false,
+      "create_user_id": 1000,
+      "favorite": true,
+      "id": 11111,
+      "mime_type": "application\/pdf",
+      "modify_date": "2017-05-15T17:20:16",
+      "modify_user_id": 1000,
+      "name": "Comparison-Safety.pdf",
+      "name_multilingual": {"en_IN": "react basic.pdf"},
+      "owner_group_id": 1001,
+      "owner_user_id": 1000,
+      "parent_id": 41381,
+      "size": 1244967,
+      "size_formatted": "2 MB",
+      "type": 144,
+      "type_name": "Document",
+      "versions_control_advanced": true,
+      "volume_id": -2000
+    },
+    "dummyGroup": {
+      "deleted": false,
+      "id": 3866,
+      "leader_id": null,
+      "name": "dummy group",
+      "name_formatted": "dummy group",
+      "type": 1,
+      "type_name": "Group"
+    },
+    "Filter": {
+      "id": 2116,
+      "leader_id": null,
+      "name": "Filter",
+      "name_formatted": "Filter",
+      "type": 1,
+      "type_name": "Group"
+    },
+    "Folder": {
+      "container": true,
+      "container_size": 4,
+      "create_date": "2017-08-16T12:26:56",
+      "create_user_id": 1000,
+      "description": "test",
+      "description_multilingual": {
+        "en_US": "test"
+      },
+      "id": 3862,
+      "modify_date": "2017-08-31T12:30:38",
+      "modify_user_id": 1000,
+      "name": "006 Bhaskar",
+      "name_multilingual": {
+        "en_US": "006 Bhaskar"
+      },
+      "owner_group_id": 1001,
+      "owner_user_id": 1000,
+      "parent_id": 2000,
+      "size": 4,
+      "size_formatted": "4 Items",
+      "type": 0,
+      "type_name": "Folder",
+      "volume_id": -2000
+    },
+    "BusinessAdministrators": {
+      "deleted": false,
+      "id": 2001,
+      "leader_id": null,
+      "name": "Business Administrators",
+      "name_formatted": "Business Administrators",
+      "type": 1,
+      "type_name": "Group"
+    },
+    "BusinessAttributes": {
+      "deleted": 0,
+      "id": 11503,
+      "name": "Business Attributes",
+      "name_formatted": "Business Attributes",
+      "type": 1,
+      "type_name": "Group"
+    },
+    "EmptyGroup": {
+      "deleted": false,
+      "id": 9458780,
+      "leader_id": null,
+      "name": "Empty group",
+      "name_formatted": "Empty group",
+      "type": 1,
+      "type_name": "Group"
+    },
+    "MyGroup": {
+      "deleted": false,
+      "id": 3976,
+      "leader_id": null,
+      "name": "My Group",
+      "name_formatted": "My Group",
+      "type": 1,
+      "type_name": "Group"
+    },
+    "TestPermissionGroup1": {
+      "id": 24085,
+      "leader_id": null,
+      "name": "TestPermissionGroup1",
+      "name_formatted": "TestPermissionGroup1",
+      "type": 1,
+      "type_name": "Group"
+    },
+    "TestUser1": {
+      "first_name": "test user",
+      "group_id": 24085,
+      "id": 19915,
+      "last_name": "test user",
+      "middle_name": "1",
+      "name": "TestUser1",
+      "name_formatted": "TestUser1",
+      "time_zone": -1,
+      "type": 0,
+      "type_name": "User"
+    },
+    "spencer5": {
+      "group_id": 1001,
+      "id": 1000,
+      "name": "spencer5",
+      "name_formatted": "spencer5",
+      "time_zone": -1,
+      "type": 0,
+      "type_name": "User"
+    },
+    "Kristen": {
+      "business_email": "kbobbet@compay.com",
+      "first_name": "Kristen",
+      "group_id": 131327,
+      "id": 64039,
+      "last_name": "Smith",
+      "name": "Kristen",
+      "name_formatted": "Kristen Smith",
+      "time_zone": -1,
+      "title": "Producer",
+      "type": 0,
+      "type_name": "User"
+    }
+  },
+  "serverInfo":{
+    "mobile": {
+      "offline_use": true
+    },
+    "server": {
+      "advanced_versioning": true,
+      "character_encoding": 1,
+      "current_date": "2020-01-28T10:52:05",
+      "current_locale_suffix": "_en_US",
+      "domain_access_enabled": false,
+      "enhanced_advanced_versioning": false,
+      "force_download_for_mime_types": [
+        "application\/x-msdownload",
+        "application\/octet-stream"
+      ],
+      "language_code": "USA",
+      "languages": [
+        {
+          "default": true,
+          "display_name": "English ( United States )",
+          "language_code": "_en_US"
+        }
+      ],
+      "metadata_languages": [
+        {
+          "default": true,
+          "display_name": "English ( India )",
+          "language_code": "en_IN"
+        }
+      ],
+      "time_zone_offset_enabled": false,
+      "url": "http:\/\/mn0mulapf1pw8nq:8080\/OTCS1\/cs.exe",
+      "version": "16.2.999"
+    },
+    "viewer": {
+      "content_suite": {
+        "enabled": false,
+        "supported_mime_types": [
+          "application\/ms-excel",
+          "application\/msexcel",
+          "application\/msword",
+          "application\/msword-template",
+          "application\/pdf",
+          "application\/postscript",
+          "application\/powerpoint",
+          "application\/ppt",
+          "application\/vnd.ms-bitmap",
+          "application\/vnd.ms-excel",
+          "application\/vnd.ms-excel",
+          "application\/vnd.ms-excel-template",
+          "application\/vnd.ms-excel.sheet.binary.macroEnabled.12",
+          "application\/vnd.ms-excel.sheet.macroEnabled.12",
+          "application\/vnd.ms-outlook",
+          "application\/vnd.ms-outlook-message",
+          "application\/vnd.ms-outlook-template",
+          "application\/vnd.ms-powerpoint",
+          "application\/vnd.ms-powerpoint.presentation.macroEnabled.12",
+          "application\/vnd.ms-pps",
+          "application\/vnd.ms-word",
+          "application\/vnd.ms-word.document.macroEnabled.12",
+          "application\/vnd.openxmlformats-officedocument.presentationml.presentation",
+          "application\/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "application\/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "application\/x-bravadtx",
+          "application\/x-bravax",
+          "application\/x-emf",
+          "application\/x-msexcel",
+          "application\/x-mspowerpoint",
+          "application\/x-pdf",
+          "application\/x-outlook-msg",
+          "image\/bmp",
+          "image\/gif",
+          "image\/jpeg",
+          "image\/pjpeg",
+          "image\/png",
+          "image\/tif",
+          "image\/tiff",
+          "image\/x-MS-bmp",
+          "image\/x-png",
+          "image\/x-rgb",
+          "image\/x-tiff",
+          "image\/x-windows-bmp",
+          "image\/x-xbitmap",
+          "image\/x-xbm",
+          "image\/x-xpixmap",
+          "message\/rfc822"
+        ]
+      }
+    }
+  },
+  "editPermissions": {
+    "links": {
+      "data": {
+        "self": {
+          "body": "",
+          "content_type": "",
+          "href": "\/api\/v2\/nodes\/actions?actions=editpermissions&ids=29636654&reference_id=29636654",
+          "method": "GET",
+          "name": ""
+        }
+      }
+    },
+    "results": {
+      "29636654": {
+        "data": {
+          "editpermissions": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "",
+            "method": "",
+            "name": "Edit Permissions"
+          }
+        },
+        "map": {
+          "default_action": "open"
+        },
+        "order": [
+          "editpermissions"
+        ]
+      }
+    }
+  }
+}

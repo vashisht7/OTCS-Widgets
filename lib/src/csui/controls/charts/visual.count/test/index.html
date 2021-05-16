@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Visual Count Control</title>
+
+    <link rel="stylesheet" href="../../../../themes/carbonfiber/theme.css">
+    <style>
+
+        .binf-widgets h1.pageTitle {
+            color: white;
+            font-size: 1.6em;
+            width: 300px;
+            margin: 10px auto;
+        }
+
+        .binf-widgets h3 {
+            font-size: 1.3em;
+        }
+
+        .binf-widgets .chart {
+            background-color: white;
+            margin: 10px 5px;
+            padding: 10px !important;
+            height: calc(50vh - 60px);
+            width: 100%;
+        }
+
+        .binf-widgets .chart-options {
+            background-color: white;
+            margin: 10px 5px;
+            padding: 10px !important;
+            width: 100%;
+        }
+
+        .binf-widgets #chartOptionsForm {
+            display: block;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        .binf-widgets .field-wrapper {
+            display: flex;
+        }
+
+        .binf-widgets .field-col {
+            flex-grow: 1;
+        }
+
+        .binf-widgets .form ul {
+            margin:0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .binf-widgets .form ul li {
+            list-style-type: none;
+            padding: 0 10px 5px 10px;
+        }
+
+        .binf-widgets .field {
+            padding: 5px 20px;
+        }
+
+        .binf-widgets .field label {
+            padding: 2px 10px;
+        }
+
+        .binf-widgets .button-container {
+            display: flex;
+            margin-top: 30px;
+            justify-content: center;
+        }
+
+        .binf-widgets .button {
+            margin: 0 15px;
+        }
+
+        .binf-widgets #chartOptionsForm input[type=checkbox],
+        .binf-widgets #chartOptionsForm input[type=radio] {
+            height: 1.3em;
+            width: 1em;
+            vertical-align: sub;
+        }
+
+        .binf-widgets #chartOptionsForm label.top {
+            display: block;
+            padding: 2px 0;
+        }
+
+        .binf-widgets .testlink,
+        .binf-widgets .testlink:hover {
+            font-size: 11pt;
+            margin-left: 20px;
+            color: #fff;
+            opacity: 0.6;
+            text-decoration: underline;
+        }
+
+        .binf-widgets .testlink:hover {
+            opacity: 1;
+        }
+
+    </style>
+
+    <script src="../../../../lib/require.js"></script>
+    <script src="../../../../config.js" data-csui-path="../../../.."></script>
+    <script>
+
+        require.config({
+            deps: [
+                'csui/lib/require.config!csui/csui-extensions.json'
+            ]
+        });
+
+        require.config({
+            config: {
+                'csui/utils/contexts/factories/connector': {
+                    connection: {
+                        url: '//server/cgi/cs.exe/api/v1',
+                        supportPath: '/support',
+                        credentials: {
+                            username: 'Admin',
+                            password: 'livelink'
+                        }
+                    }
+                }
+            }
+        });
+
+        require(['csui/lib/backbone',
+            'csui/lib/underscore',
+            'csui/lib/jquery',
+            'csui/lib/marionette',
+            'csui/utils/contexts/page/page.context',
+            'csui/controls/charts/visual.count/visual.count.view',
+            './visual.count.mock.js'
+        ], function (Backbone, _, $, Marionette, PageContext, VisualCountView, mock) {
+
+            mock.enable();
+
+            function getFormData($form){
+                var formDataArray = $form.serializeArray(),
+                    formDataHash = {},
+                    chartOptions = {
+                        // all boolean options should be false here, in order to respect unchecked options
+                        showAsPercentage: false,
+                        animate: false,
+                        chartTitle: '',
+                        showAxisLabels: false,
+                        showValueLabels: false,
+                        showCountAxis: false,
+                        countAxisTicks: 0,
+                        showLegend: false,
+                        themeName: 'otPrimary',
+                        showGridLines: false,
+                        showTotal: false
+                    };
+
+                $.map(formDataArray, function(n){
+                    var val = n['value'] || false;
+                    val = (val === "true") ? !!val : val;
+                    val = (n['name'] === 'chartTitle' && !val) ? undefined : val;
+                    formDataHash[n['name']] = val;
+                });
+
+                return _.extendOwn(chartOptions,formDataHash);
+
+            }
+
+            var clicked = false,
+                dataIndex = 1,
+                chartOptions = new Backbone.Model(getFormData($('#chartOptionsForm'))),
+                columnCollection = new Backbone.Collection({
+                    // nothing!
+                }),
+                Collection = Backbone.Collection.extend({
+                    url: '//server/otcs/cs/api/v2/mydata1',
+                    parse: function(response) {
+                        columnCollection.set(response.columns);
+                        return response.data;
+                    }
+                }),
+                dataCollection = new Collection(),
+                pageContext = new PageContext(),
+                chart1Region = new Marionette.Region({el: '#chart1'}),
+                chart2Region = new Marionette.Region({el: '#chart2'}),
+                chart3Region = new Marionette.Region({el: '#chart3'}),
+                chart4Region = new Marionette.Region({el: '#chart4'}),
+                chart1View = new VisualCountView({
+                    context: pageContext,
+                    chartType: 'verticalBar',
+                    chartOptions: chartOptions,
+                    collection: dataCollection,
+                    columns: columnCollection
+                }),
+                chart2View = new VisualCountView({
+                    context: pageContext,
+                    chartType: 'horizontalBar',
+                    chartOptions: chartOptions,
+                    collection: dataCollection,
+                    columns: columnCollection
+                }),
+                chart3View = new VisualCountView({
+                    context: pageContext,
+                    chartType: 'pie',
+                    chartOptions: chartOptions,
+                    collection: dataCollection,
+                    columns: columnCollection
+                }),
+                chart4View = new VisualCountView({
+                    context: pageContext,
+                    chartType: 'donut',
+                    chartOptions: chartOptions,
+                    collection: dataCollection,
+                    columns: columnCollection
+                });
+
+            chart1Region.show(chart1View);
+            chart2Region.show(chart2View);
+            chart3Region.show(chart3View);
+            chart4Region.show(chart4View);
+            dataCollection.fetch();
+
+            function updateData(newData) {
+
+                newData = newData || $('#alternateData').val();
+
+                var prefix = '//server/otcs/cs/api/v2/',
+                    ending = (clicked) ? newData : 'mydata1';
+
+                dataCollection.url = prefix + ending;
+                dataCollection.fetch();
+            }
+
+            $('input[type="radio"],input[type="checkbox"],#chartTitle,#countAxisTicks','#chartOptionsForm').on('change',function() {
+                var newOptions = getFormData($('#chartOptionsForm'));
+                chartOptions.set(newOptions);
+            });
+
+            $('#alternateData').on('change',function() {
+                event.preventDefault();
+                clicked = true;
+                updateData();
+            });
+
+            $('#updateButton').on('click',function(event) {
+                event.preventDefault();
+                clicked = !clicked;
+                updateData();
+            });
+
+            $('#cycleButton').on('click',function(event) {
+                event.preventDefault();
+                dataIndex = (dataIndex % 11); // number of examples before restart
+                dataIndex ++; // increment and re-start at 1 not 0
+                clicked = true;
+                var mydata = 'mydata' + dataIndex;
+                $('#alternateData').val(mydata);
+                updateData(mydata);
+            });
+
+        });
+
+    </script>
+</head>
+
+<body class="binf-widgets">
+<h1 class="pageTitle">Visual Count Test</h1>
+<a href="./index-big.html" class="testlink">Test full-screen charts</a>
+<div id="wrapper">
+    <div class="binf-container-fluid grid-rows">
+        <div class="binf-row">
+            <div class="binf-col-sm-12 binf-col-m-12 binf-col-lg-12 binf-col-xl-12">
+                <div class="chart-options" aria-hidden="true">
+                    <div class="form">
+                        <h3>Chart Options</h3>
+                        <form id="chartOptionsForm">
+                            <div class="field-wrapper">
+                                <div class="field-col">
+                                    <div class="field"><input type="checkbox" id="animate" name="animate" value="true" checked><label for="animate">animate</label></div>
+                                    <div class="field"><input type="checkbox" id="showAsPercentage" name="showAsPercentage" value="true" checked><label for="showAsPercentage">showAsPercentage</label></div>
+                                    <div class="field"><input type="checkbox" id="showValueLabels" name="showValueLabels" value="true" checked><label for="showValueLabels">showValueLabels</label></div>
+                                    <div class="field"><input type="checkbox" id="showAxisLabels" name="showAxisLabels" value="true" checked><label for="showAxisLabels">showAxisLabels</label></div>
+                                    <div class="field"><input type="checkbox" id="showCountAxis" name="showCountAxis" value="true" checked><label for="showCountAxis">showCountAxis</label></div>
+                                    <div class="field"><input type="checkbox" id="showLegend" name="showLegend" value="true" checked><label for="showLegend">showLegend</label></div>
+                                    <div class="field"><input type="checkbox" id="showGridLines" name="showGridLines" value="true" checked><label for="showGridLines">showGridLines</label></div>
+                                    <div class="field"><input type="checkbox" id="showTotal" name="showTotal" value="true" checked><label for="showTotal">showTotal</label></div>
+                                </div>
+                                <div class="field-col">
+                                    <div class="field"><label class="top">chartTitle</label><input type="text" id="chartTitle" name="chartTitle" value="" placeholder="Optional title"/></div>
+                                    <div class="field"><label class="top">countAxisTicks</label><input type="number" id="countAxisTicks" name="countAxisTicks" min="1" max="30" value="6"></div>
+                                    <div class="field">
+                                        <label>themeName</label>
+                                        <ul>
+                                            <li><input type="radio" id="themeName1" name="themeName" value="otPrimary" checked><label for="themeName1">OpenText Primary</label></li>
+                                            <li><input type="radio" id="themeName2" name="themeName" value="otSecondary"><label for="themeName2">OpenText Secondary</label></li>
+                                            <li><input type="radio" id="themeName3" name="themeName" value="otTertiary"><label for="themeName3">OpenText Tertiary</label></li>
+                                            <li><input type="radio" id="themeName4" name="themeName" value="dataClarity"><label for="themeName4">Data clarity</label></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="button-container">
+                                <div>
+                                    <label class="top">Test Data</label>
+                                    <select id="alternateData">
+                                        <option value="mydata1">Initial</option>
+                                        <option value="mydata2">Sort</option>
+                                        <option value="mydata3" selected>Add and remove categories</option>
+                                        <option value="mydata4">Lots of categories</option>
+                                        <option value="mydata5">Negative values</option>
+                                        <option value="mydata6">Small values</option>
+                                        <option value="mydata7">Tiny values</option>
+                                        <option value="mydata8">Huge values</option>
+                                        <option value="mydata9">File sizes</option>
+                                        <option value="mydata10">Unformatted values</option>
+                                        <option value="mydata11">No data</option>
+                                    </select>
+                                </div>
+                                <button id="updateButton" class="button">Toggle Initial</button>
+                                <button id="cycleButton" class="button">Cycle Thru</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+            <div class="binf-col-sm-12 binf-col-md-6">
+                <div class="chart" id="chart1"></div>
+            </div>
+            <div class="binf-col-sm-12 binf-col-md-6">
+                <div class="chart" id="chart2"></div>
+            </div>
+            <div class="binf-col-sm-12 binf-col-md-6">
+                <div class="chart" id="chart3"></div>
+            </div>
+            <div class="binf-col-sm-12 binf-col-md-6">
+                <div class="chart" id="chart4"></div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>
+
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

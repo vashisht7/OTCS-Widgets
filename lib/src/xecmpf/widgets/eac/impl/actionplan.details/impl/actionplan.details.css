@@ -1,0 +1,45 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .xecmpf-actionplan-details {
+    height: 100%;
+    min-height: 90px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+}
+.binf-widgets .xecmpf-actionplan-details .xecmpf-actionplan-master-view {
+    display:flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+    overflow: hidden;
+    width: 100%;
+}
+.binf-widgets .xecmpf-actionplan-details .xecmpf-actionplan-master-view .xecmpf-actionplan-list-view {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 248px;
+    min-width: 248px;
+    width: 20%;
+}
+.binf-widgets .xecmpf-actionplan-details .xecmpf-actionplan-master-view .xecmpf-actionpan-details-view {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    width: 80%;
+    min-width: 0;
+    min-height: 0;
+}
+.xecmpf-actionplan-details .xecmpf-eac-header {
+    padding: 0;
+    margin-bottom: 13px;
+}
+.xecmpf-actionplan-details .xecmpf-eac-header > h4 {
+    color: #00498f;
+    font-size: 20px;
+    line-height: 32px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}

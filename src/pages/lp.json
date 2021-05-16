@@ -1,0 +1,26 @@
+{
+    "type": "grid",
+    "kind": "fullpage",
+    "options": {
+      "rows": [
+        {
+          "columns": [
+            {
+              "sizes": {
+                "xs": 12
+              },
+              "heights": {
+                "xs": "full"
+              },
+              "widget": {
+                "type": "otcss/widgets/noteview",
+                "options": {
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+  

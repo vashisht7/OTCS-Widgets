@@ -1,0 +1,11 @@
+{{#if enableCheckBox}}
+    <div class="csui-facet-item-checkbox {{showOnHover}}">{{checkbox}}</div>
+{{/if}}
+<div class="csui-filter-name" tabindex="-1" title="{{name}} ({{count}})" aria-label="{{filterTitleAria}}">
+  <div class="csui-name">{{name}}</div>
+  {{#if displayCount}}
+  <div class="csui-total">{{count}}</div>
+  {{/if}}
+</div>
+
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

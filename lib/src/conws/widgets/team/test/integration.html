@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Team widget in integration scenario</title>
+
+  <link rel="stylesheet" href="http://ecmlink19dev.eng-muc.opentext.net/img/csui/themes/carbonfiber/theme.css">
+  <script src="http://ecmlink19dev.eng-muc.opentext.net/otcs/llisapi.dll/widgets?crossOrigin=true"></script>
+  
+
+  <script>
+    csui.setLanguage('en_US');
+    csui.onReady(function(){
+      csui.require(['csui/lib/marionette',
+            'csui/utils/contexts/page/page.context',
+            'conws/widgets/team/team.view'
+          ],
+          function(Marionette, PageContext, TeamView){
+            csui.require.config({
+              config: {
+                'csui/utils/contexts/factories/connector': {
+                  connection: {
+                    //url: '//vmstg-dev4.eng-muc.opentext.net/OTCS/cs.exe/api/v1',
+                    url: '//ecmlink19dev.eng-muc.opentext.net/OTCS/cs.exe/api/v1',
+                    supportPath: '/img',
+                    credentials: {
+                      username: 'Admin',
+                      password: 'opentext'
+                    }
+                  }
+                },
+                'csui/utils/contexts/factories/node': {
+                  attributes: {
+                    //id: 560884 // vmstg-dev4
+                    id: 281054 // ecmlink19dev
+                  }
+                }
+              }
+            });
+            var contentRegion = new Marionette.Region({
+              el: '#content'
+            });
+            var pageContext = new PageContext();
+            var teamView = new TeamView({
+              context: pageContext
+            });
+            contentRegion.show(teamView);
+            pageContext.fetch();
+
+          });
+    });
+  </script>
+</head>
+
+<body style="font-family:Arial,Helvetica,sans-serif;font-size:16px">
+<div id="content" style="height:calc(100vh);" class="binf-widgets"></div>
+</body>
+
+</html>
+
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

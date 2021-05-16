@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>My Attachment View</title>
+  <link rel="stylesheet" href="../../../../csui/themes/carbonfiber/theme.css">
+  <script src="../../../../csui/lib/require.js"></script>
+  <script>
+    (function () {
+      // Enable debugging of (cyclic) RequireJS module dependencies
+      var xray = /\bxray(=(\w+))?\b/.exec(location.search);
+      if (xray && xray[2] !== 'false') {
+        document.write('<' + 'script src="../../../../csui/lib/xrayquire.js"></' + 'script>');
+      }
+    }());
+  </script>
+
+  <script src="../../../../csui/config.js"  data-csui-path="../../../../csui"></script>
+
+
+  <style>
+    .container {
+      position: absolute;
+      top: 100px;
+    }
+  </style>
+
+  <script>
+    var connection1 = {
+      url: '//server/otcs/cs/api/v2',
+      supportPath: '/support',
+      session: {
+        ticket: 'dummy'
+      }
+    };
+    var connection2 = {
+      url: 'http://vmuscs.eng-muc.opentext.net:7777/otcs/cs/api/v2',
+      supportPath: '/img'
+    };
+
+
+//    require.config({
+//      deps: ['csui/lib/require.config!csui/csui-extensions.json']
+//    });
+    require.config({
+
+      paths: {
+        xecmpf: '../../..',
+        conws: '../../../../conws',
+        csui: '../../../../csui',
+//        esoc:'../../../../esoc',
+        greet: '../../..',
+
+        hbs: '../../../../csui/lib/hbs',
+        css: '../../../../csui/lib/css',
+        i18n: '../../../../csui/lib/i18n',
+        json: '../../../../csui/lib/json',
+        txt: '../../../../csui/lib/text',
+        'csui-ext': '../../../../csui/utils/load-extensions/load-extensions'
+      },
+
+      hbs: {
+        disableI18n: true,
+        disableHelpers: true,
+        templateExtension: 'hbs'
+      },
+      config: {
+        'i18n': {
+          // always use english, regardless the navigator language
+          'locale': 'en',
+          // do not try to load other language packs, which do not
+          // exist and thus dump lots of lang.js 404s on the console
+          'loadableLocales': {
+            'root': true
+          }
+        },
+        'csui/utils/contexts/factories/connector': {
+          connection: connection1,
+        },
+        'csui/utils/nodesprites': {
+          extensions: {
+            conws: [
+              'conws/utils/icons/icons'
+            ]
+          }
+        }
+      },
+      deps: ['csui/lib/require.config!csui/csui-extensions.json']
+
+    });
+
+    require(['csui/lib/marionette', 'csui/utils/contexts/page/page.context','csui/utils/connector', '../metadata.attachments.view',
+      './myattachments.mock.data.manager', 'csui/utils/contexts/factories/node',
+      'csui/controls/globalmessage/globalmessage'
+    ], function (Marionette, PageContext, Connector, MetadataAttachmentsView, DataManager, NodeModelFactory, GlobalMessage) {
+
+      var contentRegion = new Marionette.Region({
+        el: '#content'
+      });
+      var options = options || {};
+      var collection = collection || {};
+      var data = data || {};
+      var title = 'Business Attachments';
+      var bo_type_id = "3";
+      //var pagecontext = new PageContext();
+
+
+      var pagecontext = new PageContext({
+      factories: {
+        connector: {
+          connection: connection1,
+
+          assignTo: function (model) {
+            if (model.connector) {
+              if (model.connector === this) {
+                return;
+              }
+            }
+            model.connector = this;
+          }
+        },
+        node: {
+          attributes: {
+            id: 120,
+            type: 848
+          }
+        }
+      }
+    });
+//      var options = {
+//        "connector": {
+//          "connection": {
+//            url: '//server/otcs/cs/api/v2/nodes/120'
+//          }
+//        }
+//      };
+
+      var node = pagecontext.getModel(NodeModelFactory); //, options)
+      //DataManager.test(33, title, bo_type_id,  false);
+
+      GlobalMessage.setMessageRegionView(contentRegion,{classes:"navbar-default"});
+
+      metadataAttachmentsView = new MetadataAttachmentsView({
+        context: pagecontext,
+        // collection:    collection,
+        model: node
+
+      });
+
+      contentRegion.show(metadataAttachmentsView);
+
+      /*
+        myWorkspacesView4.listenTo(myWorkspacesView4, 'execute:defaultAction', function (node) {
+          alert("Default action executed for workspace: " + node);
+        });
+        */
+        // Provide mock rest calls for 257 items
+//       DataManager.test(33, title, bo_type_id,  false);
+   //     pagecontext.fetch();
+      });
+
+  </script>
+
+</head>
+
+
+
+<body class="binf-widgets">
+
+
+<div class="binf-container-fluid grid-rows">
+  <div class="binf-row">
+    <div class="binf-col-sm-5 binf-col-md-12 binf-col-lg-3" id="content"></div>
+  </div>
+</div>
+
+</body>
+</html>
+
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

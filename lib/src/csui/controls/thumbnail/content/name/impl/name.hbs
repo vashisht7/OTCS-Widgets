@@ -1,0 +1,47 @@
+{{#if displayIcon}}
+  {{#if defaultAction}}
+    {{#if inactive}}
+      <div class="csui-thumbnail-overview-icon csui-thumbnail-no-default-action"></div>
+    {{else}}
+      <a href="{{defaultActionUrl}}" aria-label="{{typeAndNameAria}}"
+         class="csui-thumbnail-overview-icon csui-thumbnail-default-action" tabindex="0" />
+    {{/if}}
+  {{else}}
+    <div class="csui-thumbnail-overview-icon csui-thumbnail-no-default-action"></div>
+  {{/if}}
+{{/if}}
+{{#if defaultAction}}
+  {{#if inactive}}
+    <div class="csui-thumbnail-name csui-thumbnail-name-{{cid}}">
+      <div class="csui-thumbnail-name-justify-div csui-thumbnail-no-default-action" title="{{name}}" aria-label="{{nameAria}}">
+        <span class="csui-thumbnail-name-value" title="{{name}}"
+              aria-label="{{nameNoOpenAria}}">{{name}}</span>
+      </div>
+    </div>
+  {{else}}
+    <div class="csui-thumbnail-name csui-thumbnail-name-{{cid}}">
+      <a href="{{defaultActionUrl}}"
+         class="csui-thumbnail-name-value csui-thumbnail-default-action"
+         title="{{name}}" aria-label="{{nameAria}}" tabindex="0">
+        <div class="csui-thumbnail-name-justify-div">
+          <span class="csui-thumbnail-name-link-text">{{name}}</span>
+        </div>
+      </a>
+    </div>
+  {{/if}}
+{{else}}
+  <div class="csui-thumbnail-name csui-thumbnail-name-{{cid}}">
+   {{#if displayLabel}}
+    <div class="csui-thumbnail-label csui-thumbnail-name-label" aria-label="{{label}}">
+      <span>{{label}}</span>
+    </div>
+  {{/if}}
+    <div class="csui-thumbnail-name-justify-div csui-thumbnail-no-default-action" title="{{name}}" aria-label="{{nameAria}}">
+      <span class="csui-thumbnail-name-value" title="{{name}}"
+            aria-label="{{nameNoOpenAria}}">{{name}}</span>
+    </div>
+  </div>
+{{/if}}
+
+
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

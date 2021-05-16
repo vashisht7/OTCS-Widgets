@@ -1,0 +1,76 @@
+{
+  "links": {
+    "data": {
+      "self": {
+        "body": "",
+        "content_type": "",
+        "href": "/api/v2/nodes/254534?actions=open&actions=download&actions=initiateworkflow&fields=properties",
+        "method": "GET",
+        "name": ""
+      }
+    }
+  },
+  "results": {
+    "actions": {
+      "data": {
+        "open": {
+          "body": "",
+          "content_type": "",
+          "form_href": "",
+          "href": "/api/v2/nodes/254534/nodes",
+          "method": "GET",
+          "name": "Open"
+        }
+      },
+      "map": {
+        "default_action": ""
+      },
+      "order": [
+        "open"
+      ]
+    },
+    "data": {
+      "properties": {
+        "container": true,
+        "container_size": 0,
+        "create_date": "2017-03-21T13:24:19",
+        "create_user_id": 1000,
+        "description": "",
+        "description_multilingual": {
+          "en": ""
+        },
+        "external_create_date": null,
+        "external_identity": "",
+        "external_identity_type": "",
+        "external_modify_date": null,
+        "external_source": "",
+        "favorite": false,
+        "id": 254534,
+        "management_type": "manual",
+        "mime_type": null,
+        "modify_date": "2017-03-21T13:24:19",
+        "modify_user_id": 1000,
+        "name": "Notification D9A",
+        "name_multilingual": {
+          "en": "Notification D9A"
+        },
+        "owner": "Admin",
+        "owner_group_id": 1001,
+        "owner_user_id": 1000,
+        "parent_id": 28172,
+        "permissions_model": "advanced",
+        "reserved": false,
+        "reserved_date": null,
+        "reserved_shared_collaboration": false,
+        "reserved_user_id": 0,
+        "selectable": true,
+        "size": 0,
+        "size_formatted": "0 Items",
+        "type": 199,
+        "type_name": "Classification",
+        "versions_control_advanced": false,
+        "volume_id": -3972
+      }
+    }
+  }
+}

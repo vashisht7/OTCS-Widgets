@@ -1,0 +1,30 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .csui-search-expandall-text {
+  padding-right: 5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  flex: 1 0 auto;
+}
+
+.binf-widgets .csui-search-header-expand-all {
+  font-size: 13px;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  height: calc(100% - 2px);
+}
+
+.binf-widgets .csui-search-header-expand-all > .icon {
+  height: calc(3em - 21px);
+  width: calc(3em - 21px);
+}
+
+.binf-widgets .csui-search-header-expand-all.icon-expandArrowUp {
+  position: inherit;
+}
+
+.binf-widgets .csui-search-header-expand-all:focus {
+  outline: 1px dotted black;
+}

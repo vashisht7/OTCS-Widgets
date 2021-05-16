@@ -1,0 +1,11 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+  .binf-widgets .csui-permissions-list-container .member-info span.csui-role {
+    color: #333333;
+    font-weight: 400;
+  }
+
+  .binf-widgets .csui-permissions-list-container .csui-user-display-name.csui-role:hover {
+    text-decoration: none;
+    cursor: default;
+  }

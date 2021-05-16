@@ -1,0 +1,33 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .conws-mime_workspace {
+  background-image: url('../../image/icons/mime_workspace.svg');
+}
+
+.binf-widgets .conws-mime_related_workspace {
+  background-image: url('../../image/icons/mime_related_workspace.svg');
+}
+
+.binf-widgets .conws-quick_link {
+  background-image: url('../../image/icons/quick_link.svg');
+}
+
+.binf-widgets .conws-doctemplates_volume {
+  background-image: url('../../image/icons/mime_doctemplates_volume.svg');
+}
+
+.binf-widgets .conws-mime_workspace_nonselectable {
+  background-image: url('../../image/icons/mime_workspace_nonselectable.svg');
+}
+
+.binf-widgets .conws-mime_roles {
+  background-image: url('../../image/icons/mime_roles.svg');
+}
+
+.binf-widgets .conws-empty_team {
+  background-image: url('../../image/icons/empty_team.svg');
+}
+
+.binf-widgets .conws-icon-cross {
+  background-image: url('../../image/icons/close.svg');
+}

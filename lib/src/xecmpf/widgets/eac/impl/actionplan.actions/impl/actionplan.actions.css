@@ -1,0 +1,78 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.xecmpf-eac-actions .xecmpf-eac-actions-container .alpaca-message {
+    display: none;
+}
+.xecmpf-eac-actions .xecmpf-eac-actions-header-wrapper {
+    float: none;
+}
+.xecmpf-eac-actions.cs-form .alpaca-container-item>.alpaca-field.alpaca-field-object {
+    margin-top: 0;
+}
+.xecmpf-eac-actions-container-wrapper > .binf-row, .xecmpf-eac-actions-container-wrapper > .binf-row .xecmpf-eac-actions-container, .xecmpf-eac-actions-container-wrapper > .binf-row .xecmpf-eac-actions-container .cs-form-set-container {
+    margin: 0;
+}
+.xecmpf-eac-actions-container-wrapper > .binf-row .xecmpf-eac-actions-container {
+    padding: 0;
+}
+.xecmpf-eac-actions .xecmpf-eac-actions-container-wrapper .xecmpf-eac-actions-container .cs-form-set .cs-array.alpaca-container-item .cs-array-item-field-wrapper div.alpaca-container .binf-col-sm-9 .cs-formfield {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.xecmpf-eac-actions .xecmpf-eac-actions-container div[data-alpaca-container-item-name="actionsData"]>.alpaca-field-array>.cs-form-set>.cs-array>.cs-pull-left.cs-array-item-field-wrapper {
+    background: #FDFDFD;
+    border: 1px solid #C4CEE1;
+    width: calc(100% - 30px);
+    padding: 2px 11px 24px 11px;
+}
+.xecmpf-eac-actions .xecmpf-eac-actions-container .cs-form-set .cs-array.alpaca-container-item .alpaca-field-object .alpaca-container div.csui-field-select[data-alpaca-container-item-name*='_action'] {
+    width: 34%;
+}
+.xecmpf-eac-actions .xecmpf-eac-actions-container .cs-pull-left > .alpaca-field > .alpaca-container > div.alpaca-container-item:nth-child(2) > .alpaca-field > .alpaca-container,
+.xecmpf-eac-actions .xecmpf-eac-actions-container .cs-pull-left > .alpaca-field > .alpaca-container > div.alpaca-container-item:nth-child(3) > .alpaca-field > .alpaca-container {
+    display: block;
+}
+.xecmpf-eac-actions .xecmpf-eac-actions-container .cs-pull-left > .alpaca-field > .alpaca-container > div.alpaca-container-item:nth-child(2) > .alpaca-field > .alpaca-container > .alpaca-container-item,
+.xecmpf-eac-actions .xecmpf-eac-actions-container .cs-pull-left > .alpaca-field > .alpaca-container > div.alpaca-container-item:nth-child(3) > .alpaca-field > .alpaca-container > .alpaca-container-item {
+    max-width: unset;
+}
+
+.xecmpf-eac-actions .xecmpf-eac-actions-container .cs-pull-left > .alpaca-field > .alpaca-container > div.alpaca-container-item:nth-child(2) > .alpaca-field > .alpaca-container > .alpaca-container-item .alpaca-container > .alpaca-container-item:nth-child(1),
+.xecmpf-eac-actions .xecmpf-eac-actions-container .cs-pull-left > .alpaca-field > .alpaca-container > div.alpaca-container-item:nth-child(3) > .alpaca-field > .alpaca-container > .alpaca-container-item .alpaca-container > .alpaca-container-item:nth-child(1) {
+    flex: 0 0 20%;
+    width: 20%;
+    min-width: 170px; 
+}
+.xecmpf-eac-actions .xecmpf-eac-actions-container .cs-pull-left > .alpaca-field > .alpaca-container > div.alpaca-container-item:nth-child(2) > .alpaca-field > .alpaca-container > .alpaca-container-item .alpaca-container > .alpaca-container-item:nth-child(n+2),
+.xecmpf-eac-actions .xecmpf-eac-actions-container .cs-pull-left > .alpaca-field > .alpaca-container > div.alpaca-container-item:nth-child(3) > .alpaca-field > .alpaca-container > .alpaca-container-item .alpaca-container > .alpaca-container-item:nth-child(n+2){
+    flex: 0 0 25%;
+    width: 25%;
+}
+
+
+.xecmpf-eac-actions .xecmpf-eac-actions-container .cs-pull-left > .alpaca-field > .alpaca-container > div.alpaca-container-item:nth-child(2) > .alpaca-field > .alpaca-container > .alpaca-container-item .binf-col-sm-9,
+.xecmpf-eac-actions .xecmpf-eac-actions-container .cs-pull-left > .alpaca-field > .alpaca-container > div.alpaca-container-item:nth-child(3) > .alpaca-field > .alpaca-container > .alpaca-container-item .binf-col-sm-9 {
+    margin-bottom: 0;
+}
+.xecmpf-eac-actions .xecmpf-eac-actions-container .cs-pull-left > .alpaca-field > .alpaca-container > div.alpaca-container-item:nth-child(2) > .alpaca-field > .alpaca-container > .alpaca-container-item:nth-child(n+2) .binf-col-sm-9,
+.xecmpf-eac-actions .xecmpf-eac-actions-container .cs-pull-left > .alpaca-field > .alpaca-container > div.alpaca-container-item:nth-child(3) > .alpaca-field > .alpaca-container > .alpaca-container-item:nth-child(n+2) .binf-col-sm-9 {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+.xecmpf-eac-actions .xecmpf-eac-actions-container .cs-form-set .cs-array.alpaca-container-item .alpaca-field-object .alpaca-container .alpaca-container-item {
+    min-width: auto;
+} 
+
+.xecmpf-eac-actions .xecmpf-eac-actions-container .cs-pull-left > .alpaca-field > .alpaca-container > div.alpaca-container-item:nth-child(2) > .alpaca-field > .alpaca-container > .alpaca-container-item:nth-child(1) .alpaca-container .alpaca-container-item .alpaca-field,
+.xecmpf-eac-actions .xecmpf-eac-actions-container .cs-pull-left > .alpaca-field > .alpaca-container > div.alpaca-container-item:nth-child(3) > .alpaca-field > .alpaca-container > .alpaca-container-item:nth-child(1) .alpaca-container .alpaca-container-item .alpaca-field {
+    font-size: 12px;
+    color: #757575;
+    font-weight: bold;
+}
+
+.xecmpf-eac-actions .xecmpf-eac-actions-container .eac-mandatory-field-indication span::before {
+    content: "*";
+    color: red;
+    vertical-align: top;
+    font-size: 1em;
+}

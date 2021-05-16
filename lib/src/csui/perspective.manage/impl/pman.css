@@ -1,0 +1,176 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.pman-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.pman-container .pman-backdrop {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+}
+
+.pman-container .pman-header {
+  position: fixed;
+  width: 100%;
+  height: 64px;
+  z-index: 1151;
+}
+
+.pman-container .pman-tools-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.csui-pman-dnd-active .pman-container .pman-header .pman-trash-area {
+  visibility: visible;
+}
+
+.pman-container .pman-header .pman-trash-area {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pman-container .pman-header .pman-left-tools {
+  padding: 16px 0px 16px 32px;
+  position: relative;
+}
+
+.pman-container .pman-header .pman-right-tools {
+  padding: 16px 32px 16px 0px;
+  position: relative;
+}
+
+.pman-container .pman-header .pman-toolitem {
+  background: #ffffff;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  padding: 5px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+
+}
+
+.pman-container .pman-header .pman-toolitem .icon {
+  height: 22px;
+  width: 22px;
+  display: block;
+  background-color: #fff;
+  border: 1px solid transparent;
+}
+
+.pman-container .pman-toolitem .icon-toolbarAdd.binf-active {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.pman-container .pman-header .pman-header-backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: rgba(17, 17, 17, 0.95);
+}
+
+.binf-widgets .pman-header .binf-btn {
+  height: 32px;
+  background: #ffffff;
+  border-radius: 16px;
+  border: 0 none;
+  padding: 0 24px;
+  margin-left: 16px;
+  line-height: 24px;
+  font-size: 14px;
+  color: #232E72;
+}
+
+.binf-widgets .pman-header .binf-btn:hover, 
+.binf-widgets .pman-header .pman-left-tools .pman-toolitem:hover,
+.binf-widgets .pman-header .pman-left-tools .pman-toolitem:hover .icon-toolbarAdd {
+  background-color: #DFEEFA;
+  color: #627783;
+}
+
+.binf-widgets .pman-header .binf-btn:active,
+.binf-widgets .pman-header .pman-left-tools .pman-toolitem:active,
+.binf-widgets .pman-header .pman-left-tools .pman-toolitem:active .icon-toolbarAdd {
+  background-color: #A0A4BC;
+  color: #414979;
+}
+
+.binf-widgets .pman-header .binf-btn:disabled {
+  cursor: default;
+  pointer-events: none;
+}
+
+.binf-widgets .binf-btn.icon-save {
+  margin-left: 48px;
+}
+
+.pman-container .pman-header li {
+  display: block;
+  float: left;
+}
+
+.perspective-editing .csui-navbar,
+.perspective-editing .breadcrumb-wrap-visible {
+  visibility: hidden;
+}
+
+.binf-widgets.perspective-editing-transition {
+  overflow: hidden;
+}
+
+.perspective-editing .cs-perspective-panel {
+  z-index: 1150;
+}
+
+.perspective-editing .binf-popover {
+  z-index: 1160;
+}
+
+.perspective-editing .binf-widgets .binf-modal {
+  z-index: 1170;
+}
+
+
+.binf-widgets.perspective-editing .cs-perspective-panel .csui-perspective-breadcrumb {
+  display: none; 
+}
+
+.binf-widgets .cs-perspective-panel .cs-perspective {
+  transition: margin 200ms; 
+}
+
+.binf-widgets.perspective-editing .cs-perspective-panel .cs-perspective {
+  overflow: visible;
+  margin: 32px 0px 8px 0px; 
+}
+
+.binf-widgets.perspective-editing .cs-perspective-panel .cs_perspective_no_left_right_margin .cs-perspective {
+  margin: 16px; 
+}
+
+.binf-widgets.perspective-editing .cs-perspective,
+.binf-widgets.perspective-editing .cs-perspective-panel .cs-perspective > .binf-row {
+  overflow: visible; 
+}
+
+.binf-widgets.perspective-editing .pman-mode-personalize .pman-left-tools {
+  visibility: hidden;
+}

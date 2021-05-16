@@ -1,0 +1,636 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .csui-nodetable {
+  background-color: #ffffff;
+  opacity: 1.0;
+  font-weight: normal;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 100%;
+  min-width: 0;
+  min-height: 0; 
+}
+
+.binf-widgets .csui-nodetable.csui-not-in-flex-container {
+  height: 100%; 
+}
+
+.csui-nodetable .dataTables_wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 100%;
+  min-width: 0;
+  min-height: 0;
+}
+
+.csui-nodetable.csui-table-empty .dataTables_wrapper {
+  flex: 0 0 auto;
+  height: 43px;
+}
+
+.dataTables_wrapper > div {
+  
+  display: none;
+}
+
+
+.csui-nodetable.csui-not-ready .dataTables_wrapper,
+  
+.csui-nodetable.csui-not-ready .dataTables_wrapper .binf-collapse.binf-in {
+  visibility: hidden !important;
+}
+
+.binf-table.dataTable {
+  margin: 0; 
+}
+
+.binf-table.dataTable > tbody > tr.csui-state-hover {
+  background-color: #bac9ce;
+  cursor: pointer;
+}
+
+.binf-table.dataTable > tbody > tr:active {
+  background-color: #bac9ce;
+}
+
+.binf-widgets .binf-table.dataTable > tbody > tr.csui-state-hover:active a:focus {
+  outline: 0 none;
+}
+
+.binf-table.dataTable .DTTT.binf-btn-group {
+  display: none;
+}
+
+.binf-table.dataTable .csui-align-left {
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.binf-table.dataTable .csui-align-right {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.binf-table.dataTable .csui-align-center {
+  justify-content: center;
+  text-align: center;
+}
+
+.binf-table.dataTable .icon-sortArrowUp,
+.binf-table.dataTable .icon-sortArrowDown {
+  margin-left: 6px;
+  vertical-align: sub;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 16px;
+  height: 16px;
+  flex: 0 0 auto;
+}
+
+.csui-nodetable .cellview_warning {
+  color: #cd3632;
+  font-weight: bolder;
+}
+
+.binf-table.dataTable > thead .sorting,
+.binf-table.dataTable > thead .sorting_asc,
+.binf-table.dataTable > thead .sorting_desc,
+.binf-table.dataTable > thead .sorting_asc_disabled,
+.binf-table.dataTable > thead .sorting_desc_disabled {
+  cursor: pointer;
+}
+
+.binf-table.dataTable > thead .sorting:hover,
+.binf-table.dataTable > thead .sorting_asc:hover,
+.binf-table.dataTable > thead .sorting_desc:hover {
+  
+}
+
+.binf-widgets .binf-table.dataTable {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 100%;
+  min-height: 0;
+}
+
+.binf-widgets .csui-nodetable.csui-table-spacing-narrow .binf-table {
+  font-size: 12px;
+}
+
+.binf-widgets .csui-nodetable.csui-table-spacing-medium .binf-table {
+  font-size: 13px;
+}
+
+.binf-widgets .csui-nodetable.csui-table-spacing-wide .binf-table {
+  font-size: 14px; 
+}
+
+
+.binf-widgets .csui-nodetable:not(.csui-wrap-text) .binf-table.dataTable {
+  white-space: nowrap;
+}
+
+.binf-table.dataTable > thead {
+  background-color: #f1f1f1;
+  display: block;
+  flex: 0 0 auto;
+  position: relative;
+  height: 42px;
+}
+
+.binf-table.dataTable > thead > tr {
+  display: flex;
+  flex: 1 1 100%;
+}
+
+.binf-table.dataTable > tbody {
+  display: block;
+  flex: 1 1 auto;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.binf-table.dataTable > tbody > tr {
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+ .binf-table.dataTable > tbody {
+   padding-bottom: 1px;
+ }
+}
+
+
+
+.binf-widgets .binf-table.dataTable > thead > tr > th {
+  border-bottom: none;
+  display: inline-flex;
+}
+
+.csui-nodetable.csui-wrap-text .binf-table > thead > tr > th {
+  vertical-align: top;
+}
+
+
+
+
+.csui-nodetable .binf-table > thead > tr > th {
+  height: 42px;
+  line-height: calc(3em - 2px); 
+}
+
+.csui-nodetable .binf-table > tbody > tr > * {
+  height: calc(6em - 42px); 
+}
+
+
+
+
+.csui-nodetable .binf-table tr > * {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.binf-widgets .csui-nodetable .binf-table tr > * {
+  padding: 0;
+}
+
+
+
+
+
+
+
+
+.csui-nodetable .binf-table tr:not(.csui-details-row) > * > * {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.csui-nodetable.csui-table-spacing-narrow .binf-table tr:not(.csui-details-row) > * > * {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.csui-nodetable.csui-table-spacing-medium .binf-table tr:not(.csui-details-row) > * > * {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.csui-nodetable.csui-table-spacing-medium .binf-table tr:not(.csui-details-row) > * > span {
+    display: block;
+}
+
+.csui-nodetable.csui-table-spacing-wide .binf-table tr:not(.csui-details-row) > * > * {
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.csui-nodetable.csui-wrap-text .binf-table tr > * > * {
+  padding-left: calc(2em - 18px); 
+  padding-right: calc(2em - 18px);
+}
+
+
+.csui-nodetable.csui-table-spacing-narrow .binf-table tr > :first-child > * {
+  padding-left: 10px; 
+}
+
+.csui-nodetable.csui-table-spacing-medium .binf-table tr > :first-child > * {
+  padding-left: 12px; 
+}
+
+.csui-nodetable.csui-table-spacing-wide .binf-table tr > :first-child > * {
+  padding-left: 21px; 
+}
+
+
+.csui-nodetable.csui-table-spacing-narrow .binf-table tr:not(.csui-details-row) > .csui-table-cell-last-visible > * {
+  padding-right: 10px; 
+}
+
+.csui-nodetable.csui-table-spacing-medium .binf-table tr:not(.csui-details-row) > .csui-table-cell-last-visible > * {
+  padding-right: 12px; 
+}
+
+.csui-nodetable.csui-table-spacing-wide .binf-table tr:not(.csui-details-row) > .csui-table-cell-last-visible > * {
+  padding-right: 21px; 
+}
+
+.binf-table.dataTable > tbody > tr > .csui-table-actionbar-shown {
+  padding-right: 0; 
+}
+
+.binf-widgets .binf-table.dataTable > thead > tr > th {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-top: initial;
+  padding-bottom: initial;
+  padding:  8px 0px 8px 0px;
+}
+
+
+
+.csui-nodetable .csui-table-header-icon {
+  display: flex;
+  width: calc(4em - 32px);
+  height: calc(4em - 32px);
+}
+
+.csui-nodetable .binf-table > tbody .csui-icon-group {
+  width: calc(6em - 52px); 
+  height: calc(6em - 52px);
+}
+
+.csui-nodetable .binf-table > tbody .csui-icon-group > .csui-icon {
+  width: calc(6em - 52px);
+  height: calc(6em - 52px);
+}
+
+
+.binf-widgets .binf-table.dataTable > thead > tr > th > div {
+  overflow: hidden;
+}
+
+.binf-widgets .binf-table.dataTable > tbody > tr > * .csui-icon-group > .csui-icon {
+  left: 0;
+}
+
+.binf-widgets .binf-table.dataTable > thead > tr > th .csui-table-column-text {
+  display: inline-block;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  line-height: normal;
+}
+
+.binf-widgets .csui-focusable-table-column-header {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.binf-widgets .csui-nodetable:not(.csui-wrap-text) .csui-focusable-table-column-header {
+  align-items: center;
+  justify-content: center;
+}
+
+.binf-widgets .csui-nodetable .binf-table tr .csui-table-cell-name .csui-focusable-table-column-header {
+  padding: 0 1px;
+}
+
+.binf-widgets .csui-focusable-table-column-header.csui-empty {
+  width: 3em;
+  margin: 0;
+}
+
+.binf-widgets .binf-table.dataTable > thead > tr > th > .csui-table-column-search {
+  height: 100%;
+}
+
+.binf-widgets .csui-nodetable .binf-table > thead > tr > th > .csui-table-column-search {
+  padding-left: calc(2em - 21px);
+  padding-right: calc(2em - 21px);
+}
+
+.binf-widgets .binf-table.dataTable > thead > tr > th > .csui-table-column-search.csui-searchbox-shown:focus {
+  outline-style: none;
+  outline-width: 0;
+}
+
+.binf-widgets .binf-table.dataTable > thead > tr > th:focus,
+.binf-widgets .binf-table.dataTable > tbody > tr > :focus {
+  outline: 1px dotted #333333;
+  outline-offset: -1px;
+}
+
+.binf-widgets .binf-table.dataTable > tbody > tr > * {
+  cursor: default;
+  outline: none;
+  line-height: normal;
+}
+
+.binf-widgets .csui-nodetable:not(.csui-wrap-text) .binf-table.dataTable > tbody > tr > * {
+  vertical-align: middle;
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+
+.binf-widgets .binf-table.dataTable > tbody > tr.csui-table-row-shows-inlineform > td.csui-table-cell-type {
+  vertical-align: top;
+  padding-top: 5px;
+}
+
+.binf-widgets .binf-table.dataTable > tbody > tr.csui-table-row-shows-inlineform {
+  background: #dce4e8;
+}
+
+.binf-widgets .binf-table.dataTable > tbody > tr.csui-table-row-shows-inlineform > td.csui-table-cell-type .csui-table-cell-default-action {
+  align-items: baseline;}
+
+.binf-widgets .csui-nodetable.csui-wrap-text .binf-table.dataTable > thead > tr > th {
+}
+
+.binf-widgets .csui-nodetable.csui-wrap-text .binf-table > tbody > tr > * {
+  padding-top: calc(2em - 18px);
+  padding-bottom: calc(2em - 18px);
+  text-align: left;
+}
+
+.binf-widgets .binf-table.dataTable > tbody > tr.csui-details-row.binf-collapsing,
+.binf-widgets .binf-table.dataTable > tbody > tr.csui-details-row.binf-collapse.binf-in {
+  
+}
+
+.binf-widgets .binf-table.dataTable > tbody > tr.csui-state-hover {
+  background-color: #bac9ce;
+  cursor: pointer;
+}
+
+.binf-widgets .binf-table.dataTable > tbody > tr.csui-no-border > * {
+  border-top: none;
+}
+
+tr.csui-new-item {
+  background-color: rgb(223, 231, 234);
+}
+
+tr.csui-new-item.csui-saved-item {
+  background-color: rgb(231, 240, 217);
+}
+
+.binf-widgets .binf-table.dataTable > tbody > tr.csui-has-details-row > * {
+  border-bottom: none;
+}
+
+.binf-widgets .binf-table.dataTable > tbody > tr.csui-details-row {
+  line-height: 1em;
+}
+
+.binf-widgets .binf-table.dataTable > tbody > tr.csui-details-row.csui-cut-row,
+.binf-widgets .binf-table.dataTable > tbody > tr.csui-details-row-metadata.csui-cut-row .binf-form-group label,
+.binf-widgets .binf-table.dataTable > tbody > tr.csui-details-row-metadata.csui-cut-row .binf-form-group input {
+  color: #a7a7a7;
+}
+
+.binf-widgets .binf-table.dataTable > tbody > tr.csui-details-row > * {
+  border-top: none;
+  padding-bottom: 1em;
+  height: auto;
+}
+
+.binf-widgets .binf-table.dataTable > tbody > tr.csui-details-row.csui-details-row-metadata > td {
+  width: 100%;
+}
+
+.binf-widgets .binf-table.dataTable > tbody > tr > td.csui-details-row > div {
+  padding-top: 0;
+  white-space: normal;
+  overflow-y: hidden;
+  height: auto;
+  display: flex;
+}
+
+.binf-widgets .binf-table.dataTable > tbody > tr > td.csui-details-row > div.cs-description {
+  flex-direction: column;
+  max-width: 864px;
+}
+
+.binf-widgets .binf-table.dataTable>tbody>tr>td.csui-details-row>div.cs-description .csui-description-colunm,
+.binf-widgets .binf-table.dataTable>tbody>tr>td.csui-details-row>div.cs-description .csui-summary-colunm {
+  width : 100%
+}
+
+@media (max-device-width: 768px) and (orientation: portrait) {
+  .binf-widgets .binf-table.dataTable > tbody > tr > td.csui-details-row > div.cs-description {
+    max-width: 60%;
+  }
+}
+
+.binf-widgets .binf-table.dataTable > tbody > tr > .csui-column-type #icon_group {
+  position: relative;
+}
+
+.binf-widgets .binf-table.dataTable > tbody > tr > .csui-column-type #reserved_indicator {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+}
+
+.binf-widgets .binf-table.dataTable > tbody > tr > .csui-column-type #overlay {
+  position: absolute;
+  top: -4px;
+  left: -1px;
+}
+
+.binf-widgets .binf-table.dataTable > tbody > tr > .csui-column-type img {
+  border-style: none;
+}
+
+.binf-widgets .csui-td-content {
+  position: absolute;
+  width: inherit;
+  max-width: 100%;
+  line-height: 1.4em;
+}
+
+.binf-widgets .csui-nodetable:not(.csui-wrap-text) .csui-td-content {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.csui-nodetable td > a,
+.csui-nodetable th > a,
+.csui-nodetable td div > a,
+.csui-nodetable th div > a {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.binf-widgets .csui-nodetable:not(.csui-wrap-text) .binf-table.dataTable .csui-nowrap {
+  white-space: nowrap;
+}
+
+.binf-widgets .binf-table.dataTable .csui-truncate {
+  text-overflow: ellipsis;
+}
+
+.csui-nodetable #menuAction {
+  margin-left: 0.5em;
+}
+
+.csui-nodetable .csui-menutrigger {
+  display: inline-block;
+  height: 12px;
+  width: 13px;
+  background-position: -66px -18px;
+}
+
+.csui-nodetable #disabling_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0 0 0 0;
+  background-color: #aaaaaa;
+  opacity: .2;
+  filter: Alpha(Opacity=20);
+  z-index: 998;
+  cursor: progress;
+}
+
+.fg-toolbar .custom {
+  float: left;
+  margin-right: .5em;
+}
+
+.fg-toolbar .csui-backbutton {
+  margin-top: -1px;
+}
+
+.csui-nodetable .dataTables_filter input {
+  line-height: 1.4em;
+  padding-left: .3em;
+  padding-right: .3em;
+}
+
+
+.csui-nodetable a,
+.csui-nodetable a:link,
+.csui-nodetable a:hover,
+.csui-nodetable a:visited {
+  text-decoration: none;
+  color: #333333;
+}
+
+
+.dataTables_wrapper {
+  display: table;
+  width: 100%;
+}
+
+.csui-table-metadata-view .cs-form > .binf-form-group:first-of-type {
+  margin-top: 0;
+}
+
+
+
+.binf-widgets .csui-nodetable > div.csui-table-empty {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 300;
+  color: #757575;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  
+  justify-content: inherit;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.binf-widgets .csui-table-empty-default.csui-table-empty:not(.csui-state-loading) {
+  background-image: url("../../../themes/carbonfiber/image/icons/es_folder_noperms220.svg");
+  background-repeat: no-repeat;
+  background-position: center 16px;
+}
+
+.binf-widgets .csui-table-empty-default.csui-table-empty.csui-can-add-items:not(.csui-state-loading) {
+  background-image: url("../../../themes/carbonfiber/image/icons/es_folder220.svg");
+  background-repeat: no-repeat;
+  background-position: center 16px;
+}
+
+.binf-widgets .csui-fav2-table .csui-favorite-masterdetail-view .csui-table-view .csui-table-empty.csui-table-empty-default:not(.csui-state-loading) {
+  background-image: url("../../../themes/carbonfiber/image/icons/es_favorites220.svg");
+  background-repeat: no-repeat;
+  background-position: center 16px;
+}
+
+.binf-widgets .csui-myassignmentstable .csui-table-empty.csui-table-empty-default:not(.csui-state-loading) {
+  background-image: url("../../../themes/carbonfiber/image/icons/es_assignments220.svg");
+  background-repeat: no-repeat;
+  background-position: center 16px;
+}
+
+.binf-widgets .csui-table-empty.csui-table-empty-default .csui-no-result-message,
+.binf-widgets .csui-favorite-masterdetail-view .csui-table-empty .csui-no-result-message {
+  font-size: 18px;
+  font-style: normal;
+  top: 252px;
+  position: relative;
+  color: #333333;
+}
+
+.binf-widgets .csui-nodetable.csui-table-empty tbody {
+  max-height: 1px; 
+  border-top: 1px solid #dddddd;
+}
+
+.binf-widgets .binf-table.dataTable.csui-table-empty > tbody > tr.csui-details-row {
+  height: 0;
+  display: flex;
+}
+
+
+
+
+.binf-widgets .csui-nodetable .csui-table-alternative-header {
+  display: flex;
+  flex-direction: row;
+  flex: 0 0 0; 
+  width: 100%;
+  overflow: hidden;
+  visibility: hidden;
+  transition: flex-basis 0.3s; 
+}
+
+.binf-widgets .csui-nodetable .csui-table-alternative-header.csui-table-alternative-header-visible {
+  font-size: 14px; 
+  flex-basis: 3em;
+  visibility: visible;
+  overflow: visible;
+  transition: flex-basis 0.3s;
+}

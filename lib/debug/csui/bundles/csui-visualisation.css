@@ -1,0 +1,104 @@
+
+.binf-widgets .csui-visual-count-container{
+    height: 100%;
+    width: 100%;
+    min-height: 200px;
+}
+
+.binf-widgets .csui-visual-count-chart-container {
+    position: relative;
+    height: 100%;
+    min-height: 200px;
+    width: 100%;
+    font-family: sans-serif;
+}
+
+.binf-widgets .csui-visual-count-chart-container .csui-visual-count-axis text {
+    fill: #000;
+}
+
+.binf-widgets .csui-visual-count-chart-container .csui-visual-count-value-label {
+    fill: #000;
+    pointer-events: none;
+}
+
+.binf-widgets .csui-visual-count-chart-container .csui-visual-count-value-label.inside {
+    font-weight: bold;
+    fill: #fff;
+}
+
+.binf-widgets .csui-visual-count-chart-container .csui-visual-count-value-label.hidden {
+    display: none;
+}
+
+.binf-widgets .csui-visual-count-chart-container .csui-visual-count-chart-bar {
+    cursor: pointer;
+    shape-rendering: crispEdges;
+}
+
+.binf-widgets .csui-visual-count-chart-container .csui-visual-count-bar.clickable, .csui-visual-count-chart-container .csui-visual-count-arc.clickable, .csui-visual-count-chart-container .csui-visual-count-pie-legend {
+    cursor: pointer;
+}
+
+.binf-widgets .csui-visual-count-chart-container .csui-visual-count-gridline, .csui-visual-count-chart-container .domain {
+    pointer-events: none;
+    stroke: #000;
+    stroke-opacity: 0.05;
+    shape-rendering: crispEdges;
+}
+
+.binf-widgets .csui-visual-count-chart-container .csui-visual-count-pie-total-label-disc {
+    fill: #fff;
+    stroke: #eee;
+}
+
+.binf-widgets .csui-visual-count-container div.csui-visual-count-outer-border {
+    margin: 0 !important;
+    position: absolute;
+}
+
+.binf-widgets .csui-visual-count-container div.csui-visual-count-outer-border {
+    left: calc(50% - 34px);
+    top: calc(50% - 80px);
+}
+
+.binf-widgets .csui-visual-count-chart-container .csui-visual-count-zero-line {
+    stroke-opacity: 0.4;
+    shape-rendering: crispedges;
+    stroke: #000;
+}
+
+.binf-widgets .csui-visual-count-chart-container .csui-visual-count-chart-labelline {
+    stroke: #999;
+    stroke-width: 1px;
+}
+
+.binf-widgets .csui-visual-count-chart-container .csui-visual-count-chart-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.binf-widgets .csui-visual-count-empty-container .csui-visual-count-empty {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.binf-widgets .csui-visual-count-empty-container .csui-visual-count-nodata-message {
+    font-size: 18px;
+    margin: 0;
+    color: #333;
+    font-style: normal;
+    font-weight: 200;
+    text-align: center;
+}
+
+.binf-widgets .csui-visual-count-a11y-table-wrapper {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}

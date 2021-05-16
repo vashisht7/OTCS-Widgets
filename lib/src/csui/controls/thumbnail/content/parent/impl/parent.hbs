@@ -1,0 +1,10 @@
+{{#if displayLabel}}
+  <div class="csui-thumbnail-label csui-thumbnail-parent-label" aria-label="{{label}}">
+    <span>{{label}}</span>
+  </div>
+{{/if}}
+<div class="csui-thumbnail-parent {{#if defaultActionUrl}}csui-thumbnail-parent-default-action{{/if}}">
+  <span class="csui-thumbnail-parent-icon"></span>
+  <a href="{{defaultActionUrl}}" class="csui-parent-name" title="{{name}}">{{name}}</a>
+</div>
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

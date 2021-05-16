@@ -1,0 +1,65 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .cs-description,
+.binf-widgets .csui-summary-colunm .summary {
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+
+  align-items: flex-start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+
+  font-size: 16px; 
+  line-height: 16px;
+}
+
+.binf-widgets .summary,
+.binf-widgets .description {
+  flex: 1 auto;
+  -webkit-flex: 1 auto;
+  -ms-flex: 1 0;
+
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+.binf-widgets .csui-details-row-description .description,
+.binf-widgets .csui-details-row-description .summary {
+  white-space: normal;
+  overflow: visible;
+  position: relative;
+  max-width: none;
+  max-height: none;
+  font-size: 12px;
+  width: calc(100% - 35px);
+  display: inline-block;
+}
+
+.binf-widgets .csui-search-tabular-View .cs-description .csui-description-colunm, 
+.binf-widgets .csui-search-tabular-View .cs-description .csui-summary-colunm {
+  width: 100%;
+}
+
+.binf-widgets .csui-search-tabular-View .cs-description .csui-summary-colunm {
+  padding-top: 11px;
+}
+
+.binf-widgets .csui-table-tableview .cs-description .csui-description-colunm {
+  width : 100%
+}
+
+.binf-widgets .description .csui-summary-hh {
+  font-weight: 900;
+  color: #333333;
+}
+
+.binf-widgets .summary .csui-summary-hh {
+  font-weight: 900;
+  color: #333333;
+}

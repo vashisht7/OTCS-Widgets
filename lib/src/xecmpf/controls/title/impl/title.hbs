@@ -1,0 +1,19 @@
+{{#if icon}}
+  <div class="tile-type-icon">
+    <span class="icon title-icon {{icon}}" aria-hidden="true"></span>
+  </div>
+{{else}}
+  {{#if imageUrl}}
+    <div class="tile-type-image {{imageClass}}">
+      <span class="tile-type-icon tile-type-icon-img">
+        <img src="{{imageUrl}}" alt="" aria-hidden="true">
+      </span>
+    </div>
+  {{/if}}
+{{/if}}
+
+<div class="title-name">
+  <h4 class="title-name-block" title="{{title}}">{{title}}</h4>
+</div>
+
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

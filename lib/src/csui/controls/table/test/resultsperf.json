@@ -1,0 +1,217 @@
+{
+  "links": {
+    "self": {
+      "body": "",
+      "content_type": "",
+      "href": "\/api\/v2\/nodes\/2000?perspective=&actions",
+      "method": "GET",
+      "name": ""
+    }
+  },
+  "results": {
+    "actions": {
+      "audit": {
+        "body": "",
+        "content_type": "",
+        "form_href": "",
+        "href": "\/api\/v1\/nodes\/2000\/audit?limit=1000",
+        "method": "GET",
+        "name": "Audit"
+      },
+      "copy": {
+        "body": "",
+        "content_type": "",
+        "form_href": "\/api\/v1\/forms\/nodes\/copy?id=2000",
+        "href": "\/api\/v1\/nodes",
+        "method": "POST",
+        "name": "Copy"
+      },
+      "delete": {
+        "body": "",
+        "content_type": "",
+        "form_href": "",
+        "href": "\/api\/v1\/nodes\/2000",
+        "method": "DELETE",
+        "name": "Delete"
+      },
+      "docview": {
+        "body": "",
+        "content_type": "",
+        "form_href": "",
+        "href": "?func=doc.viewdoc&nodeid=2000",
+        "method": "GET",
+        "name": "View"
+      },
+      "makefavorite": {
+        "body": "",
+        "content_type": "",
+        "form_href": "",
+        "href": "\/api\/v2\/members\/favorites\/2000",
+        "method": "POST",
+        "name": "Add to Favorites"
+      },
+      "more": {
+        "body": "",
+        "content_type": "",
+        "form_href": "",
+        "href": "",
+        "method": "",
+        "name": "..."
+      },
+      "move": {
+        "body": "",
+        "content_type": "",
+        "form_href": "\/api\/v1\/forms\/nodes\/move?id=2000",
+        "href": "\/api\/v1\/nodes\/2000",
+        "method": "PUT",
+        "name": "Move"
+      },
+      "open": {
+        "body": "",
+        "content_type": "",
+        "form_href": "",
+        "href": "\/api\/v1\/nodes\/2000\/nodes",
+        "method": "GET",
+        "name": "Open"
+      },
+      "properties": {
+        "body": "",
+        "content_type": "",
+        "form_href": "",
+        "href": "\/api\/v1\/nodes\/2000",
+        "method": "GET",
+        "name": "Properties"
+      },
+      "rename": {
+        "body": "",
+        "content_type": "",
+        "form_href": "\/api\/v1\/forms\/nodes\/rename?id=2000",
+        "href": "\/api\/v1\/nodes\/2000",
+        "method": "PUT",
+        "name": "Rename"
+      }
+    },
+    "actions_map": {
+      "default_action": "open",
+      "more": [
+        "properties",
+        "audit"
+      ]
+    },
+    "actions_order": [
+      "docview",
+      "open",
+      "rename",
+      "makefavorite",
+      "copy",
+      "move",
+      "delete",
+      "more"
+    ],
+    "data": {
+      "columns": [
+        {
+          "key": "type",
+          "name": "Type",
+          "data_type": 2,
+          "sortable": true
+        },
+        {
+          "key": "name",
+          "name": "Name",
+          "data_type": -1,
+          "sortable": true
+        },
+        {
+          "key": "size",
+          "name": "Size",
+          "data_type": 2,
+          "sortable": true
+        },
+        {
+          "key": "modify_date",
+          "name": "Modified",
+          "data_type": -7,
+          "sortable": true
+        },
+        {
+          "key": "creation_date",
+          "name": "Created",
+          "data_type": -7,
+          "sortable": true
+        },
+        {
+          "key": "wnd_comments",
+          "name": "Comments",
+          "data_type": 2,
+          "sortable": false
+        }      ],
+      "properties": {
+        "container": true,
+        "container_size": 3,
+        "create_date": "2015-06-16T10:52:56",
+        "create_user_id": 1000,
+        "description": "",
+        "description_multilingual": {
+          "en": "",
+          "ja": ""
+        },
+        "favorite": false,
+        "id": 2000,
+        "mime_type": null,
+        "modify_date": "2015-11-24T08:15:27",
+        "modify_user_id": 1000,
+        "name": "Subversion Pumps",
+        "name_multilingual": {
+          "en": "Subversion Pumps",
+          "ja": ""
+        },
+        "owner_group_id": 1001,
+        "owner_user_id": 1000,
+        "parent_id": 68333,
+        "reserved": false,
+        "reserved_date": null,
+        "reserved_user_id": 0,
+        "size": 3,
+        "size_formatted": "3 Items",
+        "type": 0,
+        "type_name": "Folder",
+        "versions_control_advanced": true,
+        "volume_id": -2000,
+        "wnd_att_690t_3": null,
+        "wnd_att_690t_6": null,
+        "wnd_comments": null,
+        "wnd_version": null,
+        "wnf_att_6832_2": null,
+        "wnf_att_690t_4": null,
+        "wnf_att_690t_5": null,
+        "wnf_att_690t_7": 0,
+        "wnf_att_690t_d": null,
+        "wnf_att_690t_f": null
+      }
+    },
+    "perspective": {
+      "options": {
+        "rows": [
+          {
+            "columns": [
+              {
+                "heights": {
+                  "xs": "full"
+                },
+                "sizes": {
+                  "md": 12
+                },
+                "widget": {
+                  "options": {},
+                  "type": "nodestable"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "type": "grid"
+    }
+  }
+}

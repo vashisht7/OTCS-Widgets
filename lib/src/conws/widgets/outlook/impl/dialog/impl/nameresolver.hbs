@@ -1,0 +1,34 @@
+
+<div class="modal-dialog modal-sm load-container">
+    <div class="binf-modal-dialog ">
+        <div class="binf-modal-content">
+            <div class="binf-modal-header question-header">
+                <h4 class="binf-modal-title">
+                    <span class="icon csui-icon-notification-confirmation-white"></span>
+                    <span class="title-text">{{titleSaveEmail}}</span>
+                </h4>
+            </div>
+
+            <div class="wksp-dialog-body">
+                <div>{{validationMessage}}</div>
+                <div class="errorMessage"> </div>
+                <div>
+                    <span>{{uniqueNameLabel}}</span> 
+                    <textarea class="wkspInput wkspEmailName" id="fileName" tabindex="0"/>
+                </div>
+
+            </div>
+            
+            <div class="binf-modal-footer">
+                <button type="button" class="binf-btn binf-btn-primary csui-yes csui-default" tabindex="0" >
+                    {{titleOk}}
+                </button>
+                <button type="button" class="binf-btn binf-btn-default csui-cancel" tabindex="0"
+                        data-binf-dismiss="modal">
+                    {{titleCancel}}
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

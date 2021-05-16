@@ -1,0 +1,316 @@
+{
+  "forms": [
+    {
+      "data": {
+        "name": "minion1.jpg",
+        "description": "",
+        "create_date": "2018-04-26T14:15:36",
+        "create_user_id": 1000,
+        "type": 144,
+        "type_name": "Document",
+        "modify_date": "2018-05-14T16:15:59",
+        "owner_user_id": 1000,
+        "reserved_user_id": 1000,
+        "reserved_date": "2018-04-30T11:26:55"
+      },
+      "options": {
+        "fields": {
+          "name": {
+            "hidden": false,
+            "hideInitValidationError": true,
+            "label": "Name",
+            "readonly": false,
+            "type": "text"
+          },
+          "description": {
+            "hidden": false,
+            "hideInitValidationError": true,
+            "label": "Description",
+            "readonly": false,
+            "type": "textarea"
+          },
+          "create_date": {
+            "hidden": false,
+            "hideInitValidationError": true,
+            "label": "Created",
+            "readonly": true,
+            "type": "datetime"
+          },
+          "create_user_id": {
+            "hidden": false,
+            "hideInitValidationError": true,
+            "label": "Created By",
+            "readonly": true,
+            "type": "otcs_user_picker",
+            "type_control": {
+              "action": "api\/v1\/members",
+              "method": "GET",
+              "name": "Admin",
+              "parameters": {
+                "filter_types": [
+                  0
+                ],
+                "select_types": [
+                  0
+                ]
+              }
+            }
+          },
+          "type": {
+            "hidden": true,
+            "hideInitValidationError": true,
+            "label": "Type",
+            "readonly": true,
+            "type": "integer"
+          },
+          "type_name": {
+            "hidden": false,
+            "hideInitValidationError": true,
+            "label": "Type",
+            "readonly": true,
+            "type": "text"
+          },
+          "modify_date": {
+            "hidden": false,
+            "hideInitValidationError": true,
+            "label": "Modified",
+            "readonly": true,
+            "type": "datetime"
+          },
+          "owner_user_id": {
+            "hidden": false,
+            "hideInitValidationError": true,
+            "label": "Owned By",
+            "readonly": true,
+            "type": "otcs_user_picker",
+            "type_control": {
+              "action": "api\/v1\/members",
+              "method": "GET",
+              "name": "Admin",
+              "parameters": {
+                "filter_types": [
+                  0
+                ],
+                "select_types": [
+                  0
+                ]
+              }
+            }
+          },
+          "reserved_user_id": {
+            "hidden": false,
+            "hideInitValidationError": true,
+            "label": "Reserved By",
+            "readonly": true,
+            "type": "otcs_member_picker",
+            "type_control": {
+              "action": "api\/v1\/members",
+              "method": "GET",
+              "name": "Admin",
+              "parameters": {
+                "filter_types": [
+                  0,
+                  1
+                ],
+                "select_types": [
+                  0,
+                  1
+                ]
+              }
+            }
+          },
+          "reserved_date": {
+            "hidden": false,
+            "hideInitValidationError": true,
+            "label": "Reserved",
+            "readonly": true,
+            "type": "datetime"
+          }
+        },
+        "form": {
+          "attributes": {
+            "action": "api\/v1\/nodes\/24400",
+            "method": "PUT"
+          },
+          "renderForm": true
+        }
+      },
+      "schema": {
+        "properties": {
+          "name": {
+            "maxLength": 248,
+            "minLength": 1,
+            "readonly": false,
+            "required": true,
+            "title": "Name",
+            "type": "string"
+          },
+          "description": {
+            "readonly": false,
+            "required": false,
+            "title": "Description",
+            "type": "string"
+          },
+          "create_date": {
+            "readonly": true,
+            "required": false,
+            "title": "Created",
+            "type": "string"
+          },
+          "create_user_id": {
+            "readonly": true,
+            "required": false,
+            "title": "Created By",
+            "type": "otcs_user_picker"
+          },
+          "type": {
+            "readonly": true,
+            "required": false,
+            "title": "Type",
+            "type": "integer"
+          },
+          "type_name": {
+            "readonly": true,
+            "required": false,
+            "title": "Type",
+            "type": "string"
+          },
+          "modify_date": {
+            "readonly": true,
+            "required": false,
+            "title": "Modified",
+            "type": "string"
+          },
+          "owner_user_id": {
+            "readonly": true,
+            "required": false,
+            "title": "Owned By",
+            "type": "otcs_user_picker"
+          },
+          "reserved_user_id": {
+            "readonly": true,
+            "required": false,
+            "title": "Reserved By",
+            "type": "otcs_member_picker"
+          },
+          "reserved_date": {
+            "readonly": true,
+            "required": false,
+            "title": "Reserved",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "data": {
+        "6390": {
+          "6390_3": 12,
+          "6390_1": {
+            "version_number": 2
+          }
+        },
+        "6963": {
+          "6963_2": "hello world",
+          "6963_1": {
+            "version_number": 2
+          }
+        },
+        "30205": {
+          "30205_2": "2",
+          "30205_1": {
+            "version_number": 2
+          }
+        }
+      },
+      "options": {
+        "fields": {
+          "6390": {
+            "fields": {
+              "6390_3": {
+                "hidden": false,
+                "hideInitValidationError": true,
+                "label": "Integer",
+                "readonly": false,
+                "type": "integer"
+              },
+              "6390_1": {
+                "hidden": true,
+                "hideInitValidationError": true,
+                "readonly": true,
+                "type": "object"
+              }
+            },
+            "hideInitValidationError": true,
+            "label": "Integer Field",
+            "type": "object"
+          },
+          "6963": {
+            "fields": {
+              "6963_2": {
+                "hidden": false,
+                "hideInitValidationError": true,
+                "label": "TextField",
+                "readonly": false,
+                "type": "text"
+              },
+              "6963_1": {
+                "hidden": true,
+                "hideInitValidationError": true,
+                "readonly": true,
+                "type": "object"
+              }
+            },
+            "hideInitValidationError": true,
+            "label": "Text*",
+            "type": "object",
+            "removeable": false
+          }
+        }
+      },
+      "role_name": "categories",
+      "schema": {
+        "properties": {
+          "6390": {
+            "properties": {
+              "6390_3": {
+                "readonly": false,
+                "required": true,
+                "title": "Integer",
+                "type": "integer"
+              },
+              "6390_1": {
+                "readonly": true,
+                "required": false,
+                "type": "object"
+              }
+            },
+            "title": "Integer Field",
+            "type": "object"
+          },
+          "6963": {
+            "properties": {
+              "6963_2": {
+                "maxLength": 32,
+                "readonly": false,
+                "required": true,
+                "title": "TextField",
+                "type": "string"
+              },
+              "6963_1": {
+                "readonly": true,
+                "required": false,
+                "type": "object"
+              }
+            },
+            "title": "Text",
+            "type": "object"
+          }
+        },
+        "title": "Categories",
+        "type": "object"
+      }
+    }
+  ]
+}

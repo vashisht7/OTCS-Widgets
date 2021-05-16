@@ -1,0 +1,47 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets #xecmpf-header .conws-header-child-displayUrl {
+  display: inline;
+}
+
+.binf-widgets #xecmpf-header .conws-header-child-displayUrl .xecmpf-displayUrl-item {
+  height: 32px;
+  width: 32px;
+}
+
+.binf-widgets #xecmpf-header .conws-header-title {
+  display: flex;
+}
+
+.binf-widgets .cs-collapse #xecmpf-header .conws-header-title p {
+  width: auto;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.binf-widgets #xecmpf-header .xecmpf-displayUrl-icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border-color: transparent;
+  height: 30px;
+  width: 30px;
+  background-size: cover;
+  background-image: url('../../../../../image/icons/display_url_icon.svg');
+  margin-top: 1px;
+}
+
+.xecmpf-displayUrl-header-background {
+  background-color: #2e3d98;
+}
+
+.binf-widgets #xecmpf-header .xecmpf-displayUrl-icon:active,
+.binf-widgets #xecmpf-header .xecmpf-displayUrl-icon:hover,
+.binf-widgets #xecmpf-header .xecmpf-displayUrl-icon:focus {
+  outline-color: white;
+  outline-style: dotted;
+  outline-width: 1px;
+}
+
+

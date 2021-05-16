@@ -1,0 +1,11 @@
+{{#if inherited}}
+<span id="status-indicator-inherited" class="status-indicator"></span>
+{{else}}
+  {{#if isNew}}
+    <span id="status-indicator-new" class="status-indicator"
+          title="{{participantStatus}}" aria-label="{{participantStatus}}"></span>
+  {{/if}}
+{{/if}}
+<div class="conws-avatar"></div>
+
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

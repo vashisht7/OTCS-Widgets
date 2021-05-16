@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Preview Pane Test</title>
+
+  <link rel="stylesheet" href="../../../../csui/themes/carbonfiber/theme.css">
+
+  <script src="../../../../csui/lib/require.js" data-main="index.js"></script>
+  <script src="../../../../csui/config.js" data-csui-path="../../../../csui"></script>
+  <script src="../../../../csui/helpers.js"></script>
+  <script>
+      require.config({
+          paths: {
+            conws: '../../..',
+            esoc:'../../../../esoc'
+          }
+      });
+  </script>
+</head>
+
+<body class="binf-widgets">
+<div class="container container-fluid grid-rows">
+  <div class="row">
+    <div class="col-sm-6 col-md-5 col-lg-4" id="content1"></div>
+    <div class="col-sm-6 col-md-5 col-lg-4" id="content2"></div>
+    <div class="col-sm-6 col-md-5 col-lg-4" id="content3"></div>
+    <div class="col-sm-6 col-md-5 col-lg-4" id="content4"></div>
+    <div class="col-sm-6 col-md-5 col-lg-4" id="content5"></div>
+  </div>
+</div>
+</body>
+
+</html>
+
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

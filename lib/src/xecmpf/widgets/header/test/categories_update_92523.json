@@ -1,0 +1,69 @@
+{
+  "forms": [
+    {
+      "data": {
+        "92523_2": "",
+        "92523_3": "I2200                   00000091",
+        "92523_4": ""
+      },
+      "options": {
+        "fields": {
+          "92523_2": {
+            "hidden": false,
+            "hideInitValidationError": true,
+            "label": "Object Type",
+            "readonly": false,
+            "type": "text"
+          },
+          "92523_3": {
+            "hidden": false,
+            "hideInitValidationError": true,
+            "label": "Object Key",
+            "readonly": false,
+            "type": "text"
+          },
+          "92523_4": {
+            "hidden": false,
+            "hideInitValidationError": true,
+            "label": "Name",
+            "readonly": false,
+            "type": "text"
+          }
+        },
+        "form": {
+          "attributes": {
+            "action": "api/v1/nodes/51209/categories/92523",
+            "method": "PUT"
+          },
+          "renderForm": true
+        }
+      },
+      "schema": {
+        "properties": {
+          "92523_2": {
+            "maxLength": 32,
+            "readonly": false,
+            "required": false,
+            "title": "Object Type",
+            "type": "string"
+          },
+          "92523_3": {
+            "maxLength": 32,
+            "readonly": false,
+            "required": false,
+            "title": "Object Key",
+            "type": "string"
+          },
+          "92523_4": {
+            "maxLength": 32,
+            "readonly": false,
+            "required": false,
+            "title": "Name",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      }
+    }
+  ]
+}

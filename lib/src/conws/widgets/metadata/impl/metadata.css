@@ -1,0 +1,64 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .conws-metadata {
+  height: 100%;
+}
+
+.binf-widgets .metadata-tile-content {
+  margin-top: 0px;
+  font-size: 14px;
+}
+
+.binf-widgets .metadata-tile-content .cs-form {
+  background-color: #f7f7f7;
+  height:0px;
+}
+
+.metadata-tile-content .cs-form .cs-form-set {
+  padding-left: 7.5px;
+}
+
+.binf-widgets .conws-metadata .cs-form .alpaca-container-item > .binf-form-group.alpaca-field .alpaca-control-label {
+  padding-left: 0.5rem;
+}
+
+.binf-widgets .conws-metadata .cs-form .alpaca-container-item > .binf-form-group.alpaca-field > .binf-col-sm-9 {
+  width: calc(60% - 0.5rem);
+}
+
+
+.binf-widgets .conws-metadata .cs-form .cs-form-set .alpaca-container-item > .alpaca-field > .binf-col-sm-9 {
+  width: 100%;
+}
+
+.binf-widgets .conws-metadata .cs-form .alpaca-container-item > .alpaca-field {
+  max-width: 95%;
+}
+
+.binf-widgets .cs-formfield.cs-referencefield .reference-field-data button,
+.binf-widgets .conws-metadata .cs-form .alpaca-container-item > .alpaca-field .cs-formfield .cs-field-read button,
+.binf-widgets .conws-metadata .cs-form .alpaca-container-item > .alpaca-field .cs-formfield.cs-textareafield {
+  max-height:none;
+}
+
+.binf-widgets .cs-formfield.cs-referencefield .reference-field-data button > span,
+.binf-widgets .conws-metadata .cs-form .alpaca-container-item > .alpaca-field .cs-formfield .cs-field-read button > span,
+.binf-widgets .conws-metadata .cs-form .alpaca-container-item > .alpaca-field .cs-formfield .cs-field-read button .cs-field-textarea-data {
+  white-space: pre-wrap;
+}
+
+.binf-widgets .conws-metadata .cs-form .alpaca-container-item > .alpaca-field .cs-datefield,
+.binf-widgets .conws-metadata .cs-form .alpaca-container-item > .alpaca-field .cs-tklfield,
+.binf-widgets .conws-metadata .cs-form .alpaca-container-item > .alpaca-field .cs-selectfield,
+.binf-widgets .conws-metadata .cs-form .alpaca-container-item > .alpaca-field .cs-textfield {
+	height:auto;
+}
+
+.binf-widgets .conws-metadata .cs-form > .alpaca-field h4 {
+	padding-left:8px;
+}
+
+.binf-widgets .conws-metadata .cs-form > .alpaca-field .cs-form-doublecolumn {
+	padding-top:0;
+	padding-bottom:0;
+}

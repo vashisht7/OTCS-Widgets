@@ -1,0 +1,18 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+
+
+.conws-avatar-user-placeholder {
+  background-image: url('../../../image/icons/image_user_placeholder.svg');
+  background-repeat: no-repeat;
+}
+
+.conws-avatar-group-placeholder {
+  background-image: url('../../../image/icons/image_group_placeholder.svg');
+  background-repeat: no-repeat;
+}
+
+.conws-avatar-role-placeholder {
+  background-image: url('../../../../../../image/icons/mime_roles.svg');
+  background-repeat: no-repeat;
+}

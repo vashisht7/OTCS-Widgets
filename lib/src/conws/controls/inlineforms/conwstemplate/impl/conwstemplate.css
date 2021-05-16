@@ -1,0 +1,36 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .binf-form-inline .csui-inlineform-group.csui-inlineform-group-conwstemplate{
+  width: calc(100% - 20px);
+}
+.binf-widgets .binf-form-inline .conws-template-csui-inlineform.csui-inlineform .csui-inlineform-group > .csui-inlineform-input-wstype {
+  margin-left: 1em;
+}
+
+.binf-widgets .binf-form-inline .conws-template-csui-inlineform.csui-inlineform .csui-inlineform-group .csui-inlineform-input-name,
+.binf-widgets .binf-form-inline .conws-template-csui-inlineform.csui-inlineform .csui-inlineform-group .conws-inlineform-input-wstype {
+  width: calc(100% - 250px); 
+  }
+
+.binf-widgets .binf-form-inline form {
+  display: block; 
+}
+.binf-widgets .binf-form-inline .conws-template-csui-inlineform.csui-inlineform .csui-inlineform-group > .conws-inlineform-input-wstype{
+  margin-left: 1rem;
+}
+
+.binf-widgets .binf-form-inline .conws-template-csui-inlineform.csui-inlineform .csui-inlineform-group > .conws-inlineform-input-wstype:first-child {
+  margin-left: 0;
+}
+
+.binf-widgets .binf-form-inline .conws-template-csui-inlineform.csui-inlineform .conws-inlineform-vertical-spacer{
+  width: 100%;
+  height: 0.25em;
+}
+.csui-inlineform-group > select {
+  max-width: 30em;
+}
+
+.binf-widgets .binf-form-inline .conws-template-csui-inlineform.csui-inlineform .csui-inlineform-group .csui-btn-metadata {
+  display: none;
+}

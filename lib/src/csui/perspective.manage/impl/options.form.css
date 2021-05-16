@@ -1,0 +1,115 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.csui-pman-widget-callout-form .cs-form {
+  display: inline-block;
+}
+
+.perspective-editing .csui-pman-form-wrapper {
+  max-height: 50vh;
+}
+
+.perspective-editing .cs-form.perspective-widget-form {
+  background-color: inherit;
+}
+
+.perspective-editing .perspective-widget-form .cs-form-doublecolumn {
+  padding: 0px;
+}
+
+.perspective-editing .perspective-widget-form .binf-row.alpaca-field {
+  margin-bottom: 0.5em;
+  padding: 0px 16px;
+}
+
+.perspective-editing .perspective-widget-form .alpaca-container-item > .binf-form-group.alpaca-field .alpaca-control-label,
+.perspective-editing .perspective-widget-form .cs-form-doublecolumn .alpaca-field.alpaca-field-array .alpaca-container-label {
+  width: 100%;
+  text-align: left;
+  font-size: 12px;
+}
+
+.perspective-editing .perspective-widget-form .alpaca-container-item > .binf-form-group.alpaca-field > .binf-col-sm-9 {
+  width: 100%;
+}
+
+.perspective-editing .perspective-widget-form .cs-form-doublecolumn .alpaca-field.alpaca-field-array .alpaca-container {
+  width: 100%;
+}
+
+.perspective-widget-form .cs-form-doublecolumn .alpaca-field.alpaca-field-array .cs-array-item-field-wrapper {
+  max-width: inherit;
+}
+
+.perspective-editing .perspective-widget-form .binf-help-block.alpaca-message {
+  margin-left: 0px;
+}
+
+.binf-widgets .csui-pman-form-wrapper .csui-pman-form-header {
+  padding: 0px 16px;
+  padding-top: 14px;
+}
+
+.binf-widgets .csui-pman-form-wrapper .csui-pman-form-content {
+  padding-bottom: 14px;
+}
+
+.binf-widgets .csui-pman-form-header .csui-pman-form-title {
+  padding-bottom: 6px;
+  line-height: 24px;
+  font-size: 18px;
+  color: #333333; 
+}
+
+.binf-widgets .csui-pman-form-header .csui-pman-form-description {
+  font-weight: bolder;
+  line-height: 14px;
+  font-size: 11px;
+  color: #333333; 
+}
+
+.binf-widgets .csui-pman-form-header .csui-pman-config-unsupported .csui-state{
+  float: left;
+  padding-top: 6px;
+  padding-right: 8px;
+}
+
+.binf-widgets .csui-pman-form-header .csui-pman-config-unsupported .csui-state .csui-icon.csui-icon-notification-error-white {
+  width: 20px;
+  height: 20px;
+}
+
+.binf-widgets .csui-pman-form-header .csui-pman-config-unsupported .csui-error-message{
+  padding-top: 6px;
+  padding-right: 6px;
+  line-height: 16px;
+  font-size: 11px;
+  color: #DF3324;
+}
+
+.binf-widgets .csui-pman-form-header .csui-pman-config-unsupported .csui-error-message .csui-error-message-format{
+  font-weight: bold;
+}
+
+.perspective-editing .binf-popover.binf-right  .binf-popover-content.invalid-options {
+  border-color: #DF3324;
+}
+
+.perspective-editing .binf-popover.binf-left .binf-popover-content.invalid-options {
+  border-color: #DF3324;
+}
+
+.perspective-editing .binf-popover.binf-right > .binf-arrow.invalid-options:after {
+  border-right-color:#DF3324;
+}
+
+.perspective-editing .binf-popover.binf-left > .binf-arrow.invalid-options:after {
+  border-left-color:#DF3324;
+}
+
+.binf-widgets .csui-pman-form-wrapper .csui-pman-form-content .cs-textfield input {
+  width: auto;
+}
+
+.binf-widgets .csui-pman-form-wrapper .cs-field-write-inner input {
+  max-width: 100%;
+}

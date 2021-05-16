@@ -1,0 +1,12 @@
+{
+  "content": {
+    "title": "Information 3",
+    "metadata": [
+      {
+        "type": "category",
+        "readOnly": true,
+        "categoryId": 12346
+      }
+    ]
+  }
+}

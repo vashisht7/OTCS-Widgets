@@ -1,0 +1,175 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .cs-form .alpaca-container-item > .binf-form-group.alpaca-field-tkl > .binf-col-sm-9 {
+  overflow: visible;
+  
+  padding: 0;
+}
+
+.binf-widgets .cs-tklfield-select {
+  width: 100%;
+  position: relative;
+}
+
+.cs-tkl-search-box {
+  position: relative;
+}
+
+.binf-widgets .cs-tkl-search-box input {
+  border: 1px solid #a7a9ac;
+  border-radius: 3px;
+  padding-right: 22px;
+  height: 28px;
+}
+
+.cs-tkl-search-box:after {
+  content: '';
+  position:absolute;
+  pointer-events: none;
+  top:7px;
+  right:10px;
+  height: 12px;
+  width: 12px;
+  display: block;
+  background: url('../../../../../themes/carbonfiber/image/icons/search.svg') no-repeat center;
+}
+
+.cs-tkl-search-box input:focus {
+  border: 2px solid #666666;
+}
+
+.cs-tkl-search-box input:focus {
+  outline: none;
+}
+
+.cs-tkl-searchbox {
+  position: relative;
+}
+
+.cs-tkl-search-box .csui-icon-tkl-search {
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  top: 12px;
+  right: 10px;
+}
+
+.binf-widgets .cs-tklfield-select ul {
+  padding: 5px 0;
+}
+
+.cs-tkl-options-container {
+  display: none;
+  box-shadow: #cccccc 0 0 8px;
+  position: absolute;
+  z-index: 1002;
+  background: #ffffff;
+  width: 100%;
+}
+
+
+.cs-tkl-options li {
+  color: #333333;
+}
+
+.cs-tkl-options > li:not(.cs-tkl-no-result):not(.csui-loading-dots-wrapper):hover, .binf-widgets .cs-tkl-options > li:not(.csui-loading-dots-wrapper).active {
+  background: #bdcdd8;
+}
+
+.binf-widgets .cs-tkl-options > li > a {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+  padding: 3px 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.cs-tkl-options > li:hover a {
+  color: inherit;
+}
+
+.binf-widgets .cs-tklfield .cs-tkl-options .cs-tkl-selected {
+  background: #1074bc;
+  color: #ffffff;
+}
+
+.cs-tkl-selected {
+  background: #1074bc;
+  color: #ffffff;
+}
+
+.cs-tkl-options > .cs-tkl-no-result {
+  color: #00659a;
+  background: none;
+  font-weight: bold;
+}
+
+.binf-widgets .cs-tkl-options > .cs-tkl-no-result > a{
+  cursor: text;
+}
+
+.cs-tkl-dropup {
+  top: auto;
+  bottom: 100%;
+}
+
+
+.binf-widgets .csui-loading-parent-wrapper {
+  text-align: center;
+}
+
+.binf-widgets .cs-tkl-options-container .csui-loading-dots-wrapper {
+  min-height: 26px;
+  min-width: 26px;
+  display: block;
+  margin: auto;
+  padding: 0;
+  position: relative;
+  top: 0;
+  cursor: auto;
+  height: 100%
+}
+
+.cs-tkl-options-container .csui-loading-dots {
+  position: absolute;
+  background-color: rgb(123, 154, 176);
+  width: 6px;
+  height: 6px;
+  top: calc(50% - 3px);
+  animation-name: bounce_loading;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  transform: scale(.3);
+  border-radius: 6px;
+}
+
+.cs-tkl-options-container .csui-dot-1 {
+  left: 6px;
+  animation-delay: 1.07s;
+}
+
+.cs-tkl-options-container .csui-dot-2 {
+  left: 14px;
+  animation-delay: 1.33s;
+}
+
+.cs-tkl-options-container .csui-dot-3 {
+  left: 22px;
+  animation-delay: 1.6s;
+}
+
+@keyframes bounce_loading {
+  0% {
+    transform: scale(1);
+    background-color: rgba(46, 61, 152, 0.98);
+  }
+
+  100% {
+    transform: scale(.3);
+    background-color: rgb(123, 154, 176);
+  }
+}

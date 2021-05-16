@@ -1,0 +1,144 @@
+{
+  "signature": "Actions",
+  "name": "Actions",
+  "subItems": [
+    {
+      "signature": "Read",
+      "name": "Read",
+      "subItems": [
+        {
+          "signature": "View",
+          "name": "View",
+          "subItems": [
+            {
+              "signature": "Properties1",
+              "name": "Properties"
+            },
+            {
+              "signature": "permissions1",
+              "name": "View Persmissions"
+            }
+          ]
+        },
+        {
+          "signature": "CopyLink",
+          "name": "Copy Link"
+        },
+        {
+          "signature": "EmailLink",
+          "name": "Email"
+        },
+        {
+          "signature": "Copy",
+          "name": "Copy",
+          "subItems": [
+            {
+              "signature": "Copy",
+              "name": "Copy 1"
+            },
+            {
+              "signature": "Copy",
+              "name": "Copy 2"
+            },
+            {
+              "signature": "Copy",
+              "name": "Copy 3"
+            },
+            {
+              "signature": "Copy",
+              "name": "Copy 4"
+            },
+            {
+              "signature": "Copy",
+              "name": "Copy 5"
+            },
+            {
+              "signature": "Copy",
+              "name": "Copy 6"
+            },
+            {
+              "signature": "Copy",
+              "name": "Copy 7"
+            }
+          ]
+        },
+        {
+          "signature": "Collect",
+          "name": "Collect"
+        }
+      ]
+    },
+    {
+      "signature": "Update",
+      "name": "Update",
+      "subItems": [
+        {
+          "signature": "AddVersion",
+          "name": "Add Version"
+        },
+        {
+          "signature": "Edit",
+          "name": "Rename"
+        },
+        {
+          "signature": "ReserveDoc",
+          "name": "Reserve Docs"
+        },
+        {
+          "signature": "Copy",
+          "name": "Copy 1"
+        },
+        {
+          "signature": "Copy",
+          "name": "Copy 2"
+        },
+        {
+          "signature": "Copy",
+          "name": "Copy 3",
+          "subItems": [
+            {
+              "signature": "Copy",
+              "name": "Copy 1"
+            },
+            {
+              "signature": "Copy",
+              "name": "Copy 2"
+            },
+            {
+              "signature": "Copy",
+              "name": "Copy 3"
+            },
+            {
+              "signature": "Copy",
+              "name": "Copy 4"
+            },
+            {
+              "signature": "Copy",
+              "name": "Copy 5"
+            },
+            {
+              "signature": "Copy",
+              "name": "Copy 6"
+            },
+            {
+              "signature": "Copy",
+              "name": "Copy 7"
+            }
+          ]
+        },
+        {
+          "signature": "Copy",
+          "name": "Copy 4"
+        },
+        {
+          "signature": "Copy",
+          "name": "Copy 5"
+        },
+        {
+          "signature": "Copy",
+          "name": "Copy 6"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "$schema": "http://opentext.com/cs/json-schema/draft-04/schema#",
+  "title": "{{title}}",
+  "description": "{{description}}",
+  "kind": "tile",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "wrapperClass": {
+        "title": "{{wrapperClassTitle}}",
+        "description": "{{wrapperClassDescription}}",
+        "type": "string",
+        "default": ""
+      },
+      "feedsize": {
+        "title": "{{feedSizeTitle}}",
+        "description": "{{feedSizeDescription}}",
+        "type": "number",
+        "default": 20
+      },
+      "feedtype": {
+        "title": "{{feedTypeTitle}}",
+        "description": "{{feedTypeDescription}}",
+        "type": "string",
+        "default": "all",
+        "enum": [
+          "all",
+          "content",
+          "status",
+          "attribute"
+        ]
+      },
+      "feedSettings": {
+        "title": "{{feedSettingsTitle}}",
+        "description": "{{feedSettingsDescription}}",
+        "type": "object",
+        "properties": {
+          "enableComments": {
+            "title": "{{enableCommentsTitle}}",
+            "description": "{{enableCommentsDescription}}",
+            "type": "boolean",
+            "default": true
+          },
+          "enableFilters": {
+            "title": "{{enableFiltersTitle}}",
+            "description": "{{enableFiltersDescription}}",
+            "type": "boolean",
+            "default": false
+          }
+        }
+      },
+      "honorfeedsource": {
+        "title": "{{honorfeedsourceTitle}}",
+        "description": "{{honorfeedsourceDescription}}",
+        "type": "boolean",
+        "default": false
+      },
+      "headerView": {
+        "title": "{{headerViewTitle}}",
+        "description": "{{headerViewDescription}}",
+        "type": "boolean",
+        "default": false
+      },
+      "feedsource": {
+        "title": "{{feedsourceTitle}}",
+        "description": "{{feedsourceDescription}}",
+        "type": "object",
+        "properties": {
+          "source": {
+            "title": "{{sourceTitle}}",
+            "description": "{{sourceDescription}}",
+            "type": "string",
+            "default": "all",
+            "enum": [
+              "all",
+              "node",
+              "pulsefrom"
+            ]
+          },
+          "id": {
+            "title": "{{feedsourceIdTitle}}",
+            "description": "{{feedsourceIdDescription}}",
+            "type": "string",
+            "default": ""
+          }
+        }
+      },
+      "updatesfrom": {
+        "title": "{{updatesfromTitle}}",
+        "description": "{{updatesfromDescription}}",
+        "type": "object",
+        "properties": {
+          "from": {
+            "title": "{{fromTitle}}",
+            "description": "{{fromDescription}}",
+            "type": "string",
+            "default": "all",
+            "enum": [
+              "all",
+              "iamfollowing",
+              "myfollowers",
+              "following",
+              "followers",
+              "myupdates",
+              "mentions",
+              "myfavorites",
+              "user",
+              "group"
+            ]
+          },
+          "id": {
+            "title": "{{updatesfromIdTitle}}",
+            "description": "{{updatesfromIdDescription}}",
+            "type": "string",
+            "default": ""
+          }
+        }
+      },
+      "config_settings": {
+        "title": "{{configSettingsTitle}}",
+        "description": "{{configSettingsDescription}}",
+        "type": "object",
+        "properties": {
+          "feedsAutoRefreshWait": {
+            "title": "{{feedsAutoRefreshWaitTitle}}",
+            "description": "{{feedsAutoRefreshWaitDescription}}",
+            "type": "number",
+            "default": 60000
+          },
+          "maxMessageLength": {
+            "title": "{{maxMessageLengthTitle}}",
+            "description": "{{maxMessageLengthDescription}}",
+            "type": "number",
+            "default": 1000
+          }
+        }
+      }
+    }
+  }
+}

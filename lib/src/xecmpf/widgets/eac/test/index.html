@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>EAC Expanded Widget</title>
+
+  <link rel="stylesheet" href="../../../../csui/themes/carbonfiber/theme.css">
+
+  <script src="../../../../csui/lib/require.js"></script>
+  <script src="../../../../csui/config.js" data-csui-path="../../../../csui"></script>
+
+  <style>
+    #content {
+      height: 90vh;
+    }
+  </style>
+  <script>
+    require.config({
+      paths: {
+        csui: '../../../../csui',
+        conws: '../../../../conws',
+        xecmpf: '../../..'
+      },
+      deps: [
+        'csui/lib/require.config!csui/csui-extensions.json',
+        'csui/lib/require.config!xecmpf/xecmpf-extensions.json'
+      ],
+      config: {
+        'csui/utils/contexts/factories/node': {
+          attributes: { id: 11111, container: true }
+        },
+        
+        'csui/controls/tile/behaviors/perfect.scrolling.behavior': {
+            usePerfectScrollbar: true
+        }
+      }
+    });
+  </script>
+  <script src="index.js"></script>
+</head>
+
+<body class="binf-widgets">
+  <a class="docRef" href="../doc/eac.md">Documentation</a>
+  <div class="binf-container-fluid">
+    <div class="binf-row">
+      <div id="content"></div>
+    </div>
+  </div>
+</body>
+
+</html>
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

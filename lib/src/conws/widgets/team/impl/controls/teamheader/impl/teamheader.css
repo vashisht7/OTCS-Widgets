@@ -1,0 +1,17 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .conws-teamheader .title {
+  font-weight: 300;
+  line-height: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.binf-widgets .conws-teamheader .primary-title {
+  font-size: 1.75rem;
+}
+
+.binf-widgets .conws-teamheader .secondary-title {
+  font-size: 1.0rem;
+}

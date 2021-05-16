@@ -1,0 +1,46 @@
+{
+  "$schema": "http://opentext.com/cs/json-schema/draft-04/schema#",
+  "title": "{{widgetTitle}}",
+  "description": "{{widgetDescription}}",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": "object",
+        "title":  "{{tileTitle}}",
+        "description": "{{tiledescription}}"
+      },
+      "hideEmptyFields": {
+        "type": "boolean",
+        "enum": [true, false],
+        "default": false,
+        "title": "{{hideEmptyFieldsTitle}}",
+        "description": "{{hideEmptyFieldsDescription}}"
+      },
+      "metadata": {
+        "type": "array",
+        "title": "{{metadataSectionTitle}}",
+        "description": "{{metadataSectionDescription}}",
+        "items": {
+          "type": "object",
+          "title": "{{categoryOrAttributeTitle}}",
+          "description": "{{categoryOrAttributeDescription}}"
+        }
+      }
+    }
+  },
+  "options": {
+    "fields": {
+      "title": {
+        "type": "otcs_multilingual_string"
+      },
+    "metadata": {
+        "fields": {
+          "item": {
+            "type": "otconws_metadata"
+          }
+        }
+      }
+    }
+  }
+}

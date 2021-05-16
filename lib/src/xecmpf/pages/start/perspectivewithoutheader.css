@@ -1,0 +1,433 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+
+
+.xecm-page-widget .csui-nodestable .csui-tabletoolbar .csui-search-button .xecmpf-icon-search,
+.xecm-page-widget .csui-nodestable .csui-tabletoolbar .csui-searchbox-holder .icon-global-search.xecmpf-icon-search,
+.xecm-page-widget .csui-nodestable .csui-tabletoolbar .csui-searchbox-holder .icon-global-search.xecmpf-icon-search-md{
+  background-size: 30px;
+  background-position: center;
+  width: 34px;
+  height: 47px;
+  top: 0;
+  right: 14px;
+}
+
+.xecm-page-widget .csui-searchbox-holder .csui-search-box .search-bar-content {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.csui-folderbrowser .csui-nodestable .csui-alternating-toolbars {
+  flex: 0 0 47px;
+}
+
+.binf-widgets.xecm-page-widget .conws-header .conws-header-status-indicators-section {
+  display: inline-flex;
+  float: left;
+}
+
+.binf-widgets .xecm-page-widget .conws-header .conws-header-toolbar .conws-tabletoolbar {
+  display: inline-block;
+}
+
+.csui-folderbrowser .csui-tabletoolbar .binf-nav .csui-search-box .csui-input::placeholder {
+  color: #333333;
+  font-style: italic;
+}
+
+.xecm-page-widget .csui-tabletoolbar .binf-nav .csui-search-box {
+  display: block;
+}
+
+.xecm-page-widget .csui-tabletoolbar .binf-nav .csui-search-box .search-bar {
+  padding-top: 0;
+  margin-right: 28px;
+  width: calc(100% - 32px);
+}
+.binf-widgets .csui-search-box .search-icon {
+  right: 8px;
+  top: calc(50% - 13px);
+}
+
+.xecm-page-widget .csui-tabletoolbar .binf-nav .csui-search-box > a {
+  background-size: 24px;
+  background-position-y: 25px;
+  background-position-x: 20px;
+}
+
+.xecm-page-widget .csui-tabletoolbar .binf-nav .csui-search-box .csui-input {
+  padding: 2px 30px 2px 10px;
+  border: 1px solid #333333;
+  color: #333333;
+  height: 30px;
+}
+
+.xecm-page-widget .csui-tabletoolbar .binf-nav .csui-search-box .csui-clearer {
+  right: 0em;
+  color: #333333;
+}
+
+
+
+
+
+.binf-widgets.xecm-page-widget .cs-perspective-with-breadcrumb-view {
+  padding: 0px;
+}
+
+.binf-widgets.xecm-page-widget .cs-perspective-with-breadcrumb-view .csui-perspective-breadcrumb {
+  display: none;
+}
+
+.binf-widgets.xecm-page-widget .cs-perspective-panel,
+.binf-widgets.xecm-page-widget .cs-perspective-panel > .cs-perspective {
+  padding: 0px;
+  height: 100vh;
+}
+
+.binf-widgets.xecm-page-widget .cs-perspective-panel > .cs-perspective {
+  top: 0px;
+}
+
+.binf-widgets.xecm-page-widget .cs-perspective-panel .binf-row {
+  margin: 0px;
+}
+
+
+.binf-widgets.xecm-page-widget .cs-perspective-panel .cs-tabbed-perspective {
+  padding: 0px;
+}
+
+.binf-widgets.xecm-page-widget .cs-tabbed-perspective > .cs-content > .tab-panel > .binf-tab-content {
+  padding-top: 0px;
+}
+
+.binf-widgets.xecm-page-widget .cs-perspective-panel .cs-tabbed-perspective.csui-breadcrumbs-visible > .cs-header.conws-header-widget + .cs-content > .tab-panel > .binf-tab-content > .binf-tab-pane > .binf-row > * {
+  height: calc(100vh - 96px - 6.5px);
+}
+
+.binf-widgets.xecm-page-widget.csui-maximized-widget-mode .cs-perspective-panel .cs-tabbed-perspective.csui-breadcrumbs-visible > .cs-header.conws-header-widget + .cs-content > .tab-panel > .binf-tab-content > .binf-tab-pane > .binf-row > * {
+  height: calc(100vh - 6.5px);
+}
+
+.binf-widgets.xecm-page-widget.csui-maximized-widget-mode .cs-tabbed-perspective > .cs-content > .tab-panel > .binf-tab-content > .binf-tab-pane > .binf-row > *,
+.binf-widgets.xecm-page-widget.csui-maximized-widget-mode .cs-tabbed-perspective.cs-collapse > .cs-content > .tab-panel > .binf-tab-content > .binf-tab-pane > .binf-row > * {
+  height: 100vh;
+}
+
+.binf-widgets.xecm-page-widget .cs-tabbed-perspective > .cs-content > .tab-panel > .binf-tab-content > .binf-tab-pane > .binf-row {
+  margin: 0px;
+}
+
+.binf-widgets.xecm-page-widget .cs-perspective-panel .cs-tabbed-perspective:not(.cs-tabbed-flow-perspective) > .cs-content,
+.binf-widgets.xecm-page-widget .cs-perspective-panel .cs-tabbed-perspective.cs-collapse:not(.cs-tabbed-flow-perspective) > .cs-content {
+  top: -47px;
+  position: relative;
+}
+
+.binf-widgets.xecm-page-widget.csui-maximized-widget-mode .cs-perspective-panel .cs-tabbed-perspective:not(.cs-tabbed-flow-perspective) > .cs-content,
+.binf-widgets.xecm-page-widget.csui-maximized-widget-mode .cs-perspective-panel .cs-tabbed-perspective.cs-collapse:not(.cs-tabbed-flow-perspective) > .cs-content,
+.binf-widgets.csui-maximized-widget-mode .xecm-full-page-workspace.xecm-no-iframe-wrap .cs-tabbed-perspective > .cs-content {
+  top: 0px;
+}
+
+.binf-widgets.xecm-page-widget .cs-perspective-panel .cs-tabbed-perspective > .cs-header,
+.binf-widgets.xecm-page-widget .cs-perspective-panel .cs-tabbed-perspective.cs-collapse > .cs-header {
+  background: rgba(0, 0, 0, 0.4);
+  height: 96px;
+}
+
+.binf-widgets.xecm-page-widget .cs-perspective-panel .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links,
+.binf-widgets.xecm-page-widget .cs-perspective-panel .cs-tabbed-perspective.cs-collapse > .cs-content > .tab-panel > .tab-links {
+  background: transparent;
+}
+
+
+
+
+
+.binf-widgets.xecm-page-widget.csui-maximized-widget-mode .cs-perspective-panel > .cs-perspective > .csui-maximized-row > .csui-maximized-column {
+  height: 100vh;
+}
+
+.binf-widgets.xecm-page-widget .grid-rows > .binf-row > * {
+  height: 100vh;
+  min-height: 90px;
+}
+
+@media (min-height: 600px) {
+  .binf-widgets.xecm-page-widget .grid-rows > .binf-row > * {
+    height: 50vh;
+  }
+}
+
+@media (min-height: 1100px) {
+  .binf-widgets.xecm-page-widget .grid-rows > .binf-row > * {
+    height: 33.33333333vh;
+  }
+}
+
+@media (min-height: 1600px) {
+  .binf-widgets.xecm-page-widget .grid-rows > .binf-row > * {
+    height: 25vh;
+  }
+}
+
+.binf-widgets.xecm-page-widget .grid-rows > .binf-row > .row-xs-full {
+  height: 100vh !important;
+}
+
+.binf-widgets.xecm-page-widget .grid-rows > .binf-row > .row-xs-three-quarters {
+  height: 75vh !important;
+}
+
+.binf-widgets.xecm-page-widget .grid-rows > .binf-row > .row-xs-two-thirds {
+  height: 66.66666666vh !important;
+}
+
+.binf-widgets.xecm-page-widget .grid-rows > .binf-row > .row-xs-half {
+  height: 50vh !important;
+}
+
+.binf-widgets.xecm-page-widget .grid-rows > .binf-row > .row-xs-third {
+  height: 33.33333333vh !important;
+}
+
+.binf-widgets.xecm-page-widget .grid-rows > .binf-row > .row-xs-quarter {
+  height: 25vh !important;
+}
+
+@media (min-width: 768px) {
+  .binf-widgets.xecm-page-widget .grid-rows > .binf-row > .row-sm-full {
+    height: 100vh !important;
+  }
+
+  .binf-widgets.xecm-page-widget .grid-rows > .binf-row > .row-sm-three-quarters {
+    height: 75vh !important;
+  }
+
+  .binf-widgets.xecm-page-widget .grid-rows > .binf-row > .row-sm-two-thirds {
+    height: 66.66666666vh !important;
+  }
+
+  .binf-widgets.xecm-page-widget .grid-rows > .binf-row > .row-sm-half {
+    height: 50vh !important;
+  }
+
+  .binf-widgets.xecm-page-widget .grid-rows > .binf-row > .row-sm-third {
+    height: 33.33333333vh !important;
+  }
+
+  .binf-widgets.xecm-page-widget .grid-rows > .binf-row > .row-sm-quarter {
+    height: 25vh !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .binf-widgets.xecm-page-widget .grid-rows > .binf-row > .row-md-full {
+    height: 100vh !important;
+  }
+
+  .binf-widgets.xecm-page-widget .grid-rows > .binf-row > .row-md-three-quarters {
+    height: 75vh !important;
+  }
+
+  .binf-widgets.xecm-page-widget .grid-rows > .binf-row > .row-md-two-thirds {
+    height: 66.66666666vh !important;
+  }
+
+  .binf-widgets.xecm-page-widget .grid-rows > .binf-row > .row-md-half {
+    height: 50vh !important;
+  }
+
+  .binf-widgets.xecm-page-widget .grid-rows > .binf-row > .row-md-third {
+    height: 33.33333333vh !important;
+  }
+
+  .binf-widgets.xecm-page-widget .grid-rows > .binf-row > .row-md-quarter {
+    height: 25vh !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .binf-widgets.xecm-page-widget .grid-rows > .binf-row > .row-lg-full {
+    height: 100vh !important;
+  }
+
+  .binf-widgets.xecm-page-widget .grid-rows > .binf-row > .row-lg-three-quarters {
+    height: 75vh !important;
+  }
+
+  .binf-widgets.xecm-page-widget .grid-rows > .binf-row > .row-lg-two-thirds {
+    height: 66.66666666vh !important;
+  }
+
+  .binf-widgets.xecm-page-widget .grid-rows > .binf-row > .row-lg-half {
+    height: 50vh !important;
+  }
+
+  .binf-widgets.xecm-page-widget .grid-rows > .binf-row > .row-lg-third {
+    height: 33.33333333vh !important;
+  }
+
+  .binf-widgets.xecm-page-widget .grid-rows > .binf-row > .row-lg-quarter {
+    height: 25vh !important;
+  }
+}
+
+@media (min-width: 1440px) {
+  .binf-widgets.xecm-page-widget .grid-rows > .binf-row > .row-xl-full {
+    height: 100vh !important;
+  }
+
+  .binf-widgets.xecm-page-widget .grid-rows > .binf-row > .row-xl-three-quarters {
+    height: 75vh !important;
+  }
+
+  .binf-widgets.xecm-page-widget .grid-rows > .binf-row > .row-xl-two-thirds {
+    height: 66.66666666vh !important;
+  }
+
+  .binf-widgets.xecm-page-widget .grid-rows > .binf-row > .row-xl-half {
+    height: 50vh !important;
+  }
+
+  .binf-widgets.xecm-page-widget .grid-rows > .binf-row > .row-xl-third {
+    height: 33.33333333vh !important;
+  }
+
+  .binf-widgets.xecm-page-widget .grid-rows > .binf-row > .row-xl-quarter {
+    height: 25vh !important;
+  }
+}
+
+@media (min-width: 1920px) {
+  .binf-widgets.xecm-page-widget .grid-rows > .binf-row > .row-xxl-full {
+    height: 100vh !important;
+  }
+
+  .binf-widgets.xecm-page-widget .grid-rows > .binf-row > .row-xxl-three-quarters {
+    height: 75vh !important;
+  }
+
+  .binf-widgets.xecm-page-widget .grid-rows > .binf-row > .row-xxl-two-thirds {
+    height: 66.66666666vh !important;
+  }
+
+  .binf-widgets.xecm-page-widget .grid-rows > .binf-row > .row-xxl-half {
+    height: 50vh !important;
+  }
+
+  .binf-widgets.xecm-page-widget .grid-rows > .binf-row > .row-xxl-third {
+    height: 33.33333333vh !important;
+  }
+
+  .binf-widgets.xecm-page-widget .grid-rows > .binf-row > .row-xxl-quarter {
+    height: 25vh !important;
+  }
+}
+
+
+
+.binf-widgets.xecm-page-widget .csui-search-results-content {
+  height: calc(100vh - 137px)
+}
+
+.binf-widgets.xecm-page-widget .csui-search-results .csui-result-list, .binf-widgets.xecm-page-widget .csui-search-results .binf-list-group.list-group-height-noresults {
+  height: calc(100vh - 188px)
+}
+
+.binf-widgets.xecm-page-widget .csui-search-results .csui-search-results-body {
+  height: calc(100vh - 93px)
+}
+
+
+
+
+
+
+
+.binf-widgets.xecm-page-widget .conws-header-wrapper .conws-header-toolbar .xecmpf-completenesscheck .xecmpf-docscount-without-text {
+  display: inline-block;
+}
+
+.binf-widgets.xecm-page-widget .conws-header-wrapper .conws-header-toolbar .xecmpf-completenesscheck .xecmpf-docscount-with-text {
+  display: none;
+}
+
+
+
+
+
+.binf-widgets.xecm-page-widget .cs-tabbed-perspective .conws-header .conws-header-wrapper .conws-header-metadata {
+  padding-right: 10px;
+}
+
+.binf-widgets.xecm-page-widget .cs-perspective-panel .cs-tabbed-perspective .conws-header .conws-header-image img {
+  border-radius: 5%;
+}
+
+.binf-widgets.xecm-page-widget .conws-header .conws-header-wrapper .conws-header-title h1,
+.binf-widgets.xecm-page-widget .cs-collapse .conws-header .conws-header-wrapper .conws-header-title h1 {
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.binf-widgets.xecm-page-widget .cs-perspective-panel .cs-tabbed-perspective .conws-header .conws-header-wrapper .conws-header-title-section {
+  width: calc(100% - 32px);
+  padding-left: 16px;
+}
+
+.binf-widgets.xecm-page-widget .cs-perspective-panel .cs-tabbed-perspective .conws-header .conws-header-toolbar .conws-tabletoolbar {
+  display: inline-flex;
+}
+
+.binf-widgets.xecm-page-widget .cs-tabbed-perspective .header-editor > span,
+.binf-widgets.xecm-page-widget .cs-tabbed-perspective .header-editor {
+  width: 32px;
+  height: 32px;
+}
+
+.binf-widgets.xecm-page-widget .cs-perspective-panel .cs-tabbed-perspective .conws-header .conws-header-image,
+.binf-widgets.xecm-page-widget .conws-header-edit,
+.binf-widgets.xecm-page-widget .cs-perspective-panel .cs-tabbed-perspective .conws-header .conws-header-image img,
+.binf-widgets.xecm-page-widget .cs-collapse .conws-header .conws-header-image img,
+.binf-widgets.xecm-page-widget .header-image {
+  width: 32px;
+  height: 32px;
+}
+
+.binf-widgets.xecm-page-widget .conws-header .conws-header-wrapper .binf-popover .binf-arrow {
+  top: calc(50% - 54px) !important;
+}
+
+.binf-widgets.xecm-page-widget .conws-header .conws-header-toolbar .csui-rightToolbar  .csui-toolbar.binf-nav > li > a:hover,
+.binf-widgets.xecm-page-widget .conws-header .conws-header-toolbar .csui-rightToolbar  .csui-toolbar.binf-nav > li > a:focus {
+  background-color: transparent;
+}
+
+
+.binf-widgets.xecm-page-widget .cs-perspective-panel .conws-header .conws-header-wrapper .csui-toolbar .icon-socialFav,
+.binf-widgets.xecm-page-widget .cs-perspective-panel .conws-header .conws-header-wrapper .csui-toolbar .icon-socialFavOpen {
+  margin-top: -6px;
+}
+
+.binf-widgets.xecm-page-widget .conws-header .conws-header-toolbar .csui-Toolbar .conws-collapse .csui-toolitem {
+  margin: 0px;
+}
+
+.binf-widgets.xecm-page-widget .conws-header .conws-header-toolbar .conws-tabletoolbar .conws-collapse-icon:focus{
+  outline: 1px dotted #ffffff;
+ outline-offset: -1px;
+}
+
+html:not(root) body.csui-on-ipad.binf-widgets.xecm-page-widget.csui-support-maximize-widget {
+    min-width: auto;
+}
+
+html:not(root) body.csui-on-ipad.binf-widgets.xecm-page-widget.csui-support-maximize-widget .cs-perspective-with-breadcrumb-view.cs_perspective_with_left_right_margin.csui-breadcrumbs-visible {
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
+}
+

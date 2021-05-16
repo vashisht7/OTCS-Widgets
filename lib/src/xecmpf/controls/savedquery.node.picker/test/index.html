@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Search Query Node Picker</title>
+  <link rel="stylesheet" href="../../../../csui/themes/carbonfiber/theme.css">
+  <style>
+    body.binf-widgets {
+      padding: 1rem;
+    }
+
+    #content-parent {
+      padding: 1rem;
+      height: 80vh;
+      background-color: #ffffff;
+      position: relative;
+    }
+
+    #content-parent p {
+      margin: 2rem 0;
+    }
+
+  </style>
+  <script src="../../../../csui/lib/require.js"></script>
+  <script src="../../../../csui/config.js" data-csui-path="../../../../csui"></script>
+  <script>
+
+    require.config({
+      paths: {
+        xecmpf: '../../..',
+        csui: '../../../../csui',
+        conws: '../../../../conws'
+      },
+      deps: [
+        'csui/lib/require.config!csui/csui-extensions.json',
+        'csui/lib/require.config!conws/conws-extensions.json',
+        'csui/lib/require.config!xecmpf/xecmpf-extensions.json'
+      ]
+    });
+
+    require.config({
+      config: {
+        'csui/utils/contexts/factories/connector': {
+          connection: {
+            supportPath: '/support',
+            url: '//server/otcs/cs/api/v1',
+            session: {
+              ticket: 'dummy'
+            }/*,
+            url: '//mtanwar6qyfxh2:8080/cs1624/cs.exe/api/v1',
+            credentials: {
+              username: 'Admin',
+              password: 'livelink'
+            }*/
+          }
+        },
+
+        'xecmpf/controls/savedquery.node.picker/impl/savedquery.form.view': {
+          queryVolumeId: 19372
+        }
+      }
+    });
+
+    require(['csui/lib/marionette', 'csui/lib/handlebars', 'csui/utils/contexts/page/page.context',
+      '../savedquery.node.picker.view', './mock', 'csui/lib/jquery.ui/js/jquery-ui'
+    ], function (Marionette, Handlebars, PageContext,
+        SearchQueryNodePicker, Mock) {
+      var originatingView,
+          pageContext = new PageContext();
+
+      originatingView = new Marionette.ItemView({
+
+        el: '#content',
+
+        template: Handlebars.compile('<div class="binf-well">' +
+                                     '<p>Hello world, I am the originatingView</p>' +
+                                     '<p>Click button to call Search Query mask.</p>' +
+                                     '<button class="binf-btn binf-btn-primary">Click Me!</button>' +
+                                     '</div>'),
+
+        events: {
+          'click button': function () {
+            var nodePicker = new SearchQueryNodePicker({
+              context: pageContext,
+              title: 'Add Business Attachment',
+              originatingView: this,
+              toolbarItems: {
+                inlineToolbar: {}
+              },
+              enableBackButton: true
+            });
+
+            nodePicker
+                .show()
+                .done(function () {
+                  console.log('Node Picker Closed');
+                })
+                .fail(function () {
+                  console.log('Node Picker Closed');
+                });
+          }
+        }
+      });
+
+      var region = new Marionette.Region({el: '#content-parent'});
+      region.show(originatingView);
+      pageContext.fetch();
+      Mock.enable();
+    });
+
+  </script>
+</head>
+
+<body class="binf-widgets">
+<div class="binf-container-fluid">
+  <div class="binf-row">
+    <div class="binf-col-md-12">
+      <div id="content-parent">
+        <div id="content"></div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>
+
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

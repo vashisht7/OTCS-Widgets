@@ -1,0 +1,65 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.conws-addoreditrole-roleparticipants .conws-participant {
+  margin: 5px !important;
+  padding: 0.75rem 1.25rem;
+  display: flex;
+  border-radius: 3px !important;
+  background-color: #F7F7F7;
+}
+
+.conws-addoreditrole-roleparticipants .conws-participant:hover {
+  background-color: #B2BEC5;
+}
+
+.conws-addoreditrole-roleparticipants .participant-content {
+  width: 90%;
+}
+
+.conws-addoreditrole-roleparticipants .participant-picture {
+  width: 1.5rem;
+}
+
+.conws-addoreditrole-roleparticipants .participant-info {
+  padding-left: 1.5rem;
+  width: calc(100% - 3rem);
+}
+
+.conws-addoreditrole-roleparticipants .participant-info > span {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.conws-addoreditrole-roleparticipants .participant-info .name {
+  font-size: 17px;
+  color: #333333;
+  line-height: 2.0rem;
+}
+
+.conws-addoreditrole-roleparticipants .participant-info .email,
+.conws-addoreditrole-roleparticipants .participant-info .title,
+.conws-addoreditrole-roleparticipants .participant-info .department,
+.conws-addoreditrole-roleparticipants .participant-info .office {
+  color: #414042;
+  clear: both;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.conws-addoreditrole-roleparticipants .participant-delete .conws-icon-cross {
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: calc(50% - 0.5rem);
+  cursor: pointer;
+  opacity: 0;
+}
+
+.conws-addoreditrole-roleparticipants .conws-participant:hover .participant-delete .conws-icon-cross,
+.conws-addoreditrole-roleparticipants .conws-participant:focus .participant-delete .conws-icon-cross,
+.conws-addoreditrole-roleparticipants .conws-participant .participant-delete .conws-icon-cross:focus {
+   
+  opacity: 1;
+} 

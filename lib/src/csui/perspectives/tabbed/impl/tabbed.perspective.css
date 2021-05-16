@@ -1,0 +1,316 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.cs-perspective.cs-tabbed-perspective {
+}
+
+
+.cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links > .tab-links-bar > .binf-nav-tabs {
+  border-bottom: none;
+}
+
+.cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links > .tab-links-bar > .binf-nav-tabs > li > a {
+  border-radius: 0;
+}
+
+.cs-tabbed-perspective > .cs-content > .tab-panel > .binf-tab-content {
+  clear: both;
+  padding-top: 7.5px;
+  width: 100%;
+}
+
+.binf-widgets.csui-maximized-widget-mode .cs-tabbed-perspective > .cs-content > .tab-panel > .binf-tab-content {
+  padding-top: 0;
+}
+
+.cs-tabbed-perspective > .cs-content > .tab-panel > .binf-tab-content > .binf-tab-pane {
+  min-height: 0;
+}
+
+.cs-tabbed-perspective > .cs-content > .tab-panel > .binf-tab-content > .binf-tab-pane.binf-active {
+  visibility: visible;
+}
+
+
+
+.cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links > .tab-links-bar > .binf-nav-tabs > li > a {
+  color: #ffffff;
+  background-color: inherit;
+  border: none;
+  padding: 0;
+  margin: 0;
+  height: 48px;
+}
+
+.cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links > .tab-links-bar > .binf-nav-tabs > li > a {
+  margin-right: 1px;
+}
+
+.cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links > .tab-links-bar > .binf-nav-tabs > li.binf-active > a {
+  font-weight: bold;
+}
+
+
+.cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links > .tab-links-bar > .binf-nav-tabs > li > a:focus {
+  outline: none;
+  background-color: rgba(148, 187, 234, 0.25);
+}
+
+.binf-widgets .cs-tabbed-perspective .cs-content > .tab-panel > .tab-links > .tab-links-bar > .binf-nav-tabs > li:first-child span.cs-tablink-text {
+  margin-left: 24px;
+}
+
+.cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links > .tab-links-bar > .binf-nav-tabs > li > a > span.cs-tablink-text {
+  margin: 0 16px;
+  max-width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  display: block;
+  padding: 15px 0 11px 0;
+  line-height: 18px;
+}
+
+.cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links > .tab-links-bar > .binf-nav-tabs > li > a > span.cs-tablink-text:focus {
+  outline: none;
+}
+
+.cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links > .tab-links-bar > .binf-nav-tabs > li.binf-active > a > span.cs-tablink-text {
+  border-bottom: 4px solid #9de4f9;
+}
+
+.binf-widgets.csui-maximized-widget-mode .cs-tabbed-perspective > .cs-content > .tab-panel > .binf-tab-content > .binf-tab-pane > .binf-row {
+  padding: 0;
+}
+
+
+
+
+
+.binf-widgets .cs-tabbed-perspective > .cs-header {
+  height: 160px;
+  
+  background: rgba(0, 0, 0, 0.1);
+}
+
+
+
+.cs-tabbed-perspective.cs-collapse > .cs-header {
+  height: 64px;
+}
+
+.cs-tabbed-perspective > .cs-content > .tab-panel {
+  display: flex;
+  flex-direction: column;
+  flex-flow: wrap;
+}
+
+.cs-tabbed-perspective > .cs-content > .tab-panel > .tab-extension {
+  display: inline-flex;
+  height: 48px;
+  flex: 0 0 auto;
+}
+
+.cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links {
+  height: 48px;
+  background: rgba(0, 0, 0, 0.4);
+  display: inline-flex;
+  flex: 1 1 1%;
+}
+
+.cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links > .tab-links-bar > .binf-nav-tabs {
+  margin-bottom: 7.5px;
+}
+
+
+.cs-tabbed-perspective.csui-breadcrumbs-visible > .cs-content > .tab-panel > .binf-tab-content > .binf-tab-pane > .binf-row > * {
+  height: calc(100vh - 62px - 32px - 48px - 160px - 30px);
+  min-height: 160px;
+}
+
+.cs-tabbed-perspective.cs-collapse.csui-breadcrumbs-visible > .cs-content > .tab-panel > .binf-tab-content > .binf-tab-pane > .binf-row > * {
+  height: calc(100vh - 62px - 32px - 48px - 48px - 30px); 
+}
+
+.cs-tabbed-perspective.cs-collapse > .cs-content > .tab-panel > .binf-tab-content > .binf-tab-pane > .binf-row > * {
+  height: calc(100vh - 62px - 48px - 48px - 30px); 
+}
+
+
+.cs-tabbed-perspective > .cs-content > .tab-panel > .binf-tab-content > .binf-tab-pane > .binf-row {
+  height: calc(100vh - 62px - 48px - 160px - 30px);
+  min-height: 160px;
+}
+
+.csui-breadcrumbs-visible.cs-tabbed-perspective > .cs-content > .tab-panel > .binf-tab-content > .binf-tab-pane > .binf-row {
+  height: calc(100vh - 62px - 48px - 32px - 160px - 30px);
+}
+
+.cs-tabbed-perspective > .cs-content > .tab-panel > .binf-tab-content > .binf-tab-pane > .binf-row > .csui-maximized-column {
+  height: calc(100vh - 62px + 15px);
+}
+
+.cs-tabbed-perspective.csui-breadcrumbs-visible > .cs-content > .tab-panel > .binf-tab-content > .binf-tab-pane > .binf-row > .csui-maximized-column {
+  height: calc(100vh - 62px + 15px - 32px)
+}
+
+
+
+.csui-on-ipad .cs-tabbed-perspective > .cs-content > .tab-panel > .binf-tab-content > .binf-tab-pane > .binf-row > * {
+  height: calc(100vh - 160px - 48px - 157.5px);
+}
+
+.csui-on-ipad .cs-tabbed-perspective.cs-collapse > .cs-content > .tab-panel > .binf-tab-content > .binf-tab-pane > .binf-row > * {
+  height: calc(100vh - 64px - 48px - 157.5px);
+}
+
+.binf-widgets.csui-maximized-widget-mode .cs-tabbed-perspective > .cs-header {
+  display: none;
+}
+
+.binf-widgets.csui-maximized-widget-mode .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links,
+.binf-widgets.csui-maximized-widget-mode .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-extension {
+  display: none;
+}
+
+.binf-widgets .cs-perspective-panel .cs-tabbed-perspective > .cs-header {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.binf-widgets .cs-perspective-panel .cs-tabbed-perspective.cs-collapse > .cs-header {
+  height: 96px;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.binf-widgets .cs-perspective-panel .cs-tabbed-perspective.cs-collapse > .cs-header .conws-header-type {
+  display: none;
+}
+
+
+.binf-widgets .cs-perspective-panel .cs-tabbed-perspective.cs-collapse > .cs-content > .tab-panel > .tab-links {
+  background: transparent;
+}
+
+.binf-widgets .cs-perspective-panel .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links .tab-links-bar {
+  flex-grow: 0;
+  flex-shrink: 1;
+  overflow: hidden;
+}
+
+.binf-widgets .cs-perspective-panel .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links .tab-links-bar.with-left-toolbar {
+  flex-grow: 1;
+}
+
+.binf-widgets .cs-perspective-panel .cs-tabbed-perspective.cs-collapse > .cs-content {
+  top: -48px;
+  position: relative;
+}
+
+.binf-widgets.csui-maximized-widget-mode .cs-perspective-panel .cs-tabbed-perspective.cs-collapse > .cs-content {
+  top: 0;
+}
+
+.binf-widgets .cs-perspective-panel .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links,
+.binf-widgets .cs-perspective-panel .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links .left-toolbar,
+.binf-widgets .cs-perspective-panel .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links .tab-links-bar,
+.binf-widgets .cs-perspective-panel .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links .tab-links-bar ul.binf-nav,
+.binf-widgets .cs-perspective-panel .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links .right-toolbar {
+  height: 48px;
+}
+
+.binf-widgets .cs-perspective-panel .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links .tab-links-bar ul.binf-nav {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 500%;
+}
+
+.binf-widgets .cs-perspective-panel .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links .left-toolbar {
+  flex: 0 0 auto;
+}
+
+.binf-widgets .cs-perspective-panel .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links .goto_next_div .goto_next_page,
+.binf-widgets .cs-perspective-panel .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links .goto_previous_div .goto_previous_page {
+  float: left;
+  width: inherit;
+  height: inherit;
+  background-repeat: no-repeat;
+  background-position: center
+}
+
+.binf-widgets .cs-perspective-panel .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links .goto_next_div .goto_next_page {
+  background-image: url(../impl/images/next.svg);
+}
+
+.binf-widgets .cs-perspective-panel .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links .goto_next_div,
+.binf-widgets .cs-perspective-panel .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links .goto_previous_div {
+  width: 48px;
+  height: 48px;
+
+}
+
+.binf-widgets .cs-perspective-panel .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links .goto_next_div .goto_next_page:hover {
+  background-image: url(../impl/images/next-hover.svg);
+}
+
+.binf-widgets .cs-perspective-panel .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links .goto_next_div .goto_next_page:active {
+  background-image: url(../impl/images/next-select.svg);
+}
+
+.binf-widgets .cs-perspective-panel .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links .goto_previous_div:hover,
+.binf-widgets .cs-perspective-panel .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links .goto_previous_div:focus,
+.binf-widgets .cs-perspective-panel .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links .goto_previous_div .goto_previous_page:hover,
+.binf-widgets .cs-perspective-panel .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links .goto_previous_div .goto_previous_page:focus,
+.binf-widgets .cs-perspective-panel .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links .goto_next_div:hover,
+.binf-widgets .cs-perspective-panel .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links .goto_next_div:focus,
+.binf-widgets .cs-perspective-panel .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links .goto_next_div .goto_next_page:hover,
+.binf-widgets .cs-perspective-panel .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links .goto_next_div .goto_next_page:focus {
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+
+}
+
+.binf-widgets .cs-perspective-panel .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links .left-toolbar:hover,
+.binf-widgets .cs-perspective-panel .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links .right-toolbar:hover {
+  background-color: rgba(148, 187, 234, 0.25);
+}
+
+.binf-widgets .cs-perspective-panel .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links .left-toolbar:active,
+.binf-widgets .cs-perspective-panel .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links .right-toolbar:active {
+  background-color: rgba(51, 51, 51, 0.25);
+}
+
+.binf-widgets .cs-perspective-panel .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links .goto_previous_div .goto_previous_page {
+  background-image: url(../impl/images/prev.svg);
+}
+
+.binf-widgets .cs-perspective-panel .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links .goto_previous_div .goto_previous_page:hover {
+  background-image: url(../impl/images/prev-hover.svg);
+}
+
+.binf-widgets .cs-perspective-panel .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links .goto_previous_div .goto_previous_page:active {
+  background-image: url(../impl/images/prev-select.svg);
+}
+
+.cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links > .tab-links-bar > .binf-nav-tabs > li:not(.binf-active) > a:hover {
+  border-bottom: none;
+  background-color: rgba(148, 187, 234, 0.25);
+}
+
+.cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links > .tab-links-bar > .binf-nav-tabs > li:not(.binf-active) > a:active,
+.cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links > .tab-links-bar > .binf-nav-tabs > li.binf-active > a:active {
+  background-color: rgba(51, 51, 51, 0.25);
+}
+
+
+.binf-widgets .xecmpf-businessattachments .xecmpf-attachmentstitlebaricon,
+.binf-widgets .xecmpf-businessattachments .xecmpf-attachmentstitleicon {
+  top: 15%;
+}
+
+.binf-widgets .cs-tabbed-perspective-header {
+  height: 100%;
+}
+
+

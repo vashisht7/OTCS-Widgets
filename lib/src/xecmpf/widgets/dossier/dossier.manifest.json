@@ -1,0 +1,88 @@
+{
+  "$schema": "http://opentext.com/cs/json-schema/draft-04/schema#",
+  "title": "Dossier",
+  "description": "Dossier View for business workspaces grouped by some criterion say create date ,classification",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "groupBy": {
+        "type": "string",
+        "enum": [
+          "classification",
+          "create_date"
+        ],
+        "default": "create_date",
+        "title": "Default group by criterion",
+        "description": "Group by criterion that dossier view will use to load for the first time"
+      },
+      "hideGroupByCriterionDropdown": {
+        "type": "boolean",
+        "enum": [
+          true,
+          false
+        ],
+        "default": false,
+        "title": "Hide group by criterion dropdown",
+        "description": "Option to hide the dropdown to choose the group by criterion"
+      },
+      "hideMetadata": {
+        "type": "boolean",
+        "enum": [
+          true,
+          false
+        ],
+        "default": false,
+        "title": "Hide metadata",
+        "description": "Option to hide the document's metadata view"
+      },
+      "metadata": {
+        "type": "array",
+        "title": "Metadata",
+        "description": "Metadata displayed for document",
+        "items": {
+          "type": "object",
+          "title": "Category or attribute",
+          "description": "Category or attribute with metadata"
+        }
+      },
+      "hideEmptyFields": {
+        "type": "boolean",
+        "enum": [
+          true,
+          false
+        ],
+        "default": false,
+        "title": "Hide empty fields",
+        "description": "Display only fields with values"
+      },
+      "hideFavorite": {
+        "type": "boolean",
+        "enum": [
+          true,
+          false
+        ],
+        "default": false,
+        "title": "Hide favorite",
+        "description": "Option to hide the favorite icon"
+      }
+    }
+  },
+  "options": {
+    "fields": {
+      "groupBy": {
+        "type": "select",
+        "optionLabels": [
+          "Classification",
+          "Create Date"
+        ]
+      },
+      "metadata": {
+        "fields": {
+          "item": {
+            "type": "otconws_metadata"
+          }
+        }
+      }
+    }
+  }
+}

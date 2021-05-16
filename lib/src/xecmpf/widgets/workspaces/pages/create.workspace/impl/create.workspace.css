@@ -1,0 +1,18 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets #xecmpf-create_wksp {
+    height: 100%;
+}
+
+.binf-widgets #xecmpf-create_wksp .cs-add-item-metadata-form,
+.binf-widgets #xecmpf-create_wksp .cs-properties-wrapper{
+    height: calc(100% - 59px);
+}
+
+.binf-widgets #xecmpf-create_wksp #footer {
+    height: 59px;
+}
+
+.binf-widgets #xecmpf-create_wksp .cs-tile .tile-content {
+    height: calc(100% - 73px);
+}

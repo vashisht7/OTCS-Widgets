@@ -1,0 +1,28 @@
+<form>
+  <div class="csui-inlineform-vertical-spacer"></div>
+  <div class="csui-inlineform-group csui-inlineform-group-url {{#if haveErrorMessage}}csui-form-error{{/if}}">
+    <input type="text" value="{{name}}" aria-label="{{nameAria}}" placeholder="{{namePlaceholder}}"
+           class="binf-form-control csui-inlineform-input-name {{#if validationFailed_Name~}} hasError {{~/if}}">
+    <input type="text" value="{{url}}" aria-label="{{urlAria}}" placeholder="{{urlPlaceholder}}"
+           class="binf-form-control csui-inlineform-input-url {{#if haveErrorMessage}}csui-inlineform-error{{/if}}"
+           {{#if haveErrorMessage}} aria-describedby="{{errorMsgId}}" {{/if}}>
+    <button type="button" class="csui-btn-metadata csui-inlineform-btn-metadata binf-btn">
+      <span class="icon icon-toolbar-metadata"></span></button>
+    <div class="csui-inline-action-container">
+      <button type="submit" class="csui-btn-save csui-btn binf-btn csui-inlineform-btn-save
+              {{#if disableSaveBtn}} {{else}}binf-btn-default {{/if}}"
+              {{#if disableSaveBtn}} disabled {{/if}}>{{SaveButtonLabel}}</button>
+      <button type="button" class="csui-btn-cancel csui-btn binf-btn binf-btn-default">{{CancelButtonLabel}}</button>
+    </div>
+
+  </div>
+  {{#if haveErrorMessage}}
+  <div class="csui-inlineform-group csui-inlineform-group-error" role="alert" id="{{errorMsgId}}">
+    <div class="binf-text-danger" title="{{errorMessage}}"><span class="csui-text-danger">{{errorMessage}}</span></div>
+  </div>
+  {{/if}}
+  <div class="csui-inlineform-vertical-spacer"></div>
+  <div class="csui-inlineform-vertical-spacer"></div>
+</form>
+
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

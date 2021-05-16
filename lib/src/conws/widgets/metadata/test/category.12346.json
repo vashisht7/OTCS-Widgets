@@ -1,0 +1,80 @@
+{
+  "content": [
+    {
+      "data": {
+        "12346_1": "10002345",
+        "12346_2": "Computer",
+        "12346_3": "Personal Tablet Computer",
+        "12346_4": ""
+      },
+      "options": {
+        "fields": {
+          "12346_1": {
+            "hidden": false,
+            "hideInitValidationError": true,
+            "label": "Equipment Number",
+            "readonly": false,
+            "type": "text"
+          },
+          "12346_2": {
+            "hidden": false,
+            "hideInitValidationError": true,
+            "label": "Category",
+            "readonly": false,
+            "type": "text"
+          },
+          "12346_3": {
+            "hidden": false,
+            "hideInitValidationError": true,
+            "label": "Description",
+            "readonly": false,
+            "type": "text"
+          },
+          "12346_4": {
+            "hidden": false,
+            "hideInitValidationError": true,
+            "label": "Status",
+            "readonly": false,
+            "type": "text"
+          }
+        },
+        "form": {
+          "attributes": {
+            "action": "api\/v1\/nodes\/182623\/categories\/186455",
+            "method": "PUT"
+          },
+          "renderForm": true
+        }
+      },
+      "schema": {
+        "properties": {
+          "12346_1": {
+            "maxLength": 32,
+            "readonly": false,
+            "required": false,
+            "type": "string"
+          },
+          "12346_2": {
+            "maxLength": 32,
+            "readonly": false,
+            "required": false,
+            "type": "string"
+          },
+          "12346_3": {
+            "maxLength": 32,
+            "readonly": false,
+            "required": false,
+            "type": "string"
+          },
+          "12346_4": {
+            "maxLength": 32,
+            "readonly": false,
+            "required": false,
+            "type": "string"
+          }
+        },
+        "type": "object"
+      }
+    }
+  ]
+}

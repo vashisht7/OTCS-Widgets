@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>TabPanelView</title>
+
+  <link rel="stylesheet" href="../../../themes/carbonfiber/theme.css">
+  <style>
+    body {
+      padding: 1em;
+      color: #999999;
+    }
+
+    #content {
+      background-color: #ffffff;
+    }
+
+    .binf-widgets .samples-content {
+      height: 10em;
+      padding: 1em;
+      font-weight: normal;
+      font-size: 16px;
+    }
+
+    .samples-anton {
+      background-color: #6666bb;
+    }
+
+    .samples-berta {
+      background-color: #448844;
+    }
+
+    .samples-content a {
+      color: #ffffff;
+    }
+
+    .binf-widgets .binf-active {
+      color: #000000;
+      font-weight: bold;
+    }
+
+  </style>
+
+  <script src="../../../lib/require.js"></script>
+  <script src="../../../config.js" data-csui-path="../../.."></script>
+  <script>
+    require([
+      'csui/lib/jquery', 'csui/lib/handlebars', 'csui/lib/marionette',
+      '../tab.panel.view'
+    ], function ($, Handlebars, Marionette, TabPanelView) {
+      var contentRegion = new Marionette.Region({
+            el: '#content'
+          }),
+
+          TabContentView = Marionette.ItemView.extend({
+            className: function () {
+              return 'samples-content samples-' + this.model.get('team');
+            },
+            template: Handlebars.compile($('#samples-tab-content').html()),
+
+            render: function () {
+              var extendedAttrs = this.model.attributes;
+              extendedAttrs.random = Math.random();
+              this.$el.html(this.template(extendedAttrs));
+              return this;
+            }
+
+          }),
+
+          tabPanelView = new TabPanelView({
+            contentView: TabContentView,
+            tabs: [
+              {title: {en: 'Joe', de: 'Josef'}, team: 'anton'},
+              {title: {en: 'Jane', de: 'Johanna'}, team: 'berta'},
+              {title: {en: 'Fred', de: 'Fritz'}, team: 'anton'}
+            ]
+          });
+
+      contentRegion.show(tabPanelView);
+    });
+  </script>
+</head>
+
+<body class="binf-widgets">
+
+<p>
+  <a href="start.html">Start</a>
+</p>
+
+<div id="content">
+</div>
+
+
+<script id="samples-tab-content" type="text/template">
+  {{title.en}} (also known as {{title.de}}) is in team '{{team}}', current number is {{random}}
+  <br><a href="http://www.heise.de">Outside link</a>
+</script>
+
+</body>
+
+</html>
+
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

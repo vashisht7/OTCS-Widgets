@@ -1,0 +1,49 @@
+{
+  "csui/models/server.module/server.module.collection": {
+    "modules": {
+      "otcss": {
+        "version": "1.0"
+      }
+    }
+  },
+  "csui/models/widget/widget.collection": {
+    "widgets": {
+      "otcss": [
+        "otcss/widgets/hello",
+        "otcss/widgets/noteview",
+        "otcss/widgets/dps",
+        "otcss/widgets/getdeptnames"
+      ]
+    }
+  },
+  "csui/utils/contexts/perspective/perspective.context": {
+    "extensions": {
+      "otcss": [
+        "otcss/perspective.context.plugin/lp.perspective.context.plugin"
+      ]
+    }
+  },
+  "csui/pages/start/perspective.routing": {
+    "extensions": {
+      "otcss": [
+        "otcss/perspective.routers/lp.perspective.router"
+      ]
+    }
+  },
+  "csui/utils/commands": {
+    "extensions": {
+      "otcss": [
+        "otcss/commands/NoteComment/note.comment.command",
+        "otcss/commands/ViewNote/view.note.command"
+      ]
+    }
+  },
+  "csui/widgets/nodestable/toolbaritems": {
+    "extensions": {
+      "otcss": [
+        "otcss/commands/NoteComment/note.comment.nodestable.toolitems",
+        "otcss/commands/ViewNote/view.note.nodestable.toolitems"
+      ]
+    }
+  }
+}

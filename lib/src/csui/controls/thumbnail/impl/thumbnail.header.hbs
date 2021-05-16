@@ -1,0 +1,17 @@
+<div class="csui-thumbnail-header-data">
+  <div class="csui-thumbnail-select">
+      <div class="csui-selected-checkbox csui-checkbox-primary csui-checkbox-selectAll {{#if selectThumbnails}} binf-hidden{{/if}}">
+        <input class="csui-selectAll-input" type="checkbox" {{#if isEmptyNode}} disabled="true" {{/if}} title="{{selectAllTitle}}"
+               aria-labelledby="{{selectAllId}}" tabindex="0">
+
+        <div class="csui-selectAll-header csui-selectlabel"></div>
+        <span id="{{selectAllId}}">{{selectAll}}</span>
+      </div>
+  </div>
+  <div class="csui-thumbnail-itemcount">{{items}}</div>
+  <div class="csui-thumbnail-sort-search-container">
+    <div id="csui-sorting-container" class="csui-sorting-container"></div>
+    <div id="csui-thumbnail-column-search" class="csui-thumbnail-column-search"></div>
+  </div>
+</div>
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

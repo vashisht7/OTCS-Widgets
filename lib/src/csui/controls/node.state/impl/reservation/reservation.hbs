@@ -1,0 +1,11 @@
+{{#if isReserved}}
+  {{#if canUnreserve}}
+    <button title="{{reservedTooltip}}" type="button" aria-label="{{reservedAria}}">
+  {{/if}}
+  <span title="{{reservedTooltip}}" class="icon {{iconPrefix}}_{{#if isReservedByOther}}other{{else}}self{{/if}}"></span>
+  {{#if canUnreserve}}
+    </button>
+  {{/if}}
+{{/if}}
+
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

@@ -1,0 +1,132 @@
+
+{{#if  assigneeType}}
+  <div class="binf-row">
+    <div class="wfstatus-mini-profile-user binf-col-lg-12 binf-col-md-12 binf-col-sm-12 binf-col-xs-12">
+      <div class="binf-row">
+        <div class="wfstatus-mini-profile-details">
+          <div class="wfstatus-group-profile-img">
+                <span class="wfstatus-mini-profile-avatar">
+                    <a href="javascript:void(0);" class="wfstatus-group-profile-pic">
+                        <span
+                            class="wfstatus-miniprofile-default-avatar-show default-group-avatar image_group_placeholder"
+                            title="{{name}}"></span>
+                    </a>
+                </span>
+          </div>
+          <div class="binf-col-lg-10 binf-col-md-10 binf-col-sm-10 binf-col-xs-10">
+            <div class="binf-row">
+              <div class="wfstatus-mini-profile-userinfo binf-col-lg-7 binf-col-md-7 binf-col-sm-7 binf-col-xs-7">
+                <div class="wfstatus-mini-profile-user-displayname">
+                  <a href="javascript:void(0);" class="wfstatus-mini-profile-group-name binf-col-lg-12 binf-col-md-12 binf-col-sm-12 binf-col-xs-12"title="{{name}}">
+                    {{name}}
+                  </a>
+                </div>
+              </div>
+              <div class="wfstatus-usercard-wfstatus binf-col-lg-3 binf-col-md-3 binf-col-sm-3 binf-col-xs-3" title="{{status}}">
+                {{status}}
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+      <div class="binf-row">
+        <div class="binf-col-lg-12 binf-col-md-12 binf-col-sm-12 binf-col-xs-12 wfstatus-usercard-footer-col">
+          <div class="wfstatus-usercard-actions wfstatus-usercard-footer">
+            <div class="wfstatus-usercard-inline-actions">
+              <div class="wfstatus-reassignButton">
+                  <span><button class="csui-btn binf-btn binf-btn-primary wfstatus-reassign-btn" title="{{ReassignLabel}}" tabindex="0">{{ReassignLabel}}</button>
+                  </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{#if  MultiUser}}
+      {{#if notLastUser}}
+        <hr>
+      {{/if}}
+    {{/if}}
+  </div>
+{{else}}
+  <div class="binf-row">
+    <div class="wfstatus-mini-profile-user binf-col-lg-12 binf-col-md-12 binf-col-sm-12 binf-col-xs-12">
+      <div class="binf-row">
+        <div class="wfstatus-mini-profile-details">
+          <div class="wfstatus-user-profile-img">
+                <span class="wfstatus-mini-profile-avatar">
+                    <a href="javascript:void(0);" class="wfstatus-user-profile-pic">
+                        <span class="image_user_placeholder wfstatus-miniprofile-default-avatar-{{displayDefaultPic}}" style="background: {{userBackgroundColor}}" title="{{name}}">{{initials}}</span>
+                        <img id="wfstatus-mini-profile-pic-{{id}}" class="wfstatus-userprofile-img binf-img-circle-{{displayPic}}" src="{{photoUrl}}" title="{{name}}">
+                    </a>
+                </span>
+          </div>
+          <div class="binf-col-lg-10 binf-col-md-10 binf-col-sm-10 binf-col-xs-10">
+            <div class="binf-row">
+              <div class="wfstatus-mini-profile-userinfo binf-col-lg-7 binf-col-md-7 binf-col-sm-7 binf-col-xs-7">
+                <div class="wfstatus-mini-profile-user-displayname">
+                  <a href="javascript:void(0);" class="wfstatus-mini-profile-user-name binf-col-lg-12 binf-col-md-12 binf-col-sm-12 binf-col-xs-12" title="{{name}}">
+                    {{name}}
+                  </a>
+                </div>
+              </div>
+              <div class="wfstatus-usercard-wfstatus binf-col-lg-3 binf-col-md-3 binf-col-sm-3 binf-col-xs-3" title="{{status}}">
+                {{status}}
+              </div>
+            </div>
+            {{#if hasContactInfo}}
+              <div class="binf-row">
+                <div class="binf-col-lg-12 binf-col-md-12 binf-col-sm-12 binf-col-xs-12 wfstatus-usercard-user-details">
+                  {{#if business_email}}
+                    <div class="wfstatus-mini-profile-user-displayemail">
+                      <a class="wfstatus-mini-profile-user-email" href="mailto:{{business_email}}"
+                        title="{{business_email}}">{{business_email}}</a>
+                    </div>
+                  {{/if}}
+
+                  {{#if business_phone}}
+                    <div class="wfstatus-mini-profile-user-phone"
+                        title="{{business_phone}}">{{PhoneLabel}} {{business_phone}}</div>
+                  {{/if}}
+                </div>
+              </div>
+            {{/if}}
+          </div>
+        </div>
+      </div>
+      
+      <div class="binf-row">
+        <div class="binf-col-lg-12 binf-col-md-12 binf-col-sm-12 binf-col-xs-12 wfstatus-usercard-footer-col">
+        <div class="wfstatus-usercard-actions wfstatus-usercard-footer">
+          <div class="wfstatus-usercard-inline-actions">
+            {{#if isChatEnabled}}
+              <div class="wfstatus-chatButton">
+                  <a href='{{chatURI}}' class='wfstatus-chat-icon'>
+                      <span><button class="csui-btn binf-btn binf-btn-secondary wfstatus-chat-btn" title="{{ChatLabel}}"
+                                    tabindex="0">{{ChatLabel}}</button>
+                      </span></a>
+              </div>
+            {{/if}}
+
+
+            {{#if displayReassign}}
+              <div class="wfstatus-reassignButton">
+                  <span><button class="csui-btn binf-btn binf-btn-primary wfstatus-reassign-btn" title="{{ReassignLabel}}"
+                                tabindex="0">{{ReassignLabel}}</button>
+                  </span>
+              </div>
+            {{/if}}
+          </div>  
+        </div>
+        </div>
+      </div>
+    </div>
+    {{#if  MultiUser}}
+      {{#if notLastUser}}
+        <hr>
+      {{/if}}
+    {{/if}}
+  </div>
+{{/if}}
+
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

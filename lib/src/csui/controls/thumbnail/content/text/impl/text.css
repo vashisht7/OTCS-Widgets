@@ -1,0 +1,35 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.csui-thumbnail-generic {
+  display: flex;
+}
+
+.binf-widgets .csui-thumbnail-overview .binf-popover .csui-overview-container .csui-thumbnail-generic,
+.binf-widgets .csui-thumbnail-overview .binf-popover .csui-overview-container .csui-thumbnail-metadata-container .csui-thumbnail-properties > div {
+  flex-direction: column;
+  display: flex;
+}
+
+.csui-thumbnail-generic .csui-thumbnail-text-label {
+  line-height: 16px;
+  padding-right: 8px;
+  font-size: 11px;
+}
+
+.binf-widgets .cs-thumbnail-wrapper .csui-thumbnail-collection .csui-thumbnail-content .csui-thumbnail-generic .csui-thumbnail-label.csui-thumbnail-text-label span {
+  padding: 0;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.binf-widgets .csui-thumbnail-overview .binf-popover .csui-overview-container .csui-thumbnail-metadata-container .csui-thumbnail-properties > div .csui-thumbnail-label.csui-thumbnail-text-label span {
+  font-weight: normal;
+}
+
+.csui-thumbnail-generic .csui-thumbnail-content-text {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  line-height: 16px;
+  font-size: 11px;
+}

@@ -1,0 +1,144 @@
+{
+  "45823": {
+    "data": {
+      "Category": {
+        "Category_25867": {
+          "Category_25867__value2": "1000"
+        }
+      },
+      "templateId": 45823
+    },
+    "options": {
+      "fields": {
+        "Category": {
+          "fields": {
+            "Category_25867": {
+              "fields": {
+                "Category_25867__value2": {
+                  "label": "Object key",
+                  "name": "Category_25867__value2",
+                  "order": 1,
+                  "OTRegionName": "Attr_25867_2"
+                }
+              },
+              "order": 2
+            }
+          },
+          "order": 500
+        },
+        "templateId": {
+          "type": "hidden"
+        }
+      }
+    },
+    "schema": {
+      "properties": {
+        "Category": {
+          "properties": {
+            "Category_25867": {
+              "OTCatVerNum": 2,
+              "properties": {
+                "Category_25867__value2": {}
+              },
+              "title": "Equipment"
+            }
+          },
+          "title": "Categories..."
+        },
+        "templateId": {}
+      },
+      "title": "Equipment Business Workspaces Search",
+      "type": "object"
+    }
+  },
+  "19373": {
+    "data": {
+      "FullText": {
+        "FullText_value1": ""
+      },
+      "SystemAttributes": {
+        "SystemAttributes_value1": "848"
+      },
+      "templateId": 19373
+    },
+    "options": {
+      "fields": {
+        "FullText": {
+          "fields": {
+            "FullText_value1": {
+              "label": "Search Terms",
+              "name": "FullText_value1",
+              "order": 1,
+              "type": "text"
+            }
+          },
+          "order": 100
+        },
+        "SystemAttributes": {
+          "fields": {
+            "SystemAttributes_value1": {
+              "label": "Content Type",
+              "name": "SystemAttributes_value1",
+              "optionLabels": [
+                "",
+                "Any Type",
+                "No Type Defined",
+                "Document",
+                "Folder",
+                "Tasks",
+                "Discussions",
+                "Project",
+                "Workflow Map",
+                "Workflow",
+                "Business Workspace",
+                "Binder"
+              ],
+              "order": 2,
+              "OTRegionName": "OTSubType",
+              "type": "select"
+            }
+          },
+          "order": 300
+        },
+        "templateId": {
+          "type": "hidden"
+        }
+      }
+    },
+    "schema": {
+      "description": "You can use this sample query to search extended ECM-specific",
+      "properties": {
+        "FullText": {
+          "properties": {
+            "FullText_value1": {}
+          },
+          "title": "Full Text"
+        },
+        "SystemAttributes": {
+          "properties": {
+            "SystemAttributes_value1": {
+              "enum": [
+                "",
+                "__all__",
+                "__none__",
+                "144",
+                "0",
+                "206|212|204|205",
+                "130|134|215",
+                "202",
+                "128",
+                "189",
+                "848",
+                "31066"
+              ]
+            }
+          },
+          "title": "System Attributes"
+        },
+        "templateId": {}
+      },
+      "title": "Sample Extended ECM Query",
+      "type": "object"
+    }
+  }
+}

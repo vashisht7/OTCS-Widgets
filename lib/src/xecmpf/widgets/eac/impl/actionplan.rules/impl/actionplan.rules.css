@@ -1,0 +1,65 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+
+.xecmpf-eac-rules .xecmpf-eac-rules-container .alpaca-message {
+    display: none;
+}
+.xecmpf-eac-rules .cs-form-set .alpaca-container .alpaca-container-item.alpaca-container-item-first .cs-pull-right {
+    margin-top: initial;
+}
+.xecmpf-eac-rules .cs-form-set .alpaca-container .alpaca-container-item .cs-pull-right {
+    position: relative;
+    height: initial;
+}
+.xecmpf-eac-rules .cs-form-set .alpaca-container .alpaca-container-item .cs-pull-right .alpaca-array-actionbar {
+    position: relative;
+    height: 100%;
+}
+.xecmpf-eac-rules .cs-form-set .alpaca-container .alpaca-container-item .cs-pull-right button {
+    position: static;
+}
+.xecmpf-eac-rules .cs-formfield .cs-field-read {
+    display: flex; 
+}
+.xecmpf-eac-rules .xecmpf-eac-rules-container-wrapper .xecmpf-eac-rules-container {
+    background: #FDFDFD;
+}
+.xecmpf-eac-rules .xecmpf-eac-rules-container-wrapper .xecmpf-eac-rules-container .cs-form-set .cs-array.alpaca-container-item .cs-array-item-field-wrapper div.alpaca-container {
+    justify-content: space-between;
+}
+.xecmpf-eac-rules .xecmpf-eac-rules-container .cs-form-set .cs-array.alpaca-container-item .alpaca-field-object .alpaca-container .alpaca-container-item {
+    min-width: auto;
+    max-width: none;
+}
+.xecmpf-eac-rules .xecmpf-eac-rules-container-wrapper .xecmpf-eac-rules-container.cs-form-set .alpaca-field-array, .xecmpf-eac-rules .xecmpf-eac-rules-container-wrapper .xecmpf-eac-rules-container.cs-form-set .alpaca-field.alpaca-field-array .cs-form-set-container.alpaca-container-has-items {
+    width: 100%;
+}
+.xecmpf-eac-rules .xecmpf-eac-rules-container-wrapper .xecmpf-eac-rules-container .cs-form-set .cs-array.alpaca-container-item .cs-array-item-field-wrapper div.alpaca-container {
+    padding: 2px 11px;
+}
+.xecmpf-eac-rules .xecmpf-eac-rules-container-wrapper .xecmpf-eac-rules-container .cs-form-set .cs-array.alpaca-container-item .cs-array-item-field-wrapper div.alpaca-container .binf-col-sm-9 .cs-formfield {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.xecmpf-eac-rules .xecmpf-eac-rules-container-wrapper .xecmpf-eac-rules-container .cs-form-set .cs-array.alpaca-container-item .cs-array-item-field-wrapper div.alpaca-container > div:nth-child(1), .xecmpf-eac-rules .xecmpf-eac-rules-container-wrapper .xecmpf-eac-rules-container .cs-form-set .cs-array.alpaca-container-item .cs-array-item-field-wrapper div.alpaca-container > div:nth-child(3) {
+    flex: 0 0 34%;   
+} 
+.xecmpf-eac-rules .xecmpf-eac-rules-container-wrapper .xecmpf-eac-rules-container .cs-form-set .cs-array.alpaca-container-item .cs-array-item-field-wrapper div.alpaca-container > div:nth-child(2) {
+    flex: 0 0 21%;   
+} 
+.xecmpf-eac-rules .xecmpf-eac-rules-container-wrapper .xecmpf-eac-rules-container .cs-form-set .cs-array.alpaca-container-item .cs-array-item-field-wrapper div.alpaca-container > div:nth-child(4) {
+    flex: 0 0 11%;
+}
+.xecmpf-eac-rules .xecmpf-eac-rules-container-wrapper .cs-form-set .alpaca-container .alpaca-container-item > .binf-form-group.binf-has-error.alpaca-field > div:first-child {
+    margin: 8px 0;
+}
+.xecmpf-eac-rules-container-wrapper > .binf-row, .xecmpf-eac-rules-container-wrapper > .binf-row .xecmpf-eac-rules-container, .xecmpf-eac-rules-container-wrapper > .binf-row .xecmpf-eac-rules-container .cs-form-set-container {
+    margin: 0;
+}
+
+
+.xecmpf-eac-rules.xecmpf-eac-rules-hide-validation-errors .alpaca-field.binf-has-error .cs-field-write input, .xecmpf-eac-rules.xecmpf-eac-rules-hide-validation-errors .alpaca-field.binf-has-error .cs-field-write button {
+    background-color: inherit;
+    color: #333;
+    border-color: #a7a9ac;
+}

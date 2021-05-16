@@ -1,0 +1,73 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .cs-dialog.csui-zipanddownload-preflight-dialog .binf-modal-content {
+  border-radius: 3px 3px 0 0;
+  box-shadow: none;
+  border: 0;
+}
+
+.binf-widgets .cs-dialog.csui-zipanddownload-preflight-dialog .binf-modal-body {
+  margin-right: 0;
+  min-height: 170px;
+  padding-top: 0;
+}
+
+.binf-widgets .cs-dialog.csui-zipanddownload-preflight-dialog .binf-modal-footer {
+  background-color: #eeeeee;
+  padding: 8px 15px;
+  border-radius: 0 0 3px 3px;
+}
+
+.binf-widgets .cs-dialog.csui-zipanddownload-preflight-dialog .csui-info {
+  padding: 4px;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  align-items: center;
+}
+
+.binf-widgets .cs-dialog.csui-zipanddownload-preflight-dialog .csui-info .notification_error {
+  width: 18px;
+  height: 18px;
+  margin-right: 6px;
+}
+
+.binf-widgets .csui-preflight-table {
+  padding: 15px 24px;
+  align-items: center;
+  justify-items: center;
+  line-height: 30px;
+}
+
+.binf-widgets .csui-preflight-table .csui-preflight-cell.csui-type {
+  width: 38px;
+}
+
+.binf-widgets .csui-preflight-table .csui-preflight-cell.csui-name {
+  width: 320px;
+  padding-left: 24px;
+}
+
+.binf-widgets .csui-preflight-table.csui-preflight-table-header {
+  display: flex;
+  background-color: #eef2f4;
+  line-height: 32px;
+}
+
+.binf-widgets .csui-preflight-table-row {
+  display: flex;
+  line-height: 32px;
+  padding: 4px 0;
+}
+
+.binf-widgets .csui-zipanddownload-preflight-dialog.csui-preflight-check .binf-modal-dialog {
+  min-width: 416px;
+  top: 65px;
+  width: 416px;
+}
+
+.binf-widgets .csui-preflight-table.csui-preflight-table-body {
+  
+}

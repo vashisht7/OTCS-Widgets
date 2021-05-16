@@ -1,0 +1,12 @@
+{
+  "content": {
+    "title": "Information 1",
+    "icon": "mime_onenote",
+    "metadata": [
+      {
+        "type": "category",
+        "categoryId": 12345
+      }
+    ]
+  }
+}

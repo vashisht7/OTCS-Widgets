@@ -1,0 +1,86 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .csui-permissions-level.conws-addoreditrole-dialog.cs-dialog .conws-addoreditrole-roleparticipants-body {
+  padding: 16px 32px 0 32px;
+  display: flex;
+}
+
+.binf-widgets .csui-permissions-level.conws-addoreditrole-dialog.cs-dialog .conws-addoreditrole-roleparticipants-left {
+  width: 304px;
+  float: left;
+}
+
+.binf-widgets .csui-permissions-level.conws-addoreditrole-dialog.cs-dialog .conws-addoreditrole-roleparticipants-right {
+  width: calc(100% - 304px);
+  float: right;
+}
+
+.binf-widgets .csui-permissions-level.conws-addoreditrole-dialog.cs-dialog .conws-addoreditrole-roleparticipants-members-body {
+  width: 100%;
+  padding: 12px 32px 0 24px;
+}
+
+.binf-widgets .csui-permissions-level.conws-addoreditrole-dialog.cs-dialog .conws-addoreditrole-roleparticipants-userpicker-title {
+  font-size: 12px;
+  line-height: 24px;
+  padding: 1px 0 8px 0;
+}
+
+.binf-widgets .csui-permissions-level.conws-addoreditrole-dialog.cs-dialog .csui-control-userpicker {
+  height: 28px;
+}
+
+.binf-widgets .csui-permissions-level.conws-addoreditrole-dialog.cs-dialog .conws-addoreditrole-roleparticipants-userpicker .binf-form-control {
+  padding: 4px 26px;
+  height: 28px;
+}
+
+.binf-widgets .csui-permissions-level.conws-addoreditrole-dialog.cs-dialog .conws-addoreditrole-roleparticipants-userpicker .csui-control-userpicker .cs-search-icon {
+  left: 0.5em;
+  top: calc(50% - 7px);
+}
+
+.conws-addoreditrole-roleparticipants .conws-participant .esoc-user-profile-pic-container img, .conws-addoreditrole-roleparticipants .conws-participant .esoc-user-profile-pic-container span {
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+  top: calc(50% - 1rem);
+}
+
+.binf-widgets .conws-addoreditrole-roleparticipants-userpicker .binf-form-control {
+  padding: 6px 26px;
+}
+
+.binf-widgets .conws-addoreditrole-roleparticipants-userpicker .cs-search {
+  position: relative;
+  box-shadow: none;
+  width: 100%;
+}
+
+.binf-widgets .conws-addoreditrole-roleparticipants-userpicker .cs-search-clear {
+  right: 1em;
+  top: calc(50% - 7px);
+}
+
+.binf-widgets .conws-addoreditrole-roleparticipants-userpicker .scroll-container {
+  position: absolute;
+  width: 100%;
+}
+
+.conws-addoreditrole-roleparticipants .binf-modal-body {
+  position: relative;
+  margin-right: 0 !important;
+  background-color: #ffffff;
+  padding: 0;
+}
+
+.conws-addoreditrole-roleparticipants .conws-addoreditrole-roleparticipants-members {
+  background-color: #ffffff;
+  min-height: 22rem;
+  max-height: 22rem;
+  position: relative;
+}
+
+.conws-addoreditrole-roleparticipants-members-exist {
+  width: 48%;
+}

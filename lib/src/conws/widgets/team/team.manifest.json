@@ -1,0 +1,22 @@
+{
+  "$schema": "http://opentext.com/cs/json-schema/draft-04/schema#",
+  "title": "{{widgetTitle}}",
+  "description": "{{widgetDescription}}",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": "object",
+        "title": "{{tileTitle}}",
+        "description": "{{tileDescription}}"
+      }
+    }
+  },
+  "options": {
+    "fields": {
+      "title": {
+        "type": "otcs_multilingual_string"
+      }
+    }
+  }
+}

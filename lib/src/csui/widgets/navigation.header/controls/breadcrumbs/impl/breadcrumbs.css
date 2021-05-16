@@ -1,0 +1,64 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.breadcrumbs-handle {
+  height: 100%;
+}
+
+.breadcrumbs-handle.csui-breadcrumbs-not-available {
+  display: none;
+}
+
+.breadcrumbs-handle .binf-btn {
+  display: none;
+  transition: width 0.2s;
+  background: transparent;
+  color: #ffffff;
+  width: 3em;
+  line-height: 18px;
+}
+
+.breadcrumbs-handle .binf-btn.binf-btn-default,
+.breadcrumbs-handle .binf-btn.binf-btn-default:hover {
+  color: #ffffff;
+}
+
+
+.breadcrumbs-handle.csui-breadcrumbs-hidden .caret-show-breadcrumb,
+.breadcrumbs-handle:not(.csui-breadcrumbs-hidden) .caret-hide-breadcrumb {
+  display: block;
+  background: transparent;
+}
+
+.breadcrumbs-handle .csui-breadcrumb-handle-caret {
+  height: 100%;
+}
+
+
+.breadcrumbs-handle:hover .csui-breadcrumb-handle-caret {
+  display: none;
+}
+
+.breadcrumbs-handle .csui-breadcrumb-handle-btn {
+  border-color: #ffffff;
+  border-radius: 16px;
+}
+
+
+.breadcrumbs-handle.csui-breadcrumbs-hidden:hover .btn-show-breadcrumb,
+.breadcrumbs-handle:not(.csui-breadcrumbs-hidden):hover .btn-hide-breadcrumb {
+  display: flex;
+  width: auto;
+  margin: 14px 0 0 2px;
+  background-color: transparent;
+}
+
+.binf-widgets .breadcrumbs-handle .binf-btn:hover {
+  background-color: transparent;
+  border-color: #ffffff;
+  line-height: 18px;
+}
+
+.binf-widgets .breadcrumbs-handle:focus {
+  outline: 1px dotted white;
+  outline-offset: -2px;
+}

@@ -1,0 +1,31 @@
+{
+  "links": {
+    "data": {
+      "self": {
+        "body": "",
+        "content_type": "",
+        "href": "\/api\/v2\/businessworkspacetypes?bo_type=EQUI&expand_templates=true&ext_system_id=D7K",
+        "method": "GET",
+        "name": ""
+      }
+    }
+  },
+  "results": [{
+    "data": {
+      "properties": {
+        "rm_enabled": false,
+        "templates": [{
+          "id": 25097,
+          "name": "Equipment",
+          "subtype": 848
+        }],
+        "wksp_type_id": 2,
+        "wksp_type_name": "Equipment"
+      },
+      "wksp_info": {
+        "wksp_type_icon": null,
+        "wksp_type_icon_content_type": "type_base64_content"
+      }
+    }
+  }]
+}

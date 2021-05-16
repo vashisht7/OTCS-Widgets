@@ -1,0 +1,154 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .csui-control-typeaheadpicker {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.csui-control-typeaheadpicker .cs-search {
+  position: absolute;
+  width: calc(100% - 2em);
+}
+
+.csui-control-typeaheadpicker .cs-search::-ms-clear {
+  display: none;
+}
+
+.csui-control-typeaheadpicker .cs-search-clear {
+  position: absolute;
+  height: 1em;
+  width: 1em;
+  right: 2.5em;
+  top: 0.5625em;
+}
+
+.csui-control-typeaheadpicker .cs-search-icon {
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  right: 0.25em;
+  top: 0.5625em;
+}
+
+.csui-control-typeaheadpicker .binf-dropdown-menu {
+  font-size: 16px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.csui-control-typeaheadpicker .binf-dropdown-menu > li {
+  margin: 0;
+  padding: 1em;
+  border: 1px solid #dddddd;
+  border-bottom: 0.063em solid #e6e6e6;
+  overflow: auto;
+  height: auto;
+}
+
+.csui-control-typeaheadpicker .binf-dropdown-menu > li.binf-active {
+  background-color: #bac9ce;
+  cursor: pointer;
+}
+
+.csui-control-typeaheadpicker .binf-dropdown-menu > li > a {
+  padding: 0px 0px;
+}
+
+.csui-control-typeaheadpicker .scroll-container {
+  overflow: hidden;
+  position: relative;
+  width: 15em;
+  z-index: 1002;
+  border: 1px solid rgba(0, 0, 0, .15);
+  border-radius: 4px;
+}
+
+.csui-control-typeaheadpicker .scroll-container .binf-dropdown-menu {
+  position: static;
+  border: 0px;
+  border-radius: 0px;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  max-width:100%;
+}
+
+.csui-typeaheadpicker-item .item-picture.binf-disabled {
+  opacity: 0.5
+}
+
+.csui-typeaheadpicker-item .item-picture .csui-icon {
+  display: -webkit-box; 
+  display: -moz-box; 
+  display: -ms-flexbox; 
+  display: -webkit-flex; 
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.csui-typeaheadpicker-item .item-info {
+  font-size: 16px;
+}
+
+.csui-typeaheadpicker-item .item-info.lightweight {
+  width: 100%;
+}
+
+.csui-typeaheadpicker-item .item-info.fullweight {
+  padding-left: 1em;
+  width: calc(100% - 2em);
+}
+
+.csui-typeaheadpicker-item .item-info > span {
+  color: #414042;
+}
+
+.csui-typeaheadpicker-item .item-info.binf-disabled > span {
+  color: #757575;
+}
+
+.csui-typeaheadpicker-item .item-info .name {
+  font-size: 1em;
+  line-height: normal;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.csui-typeaheadpicker-item .item-info .more {
+  font-size: 0.75em;
+  line-height: 1.175em;
+  clear: both;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.csui-typeaheadpicker-item .item-info .more {
+  margin-top: 0.75em;
+}
+
+.csui-typeaheadpicker-item .item-info.binf-disabled .message {
+  color: #df3324;
+  font-size: 0.75em;
+  line-height: 0.875em;
+  clear: both;
+  margin-top: 0.75em;
+}
+
+.csui-control-typeaheadpicker .binf-dropdown-menu .csui-typeahead-picker-no-results,
+.csui-control-typeaheadpicker .binf-dropdown-menu .csui-typeahead-picker-no-results:hover {
+  padding: 10px;
+  background-color: #3b73af;
+  color: #ffffff;
+}
+
+.typeahead.binf-dropdown-menu.csui-no-results-wrapper {
+  width: calc(100%);
+}
+
+.csui-control-typeaheadpicker .picker-spacer{
+  height:500px;
+}

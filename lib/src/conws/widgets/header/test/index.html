@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Business Workspace Header Widget</title>
+
+    <link rel="stylesheet" href="../../../../csui/themes/carbonfiber/theme.css">
+
+    <script src="../../../../csui/lib/require.js"></script>
+    <script src="../../../../csui/config.js" data-csui-path="../../../../csui"></script>
+    <script src="../../../../csui/helpers.js"></script>
+    <script>
+
+		require.config({
+		  deps: [
+			'csui/lib/require.config!csui/csui-extensions.json'
+		  ]
+		});
+		
+        require.config({
+            paths: {
+                conws: '../../..',
+                esoc:'../../../../esoc'
+            },
+            config: {
+                'csui/utils/contexts/factories/connector': {
+                    connection: {
+                        url: '//server/otcs/cs/api/v1',
+                        supportPath: '/support',
+                        session: {
+                            ticket: 'dummy'
+                        }
+                    }
+                }
+            }
+        });
+
+        require([
+            "csui/lib/underscore",
+            "csui/lib/marionette",
+            'csui/utils/contexts/page/page.context',
+            'csui/perspectives/tabbed/tabbed.perspective.view',
+            './header.mock',
+            'csui/widgets/myassignments/test/myassignments.mock.data',
+            'csui/widgets/recentlyaccessed/test/recentlyaccessed.mock.data'
+        ], function (_, Marionette, PageContext, TabbedPerspectiveView) {
+
+            var contentRegion = new Marionette.Region({
+                el: "body"
+            })
+
+            var pageContext = new PageContext({
+                factories: {
+                    connector: {
+                        connection: {
+                            url: '//server/otcs/cs/api/v1',
+                            supportPath: '/support',
+                            session: {
+                                ticket: 'dummy'
+                            }
+                        }
+                    },
+                    node: {
+                        attributes: {id: 19598}
+                    }
+                }
+            });
+
+            var perspectiveConfig =                     {
+                "header": {
+                    "widget": {
+                        "type": "conws/widgets/header",
+                        "options": {
+                            "workspace": {
+                                "properties": {
+                                    "title": "{name}",
+                                    "type": "{business_properties.workspace_type_name}",
+                                    "description": "{categories.23228_18_1_19} {categories.23228_18_1_21}. {categories.23228_2_1_8}",
+                                    "info": "{categories.20368_3}.\n\nValid from: {categories.23228_2_1_39}\nValid to: {categories.23228_2_1_40}"
+                                }
+                            },
+                            "widget": { "type": "activityfeed"}
+                        }
+                    }
+                },
+                "tabs": [
+                    {
+                        "title": "Overview",
+                        "columns": [
+                            {
+                                "sizes": {
+                                    "sm": 6,
+                                    "md": 5,
+                                    "lg": 4
+                                },
+                                "widget": {
+                                    "type": "myassignments"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Documents",
+                        "columns": [
+                            {
+                                "sizes": {
+                                    "sm": 6,
+                                    "md": 3,
+                                    "lg": 4
+                                },
+                                "widget": {
+                                    "type": "recentlyaccessed"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            };
+
+            var perspectiveView = new TabbedPerspectiveView(_.defaults({ context: pageContext }, perspectiveConfig));
+            perspectiveView.widgetsResolved.always(function () {
+                contentRegion.show(perspectiveView);
+                pageContext.fetch();
+            });
+        });
+
+    </script>
+
+</head>
+<body class="binf-widgets"></body>
+</html>
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

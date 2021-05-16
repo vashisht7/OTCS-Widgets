@@ -1,0 +1,59 @@
+
+<div id="header"></div>
+<div class="binf-container-fluid">
+  <div class="csui-facet-table-container">
+    <div class="csui-search-left-panel csui-popover-panel csui-is-hidden">
+      <div class="csui-popover-panel-container">
+        {{#if enableCustomSearch}}
+          <div class="csui-search-left-panel-tabs">
+          <ul role="tablist">
+              <li class="csui-tab csui-search-custom-tab" role="presentation">
+                <a title="{{messages.customSearchTab}}" tabindex="0"  role="tab">
+                  <span>{{messages.customSearchTab}}</span>
+                </a>
+              </li>
+              {{#if showFacetPanel}}
+                <li class="csui-tab csui-search-facet-tab" role="presentation">
+                  <a title="{{messages.searchFilterTab}}" tabindex="0" role="tab">
+                    <span>{{messages.searchFilterTab}}</span>
+                  </a>
+                </li>
+              {{/if}}
+            </ul>
+          </div>
+        {{/if}}
+        <div class="csui-search-left-panel-content"  role="tabpanel">
+          {{#if enableCustomSearch}}
+            <div class="csui-search-results-custom">
+              <div id="csui-search-custom-container"></div>
+            </div>
+          {{/if}}
+          <div id="facetview" class="csui-facetview"></div>
+        </div>
+      </div>
+    </div>
+    <div class="csui-search-results-body binf-col-lg-12 binf-col-md-12 binf-col-xs-12">
+      <div id="csui-search-custom-results">
+        <div class="csui-search-results-content binf-col-lg-12 binf-col-md-12">
+          <div id="facetbarview"></div>
+          <div
+              class="csui-search-tool-container binf-hidden binf-col-lg-12 binf-col-md-12 binf-col-sm-12 binf-col-xs-12">
+            <div class='csui-standard-header-view' id="csui-standard-header-view"></div>
+          </div>
+          <div id="results" tabindex="-1" class="csui-result-list binf-col-lg-12 binf-col-md-12
+          binf-col-sm-12 binf-col-xs-12"></div>
+          <div class='csui-search-loading-wrapper'>
+            <div class='csui-search-loading'>{{loadingMessage}}</div>
+          </div>
+          <div
+              class="csui-search-row-divider binf-col-lg-12 binf-col-md-12 binf-col-sm-12 binf-col-xs-12"></div>
+        </div>
+
+        <div id="pagination"
+             class="binf-col-lg-12 binf-col-md-12 binf-col-sm-12 binf-col-xs-12"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

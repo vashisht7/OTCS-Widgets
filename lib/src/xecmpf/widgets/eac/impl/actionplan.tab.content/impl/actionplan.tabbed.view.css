@@ -1,0 +1,54 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .xecmpf-eac-actionplan-tabbed-inner-wrapper .xecmpf-eac-actionplan-content {
+    height: calc(100% - 48px);
+    border-bottom: 1px solid #e5e5e5;
+    position: relative; 
+}
+.xecmpf-actionpan-details-view .xecmpf-eac-actionplan-content .binf-tab-content {
+    height: calc(100% - 3rem);
+}
+.xecmpf-actionpan-details-view .xecmpf-eac-actionplan-tabbed-inner-wrapper .xecmpf-eac-actionplan-content .cs-metadata-properties .binf-tab-content div[role='tabpanel'] {
+    padding: 1.7em 2.3em 0.25em 2.3em;
+    border: none;
+}
+.xecmpf-actionpan-details-view .xecmpf-eac-actionplan-tabbed-inner-wrapper .xecmpf-eac-actionplan-content .binf-tab-content div[role='tabpanel'] > .cs-form {
+    width: 71%;
+}
+.xecmpf-actionpan-details-view  .tab-links {
+    background-color: #EEF2F4;
+}
+.xecmpf-actionpan-details-view  .tab-links .tab-links-bar .binf-nav li {
+    padding: 0 15px;
+}
+.xecmpf-actionpan-details-view  .tab-links .tab-links-bar .binf-nav li a {
+    height: 3rem;
+}
+.xecmpf-actionpan-details-view  .tab-links .tab-links-bar .binf-nav li span {
+    font-size: 14px;
+}
+.xecmpf-eac-actionplan-footer .binf-btn {
+    height: 32px;
+    padding: 0 24px;
+    margin-left: 16px;
+    vertical-align: middle;
+    border-radius: 16px;
+    font-size: 14px;
+    line-height: 12px;
+}
+
+.xecmpf-eac-actionplan-footer-container {
+    height: 48px;
+    background-color: #f2f2f2;
+}
+
+.xecmpf-eac-actionplan-footer-container .xecmpf-eac-actionplan-footer {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-right: 16px;
+}
+
+.xecmpf-eac-actionplan-tabbed-inner-wrapper .xecmpf-eac-actionplan-content .tab-links {
+    border-bottom: 1px solid #dddddd;
+}

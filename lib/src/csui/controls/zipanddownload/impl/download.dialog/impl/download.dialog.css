@@ -1,0 +1,205 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .cs-dialog.csui-download-dialog .binf-modal-content {
+  border-radius: 3px 3px 0 0;
+  box-shadow: none;
+  border: 0;
+}
+
+.binf-widgets .csui-zipanddownload-filename {
+  border-bottom: none;
+  padding: 10px 10px 16px 4px;
+}
+
+.binf-widgets .csui-zipanddownload-filename label {
+  padding: 6px 10px 0px 0px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.binf-widgets .csui-zipanddownload-filename input {
+  width: 285px;
+  height: 27px;
+  background: #ffffff;
+  border: 1px solid #757575;
+  box-sizing: border-box;
+  border-radius: 3px;
+  position: absolute;
+  padding: 0 8px;
+}
+
+.binf-widgets .csui-zipanddownload-filename input:focus {
+  border: 2px solid #757575;
+  box-shadow: none;
+  outline: 1px dotted #333333;
+  outline-offset: -1px;
+}
+
+.binf-widgets .cs-dialog.csui-download-dialog .csui-info {
+  padding: 7px;
+  display: flex;
+  justify-content: center;
+}
+
+.binf-widgets .cs-dialog.csui-download-dialog .csui-info .notification_warning_orange {
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+  background-repeat: no-repeat;
+}
+
+.binf-widgets .cs-dialog.csui-download-dialog .csui-info .notification_message {
+  line-height: 24px;
+  font-size: 14px;
+  color: #333333;
+  font-weight: 600;
+}
+
+.binf-widgets .csui-download-dialog .csui-skipped-item-table {
+  display: flex;
+  padding: 0;
+  align-items: center;
+  justify-items: center;
+}
+
+.binf-widgets .csui-skipped-item-table {
+  padding: 15px 24px;
+  align-items: center;
+  justify-items: center;
+  line-height: 30px;
+  display: flex;
+}
+
+.binf-widgets .csui-download-table-row {
+  display: flex;
+  line-height: 32px;
+  padding: 5px 0;
+  justify-content: space-around;
+}
+
+.binf-widgets .csui-unprocessed-item-list {
+  background: rgba(255, 184, 0, 0.2);
+  border-radius: 3px;
+}
+
+.binf-widgets .csui-unprocessed-item-list .csui-info {
+  padding: 12px 7px;
+}
+
+.binf-widgets .csui-skipped-item-table.csui-download-table-header {
+  background: rgba(255, 184, 0, 0.3);
+  justify-content: space-around;
+}
+
+.binf-widgets .csui-skipped-item-table .csui-skipped-item-cell {
+  padding: 0 0 0 24px;
+  line-height: 32px;
+}
+
+.binf-widgets .csui-skipped-container {
+  line-height: normal;
+  font-size: 14px;
+}
+
+.binf-widgets .csui-skipped-item-table .csui-skipped-item-cell.csui-type {
+  width: 56px;
+  align-items: center;
+}
+
+.binf-widgets .csui-skipped-item-table .csui-skipped-item-cell.csui-name {
+  width: 330px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.binf-widgets .csui-skipped-item-table .csui-skipped-item-cell.csui-name span {
+  width: calc(100% - 24px);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.binf-widgets .csui-skipped-item-table .csui-skipped-item-cell.csui-location {
+  width: 200px;
+  display: flex;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.binf-widgets .csui-skipped-item-table .csui-skipped-item-cell.csui-location .csui-location-name {
+  width: calc(100% - 32px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.binf-widgets .csui-skipped-item-table .csui-skipped-item-cell.csui-message {
+  width: 200px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.binf-widgets .csui-download-dialog .binf-modal-dialog {
+  min-width: 840px;
+  top: 65px;
+}
+
+.binf-widgets .cs-dialog.csui-download-dialog .binf-modal-footer {
+  background-color: #eeeeee;
+  padding: 8px 24px;
+  border-radius: 0 0 3px 3px;
+}
+
+.binf-widgets .cs-dialog.csui-download-dialog .csui-archive-name-error-container {
+  padding: 0px 6px 10px 96px;
+  color: red;
+  font-size: 12px;
+}
+
+.binf-widgets .cs-dialog.csui-download-dialog .binf-modal-content .binf-modal-body {
+  min-height: 70px;
+  padding: 0 24px 24px;
+  margin-right: 0;
+}
+
+.binf-widgets .csui-download-dialog .csui-skipped-item-table.csui-download-table-body {
+  display: block;
+  overflow: hidden;
+  max-height: calc(50vh - 24px);
+}
+
+.binf-widgets .csui-download-dialog .csui-skipped-item-table.csui-download-table-body.csui-normal-scrolling {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.binf-widgets .cs-dialog.csui-download-dialog .binf-modal-content .binf-modal-header {
+  background: #dce4e8;
+  border-radius: 3px 3px 0px 0px;
+}
+
+.binf-widgets .cs-dialog.csui-download-dialog .binf-modal-content .binf-modal-header .csui-heading {
+  font-size: 20px;
+  font-weight: 600;
+  padding-left: 4px;
+}
+
+@media (max-width: 768px) {
+  .binf-widgets .csui-download-dialog .binf-modal-dialog {
+    min-width: 726px;
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 2dppx),                               
+(min-resolution: 192dpi) {                                
+  .binf-widgets .csui-download-dialog .binf-modal-dialog {
+    min-width: 726px;
+  }
+  .binf-widgets .csui-download-dialog .csui-skipped-item-table.csui-download-table-body {
+    max-height: calc(28vh - 24px);
+  }
+}

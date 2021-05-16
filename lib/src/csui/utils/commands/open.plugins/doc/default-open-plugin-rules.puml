@@ -1,0 +1,20 @@
+@startuml
+
+(*) --> if "Download is enforced\n(in the Open command)" then
+  ->[true] "Download"
+else
+  -->[false] if "Brava Viewer is enabled and fits\n(sequence 400)" then
+   ->[true] "Show in Brava Viewer"
+else
+  -->[false] if "CS Viewer is enabled and fits\n(sequence 600)" then
+   ->[true] "Show in CS Viewer"
+  else
+    -->[false] if "Browser is enabled and fits\n(sequence 800)" then
+     ->[true] "Show in browser"
+    else
+      -->[false] "Download (fallback)"
+    endif
+  endif
+endif
+
+@enduml

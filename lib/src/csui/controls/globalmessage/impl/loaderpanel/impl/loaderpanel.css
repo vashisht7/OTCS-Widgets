@@ -1,0 +1,55 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .csui-loaderpanel {
+  background-color: #ffffff;
+  width: 100%;
+  min-width: 482px;
+  max-width: 752px;
+  position: relative;
+  padding: 20px 16px;
+  z-index: 1200;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+}
+
+.csui-loaderpanel a {
+  cursor: pointer;
+  color: #2E3D98;
+}
+
+.binf-widgets .csui-global-message.position-show {
+  z-index: 1200;
+}
+
+.binf-widgets .csui-loaderpanel .csui-loaderpanel-inner {
+  vertical-align: middle;
+  height: 10px;
+  width: 140px;
+  border-radius: 5px;
+  background: #E1E8F6;
+  position: relative;
+  margin: 5px 0;
+}
+
+.binf-widgets .csui-loaderpanel .csui-loaderpanel-inner:before {
+  content: "";
+  width: 30%;
+  height: 10px;
+  border-radius: 5px;
+  background: #111fb0;
+  position: absolute;
+  left: 0;
+  animation: csui-loaderpanel-loading 4s infinite cubic-bezier(.41,.32,.4,.74);
+}
+
+@-webkit-keyframes csui-loaderpanel-loading {
+  50% {
+    left: 70%;
+  }
+}
+
+@keyframes csui-loaderpanel-loading {
+  50% {
+    left: 70%;
+  }
+}

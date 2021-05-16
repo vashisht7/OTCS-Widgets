@@ -1,0 +1,376 @@
+{
+  "businessworkspacetypes": [
+    {
+      "id": 14,
+      "name": "Business_workspace_maxmized",
+      "rm_enabled": false,
+      "templates": [
+        {
+          "id": 21884630,
+          "name": "Business_workspace_template",
+          "subType": 848
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "ESoc_Forum",
+      "rm_enabled": false,
+      "templates": [
+        {
+          "id": 18213391,
+          "name": "Business_ws_template",
+          "subType": 848
+        },
+        {
+          "id": 20708780,
+          "name": "Rename_template",
+          "subType": 848
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "name": "refcat",
+      "rm_enabled": false,
+      "templates": [
+        {
+          "id": 30639820,
+          "name": "Child BWS Template",
+          "subType": 848
+        },
+        {
+          "id": 30639598,
+          "name": "Parent BWS Template",
+          "subType": 848
+        },
+        {
+          "id": 30639716,
+          "name": "refcat",
+          "subType": 848
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Forum_workspace",
+      "rm_enabled": false,
+      "templates": [
+        {
+          "id": 18586503,
+          "name": "Forum_ws_template",
+          "subType": 848
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Hyd",
+      "rm_enabled": false,
+      "templates": [
+        {
+          "id": 18130035,
+          "name": "Hyd",
+          "subType": 848
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "MultivalueAttrs",
+      "rm_enabled": false,
+      "templates": [
+        {
+          "id": 20581553,
+          "name": "MultivalueAttrs",
+          "subType": 848
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "name": "SatyaWT",
+      "rm_enabled": false,
+      "templates": [
+        {
+          "id": 29571083,
+          "name": "MyWorkSpace_satya",
+          "subType": 848
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Navyas",
+      "rm_enabled": false,
+      "templates": [
+        {
+          "id": 18121346,
+          "name": "Navyas template_hello_testing with_lengthyname__hello_testing with_lengthyname__hello_testing with_lengthyname__hello_testing with_lengthyname__hello_testing with_lengthyname__hello_testing with_lengthyname__hello_testing with_lengthyname__hello_te",
+          "subType": 848
+        },
+        {
+          "id": 18456160,
+          "name": "test",
+          "subType": 848
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "name": "Project Workspace Type",
+      "rm_enabled": false,
+      "templates": [
+        {
+          "id": 35828595,
+          "name": "Project Pademelon",
+          "subType": 848
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "name": "TKL Issue WT 2",
+      "rm_enabled": false,
+      "templates": [
+        {
+          "id": 31346561,
+          "name": "TKL Issue Template",
+          "subType": 848
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "suzana",
+      "rm_enabled": false,
+      "templates": [
+        {
+          "id": 19963596,
+          "name": "suzana",
+          "subType": 848
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "suzanak",
+      "rm_enabled": false,
+      "templates": [
+        {
+          "id": 20471559,
+          "name": "suzanak",
+          "subType": 848
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Business Partner",
+      "rm_enabled": false,
+      "templates": [
+        {
+          "id": 21428915,
+          "name": "Business Partner",
+          "subType": 848
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Contract",
+      "rm_enabled": false,
+      "templates": [
+        {
+          "id": 21428365,
+          "name": "Sales Agreement - Product",
+          "subType": 848
+        },
+        {
+          "id": 21455329,
+          "name": "Sales Agreement - Services",
+          "subType": 848
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "name": "NK_Business workspace without header",
+      "rm_enabled": false,
+      "templates": [
+        {
+          "id": 29949463,
+          "name": "NK_BWS_for_w\/o_header scenario",
+          "subType": 848
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Team",
+      "rm_enabled": false,
+      "templates": [
+        {
+          "id": 28300641,
+          "name": "Team",
+          "subType": 848
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Human Resources Employee Records",
+      "rm_enabled": true,
+      "templates": [
+        {
+          "id": 30321038,
+          "name": "HR Workspace template",
+          "subType": 848
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "name": "Legal",
+      "rm_enabled": false,
+      "templates": [
+        {
+          "id": 32410539,
+          "name": "Corporate",
+          "subType": 848
+        },
+        {
+          "id": 32410652,
+          "name": "Customer",
+          "subType": 848
+        },
+        {
+          "id": 32410444,
+          "name": "Ligitation",
+          "subType": 848
+        },
+        {
+          "id": 32411116,
+          "name": "Partner",
+          "subType": 848
+        },
+        {
+          "id": 32410212,
+          "name": "Vendor",
+          "subType": 848
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "name": "Matter",
+      "rm_enabled": false,
+      "templates": [
+        {
+          "id": 32509522,
+          "name": "Matter",
+          "subType": 848
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Work Center",
+      "rm_enabled": false,
+      "templates": [
+        {
+          "id": 21039405,
+          "name": "Work Center",
+          "subType": 848
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "PI Customer",
+      "rm_enabled": false,
+      "templates": [
+        {
+          "id": 24177767,
+          "name": "PI Customer",
+          "subType": 848
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "brigk1",
+      "rm_enabled": false,
+      "templates": [
+        {
+          "id": 24371839,
+          "name": "brigk1",
+          "subType": 848
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "brigk2",
+      "rm_enabled": false,
+      "templates": [
+        {
+          "id": 30289578,
+          "name": "brigk2",
+          "subType": 848
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Problem solving",
+      "rm_enabled": false,
+      "templates": [
+        {
+          "id": 18545145,
+          "name": "PDCA",
+          "subType": 848
+        },
+        {
+          "id": 20689863,
+          "name": "PDCA with Forum",
+          "subType": 848
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Quality Notification",
+      "rm_enabled": false,
+      "templates": [
+        {
+          "id": 18543163,
+          "name": "Customer complaint",
+          "subType": 848
+        },
+        {
+          "id": 18543054,
+          "name": "Internal complaint",
+          "subType": 848
+        },
+        {
+          "id": 18545143,
+          "name": "Vendor complaint",
+          "subType": 848
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "name": "STG Wksp Type",
+      "rm_enabled": false,
+      "templates": [
+        {
+          "id": 30389015,
+          "name": "STG Wksp Tmpl",
+          "subType": 848
+        }
+      ]
+    }
+  ]
+}

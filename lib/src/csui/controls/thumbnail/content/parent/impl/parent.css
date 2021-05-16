@@ -1,0 +1,29 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .csui-thumbnail-parent {
+  display: flex;
+  cursor: pointer;
+  white-space: normal;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+  line-height: 18px;
+}
+
+.binf-widgets .cs-thumbnail-wrapper .csui-thumbnail-overview .csui-overview-container .csui-thumbnail-parent .csui-parent-name {
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+  border: none;
+  text-overflow: ellipsis;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: 24px;
+  background: transparent;
+}
+
+.binf-widgets .csui-thumbnail-parent .csui-thumbnail-parent-icon {
+  width: 32px;
+  height: 32px;
+}

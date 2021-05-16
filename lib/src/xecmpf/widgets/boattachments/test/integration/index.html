@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/csui/themes/carbonfiber/theme.css">
+    
+    <script src="../../../../../csui/lib/require.js"></script>
+    <script src="../../../../../csui/config.js" data-csui-path="../../../../../csui"></script>
+    <script src="../../../../../csui/helpers.js"></script>
+    <style>
+        body {
+            margin: 0;
+            height: 100%;
+            overflow-y: hidden;
+            overflow-x: hidden;
+            padding-right: 0px !important;
+        }
+    </style>
+
+    <script>
+        var connection1 = {
+            url: '//server/otcs/cs/api/v2',
+            session: {
+             ticket: 'dummy'
+             },
+            supportPath: '/support'
+        };
+        csui.require.config({
+            paths: {
+//                'mock':  'http://vmuscs.eng-muc.opentext.net:7777/src/widgets/workspaces/test',
+                xecmpf: '../../../../../src',
+                csui: '../../../../../csui'
+            },
+            'csui/utils/contexts/factories/connector': {
+                connection: connection1,
+            },
+            'csui/utils/contexts/factories/node': {
+                attributes: {id: 11111}
+            },
+            deps: ['csui/lib/require.config!csui/csui-extensions.json']
+        });
+
+        if (csui.define)
+            define = csui.define;
+
+        csui.setLanguage('en_US');
+        csui.onReady2([ 'csui/lib/marionette',
+                        "csui/lib/jquery",
+                    'xecmpf/widgets/boattachments/boattachments.view',
+                    'csui/utils/contexts/page/page.context',
+                    'xecmpf/widgets/boattachments/test/boattachments.mock'
+        ],
+
+                function (Marionette, $, BOAttachmentsView, PageContext, Mock, DataManager) {
+                    Mock.enable();
+                    var contentRegion = new Marionette.Region({el: '#widgetWMainWindow'}),
+//                        pageContext = new PageContext(),
+                        pageContext = new PageContext({
+                            factories: {
+                                connector: {
+                                    connection: connection1,
+                                    assignTo: function (model) {
+                                        if (model.connector) {
+                                            if (model.connector === this) {
+                                                return;
+                                            }
+                                        }
+                                        model.connector = this;
+                                    }
+                                },
+                            }
+                        }),
+                        boAttachmentsView = new BOAttachmentsView({
+                            "context": pageContext,
+                            "data": {
+//                                "busObjectId": '0000000175',
+//                                "busObjectType": 'KNA1',
+//                                "extSystemId": 'D9A',
+
+//                                "businessattachment": {
+//                                    "properties": {
+//                                        "busObjectId": "{categories.294244_2} ",
+//                                        "busObjectType": "{categories.294244_3} ",
+//                                        "extSystemId": "{categories.294244_4} "
+//                                    }
+//                                },
+                                // for integration in fiori/BCW etc. we need this sort of config
+                                "businessattachment": {
+                                    "properties": {
+                                        "busObjectId": '0000000175',
+                                        "busObjectType": 'KNA1',
+                                        "extSystemId": 'D9A'
+                                    }
+                                },
+                                "collapsedView": {
+                                    "bottomLeft": {
+                                        "label": {
+                                            "en": "Modified by"
+                                        },
+                                        "value": "{wnd_modifiedby}"
+                                    },
+                                    "bottomRight": {
+                                        "label": {
+                                            "en": "Size"
+                                        },
+                                        "value": "{size}"
+                                    },
+                                    "description": {
+                                        "value": "{modified} - abcd"
+                                    },
+                                    "noResultsPlaceholder": {
+                                        "en": "No business attachmentsX"
+                                    },
+                                    "orderBy": {
+                                        "sortColumn": "{name}",
+                                        "sortOrder": "asc"
+                                    },
+                                    "title": {
+                                        "value": "{name}"
+                                    },
+                                    "topRight": {
+                                        "label": {
+                                            "en": "VersionYY"
+                                        },
+                                        "value": "{wnd_version}"
+                                    }
+                                },
+                                "expandedView": {
+                                    "orderBy": {
+                                        "sortColumn": "{name}",
+                                        "sortOrder": "desc"
+                                    }
+                                },
+                                "foldername": "Snapshot 1",
+                                "title": {
+                                    "en": "Joe Masson"
+                                }
+                            }
+                        });
+
+                    contentRegion.show(boAttachmentsView);
+                    pageContext.fetch();
+                });
+    </script>
+</head>
+
+<body class="binf-widgets">
+<div id="widgetWMainWindow" style="height:100vh"></div>
+</body>
+
+</html>
+
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>SidePanel Control</title>
+
+  <link rel="stylesheet" href="../../../themes/carbonfiber/theme.css">
+  <style>
+    #medium .binf-modal-dialog {
+      margin-top: 200px;
+    }
+
+    #large .binf-modal-dialog {
+      margin-top: 300px;
+    }
+
+    #viewInside .binf-modal-dialog {
+      margin-top: 550px;
+    }
+
+    .binf-modal-backdrop {
+      display: none;
+    }
+
+    .sidepanel-container {
+      background-color: #ffffff;
+      padding: 20px !important;
+      margin: 20px !important;
+    }
+
+    .trigger-btn {
+      margin: 10px 0px !important;
+    }
+
+    #custom {
+      width: 500px;
+      height: 600px;
+    }
+  </style>
+
+  <style>
+    .step-view {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 500px;
+      flex-flow: column;
+    }
+
+    .step-view h1 {
+      font-size: 38px;
+      padding: 20px;
+    }
+
+    .form1.csui-sidepanel-container {
+      width: 40%;
+    }
+
+    .form2.csui-sidepanel-container {
+      width: 70%;
+    }
+
+    .form3.csui-sidepanel-container {
+      width: 30%;
+    }
+  </style>
+
+  <script src="../../../lib/require.js"></script>
+  <script src="../../../config.js" data-csui-path="../../.."></script>
+
+  <script type="text/x-template" id="step-template">
+    <div><h1> {{name}}</h1></div>
+
+    {{#if  hasAction}}
+    <div>
+      <button class="binf-btn binf-btn-default" id="customaction2">Enable Custom Action</button>
+    </div>{{/if}}
+
+    <div id="action-trigger"></div>
+  </script>
+
+  <script type="text/x-template" id="cs-view">
+    <div class="custom-search"></div>
+    <div class="results"></div>
+  </script>
+
+  <script>
+    require.config({
+      deps: [
+        'csui/lib/require.config!csui/csui-extensions.json'
+      ]
+    });
+
+    require.config({
+      config: {
+        'csui/utils/contexts/factories/connector': {
+          connection: {
+            url: 'http://murdock.opentext.com/alpha/llisapi.dll/api/v1',
+            supportPath: ''
+          }
+        }
+      }
+    });
+
+    require(['csui/lib/jquery', 'csui/lib/underscore', 'csui/lib/backbone', 'csui/lib/marionette',
+          'csui/lib/handlebars', '../side.panel.view',
+          'csui/utils/contexts/page/page.context',
+
+        ],
+
+        function ($, _, Backbone, Marionette, Handlebars, SidePanelView, PageContext) {
+
+          var StepView = Marionette.ItemView.extend({
+            className: 'step-view',
+            template: function (data) {
+              return Handlebars.compile($('#step-template').html())(data);
+            },
+            templateHelpers: function () {
+              return {
+                name: this.options.name,
+                hasAction: this.options.hasAction
+              };
+            },
+            events: {
+              'click #customaction2': function () {
+                this.trigger("update:button", "customaction2", {
+                  disabled: false
+                });
+              }
+            },
+            onRender: function () {
+              this.listenTo(this, "button:click", function (actionButton) {
+                this.$el.find("#action-trigger").text('Action Button Clicked: "' +
+                                                      actionButton.label + '"');
+              });
+
+            },
+          });
+
+          function showSidePanel(options) {
+            var sidePanel = new SidePanelView(_.extend({
+              slides: [{
+                title: 'Form1',
+                subTitle: 'Sub Title here',
+                containerClass: 'form1',
+                content: new StepView({
+                  name: 'Form1'
+                }),
+                footer: {
+                  buttons: [{
+                    label: 'Edit properties',
+                    type: 'action',
+                    className: 'binf-btn binf-btn-primary'
+                  }]
+                }
+              }, {
+                title: 'Form2',
+                containerClass: 'form2',
+                content: new StepView({
+                  name: 'Form2',
+                  hasAction: true
+                }), footer: {
+                  buttons: [{
+                    label: 'Custom Acton1',
+                    type: 'action',
+                    className: 'binf-btn binf-btn-primary'
+                  },
+                    {
+                      label: 'Custom Action2',
+                      type: 'action',
+                      id: "customaction2",
+                      disabled: true,
+                      className: 'binf-btn binf-btn-primary'
+                    }
+                  ]
+                }
+              },
+                {
+                  title: 'Confirm changes',
+                  containerClass: 'form3',
+                  content: new StepView({
+                    name: 'Changes Here'
+                  }), footer: {
+                    buttons: [{
+                      label: '(Custom) Finish',
+                      type: 'action'
+                    }]
+                  }
+                }
+              ]
+            }, options));
+            return sidePanel;
+          }
+
+          $('#simple').on('click', function () {
+            var sp = new SidePanelView({
+              title: 'Simple Usage',
+              subTitle: 'SubTitle here',
+              content: new StepView({name: 'Changes Here'})
+            });
+            sp.show();
+          });
+          $('#customFooter').on('click', function () {
+            var sp = new SidePanelView({
+              backdrop: false,
+              title: 'Custom buttons on footer',
+              content: new StepView({name: 'See footer for custom buttons'}),
+              buttons: [
+                {
+                  label: 'Custom Button',
+                  click: function(event) {
+                    event.preventDefault();
+                  }
+                }
+              ]
+            });
+            sp.show();
+          });
+
+          $('#customFooter2').on('click', function () {
+            var sp = new SidePanelView({
+              title: 'Custom buttons on footer',
+              content: new StepView({name: 'See footer for custom buttons'}),
+              footer: {
+                leftButtons: [{
+                  label: 'Left Action',
+                  close: true
+                }],
+                rightButtons: [{
+                  label: 'Custom Button2'
+                }]
+              }
+            });
+            sp.show();
+          });
+
+          $('#button1').on('click', function () {
+            var panel1 = showSidePanel({
+              openFrom: 'right'
+            });
+            panel1.show();
+          });
+
+          $('#button2').on('click', function () {
+            var panel2 = showSidePanel({
+              openFrom: 'left'
+            });
+            panel2.show();
+          });
+
+          $('#search').on('click', function () {
+            require(['csui/widgets/search.custom/search.custom.view',
+              'csui/widgets/search.results/search.results.view'], function (CustomSearch,
+                SearchResultsView) {
+
+              var pageContext = new PageContext();
+
+              var csvQueryModel = new Backbone.Model();
+
+              var customSearch = new CustomSearch({
+                context: pageContext,
+                data: {
+                  savedSearchQueryId: 1521698
+                },
+                query: csvQueryModel
+              });
+
+              var searchQueryModel = new Backbone.Model();
+
+              var inlineCustomSearch = new CustomSearch({
+                context: pageContext,
+                data: {
+                  savedSearchQueryId: 1521698
+                },
+                query: searchQueryModel
+              });
+
+              var resultsView = new SearchResultsView({
+                context: pageContext,
+                query: searchQueryModel,
+                enableBackButton: false,
+                customSearchView: inlineCustomSearch
+              });
+
+              // var csviewInstance = new CSView({context: pageContext});
+
+              var sidePanel = new SidePanelView(_.extend({
+                slides: [{
+                  title: 'CSV Form',
+                  content: customSearch,
+                  footer: {
+                    hide: true
+                  }
+                },
+
+                  {
+                    title: 'Search Result',
+                    content: resultsView,
+                    footer: {}
+                  }
+                ]
+              }));
+
+              sidePanel.listenTo(customSearch, 'click:search', function () {
+                sidePanel.trigger("click:next");
+                searchQueryModel.set(csvQueryModel.toJSON());
+                resultsView.trigger('dom:refresh');
+              });
+
+              sidePanel.show();
+              pageContext.fetch();
+            });
+          });
+
+        });
+  </script>
+</head>
+
+<body class="binf-widgets sidepanel-container">
+<div class="binf-container-fluid ">
+  <div class="binf-row">
+    <div class="binf-col-sm-6 binf-col-md-4 binf-col-lg-3" id="scrollable">
+      <button id="simple" class="binf-btn binf-btn-primary trigger-btn">Simple Usage
+      </button>
+    </div>
+    <div class="binf-col-sm-6 binf-col-md-4 binf-col-lg-3" id="expandable">
+      <button id="customFooter" class="binf-btn binf-btn-primary trigger-btn">Custom buttons on
+        footer
+      </button>
+    </div>
+    <div class="binf-col-sm-6 binf-col-md-4 binf-col-lg-3" id="searchable">
+      <button id="customFooter2" class="binf-btn binf-btn-primary trigger-btn">Custom buttons on
+        footer
+      </button>
+    </div>
+    <div class="binf-col-sm-6 binf-col-md-4 binf-col-lg-3" id="infinitely-scrollable"></div>
+    <div class="binf-col-sm-12 binf-col-md-8 binf-col-lg-6" id="header"></div>
+  </div>
+  <div class="binf-row">
+    <div class="binf-col-sm-6 binf-col-md-4 binf-col-lg-3" id="simple">
+      <button id="button1" class="binf-btn binf-btn-primary trigger-btn">Open SidePanel From Right
+      </button>
+    </div>
+    <div class="binf-col-sm-6 binf-col-md-4 binf-col-lg-3" id="scrollable">
+      <button id="button2" class="binf-btn binf-btn-primary trigger-btn">Open SidePanel from Left
+        (RTL sliding)
+      </button>
+    </div>
+    <div class="binf-col-sm-6 binf-col-md-4 binf-col-lg-3" id="expandable">
+      <button id="search" class="binf-btn binf-btn-primary trigger-btn">Open Search</button>
+    </div>
+    <div class="binf-col-sm-6 binf-col-md-4 binf-col-lg-3" id="searchable"></div>
+    <div class="binf-col-sm-6 binf-col-md-4 binf-col-lg-3" id="infinitely-scrollable"></div>
+    <div class="binf-col-sm-12 binf-col-md-8 binf-col-lg-6" id="header"></div>
+  </div>
+</div>
+
+</div>
+
+<div>
+  <div id="custom"></div>
+  <div id="result"></div>
+</div>
+</body>
+
+</html>
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

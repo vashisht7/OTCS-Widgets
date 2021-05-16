@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>conws Metadata Widget</title>
+
+    <link rel="stylesheet" href="../../../../csui/themes/carbonfiber/theme.css">
+
+    <script src="../../../../csui/lib/require.js"></script>
+    <script src="../../../../csui/config.js" data-csui-path="../../../../csui"></script>
+
+    <script>
+
+        require.config({
+            paths: {
+                conws: '../../..',
+                esoc: '../../../../esoc'
+            },
+            config: {
+                'csui/utils/contexts/factories/connector': {
+                    connection: {
+                        url: '//server/otcs/cs/api/v1',
+                        supportPath: '/support',
+                        session: {
+                            ticket: 'dummy'
+                        }
+                    }
+                }
+            },
+            "i18n": {
+                loadableLocales: {root: true}
+            },
+        });
+
+        require([
+            "csui/lib/underscore",
+            "csui/lib/marionette",
+            'csui/utils/contexts/page/page.context',
+            'csui/utils/contexts/factories/node',
+            'csui/perspectives/tabbed/tabbed.perspective.view',
+            './metadata.mock',
+            '../../header/test/header.mock',
+            'csui/widgets/myassignments/test/myassignments.mock.data',
+            'csui/widgets/recentlyaccessed/test/recentlyaccessed.mock.data',
+            'json!conws/widgets/metadata/test/widget.1.options.json',
+            'json!conws/widgets/metadata/test/widget.2.options.json',
+            'json!conws/widgets/metadata/test/widget.3.options.json',
+            'json!conws/widgets/metadata/test/widget.4.options.json',
+            'json!conws/widgets/metadata/test/widget.header.options.json'
+        ], function (_, Marionette, PageContext, NodeModelFactory, TabbedPerspectiveView,
+                     metadataMock, headerMock, myAssignmentsMock, recentlyAccessedMock,
+                     widget1Options, widget2Options, widget3Options, widget4Options, widgetHeaderOptions) {
+
+            metadataMock.enable();
+            myAssignmentsMock.enable();
+            recentlyAccessedMock.enable();
+
+            var contentRegion = new Marionette.Region({
+                el: "body"
+            });
+
+            var pageContext = new PageContext({
+                factories: {
+                    connector: {
+                        connection: {
+                            url: '//server/otcs/cs/api/v1',
+                            supportPath: '/support',
+                            session: {
+                                ticket: 'dummy'
+                            }
+                        }
+                    },
+                    node: {
+                        attributes: {id: 19500}
+                    }
+                }
+            });
+
+            var perspectiveConfig = {
+                "header": {
+                    "widget": {
+                        "type": "conws/widgets/header",
+                        "options": {
+                            "workspace": {
+                                "properties": {
+                                    "title": "{name}",
+                                    "type": "{business_properties.workspace_type_name}",
+                                    "description": "{categories.12346_3} {categories.12346_1}. {categories.12346_2}",
+                                    "info": "{categories.12346_3}.\n\nValid from: {categories.12346_1}\nValid to: {categories.12346_2}"
+                                }
+                            }
+                        }
+                    }
+                },
+                "tabs": [
+                    {
+                        "title": "Info",
+                        "columns": [
+                            {
+                                "sizes": {
+                                    "sm": 6,
+                                    "md": 5,
+                                    "lg": 3
+                                },
+                                "widget": {
+                                    "type": "conws/widgets/metadata",
+                                    "options": widget1Options.content
+                                }
+                            },
+                            {
+                                "sizes": {
+                                    "sm": 6,
+                                    "md": 5,
+                                    "lg": 3
+                                },
+                                "widget": {
+                                    "type": "conws/widgets/metadata",
+                                    "options": widget2Options.content
+                                }
+                            },
+                            {
+                                "sizes": {
+                                    "sm": 6,
+                                    "md": 5,
+                                    "lg": 3
+                                },
+                                "widget": {
+                                    "type": "conws/widgets/metadata",
+                                    "options": widget3Options.content
+                                }
+                            },
+                            {
+                                "sizes": {
+                                    "sm": 6,
+                                    "md": 5,
+                                    "lg": 3
+                                },
+                                "widget": {
+                                    "type": "conws/widgets/metadata",
+                                    "options": widget4Options.content
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Overview",
+                        "columns": [
+                            {
+                                "sizes": {
+                                    "sm": 6,
+                                    "md": 5,
+                                    "lg": 4
+                                },
+                                "widget": {
+                                    "type": "myassignments"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Documents",
+                        "columns": [
+                            {
+                                "sizes": {
+                                    "sm": 6,
+                                    "md": 3,
+                                    "lg": 4
+                                },
+                                "widget": {
+                                    "type": "recentlyaccessed"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            };
+
+
+            // TODO: As soon as conetxt fetches in the right order, remove this
+            var currentNode = pageContext.getModel(NodeModelFactory);
+
+            var perspectiveView = new TabbedPerspectiveView(_.defaults({context: pageContext}, perspectiveConfig));
+            perspectiveView.widgetsResolved.always(function () {
+                contentRegion.show(perspectiveView);
+                pageContext.fetch();
+            });
+
+        });
+
+    </script>
+
+</head>
+<body class="binf-widgets"></body>
+</html>
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Toolbar showcase</title>
+
+    <link rel="stylesheet" href="../../../themes/carbonfiber/theme.css">
+
+    <style>
+        .binf-widgets .toolcontainer {
+            background-color: #dce4e8;
+            margin: 50px;
+        }
+    </style>
+
+    <script src="../../../lib/require.js"></script>
+    <script src="../../../config.js" data-csui-path="../../.."></script>
+
+    <script type="text/x-template" id="cs-view">
+    <div class="custom-search"></div>
+    <div class="results"></div>
+  </script>
+
+    <script>
+        require.config({
+            deps: [
+                'csui/lib/require.config!csui/csui-extensions.json'
+            ]
+        });
+
+        require(['csui/lib/jquery', 'csui/lib/underscore', 'csui/lib/backbone', 'csui/lib/marionette',
+            'csui/lib/handlebars', 'csui/controls/toolbar/toolbar.view',
+            'csui/controls/toolbar/toolitems.factory',
+
+        ],
+
+            function ($, _, Backbone, Marionette, Handlebars, ToolbarView, ToolItemsFactory) {
+                var collection = new ToolItemsFactory({
+                    main: [
+                        { signature: "Properties", name: 'Props', icon: "icon icon-toolbar-metadata" },
+                        { signature: "CopyLink", name: 'Copy Link' },
+                        { signature: "CopyLink", name: 'Copy Link' },
+                        { signature: "CopyLink", name: 'Copy Link' },
+                        { signature: "CopyLink", name: 'Copy Link' },
+                        {
+                            signature: "EmailLink2", name: 'Link1',
+                            icon: "icon icon-toolbar-share"
+                        },
+                        { signature: "Sub1", name: 'Sub1', subItemOf: 'EmailLink2'},
+                        { signature: "Sub2", name: 'Sub2', subItemOf: 'EmailLink2'},
+                        { signature: "Sub21", name: 'Sub21', subItemOf: 'Sub2'},
+                        { signature: "Sub22", name: 'Sub22', subItemOf: 'Sub2'},
+                        {
+                            signature: "EmailLink", name: 'Actions',
+                            subItems: [
+                                { name: 'Item 1' },
+                                {
+                                    name: 'Item 2',
+                                    subItems: [
+                                        {name: 'Item A'},
+                                        {
+                                            name: 'Item B Item BItem BItem BItem BItem B',
+                                            subItems: [
+                                                {name: 'Item A'},
+                                                {
+                                                    name: 'Item B',
+                                                    subItems: [
+                                                        {name: 'Item A'},
+                                                        {name: 'Item BItem BItem BItem BItem BItem B'}
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                },
+                                { name: 'Item 3' },
+                                { name: 'Item 4 Long item test.' },
+                                { name: 'Item 5' },
+                                {
+                                    name: 'Item 06 Long item which has some subItems.. text',
+                                    subItems: [
+                                        { name: 'Item 1' },
+                                        { name: 'Item 2 long name test on render ul' ,
+                                        subItems: [
+                                                { name: 'Item 1' },
+                                                { name:
+                                                    'Item 2 Long item wrapping test. handling long text 3 line or more long' } ] },
+                                        { name: 'Item 3' },
+                                        { name: 'Item 4' },
+                                        {
+                                            name: 'Item 5',
+                                            subItems: [
+                                                { name: 'Item 1' },
+                                                { name: 'Item 2' },
+                                                {
+                                                    name: 'Item 3',
+                                                    subItems: [
+                                                        { name: 'Item 1' },
+                                                        { name: 'Item 2' },
+                                                        { name: 'Item 3' },
+                                                        { name: 'Item 4' },
+                                                        {
+                                                            name: 'Item 5',
+                                                            subItems: [
+                                                                { name: 'Item 1' },
+                                                                { name: 'Item 2' },
+                                                                { name: 'Item 3' },
+                                                                { name: 'Item 4' },
+                                                                {
+                                            name: 'Item 5',
+                                            subItems: [
+                                                { name: 'Item 1' },
+                                                { name: 'Item 2' },
+                                                {
+                                                    name: 'Item 3',
+                                                    subItems: [
+                                                        { name: 'Item 1' },
+                                                        { name: 'Item 2' },
+                                                        { name: 'Item 3' },
+                                                        { name: 'Item 4' },
+                                                        {
+                                                            name: 'Item 5',
+                                                            subItems: [
+                                                                { name: 'Item 1' },
+                                                                { name: 'Item 2' },
+                                                                { name: 'Item 3' },
+                                                                { name: 'Item 4' },
+                                                                { name: 'Item 5' },
+                                                                {
+                                    name: 'Item 6',
+                                    subItems: [
+                                        { name: 'Item 1' },
+                                        { name: 'Item 2' ,
+                                        subItems: [
+                                                { name: 'Item 1' },
+                                                { name: 'Item 2' } ] },
+                                        { name: 'Item 3' },
+                                        { name: 'Item 4' },
+                                        {
+                                            name: 'Item 5',
+                                            subItems: [
+                                                { name: 'Item 1' },
+                                                { name: 'Item 2' },
+                                                {
+                                                    name: 'Item 3',
+                                                    subItems: [
+                                                        { name: 'Item 1' },
+                                                        { name: 'Item 2' },
+                                                        { name: 'Item 3' },
+                                                        { name: 'Item 4' },
+                                                        {
+                                                            name: 'Item 5',
+                                                            subItems: [
+                                                                { name: 'Item 1' },
+                                                                { name: 'Item 2' },
+                                                                { name: 'Item 3' },
+                                                                { name: 'Item 4' },
+                                                                {
+                                            name: 'Item 5',
+                                            subItems: [
+                                                { name: 'Item 1' },
+                                                { name: 'Item 2' },
+                                                {
+                                                    name: 'Item 3',
+                                                    subItems: [
+                                                        { name: 'Item 1' },
+                                                        { name: 'Item 2' },
+                                                        { name: 'Item 3' },
+                                                        { name: 'Item 4' },
+                                                        {
+                                                            name: 'Item 5',
+                                                            subItems: [
+                                                                { name: 'Item 1' },
+                                                                { name: 'Item 2' },
+                                                                { name: 'Item 3' },
+                                                                { name: 'Item 4' },
+                                                                { name: 'Item 5' },
+                                                            ]
+                                                        },
+                                                    ]
+                                                },
+                                                { name: 'Item 4' },
+                                                { name: 'Item 5' },
+                                            ]
+                                        },
+                                                            ]
+                                                        },
+                                                    ]
+                                                },
+                                                { name: 'Item 4' },
+                                                { name: 'Item 5' },
+                                            ]
+                                        },
+                                    ]
+                                }
+                                                            ]
+                                                        },
+                                                    ]
+                                                },
+                                                { name: 'Item 4' },
+                                                { name: 'Item 5' },
+                                            ]
+                                        },
+                                                            ]
+                                                        },
+                                                    ]
+                                                },
+                                                { name: 'Item 4' },
+                                                { name: 'Item 5' },
+                                            ]
+                                        },
+                                    ]
+                                },
+                                { name: 'Item 7' },
+                                { name: 'Item 8' },
+                                { name: 'Item 9' }
+                            ]
+                        },
+
+                        { signature: "EmailLink3", name: 'Email Link22', subItemOf: 'EmailLink' }
+                    ]
+                });
+
+                var toolbarView = new ToolbarView({
+                    collection: collection.getCollection(),
+                    toolbarName: 'Test tools',
+                    maxItemsShown: 15,
+                    dropDownIcon: "icon icon-toolbar-more",
+                    dropDownText: 'DP',
+                    addGroupSeparators: false,
+                    lazyActions: false
+                });
+
+                var region = new Marionette.Region({ el: "#toolbar" });
+                region.show(toolbarView);
+
+                toolbarView.listenTo(toolbarView, 'toolitem:action', function(e) {
+                    console.log('CLICKED' + e);
+                });
+
+            });
+
+    </script>
+</head>
+
+<body class="binf-widgets">
+    <div class="toolcontainer">
+        <div class="binf-container-fluid ">
+            <div class="binf-row">
+                <div class=" binf-col-md-12 ">
+                    <div id="toolbar"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

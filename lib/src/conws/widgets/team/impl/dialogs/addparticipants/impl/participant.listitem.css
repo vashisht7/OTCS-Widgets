@@ -1,0 +1,93 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.conws-addparticipants .conws-participant.has-role {
+  background-color: #ffffff;
+  border: 2px solid #627783;
+}
+
+.conws-addparticipants .conws-participant.no-role {
+  background-color: #fff6da;
+  border: 1px dashed #c95427;
+}
+
+.conws-addparticipants .conws-participant {
+  margin: 1px;
+  padding: 0.75rem 1.5rem;
+  min-height: 8.5rem;
+  display: flex;
+  border-radius: 0 !important;
+}
+
+.conws-addparticipants .participant-content {
+  width: 50%;
+}
+
+.conws-addparticipants .participant-picture {
+  width: 1.5rem;
+}
+
+.conws-addparticipants .participant-info {
+  padding-left: 1rem;
+  width: calc(100% - 3rem);
+}
+
+.conws-addparticipants .participant-info > span {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.conws-addparticipants .participant-info .name {
+  font-size: 1rem;
+  color: #414042;
+  line-height: 1.2rem;
+}
+
+.conws-addparticipants .participant-info .email,
+.conws-addparticipants .participant-info .title,
+.conws-addparticipants .participant-info .department,
+.conws-addparticipants .participant-info .office {
+  font-size: 0.75rem;
+  color: #414042;
+  line-height: 0.875rem;
+  clear: both;
+}
+
+.conws-addparticipants .participant-info .email,
+.conws-addparticipants .participant-info .department {
+  margin-bottom: 0.75rem;
+}
+
+.conws-addparticipants .participant-roles {
+  width: 14rem;
+}
+
+.conws-addparticipants .participant-delete {
+  padding-left: 1.5rem;
+}
+
+.conws-addparticipants .participant-delete .cs-icon-delete {
+  background-image: url('../../../image/icons/delete.svg');
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  top: calc(50% - 0.75rem);
+  cursor: pointer;
+}
+
+.conws-addparticipants .conws-participants-rolepicker {
+  padding: 0 0 2.25rem;
+}
+
+.conws-addparticipants .conws-participants-rolepicker .cs-search {
+  width: 100%;
+  outline: 0;
+  color: #333333;
+  box-sizing: border-box;
+  border: 1px solid #a7a9ac;
+  border-radius: 3px;
+  padding: 0 0.5rem;
+  height: 1.75rem !important;
+  font-size: 0.75rem !important;
+}

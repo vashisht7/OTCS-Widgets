@@ -1,0 +1,380 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+
+
+
+.csui-favorites-view {
+  width: 60px;
+  height: 60px;
+}
+
+.csui-favorites-view.showing-favorites-view {
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.7);
+}
+
+.csui-favorites-view .csui-favorites-icon-container {
+  height: 60px;
+  padding: 8px;
+  position: relative;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.csui-favorites-view.showing-favorites-view .csui-favorites-icon-container {
+  z-index: 1041;
+  background-color: #ffffff;
+}
+
+.csui-favorites-view .csui-favorites-icon-container .csui-icon-favorites {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  background-repeat: no-repeat;
+  outline: none;
+}
+
+
+
+
+.csui-favorites-view .csui-favorites-view-container {
+  background-color: #ffffff;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.7);
+  z-index: 1040;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  display: block;
+}
+
+.csui-favorites-view .csui-favorites-view-container .content-tile {
+  background: #ffffff;
+  width: 400px;
+}
+
+.csui-favorites-view .csui-favorites-view-container .content-tile .tile-content {
+  background: #ffffff;
+  min-height: 150px;
+  max-height: 272px;
+  height: calc(100% - 48px);
+}
+
+.csui-favorites-view .csui-favorites-view-container .content-tile .tile-content .binf-list-group {
+  margin: 0 0 4px 0;
+}
+
+.csui-favorites-view .csui-favorites-view-container .content-tile .tile-type-icon,
+.csui-favorites-view .csui-favorites-view-container .content-tile .tile-footer,
+.csui-favorites-view .csui-favorites-view-container .content-tile .tile-footer .tile-expand {
+  display: none;
+}
+
+
+
+
+.csui-favorites-view .csui-favorites-view-container .content-tile .tile-header {
+  height: 48px;
+  background-color: #EEF2F4;
+  border: none;
+  cursor: default;
+}
+
+.csui-favorites-view .csui-favorites-view-container .content-tile .csui-heading {
+  line-height: 48px;
+}
+
+.csui-favorites-view .csui-favorites-view-container .tile-header .search-box {
+  top: 4px;
+}
+
+.csui-favorites-view .csui-favorites-view-container .tile-header .search-box .icon-search-placeholder {
+  left: 25px;
+}
+
+.csui-favorites-view .csui-favorites-view-container .tile-header .search-box .search {
+  left: 16px;
+  width: calc(100% - 52px);
+}
+
+
+
+
+.csui-favorites-view .csui-favorites-view-container .content-tile .tile-icons {
+  transform: scale(1);
+}
+
+.csui-favorites-view .csui-favorites-view-container .content-tile .cs-simpletreelistitem.binf-panel {
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 0;
+  border: 0;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  margin: 0;
+  padding-top: 4px;
+  cursor: pointer;
+}
+
+.csui-favorites-view .csui-favorites-view-container .content-tile .arrow-overlay {
+  display: none;
+}
+
+.csui-favorites-view .csui-favorites-view-container .content-tile .binf-panel-heading,
+.csui-favorites-view .csui-favorites-view-container .tile-content .binf-list-group .csui-item-standard.binf-list-group-item {
+  height: 32px;
+  padding: 0 16px 0 16px;
+  background-color: #ffffff;
+  border: 0;
+
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+
+  justify-content: flex-end;
+  -webkit-justify-content: flex-end;
+}
+
+.csui-favorites-view .csui-favorites-view-container .tile-content .binf-list-group .csui-item-standard.binf-list-group-item {
+  margin: 4px 0 0 0;
+}
+
+.csui-favorites-view .csui-favorites-view-container .content-tile:hover {
+  box-shadow: none;
+  outline: none;
+}
+
+.csui-favorites-view .csui-favorites-view-container .content-tile .binf-panel-heading:hover,
+.csui-favorites-view .csui-favorites-view-container .content-tile .cs-content .cs-list-group > a:not(.clicked-no-hover):hover,
+.csui-favorites-view .csui-favorites-view-container .content-tile .cs-content .cs-list-group > a.binf-active:not(.clicked-no-hover):hover,
+.csui-favorites-view .csui-favorites-view-container .tile-content .binf-list-group .csui-item-standard:not(.clicked-no-hover):hover {
+  background-color: #CBD3D9;
+}
+
+.csui-favorites-view .csui-favorites-view-container .content-tile .binf-panel-heading:focus,
+.csui-favorites-view .csui-favorites-view-container .content-tile .binf-panel-heading.binf-active:focus,
+.csui-favorites-view .csui-favorites-view-container .content-tile .cs-content .cs-list-group a:focus,
+.csui-favorites-view .csui-favorites-view-container .content-tile .cs-content .cs-list-group a.binf-active:focus,
+.csui-favorites-view .csui-favorites-view-container .tile-content .binf-list-group a.csui-item-standard:focus,
+.csui-favorites-view .csui-favorites-view-container .tile-content .binf-list-group a.csui-item-standard.binf-active:focus {
+  outline: 1px dotted #333333;
+}
+
+.csui-favorites-view .csui-favorites-view-container .content-tile .binf-panel-heading .container-icon,
+.csui-favorites-view .csui-favorites-view-container .tile-content .binf-list-group .csui-item-standard.binf-list-group-item .csui-icon-group,
+.csui-favorites-view .csui-favorites-view-container .tile-content .binf-list-group .csui-item-standard.binf-list-group-item .csui-icon-group .csui-icon {
+  height: 32px;
+  width: 24px;
+  margin: 0 8px 0 0;
+  background-repeat: no-repeat;
+}
+
+.csui-favorites-view .csui-favorites-view-container .tile-content .binf-list-group .csui-item-standard.binf-list-group-item .csui-icon-group .csui-icon {
+  margin: 0;
+}
+
+.csui-favorites-view .csui-favorites-view-container .content-tile .binf-panel-heading .cs-title,
+.csui-favorites-view .csui-favorites-view-container .tile-content .binf-list-group .csui-item-standard.binf-list-group-item .list-item-title {
+  font-size: 14px;
+  margin: 9px 8px 0 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+  flex-grow: 1;
+  -webkit-flex-grow: 1;
+
+  flex-basis: 0;
+  -webkit-flex-basis: 0;
+}
+
+.csui-favorites-view .csui-favorites-view-container .tile-content .binf-list-group .csui-item-standard.binf-list-group-item .list-item-title {
+  margin: 0;
+}
+
+.csui-favorites-view .csui-favorites-view-container .content-tile .binf-panel-heading .dropdown-icon {
+  width: 16px;
+  height: 32px;
+  background-repeat: no-repeat;
+}
+
+.csui-favorites-view .csui-favorites-view-container .content-tile .binf-list-group  .cs-content {
+  min-height: 32px;
+  padding: 0;
+}
+
+.csui-favorites-view .csui-favorites-view-container .tile-content .binf-list-group .cs-simpletreelistitem .cs-content .cs-list-group .cs-emptylist-container {
+  height: 32px;
+  margin: 0;
+  padding: 0 16px 0 48px;
+  min-height: 32px;
+}
+
+.csui-favorites-view .csui-favorites-view-container .content-tile .binf-list-group .cs-content .cs-list-group .cs-emptylist-container .cs-emptylist-placeholder {
+  display: none;
+}
+
+.csui-favorites-view .csui-favorites-view-container .content-tile .binf-list-group .cs-content .cs-list-group .cs-emptylist-container .cs-emptylist-text {
+  height: 36px;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 36px;
+  text-align: left;
+}
+
+.csui-favorites-view .csui-favorites-view-container .content-tile .binf-list-group .cs-content .cs-list-group .cs-emptylist-container .cs-emptylist-text p {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  line-height: inherit;
+  text-align: left;
+}
+
+.csui-favorites-view .csui-favorites-view-container .content-tile .cs-content .cs-list-group {
+  padding: 0;
+}
+
+.csui-favorites-view .csui-favorites-view-container .content-tile .cs-content .binf-list-group-item {
+  width: 100%;
+  height: 28px;
+  padding: 0;
+  margin: 2px 0 0 0;
+  border-radius: 0;
+  background-color: inherit;
+}
+
+.csui-favorites-view .csui-favorites-view-container .content-tile .cs-content .cs-list-group a {
+  width: 100%;
+  height: 32px;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  color: #323232;
+  text-decoration: none;
+  padding: 0 16px 0 48px;
+}
+
+.csui-favorites-view .csui-favorites-view-container .content-tile .cs-content .cs-list-group a.binf-active,
+.csui-favorites-view .csui-favorites-view-container .content-tile .cs-content .cs-list-group a.clicked-no-hover,
+.csui-favorites-view .csui-favorites-view-container .content-tile .cs-content .cs-list-group a.binf-active.clicked-no-hover,
+.csui-favorites-view .csui-favorites-view-container .tile-content .binf-list-group .csui-item-standard {
+  background-color: inherit;
+}
+
+.csui-favorites .csui-favorites-view .csui-favorites-view-container .content-tile .cs-content .cs-list-group a.csui-tile-with-more-btn,
+.csui-favorites .csui-favorites-view .csui-favorites-view-container .content-tile .cs-content .cs-list-group a.binf-active.csui-tile-with-more-btn {
+  background-color: #CBD3D9;
+}
+
+.csui-favorites-view .csui-favorites-view-container .content-tile .cs-content .cs-list-group div.binf-list-group-item .csui-icon-group,
+.csui-favorites-view .csui-favorites-view-container .content-tile .cs-content .cs-list-group div.binf-list-group-item .csui-icon {
+  height: 28px;
+  width: 24px;
+  margin-right: 8px;
+  display: inline-block;
+  position: relative;
+}
+
+.csui-favorites-view .csui-favorites-view-container .content-tile .cs-content .cs-list-group div.binf-list-group-item .csui-icon {
+  margin-right: 8px;
+  display: block;
+  position: absolute;
+}
+
+.csui-favorites-view .csui-favorites-view-container .content-tile .cs-content .cs-list-group .list-item-title {
+  line-height: 28px;
+  height: 28px;
+  text-overflow: ellipsis;
+  width: calc(100% - 40px); 
+  top: 0;
+  left: 32px;
+}
+
+.csui-favorites-view .csui-favorites-view-container .cs-simpletreelistitem .cs-content .cs-list-group .csui-tile-with-more-btn .binf-list-group-item .list-item-title {
+  width: calc(100% - 85px);
+}
+
+
+
+
+.csui-favorites-view .csui-favorites-view-container .content-tile .binf-list-group .binf-list-group-item .csui-tileview-more-btn {
+  padding: 2px 0 0 2px;
+}
+
+.csui-favorites-view .csui-favorites-view-container .content-tile .binf-list-group .binf-list-group-item .csui-tileview-more-btn .csui-inline-menu .csui-icon-group {
+  padding: 4px 0 0 2px;
+  margin: 0;
+  width: 24px;
+  height: 24px;
+}
+.csui-favorites-view .csui-favorites-view-container .cs-simpletreelistitem .cs-content .cs-list-group .csui-tile-with-more-btn .csui-inline-menu .csui-icon-group.csui-loading-parent-wrapper {
+  padding: 0;
+  margin: 0;
+}
+
+.csui-favorites-view .csui-favorites-view-container .cs-list .csui-item-standard .csui-tileview-contains-more-btn .csui-tileview-more-btn .csui-inline-menu .csui-icon-group {
+  padding: 4px 0 0 2px;
+}
+.csui-favorites-view .csui-favorites-view-container .cs-list .csui-item-standard .csui-tileview-contains-more-btn .csui-tileview-more-btn .csui-inline-menu .csui-icon-group.csui-loading-parent-wrapper {
+  padding: 0;
+}
+
+.csui-favorites-view .csui-favorites-view-container .content-tile .binf-list-group .csui-tile-with-more-btn .csui-inline-menu .csui-icon-group .icon-toolbar-more,
+.csui-favorites-view .csui-favorites-view-container .content-tile .binf-list-group .csui-tile-with-more-btn .csui-inline-menu .csui-icon-group .csui-loading-dots-wrapper {
+  padding: 0;
+  margin: 0 0 0 2px;
+  width: 16px;
+  height: 16px;
+}
+
+.csui-favorites-view .csui-favorites-view-container .content-tile .binf-list-group .csui-tile-with-more-btn .csui-inline-menu .csui-icon-group .csui-loading-dots-wrapper .csui-loading-dot {
+  padding-top: 6px;
+  width: 4px;
+  height: 4px;
+}
+
+
+.csui-favorites-view .csui-favorites-view-container .content-tile .binf-list-group .cs-content .csui-tile-with-more-btn .csui-inline-menu .csui-menu-btn-region {
+  padding: 0;
+  right: 10px;
+}
+
+.csui-favorites-view .csui-favorites-view-container .cs-favorites.cs-list .csui-item-standard .csui-tileview-contains-more-btn .csui-tileview-more-btn .csui-inline-menu .csui-menu-btn-region {
+  padding: 0;
+  right: 36px;
+}
+
+.csui-favorites-view .csui-favorites-view-container .content-tile .binf-list-group .csui-tile-with-more-btn .csui-inline-menu .csui-menu-btn-region .binf-dropdown-menu {
+  margin-top: 2px;
+}
+
+.csui-favorites-view .csui-favorites-view-container .content-tile .csui-inline-menu ul.tile-nav.binf-nav,
+.csui-favorites-view .csui-favorites-view-container .cs-simpletreelistitem .cs-content .binf-list-group-item .binf-nav .binf-dropdown {
+  padding: 0;
+}
+
+
+.csui-favorites-view .csui-favorites-view-container .content-tile .binf-list-group .cs-content .cs-list-group .csui-tile-with-more-btn .csui-inline-menu {
+  padding: 0 0 0 11px;
+}
+
+.csui-favorites-view .csui-favorites-view-container .cs-favorites.cs-list .csui-item-standard .csui-tileview-contains-more-btn .csui-tileview-more-btn .csui-inline-menu {
+  padding: 2px 0 0 0;
+}
+
+.csui-favorites-view .csui-favorites-view-container .tile-content .cs-content .csui-item-standard.binf-list-group-item.csui-tile-with-more-btn {
+  background-color: #d7d7d7;
+}
+
+
+.csui-favorites-view .csui-favorites-view-container .content-tile .binf-list-group .csui-tile-with-more-btn .csui-inline-menu .binf-dropdown > a,
+.csui-favorites-view .csui-favorites-view-container .content-tile .binf-list-group .csui-tile-with-more-btn .csui-inline-menu .binf-dropdown > a svg,
+
+.csui-favorites-view .csui-favorites-view-container .cs-simpletreelistitem .cs-content .cs-list-group .csui-tile-with-more-btn .csui-inline-menu .binf-dropdown > a,
+.csui-favorites-view .csui-favorites-view-container .cs-simpletreelistitem .cs-content .cs-list-group .csui-tile-with-more-btn .csui-inline-menu .binf-dropdown > a svg {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  margin: 0;
+}
+

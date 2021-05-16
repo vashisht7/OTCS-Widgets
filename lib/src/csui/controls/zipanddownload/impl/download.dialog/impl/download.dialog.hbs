@@ -1,0 +1,54 @@
+<div class="binf-modal-dialog {{binfDialogSizeClassName}}" role="dialog" aria-modal="true"
+     aria-hidden="false">
+  <div class="binf-modal-content">
+    <div class="tile-header binf-modal-header"></div>
+    <div class="binf-modal-body">
+      <div class="csui-zipanddownload">
+        <div class="csui-zipanddownload-filename">
+          <label>{{zipFileName}}</label>
+          <input type="text" class="csui-archive-name" name="download-name" value="{{fileName}}">
+        </div>
+        <div class="csui-archive-name-error-container">
+          <span class="csui-archive-name-error"></span>
+        </div>
+      </div>
+      {{#if skippedTypes}}
+        <div class="csui-unprocessed-item-list">
+          <div class="csui-info">
+            <span class="notification_warning_orange"></span>
+            <span class="notification_message">{{skippedItemsLabel}}</span>
+          </div>
+          <div class="csui-skipped-container">
+            <div class="csui-skipped-item-table csui-download-table-header">
+              <div class="csui-skipped-item-cell csui-type">{{labelType}}</div>
+              <div class="csui-skipped-item-cell csui-name">{{labelName}}</div>
+              <div class="csui-skipped-item-cell csui-location">{{labelLocation}}</div>
+              <div class="csui-skipped-item-cell csui-message">{{labelMessage}}</div>
+            </div>
+            <div class="csui-skipped-item-table csui-download-table-body">
+              {{#each skippedTypes}}
+                <div class="csui-download-table-row">
+                  <div class="csui-skipped-item-cell csui-type">
+                    <span title="{{this.subtype_name}}" class="{{this.mimeIcon}}"></span>
+                  </div>
+                  <div class="csui-skipped-item-cell csui-name">
+                    <span title="{{this.name}}">{{this.name}}</span>
+                  </div>
+                  <div class="csui-skipped-item-cell csui-location">
+                    <span class="csui-location-name"
+                          title="{{this.path}}">{{this.parentLocation}}</span>
+                  </div>
+                  <div class="csui-skipped-item-cell csui-message">
+                    <span title="{{this.details}}">{{this.details}}</span>
+                  </div>
+                </div>
+              {{/each}}
+            </div>
+          </div>
+        </div>
+      {{/if}}
+    </div>
+  </div>
+  <div class="binf-modal-footer binf-hidden"></div>
+</div>
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

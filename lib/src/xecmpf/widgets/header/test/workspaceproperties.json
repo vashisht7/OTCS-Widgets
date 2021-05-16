@@ -1,0 +1,937 @@
+{
+  "links": {
+    "data": {
+      "self": {
+        "body": "",
+        "content_type": "",
+        "href": "/api/v2/nodes/51209?actions=addcategory&actions=addversion&actions=open&actions=copy&actions=delete&actions=download&actions=edit&actions=editactivex&actions=rename&actions=move&actions=permissions&actions=properties&actions=reserve&actions=unreserve&actions=collectioncancollect&actions=removefromcollection&actions=comment&expand=properties{original_id}&fields=columns&fields=properties&fields=versions{mime_type}.element(0)&metadata",
+        "method": "GET",
+        "name": ""
+      }
+    }
+  },
+  "results": {
+    "actions": {
+      "data": {
+        "addcategory": {
+          "body": "",
+          "content_type": "",
+          "form_href": "",
+          "href": "/api/v2/nodes/51209/categories",
+          "method": "POST",
+          "name": "Add Category"
+        },
+        "comment": {
+          "body": "",
+          "content_type": "",
+          "form_href": "",
+          "href": "",
+          "method": "POST",
+          "name": "Comments"
+        },
+        "copy": {
+          "body": "",
+          "content_type": "",
+          "form_href": "/api/v2/forms/nodes/copy?id=51209",
+          "href": "/api/v2/nodes",
+          "method": "POST",
+          "name": "Copy"
+        },
+        "delete": {
+          "body": "",
+          "content_type": "",
+          "form_href": "",
+          "href": "/api/v2/nodes/51209",
+          "method": "DELETE",
+          "name": "Delete"
+        },
+        "move": {
+          "body": "",
+          "content_type": "",
+          "form_href": "/api/v2/forms/nodes/move?id=51209",
+          "href": "/api/v2/nodes/51209",
+          "method": "PUT",
+          "name": "Move"
+        },
+        "open": {
+          "body": "",
+          "content_type": "",
+          "form_href": "",
+          "href": "/api/v2/nodes/51209/nodes",
+          "method": "GET",
+          "name": "Open"
+        },
+        "properties": {
+          "body": "",
+          "content_type": "",
+          "form_href": "",
+          "href": "/api/v2/nodes/51209",
+          "method": "GET",
+          "name": "Properties"
+        },
+        "rename": {
+          "body": "",
+          "content_type": "",
+          "form_href": "/api/v2/forms/nodes/rename?id=51209",
+          "href": "/api/v2/nodes/51209",
+          "method": "PUT",
+          "name": "Rename"
+        }
+      },
+      "map": {
+        "default_action": "",
+        "more": [
+          "properties"
+        ]
+      },
+      "order": [
+        "open",
+        "addcategory",
+        "rename",
+        "copy",
+        "move",
+        "delete",
+        "comment"
+      ]
+    },
+    "data": {
+      "columns": [
+        {
+          "data_type": 906,
+          "key": "type",
+          "name": "Type",
+          "sort_key": "x2444"
+        },
+        {
+          "data_type": 906,
+          "key": "name",
+          "name": "Name",
+          "sort_key": "x2441"
+        },
+        {
+          "data_type": 906,
+          "key": "size_formatted",
+          "name": "Size",
+          "sort_key": "x2442"
+        },
+        {
+          "data_type": 906,
+          "key": "modify_date",
+          "name": "Modified",
+          "sort_key": "x2109"
+        },
+        {
+          "data_type": 2,
+          "key": "wnd_comments",
+          "name": "Comments"
+        }
+      ],
+      "properties": {
+        "container": true,
+        "container_size": 7,
+        "create_date": "2018-03-06T14:51:50",
+        "create_user_id": 1000,
+        "description": "",
+        "description_multilingual": {
+          "en": ""
+        },
+        "external_create_date": null,
+        "external_identity": "",
+        "external_identity_type": "",
+        "external_modify_date": null,
+        "external_source": "",
+        "favorite": false,
+        "id": 51209,
+        "mime_type": null,
+        "modify_date": "2018-03-06T14:51:50",
+        "modify_user_id": 1000,
+        "name": "Notification 000010000037",
+        "name_multilingual": {
+          "en": "Notification 000010000037"
+        },
+        "owner": "Admin",
+        "owner_group_id": 1001,
+        "owner_user_id": 1000,
+        "parent_id": 254535,
+        "permissions_model": "advanced",
+        "reserved": false,
+        "reserved_date": null,
+        "reserved_shared_collaboration": false,
+        "reserved_user_id": 0,
+        "rm_enabled": false,
+        "size": 7,
+        "size_formatted": "7 Items",
+        "type": 848,
+        "type_name": "Business Workspace",
+        "versions_control_advanced": false,
+        "volume_id": -2000,
+        "wnd_comments": 1
+      }
+    },
+    "metadata": {
+      "properties": {
+        "container": {
+          "allow_undefined": false,
+          "bulk_shared": false,
+          "default_value": null,
+          "description": null,
+          "hidden": false,
+          "key": "container",
+          "key_value_pairs": false,
+          "multi_value": false,
+          "name": "Container",
+          "persona": "",
+          "read_only": true,
+          "required": false,
+          "type": 5,
+          "type_name": "Boolean",
+          "valid_values": [],
+          "valid_values_name": []
+        },
+        "container_size": {
+          "allow_undefined": false,
+          "bulk_shared": false,
+          "default_value": null,
+          "description": null,
+          "hidden": false,
+          "key": "container_size",
+          "key_value_pairs": false,
+          "max_value": null,
+          "min_value": null,
+          "multi_value": false,
+          "name": "Container Size",
+          "persona": "",
+          "read_only": true,
+          "required": false,
+          "type": 2,
+          "type_name": "Integer",
+          "valid_values": [],
+          "valid_values_name": []
+        },
+        "create_date": {
+          "allow_undefined": false,
+          "bulk_shared": false,
+          "default_value": null,
+          "description": null,
+          "hidden": false,
+          "include_time": true,
+          "key": "create_date",
+          "key_value_pairs": false,
+          "multi_value": false,
+          "name": "Created",
+          "persona": "",
+          "read_only": true,
+          "required": false,
+          "type": -7,
+          "type_name": "Date",
+          "valid_values": [],
+          "valid_values_name": []
+        },
+        "create_user_id": {
+          "allow_undefined": false,
+          "bulk_shared": false,
+          "default_value": null,
+          "description": null,
+          "hidden": false,
+          "key": "create_user_id",
+          "key_value_pairs": false,
+          "max_value": null,
+          "min_value": null,
+          "multi_value": false,
+          "name": "Created By",
+          "persona": "user",
+          "read_only": false,
+          "required": false,
+          "type": 2,
+          "type_name": "Integer",
+          "valid_values": [],
+          "valid_values_name": []
+        },
+        "description": {
+          "allow_undefined": false,
+          "bulk_shared": false,
+          "default_value": null,
+          "description": null,
+          "hidden": false,
+          "key": "description",
+          "key_value_pairs": false,
+          "max_length": null,
+          "min_length": null,
+          "multi_value": false,
+          "multiline": true,
+          "multilingual": true,
+          "name": "Description",
+          "password": false,
+          "persona": "",
+          "read_only": false,
+          "regex": "",
+          "required": false,
+          "type": -1,
+          "type_name": "String",
+          "valid_values": [],
+          "valid_values_name": []
+        },
+        "external_create_date": {
+          "allow_undefined": false,
+          "bulk_shared": false,
+          "default_value": null,
+          "description": null,
+          "hidden": false,
+          "include_time": true,
+          "key": "external_create_date",
+          "key_value_pairs": false,
+          "multi_value": false,
+          "name": "External Create Date",
+          "persona": "",
+          "read_only": true,
+          "required": false,
+          "type": -7,
+          "type_name": "Date",
+          "valid_values": [],
+          "valid_values_name": []
+        },
+        "external_identity": {
+          "allow_undefined": false,
+          "bulk_shared": false,
+          "default_value": null,
+          "description": null,
+          "hidden": false,
+          "key": "external_identity",
+          "key_value_pairs": false,
+          "max_length": null,
+          "min_length": null,
+          "multi_value": false,
+          "multiline": false,
+          "multilingual": false,
+          "name": "External Identity",
+          "password": false,
+          "persona": "",
+          "read_only": true,
+          "regex": "",
+          "required": false,
+          "type": -1,
+          "type_name": "String",
+          "valid_values": [],
+          "valid_values_name": []
+        },
+        "external_identity_type": {
+          "allow_undefined": false,
+          "bulk_shared": false,
+          "default_value": null,
+          "description": null,
+          "hidden": false,
+          "key": "external_identity_type",
+          "key_value_pairs": false,
+          "max_length": null,
+          "min_length": null,
+          "multi_value": false,
+          "multiline": false,
+          "multilingual": false,
+          "name": "External Identity Type",
+          "password": false,
+          "persona": "",
+          "read_only": true,
+          "regex": "",
+          "required": false,
+          "type": -1,
+          "type_name": "String",
+          "valid_values": [],
+          "valid_values_name": []
+        },
+        "external_modify_date": {
+          "allow_undefined": false,
+          "bulk_shared": false,
+          "default_value": null,
+          "description": null,
+          "hidden": false,
+          "include_time": true,
+          "key": "external_modify_date",
+          "key_value_pairs": false,
+          "multi_value": false,
+          "name": "External Modify Date",
+          "persona": "",
+          "read_only": true,
+          "required": false,
+          "type": -7,
+          "type_name": "Date",
+          "valid_values": [],
+          "valid_values_name": []
+        },
+        "external_source": {
+          "allow_undefined": false,
+          "bulk_shared": false,
+          "default_value": null,
+          "description": null,
+          "hidden": false,
+          "key": "external_source",
+          "key_value_pairs": false,
+          "max_length": null,
+          "min_length": null,
+          "multi_value": false,
+          "multiline": false,
+          "multilingual": false,
+          "name": "External Source",
+          "password": false,
+          "persona": "",
+          "read_only": true,
+          "regex": "",
+          "required": false,
+          "type": -1,
+          "type_name": "String",
+          "valid_values": [],
+          "valid_values_name": []
+        },
+        "favorite": {
+          "allow_undefined": false,
+          "bulk_shared": false,
+          "default_value": null,
+          "description": null,
+          "hidden": false,
+          "key": "favorite",
+          "key_value_pairs": false,
+          "multi_value": false,
+          "name": "Favorite",
+          "persona": "",
+          "read_only": true,
+          "required": false,
+          "type": 5,
+          "type_name": "Boolean",
+          "valid_values": [],
+          "valid_values_name": []
+        },
+        "id": {
+          "allow_undefined": false,
+          "bulk_shared": false,
+          "default_value": null,
+          "description": null,
+          "hidden": false,
+          "key": "id",
+          "key_value_pairs": false,
+          "max_value": null,
+          "min_value": null,
+          "multi_value": false,
+          "name": "ID",
+          "persona": "node",
+          "read_only": false,
+          "required": false,
+          "type": 2,
+          "type_name": "Integer",
+          "valid_values": [],
+          "valid_values_name": []
+        },
+        "modify_date": {
+          "allow_undefined": false,
+          "bulk_shared": false,
+          "default_value": null,
+          "description": null,
+          "hidden": false,
+          "include_time": true,
+          "key": "modify_date",
+          "key_value_pairs": false,
+          "multi_value": false,
+          "name": "Modified",
+          "persona": "",
+          "read_only": true,
+          "required": false,
+          "type": -7,
+          "type_name": "Date",
+          "valid_values": [],
+          "valid_values_name": []
+        },
+        "modify_user_id": {
+          "allow_undefined": false,
+          "bulk_shared": false,
+          "default_value": null,
+          "description": null,
+          "hidden": false,
+          "key": "modify_user_id",
+          "key_value_pairs": false,
+          "max_value": null,
+          "min_value": null,
+          "multi_value": false,
+          "name": "Modified By",
+          "persona": "user",
+          "read_only": false,
+          "required": false,
+          "type": 2,
+          "type_name": "Integer",
+          "valid_values": [],
+          "valid_values_name": []
+        },
+        "name": {
+          "allow_undefined": false,
+          "bulk_shared": false,
+          "default_value": null,
+          "description": null,
+          "hidden": false,
+          "key": "name",
+          "key_value_pairs": false,
+          "max_length": null,
+          "min_length": null,
+          "multi_value": false,
+          "multiline": false,
+          "multilingual": true,
+          "name": "Name",
+          "password": false,
+          "persona": "",
+          "read_only": false,
+          "regex": "",
+          "required": false,
+          "type": -1,
+          "type_name": "String",
+          "valid_values": [],
+          "valid_values_name": []
+        },
+        "owner": {
+          "allow_undefined": false,
+          "bulk_shared": false,
+          "default_value": null,
+          "description": null,
+          "hidden": false,
+          "key": "owner",
+          "key_value_pairs": false,
+          "max_length": null,
+          "min_length": null,
+          "multi_value": false,
+          "multiline": false,
+          "multilingual": false,
+          "name": "Owner",
+          "password": false,
+          "persona": "",
+          "read_only": true,
+          "regex": "",
+          "required": false,
+          "type": -1,
+          "type_name": "String",
+          "valid_values": [],
+          "valid_values_name": []
+        },
+        "owner_group_id": {
+          "allow_undefined": false,
+          "bulk_shared": false,
+          "default_value": null,
+          "description": null,
+          "hidden": false,
+          "key": "owner_group_id",
+          "key_value_pairs": false,
+          "max_value": null,
+          "min_value": null,
+          "multi_value": false,
+          "name": "Owned By",
+          "persona": "group",
+          "read_only": false,
+          "required": false,
+          "type": 2,
+          "type_name": "Integer",
+          "valid_values": [],
+          "valid_values_name": []
+        },
+        "owner_user_id": {
+          "allow_undefined": false,
+          "bulk_shared": false,
+          "default_value": null,
+          "description": null,
+          "hidden": false,
+          "key": "owner_user_id",
+          "key_value_pairs": false,
+          "max_value": null,
+          "min_value": null,
+          "multi_value": false,
+          "name": "Owned By",
+          "persona": "user",
+          "read_only": false,
+          "required": false,
+          "type": 2,
+          "type_name": "Integer",
+          "valid_values": [],
+          "valid_values_name": []
+        },
+        "parent_id": {
+          "allow_undefined": false,
+          "bulk_shared": false,
+          "default_value": null,
+          "description": null,
+          "hidden": false,
+          "key": "parent_id",
+          "key_value_pairs": false,
+          "max_value": null,
+          "min_value": null,
+          "multi_value": false,
+          "name": "Parent ID",
+          "persona": "node",
+          "read_only": false,
+          "required": false,
+          "type": 2,
+          "type_name": "Integer",
+          "valid_values": [],
+          "valid_values_name": []
+        },
+        "reserved": {
+          "allow_undefined": false,
+          "bulk_shared": false,
+          "default_value": null,
+          "description": null,
+          "hidden": false,
+          "key": "reserved",
+          "key_value_pairs": false,
+          "multi_value": false,
+          "name": "Reserved",
+          "persona": "",
+          "read_only": false,
+          "required": false,
+          "type": 5,
+          "type_name": "Boolean",
+          "valid_values": [],
+          "valid_values_name": []
+        },
+        "reserved_date": {
+          "allow_undefined": false,
+          "bulk_shared": false,
+          "default_value": null,
+          "description": null,
+          "hidden": false,
+          "include_time": true,
+          "key": "reserved_date",
+          "key_value_pairs": false,
+          "multi_value": false,
+          "name": "Reserved",
+          "persona": "",
+          "read_only": false,
+          "required": false,
+          "type": -7,
+          "type_name": "Date",
+          "valid_values": [],
+          "valid_values_name": []
+        },
+        "reserved_user_id": {
+          "allow_undefined": false,
+          "bulk_shared": false,
+          "default_value": null,
+          "description": null,
+          "hidden": false,
+          "key": "reserved_user_id",
+          "key_value_pairs": false,
+          "max_value": null,
+          "min_value": null,
+          "multi_value": false,
+          "name": "Reserved By",
+          "persona": "member",
+          "read_only": false,
+          "required": false,
+          "type": 2,
+          "type_name": "Integer",
+          "valid_values": [],
+          "valid_values_name": []
+        },
+        "rm_enabled": {
+          "allow_undefined": false,
+          "bulk_shared": false,
+          "default_value": null,
+          "description": null,
+          "hidden": true,
+          "key": "rm_enabled",
+          "key_value_pairs": false,
+          "multi_value": false,
+          "name": "Records Management enabled",
+          "persona": "",
+          "read_only": true,
+          "required": false,
+          "type": 5,
+          "type_name": "Boolean",
+          "valid_values": [],
+          "valid_values_name": []
+        },
+        "type": {
+          "allow_undefined": false,
+          "bulk_shared": false,
+          "default_value": null,
+          "description": null,
+          "hidden": false,
+          "key": "type",
+          "key_value_pairs": false,
+          "max_value": null,
+          "min_value": null,
+          "multi_value": false,
+          "name": "Type",
+          "persona": "",
+          "read_only": true,
+          "required": false,
+          "type": 2,
+          "type_name": "Integer",
+          "valid_values": [],
+          "valid_values_name": []
+        },
+        "type_name": {
+          "allow_undefined": false,
+          "bulk_shared": false,
+          "default_value": null,
+          "description": null,
+          "hidden": false,
+          "key": "type_name",
+          "key_value_pairs": false,
+          "max_length": null,
+          "min_length": null,
+          "multi_value": false,
+          "multiline": false,
+          "multilingual": false,
+          "name": "Type",
+          "password": false,
+          "persona": "",
+          "read_only": true,
+          "regex": "",
+          "required": false,
+          "type": -1,
+          "type_name": "String",
+          "valid_values": [],
+          "valid_values_name": []
+        },
+        "versions_control_advanced": {
+          "allow_undefined": false,
+          "bulk_shared": false,
+          "default_value": null,
+          "description": null,
+          "hidden": false,
+          "key": "versions_control_advanced",
+          "key_value_pairs": false,
+          "multi_value": false,
+          "name": "Versions Control Advanced",
+          "persona": "",
+          "read_only": false,
+          "required": false,
+          "type": 5,
+          "type_name": "Boolean",
+          "valid_values": [],
+          "valid_values_name": []
+        },
+        "volume_id": {
+          "allow_undefined": false,
+          "bulk_shared": false,
+          "default_value": null,
+          "description": null,
+          "hidden": false,
+          "key": "volume_id",
+          "key_value_pairs": false,
+          "max_value": null,
+          "min_value": null,
+          "multi_value": false,
+          "name": "VolumeID",
+          "persona": "node",
+          "read_only": false,
+          "required": false,
+          "type": 2,
+          "type_name": "Integer",
+          "valid_values": [],
+          "valid_values_name": []
+        }
+      }
+    },
+    "metadata_map": {},
+    "metadata_order": {
+      "properties": [
+        "id",
+        "type",
+        "type_name",
+        "name",
+        "description",
+        "parent_id",
+        "volume_id",
+        "create_date",
+        "create_user_id",
+        "modify_date",
+        "modify_user_id",
+        "owner_user_id",
+        "owner_group_id",
+        "reserved",
+        "reserved_date",
+        "reserved_user_id",
+        "versions_control_advanced",
+        "container",
+        "container_size",
+        "favorite",
+        "external_create_date",
+        "external_modify_date",
+        "external_source",
+        "external_identity",
+        "external_identity_type",
+        "rm_enabled",
+        "owner"
+      ]
+    },
+    "perspective": {
+      "options": {
+        "header": {
+          "widget": {
+            "options": {
+              "completenessCheckSettings": {
+                "hideInProcessDocsCheck": false,
+                "hideMissingDocsCheck": false,
+                "hideOutdatedDocsCheck": false
+              },
+              "favoriteSettings": {
+                "hideFavorite": false
+              },
+              "headerwidget": {
+                "type": "metadata"
+              },
+              "metadataSettings": {
+                "hideEmptyFields": false,
+                "hideMetadata": false,
+                "metadata": [
+                  {
+                    "attributes": [
+                      {
+                        "attributeId": 4,
+                        "categoryId": 92523,
+                        "label": "Name",
+                        "type": "attribute"
+                      },
+                      {
+                        "attributeId": 3,
+                        "categoryId": 92523,
+                        "label": "Object Key",
+                        "type": "attribute"
+                      }
+                    ],
+                    "label": "Vendor",
+                    "type": "group"
+                  },
+                  {
+                    "attributes": [
+                      {
+                        "attributeId": 3,
+                        "categoryId": 92523,
+                        "label": "Object Key",
+                        "type": "attribute"
+                      }
+                    ],
+                    "label": "Notification",
+                    "type": "group"
+                  }
+                ],
+                "metadataInColumns": "doubleCol"
+              },
+              "workspace": {
+                "properties": {
+                  "description": "{business_properties.description}",
+                  "title": "{name}",
+                  "type": "{business_properties.workspace_type_name}"
+                }
+              }
+            },
+            "type": "xecmpf/widgets/header"
+          }
+        },
+        "tabs": [
+          {
+            "columns": [],
+            "title": "Overview"
+          },
+          {
+            "columns": [
+              {
+                "heights": {
+                  "lg": "half",
+                  "md": "half",
+                  "sm": "three-quarters",
+                  "xs": "full"
+                },
+                "sizes": {
+                  "lg": 12,
+                  "md": 12,
+                  "sm": 12,
+                  "xl": 12,
+                  "xs": 12
+                },
+                "widget": {
+                  "kind": "fullpage",
+                  "options": {
+                    "pageSize": 30
+                  },
+                  "type": "csui/widgets/nodestable"
+                }
+              }
+            ],
+            "title": "Documents"
+          },
+          {
+            "columns": [
+              {
+                "heights": {
+                  "lg": "half",
+                  "md": "half",
+                  "sm": "three-quarters",
+                  "xs": "full"
+                },
+                "sizes": {
+                  "lg": 3,
+                  "md": 4,
+                  "sm": 6,
+                  "xl": 3,
+                  "xs": 12
+                },
+                "widget": {
+                  "options": {
+                    "businessattachment": {
+                      "properties": {
+                        "busObjectId": "{categories.254974_3}",
+                        "busObjectType": "BUS2038",
+                        "extSystemId": "D7K-HTTP"
+                      }
+                    },
+                    "collapsedView": {
+                      "description": {
+                        "value": "{version}"
+                      },
+                      "title": {
+                        "value": "{name}"
+                      },
+                      "topRight": {
+                        "label": {
+                          "en": "Version"
+                        },
+                        "value": "{version}"
+                      }
+                    }
+                  },
+                  "type": "xecmpf/widgets/boattachments"
+                }
+              }
+            ],
+            "title": "Business Attachments"
+          },
+          {
+            "columns": [
+              {
+                "heights": {
+                  "lg": "half",
+                  "md": "half",
+                  "sm": "three-quarters",
+                  "xs": "full"
+                },
+                "sizes": {
+                  "lg": 3,
+                  "md": 4,
+                  "sm": 6,
+                  "xl": 3,
+                  "xs": 12
+                },
+                "widget": {
+                  "options": {
+                    "groupBy": "create_date",
+                    "hideEmptyFields": false,
+                    "hideFavorite": false,
+                    "hideGroupByCriterionDropdown": false,
+                    "hideMetadata": false
+                  },
+                  "type": "xecmpf/widgets/dossier"
+                }
+              }
+            ],
+            "title": "Dossier Widget"
+          }
+        ]
+      },
+      "type": "tabbed"
+    }
+  }
+}

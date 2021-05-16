@@ -1,0 +1,29 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.csui-table-cell-location {
+  overflow-x: visible !important;
+}
+
+.binf-table.dataTable > tbody > tr > .IconP {
+  display: block;
+}
+
+.binf-table.dataTable > tbody > tr > .csui-table-cell-location {
+  padding-right: 0;
+}
+.binf-widgets .csui-table-cell-location-justify-div {
+  display: flex;
+  align-items: center;
+}
+.binf-widgets .csui-table-cell-location-justify-div span.csui-icon-group {
+  margin-right: 10px;
+}
+
+.binf-widgets .csui-table-cell-location-justify-div span.csui-icon {
+  position: relative;
+}
+
+.binf-widgets .csui-table-cell-location-justify-div .csui-table-cell-location-link-text {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

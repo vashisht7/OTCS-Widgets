@@ -1,0 +1,19 @@
+{
+  "links": {
+    "data": {
+      "self": {
+        "body": "",
+        "content_type": "",
+        "href": "\/api\/v2\/pulse\/settings?fields=chatSettings",
+        "method": "GET",
+        "name": ""
+      }
+    }
+  },
+  "results": {
+    "chatSettings": {
+      "chatEnabled": false,
+      "presenceEnabled": false
+    }
+  }
+}

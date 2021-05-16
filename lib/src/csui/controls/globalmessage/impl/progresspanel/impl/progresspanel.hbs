@@ -1,0 +1,86 @@
+<div class="csui-header">
+  <div class="csui-progressrow csui-height-target">
+    <div class="csui-names-progress">
+      <div class="csui-names csui-progresscell">
+        <div class="csui-header-icon csui-icon binf-hidden"></div>
+        <div class="csui-title" id="{{progressTitleId}}">
+          {{title}}
+        </div>
+      </div>
+      <div class="csui-progress csui-progresscell">
+        <div class="csui-progress-dynamic binf-hidden">
+          <div class="csui-progress-textbar">
+            <div class="binf-progress">
+              <div class="binf-progress-bar" role="progressbar" aria-valuenow="{{percentage}}"
+                   aria-valuemin="0" aria-valuemax="100" style="width:{{percentage}}%">
+              </div>
+            </div>
+            <div class="loading-dots">
+                <div class="csui-loading-parent-wrapper binf-disabled csui-disbaled">
+                    <span class="csui-loading-dots-wrapper">
+                        <span class="csui-loading-dot"></span>
+                        <span class="csui-loading-dot"></span>
+                        <span class="csui-loading-dot"></span>
+                    </span>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="csui-progress-static" aria-hidden="true">
+          <div class="csui-progress-textbar">
+            <div class="csui-progress-static-pending" aria-label="{{state_pending}}">{{state_pending}}</div>
+            <div class="csui-progress-static-processing binf-hidden" aria-label="{{state_processing}}">{{state_processing}}</div>
+            <div class="csui-progress-static-resolved binf-hidden" aria-label="{{state_resolved}}">{{state_resolved}}</div>
+            <div class="csui-progress-static-rejected binf-hidden" aria-label="{{state_rejected}}">{{state_rejected}}</div>
+            <div class="csui-progress-static-aborted binf-hidden" aria-label="{{state_aborted}}">{{state_aborted}}</div>
+          </div>
+          <div class="csui-percent"></div>
+        </div>
+      </div>
+    </div>
+    <div class="csui-states-actions">
+      {{#if enableCancel}}
+      <div class="csui-stateaction csui-progresscell">
+        <button type="button" aria-label="{{stateaction_all_pending}}"
+                class="csui-stateaction-pending
+        csui-icon-like-btn binf-btn binf-btn-default">{{stateaction_pending}}</button>
+        <button type="button" aria-label="{{stateaction_all_processing}}"
+                class="csui-stateaction-processing csui-icon-like-binf-btn binf-hidden binf-btn binf-btn-default">
+            {{stateaction_processing}}</button>
+      </div>
+      {{/if}}
+      {{#if enableRetry}}
+        <div class="csui-show-retryAll binf-hidden">
+          <button type="button" class="csui-retry-all" title="{{retryAll}}" aria-label="{{retryAll}}" tabindex='0'>{{retryAll}}</button>
+        </div>
+      {{/if}}
+      <div class="csui-expand csui-progresscell {{#if singleItem}}binf-hidden{{/if}}">
+        <button type="button" class="csui-expand-down binf-btn binf-btn-default"
+                aria-label="{{expand}}" title="{{expand}}" aria-haspopup="true" aria-expanded="false">
+          <span class="icon csui-icon icon-expandArrowDown" /></button>
+          <button type="button" class="csui-expand-up binf-hidden binf-btn binf-btn-default"
+                aria-label="{{collapse}}" title="{{collapse}}" aria-haspopup="true" aria-expanded="true">
+            <span class="icon csui-icon icon-expandArrowUp" /></button>
+      </div>
+      <div class="csui-close csui-progresscell binf-hidden">
+        <button type="button" class="binf-btn binf-btn-default"
+                aria-label="{{closeAria}}" title="{{close}}" >
+          <span class="csui-action-close csui-icon" /></button>
+      </div>
+      {{#if enableMinimiseButton}}
+      <div class="csui-minimize csui-minimizecell">
+        <button type="button" class="icon-progresspanel-minimize binf-btn binf-btn-default"
+                aria-label="{{minimizeAria}}" title="{{minimize}}" tabindex="0"></button>
+      </div>
+      {{/if}}
+    </div>
+  </div>
+  {{#if targetLocationUrl}}
+  <a class="csui-gotolocation-url binf-hidden" href="{{targetLocationUrl}}" role="button">{{gotoLocation}}</a>
+  {{/if}}
+</div>
+<div class="csui-items-wrapper">
+  <div class="csui-items" role="list">
+  </div>
+</div>
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

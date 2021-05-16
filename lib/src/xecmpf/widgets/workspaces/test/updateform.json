@@ -1,0 +1,212 @@
+{
+  "forms": [
+    {
+      "data": {
+        "22342_10": "",
+        "22342_11": "",
+        "22342_12": "",
+        "22342_13": "",
+        "22342_14": "",
+        "22342_15": "",
+        "22342_16": "",
+        "22342_17": [
+          "",
+          ""
+        ],
+        "22342_18": "Customer",
+        "22342_19": [
+          ""
+        ]
+      },
+      "options": {
+        "fields": {
+          "22342_10": {
+            "hidden": false,
+            "hideInitValidationError": true,
+            "label": "Customer Number",
+            "readonly": false,
+            "type": "text"
+          },
+          "22342_11": {
+            "hidden": false,
+            "hideInitValidationError": true,
+            "label": "Object Key",
+            "readonly": false,
+            "type": "text"
+          },
+          "22342_12": {
+            "hidden": false,
+            "hideInitValidationError": true,
+            "label": "Name",
+            "readonly": false,
+            "type": "text"
+          },
+          "22342_13": {
+            "hidden": false,
+            "hideInitValidationError": true,
+            "label": "Street",
+            "readonly": false,
+            "type": "text"
+          },
+          "22342_14": {
+            "hidden": false,
+            "hideInitValidationError": true,
+            "label": "City",
+            "readonly": false,
+            "type": "text"
+          },
+          "22342_15": {
+            "hidden": false,
+            "hideInitValidationError": true,
+            "label": "Country",
+            "readonly": false,
+            "type": "text"
+          },
+          "22342_16": {
+            "hidden": false,
+            "hideInitValidationError": true,
+            "label": "Postal code",
+            "readonly": false,
+            "type": "text"
+          },
+          "22342_17": {
+            "fields": {
+              "item": {
+                "type": "text"
+              }
+            },
+            "hidden": false,
+            "hideInitValidationError": true,
+            "items": {
+              "showMoveDownItemButton": false,
+              "showMoveUpItemButton": false
+            },
+            "label": "Industry",
+            "readonly": false,
+            "toolbarSticky": true
+          },
+          "22342_18": {
+            "hidden": false,
+            "hideInitValidationError": true,
+            "label": "Status",
+            "readonly": false,
+            "type": "radio"
+          },
+          "22342_19": {
+            "fields": {
+              "item": {
+                "type": "text"
+              }
+            },
+            "hidden": false,
+            "hideInitValidationError": true,
+            "items": {
+              "showMoveDownItemButton": false,
+              "showMoveUpItemButton": false
+            },
+            "label": "Sales organisation",
+            "readonly": false,
+            "toolbarSticky": true
+          }
+        },
+        "form": {
+          "attributes": {
+            "action": "api\/v1\/nodes\/69422\/categories\/22342",
+            "method": "PUT"
+          },
+          "renderForm": true
+        }
+      },
+      "schema": {
+        "properties": {
+          "22342_10": {
+            "maxLength": 10,
+            "readonly": false,
+            "required": false,
+            "title": "Customer Number",
+            "type": "string"
+          },
+          "22342_11": {
+            "maxLength": 32,
+            "readonly": false,
+            "required": false,
+            "title": "Object Key",
+            "type": "string"
+          },
+          "22342_12": {
+            "maxLength": 32,
+            "readonly": false,
+            "required": false,
+            "title": "Name",
+            "type": "string"
+          },
+          "22342_13": {
+            "maxLength": 32,
+            "readonly": false,
+            "required": false,
+            "title": "Street",
+            "type": "string"
+          },
+          "22342_14": {
+            "maxLength": 32,
+            "readonly": false,
+            "required": false,
+            "title": "City",
+            "type": "string"
+          },
+          "22342_15": {
+            "maxLength": 32,
+            "readonly": false,
+            "required": false,
+            "title": "Country",
+            "type": "string"
+          },
+          "22342_16": {
+            "maxLength": 32,
+            "readonly": false,
+            "required": false,
+            "title": "Postal code",
+            "type": "string"
+          },
+          "22342_17": {
+            "items": {
+              "defaultItems": 1,
+              "maxItems": 3,
+              "maxLength": 32,
+              "minItems": 1,
+              "type": "string"
+            },
+            "readonly": false,
+            "required": false,
+            "title": "Industry",
+            "type": "array"
+          },
+          "22342_18": {
+            "enum": [
+              "Customer",
+              "Prospect"
+            ],
+            "readonly": false,
+            "required": false,
+            "title": "Status",
+            "type": "string"
+          },
+          "22342_19": {
+            "items": {
+              "defaultItems": 1,
+              "maxItems": 30,
+              "maxLength": 32,
+              "minItems": 1,
+              "type": "string"
+            },
+            "readonly": false,
+            "required": false,
+            "title": "Sales organisation",
+            "type": "array"
+          }
+        },
+        "type": "object"
+      }
+    }
+  ]
+}

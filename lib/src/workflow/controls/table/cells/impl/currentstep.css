@@ -1,0 +1,12 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.wfstatus-table .wfstatus-currentstep-name {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-right: 0.2rem
+}
+
+.wfstatus-table .wfstatus-currentstep {
+  display: flex;
+}

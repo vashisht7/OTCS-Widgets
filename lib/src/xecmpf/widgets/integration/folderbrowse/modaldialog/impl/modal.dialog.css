@@ -1,0 +1,27 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.cs-dialog .binf-modal-content .xecm-modal-header {
+  height: 45px;
+  background-color: #004b71;
+  width: 100%;
+  position: relative;
+}
+
+.cs-dialog .xecm-modal-header .cs-close.icon-pagewidget-collapse {
+  width: 30px;
+  height: 30px;
+  float: right;
+  opacity: 0.9;
+  right: 6px;
+  cursor: pointer;
+  top: 22px;
+}
+
+.binf-widgets .xecm-modal-dialog.binf-modal .xecm-modal-header {
+  display: none;
+}
+
+.binf-widgets .xecm-modal-dialog.binf-modal .binf-modal-lg {
+  top: 0px;
+  width: calc(100% - 40px);
+}

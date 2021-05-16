@@ -1,0 +1,45 @@
+<div class="reference-field">
+  {{#if create}}
+	{{#if hasValue}}
+			 <div class="btn-container reference-field-data">
+				<button aria-labelledby="{{idBtnLabel}} {{refDataId}}" title="{{data}}">
+					<span id="{{refDataId}}">{{data}}</span>
+				</button>
+			 </div>
+    {{else}}
+		<div class="reference-field-generate {{^if generateReference}} cursor-disabled {{/if}}">
+			<button id="{{id}}" aria-label="{{btnDesc}}" class="binf-btn binf-btn-primary reference-generate-number {{^if generateReference}} reference-generate-number-disabled {{/if}}" 
+					title="{{genRefNumber}}" {{^if generateReference}} aria-disabled="true" {{/if}}>{{genRefNumber}}
+			</button>
+		</div>
+		<div class="reference-field-generate-read">
+			<div class="reference-field-generate-text">{{depInlineText}} </div>
+		</div>
+	{{/if}}
+  {{else}}
+   <div class="cs-field-read">
+        <div class="cs-field-read-inner">
+            <div class="btn-container">
+				<button aria-labelledby="{{idBtnLabel}} {{refDataId}}" title="{{data}}">
+					<span id="{{refDataId}}">{{data}}</span>
+				</button>
+            </div>
+        </div>
+    </div>   
+    {{^if readOnly}}
+		{{#if canRegenerateReference}}
+			<div class="reference-field-generate-read">
+				<button id="{{id}}" aria-label="{{btnDesc}}" class="binf-btn binf-btn-primary reference-generate-number"
+						title="{{reGenRefNumber}}">{{reGenRefNumber}}
+				</button>
+			</div>
+			<div class="reference-field-generate-read">
+				<div class="reference-field-generate-text">{{depInlineText}} </div>
+			</div>
+		{{/if}}
+    {{/if}} 
+  {{/if}}
+</div>
+
+
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

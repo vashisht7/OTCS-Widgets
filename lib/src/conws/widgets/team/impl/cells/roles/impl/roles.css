@@ -1,0 +1,73 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.conws-team-table-cell-roles .conws-roles-btn {
+  display: inline;
+}
+
+.conws-team-table-cell-roles .conws-roles-btn-div {
+  width: auto;
+  height: 3rem;
+}
+
+.conws-team-table-cell-roles .conws-roles-btn-div {
+  height: 3rem;
+}
+
+.conws-team-table-cell-roles .conws-roles-text {
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  align-items: center;
+  -ms-flex-align: center;
+  justify-content: space-between;
+  width: 100%;
+  height: calc(100% - 0.125rem); 
+}
+
+td.conws-team-table-cell-roles:hover {
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  background-color: #ffffff !important; 
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  border-collapse: separate; 
+}
+
+.conws-team-table-cell-roles .role-name-icon-cell {
+  width: 1.5rem;
+}
+
+.conws-team-table-cell-roles span.conws-icon-roles-edit {
+  display: inline-block;
+  vertical-align: middle;
+  max-height: 1rem;
+}
+
+.conws-team-table-cell-roles .conws-roles-btn-div:hover span.conws-icon-roles-edit, tr.selected span.conws-icon-roles-edit, tr.binf-active span.conws-icon-roles-edit {
+  background-image: url(../../../../impl/image/icons/edit_category.svg);
+}
+
+.csui-acc-tab-region-active .conws-team-table-cell-roles.csui-acc-focusable-active span.conws-icon-roles-edit {
+  background-image: url(../../../../impl/image/icons/edit_category.svg);
+}
+
+.conws-team-table-cell-roles .conws-roles-text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #333333;
+  white-space: pre;
+}
+
+.conws-team-table-cell-roles .conws-roles-count {
+  color: #333333;
+}
+
+.conws-team-table-cell-roles .conws-roles-truncatebox {
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  align-items: center;
+  -ms-flex-align: center;
+  width: calc(100% - 1.5rem);
+}

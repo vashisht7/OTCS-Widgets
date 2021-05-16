@@ -1,0 +1,29 @@
+<div role="dialog" title="{{versionControlTitle}}" aria-labelledby="{{versionControlTitle}}" class="settings-dropdown-container csui-settings-show">
+    <h1 class="version-control-title">{{versionControlTitle}}</h1>
+    <div class="required-field-switch">
+        <span id="{{requiredFieldsLabelId}}" class="only-required-fields-label"
+              title="{{onlyRequiredFieldsLabel}}">{{onlyRequiredFieldsLabel}}</span>
+        <div class="required-fields-switch"></div>
+    </div>
+    <span class="versioning-example"> {{exampleVersions}} </span>
+    <div class="csui-version-folder-permissions binf-hidden">
+        <ul class="csui-folder-permissions" role="listbox">
+            <li class="csui-folder-permissions-item" role="option" title="{{currentFolder}}"
+                aria-label="{{currentFolder}}" tabindex="0">
+                <div>
+                    <span class="cs-icon"></span>
+                    <span class="cs-label">{{currentFolder}}</span>
+                </div>
+            </li>
+            <li class="csui-folder-permissions-item" role="option" title="{{currentAndSubfolder}}"
+                aria-label="{{currentAndSubfolder}}" tabindex="0">
+                <div>
+                    <span class="cs-icon"></span>
+                    <span class="cs-label">{{currentAndSubfolder}}</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

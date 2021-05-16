@@ -1,0 +1,36 @@
+{
+  "type": "flow",
+  "options": {
+    "widgets": [{
+        "type": "csui/widgets/welcome.placeholder"
+      },
+      {
+        "type": "csui/widgets/myassignments"
+      },
+      {
+        "type": "csui/widgets/favorites"
+      },
+      {
+        "type": "csui/widgets/shortcuts",
+        "options": {
+          "shortcutItems": [{
+            "type": 141
+          }],
+          "shortcutTheme": "csui-shortcut-theme-teal2"
+        }
+      },
+      {
+        "type": "csui/widgets/shortcuts",
+        "options": {
+          "shortcutItems": [{
+            "type": 142
+          }],
+          "shortcutTheme": "csui-shortcut-theme-pink1"
+        }
+      },
+      {
+        "type": "csui/widgets/recentlyaccessed"
+      }
+    ]
+  }
+}

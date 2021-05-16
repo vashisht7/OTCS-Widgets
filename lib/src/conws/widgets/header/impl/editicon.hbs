@@ -1,0 +1,21 @@
+<div class="conws-popover">
+  <div class='title'>{{title}}</div>
+  <div class='message'>{{message}}</div>
+  <div class="buttons">
+    <div class="buttons binf-left">
+      {{#if resetButton}}
+        <p class="reset" title="{{resetTitle}}"><a href="#">{{reset}}</a></p>
+      {{/if}}
+    </div>
+    <div class="buttons binf-right">
+      {{#if uploadButton}}
+        <button type="button" class="binf-btn binf-btn-primary upload"
+                title="{{uploadTitle}}">{{upload}}</button>
+      {{/if}}
+      <button type="button" class="binf-btn binf-btn-default cancel"
+              title="{{cancelTitle}}">{{cancel}}</button>
+    </div>
+  </div>
+</div>
+
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

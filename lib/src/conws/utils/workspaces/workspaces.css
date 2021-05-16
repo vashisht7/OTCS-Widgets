@@ -1,0 +1,63 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .conws-workspacestitleicondefault {
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 36px;
+}
+
+.conws-workspacestitleicon img {
+  max-width: 36px;
+  max-height: 36px;
+}
+
+
+
+.tile .conws-workspaces-error.content-tile {
+  background-color: #F7F7F7;
+  flex-direction: column;
+  flex-grow: 1;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.binf-widgets .conws-workspaces-error {
+  margin: auto 0 auto 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  color: #333333;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.conws-workspaces-error .conws-workspaces-error-icon-div {
+  display: inline-block;
+  width: 100%;
+  margin-top: 10%
+}
+
+.conws-workspaces-error .conws-workspaces-error-icon-div .conws-workspaces-error-icon-parent {
+  border-radius: 50%;
+  border: 1px solid #F7F7F7;
+  background-color: #F7F7F7;
+  display: inline-flex;
+}
+
+.conws-workspaces-error .conws-workspaces-error-icon-div .conws-workspaces-error-icon {
+  width: 2em;
+  height: 2em;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+.conws-workspaces-error .conws-workspaces-message {
+  margin-top: 12px;
+  font-size: 18px;
+  font-weight: 200;
+  font-style:normal;
+  display: inline-block;
+  align-self: center;
+}  
+
+

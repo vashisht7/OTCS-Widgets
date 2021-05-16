@@ -1,0 +1,328 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .target-browse .cs-list .binf-list-group {
+  margin: 0;
+  padding: 2px 0;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+.binf-widgets .target-browse .cs-list .binf-list-group.csui-no-results {
+  height: 95%;
+}
+
+.binf-widgets .target-browse .cs-list .binf-list-group > div {
+  height: calc(100%);
+}
+
+.binf-widgets .target-browse .cs-list .binf-list-group-item {
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  align-items: center;
+  -ms-flex-align: center;
+  border-radius: 0;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  background-color: #ffffff;
+  padding: 0;
+  padding-left: 5px;
+  height: 42px;
+  cursor: default;
+}
+
+.binf-widgets .target-browse .cs-list .binf-list-group-item {
+  margin: 0;
+  border: 0;
+}
+
+.binf-widgets .target-browse .cs-list .binf-list-group-item:focus {
+  outline: 1px dotted #333333;
+  outline-offset: -1px;
+}
+
+.binf-widgets .target-browse .cs-list span.csui-list-group-item:focus {
+  border: none;
+}
+
+.binf-widgets .target-browse .cs-list .csui-has-error span.csui-icon-group {
+  vertical-align: top;
+  padding-top: 5px;
+}
+
+.binf-widgets .target-browse .cs-list .binf-list-group-item.csui-has-error {
+  height: auto;
+}
+
+.binf-widgets .target-browse .cs-list .binf-list-group-item.csui-has-error:hover {
+  border: none;
+}
+
+.binf-widgets .target-browse .cs-list .binf-list-group-item.csui-has-inlineform {
+  background: #DCE4E8;
+}
+
+
+.binf-widgets .target-browse .csui-slideMidLeft .cs-list .binf-list-group-item .binf-text-danger {
+  max-width: calc(100% - 44px);
+}
+
+.csui-np-content .cs-list span.csui-list-group-item,
+.csui-np-content .cs-list span.csui-list-group-item:hover {
+  width: 100%;
+  text-decoration: none;
+  color: #333333;
+}
+
+.csui-np-content .binf-list-group-item .csui-start-icon {
+  margin: 0 6px 0 0;
+  width: 12px;
+  height: 12px;
+}
+
+.csui-np-content .cs-list .binf-list-group-item .csui-list-item-title {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 9px;
+  max-width: calc(100% - 8em);
+  padding: 2px 0 2px 0;
+}
+
+.csui-np-content .cs-list .binf-list-group-item.csui-disabled .csui-list-item-title,
+.csui-np-content .cs-list .binf-list-group-item.csui-disabled .csui-icon,
+.csui-np-content .cs-list .binf-list-group-item.csui-browse-disabled .csui-browsable {
+  opacity: .8;
+}
+
+.csui-np-content .cs-list .binf-list-group-item .csui-icon.csui-end-icon {
+  width: 0.65em;
+  height: 0.65em;
+  margin-right: 1em;
+  position: absolute;
+  right: 0;
+  top: calc((3em - .65em) / 2);
+  left: auto;
+}
+
+html[dir="rtl"] .binf-widgets .target-browse .cs-list .binf-list-group-item .csui-icon.csui-end-icon {
+  transform: scaleX(-1);
+  filter: 'FlipH';
+  -ms-filter: 'FlipH';
+}
+
+.binf-widgets .target-browse .cs-list .binf-list-group-item:hover,
+.binf-widgets .target-browse .cs-list .binf-search-location-group .search-location-name:hover,
+.binf-widgets .target-browse .cs-list .binf-search-location-group .search-location-name:focus {
+  background-color: #bac9ce;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  text-decoration: none;
+}
+
+.binf-widgets .target-browse .cs-list .binf-search-location-group .search-location-name:hover,
+.binf-widgets .target-browse .cs-list .binf-search-location-group .search-location-name:focus {
+  cursor: pointer;
+}
+
+.binf-widgets .target-browse .cs-list .binf-list-group-item.select,
+.binf-widgets .target-browse .cs-list .binf-list-group-item:active {
+  background-color: #dfe7ea;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  border-color: #ffffff;
+  color: #333333;
+}
+
+.binf-widgets .target-browse .cs-list .binf-list-group-item.browse {
+  background-color: #d6e1ed;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  border-color: #ffffff;
+  color: #333333;
+}
+
+.binf-widgets .target-browse .list-content {
+  height: 100%;
+  
+  width: 100%;
+}
+
+.binf-widgets .target-browse .binf-list-group-item {
+  margin: 0;
+}
+
+.binf-widgets .search-location-name {
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  align-items: center;
+  -ms-flex-align: center;
+  border-radius: 0;
+  height: 42px;
+  margin-right: 4px;
+  padding-top: 5px;
+  text-decoration: none;
+}
+
+.binf-widgets .binf-search-location-group .search-location-name {
+  padding: 0;
+}
+
+.binf-widgets .search-location-name a:focus {
+  text-decoration: none;
+}
+
+.binf-widgets .search-location-name .csui-list-item-title {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 9px;
+  max-width: 65%;
+  font-size: 14px;
+  line-height: normal;
+}
+
+.search-location-name .csui-icon-group {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  margin-right: 5px;
+}
+
+.binf-widgets .target-browse .cs-list .list-group-item .left-item.csui-disabled .csui-list-item-title,
+.binf-widgets .target-browse .cs-list .list-group-item .left-item.csui-disabled .csui-icon {
+  opacity: .5;
+}
+
+.binf-widgets .binf-search-location-group {
+  display: inline-block;
+  width: 50%;
+  padding: 2px 0;
+}
+
+.binf-widgets .search-left-item {
+  display: inline-block;
+  float: left;
+  width: 50%;
+}
+
+.binf-widgets .search-left-folder-right {
+  display: inline-block;
+  float: left;
+  width: 100%;
+}
+
+.binf-widgets .cs-start-locations .csui-np-content .cs-list .binf-list-group.search-left-folder-right {
+  padding-left: 26px;
+}
+
+.binf-widgets .csui-search-to-back-padding {
+  padding-left: 26px;
+}
+
+.binf-widgets .target-browse .cs-list .binf-list-group .csui-no-result-wrapper {
+  height: 100%;
+  display: table;
+  width: 100%;
+}
+
+.binf-widgets .target-browse .cs-list .binf-list-group .csui-no-result-message {
+  font-size: 2.25em;
+  font-weight: 200;
+  color: #757575;
+  text-align: center;
+  margin-top: 0;
+  height: 100%;
+  vertical-align: middle;
+  display: table-cell;
+}
+.binf-widgets .target-browse .cs-list .binf-list-group-item.csui-disabled,
+.binf-widgets .target-browse .cs-list .binf-list-group-item.csui-disabled a,
+.binf-widgets .target-browse .cs-list .binf-list-group-item.csui-disabled span.icon-checkbox > input,
+.binf-widgets .target-browse .cs-list .csui-item-standard.binf-list-group-item.csui-disabled .csui-browsable,
+.binf-widgets .target-browse .cs-list .binf-list-group-item.csui-disabled .csui-browsable,
+.binf-widgets .target-browse .cs-list .binf-list-group-item.csui-disabled .csui-browsable span,
+.binf-widgets .target-browse .cs-list .binf-list-group-item.csui-browse-disabled .csui-browsable,
+.binf-widgets .target-browse .cs-list .binf-list-group-item.csui-browse-disabled .csui-browsable span,
+.binf-widgets .target-browse .cs-list .csui-item-standard.binf-list-group-item.csui-browse-disabled span.csui-browsable {
+  cursor: default;
+}
+
+.binf-widgets .target-browse .cs-list .binf-list-group-item span.icon-checkbox > input {
+  
+  display: block;
+  height: inherit;
+  width: inherit;
+  cursor: pointer;
+  opacity: 0;
+  margin: 0;
+}
+
+.binf-widgets .target-browse .cs-list .binf-list-group-item span.icon-checkbox {
+  opacity: 0;
+  margin: 0;
+  height: 18px;
+  width: 18px;
+  min-width: 18px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  margin-right: 18px;
+  margin-left: 18px;
+}
+
+
+.binf-widgets.csui-on-ipad .target-browse .cs-list .binf-list-group-item span.icon-checkbox,
+.binf-widgets .target-browse .cs-list span.csui-selectable.csui-show-checkbox,
+.binf-widgets .target-browse .cs-list .binf-list-group-item:hover span.csui-selectable,
+.binf-widgets .target-browse .cs-list .binf-list-group-item:focus span.csui-selectable,
+.binf-widgets .target-browse .cs-list .binf-list-group-item span.icon-checkbox-selected {
+  opacity: 1;
+}
+
+.binf-widgets .target-browse .cs-list .binf-list-group-item.csui-disabled span.icon-checkbox {
+  opacity: 0;
+}
+
+
+.binf-widgets .target-browse .cs-list .csui-item-standard.binf-list-group-item span.csui-browsable {
+  width: calc(100% - 64px);
+  display: inline-block;
+  cursor: pointer;
+}
+
+
+.binf-widgets .csui-node-picker .cs-breadcrumb .csui-selected-count-parent .csui-selected-counter-region button {
+  margin: 2px 0;
+}
+
+.binf-widgets .csui-node-picker .csui-inlineform-container {
+  width: calc(100% - 50px); 
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.binf-widgets .csui-node-picker .csui-inlineform .csui-btn-save,
+.binf-widgets .csui-node-picker .csui-inlineform .csui-btn-metadata {
+  display: none; 
+}
+
+.binf-widgets .csui-node-picker .csui-inlineform-container .cancel-edit {
+  padding: 0;
+  margin-left: 12px;
+  border: none;
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+}
+
+.binf-widgets .csui-node-picker .csui-inlineform-container .cancel-edit:focus {
+  outline: 1px dotted #333333;
+}
+
+.binf-widgets .csui-node-picker .csui-np-content .csui-inlineform-row .csui-browsable {
+  margin-left: 58px; 
+}

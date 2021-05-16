@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Visual Count Control</title>
+
+    <link rel="stylesheet" href="../../../../themes/carbonfiber/theme.css">
+
+    <style>
+
+        .binf-widgets .chart {
+            width: calc(100vw - 40px);
+            height: calc(100vh - 80px);
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid black;
+            background-color: white;
+            overflow: hidden;
+        }
+
+        .binf-widgets .testlink,
+        .binf-widgets .testlink:hover {
+            font-size: 11pt;
+            margin-left: 20px;
+            color: #fff;
+            opacity: 0.6;
+            text-decoration: underline;
+        }
+
+        .binf-widgets .testlink:hover {
+            opacity: 1;
+        }
+
+    </style>
+
+    <script src="../../../../lib/require.js"></script>
+    <script src="../../../../config.js" data-csui-path="../../../.."></script>
+    <script>
+
+        require.config({
+            deps: [
+                'csui/lib/require.config!csui/csui-extensions.json'
+            ]
+        });
+
+        require.config({
+            config: {
+                'csui/utils/contexts/factories/connector': {
+                    connection: {
+                        url: '//server/cgi/cs.exe/api/v1',
+                        supportPath: '/support',
+                        credentials: {
+                            username: 'Admin',
+                            password: 'livelink'
+                        }
+                    }
+                }
+            }
+        });
+
+        require(['csui/lib/backbone',
+                'csui/lib/marionette',
+                'csui/utils/contexts/page/page.context',
+                'csui/controls/charts/visual.count/visual.count.view',
+                './visual.count.mock.js'
+        ], function (Backbone, Marionette, PageContext, VisualCountView, mock) {
+
+            mock.enable();
+
+            var columnCollection = new Backbone.Collection({
+                    // nothing!
+                }),
+                Collection = Backbone.Collection.extend({
+                    url: '//server/otcs/cs/api/v2/mydata4',
+                    parse: function(response) {
+                        columnCollection.set(response.columns);
+                        return response.data;
+                    }
+                }),
+                dataCollection = new Collection(),
+                chartOptions = new Backbone.Model({
+                    "animate": false,
+                    "showAsPercentage": false,
+                    "showAxisLabels": true,
+                    "showValueLabels": true,
+                    "showLegend": false,
+                    "showTotal": true,
+                    "chartTitle": "",
+                    "themeName": "dataClarity"
+                }),
+                pageContext = new PageContext(),
+                chart1Region = new Marionette.Region({el: '#chart1'}),
+                chart1View = new VisualCountView({
+                    context: pageContext,
+                    chartType: 'verticalBar',
+                    chartOptions: chartOptions,
+                    collection: dataCollection,
+                    columns: columnCollection
+                }),
+                chart2Region = new Marionette.Region({el: '#chart2'}),
+                chart2View = new VisualCountView({
+                    context: pageContext,
+                    chartType: 'pie',
+                    chartOptions: chartOptions,
+                    collection: dataCollection,
+                    columns: columnCollection
+                }),
+                chart3Region = new Marionette.Region({el: '#chart3'}),
+                chart3View = new VisualCountView({
+                    context: pageContext,
+                    chartType: 'donut',
+                    chartOptions: chartOptions,
+                    collection: dataCollection,
+                    columns: columnCollection
+                });
+
+            chart1Region.show(chart1View);
+            chart2Region.show(chart2View);
+            chart3Region.show(chart3View);
+            dataCollection.fetch();
+
+        });
+
+    </script>
+</head>
+
+<body class="binf-widgets">
+<a href="./index.html" class="testlink">Back to main test</a>
+<div class="chart" id="chart1"></div>
+<div class="chart" id="chart2"></div>
+<div class="chart" id="chart3"></div>
+
+
+</body>
+
+</html>
+
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

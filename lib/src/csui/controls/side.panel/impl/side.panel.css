@@ -1,0 +1,205 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .csui-sidepanel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1040;
+  visibility: hidden;
+  -webkit-transition: visibility 0s .6s;
+  transition: visibility 0s .6s;
+}
+
+.binf-widgets .csui-sidepanel .csui-sidepanel-header {
+  background-color: #66d4d6;
+  height: 64px;
+}
+
+.binf-widgets .csui-sidepanel .csui-sidepanel-header .csui-sidepanel-heading {
+  font-size: 24px;
+  line-height: 30px;
+  width: 100%;
+}
+
+.binf-widgets .csui-sidepanel .csui-sidepanel-header .csui-sidepanel-subheading {
+  font-size: 14px;
+  line-height: 18px;
+  width: 100%;
+  float: left;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.binf-widgets .csui-sidepanel .csui-sidepanel-footer {
+  background-color: #f4f4f4;
+  height: 44px;
+}
+
+.binf-widgets .csui-sidepanel .csui-sidepanel-body {
+  background-color: #ffffff;
+  height: calc(100% - 108px);
+  padding: 0px 48px;
+}
+
+.binf-widgets .csui-sidepanel-body .csui-custom-view-search {
+  height: 100%;
+}
+
+.binf-widgets .csui-sidepanel.no-footer .csui-sidepanel-body {
+  height: calc(100vh - 50px);
+}
+
+
+
+.binf-widgets .csui-sidepanel .csui-sidepanel-title {
+  margin: 6px 0 10px 16px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #003939;
+  width: calc(100% - 85px);
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.binf-widgets .csui-sidepanel .csui-sidepanel-close {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.icon.cs-icon-cross:hover {
+  cursor: pointer;
+}
+
+.binf-widgets .csui-sidepanel .csui-sidepanel-close .cs-icon-cross {
+  background-image: url(../../globalmessage/impl/images/close.svg);
+  width: 14px;
+  height: 14px;
+  margin: 25px;
+}
+
+.binf-widgets .csui-sidepanel .cs-footer-control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 16px;
+}
+
+.binf-widgets .csui-sidepanel .cs-footer-control,
+.binf-widgets .csui-sidepanel .cs-footer-control .cs-footer-right,
+.binf-widgets .csui-sidepanel .cs-footer-control .cs-footer-right div,
+.binf-widgets .csui-sidepanel .cs-footer-control .cs-footer-left,
+.binf-widgets .csui-sidepanel .cs-footer-control .cs-footer-left div {
+  height: 100%;
+}
+
+.binf-widgets .csui-sidepanel .cs-sidepanel-btngroup {
+  display: flex;
+  align-items: center;
+}
+
+.binf-widgets .csui-sidepanel .cs-footer-control .binf-btn {
+  color: #232e72;
+  background-color: transparent;
+  border: 0 none;
+  font-size: 14px;
+  padding: 0 16px;
+  height: 100%;
+  margin: 0;
+  border-radius: 0;
+}
+
+.binf-widgets .csui-sidepanel .cs-footer-control .binf-btn-primary {
+  font-weight: bold
+}
+
+.binf-widgets .csui-sidepanel .cs-footer-control .binf-btn-primary:focus,
+.binf-widgets .csui-sidepanel .cs-footer-control .binf-btn-primary:hover {
+  background-color: #b2bec5;
+}
+
+.binf-widgets .csui-sidepanel .cs-footer-control .binf-btn-primary:active {
+  background-color: #98a8b2;
+}
+
+.binf-widgets .csui-sidepanel .cs-footer-control .binf-btn-primary.binf-disabled {
+  color: #999999;
+  background-color: transparent;
+}
+
+.csui-sidepanel .cs-header-control {
+  height: inherit;
+}
+
+.binf-widgets .csui-sidepanel .cs-go-back {
+  width: 14px;
+  height: 14px;
+  border: 0;
+  background-color: transparent;
+}
+
+.binf-widgets .csui-sidepanel .csui-slide-hidden {
+  display: none !important;
+}
+
+.binf-widgets .csui-sidepanel--from-right .csui-sidepanel-container {
+  right: 0;
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0)
+}
+
+.binf-widgets .csui-sidepanel--from-left .csui-sidepanel-container {
+  left: 0;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0)
+}
+
+.binf-widgets .csui-sidepanel-backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 0 0;
+  -webkit-transition: background .3s .3s;
+  transition: background .3s .3s;
+}
+
+.binf-widgets .csui-sidepanel .csui-sidepanel-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50vw;
+  height: 100%;
+  max-width: 400px;
+  min-width: 278px;
+  border-bottom: 4px solid #3ac9f2;
+  -webkit-transition: -webkit-transform .3s, width 0.3s;
+  transition: -webkit-transform .3s, width 0.3s;
+  transition: transform .3s, width 0.3s;
+  transition: transform .3s, -webkit-transform .3s, width 0.3s;
+}
+
+.binf-widgets .csui-sidepanel.csui-sidepanel-visible {
+  visibility: visible;
+  -webkit-transition: visibility 0s 0s;
+  transition: visibility 0s 0s;
+}
+
+.binf-widgets .csui-sidepanel.csui-sidepanel-visible .csui-sidepanel-container {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  transition-delay: 0s;
+}
+
+.binf-widgets .csui-sidepanel.csui-sidepanel-visible .csui-sidepanel-backdrop {
+  background: rgba(0, 0, 0, .6);
+  -webkit-transition: background .3s 0s;
+  transition: background .3s 0s;
+}
+
+.binf-widgets.csui-sidepanel-open {
+  overflow-y: hidden;
+}

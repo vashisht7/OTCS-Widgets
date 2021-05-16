@@ -1,0 +1,55 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+@font-face {
+  font-family: 'OpenText Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('OTS_webfonts/OpenTextSans_W_Rg.eot');
+  src: url('OTS_webfonts/OpenTextSans_W_Rg.woff2') format('woff2'),
+  url('OTS_webfonts/OpenTextSans_W_Rg.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'OpenText Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: url('OTS_webfonts/OpenTextSans_W_Lt.eot');
+  src: url('OTS_webfonts/OpenTextSans_W_Lt.woff2') format('woff2'),
+  url('OTS_webfonts/OpenTextSans_W_Lt.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'OpenText Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('OTS_webfonts/OpenTextSans_W_Bd.eot');
+  src: url('OTS_webfonts/OpenTextSans_W_Bd.woff2') format('woff2'),
+  url('OTS_webfonts/OpenTextSans_W_Bd.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url('OTS_webfonts/OpenTextSans_W_Rg.eot');
+  src: url('OTS_webfonts/OpenTextSans_W_Rg.woff2') format('woff2'),
+  url('OTS_webfonts/OpenTextSans_W_Rg.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: url('OTS_webfonts/OpenTextSans_W_Lt.eot');
+  src: url('OTS_webfonts/OpenTextSans_W_Lt.woff2') format('woff2'),
+  url('OTS_webfonts/OpenTextSans_W_Lt.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: url('OTS_webfonts/OpenTextSans_W_Bd.eot');
+  src: url('OTS_webfonts/OpenTextSans_W_Bd.woff2') format('woff2'),
+  url('OTS_webfonts/OpenTextSans_W_Bd.woff') format('woff');
+}

@@ -1,0 +1,35 @@
+<div class="binf-modal-content">
+  <div class="binf-modal-header">
+    <h2 class="binf-modal-title">{{title}}</h2>
+  </div>
+  <div class="binf-modal-body">
+    {{#if canEdit }}
+      <div class="conws-roles-edit-canedit">
+        <div
+            class="conws-roles-edit-canedit-left conws-roles-edit-left conws-roles-edit-canedit-separator">
+          <div class="conws-roles-edit-canedit-header">
+            <div class="conws-roles-edit-canedit-setroles-region"></div>
+          </div>
+          <div class="conws-roles-edit-canedit-content">
+            <div class="conws-roles-edit-canedit-setroles-list-region"></div>
+          </div>
+        </div>
+        <div class="conws-roles-edit-canedit-right conws-roles-edit-right">
+          <div class="conws-roles-edit-canedit-header">
+            <div class="conws-roles-edit-canedit-allroles-region"></div>
+          </div>
+          <div class="conws-roles-edit-canedit-content">
+            <div class="conws-roles-edit-canedit-allroles-list-region"></div>
+          </div>
+        </div>
+      </div>
+    {{else}}
+      <div class="conws-roles-edit-readonly">
+        <div class="conws-roles-readonly-region"></div>
+      </div>
+    {{/if}}
+  </div>
+  <div class="conws-roles-edit-buttons-region"></div>
+</div>
+
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

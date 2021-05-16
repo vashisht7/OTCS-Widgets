@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>OT - Create or Complete business workspace</title>
+
+  <link rel="stylesheet" href="../../../../csui/themes/carbonfiber/theme.css">
+  <link id="originTheme" rel="stylesheet" data-csui-theme-overrides="true" href="#">
+
+  <style>
+    body {
+      margin: 0;
+      height: 100%;
+      overflow-y: hidden;
+      overflow-x: hidden;
+      padding-right: 0 !important;
+    }
+
+    #widgetWMainWindow {
+      height: 100vh;
+    }
+  </style>
+
+  <script src="../../../../csui/lib/require.js"></script>
+  <script src="../../../../csui/config.js" data-csui-path="../../../../csui"></script>
+  <script>
+    require.config({
+      paths: {
+        csuithemes: '../../../../csuithemes',
+        esoc: '../../../../esoc',
+        conws: '../../../../conws',
+        xecmpf: '../../..'
+      }
+    });
+
+    var getLocationQueryParamValue = function () {
+      var params = window.location.search
+        .substring(1) // to remove '?'
+        .split('&')
+        .reduce(function (obj, item) {
+          var arr = item.split('=');
+          obj[arr[0]] = arr[1];
+          return obj;
+        }, {});
+      return function (key) {
+        return params.hasOwnProperty(key) && params[key];
+      }
+    }();
+
+    var themeModuleId = getLocationQueryParamValue('themeModuleId');
+
+    if (themeModuleId) {
+      document.getElementById('originTheme').href = require.toUrl(themeModuleId + '.css');
+    }
+
+    require(['xecmpf/widgets/workspaces/test/index']);
+  </script>
+
+</head>
+
+<body class="binf-widgets">
+  <div id="widgetWMainWindow"></div>
+</body>
+
+</html>
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

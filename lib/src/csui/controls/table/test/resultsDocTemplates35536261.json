@@ -1,0 +1,658 @@
+{
+  "links": {
+    "data": {
+      "self": {
+        "body": "",
+        "content_type": "",
+        "href": "\/api\/v2\/nodes\/35536261\/doctemplates?group_by=classification&subtypes=144",
+        "method": "GET",
+        "name": ""
+      }
+    }
+  },
+  "results": [
+    {
+      "container": false,
+      "hasTemplates": true,
+      "name": "Document",
+      "subtype": 144,
+      "templatesGroup": [
+        {
+          "id": 18121785,
+          "name": "CWS classification tree",
+          "templates": []
+        },
+        {
+          "id": 21422430,
+          "name": "Contract Management",
+          "templates": []
+        },
+        {
+          "id": 21423093,
+          "name": "Business Partner",
+          "templates": []
+        },
+        {
+          "id": 21422543,
+          "name": "Contract Type",
+          "templates": []
+        },
+        {
+          "id": 21422976,
+          "name": "Consulting",
+          "templates": []
+        },
+        {
+          "id": 21426278,
+          "name": "Change Request",
+          "templates": [
+            {
+              "favorite": false,
+              "id": 33769232,
+              "isDPWizardAvailable": false,
+              "mime_type": "application\/vnd.openxmlformats-officedocument.wordprocessingml.document",
+              "mimetype": "application\/vnd.openxmlformats-officedocument.wordprocessingml.document",
+              "modify_date": "2019-10-25T00:06:07",
+              "name": "Doc template Change request.docx",
+              "size": 0,
+              "sizeformatted": "0 KB"
+            }
+          ]
+        },
+        {
+          "id": 21425952,
+          "name": "Consulting Agreement",
+          "templates": [
+            {
+              "favorite": false,
+              "id": 33769681,
+              "isDPWizardAvailable": false,
+              "mime_type": "application\/vnd.openxmlformats-officedocument.wordprocessingml.document",
+              "mimetype": "application\/vnd.openxmlformats-officedocument.wordprocessingml.document",
+              "modify_date": "2019-10-25T00:05:43",
+              "name": "Doc template 2 Consulting Agreement.docx",
+              "size": 0,
+              "sizeformatted": "0 KB"
+            },
+            {
+              "favorite": false,
+              "id": 33770004,
+              "isDPWizardAvailable": false,
+              "mime_type": "application\/vnd.openxmlformats-officedocument.wordprocessingml.document",
+              "mimetype": "application\/vnd.openxmlformats-officedocument.wordprocessingml.document",
+              "modify_date": "2019-10-25T00:06:55",
+              "name": "Doc template Consulting Agreement.docx",
+              "size": 0,
+              "sizeformatted": "0 KB"
+            }
+          ]
+        },
+        {
+          "id": 21426057,
+          "name": "Consulting Agreement - Fixed Price",
+          "templates": [
+            {
+              "favorite": false,
+              "id": 33770003,
+              "isDPWizardAvailable": false,
+              "mime_type": "application\/vnd.openxmlformats-officedocument.wordprocessingml.document",
+              "mimetype": "application\/vnd.openxmlformats-officedocument.wordprocessingml.document",
+              "modify_date": "2019-10-25T00:06:28",
+              "name": "Doc template Consulting Agreement - Fixed price.docx",
+              "size": 0,
+              "sizeformatted": "0 KB"
+            }
+          ]
+        },
+        {
+          "id": 21426606,
+          "name": "Frame Agreement - Consulting",
+          "templates": [
+            {
+              "favorite": false,
+              "id": 33770005,
+              "isDPWizardAvailable": false,
+              "mime_type": "application\/vnd.openxmlformats-officedocument.wordprocessingml.document",
+              "mimetype": "application\/vnd.openxmlformats-officedocument.wordprocessingml.document",
+              "modify_date": "2019-10-25T00:07:48",
+              "name": "Doc template Frame Agreement - Consulting.docx",
+              "size": 0,
+              "sizeformatted": "0 KB"
+            }
+          ]
+        },
+        {
+          "id": 21422874,
+          "name": "Cooperation",
+          "templates": []
+        },
+        {
+          "id": 21426277,
+          "name": "Cooperation Agreement",
+          "templates": [
+            {
+              "favorite": false,
+              "id": 33769682,
+              "isDPWizardAvailable": false,
+              "mime_type": "application\/vnd.openxmlformats-officedocument.wordprocessingml.document",
+              "mimetype": "application\/vnd.openxmlformats-officedocument.wordprocessingml.document",
+              "modify_date": "2019-10-25T00:07:24",
+              "name": "Doc template Cooperation Agreement.docx",
+              "size": 0,
+              "sizeformatted": "0 KB"
+            }
+          ]
+        },
+        {
+          "id": 21426718,
+          "name": "Memorandum of Understanding",
+          "templates": [
+            {
+              "favorite": false,
+              "id": 33770006,
+              "isDPWizardAvailable": false,
+              "mime_type": "application\/vnd.openxmlformats-officedocument.wordprocessingml.document",
+              "mimetype": "application\/vnd.openxmlformats-officedocument.wordprocessingml.document",
+              "modify_date": "2019-10-25T00:08:39",
+              "name": "Doc template Memorandum of Understanding.docx",
+              "size": 0,
+              "sizeformatted": "0 KB"
+            }
+          ]
+        },
+        {
+          "id": 21422977,
+          "name": "Corporate",
+          "templates": []
+        },
+        {
+          "id": 21426717,
+          "name": "Asset Transfer Agreement",
+          "templates": []
+        },
+        {
+          "id": 21426825,
+          "name": "Control and Management Agreement",
+          "templates": []
+        },
+        {
+          "id": 21426056,
+          "name": "Merger Agreement",
+          "templates": []
+        },
+        {
+          "id": 21426276,
+          "name": "Partnership Agreement",
+          "templates": []
+        },
+        {
+          "id": 21426275,
+          "name": "Share Transfer Agreement",
+          "templates": []
+        },
+        {
+          "id": 21425951,
+          "name": "Shareholders Agreement",
+          "templates": []
+        },
+        {
+          "id": 21425950,
+          "name": "Spin-Off Agreement",
+          "templates": []
+        },
+        {
+          "id": 21422760,
+          "name": "Disclosure",
+          "templates": []
+        },
+        {
+          "id": 21426168,
+          "name": "Non Disclosure Agreement - Cooperation",
+          "templates": []
+        },
+        {
+          "id": 21426498,
+          "name": "Non Disclosure Agreement - Natural Person",
+          "templates": []
+        },
+        {
+          "id": 21422978,
+          "name": "Finance",
+          "templates": []
+        },
+        {
+          "id": 21426167,
+          "name": "Credit Agreement",
+          "templates": []
+        },
+        {
+          "id": 21426055,
+          "name": "Factoring Agreement",
+          "templates": []
+        },
+        {
+          "id": 21426716,
+          "name": "Guarantee \/ Security Agreement",
+          "templates": []
+        },
+        {
+          "id": 21426715,
+          "name": "Loan Agreement",
+          "templates": []
+        },
+        {
+          "id": 21422436,
+          "name": "HR",
+          "templates": []
+        },
+        {
+          "id": 21426497,
+          "name": "Employment Agreement",
+          "templates": []
+        },
+        {
+          "id": 21422544,
+          "name": "Insurance",
+          "templates": []
+        },
+        {
+          "id": 21426166,
+          "name": "Insurance Agreement",
+          "templates": []
+        },
+        {
+          "id": 21422989,
+          "name": "Intellectual Property",
+          "templates": []
+        },
+        {
+          "id": 21422657,
+          "name": "Frame Agreement - Licenses",
+          "templates": []
+        },
+        {
+          "id": 21422766,
+          "name": "IP Assignment Agreement",
+          "templates": []
+        },
+        {
+          "id": 21426495,
+          "name": "IP Joint Property Agreement",
+          "templates": []
+        },
+        {
+          "id": 21426165,
+          "name": "Letter of Consent",
+          "templates": []
+        },
+        {
+          "id": 21426605,
+          "name": "License Agreement",
+          "templates": []
+        },
+        {
+          "id": 21426496,
+          "name": "Pre-Right Agreement",
+          "templates": []
+        },
+        {
+          "id": 21422545,
+          "name": "Leasing",
+          "templates": []
+        },
+        {
+          "id": 21423206,
+          "name": "Lease of Goods Agreement",
+          "templates": []
+        },
+        {
+          "id": 21423203,
+          "name": "Logistics",
+          "templates": []
+        },
+        {
+          "id": 21422879,
+          "name": "B2B Agreement",
+          "templates": []
+        },
+        {
+          "id": 21422765,
+          "name": "Customer Logistics Agreement",
+          "templates": []
+        },
+        {
+          "id": 21422443,
+          "name": "EDI Agreement",
+          "templates": []
+        },
+        {
+          "id": 21422656,
+          "name": "Transport Agreement",
+          "templates": []
+        },
+        {
+          "id": 21422764,
+          "name": "Warehouse Agreement",
+          "templates": []
+        },
+        {
+          "id": 21422984,
+          "name": "Manufacturing & Services",
+          "templates": []
+        },
+        {
+          "id": 21422763,
+          "name": "Development Agreement",
+          "templates": []
+        },
+        {
+          "id": 21423096,
+          "name": "Environmental Agreement",
+          "templates": []
+        },
+        {
+          "id": 21422554,
+          "name": "Escrow Agreement",
+          "templates": []
+        },
+        {
+          "id": 21423205,
+          "name": "IT Services Agreement",
+          "templates": []
+        },
+        {
+          "id": 21422442,
+          "name": "Manufacturing Agreement",
+          "templates": []
+        },
+        {
+          "id": 21422988,
+          "name": "Support and Maintenance Agreement",
+          "templates": []
+        },
+        {
+          "id": 21422546,
+          "name": "Preparatory",
+          "templates": []
+        },
+        {
+          "id": 21422441,
+          "name": "Letter of Intent",
+          "templates": []
+        },
+        {
+          "id": 21423095,
+          "name": "Memorandum of Understanding",
+          "templates": []
+        },
+        {
+          "id": 21422653,
+          "name": "Purchasing",
+          "templates": []
+        },
+        {
+          "id": 21422655,
+          "name": "Purchasing Agreement - Product",
+          "templates": []
+        },
+        {
+          "id": 21422440,
+          "name": "Purchasing Agreement - Service",
+          "templates": []
+        },
+        {
+          "id": 21423204,
+          "name": "Quality",
+          "templates": []
+        },
+        {
+          "id": 21422878,
+          "name": "Quality Agreement",
+          "templates": []
+        },
+        {
+          "id": 21422761,
+          "name": "Real Estate",
+          "templates": []
+        },
+        {
+          "id": 21422986,
+          "name": "Lease \/ Rent Agreement",
+          "templates": []
+        },
+        {
+          "id": 21422439,
+          "name": "Real Estate Transfer Agreement",
+          "templates": []
+        },
+        {
+          "id": 21422762,
+          "name": "Sales",
+          "templates": []
+        },
+        {
+          "id": 21422985,
+          "name": "Sales Agreement - Product",
+          "templates": []
+        },
+        {
+          "id": 21422654,
+          "name": "Sales Agreement - Services",
+          "templates": []
+        },
+        {
+          "id": 21422552,
+          "name": "Settlement",
+          "templates": []
+        },
+        {
+          "id": 21422553,
+          "name": "Settlement Agreement",
+          "templates": []
+        },
+        {
+          "id": 18121015,
+          "name": "CWS classic 1",
+          "templates": []
+        },
+        {
+          "id": 29950118,
+          "name": "CWS_classification_for_w\/o_header_template",
+          "templates": []
+        },
+        {
+          "id": 28300532,
+          "name": "Engineering & Construction Workspaces",
+          "templates": []
+        },
+        {
+          "id": 28302951,
+          "name": "Team Workspace",
+          "templates": []
+        },
+        {
+          "id": 29065371,
+          "name": "Enterprise Asset Management",
+          "templates": []
+        },
+        {
+          "id": 29064932,
+          "name": "Asset",
+          "templates": []
+        },
+        {
+          "id": 29065812,
+          "name": "Equipment",
+          "templates": []
+        },
+        {
+          "id": 22755476,
+          "name": "Facilities",
+          "templates": []
+        },
+        {
+          "id": 22755807,
+          "name": "Building",
+          "templates": []
+        },
+        {
+          "id": 22755916,
+          "name": "Facility",
+          "templates": []
+        },
+        {
+          "id": 22755367,
+          "name": "Room",
+          "templates": []
+        },
+        {
+          "id": 22755368,
+          "name": "Space",
+          "templates": []
+        },
+        {
+          "id": 24045666,
+          "name": "Ferrari Team Classification Tree",
+          "templates": [
+            {
+              "favorite": false,
+              "id": 24045667,
+              "isDPWizardAvailable": false,
+              "mime_type": "application\/octet-stream",
+              "mimetype": "application\/octet-stream",
+              "modify_date": "2019-02-19T20:06:21",
+              "name": "Document Template",
+              "size": 1030,
+              "sizeformatted": "2 KB"
+            }
+          ]
+        },
+        {
+          "id": 31939960,
+          "name": "Legal",
+          "templates": []
+        },
+        {
+          "id": 32408015,
+          "name": "Corporate",
+          "templates": []
+        },
+        {
+          "id": 32408129,
+          "name": "Customer",
+          "templates": []
+        },
+        {
+          "id": 32408670,
+          "name": "Ligitation",
+          "templates": []
+        },
+        {
+          "id": 32408333,
+          "name": "Partner",
+          "templates": []
+        },
+        {
+          "id": 32408669,
+          "name": "Vendor",
+          "templates": []
+        },
+        {
+          "id": 32510069,
+          "name": "Legal Matter",
+          "templates": []
+        },
+        {
+          "id": 32509739,
+          "name": "Matter",
+          "templates": []
+        },
+        {
+          "id": 21039735,
+          "name": "Maintenance",
+          "templates": []
+        },
+        {
+          "id": 21039736,
+          "name": "Work Center",
+          "templates": []
+        },
+        {
+          "id": 24178097,
+          "name": "PI Customer",
+          "templates": []
+        },
+        {
+          "id": 18515883,
+          "name": "Quality Management",
+          "templates": []
+        },
+        {
+          "id": 18818050,
+          "name": "Documentation",
+          "templates": [
+            {
+              "favorite": false,
+              "id": 18817278,
+              "isDPWizardAvailable": false,
+              "mime_type": "application\/vnd.openxmlformats-officedocument.wordprocessingml.document",
+              "mimetype": "application\/vnd.openxmlformats-officedocument.wordprocessingml.document",
+              "modify_date": "2018-10-15T02:23:02",
+              "name": "EMPLOYEE NCA.docx",
+              "size": 12907,
+              "sizeformatted": "13 KB"
+            },
+            {
+              "favorite": false,
+              "id": 18817495,
+              "isDPWizardAvailable": false,
+              "mime_type": "application\/vnd.openxmlformats-officedocument.wordprocessingml.document",
+              "mimetype": "application\/vnd.openxmlformats-officedocument.wordprocessingml.document",
+              "modify_date": "2018-10-15T02:23:01",
+              "name": "EMPLOYEE NDA.docx",
+              "size": 13101,
+              "sizeformatted": "13 KB"
+            },
+            {
+              "favorite": false,
+              "id": 18818048,
+              "isDPWizardAvailable": false,
+              "mime_type": "application\/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+              "mimetype": "application\/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+              "modify_date": "2018-10-15T02:23:01",
+              "name": "Innovate Excel Template.xlsx",
+              "size": 8212,
+              "sizeformatted": "9 KB"
+            },
+            {
+              "favorite": false,
+              "id": 18817935,
+              "isDPWizardAvailable": false,
+              "mime_type": "application\/vnd.openxmlformats-officedocument.wordprocessingml.document",
+              "mimetype": "application\/vnd.openxmlformats-officedocument.wordprocessingml.document",
+              "modify_date": "2018-10-15T02:23:00",
+              "name": "Innovate Word Template.docx",
+              "size": 11660,
+              "sizeformatted": "12 KB"
+            }
+          ]
+        },
+        {
+          "id": 18516653,
+          "name": "Problem solving",
+          "templates": []
+        },
+        {
+          "id": 18516654,
+          "name": "Quality Notification",
+          "templates": []
+        },
+        {
+          "id": 30389235,
+          "name": "STG Class",
+          "templates": []
+        }
+      ]
+    }
+  ]
+}

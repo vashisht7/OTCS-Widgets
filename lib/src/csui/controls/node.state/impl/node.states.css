@@ -1,0 +1,23 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets ul.csui-node-states {
+  display: block;
+}
+
+.binf-widgets ul.csui-node-states > li {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.binf-widgets ul.csui-node-states > li .icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: middle;
+}
+
+.binf-widgets ul.csui-node-states > li.csui-node-state-reservation .icon {
+  background-size: 22px;
+}

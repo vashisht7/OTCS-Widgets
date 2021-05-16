@@ -1,0 +1,9 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .conws-modal-dialog {
+  top: 7.5rem;
+}
+
+.binf-widgets .conws-modal-dialog-parent {
+  overflow: auto;
+}

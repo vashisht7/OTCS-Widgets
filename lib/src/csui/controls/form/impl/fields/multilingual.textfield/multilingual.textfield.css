@@ -1,0 +1,71 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+
+
+.cs-multilingualfield .cs-field-write input {
+  
+
+  -webkit-box-flex: 1 1 0; 
+  -moz-box-flex: 1 1 0; 
+  -webkit-flex: 1 1 0; 
+  -ms-flex: 1 1 100%; 
+  flex: 1 1 0; 
+
+  padding-left: 0.5em;
+  padding-right: 2em;
+  padding-top: 0px;
+  padding-bottom: 0px;
+
+  border: 1px solid #a7a9ac;
+  border-radius: 3px;
+  margin: 0;
+  height: 28px;
+}
+
+.cs-form .alpaca-field.has-error .cs-field-write input {
+  color: #000000;
+  background-color: #fae9ea;
+  border: 1px solid #df3324;
+}
+
+.cs-multilingualfield input:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+
+  border: 2px solid #666666;
+  border-radius: 3px;
+}
+
+.cs-multilingualfield .cs-field-write-inner {
+  display: flex;
+}
+
+
+
+.cs-formfield.cs-multilingualfield .cs-field-read button > span {
+  white-space: nowrap;
+}
+
+.cs-formfield.cs-multilingualfield .cs-field-read button a {
+  outline: 0;
+}
+
+
+
+.cs-multilingualfield.readonly input {
+  border: 1px transparent;
+  padding-left: 0;
+}
+
+.cs-multilingualfield .multilingual-icon {
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  margin: 2px;
+  right: 0;
+}
+
+.cs-form .cs-form-set .alpaca-container .alpaca-container-item .binf-form-group .cs-multilingualfield .multilingual-icon {
+  right: 16px; 
+}

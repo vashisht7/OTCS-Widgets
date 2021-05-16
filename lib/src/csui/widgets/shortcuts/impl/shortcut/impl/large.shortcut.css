@@ -1,0 +1,116 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-large {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-large .tile-group {
+    padding: 0px 16px;
+}
+
+.binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-large .tile-header {
+    border-width: 0px;
+}
+
+.binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-large .tile-header .tile-title {
+    font-face: Aktiv Grotesk Light;
+    font-size: 1.5em;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+
+.binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-large .tile-icon {
+    flex-grow: 1;
+    diplay: flex;
+    justify-content: center;
+}
+
+.binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-large .tile-icon .icon {
+    width: 5em;
+    height: 5em;
+}
+
+.binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-large .csui-error {
+    flex-direction: column;
+    flex-grow: 1;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-large.csui-shortcut-theme-grey,
+.binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-medium.csui-shortcut-theme-grey {
+    background: #9D9C9C;
+}
+
+.binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-large.csui-shortcut-theme-green,
+.binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-medium.csui-shortcut-theme-green {
+    background: #39ac82;
+}
+
+.binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-large.csui-shortcut-theme-purple,
+.binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-medium.csui-shortcut-theme-purple {
+    background: #e34fe3;
+}
+
+.binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-large.csui-shortcut-theme-orange,
+.binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-medium.csui-shortcut-theme-orange {
+    background: #BB6207;
+}
+
+.binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-large.csui-shortcut-theme-stone1,
+.binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-medium.csui-shortcut-theme-stone1 {
+    background: #5f6e77;
+}
+
+.binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-large.csui-shortcut-theme-stone2,
+.binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-medium.csui-shortcut-theme-stone2 {
+    background: #008485;
+}
+
+.binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-large.csui-shortcut-theme-teal1,
+.binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-medium.csui-shortcut-theme-teal1 {
+    background: #0680A2;
+}
+
+.binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-large.csui-shortcut-theme-teal2,
+.binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-medium.csui-shortcut-theme-teal2 {
+    background: #00639b;
+}
+
+.binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-large.csui-shortcut-theme-pink1,
+.binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-medium.csui-shortcut-theme-pink1 {
+    background: #df3324;
+}
+
+.binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-large.csui-shortcut-theme-pink2,
+.binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-medium.csui-shortcut-theme-pink2 {
+    background: #a0006b;
+}
+
+.binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-large.csui-shortcut-theme-indigo1,
+.binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-medium.csui-shortcut-theme-indigo1 {
+    background: #2e3d98;
+}
+
+.binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-large.csui-shortcut-theme-indigo2,
+.binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-medium.csui-shortcut-theme-indigo2 {
+    background: #4f3690;
+}
+
+.binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-large .tile-group {
+    position: relative;
+    top: 27%;
+    width: 100%;
+}
+
+.binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-large .tile-title {
+    text-align: center;
+    padding-top: 12px;
+    width: 100%;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 26px;
+}

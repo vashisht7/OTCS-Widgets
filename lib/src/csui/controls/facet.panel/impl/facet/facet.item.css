@@ -1,0 +1,132 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+
+.csui-facet-panel .csui-facet-item{
+  padding-right: 16px;
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-flex-direction: row;
+  align-items: center;
+}
+
+.csui-facet-panel .csui-facet-item > .csui-filter-name
+{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  align-items: center;
+  flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  -webkit-flex: 1 1 auto;
+  padding: .25em .5em .25em 0;
+}
+
+.csui-facet-panel .csui-facet-item > .csui-filter-name > div{
+  font-size: 0.75em;
+}
+
+.csui-facet-panel .csui-facet-item > .csui-facet-item-checkbox > .csui-checkbox-view > .csui-checkbox > .csui-icon {
+  height: 14px;
+  width: 14px;
+}
+
+.csui-facet-panel .csui-facet-item > .csui-facet-item-checkbox {
+  padding: .25em .5em .25em 0;
+}
+
+.csui-facet-panel .csui-facet-item > .csui-facet-item-checkbox > .csui-checkbox-view > button {
+  outline-offset: .25em;
+}
+
+.csui-facet-panel .csui-facet-controls {
+  float: none;
+}
+
+.csui-facet-panel .csui-facet-item > .csui-filter-name > .csui-name{
+   flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  -webkit-flex: 0 1 auto;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 0.25em 0.5em 0.25em 0;
+  height: inherit;
+  line-height: 14px;
+}
+
+.csui-facet-panel .csui-facet-item > .csui-filter-name > .csui-name span {
+  display: block;
+}
+
+.csui-facet-panel .csui-facet-item > .csui-filter-name > .csui-total{
+  border-radius: 0.5em;
+  padding: 0.25em 0.5em;
+  background-color: #c9f093;
+  font-size: 11px;
+  flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  margin-left: 0.5em;
+  -webkit-flex: 0 0 auto;
+}
+
+.csui-facet-panel .csui-facet-item .csui-filter-name:focus .csui-name,
+.csui-facet-panel .csui-facet-item:hover > .csui-filter-name > .csui-name {
+  text-decoration: underline;
+}
+
+.csui-facet-panel .csui-facet.multi-select:hover .csui-facet-item > .csui-filter-name{
+  text-decoration: none;
+}
+
+.csui-facet-panel .csui-facet-item.binf-disabled > .csui-filter-name{
+  color: #a9a9a9;
+  cursor: default;
+}
+
+.csui-facet-panel .csui-facet-item span {
+  margin: 0;
+  cursor: pointer;
+  height: 18px;
+  width: 18px;
+  min-width: 18px;
+  display: inline-block;
+  background-repeat: no-repeat;
+}
+
+.csui-facet-panel .csui-facet-item .csui-facet-item-checkbox span {
+  opacity: 0;
+  height: 14px;
+  width: 14px;
+  min-width: 14px;
+}
+
+.csui-facet-panel span.csui-showAlways,
+.csui-facet-panel .csui-facet.multi-select span,
+.csui-facet-panel .csui-facet:hover span,
+.csui-facet-panel .csui-facet.csui-focus span,
+.csui-facet-panel .csui-facet:focus span{
+  opacity: 1;
+}
+
+.csui-facet-panel .csui-facet .facet-disabled .csui-facet-item-checkbox span{
+  opacity: 0;
+}
+.csui-facet-panel span:focus{
+  outline-offset: 3px;
+  outline:1px dotted #333;
+}
+
+.csui-facet-panel .csui-filter-name:focus{
+  outline-offset: 3px;
+}
+
+.csui-facet-panel .csui-facet-content {
+  padding-top: 12px;
+}

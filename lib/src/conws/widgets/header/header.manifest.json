@@ -1,0 +1,90 @@
+{
+  "$schema": "http://opentext.com/cs/json-schema/draft-04/schema#",
+  "title": "{{tileTitle}}",
+  "description": "{{tileDescription}}",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "workspace": {
+        "type": "object",
+        "title": "{{workspaceTitle}}",
+        "description": "{{workspaceDescription}}",
+        "properties": {
+          "properties": {
+            "type": "object",
+            "title": "Properties",
+            "description": "{{workspacePropertiesDesc}}",
+            "properties": {
+              "title": {
+                "type": "string",
+                "title": "{{businessworkspaceTitle}}",
+                "default": "{name}",
+                "description": "{{businessworkspaceDesc}}"
+              },
+              "type": {
+                "type": "string",
+                "title": "{{workspaceTypeTitle}}",
+                "default": "{business_properties.workspace_type_name}",
+                "description": "{{workspaceTypeDesc}}"
+              },
+              "description": {
+                "type": "string",
+                "title": "{{descriptionSectionTitle}}",
+                "default": "{description}",
+                "description": "{{descriptionSection}}"
+              }
+            }
+          }
+        }
+      },
+      "widget": {
+        "type": "object",
+        "title": "{{widgetTitle}}",
+        "description": "{{widgetDescription}}",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "none",
+              "activityfeed"
+            ],
+            "title": "{{embedWidgetSectionTitle}}",
+            "description": "{{embedWidgetSectionDesc}}"
+          }
+        }
+      }
+    }
+  },
+  "options": {
+    "fields": {
+      "workspace": {
+        "fields": {
+          "properties": {
+            "fields": {
+              "title": {
+                "type": "otconws_metadata_string"
+              },
+              "type": {
+                "type": "otconws_metadata_string"
+              },
+              "description": {
+                "type": "otconws_metadata_string"
+              }
+            }
+          }
+        }
+      },
+      "widget": {
+        "fields": {
+          "type": {
+            "type": "select",
+            "optionLabels": [
+              "None",
+              "Activity Feed"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "data": [
+    {
+      "id": 92523,
+      "name": "Vendor",
+      "cell_metadata": {
+        "data": {
+          "menu": "api/v1/nodes/51209/categories/92523/actions"
+        },
+        "definitions": {
+          "menu": {
+            "body": "",
+            "content_type": "",
+            "display_hint": "menu",
+            "display_href": "",
+            "handler": "menu",
+            "image": "",
+            "method": "GET",
+            "name": "",
+            "parameters": {},
+            "tab_href": ""
+          }
+        }
+      },
+      "menu": null
+    },
+    {
+      "id": 254974,
+      "name": "Notification",
+      "cell_metadata": {
+        "data": {
+          "menu": "api/v1/nodes/51209/categories/254974/actions"
+        },
+        "definitions": {
+          "menu": {
+            "body": "",
+            "content_type": "",
+            "display_hint": "menu",
+            "display_href": "",
+            "handler": "menu",
+            "image": "",
+            "method": "GET",
+            "name": "",
+            "parameters": {},
+            "tab_href": ""
+          }
+        }
+      },
+      "menu": null
+    }
+  ],
+  "definitions": {
+    "id": {
+      "key": "id",
+      "name": "ID",
+      "persona": "node",
+      "type": 2,
+      "width_weight": 0
+    },
+    "name": {
+      "key": "name",
+      "name": "Name",
+      "persona": "",
+      "type": -1,
+      "width_weight": 100
+    }
+  },
+  "definitions_map": {
+    "name": [
+      "menu"
+    ]
+  },
+  "definitions_order": [
+    "name"
+  ]
+}

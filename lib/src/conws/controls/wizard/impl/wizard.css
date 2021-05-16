@@ -1,0 +1,70 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .csui-permissions-level.conws-addoreditrole-dialog.cs-dialog .binf-modal-dialog {
+  width: 688px;
+  height: 560px;
+}
+
+.binf-widgets .csui-permissions-level.conws-addoreditrole-dialog.cs-dialog .tile-header {
+  background-color: #DCE4E8;
+  height: 48px;
+  padding: 0 22px;
+  border-radius: 3px 3px 0 0;
+}
+
+.binf-widgets .csui-permissions-level.conws-addoreditrole-dialog.cs-dialog .tile-header>.tile-title {
+  height: 100%;
+  vertical-align: middle;
+}
+
+.binf-widgets .csui-permissions-level.conws-addoreditrole-dialog.cs-dialog .tile-header>.tile-title h4.tile-title {
+  padding: 10px 0;
+}
+
+.binf-widgets .csui-permissions-level.conws-addoreditrole-dialog.cs-dialog .binf-modal-content {
+  border-radius: 3px;  
+}
+
+.binf-widgets .csui-permissions-level.conws-addoreditrole-dialog.cs-dialog .binf-modal-body {
+  height: 464px;
+}
+
+.binf-widgets .csui-permissions-level.conws-addoreditrole-dialog.cs-dialog .binf-modal-footer {
+  background-color: #EEEEEE;
+  padding: 8px 29px 8px 8px;
+  border-radius: 0 0 3px 3px;
+}
+
+.binf-widgets .csui-permissions-level.conws-addoreditrole-dialog.cs-dialog .binf-modal-footer .arrow_back {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 16px;
+  width: 18px;
+  border: none;
+  background-color: #EEEEEE;
+}
+
+.binf-widgets .csui-permissions-level.conws-addoreditrole-dialog.cs-dialog .button_image {
+  margin-top: 0.4rem;
+  padding: 0 16px;
+  box-shadow: none;
+  outline: none;
+}
+
+.binf-widgets .csui-permissions-level.conws-addoreditrole-dialog.cs-dialog .button_image_next {
+  transform: rotate(180deg);
+  margin-left: 1rem;
+}
+
+.binf-widgets .csui-permissions-level.conws-addoreditrole-dialog.cs-dialog .binf-modal-footer .arrow_back {
+  background-image: url('image/icons/arrow_back.svg');
+}
+
+.binf-widgets .csui-permissions-level.conws-addoreditrole-dialog.cs-dialog .binf-modal-footer .arrow_back:not(.csui-no-hover-effect):active {
+  background-image: url('image/icons/arrow_back_md.svg');
+}
+
+.binf-widgets .csui-permissions-level.conws-addoreditrole-dialog.cs-dialog .binf-modal-footer .arrow_back:not(.csui-no-hover-effect):hover,
+.binf-widgets .csui-permissions-level.conws-addoreditrole-dialog.cs-dialog .binf-modal-footer .arrow_back:not(.csui-no-hover-effect):focus {
+  background-image: url('image/icons/arrow_back_mo.svg');
+}

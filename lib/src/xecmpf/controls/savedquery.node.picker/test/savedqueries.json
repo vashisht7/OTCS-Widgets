@@ -1,0 +1,239 @@
+{
+  "collection": {
+    "filtering": {
+      "filter": [
+        {
+          "key": "where_type",
+          "value": 258
+        }
+      ]
+    },
+    "paging": {
+      "limit": 30,
+      "page": 1,
+      "page_total": 1,
+      "range_max": 4,
+      "range_min": 1,
+      "total_count": 4
+    },
+    "sorting": {
+      "sort": [
+        {
+          "key": "sort",
+          "value": "asc_name"
+        }
+      ]
+    }
+  },
+  "links": {
+    "data": {
+      "self": {
+        "body": "",
+        "content_type": "",
+        "href": "\/api\/v2\/nodes\/19372\/nodes?actions=addcategory&actions=addversion&actions=open&actions=copy&actions=delete&actions=download&actions=edit&actions=editactivex&actions=rename&actions=move&actions=permissions&actions=properties&actions=reserve&actions=unreserve&actions=collectioncancollect&actions=removefromcollection&expand=properties{original_id}&fields=properties&fields=versions{owner_id}.element(0)&limit=30&page=1&sort=asc_name",
+        "method": "GET",
+        "name": ""
+      }
+    }
+  },
+  "results": [
+    {
+      "actions": {
+        "data": {
+          "addcategory": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "\/api\/v2\/nodes\/45823\/categories",
+            "method": "POST",
+            "name": "Add Category"
+          },
+          "delete": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "\/api\/v2\/nodes\/45823",
+            "method": "DELETE",
+            "name": "Delete"
+          },
+          "properties": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "\/api\/v2\/nodes\/45823",
+            "method": "GET",
+            "name": "Properties"
+          },
+          "removefromcollection": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "\/api\/v2\/nodes\/45823",
+            "method": "PUT",
+            "name": "Remove From Collection"
+          },
+          "rename": {
+            "body": "",
+            "content_type": "",
+            "form_href": "\/api\/v2\/forms\/nodes\/rename?id=45823",
+            "href": "\/api\/v2\/nodes\/45823",
+            "method": "PUT",
+            "name": "Rename"
+          }
+        },
+        "map": {
+          "default_action": "",
+          "more": [
+            "properties"
+          ]
+        },
+        "order": [
+          "addcategory",
+          "rename",
+          "removefromcollection",
+          "delete"
+        ]
+      },
+      "data": {
+        "properties": {
+          "container": false,
+          "container_size": 0,
+          "create_date": "2018-03-05T18:34:22",
+          "create_user_id": 1000,
+          "description": "Search Equipment Business Workspace",
+          "description_multilingual": {
+            "en": "Search Equipment Business Workspace"
+          },
+          "external_create_date": null,
+          "external_identity": "",
+          "external_identity_type": "",
+          "external_modify_date": null,
+          "external_source": "",
+          "favorite": false,
+          "id": 45823,
+          "mime_type": null,
+          "modify_date": "2018-03-05T18:35:26",
+          "modify_user_id": 1000,
+          "name": "Equipment Business Workspaces Search",
+          "name_multilingual": {
+            "en": "Equipment Business Workspaces Search"
+          },
+          "owner": "Admin",
+          "owner_group_id": 1001,
+          "owner_user_id": 1000,
+          "parent_id": 19372,
+          "permissions_model": "advanced",
+          "reserved": false,
+          "reserved_date": null,
+          "reserved_shared_collaboration": false,
+          "reserved_user_id": 0,
+          "size": 1127,
+          "size_formatted": "1 Source",
+          "type": 258,
+          "type_name": "Search Query",
+          "versions_control_advanced": false,
+          "volume_id": -19372
+        }
+      }
+    },
+    {
+      "actions": {
+        "data": {
+          "addcategory": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "\/api\/v2\/nodes\/19373\/categories",
+            "method": "POST",
+            "name": "Add Category"
+          },
+          "delete": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "\/api\/v2\/nodes\/19373",
+            "method": "DELETE",
+            "name": "Delete"
+          },
+          "properties": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "\/api\/v2\/nodes\/19373",
+            "method": "GET",
+            "name": "Properties"
+          },
+          "removefromcollection": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "\/api\/v2\/nodes\/19373",
+            "method": "PUT",
+            "name": "Remove From Collection"
+          },
+          "rename": {
+            "body": "",
+            "content_type": "",
+            "form_href": "\/api\/v2\/forms\/nodes\/rename?id=19373",
+            "href": "\/api\/v2\/nodes\/19373",
+            "method": "PUT",
+            "name": "Rename"
+          }
+        },
+        "map": {
+          "default_action": "",
+          "more": [
+            "properties"
+          ]
+        },
+        "order": [
+          "addcategory",
+          "rename",
+          "removefromcollection",
+          "delete"
+        ]
+      },
+      "data": {
+        "properties": {
+          "container": false,
+          "container_size": 0,
+          "create_date": "2018-02-19T15:02:58",
+          "create_user_id": 1000,
+          "description": "",
+          "description_multilingual": {
+            "en": ""
+          },
+          "external_create_date": null,
+          "external_identity": "",
+          "external_identity_type": "",
+          "external_modify_date": null,
+          "external_source": "",
+          "favorite": false,
+          "id": 19373,
+          "mime_type": null,
+          "modify_date": "2018-02-19T15:02:59",
+          "modify_user_id": 1000,
+          "name": "Full Text Business Workspaces Search",
+          "name_multilingual": {
+            "en": "Full Text Business Workspaces Search"
+          },
+          "owner": "Admin",
+          "owner_group_id": 1001,
+          "owner_user_id": 1000,
+          "parent_id": 19372,
+          "permissions_model": "advanced",
+          "reserved": false,
+          "reserved_date": null,
+          "reserved_shared_collaboration": false,
+          "reserved_user_id": 0,
+          "size": 1297,
+          "size_formatted": "1 Source",
+          "type": 258,
+          "type_name": "Search Query",
+          "versions_control_advanced": false,
+          "volume_id": -19372
+        }
+      }
+    }
+  ]
+}

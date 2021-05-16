@@ -1,0 +1,2461 @@
+{
+  "actions": {},
+  "businessObjectActions": {
+    "data": {
+      "BOAttachmentsCreate": {
+        "body": "",
+        "content_type": "",
+        "form_href": "",
+        "href": "",
+        "method": "POST",
+        "name": ""
+      }
+    },
+    "order": ["BOAttachmentsCreate"]
+  },
+  "links": {
+    "data": {
+      "self": {
+        "body": "",
+        "content_type": "",
+        "href": "\/api\/v2\/businessobjects\/D7K\/KNA1\/0000001000\/businessattachments?expand=properties{original_id,ancestors,parent_id,reserved_user_id,createdby,modifiedby}&limit=30&metadata&page=1&sort=asc_name",
+        "method": "GET",
+        "name": ""
+      }
+    }
+  },
+  "meta_data": {
+    "properties": {
+      "create_date": {
+        "align": "center",
+        "name": "Created",
+        "persona": "",
+        "type": -7,
+        "width_weight": 0
+      },
+      "create_user_id": {
+        "align": "left",
+        "name": "Created By",
+        "persona": "user",
+        "type": 2,
+        "width_weight": 0
+      },
+      "createdate": {
+        "align": "center",
+        "name": "Creation Date",
+        "sort": false,
+        "type": 401,
+        "width_weight": 1
+      },
+      "createdby": {
+        "align": "center",
+        "name": "Created By",
+        "persona": null,
+        "sort": false,
+        "type": -1,
+        "width_weight": 0
+      },
+      "creator": {
+        "align": "center",
+        "name": "Created By",
+        "sort": false,
+        "type": 14,
+        "width_weight": 1
+      },
+      "description": {
+        "align": "left",
+        "name": "Description",
+        "persona": "",
+        "type": -1,
+        "width_weight": 100
+      },
+      "favorite": {
+        "align": "center",
+        "name": "Favorite",
+        "persona": "",
+        "type": 5,
+        "width_weight": 0
+      },
+      "icon": {
+        "align": "center",
+        "name": "Icon",
+        "persona": "",
+        "type": -1,
+        "width_weight": 0
+      },
+      "id": {
+        "align": "right",
+        "name": "DataID",
+        "persona": "node",
+        "sort": false,
+        "type": 2,
+        "width_weight": 0
+      },
+      "mime_type": {
+        "align": "left",
+        "name": "MIME Type",
+        "persona": "",
+        "type": -1,
+        "width_weight": 0
+      },
+      "modifiedby": {
+        "align": "center",
+        "name": "Modified By",
+        "persona": null,
+        "sort": false,
+        "type": -1,
+        "width_weight": 0
+      },
+      "modify_date": {
+        "align": "left",
+        "name": "Modified",
+        "persona": "",
+        "sort": true,
+        "type": -7,
+        "width_weight": 0
+      },
+      "modify_user_id": {
+        "align": "center",
+        "name": "Modified By",
+        "persona": "user",
+        "sort": false,
+        "type": 2,
+        "width_weight": 0
+      },
+      "name": {
+        "align": "left",
+        "name": "Name",
+        "persona": "",
+        "sort": true,
+        "type": -1,
+        "width_weight": 100
+      },
+      "original_id": {
+        "align": "left",
+        "name": "Original ID",
+        "persona": "node",
+        "type": 2,
+        "width_weight": 0
+      },
+      "owner": {
+        "align": "center",
+        "name": "Owner",
+        "sort": false,
+        "type": 14,
+        "width_weight": 1
+      },
+      "parent_id": {
+        "align": "left",
+        "name": "Parent ID",
+        "persona": "node",
+        "type": 2,
+        "width_weight": 0
+      },
+      "reserved": {
+        "align": "center",
+        "name": "Reserve",
+        "persona": "",
+        "type": 5,
+        "width_weight": 0
+      },
+      "reserved_date": {
+        "align": "center",
+        "name": "Reserved",
+        "persona": "",
+        "type": -7,
+        "width_weight": 0
+      },
+      "reserved_user_id": {
+        "align": "center",
+        "name": "Reserved By",
+        "persona": "member",
+        "type": 2,
+        "width_weight": 0
+      },
+      "size": {
+        "align": "right",
+        "name": "Size",
+        "persona": "",
+        "sort": false,
+        "type": 2,
+        "width_weight": 0
+      },
+      "type": {
+        "align": "center",
+        "name": "Type",
+        "persona": "",
+        "sort": false,
+        "type": 2,
+        "width_weight": 0
+      },
+      "version": {
+        "align": "center",
+        "name": "Version",
+        "sort": false,
+        "type": -1,
+        "width_weight": 1
+      },
+      "volume_id": {
+        "align": "left",
+        "name": "VolumeID",
+        "persona": "node",
+        "type": 2,
+        "width_weight": 0
+      },
+      "xecm_ba_comments": {
+        "align": "center",
+        "name": "Comments",
+        "sort": false,
+        "type": -1,
+        "width_weight": 1
+      },
+      "xecm_ba_createby": {
+        "align": "center",
+        "name": "Created By",
+        "persona": null,
+        "sort": false,
+        "type": -1,
+        "width_weight": 0
+      },
+      "xecm_ba_createdate": {
+        "align": "center",
+        "name": "Creation Date",
+        "sort": false,
+        "type": -7,
+        "width_weight": 1
+      }
+    }
+  },
+  "paging": {
+    "limit": 30,
+    "page": 1,
+    "page_total": 1,
+    "range_max": 5,
+    "range_min": 1,
+    "total_count": 5
+  },
+  "results": [{
+    "actions": {
+      "data": {
+        "open": {
+          "body": "",
+          "content_type": "",
+          "form_href": "",
+          "href": "\/api\/v2\/nodes\/93600\/nodes",
+          "method": "GET",
+          "name": "Open"
+        }
+      },
+      "map": {
+        "default_action": ""
+      },
+      "order": ["open"]
+    },
+    "data": {
+      "ancestors": [{
+        "container": true,
+        "container_size": 7,
+        "create_date": "2018-03-02T09:47:17",
+        "create_user_id": 25873,
+        "description": "",
+        "description_multilingual": {
+          "ar": "",
+          "en": ""
+        },
+        "external_create_date": null,
+        "external_identity": "",
+        "external_identity_type": "",
+        "external_modify_date": null,
+        "external_source": "",
+        "favorite": false,
+        "guid": null,
+        "icon": "\/cs1624_img\/otsapxecm\/otsapwksp_workspace_b8.png",
+        "icon_large": "\/cs1624_img\/otsapxecm\/otsapwksp_workspace_b8_large.png",
+        "id": -45807,
+        "modify_date": "2018-05-08T12:32:25",
+        "modify_user_id": 1000,
+        "name": "Customer 0000001000",
+        "name_multilingual": {
+          "ar": "",
+          "en": "Customer 0000001000"
+        },
+        "owner_group_id": 1001,
+        "owner_user_id": 25873,
+        "parent_id": -1,
+        "reserved": false,
+        "reserved_date": null,
+        "reserved_user_id": 0,
+        "type": 849,
+        "type_name": "Business Workspace Volume",
+        "versions_control_advanced": false,
+        "volume_id": 45807
+      }, {
+        "container": true,
+        "container_size": 5,
+        "create_date": "2018-02-16T20:47:45",
+        "create_user_id": 1000,
+        "description": "",
+        "description_multilingual": {
+          "ar": "",
+          "en": ""
+        },
+        "external_create_date": null,
+        "external_identity": "",
+        "external_identity_type": "",
+        "external_modify_date": null,
+        "external_source": "",
+        "favorite": false,
+        "guid": null,
+        "icon": "\/cs1624_img\/webdoc\/icon_library.gif",
+        "icon_large": "\/cs1624_img\/webdoc\/icon_library_large.gif",
+        "id": 2000,
+        "modify_date": "2018-04-23T11:22:05",
+        "modify_user_id": 1000,
+        "name": "Enterprise",
+        "name_multilingual": {
+          "ar": "",
+          "en": "Enterprise"
+        },
+        "owner_group_id": 1001,
+        "owner_user_id": 1000,
+        "parent_id": -1,
+        "reserved": false,
+        "reserved_date": null,
+        "reserved_user_id": 0,
+        "type": 141,
+        "type_name": "Enterprise Workspace",
+        "versions_control_advanced": false,
+        "volume_id": -2000
+      }, {
+        "container": true,
+        "container_size": 2,
+        "create_date": "2018-02-19T15:08:31",
+        "create_user_id": 1000,
+        "description": "",
+        "description_multilingual": {
+          "ar": "",
+          "en": ""
+        },
+        "external_create_date": null,
+        "external_identity": "",
+        "external_identity_type": "",
+        "external_modify_date": null,
+        "external_source": "",
+        "favorite": false,
+        "guid": null,
+        "icon": "\/cs1624_img\/webdoc\/folder.gif",
+        "icon_large": "\/cs1624_img\/webdoc\/folder_large.gif",
+        "id": 25422,
+        "modify_date": "2018-02-20T15:42:50",
+        "modify_user_id": 1000,
+        "name": "xECMSAP Business Workspaces",
+        "name_multilingual": {
+          "ar": "",
+          "en": "xECMSAP Business Workspaces"
+        },
+        "owner_group_id": 1001,
+        "owner_user_id": 1000,
+        "parent_id": 2000,
+        "reserved": false,
+        "reserved_date": null,
+        "reserved_user_id": 0,
+        "type": 0,
+        "type_name": "Folder",
+        "versions_control_advanced": false,
+        "volume_id": -2000
+      }, {
+        "container": true,
+        "container_size": 1,
+        "create_date": "2018-02-19T15:08:46",
+        "create_user_id": 1000,
+        "description": "",
+        "description_multilingual": {
+          "ar": "",
+          "en": ""
+        },
+        "external_create_date": null,
+        "external_identity": "",
+        "external_identity_type": "",
+        "external_modify_date": null,
+        "external_source": "",
+        "favorite": false,
+        "guid": null,
+        "icon": "\/cs1624_img\/webdoc\/folder.gif",
+        "icon_large": "\/cs1624_img\/webdoc\/folder_large.gif",
+        "id": 25532,
+        "modify_date": "2018-03-26T17:56:49",
+        "modify_user_id": 1000,
+        "name": "Customers",
+        "name_multilingual": {
+          "ar": "",
+          "en": "Customers"
+        },
+        "owner_group_id": 1001,
+        "owner_user_id": 1000,
+        "parent_id": 25422,
+        "reserved": false,
+        "reserved_date": null,
+        "reserved_user_id": 0,
+        "type": 0,
+        "type_name": "Folder",
+        "versions_control_advanced": false,
+        "volume_id": -2000
+      }, {
+        "container": true,
+        "container_size": 7,
+        "create_date": "2018-03-02T09:47:16",
+        "create_user_id": 25873,
+        "description": "",
+        "description_multilingual": {
+          "ar": "",
+          "en": ""
+        },
+        "external_create_date": null,
+        "external_identity": "",
+        "external_identity_type": "",
+        "external_modify_date": null,
+        "external_source": "",
+        "favorite": true,
+        "guid": null,
+        "icon": "\/cs1624_img\/otsapxecm\/wksp_customer.png",
+        "icon_large": "\/cs1624_img\/otsapxecm\/wksp_customer_large.png",
+        "id": 45807,
+        "modify_date": "2018-04-12T09:42:04",
+        "modify_user_id": 1000,
+        "name": "Customer 0000001000",
+        "name_multilingual": {
+          "ar": "",
+          "en": "Customer 0000001000"
+        },
+        "owner_group_id": 1001,
+        "owner_user_id": 1000,
+        "parent_id": 25532,
+        "reserved": false,
+        "reserved_date": null,
+        "reserved_user_id": 0,
+        "rm_enabled": false,
+        "type": 848,
+        "type_name": "Business Workspace",
+        "versions_control_advanced": false,
+        "volume_id": -45807
+      }, {
+        "container": true,
+        "container_size": 1,
+        "create_date": "2018-05-08T12:32:25",
+        "create_user_id": 1000,
+        "description": "Parent folder for D7K customer snapshots.",
+        "description_multilingual": {
+          "ar": "",
+          "en": "Parent folder for D7K customer snapshots."
+        },
+        "external_create_date": null,
+        "external_identity": "",
+        "external_identity_type": "",
+        "external_modify_date": null,
+        "external_source": "",
+        "favorite": false,
+        "guid": null,
+        "icon": "\/cs1624_img\/webdoc\/folder.gif",
+        "icon_large": "\/cs1624_img\/webdoc\/folder_large.gif",
+        "id": 93600,
+        "modify_date": "2018-05-18T11:56:30",
+        "modify_user_id": 1000,
+        "name": "D7K_Customer_Snapshots",
+        "name_multilingual": {
+          "ar": "",
+          "en": "D7K_Customer_Snapshots"
+        },
+        "owner_group_id": 1001,
+        "owner_user_id": 1000,
+        "parent_id": -45807,
+        "reserved": false,
+        "reserved_date": null,
+        "reserved_user_id": 0,
+        "type": 0,
+        "type_name": "Folder",
+        "versions_control_advanced": false,
+        "volume_id": 45807
+      }],
+      "properties": {
+        "container": true,
+        "create_date": "2018-05-08T12:32:25",
+        "create_user_id": 1000,
+        "createdby": 1000,
+        "createdby_expand": {
+          "name": "Admin"
+        },
+        "description": "Parent folder for D7K customer snapshots.",
+        "favorite": false,
+        "icon": "\/cs1624_img\/webdoc\/folder.gif",
+        "id": 93600,
+        "mime_type": null,
+        "modifiedby": 1000,
+        "modifiedby_expand": {
+          "name": "Admin"
+        },
+        "modify_date": "2018-05-18T11:56:30",
+        "modify_user_id": 1000,
+        "name": "D7K_Customer_Snapshots",
+        "original_id": 0,
+        "parent_id": -45807,
+        "parent_id_expand": {
+          "container": true,
+          "container_size": 7,
+          "create_date": "2018-03-02T09:47:16",
+          "create_user_id": 25873,
+          "description": "",
+          "description_multilingual": {
+            "ar": "",
+            "en": ""
+          },
+          "external_create_date": null,
+          "external_identity": "",
+          "external_identity_type": "",
+          "external_modify_date": null,
+          "external_source": "",
+          "favorite": true,
+          "id": 45807,
+          "mime_type": null,
+          "modify_date": "2018-04-12T09:42:04",
+          "modify_user_id": 1000,
+          "name": "Customer 0000001000",
+          "name_multilingual": {
+            "ar": "",
+            "en": "Customer 0000001000"
+          },
+          "owner": "Admin",
+          "owner_group_id": 1001,
+          "owner_user_id": 1000,
+          "parent_id": 25532,
+          "permissions_model": "advanced",
+          "reserved": false,
+          "reserved_date": null,
+          "reserved_shared_collaboration": false,
+          "reserved_user_id": 0,
+          "rm_enabled": false,
+          "size": 7,
+          "size_formatted": "7 Items",
+          "type": 848,
+          "type_name": "Business Workspace",
+          "versions_control_advanced": false,
+          "volume_id": -45807
+        },
+        "perm_add_major_version": true,
+        "perm_create": true,
+        "perm_delete": true,
+        "perm_delete_versions": true,
+        "perm_modify": true,
+        "perm_modify_attributes": true,
+        "perm_modify_permissions": true,
+        "perm_reserve": true,
+        "perm_see": true,
+        "perm_see_contents": true,
+        "reserved": false,
+        "reserved_date": null,
+        "reserved_user_id": 0,
+        "size": 1,
+        "type": 0,
+        "type_name": "Folder",
+        "user_id": 1000,
+        "version": 0,
+        "volume_id": 45807,
+        "xecm_ba_comments": "",
+        "xecm_ba_createby": 1000,
+        "xecm_ba_createdate": "2018-05-17T18:15:43"
+      }
+    },
+    "metadata": {
+      "properties": {
+        "create_date": {
+          "align": "center",
+          "name": "Created",
+          "persona": "",
+          "type": -7,
+          "width_weight": 0
+        },
+        "create_user_id": {
+          "align": "left",
+          "name": "Created By",
+          "persona": "user",
+          "type": 2,
+          "width_weight": 0
+        },
+        "createdate": {
+          "align": "center",
+          "name": "Creation Date",
+          "sort": false,
+          "type": 401,
+          "width_weight": 1
+        },
+        "createdby": {
+          "align": "center",
+          "name": "Created By",
+          "persona": null,
+          "sort": false,
+          "type": -1,
+          "width_weight": 0
+        },
+        "creator": {
+          "align": "center",
+          "name": "Created By",
+          "sort": false,
+          "type": 14,
+          "width_weight": 1
+        },
+        "description": {
+          "align": "left",
+          "name": "Description",
+          "persona": "",
+          "type": -1,
+          "width_weight": 100
+        },
+        "favorite": {
+          "align": "center",
+          "name": "Favorite",
+          "persona": "",
+          "type": 5,
+          "width_weight": 0
+        },
+        "icon": {
+          "align": "center",
+          "name": "Icon",
+          "persona": "",
+          "type": -1,
+          "width_weight": 0
+        },
+        "id": {
+          "align": "right",
+          "name": "DataID",
+          "persona": "node",
+          "sort": false,
+          "type": 2,
+          "width_weight": 0
+        },
+        "mime_type": {
+          "align": "left",
+          "name": "MIME Type",
+          "persona": "",
+          "type": -1,
+          "width_weight": 0
+        },
+        "modifiedby": {
+          "align": "center",
+          "name": "Modified By",
+          "persona": null,
+          "sort": false,
+          "type": -1,
+          "width_weight": 0
+        },
+        "modify_date": {
+          "align": "left",
+          "name": "Modified",
+          "persona": "",
+          "sort": true,
+          "type": -7,
+          "width_weight": 0
+        },
+        "modify_user_id": {
+          "align": "center",
+          "name": "Modified By",
+          "persona": "user",
+          "sort": false,
+          "type": 2,
+          "width_weight": 0
+        },
+        "name": {
+          "align": "left",
+          "name": "Name",
+          "persona": "",
+          "sort": true,
+          "type": -1,
+          "width_weight": 100
+        },
+        "original_id": {
+          "align": "left",
+          "name": "Original ID",
+          "persona": "node",
+          "type": 2,
+          "width_weight": 0
+        },
+        "owner": {
+          "align": "center",
+          "name": "Owner",
+          "sort": false,
+          "type": 14,
+          "width_weight": 1
+        },
+        "parent_id": {
+          "align": "left",
+          "name": "Parent ID",
+          "persona": "node",
+          "type": 2,
+          "width_weight": 0
+        },
+        "reserved": {
+          "align": "center",
+          "name": "Reserve",
+          "persona": "",
+          "type": 5,
+          "width_weight": 0
+        },
+        "reserved_date": {
+          "align": "center",
+          "name": "Reserved",
+          "persona": "",
+          "type": -7,
+          "width_weight": 0
+        },
+        "reserved_user_id": {
+          "align": "center",
+          "name": "Reserved By",
+          "persona": "member",
+          "type": 2,
+          "width_weight": 0
+        },
+        "size": {
+          "align": "right",
+          "name": "Size",
+          "persona": "",
+          "sort": false,
+          "type": 2,
+          "width_weight": 0
+        },
+        "type": {
+          "align": "center",
+          "name": "Type",
+          "persona": "",
+          "sort": false,
+          "type": 2,
+          "width_weight": 0
+        },
+        "version": {
+          "align": "center",
+          "name": "Version",
+          "sort": false,
+          "type": -1,
+          "width_weight": 1
+        },
+        "volume_id": {
+          "align": "left",
+          "name": "VolumeID",
+          "persona": "node",
+          "type": 2,
+          "width_weight": 0
+        },
+        "xecm_ba_comments": {
+          "align": "center",
+          "name": "Comments",
+          "sort": false,
+          "type": -1,
+          "width_weight": 1
+        },
+        "xecm_ba_createby": {
+          "align": "center",
+          "name": "Created By",
+          "persona": null,
+          "sort": false,
+          "type": -1,
+          "width_weight": 0
+        },
+        "xecm_ba_createdate": {
+          "align": "center",
+          "name": "Creation Date",
+          "sort": false,
+          "type": -7,
+          "width_weight": 1
+        }
+      }
+    },
+    "metadata_order": {
+      "properties": null
+    }
+  }, {
+    "actions": {
+      "data": {
+        "open": {
+          "body": "",
+          "content_type": "",
+          "form_href": "",
+          "href": "\/api\/v2\/nodes\/32790",
+          "method": "GET",
+          "name": "Open"
+        }
+      },
+      "map": {
+        "default_action": ""
+      },
+      "order": ["open"]
+    },
+    "data": {
+      "ancestors": [{
+        "container": true,
+        "container_size": 5,
+        "create_date": "2018-02-16T20:47:45",
+        "create_user_id": 1000,
+        "description": "",
+        "description_multilingual": {
+          "ar": "",
+          "en": ""
+        },
+        "external_create_date": null,
+        "external_identity": "",
+        "external_identity_type": "",
+        "external_modify_date": null,
+        "external_source": "",
+        "favorite": false,
+        "guid": null,
+        "icon": "\/cs1624_img\/webdoc\/icon_library.gif",
+        "icon_large": "\/cs1624_img\/webdoc\/icon_library_large.gif",
+        "id": 2000,
+        "modify_date": "2018-04-23T11:22:05",
+        "modify_user_id": 1000,
+        "name": "Enterprise",
+        "name_multilingual": {
+          "ar": "",
+          "en": "Enterprise"
+        },
+        "owner_group_id": 1001,
+        "owner_user_id": 1000,
+        "parent_id": -1,
+        "reserved": false,
+        "reserved_date": null,
+        "reserved_user_id": 0,
+        "type": 141,
+        "type_name": "Enterprise Workspace",
+        "versions_control_advanced": false,
+        "volume_id": -2000
+      }, {
+        "container": true,
+        "container_size": 7,
+        "create_date": "2018-02-21T16:43:11",
+        "create_user_id": 1000,
+        "description": "",
+        "description_multilingual": {
+          "ar": "",
+          "en": ""
+        },
+        "external_create_date": null,
+        "external_identity": "",
+        "external_identity_type": "",
+        "external_modify_date": null,
+        "external_source": "",
+        "favorite": false,
+        "guid": null,
+        "icon": "\/cs1624_img\/webdoc\/folder.gif",
+        "icon_large": "\/cs1624_img\/webdoc\/folder_large.gif",
+        "id": 32783,
+        "modify_date": "2018-03-13T15:06:47",
+        "modify_user_id": 1000,
+        "name": "Documents",
+        "name_multilingual": {
+          "ar": "",
+          "en": "Documents"
+        },
+        "owner_group_id": 1001,
+        "owner_user_id": 1000,
+        "parent_id": 2000,
+        "reserved": false,
+        "reserved_date": null,
+        "reserved_user_id": 0,
+        "type": 0,
+        "type_name": "Folder",
+        "versions_control_advanced": false,
+        "volume_id": -2000
+      }, {
+        "container": false,
+        "container_size": 0,
+        "create_date": "2018-02-21T16:44:06",
+        "create_user_id": 1000,
+        "description": "OpenText 2018 template for A4 word document.",
+        "description_multilingual": {
+          "ar": "",
+          "en": "OpenText 2018 template for A4 word document."
+        },
+        "external_create_date": null,
+        "external_identity": "",
+        "external_identity_type": "",
+        "external_modify_date": "2018-01-02T19:52:46",
+        "external_source": "file_system",
+        "favorite": false,
+        "guid": null,
+        "icon": "\/cs1624_img\/webdoc\/appword.gif",
+        "icon_large": "\/cs1624_img\/webdoc\/appword_large.gif",
+        "id": 32790,
+        "modify_date": "2018-05-18T11:58:02",
+        "modify_user_id": 1000,
+        "name": "OpenText Word Template 2018 (A4).docx",
+        "name_multilingual": {
+          "ar": "",
+          "en": "OpenText Word Template 2018 (A4).docx"
+        },
+        "owner_group_id": 1001,
+        "owner_user_id": 1000,
+        "parent_id": 32783,
+        "reserved": false,
+        "reserved_date": null,
+        "reserved_user_id": 0,
+        "type": 144,
+        "type_name": "Document",
+        "versions_control_advanced": false,
+        "volume_id": -2000
+      }],
+      "properties": {
+        "container": false,
+        "create_date": "2018-02-21T16:44:06",
+        "create_user_id": 1000,
+        "createdby": 1000,
+        "createdby_expand": {
+          "name": "Admin"
+        },
+        "description": "OpenText 2018 template for A4 word document.",
+        "favorite": false,
+        "icon": "\/cs1624_img\/webdoc\/appword.gif",
+        "id": 32790,
+        "mime_type": "application\/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "modifiedby": 1000,
+        "modifiedby_expand": {
+          "name": "Admin"
+        },
+        "modify_date": "2018-05-18T11:58:02",
+        "modify_user_id": 1000,
+        "name": "OpenText Word Template 2018 (A4).docx",
+        "original_id": 0,
+        "parent_id": 32783,
+        "parent_id_expand": {
+          "container": true,
+          "container_size": 7,
+          "create_date": "2018-02-21T16:43:11",
+          "create_user_id": 1000,
+          "description": "",
+          "description_multilingual": {
+            "ar": "",
+            "en": ""
+          },
+          "external_create_date": null,
+          "external_identity": "",
+          "external_identity_type": "",
+          "external_modify_date": null,
+          "external_source": "",
+          "favorite": false,
+          "id": 32783,
+          "mime_type": null,
+          "modify_date": "2018-03-13T15:06:47",
+          "modify_user_id": 1000,
+          "name": "Documents",
+          "name_multilingual": {
+            "ar": "",
+            "en": "Documents"
+          },
+          "owner": "Admin",
+          "owner_group_id": 1001,
+          "owner_user_id": 1000,
+          "parent_id": 2000,
+          "permissions_model": "advanced",
+          "reserved": false,
+          "reserved_date": null,
+          "reserved_shared_collaboration": false,
+          "reserved_user_id": 0,
+          "size": 7,
+          "size_formatted": "7 Items",
+          "type": 0,
+          "type_name": "Folder",
+          "versions_control_advanced": false,
+          "volume_id": -2000
+        },
+        "perm_add_major_version": true,
+        "perm_create": true,
+        "perm_delete": true,
+        "perm_delete_versions": true,
+        "perm_modify": true,
+        "perm_modify_attributes": true,
+        "perm_modify_permissions": true,
+        "perm_reserve": true,
+        "perm_see": true,
+        "perm_see_contents": true,
+        "reserved": false,
+        "reserved_date": null,
+        "reserved_user_id": 0,
+        "size": 60473,
+        "type": 144,
+        "type_name": "Document",
+        "user_id": 1000,
+        "version": 1,
+        "volume_id": -2000,
+        "xecm_ba_comments": "",
+        "xecm_ba_createby": 1000,
+        "xecm_ba_createdate": "2018-04-13T09:48:22"
+      }
+    },
+    "metadata": {
+      "properties": {
+        "create_date": {
+          "align": "center",
+          "name": "Created",
+          "persona": "",
+          "type": -7,
+          "width_weight": 0
+        },
+        "create_user_id": {
+          "align": "left",
+          "name": "Created By",
+          "persona": "user",
+          "type": 2,
+          "width_weight": 0
+        },
+        "createdate": {
+          "align": "center",
+          "name": "Creation Date",
+          "sort": false,
+          "type": 401,
+          "width_weight": 1
+        },
+        "createdby": {
+          "align": "center",
+          "name": "Created By",
+          "persona": null,
+          "sort": false,
+          "type": -1,
+          "width_weight": 0
+        },
+        "creator": {
+          "align": "center",
+          "name": "Created By",
+          "sort": false,
+          "type": 14,
+          "width_weight": 1
+        },
+        "description": {
+          "align": "left",
+          "name": "Description",
+          "persona": "",
+          "type": -1,
+          "width_weight": 100
+        },
+        "favorite": {
+          "align": "center",
+          "name": "Favorite",
+          "persona": "",
+          "type": 5,
+          "width_weight": 0
+        },
+        "icon": {
+          "align": "center",
+          "name": "Icon",
+          "persona": "",
+          "type": -1,
+          "width_weight": 0
+        },
+        "id": {
+          "align": "right",
+          "name": "DataID",
+          "persona": "node",
+          "sort": false,
+          "type": 2,
+          "width_weight": 0
+        },
+        "mime_type": {
+          "align": "left",
+          "name": "MIME Type",
+          "persona": "",
+          "type": -1,
+          "width_weight": 0
+        },
+        "modifiedby": {
+          "align": "center",
+          "name": "Modified By",
+          "persona": null,
+          "sort": false,
+          "type": -1,
+          "width_weight": 0
+        },
+        "modify_date": {
+          "align": "left",
+          "name": "Modified",
+          "persona": "",
+          "sort": true,
+          "type": -7,
+          "width_weight": 0
+        },
+        "modify_user_id": {
+          "align": "center",
+          "name": "Modified By",
+          "persona": "user",
+          "sort": false,
+          "type": 2,
+          "width_weight": 0
+        },
+        "name": {
+          "align": "left",
+          "name": "Name",
+          "persona": "",
+          "sort": true,
+          "type": -1,
+          "width_weight": 100
+        },
+        "original_id": {
+          "align": "left",
+          "name": "Original ID",
+          "persona": "node",
+          "type": 2,
+          "width_weight": 0
+        },
+        "owner": {
+          "align": "center",
+          "name": "Owner",
+          "sort": false,
+          "type": 14,
+          "width_weight": 1
+        },
+        "parent_id": {
+          "align": "left",
+          "name": "Parent ID",
+          "persona": "node",
+          "type": 2,
+          "width_weight": 0
+        },
+        "reserved": {
+          "align": "center",
+          "name": "Reserve",
+          "persona": "",
+          "type": 5,
+          "width_weight": 0
+        },
+        "reserved_date": {
+          "align": "center",
+          "name": "Reserved",
+          "persona": "",
+          "type": -7,
+          "width_weight": 0
+        },
+        "reserved_user_id": {
+          "align": "center",
+          "name": "Reserved By",
+          "persona": "member",
+          "type": 2,
+          "width_weight": 0
+        },
+        "size": {
+          "align": "right",
+          "name": "Size",
+          "persona": "",
+          "sort": false,
+          "type": 2,
+          "width_weight": 0
+        },
+        "type": {
+          "align": "center",
+          "name": "Type",
+          "persona": "",
+          "sort": false,
+          "type": 2,
+          "width_weight": 0
+        },
+        "version": {
+          "align": "center",
+          "name": "Version",
+          "sort": false,
+          "type": -1,
+          "width_weight": 1
+        },
+        "volume_id": {
+          "align": "left",
+          "name": "VolumeID",
+          "persona": "node",
+          "type": 2,
+          "width_weight": 0
+        },
+        "xecm_ba_comments": {
+          "align": "center",
+          "name": "Comments",
+          "sort": false,
+          "type": -1,
+          "width_weight": 1
+        },
+        "xecm_ba_createby": {
+          "align": "center",
+          "name": "Created By",
+          "persona": null,
+          "sort": false,
+          "type": -1,
+          "width_weight": 0
+        },
+        "xecm_ba_createdate": {
+          "align": "center",
+          "name": "Creation Date",
+          "sort": false,
+          "type": -7,
+          "width_weight": 1
+        }
+      }
+    },
+    "metadata_order": {
+      "properties": null
+    }
+  }, {
+    "actions": {
+      "data": {
+        "open": {
+          "body": "",
+          "content_type": "",
+          "form_href": "",
+          "href": "\/api\/v2\/nodes\/32785",
+          "method": "GET",
+          "name": "Open"
+        }
+      },
+      "map": {
+        "default_action": ""
+      },
+      "order": ["open"]
+    },
+    "data": {
+      "ancestors": [{
+        "container": true,
+        "container_size": 5,
+        "create_date": "2018-02-16T20:47:45",
+        "create_user_id": 1000,
+        "description": "",
+        "description_multilingual": {
+          "ar": "",
+          "en": ""
+        },
+        "external_create_date": null,
+        "external_identity": "",
+        "external_identity_type": "",
+        "external_modify_date": null,
+        "external_source": "",
+        "favorite": false,
+        "guid": null,
+        "icon": "\/cs1624_img\/webdoc\/icon_library.gif",
+        "icon_large": "\/cs1624_img\/webdoc\/icon_library_large.gif",
+        "id": 2000,
+        "modify_date": "2018-04-23T11:22:05",
+        "modify_user_id": 1000,
+        "name": "Enterprise",
+        "name_multilingual": {
+          "ar": "",
+          "en": "Enterprise"
+        },
+        "owner_group_id": 1001,
+        "owner_user_id": 1000,
+        "parent_id": -1,
+        "reserved": false,
+        "reserved_date": null,
+        "reserved_user_id": 0,
+        "type": 141,
+        "type_name": "Enterprise Workspace",
+        "versions_control_advanced": false,
+        "volume_id": -2000
+      }, {
+        "container": true,
+        "container_size": 7,
+        "create_date": "2018-02-21T16:43:11",
+        "create_user_id": 1000,
+        "description": "",
+        "description_multilingual": {
+          "ar": "",
+          "en": ""
+        },
+        "external_create_date": null,
+        "external_identity": "",
+        "external_identity_type": "",
+        "external_modify_date": null,
+        "external_source": "",
+        "favorite": false,
+        "guid": null,
+        "icon": "\/cs1624_img\/webdoc\/folder.gif",
+        "icon_large": "\/cs1624_img\/webdoc\/folder_large.gif",
+        "id": 32783,
+        "modify_date": "2018-03-13T15:06:47",
+        "modify_user_id": 1000,
+        "name": "Documents",
+        "name_multilingual": {
+          "ar": "",
+          "en": "Documents"
+        },
+        "owner_group_id": 1001,
+        "owner_user_id": 1000,
+        "parent_id": 2000,
+        "reserved": false,
+        "reserved_date": null,
+        "reserved_user_id": 0,
+        "type": 0,
+        "type_name": "Folder",
+        "versions_control_advanced": false,
+        "volume_id": -2000
+      }, {
+        "container": false,
+        "container_size": 0,
+        "create_date": "2018-02-21T16:44:05",
+        "create_user_id": 1000,
+        "description": "OpenText 2018 template for word white paper.",
+        "description_multilingual": {
+          "ar": "",
+          "en": "OpenText 2018 template for word white paper."
+        },
+        "external_create_date": null,
+        "external_identity": "",
+        "external_identity_type": "",
+        "external_modify_date": "2018-01-02T19:48:42",
+        "external_source": "file_system",
+        "favorite": false,
+        "guid": null,
+        "icon": "\/cs1624_img\/webdoc\/appword.gif",
+        "icon_large": "\/cs1624_img\/webdoc\/appword_large.gif",
+        "id": 32785,
+        "modify_date": "2018-05-18T11:58:36",
+        "modify_user_id": 1000,
+        "name": "OpenText Word White Paper Template 2018.docx",
+        "name_multilingual": {
+          "ar": "",
+          "en": "OpenText Word White Paper Template 2018.docx"
+        },
+        "owner_group_id": 1001,
+        "owner_user_id": 1000,
+        "parent_id": 32783,
+        "reserved": false,
+        "reserved_date": null,
+        "reserved_user_id": 0,
+        "type": 144,
+        "type_name": "Document",
+        "versions_control_advanced": false,
+        "volume_id": -2000
+      }],
+      "properties": {
+        "container": false,
+        "create_date": "2018-02-21T16:44:05",
+        "create_user_id": 1000,
+        "createdby": 1000,
+        "createdby_expand": {
+          "name": "Admin"
+        },
+        "description": "OpenText 2018 template for word white paper.",
+        "favorite": false,
+        "icon": "\/cs1624_img\/webdoc\/appword.gif",
+        "id": 32785,
+        "mime_type": "application\/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "modifiedby": 1000,
+        "modifiedby_expand": {
+          "name": "Admin"
+        },
+        "modify_date": "2018-05-18T11:58:36",
+        "modify_user_id": 1000,
+        "name": "OpenText Word White Paper Template 2018.docx",
+        "original_id": 0,
+        "parent_id": 32783,
+        "parent_id_expand": {
+          "container": true,
+          "container_size": 7,
+          "create_date": "2018-02-21T16:43:11",
+          "create_user_id": 1000,
+          "description": "",
+          "description_multilingual": {
+            "ar": "",
+            "en": ""
+          },
+          "external_create_date": null,
+          "external_identity": "",
+          "external_identity_type": "",
+          "external_modify_date": null,
+          "external_source": "",
+          "favorite": false,
+          "id": 32783,
+          "mime_type": null,
+          "modify_date": "2018-03-13T15:06:47",
+          "modify_user_id": 1000,
+          "name": "Documents",
+          "name_multilingual": {
+            "ar": "",
+            "en": "Documents"
+          },
+          "owner": "Admin",
+          "owner_group_id": 1001,
+          "owner_user_id": 1000,
+          "parent_id": 2000,
+          "permissions_model": "advanced",
+          "reserved": false,
+          "reserved_date": null,
+          "reserved_shared_collaboration": false,
+          "reserved_user_id": 0,
+          "size": 7,
+          "size_formatted": "7 Items",
+          "type": 0,
+          "type_name": "Folder",
+          "versions_control_advanced": false,
+          "volume_id": -2000
+        },
+        "perm_add_major_version": true,
+        "perm_create": true,
+        "perm_delete": true,
+        "perm_delete_versions": true,
+        "perm_modify": true,
+        "perm_modify_attributes": true,
+        "perm_modify_permissions": true,
+        "perm_reserve": true,
+        "perm_see": true,
+        "perm_see_contents": true,
+        "reserved": false,
+        "reserved_date": null,
+        "reserved_user_id": 0,
+        "size": 50939,
+        "type": 144,
+        "type_name": "Document",
+        "user_id": 1000,
+        "version": 1,
+        "volume_id": -2000,
+        "xecm_ba_comments": "",
+        "xecm_ba_createby": 1000,
+        "xecm_ba_createdate": "2018-04-13T09:48:22"
+      }
+    },
+    "metadata": {
+      "properties": {
+        "create_date": {
+          "align": "center",
+          "name": "Created",
+          "persona": "",
+          "type": -7,
+          "width_weight": 0
+        },
+        "create_user_id": {
+          "align": "left",
+          "name": "Created By",
+          "persona": "user",
+          "type": 2,
+          "width_weight": 0
+        },
+        "createdate": {
+          "align": "center",
+          "name": "Creation Date",
+          "sort": false,
+          "type": 401,
+          "width_weight": 1
+        },
+        "createdby": {
+          "align": "center",
+          "name": "Created By",
+          "persona": null,
+          "sort": false,
+          "type": -1,
+          "width_weight": 0
+        },
+        "creator": {
+          "align": "center",
+          "name": "Created By",
+          "sort": false,
+          "type": 14,
+          "width_weight": 1
+        },
+        "description": {
+          "align": "left",
+          "name": "Description",
+          "persona": "",
+          "type": -1,
+          "width_weight": 100
+        },
+        "favorite": {
+          "align": "center",
+          "name": "Favorite",
+          "persona": "",
+          "type": 5,
+          "width_weight": 0
+        },
+        "icon": {
+          "align": "center",
+          "name": "Icon",
+          "persona": "",
+          "type": -1,
+          "width_weight": 0
+        },
+        "id": {
+          "align": "right",
+          "name": "DataID",
+          "persona": "node",
+          "sort": false,
+          "type": 2,
+          "width_weight": 0
+        },
+        "mime_type": {
+          "align": "left",
+          "name": "MIME Type",
+          "persona": "",
+          "type": -1,
+          "width_weight": 0
+        },
+        "modifiedby": {
+          "align": "center",
+          "name": "Modified By",
+          "persona": null,
+          "sort": false,
+          "type": -1,
+          "width_weight": 0
+        },
+        "modify_date": {
+          "align": "left",
+          "name": "Modified",
+          "persona": "",
+          "sort": true,
+          "type": -7,
+          "width_weight": 0
+        },
+        "modify_user_id": {
+          "align": "center",
+          "name": "Modified By",
+          "persona": "user",
+          "sort": false,
+          "type": 2,
+          "width_weight": 0
+        },
+        "name": {
+          "align": "left",
+          "name": "Name",
+          "persona": "",
+          "sort": true,
+          "type": -1,
+          "width_weight": 100
+        },
+        "original_id": {
+          "align": "left",
+          "name": "Original ID",
+          "persona": "node",
+          "type": 2,
+          "width_weight": 0
+        },
+        "owner": {
+          "align": "center",
+          "name": "Owner",
+          "sort": false,
+          "type": 14,
+          "width_weight": 1
+        },
+        "parent_id": {
+          "align": "left",
+          "name": "Parent ID",
+          "persona": "node",
+          "type": 2,
+          "width_weight": 0
+        },
+        "reserved": {
+          "align": "center",
+          "name": "Reserve",
+          "persona": "",
+          "type": 5,
+          "width_weight": 0
+        },
+        "reserved_date": {
+          "align": "center",
+          "name": "Reserved",
+          "persona": "",
+          "type": -7,
+          "width_weight": 0
+        },
+        "reserved_user_id": {
+          "align": "center",
+          "name": "Reserved By",
+          "persona": "member",
+          "type": 2,
+          "width_weight": 0
+        },
+        "size": {
+          "align": "right",
+          "name": "Size",
+          "persona": "",
+          "sort": false,
+          "type": 2,
+          "width_weight": 0
+        },
+        "type": {
+          "align": "center",
+          "name": "Type",
+          "persona": "",
+          "sort": false,
+          "type": 2,
+          "width_weight": 0
+        },
+        "version": {
+          "align": "center",
+          "name": "Version",
+          "sort": false,
+          "type": -1,
+          "width_weight": 1
+        },
+        "volume_id": {
+          "align": "left",
+          "name": "VolumeID",
+          "persona": "node",
+          "type": 2,
+          "width_weight": 0
+        },
+        "xecm_ba_comments": {
+          "align": "center",
+          "name": "Comments",
+          "sort": false,
+          "type": -1,
+          "width_weight": 1
+        },
+        "xecm_ba_createby": {
+          "align": "center",
+          "name": "Created By",
+          "persona": null,
+          "sort": false,
+          "type": -1,
+          "width_weight": 0
+        },
+        "xecm_ba_createdate": {
+          "align": "center",
+          "name": "Creation Date",
+          "sort": false,
+          "type": -7,
+          "width_weight": 1
+        }
+      }
+    },
+    "metadata_order": {
+      "properties": null
+    }
+  }, {
+    "actions": {
+      "data": {
+        "open": {
+          "body": "",
+          "content_type": "",
+          "form_href": "",
+          "href": "\/api\/v2\/nodes\/32784",
+          "method": "GET",
+          "name": "Open"
+        }
+      },
+      "map": {
+        "default_action": ""
+      },
+      "order": ["open"]
+    },
+    "data": {
+      "ancestors": [{
+        "container": true,
+        "container_size": 5,
+        "create_date": "2018-02-16T20:47:45",
+        "create_user_id": 1000,
+        "description": "",
+        "description_multilingual": {
+          "ar": "",
+          "en": ""
+        },
+        "external_create_date": null,
+        "external_identity": "",
+        "external_identity_type": "",
+        "external_modify_date": null,
+        "external_source": "",
+        "favorite": false,
+        "guid": null,
+        "icon": "\/cs1624_img\/webdoc\/icon_library.gif",
+        "icon_large": "\/cs1624_img\/webdoc\/icon_library_large.gif",
+        "id": 2000,
+        "modify_date": "2018-04-23T11:22:05",
+        "modify_user_id": 1000,
+        "name": "Enterprise",
+        "name_multilingual": {
+          "ar": "",
+          "en": "Enterprise"
+        },
+        "owner_group_id": 1001,
+        "owner_user_id": 1000,
+        "parent_id": -1,
+        "reserved": false,
+        "reserved_date": null,
+        "reserved_user_id": 0,
+        "type": 141,
+        "type_name": "Enterprise Workspace",
+        "versions_control_advanced": false,
+        "volume_id": -2000
+      }, {
+        "container": true,
+        "container_size": 7,
+        "create_date": "2018-02-21T16:43:11",
+        "create_user_id": 1000,
+        "description": "",
+        "description_multilingual": {
+          "ar": "",
+          "en": ""
+        },
+        "external_create_date": null,
+        "external_identity": "",
+        "external_identity_type": "",
+        "external_modify_date": null,
+        "external_source": "",
+        "favorite": false,
+        "guid": null,
+        "icon": "\/cs1624_img\/webdoc\/folder.gif",
+        "icon_large": "\/cs1624_img\/webdoc\/folder_large.gif",
+        "id": 32783,
+        "modify_date": "2018-03-13T15:06:47",
+        "modify_user_id": 1000,
+        "name": "Documents",
+        "name_multilingual": {
+          "ar": "",
+          "en": "Documents"
+        },
+        "owner_group_id": 1001,
+        "owner_user_id": 1000,
+        "parent_id": 2000,
+        "reserved": false,
+        "reserved_date": null,
+        "reserved_user_id": 0,
+        "type": 0,
+        "type_name": "Folder",
+        "versions_control_advanced": false,
+        "volume_id": -2000
+      }, {
+        "container": false,
+        "container_size": 0,
+        "create_date": "2018-02-21T16:44:00",
+        "create_user_id": 1000,
+        "description": "OpenText 2018 template for powerpoint presentations.",
+        "description_multilingual": {
+          "ar": "",
+          "en": "OpenText 2018 template for powerpoint presentations."
+        },
+        "external_create_date": null,
+        "external_identity": "",
+        "external_identity_type": "",
+        "external_modify_date": "2018-01-19T18:25:40",
+        "external_source": "file_system",
+        "favorite": false,
+        "guid": null,
+        "icon": "\/cs1624_img\/webdoc\/appppoin.gif",
+        "icon_large": "\/cs1624_img\/webdoc\/appppoin_large.gif",
+        "id": 32784,
+        "modify_date": "2018-05-18T11:59:10",
+        "modify_user_id": 1000,
+        "name": "OpenText_Corporate_Template_2018.pptx",
+        "name_multilingual": {
+          "ar": "",
+          "en": "OpenText_Corporate_Template_2018.pptx"
+        },
+        "owner_group_id": 1001,
+        "owner_user_id": 1000,
+        "parent_id": 32783,
+        "reserved": false,
+        "reserved_date": null,
+        "reserved_user_id": 0,
+        "type": 144,
+        "type_name": "Document",
+        "versions_control_advanced": false,
+        "volume_id": -2000
+      }],
+      "properties": {
+        "container": false,
+        "create_date": "2018-02-21T16:44:00",
+        "create_user_id": 1000,
+        "createdby": 1000,
+        "createdby_expand": {
+          "name": "Admin"
+        },
+        "description": "OpenText 2018 template for powerpoint presentations.",
+        "favorite": false,
+        "icon": "\/cs1624_img\/webdoc\/appppoin.gif",
+        "id": 32784,
+        "mime_type": "application\/vnd.openxmlformats-officedocument.presentationml.presentation",
+        "modifiedby": 1000,
+        "modifiedby_expand": {
+          "name": "Admin"
+        },
+        "modify_date": "2018-05-18T11:59:10",
+        "modify_user_id": 1000,
+        "name": "OpenText_Corporate_Template_2018.pptx",
+        "original_id": 0,
+        "parent_id": 32783,
+        "parent_id_expand": {
+          "container": true,
+          "container_size": 7,
+          "create_date": "2018-02-21T16:43:11",
+          "create_user_id": 1000,
+          "description": "",
+          "description_multilingual": {
+            "ar": "",
+            "en": ""
+          },
+          "external_create_date": null,
+          "external_identity": "",
+          "external_identity_type": "",
+          "external_modify_date": null,
+          "external_source": "",
+          "favorite": false,
+          "id": 32783,
+          "mime_type": null,
+          "modify_date": "2018-03-13T15:06:47",
+          "modify_user_id": 1000,
+          "name": "Documents",
+          "name_multilingual": {
+            "ar": "",
+            "en": "Documents"
+          },
+          "owner": "Admin",
+          "owner_group_id": 1001,
+          "owner_user_id": 1000,
+          "parent_id": 2000,
+          "permissions_model": "advanced",
+          "reserved": false,
+          "reserved_date": null,
+          "reserved_shared_collaboration": false,
+          "reserved_user_id": 0,
+          "size": 7,
+          "size_formatted": "7 Items",
+          "type": 0,
+          "type_name": "Folder",
+          "versions_control_advanced": false,
+          "volume_id": -2000
+        },
+        "perm_add_major_version": true,
+        "perm_create": true,
+        "perm_delete": true,
+        "perm_delete_versions": true,
+        "perm_modify": true,
+        "perm_modify_attributes": true,
+        "perm_modify_permissions": true,
+        "perm_reserve": true,
+        "perm_see": true,
+        "perm_see_contents": true,
+        "reserved": false,
+        "reserved_date": null,
+        "reserved_user_id": 0,
+        "size": 5483565,
+        "type": 144,
+        "type_name": "Document",
+        "user_id": 1000,
+        "version": 1,
+        "volume_id": -2000,
+        "xecm_ba_comments": "",
+        "xecm_ba_createby": 1000,
+        "xecm_ba_createdate": "2018-05-09T15:39:54"
+      }
+    },
+    "metadata": {
+      "properties": {
+        "create_date": {
+          "align": "center",
+          "name": "Created",
+          "persona": "",
+          "type": -7,
+          "width_weight": 0
+        },
+        "create_user_id": {
+          "align": "left",
+          "name": "Created By",
+          "persona": "user",
+          "type": 2,
+          "width_weight": 0
+        },
+        "createdate": {
+          "align": "center",
+          "name": "Creation Date",
+          "sort": false,
+          "type": 401,
+          "width_weight": 1
+        },
+        "createdby": {
+          "align": "center",
+          "name": "Created By",
+          "persona": null,
+          "sort": false,
+          "type": -1,
+          "width_weight": 0
+        },
+        "creator": {
+          "align": "center",
+          "name": "Created By",
+          "sort": false,
+          "type": 14,
+          "width_weight": 1
+        },
+        "description": {
+          "align": "left",
+          "name": "Description",
+          "persona": "",
+          "type": -1,
+          "width_weight": 100
+        },
+        "favorite": {
+          "align": "center",
+          "name": "Favorite",
+          "persona": "",
+          "type": 5,
+          "width_weight": 0
+        },
+        "icon": {
+          "align": "center",
+          "name": "Icon",
+          "persona": "",
+          "type": -1,
+          "width_weight": 0
+        },
+        "id": {
+          "align": "right",
+          "name": "DataID",
+          "persona": "node",
+          "sort": false,
+          "type": 2,
+          "width_weight": 0
+        },
+        "mime_type": {
+          "align": "left",
+          "name": "MIME Type",
+          "persona": "",
+          "type": -1,
+          "width_weight": 0
+        },
+        "modifiedby": {
+          "align": "center",
+          "name": "Modified By",
+          "persona": null,
+          "sort": false,
+          "type": -1,
+          "width_weight": 0
+        },
+        "modify_date": {
+          "align": "left",
+          "name": "Modified",
+          "persona": "",
+          "sort": true,
+          "type": -7,
+          "width_weight": 0
+        },
+        "modify_user_id": {
+          "align": "center",
+          "name": "Modified By",
+          "persona": "user",
+          "sort": false,
+          "type": 2,
+          "width_weight": 0
+        },
+        "name": {
+          "align": "left",
+          "name": "Name",
+          "persona": "",
+          "sort": true,
+          "type": -1,
+          "width_weight": 100
+        },
+        "original_id": {
+          "align": "left",
+          "name": "Original ID",
+          "persona": "node",
+          "type": 2,
+          "width_weight": 0
+        },
+        "owner": {
+          "align": "center",
+          "name": "Owner",
+          "sort": false,
+          "type": 14,
+          "width_weight": 1
+        },
+        "parent_id": {
+          "align": "left",
+          "name": "Parent ID",
+          "persona": "node",
+          "type": 2,
+          "width_weight": 0
+        },
+        "reserved": {
+          "align": "center",
+          "name": "Reserve",
+          "persona": "",
+          "type": 5,
+          "width_weight": 0
+        },
+        "reserved_date": {
+          "align": "center",
+          "name": "Reserved",
+          "persona": "",
+          "type": -7,
+          "width_weight": 0
+        },
+        "reserved_user_id": {
+          "align": "center",
+          "name": "Reserved By",
+          "persona": "member",
+          "type": 2,
+          "width_weight": 0
+        },
+        "size": {
+          "align": "right",
+          "name": "Size",
+          "persona": "",
+          "sort": false,
+          "type": 2,
+          "width_weight": 0
+        },
+        "type": {
+          "align": "center",
+          "name": "Type",
+          "persona": "",
+          "sort": false,
+          "type": 2,
+          "width_weight": 0
+        },
+        "version": {
+          "align": "center",
+          "name": "Version",
+          "sort": false,
+          "type": -1,
+          "width_weight": 1
+        },
+        "volume_id": {
+          "align": "left",
+          "name": "VolumeID",
+          "persona": "node",
+          "type": 2,
+          "width_weight": 0
+        },
+        "xecm_ba_comments": {
+          "align": "center",
+          "name": "Comments",
+          "sort": false,
+          "type": -1,
+          "width_weight": 1
+        },
+        "xecm_ba_createby": {
+          "align": "center",
+          "name": "Created By",
+          "persona": null,
+          "sort": false,
+          "type": -1,
+          "width_weight": 0
+        },
+        "xecm_ba_createdate": {
+          "align": "center",
+          "name": "Creation Date",
+          "sort": false,
+          "type": -7,
+          "width_weight": 1
+        }
+      }
+    },
+    "metadata_order": {
+      "properties": null
+    }
+  }, {
+    "actions": {
+      "data": {
+        "open": {
+          "body": "",
+          "content_type": "",
+          "form_href": "",
+          "href": "\/api\/v2\/nodes\/31903",
+          "method": "GET",
+          "name": "Open"
+        }
+      },
+      "map": {
+        "default_action": ""
+      },
+      "order": ["open"]
+    },
+    "data": {
+      "ancestors": [{
+        "container": true,
+        "container_size": 5,
+        "create_date": "2018-02-16T20:47:45",
+        "create_user_id": 1000,
+        "description": "",
+        "description_multilingual": {
+          "ar": "",
+          "en": ""
+        },
+        "external_create_date": null,
+        "external_identity": "",
+        "external_identity_type": "",
+        "external_modify_date": null,
+        "external_source": "",
+        "favorite": false,
+        "guid": null,
+        "icon": "\/cs1624_img\/webdoc\/icon_library.gif",
+        "icon_large": "\/cs1624_img\/webdoc\/icon_library_large.gif",
+        "id": 2000,
+        "modify_date": "2018-04-23T11:22:05",
+        "modify_user_id": 1000,
+        "name": "Enterprise",
+        "name_multilingual": {
+          "ar": "",
+          "en": "Enterprise"
+        },
+        "owner_group_id": 1001,
+        "owner_user_id": 1000,
+        "parent_id": -1,
+        "reserved": false,
+        "reserved_date": null,
+        "reserved_user_id": 0,
+        "type": 141,
+        "type_name": "Enterprise Workspace",
+        "versions_control_advanced": false,
+        "volume_id": -2000
+      }, {
+        "container": false,
+        "container_size": 0,
+        "create_date": "2018-02-21T16:44:00",
+        "create_user_id": 1000,
+        "description": "",
+        "description_multilingual": {
+          "ar": "",
+          "en": ""
+        },
+        "external_create_date": null,
+        "external_identity": "",
+        "external_identity_type": "",
+        "external_modify_date": "2018-01-19T18:18:34",
+        "external_source": "file_system",
+        "favorite": false,
+        "guid": null,
+        "icon": "\/cs1624_img\/webdoc\/apppdf.gif",
+        "icon_large": "\/cs1624_img\/webdoc\/apppdf_large.gif",
+        "id": 31903,
+        "modify_date": "2018-02-21T16:44:00",
+        "modify_user_id": 1000,
+        "name": "OpenText_Quick_Brand_Guide_2017.pdf",
+        "name_multilingual": {
+          "ar": "",
+          "en": "OpenText_Quick_Brand_Guide_2017.pdf"
+        },
+        "owner_group_id": 1001,
+        "owner_user_id": 1000,
+        "parent_id": 32783,
+        "reserved": false,
+        "reserved_date": null,
+        "reserved_user_id": 0,
+        "type": 144,
+        "type_name": "Document",
+        "versions_control_advanced": false,
+        "volume_id": -2000
+      }, {
+        "container": true,
+        "container_size": 7,
+        "create_date": "2018-02-21T16:43:11",
+        "create_user_id": 1000,
+        "description": "",
+        "description_multilingual": {
+          "ar": "",
+          "en": ""
+        },
+        "external_create_date": null,
+        "external_identity": "",
+        "external_identity_type": "",
+        "external_modify_date": null,
+        "external_source": "",
+        "favorite": false,
+        "guid": null,
+        "icon": "\/cs1624_img\/webdoc\/folder.gif",
+        "icon_large": "\/cs1624_img\/webdoc\/folder_large.gif",
+        "id": 32783,
+        "modify_date": "2018-03-13T15:06:47",
+        "modify_user_id": 1000,
+        "name": "Documents",
+        "name_multilingual": {
+          "ar": "",
+          "en": "Documents"
+        },
+        "owner_group_id": 1001,
+        "owner_user_id": 1000,
+        "parent_id": 2000,
+        "reserved": false,
+        "reserved_date": null,
+        "reserved_user_id": 0,
+        "type": 0,
+        "type_name": "Folder",
+        "versions_control_advanced": false,
+        "volume_id": -2000
+      }],
+      "properties": {
+        "container": false,
+        "create_date": "2018-02-21T16:44:00",
+        "create_user_id": 1000,
+        "createdby": 1000,
+        "createdby_expand": {
+          "name": "Admin"
+        },
+        "description": "",
+        "favorite": false,
+        "icon": "\/cs1624_img\/webdoc\/apppdf.gif",
+        "id": 31903,
+        "mime_type": "application\/pdf",
+        "modifiedby": 1000,
+        "modifiedby_expand": {
+          "name": "Admin"
+        },
+        "modify_date": "2018-02-21T16:44:00",
+        "modify_user_id": 1000,
+        "name": "OpenText_Quick_Brand_Guide_2017.pdf",
+        "original_id": 0,
+        "parent_id": 32783,
+        "parent_id_expand": {
+          "container": true,
+          "container_size": 7,
+          "create_date": "2018-02-21T16:43:11",
+          "create_user_id": 1000,
+          "description": "",
+          "description_multilingual": {
+            "ar": "",
+            "en": ""
+          },
+          "external_create_date": null,
+          "external_identity": "",
+          "external_identity_type": "",
+          "external_modify_date": null,
+          "external_source": "",
+          "favorite": false,
+          "id": 32783,
+          "mime_type": null,
+          "modify_date": "2018-03-13T15:06:47",
+          "modify_user_id": 1000,
+          "name": "Documents",
+          "name_multilingual": {
+            "ar": "",
+            "en": "Documents"
+          },
+          "owner": "Admin",
+          "owner_group_id": 1001,
+          "owner_user_id": 1000,
+          "parent_id": 2000,
+          "permissions_model": "advanced",
+          "reserved": false,
+          "reserved_date": null,
+          "reserved_shared_collaboration": false,
+          "reserved_user_id": 0,
+          "size": 7,
+          "size_formatted": "7 Items",
+          "type": 0,
+          "type_name": "Folder",
+          "versions_control_advanced": false,
+          "volume_id": -2000
+        },
+        "perm_add_major_version": true,
+        "perm_create": true,
+        "perm_delete": true,
+        "perm_delete_versions": true,
+        "perm_modify": true,
+        "perm_modify_attributes": true,
+        "perm_modify_permissions": true,
+        "perm_reserve": true,
+        "perm_see": true,
+        "perm_see_contents": true,
+        "reserved": false,
+        "reserved_date": null,
+        "reserved_user_id": 0,
+        "size": 415299,
+        "type": 144,
+        "type_name": "Document",
+        "user_id": 1000,
+        "version": 1,
+        "volume_id": -2000,
+        "xecm_ba_comments": "",
+        "xecm_ba_createby": 1000,
+        "xecm_ba_createdate": "2018-05-17T18:14:03"
+      }
+    },
+    "metadata": {
+      "properties": {
+        "create_date": {
+          "align": "center",
+          "name": "Created",
+          "persona": "",
+          "type": -7,
+          "width_weight": 0
+        },
+        "create_user_id": {
+          "align": "left",
+          "name": "Created By",
+          "persona": "user",
+          "type": 2,
+          "width_weight": 0
+        },
+        "createdate": {
+          "align": "center",
+          "name": "Creation Date",
+          "sort": false,
+          "type": 401,
+          "width_weight": 1
+        },
+        "createdby": {
+          "align": "center",
+          "name": "Created By",
+          "persona": null,
+          "sort": false,
+          "type": -1,
+          "width_weight": 0
+        },
+        "creator": {
+          "align": "center",
+          "name": "Created By",
+          "sort": false,
+          "type": 14,
+          "width_weight": 1
+        },
+        "description": {
+          "align": "left",
+          "name": "Description",
+          "persona": "",
+          "type": -1,
+          "width_weight": 100
+        },
+        "favorite": {
+          "align": "center",
+          "name": "Favorite",
+          "persona": "",
+          "type": 5,
+          "width_weight": 0
+        },
+        "icon": {
+          "align": "center",
+          "name": "Icon",
+          "persona": "",
+          "type": -1,
+          "width_weight": 0
+        },
+        "id": {
+          "align": "right",
+          "name": "DataID",
+          "persona": "node",
+          "sort": false,
+          "type": 2,
+          "width_weight": 0
+        },
+        "mime_type": {
+          "align": "left",
+          "name": "MIME Type",
+          "persona": "",
+          "type": -1,
+          "width_weight": 0
+        },
+        "modifiedby": {
+          "align": "center",
+          "name": "Modified By",
+          "persona": null,
+          "sort": false,
+          "type": -1,
+          "width_weight": 0
+        },
+        "modify_date": {
+          "align": "left",
+          "name": "Modified",
+          "persona": "",
+          "sort": true,
+          "type": -7,
+          "width_weight": 0
+        },
+        "modify_user_id": {
+          "align": "center",
+          "name": "Modified By",
+          "persona": "user",
+          "sort": false,
+          "type": 2,
+          "width_weight": 0
+        },
+        "name": {
+          "align": "left",
+          "name": "Name",
+          "persona": "",
+          "sort": true,
+          "type": -1,
+          "width_weight": 100
+        },
+        "original_id": {
+          "align": "left",
+          "name": "Original ID",
+          "persona": "node",
+          "type": 2,
+          "width_weight": 0
+        },
+        "owner": {
+          "align": "center",
+          "name": "Owner",
+          "sort": false,
+          "type": 14,
+          "width_weight": 1
+        },
+        "parent_id": {
+          "align": "left",
+          "name": "Parent ID",
+          "persona": "node",
+          "type": 2,
+          "width_weight": 0
+        },
+        "reserved": {
+          "align": "center",
+          "name": "Reserve",
+          "persona": "",
+          "type": 5,
+          "width_weight": 0
+        },
+        "reserved_date": {
+          "align": "center",
+          "name": "Reserved",
+          "persona": "",
+          "type": -7,
+          "width_weight": 0
+        },
+        "reserved_user_id": {
+          "align": "center",
+          "name": "Reserved By",
+          "persona": "member",
+          "type": 2,
+          "width_weight": 0
+        },
+        "size": {
+          "align": "right",
+          "name": "Size",
+          "persona": "",
+          "sort": false,
+          "type": 2,
+          "width_weight": 0
+        },
+        "type": {
+          "align": "center",
+          "name": "Type",
+          "persona": "",
+          "sort": false,
+          "type": 2,
+          "width_weight": 0
+        },
+        "version": {
+          "align": "center",
+          "name": "Version",
+          "sort": false,
+          "type": -1,
+          "width_weight": 1
+        },
+        "volume_id": {
+          "align": "left",
+          "name": "VolumeID",
+          "persona": "node",
+          "type": 2,
+          "width_weight": 0
+        },
+        "xecm_ba_comments": {
+          "align": "center",
+          "name": "Comments",
+          "sort": false,
+          "type": -1,
+          "width_weight": 1
+        },
+        "xecm_ba_createby": {
+          "align": "center",
+          "name": "Created By",
+          "persona": null,
+          "sort": false,
+          "type": -1,
+          "width_weight": 0
+        },
+        "xecm_ba_createdate": {
+          "align": "center",
+          "name": "Creation Date",
+          "sort": false,
+          "type": -7,
+          "width_weight": 1
+        }
+      }
+    },
+    "metadata_order": {
+      "properties": null
+    }
+  }]
+}

@@ -1,0 +1,14 @@
+{
+  "links": {
+    "data": {
+      "self": {
+        "body": "",
+        "content_type": "",
+        "href": "/api/v2/members/favorites/tabs?fields=properties",
+        "method": "GET",
+        "name": ""
+      }
+    }
+  },
+  "results": []
+}

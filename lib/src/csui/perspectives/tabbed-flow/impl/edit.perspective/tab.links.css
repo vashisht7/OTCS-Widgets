@@ -1,0 +1,21 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .csui-pman-add-newtab {
+  padding: 8px 24px 8px 8px;
+}
+
+.binf-widgets .csui-pman-add-newtab.csui-pman-disable-newtab {
+  opacity: 0.25;
+}
+
+.binf-widgets .csui-pman-add-newtab.csui-pman-disable-newtab .icon{
+  cursor:default;
+}
+
+.binf-widgets .csui-pman-add-newtab .icon {
+  height: 32px;
+  width: 32px;
+  display: inline-block;
+  background-color: transparent;
+  border: 1px solid transparent;
+}

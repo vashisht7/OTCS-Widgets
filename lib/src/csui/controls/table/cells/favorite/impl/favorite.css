@@ -1,0 +1,91 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.csui-table-cell-favorite .csui-favorite-star-view-container {
+  height: 100%;
+}
+
+.csui-table-cell-favorite .csui-favorite-star {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.binf-widgets .csui-nodetable.csui-table-spacing-narrow .csui-table-cell-favorite {
+  min-width: calc(6px + (6em - 52px) + 6px); 
+  max-width: calc(6px + (6em - 52px) + 6px); 
+}
+
+.binf-widgets .csui-nodetable.csui-table-spacing-medium .csui-table-cell-favorite {
+  min-width: calc(8px + (6em - 52px) + 8px); 
+  max-width: calc(8px + (6em - 52px) + 8px); 
+}
+
+.binf-widgets .csui-nodetable.csui-table-spacing-wide .csui-table-cell-favorite {
+  min-width: calc(14px + (6em - 52px) + 14px); 
+  max-width: calc(14px + (6em - 52px) + 14px); 
+}
+
+.binf-widgets .csui-nodetable.csui-table-spacing-narrow .csui-table-cell-favorite:first-child,
+.binf-widgets .csui-nodetable.csui-table-spacing-narrow .csui-table-cell-favorite.csui-table-cell-last-visible {
+  min-width: calc(20px + (6em - 52px) + 6px); 
+  max-width: calc(20px + (6em - 52px) + 6px); 
+}
+
+.binf-widgets .csui-nodetable.csui-table-spacing-medium .csui-table-cell-favorite:first-child,
+.binf-widgets .csui-nodetable.csui-table-spacing-medium .csui-table-cell-favorite.csui-table-cell-last-visible {
+  min-width: calc(20px + (6em - 52px) + 8px); 
+  max-width: calc(20px + (6em - 52px) + 8px); 
+}
+
+.binf-widgets .csui-nodetable.csui-table-spacing-wide .csui-table-cell-favorite:first-child,
+.binf-widgets .csui-nodetable.csui-table-spacing-wide .csui-table-cell-favorite.csui-table-cell-last-visible {
+  min-width: calc(20px + (6em - 52px) + 14px); 
+  max-width: calc(20px + (6em - 52px) + 14px); 
+}
+
+
+.binf-widgets .csui-nodetable .binf-table tr:not(.csui-details-row) .csui-favorite-star-view-container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+.csui-nodetable.csui-table-spacing-narrow .binf-table tr > .csui-table-cell-favorite .csui-favorite-star {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.csui-nodetable.csui-table-spacing-medium .binf-table tr > .csui-table-cell-favorite .csui-favorite-star {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.csui-nodetable.csui-table-spacing-wide .binf-table tr > .csui-table-cell-favorite .csui-favorite-star {
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+
+.csui-nodetable .binf-table tr > .csui-table-cell-favorite:first-child .csui-favorite-star {
+  padding-left: 20px;
+}
+
+
+.csui-nodetable .binf-table tr > .csui-table-cell-favorite.csui-table-cell-last-visible .csui-favorite-star {
+  padding-right: 20px;
+}
+
+.csui-table-cell-favorite button.csui-favorite-star:focus {
+  outline: 1px dotted #333333;
+  outline-offset: -1px;
+}
+
+.csui-table-cell-favorite .icon {
+  height: calc(6em - 52px); 
+  width: calc(6em - 52px);
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: middle;
+}

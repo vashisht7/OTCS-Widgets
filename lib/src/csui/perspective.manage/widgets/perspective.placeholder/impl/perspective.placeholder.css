@@ -1,0 +1,18 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .csui-perspective-placeholder {
+  height: 100%;
+  background: rgba(249, 249, 249, 0.2);
+  text-align: center;
+  border: dashed 2px #ffffff;
+}
+
+.binf-widgets .csui-placeholder-title {
+  position: relative;
+  top: calc(50% - 50px);
+  left: 0;
+  right: 0;
+  font-size: 18px !important;
+  line-height: 20px;
+  color: #ffffff;
+}

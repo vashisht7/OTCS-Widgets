@@ -1,0 +1,11 @@
+<button class="csui-control csui-disclosure" aria-expanded="{{ariaExpanded}}"
+        aria-label="{{ariaLabel}}" {{disabled}} title="{{title}}">
+  <svg class="csui-icon csui-svg-icon" focusable="false">
+    {{#if ariaExpanded}}
+      <use xlink:href="{{spritePath}}#controls--disclosure--impl--images--caret_up"></use>
+    {{else}}
+      <use xlink:href="{{spritePath}}#controls--disclosure--impl--images--caret_down"></use>
+    {{/if}}
+  </svg>
+</button>
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

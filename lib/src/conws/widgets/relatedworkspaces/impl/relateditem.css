@@ -1,0 +1,136 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.cs-list .conws-relateditem-object {
+}
+
+.cs-list .conws-relateditem-border {
+  padding: 10px 10px 0 10px;
+  margin: 5px;
+}
+
+.cs-list .conws-relateditem-top,
+.cs-list .conws-relateditem-bottom,
+.cs-list .conws-relateditem-center {
+  cursor: pointer;
+}
+
+.cs-list .conws-relateditem-object:hover {
+  background-color: #bac9ce;
+}
+
+.cs-list .conws-relateditem-object .conws-relateditem-top,
+.cs-list .conws-relateditem-object .conws-relateditem-bottom {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.cs-list .conws-relateditem-top .conws-left,
+.cs-list .conws-relateditem-top .conws-right,
+.cs-list .conws-relateditem-bottom .conws-left,
+.cs-list .conws-relateditem-bottom .conws-right {
+  display: table-cell;
+}
+
+.cs-list .conws-relateditem-top .conws-left {
+  width: 60%;
+}
+
+.cs-list .conws-relateditem-top .conws-right {
+  width: 40%;
+}
+
+.cs-list .conws-relateditem-bottom .conws-left,
+.cs-list .conws-relateditem-bottom .conws-right {
+  width: 50%;
+}
+
+.cs-list .conws-relateditem-top .conws-label,
+.cs-list .conws-relateditem-top .conws-value,
+.cs-list .conws-relateditem-bottom .conws-label,
+.cs-list .conws-relateditem-bottom .conws-value {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
+  line-height: normal;
+}
+
+.cs-list .conws-relateditem-center .conws-body {
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.cs-list .conws-relateditem-top .conws-label,
+.cs-list .conws-relateditem-top .conws-value,
+.cs-list .conws-relateditem-bottom .conws-label,
+.cs-list .conws-relateditem-bottom .conws-value
+{
+  display: block;
+}
+
+.cs-list .conws-relateditem-top .conws-description-spacer {
+  
+  padding-top: 1.075rem;
+}
+
+.cs-list .conws-relateditem-bottom .conws-value,
+.cs-list .conws-relateditem-center .conws-body {
+  font-size: 0.75rem;
+}
+
+.cs-list .conws-relateditem-object .conws-right {
+  text-align: right;
+}
+
+.cs-list .conws-relateditem-object .conws-relateditem-top,
+.cs-list .conws-relateditem-object .conws-description-top,
+.cs-list .conws-relateditem-object .conws-info-top {
+  vertical-align: top;
+}
+
+.cs-list .conws-relateditem-object .conws-relateditem-bottom,
+.cs-list .conws-relateditem-object .conws-description-bottom,
+.cs-list .conws-relateditem-object .conws-info-bottom {
+  vertical-align: bottom;
+}
+
+.cs-list .conws-relateditem-bottom .conws-left,
+.cs-list .conws-relateditem-bottom .conws-right {
+  padding-top: 0.75rem;
+}
+
+.cs-list .conws-relateditem-top .conws-spacer {
+  
+  padding-bottom: 0.075rem;
+}
+
+.cs-list .conws-relateditem-bottom .conws-spacer {
+  
+  padding-bottom: 0.075rem;
+}
+
+.cs-list .conws-relateditem-object .conws-relateditem-top .conws-title {
+  color: #0072aa;
+}
+
+.cs-list .conws-relateditem-top .conws-value {
+  font-size: 1.125rem;
+}
+
+.cs-list .conws-relateditem-top .conws-label,
+.cs-list .conws-relateditem-bottom .conws-label {
+  font-size: 0.625em;
+}
+
+.cs-list .conws-relateditem-object .conws-relateditem-divider {
+  margin-top: 1rem;
+  border-bottom: 0.0625rem solid #dcdcdc;
+}
+
+.cs-list .conws-relateditem-action-area .conws-nostyle:link,
+.cs-list .conws-relateditem-action-area .conws-nostyle:visited {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: auto;
+}

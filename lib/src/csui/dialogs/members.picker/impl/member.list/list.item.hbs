@@ -1,0 +1,36 @@
+{{#if totalcount}}
+{{else}}
+  <span class="csui-item-standard csui-list-group-item" role="list">
+    <div class="user-profile-row">
+      <div class="user-profile-img  binf-pull-left">
+        <span class="csui-icon csui-start-icon {{selected}}"></span>
+
+        {{#if isGroup}}
+          <span
+              class="csui-user-default-picture-dlg csui-icon image_group_placeholder_permission"></span>
+        <span><img src="{{imgSrc}}" alt="{{imgAlt}}"
+                   class="binf-hidden csui-user-profile-picture-dlg csui-member-group-icon csui-icon" /></span>
+        <span class="csui-icon csui-end-icon icon-sidebar-expand24 binf-hidden"></span>
+        {{else}}
+
+          <span
+              class="csui-user-default-picture-dlg csui-icon image_user_placeholder">{{initials}}</span>
+        <span><img src="{{imgSrc}}" alt="{{imgAlt}}"
+                   class="binf-hidden csui-user-profile-picture-dlg csui-member-group-icon csui-icon" /></span>
+
+        {{/if}}
+      </div>
+
+      <div class="user-profile-info  binf-pull-left">
+        <div class="{{#if isGroup}} user-group-name {{/if}}"><span title="{{name}}"
+                                                                   class="binf-pull-left csui-list-item-title">{{name}}</span></div>
+        {{#unless isGroup}}
+          <div><span class="binf-pull-left csui-list-item-department"
+                     title="{{department}}">{{department}}</span></div>
+        {{/unless}}
+      </div>
+    </div>
+  </span>
+{{/if}}
+
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

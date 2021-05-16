@@ -1,0 +1,104 @@
+{
+  "links": {
+    "data": {
+      "self": {
+        "body": "",
+        "content_type": "",
+        "href": "/api/v2/businessworkspaces?expanded_view=true&where_bo_type=KNA1&where_ext_system_id=D9A&where_bo_id=0000000272",
+        "method": "GET",
+        "name": ""
+      }
+    }
+  },
+  "paging": {
+    "limit": 500,
+    "page": 1,
+    "page_total": 1,
+    "range_max": 1,
+    "range_min": 1,
+    "total_count": 1
+  },
+  "results": [
+    {
+      "actions": {
+        "data": {
+          "open": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "/api/v2/nodes/301107/nodes",
+            "method": "GET",
+            "name": "Open"
+          }
+        },
+        "map": {
+          "default_action": ""
+        },
+        "order": [
+          "open"
+        ]
+      },
+      "data": {
+        "properties": {
+          "container": true,
+          "create_date": "2016-11-18T15:41:45",
+          "description": "",
+          "favorite": false,
+          "icon": "/img/otsapxecm/wksp_customer.png",
+          "id": 301107,
+          "mime_type": null,
+          "modify_date": "2016-11-23T14:26:30",
+          "name": "Customer Joe Masson",
+          "original_id": 0,
+          "parent_id": 22672,
+          "perm_create": true,
+          "perm_delete": true,
+          "perm_delete_versions": true,
+          "perm_modify": true,
+          "perm_modify_attributes": true,
+          "perm_modify_permissions": true,
+          "perm_reserve": true,
+          "perm_see": true,
+          "perm_see_contents": true,
+          "reserved": false,
+          "reserved_date": null,
+          "reserved_user_id": 0,
+          "size": 42,
+          "type": 848,
+          "type_name": "Business Workspace",
+          "volume_id": -2000,
+          "wnd_att_r7q_g": "SALINA",
+          "wnd_att_r7q_g_formatted": "SALINA",
+          "wnd_comments": null,
+          "xecm_ba_comments": null,
+          "wnd_createdate": "2016-11-18T15:41:45",
+          "wnd_createdate_formatted": "11/18/2016 03:41 PM",
+          "wnd_createdby": 1000,
+          "wnd_createdby_formatted": "Admin",
+          "wnd_modifiedby": 1000,
+          "wnd_modifiedby_formatted": "Admin",
+          "wnd_nickname": null,
+          "wnd_nickname_formatted": null,
+          "wnd_owner": 1000,
+          "wnd_owner_formatted": "Admin",
+          "wnd_version": null,
+          "wnd_version_formatted": null,
+          "wnf_emailfrom": null,
+          "wnf_emailfrom_formatted": null,
+          "wnf_readydate": null,
+          "wnf_readydate_formatted": null,
+          "wnf_wksp_modify_date": "2016-11-23T00:00:00",
+          "wnf_wksp_name_en": "Customer Joe Masson",
+          "wnf_wksp_name_en_formatted": "Customer Joe Masson",
+          "wnf_wksp_template_id": 22232,
+          "wnf_wksp_type_id": 1,
+          "wnf_wksp_type_id_formatted": "1"
+        }
+      }
+    }
+  ],
+  "wksp_info": {
+    "wksp_type_icon": null,
+    "wksp_type_icon_content_type": "type_base64_content"
+  }
+}

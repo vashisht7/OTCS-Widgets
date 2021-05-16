@@ -1,0 +1,192 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .csui-selected-count {
+  height: 100%;
+}
+
+.binf-widgets .csui-selected-count .csui-selected-counter-region {
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+
+.binf-widgets .csui-selected-count .csui-selected-counter-region button {
+  margin: 0;
+  background-color: transparent;
+  border-color: transparent;
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 8px;
+  border: none;
+  color: #333333;
+}
+
+.binf-widgets .csui-selected-count .csui-selected-counter-region .csui-selected-counter-label {
+  font-size: 14px;
+  line-height: normal;
+  padding: 0 1px;
+  max-width: 60px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.binf-widgets .csui-selected-count .csui-selected-counter-region .binf-badge {
+  border-radius: 10px;
+  background-color: #627783;
+  color: #ffffff;
+  font-size: 14px;
+  margin: 0 0 0 8px;
+  height: 20px;
+  min-width: 20px;
+  padding: 3px 6px;
+  top: 0;
+}
+
+.binf-widgets .csui-selected-count .csui-selected-counter-region button:hover {
+  color: #627783;
+  background: #f3fbff;
+  border-radius: 3px;
+}
+
+.binf-widgets .csui-selected-count .csui-selected-counter-region button:hover .binf-badge {
+  background: #7b9ab0;
+}
+
+.binf-widgets .csui-selected-count .csui-selected-counter-region button:active,
+.binf-widgets .csui-selected-count .csui-selected-counter-region .binf-btn.binf-open {
+  background: #f9f9f9;
+  border-radius: 3px;
+  box-shadow: none;
+  color: #757575;
+}
+
+.binf-widgets .csui-selected-count .csui-selected-counter-region .binf-btn.binf-open .binf-badge {
+  background: #757575;
+}
+
+.binf-widgets .csui-selected-count .csui-selected-counter-region .binf-btn.binf-open .csui-selected-counter-label {
+  color: #757575;
+}
+
+.binf-widgets .csui-selected-count .csui-dropmenu-container {
+  background-color: #ffffff;
+  max-width: 300px;
+  position: absolute;
+  top: auto;
+  left: auto;
+  z-index: 1040;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.7);
+  min-width: 192px;
+}
+
+.binf-widgets .csui-selected-count .csui-selected-count-clearall {
+  display: inline-flex;
+  height: 40px;
+  width: 100%;
+}
+
+.binf-widgets .csui-selected-count .csui-selected-count-clearall-label {
+  font-size: 13px;
+  cursor: pointer;
+  color: #2e3d98;
+  line-height: 24px;
+  position: absolute;
+  margin-top: 8px;
+  right: 16px;
+  max-width: 175px;
+  text-align: right;
+}
+
+.binf-widgets .csui-selected-count .csui-selected-count-clearall-label:focus {
+  outline: 1px dotted #333333;
+}
+
+.binf-widgets .csui-selected-count li.csui-selected-item {
+  height: 34px;
+  width: 100%;
+  padding: 0 16px 0 14px;
+  color: #333333;
+  font-size: 14px;
+  display: flex;
+  cursor: default;
+  align-items: center;
+  text-decoration: none;
+  margin-bottom: 1px;
+  outline: none;
+}
+
+.binf-widgets .csui-selected-count ul li:first-of-type {
+  margin-top: 4px;
+}
+.binf-widgets .csui-selected-count ul li:last-of-type {
+  margin-bottom: 4px;
+}
+
+.binf-widgets .csui-selected-count li.csui-selected-item:active,
+.binf-widgets .csui-selected-count li.csui-selected-item:focus {
+  outline: 1px dotted #333333;
+  outline-offset: -1px;
+}
+
+.binf-widgets .csui-selected-count .csui-selected-item .csui-icon-group {
+  height: 20px;
+  width: 20px;
+  float: left;
+}
+
+.binf-widgets .csui-selected-count .csui-selected-item .csui-icon {
+  height: 100%;
+  width: 100%;
+}
+
+.binf-widgets .csui-selected-count .csui-selected-list-item-name-wrapper {
+  width: calc(100% - 20px);
+  display: inline-block;
+  position: relative;
+}
+
+.binf-widgets .csui-selected-count .csui-selected-list-item-name {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 24px;
+  width: 100%;
+  align-self: center;
+  padding: 0 0 0 6px;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.binf-widgets .csui-selected-count .csui-selected-item .csui-deselcted-icon {
+  cursor: pointer;
+  background-repeat: no-repeat;
+  height: 20px;
+  width: 20px;
+  float: right;
+  margin: 2px 0 0 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+}
+
+.binf-widgets.csui-on-ipad .csui-selected-count li.csui-selected-item .csui-deselcted-icon,
+.binf-widgets .csui-selected-count li.csui-selected-item:focus .csui-deselcted-icon,
+.binf-widgets .csui-selected-count li.csui-selected-item:hover .csui-deselcted-icon {
+  display: block;
+}
+
+.binf-widgets .csui-selected-count .csui-selected-item:hover {
+  background-color: #b2bec5;
+}
+
+.binf-widgets.csui-on-ipad .csui-selected-count .csui-selected-list-item-name,
+.binf-widgets .csui-selected-count .csui-selected-item:hover .csui-selected-list-item-name,
+.binf-widgets .csui-selected-count .csui-selected-item:focus .csui-selected-list-item-name,
+.binf-widgets .csui-selected-count .csui-selected-item:active .csui-selected-list-item-name {
+  width: calc(100% - 36px); 
+}
+

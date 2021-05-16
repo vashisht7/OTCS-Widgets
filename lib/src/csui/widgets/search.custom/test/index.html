@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Custom View Search</title>
+
+  <link rel="stylesheet" href="../../../themes/carbonfiber/theme.css">
+
+  <style>
+    body {
+      padding: 1em;
+    }
+
+    /* Preserve line breaks in the content view. */
+    .test-content {
+      white-space: pre-line;
+    }
+    /*in demo page, the DOM are styled differently,
+     so for "csui-search-results-body-right" max-width should be 100% only, checked in for LPAD-76867*/
+    #resultsIndex .csui-search-results-body-right {
+      max-width: 100%;
+    }
+    /* Tile provides margins, but dialog does not; add them. */
+    .modal-body .test-content {
+      margin: 1em;
+    }
+  </style>
+
+  <script src="../../../lib/require.js"></script>
+  <script src="../../../config.js" data-csui-path="../../.."></script>
+  <script src="../../../test/sdk-demo-config-parameters.js"></script>
+  <script>
+     // Help the test page waiting on all "deps" config sections.
+     var csuiCallbacks = [],
+        csuiBlocks = 0;
+    
+    window.blockCsui = function () {
+      ++csuiBlocks;
+    };
+
+    window.unBlockCsui = function () {
+      if (--csuiBlocks === 0) {
+        while (csuiCallbacks.length) {
+          csuiCallbacks.shift()();
+          if (csuiBlocks > 0) {
+            break;
+          }
+        }
+      }
+    };
+
+    window.csuiDemo = function (callback) {
+      if (csuiBlocks === 0) {
+        callback();
+      } else {
+        csuiCallbacks.push(callback);
+      }
+    };
+
+    window.blockCsui();
+    require.config({
+      deps: [
+        'csui/lib/require.config!csui/csui-extensions.json'
+      ],
+      callback: window.unBlockCsui
+    });
+    window.csuiDemo(function () {
+    require.config({
+      config: {
+        'csui/utils/contexts/factories/connector': {
+          connection: csui.connection
+        },
+        i18n: {
+          locale: 'en'
+        }
+      }
+    });
+  
+    require(
+        ['csui/lib/underscore', 'csui/lib/jquery', 'csui/lib/jquery.redraw', 'csui/lib/jquery.when.all', 'csui/lib/backbone',
+          'csui/lib/marionette',
+          'csui/lib/handlebars', '../search.custom.view',
+          'csui/widgets/search.results/search.results.view',
+          'csui/utils/contexts/page/page.context',
+           "csui/utils/contexts/perspective/perspective.context",
+          "../../../utils/testutils/async.test.utils.js"
+        ], function (_, $, PerspectiveAnimator, whenAll, Backbone, Marionette, Handlebars, CustomSearchView,
+            SearchResultsView, PageContext, PerspectiveContext, util) {
+          $.whenAll = whenAll;
+          var cvsRegion, searchResults;
+          var pagecontext       = new PageContext(),
+              cvsView           = new CustomSearchView({
+                context: pagecontext,
+                data: {
+                  savedSearchQueryId:csui.searchSettings.savedSearchQueryId // Provide existing saved search query's object id
+                }
+              }),
+              searchResultsView = new SearchResultsView({context: pagecontext});
+
+          cvsRegion = new Marionette.Region({
+            el: "#cvs"
+          });
+          searchResults = new Marionette.Region({
+            el: "#resultsIndex"
+          });
+
+          cvsRegion.show(cvsView);
+          pagecontext.fetch().done(function(){
+            if (csui.searchSettings.savedSearchQueryId) {
+          util.asyncElement(cvsView.$el, 'input').done(function (el) {
+            $(el[2]).val('a').blur();
+            searchResults.show(searchResultsView);
+            cvsView.$el.find('.csui-custom-search-form-submit').click();
+          });
+        } else {
+          console.log("please update savedSearchQueryId ");
+        }
+          });
+        
+          
+        });
+      });
+      </script>
+</head>
+
+<body class="binf-widgets">
+
+<div class="binf-container-fluid grid-rows">
+  <div class="binf-row">
+     <div class="binf-col-md-4 binf-col-xl-3 row-xs-full" id="cvs"></div>
+     <div class="binf-col-md-8 binf-col-xl-9 row-xs-full" id="resultsIndex"></div>
+   
+  </div>
+</div>
+
+</body>
+
+</html>
+
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

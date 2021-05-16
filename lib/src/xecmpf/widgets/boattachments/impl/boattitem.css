@@ -1,0 +1,162 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.cs-list .xecmpf-attachmentitem-object {
+}
+
+.cs-list .xecmpf-attachmentitem-border {
+    padding: 10px 10px 0 10px;
+    margin: 5px;
+}
+
+.cs-list .xecmpf-attachmentitem-top,
+.cs-list .xecmpf-attachmentitem-bottom,
+.cs-list .xecmpf-attachmentitem-center {
+    cursor: pointer;
+}
+
+.cs-list .xecmpf-attachmentitem-object:hover {
+    background-color: #bac9ce;
+}
+
+.cs-list .xecmpf-attachmentitem-object .xecmpf-attachmentitem-top,
+.cs-list .xecmpf-attachmentitem-object .xecmpf-attachmentitem-bottom {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.cs-list .xecmpf-attachmentitem-top .icon-reserved_self {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+}
+
+.cs-list .xecmpf-attachmentitem-top .icon-reserved_other {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+}
+
+
+.cs-list .xecmpf-attachmentitem-top .csui-icon-group {
+    height: auto;
+}
+
+.cs-list .xecmpf-attachmentitem-top .csui-icon-group,
+.cs-list .xecmpf-attachmentitem-top .xecmpf-left,
+.cs-list .xecmpf-attachmentitem-top .xecmpf-right,
+.cs-list .xecmpf-attachmentitem-bottom .xecmpf-left,
+.cs-list .xecmpf-attachmentitem-bottom .xecmpf-right {
+    display: table-cell;
+}
+
+.cs-list .xecmpf-attachmentitem-top .xecmpf-left {
+    width: 90%;
+    padding-left: 0.75em;
+}
+
+.cs-list .xecmpf-attachmentitem-top .xecmpf-left .xecmpf-value {
+    height: 32px;
+    line-height: 32px;
+    width: calc(100% - 38px);
+    display:inline-block;
+}
+
+.cs-list .xecmpf-attachmentitem-top .xecmpf-right {
+    width: 18%;
+    vertical-align:top
+}
+
+.cs-list .xecmpf-attachmentitem-bottom .xecmpf-left,
+.cs-list .xecmpf-attachmentitem-bottom .xecmpf-right {
+    width: 50%;
+}
+
+.cs-list .xecmpf-attachmentitem-top .xecmpf-label,
+.cs-list .xecmpf-attachmentitem-top .xecmpf-value,
+.cs-list .xecmpf-attachmentitem-bottom .xecmpf-label,
+.cs-list .xecmpf-attachmentitem-bottom .xecmpf-value {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+    line-height: normal;
+}
+
+.cs-list .xecmpf-attachmentitem-center .xecmpf-body {
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.cs-list .xecmpf-attachmentitem-top .xecmpf-label,
+.cs-list .xecmpf-attachmentitem-top .xecmpf-value,
+.cs-list .xecmpf-attachmentitem-bottom .xecmpf-label,
+.cs-list .xecmpf-attachmentitem-bottom .xecmpf-value {
+    display: block;
+}
+
+.cs-list .xecmpf-attachmentitem-top .xecmpf-description-spacer {
+    
+    padding-top: 0.65rem;
+}
+
+.cs-list .xecmpf-attachmentitem-bottom .xecmpf-value,
+.cs-list .xecmpf-attachmentitem-center .xecmpf-body {
+    font-size: 0.75rem;
+}
+
+.cs-list .xecmpf-attachmentitem-object .xecmpf-right {
+    text-align: right;
+}
+
+.cs-list .xecmpf-attachmentitem-object .xecmpf-attachmentitem-top,
+.cs-list .xecmpf-attachmentitem-object .xecmpf-description-top,
+.cs-list .xecmpf-attachmentitem-object .xecmpf-info-top {
+    vertical-align: top;
+}
+
+.cs-list .xecmpf-attachmentitem-object .xecmpf-attachmentitem-bottom,
+.cs-list .xecmpf-attachmentitem-object .xecmpf-description-bottom,
+.cs-list .xecmpf-attachmentitem-object .xecmpf-info-bottom {
+    vertical-align: bottom;
+}
+
+.cs-list .xecmpf-attachmentitem-bottom .xecmpf-left,
+.cs-list .xecmpf-attachmentitem-bottom .xecmpf-right {
+    padding-top: 0.75rem;
+}
+
+.cs-list .xecmpf-attachmentitem-top .xecmpf-spacer {
+    
+    padding-bottom: 0.075rem;
+}
+
+.cs-list .xecmpf-attachmentitem-bottom .xecmpf-spacer {
+    
+    padding-bottom: 0.075rem;
+}
+
+.cs-list .xecmpf-attachmentitem-object .xecmpf-attachmentitem-top .xecmpf-title {
+    color: #0072aa;
+}
+
+.cs-list .xecmpf-attachmentitem-top .xecmpf-value {
+    font-size: 1.125rem;
+}
+
+.cs-list .xecmpf-attachmentitem-top .xecmpf-label,
+.cs-list .xecmpf-attachmentitem-bottom .xecmpf-label {
+    font-size: 0.625em;
+}
+
+.cs-list .xecmpf-attachmentitem-object .xecmpf-attachmentitem-divider {
+    margin-top: 1rem;
+    border-bottom: 0.0625rem solid #dcdcdc;
+}
+
+.cs-list .xecmpf-attachmentitem-action-area .xecmpf-nostyle:link,
+.cs-list .xecmpf-attachmentitem-action-area .xecmpf-nostyle:visited {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+}

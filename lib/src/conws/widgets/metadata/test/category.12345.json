@@ -1,0 +1,122 @@
+{
+  "content": [
+    {
+      "data": {
+        "12345_1": "Microsoft",
+        "12345_2": "US",
+        "12345_3": "Surface3",
+        "12345_4": "",
+        "12345_5": "",
+        "12345_6": "2014",
+        "12345_7": "8"
+      },
+      "options": {
+        "fields": {
+          "12345_1": {
+            "hidden": false,
+            "hideInitValidationError": true,
+            "label": "Name",
+            "readonly": false,
+            "type": "text"
+          },
+          "12345_2": {
+            "hidden": false,
+            "hideInitValidationError": true,
+            "label": "Country",
+            "readonly": false,
+            "type": "text"
+          },
+          "12345_3": {
+            "hidden": false,
+            "hideInitValidationError": true,
+            "label": "Model Number",
+            "readonly": false,
+            "type": "text"
+          },
+          "12345_4": {
+            "hidden": false,
+            "hideInitValidationError": true,
+            "label": "Part Number",
+            "readonly": false,
+            "type": "text"
+          },
+          "12345_5": {
+            "hidden": false,
+            "hideInitValidationError": true,
+            "label": "Serial Number",
+            "readonly": false,
+            "type": "text"
+          },
+          "12345_6": {
+            "hidden": false,
+            "hideInitValidationError": true,
+            "label": "Construction Year",
+            "readonly": false,
+            "type": "integer"
+          },
+          "12345_7": {
+            "hidden": false,
+            "hideInitValidationError": true,
+            "label": "Construction Month",
+            "readonly": false,
+            "type": "integer"
+          }
+        },
+        "form": {
+          "attributes": {
+            "action": "api\/v1\/nodes\/182623\/categories\/186455",
+            "method": "PUT"
+          },
+          "renderForm": true
+        }
+      },
+      "schema": {
+        "properties": {
+          "12345_1": {
+            "maxLength": 32,
+            "readonly": false,
+            "required": false,
+            "type": "string"
+          },
+          "12345_2": {
+            "maxLength": 32,
+            "readonly": false,
+            "required": false,
+            "type": "string"
+          },
+          "12345_3": {
+            "maxLength": 32,
+            "readonly": false,
+            "required": false,
+            "type": "string"
+          },
+          "12345_4": {
+            "maxLength": 32,
+            "readonly": false,
+            "required": false,
+            "type": "string"
+          },
+          "12345_5": {
+            "maxLength": 32,
+            "readonly": false,
+            "required": false,
+            "type": "string"
+          },
+          "12345_6": {
+            "maxLength": 32,
+            "readonly": false,
+            "required": false,
+            "type": "integer"
+          },
+          "12345_7": {
+            "maxLength": 32,
+            "readonly": false,
+            "required": false,
+            "type": "integer"
+          }
+        },
+        "type": "object"
+      }
+    }
+  ]
+}

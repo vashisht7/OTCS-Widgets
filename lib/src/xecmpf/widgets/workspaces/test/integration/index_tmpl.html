@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    %theme%
+    <script src="%browse_widget_src%"></script>
+    <style>
+        body {
+            margin: 0;
+            height: 100%;
+            overflow-y: hidden;
+            overflow-x: hidden;
+            padding-right: 0px !important;
+        }
+    </style>
+
+    <script>
+
+        if (csui.define)
+            define = csui.define;
+
+        csui.setLanguage('en_US');
+        csui.onReady2(["csui/lib/jquery",
+                    'xecmpf/widgets/workspaces/workspaces.widget',
+                    'csui/utils/contexts/page/page.context'],
+
+                function ($, WorkspacesWidget, PageContext) {
+                    var context = new PageContext({
+                        factories: {
+                            connector: {
+                                connection: {
+                                    url: '%browse_widget_api%',
+                                    supportPath: '%support_path%',
+                                    authenticationHeaders: {
+                                        OTDSTicket: '%otds_ticket%'
+                                    }
+                                }
+                            }
+                        }
+                    });
+                    var workspacesWidget = new WorkspacesWidget({
+                        context: context,
+                        data: {
+                            busObjectId: '%bo_id%',
+                            busObjectType: '%bo_type%',
+                            extSystemId: '%ext_system_id%'
+                        }
+                    });
+
+                    workspacesWidget.show({placeholder: '#widgetWMainWindow'});
+                    context.fetch();
+                });
+    </script>
+</head>
+<body>
+<div id="widgetWMainWindow" style="height:100vh"></div>
+</body>
+</html>
+
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

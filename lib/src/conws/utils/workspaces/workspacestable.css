@@ -1,0 +1,200 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+
+.binf-widgets .conwsworkspacestable .binf-modal-content {
+  height: calc(100vh - 119px)
+}
+
+
+.binf-widgets .conwsworkspacestable .binf-modal-body {
+  height: calc(100% - 4em);
+}
+
+.binf-widgets .conws-workspaces-table {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.binf-widgets .conws-workspacestable {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex: 1 1 100%;
+  flex-direction: column;
+  overflow-y: hidden;
+}
+
+.conws-workspacestable #tableview {
+  display: flex;
+  flex: 1 1 100%;
+  flex-direction: column;
+  width: 100%;
+  min-height: 90px;
+  overflow-y: hidden;
+}
+
+.conws-workspacestable #paginationview {
+  width: 100%;
+  height: auto;
+  flex: 0 0 auto;
+}
+
+
+.conws-workspaces-table .conws-alternating-toolbars {
+  display: flex;
+  flex-direction: column;
+  height: 64px;
+}
+
+.conws-workspaces-table.conws-table-rowselection-toolbar-visible .conws-alternating-toolbars {
+  height: 3em;
+}
+
+
+.conws-workspaces-table.csui-show-header.conws-table-rowselection-toolbar-visible .conws-alternating-toolbars {
+  height: calc(3em + 64px);
+}
+
+
+.conws-workspaces-table .conws-alternating-toolbars .conws-table-tabletoolbar .csui-tabletoolbar,
+.conws-workspaces-table.conws-table-rowselection-toolbar-visible .conws-alternating-toolbars .conws-table-tabletoolbar > * {
+  border-bottom: none;
+}
+.conws-workspaces-table .conws-alternating-toolbars .conws-table-tabletoolbar > *
+{
+  border-bottom: 1px solid #d5d5d5;
+}
+
+.conws-workspaces-table .conws-table-tabletoolbar {
+  min-width: 0;
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.conws-workspaces-table .conws-table-tabletoolbar .csui-tabletoolbar .icon.icon-toolbarFilter {
+  background-position: -1px -1px;
+  width: 2em;
+  height: 2em;
+}
+
+.conws-workspaces-table .conws-table-tabletoolbar .csui-tabletoolbar .icon.icon-toolbarFilter:hover,
+.conws-workspaces-table .conws-table-tabletoolbar .csui-tabletoolbar .icon.icon-toolbarFilter:focus {
+  background-position: -1px -33px;
+}
+
+.conws-workspaces-table .conws-table-tabletoolbar .csui-tabletoolbar .icon.icon-toolbarFilter:active {
+  background-position: -1px -65px;
+}
+
+.conws-workspaces-table .conws-table-tabletoolbar .csui-tabletoolbar .icon.icon-toolbarFilter.icon-toolbarFilter.icon-toolbarFilterCollapse {
+  background-position: -1px -96px;
+}
+
+.conws-workspaces-table .conws-table-rowselection-toolbar {
+  font-size: 16px;
+  color: #333333;
+  padding-right: 0.75em;
+  display: flex;
+  width: 100%;
+  flex: 1 1 auto;
+}
+
+
+.conws-workspaces-table .conws-table-rowselection-toolbar-visible .conws-table-tabletoolbar,
+.conws-workspaces-table .conws-table-rowselection-toolbar {
+  overflow: hidden;
+}
+
+
+.conws-workspaces-table .conws-table-tabletoolbar,
+.conws-table-rowselection-toolbar-visible .conws-table-rowselection-toolbar {
+  overflow: visible;
+}
+
+
+.conws-workspaces-table.csui-show-header.conws-table-rowselection-toolbar-visible .conws-table-tabletoolbar {
+  overflow: visible;
+}
+
+
+.conws-workspaces-table.conws-table-rowselection-toolbar-visible .conws-table-tabletoolbar,
+.conws-workspaces-table .conws-table-rowselection-toolbar {
+    height: 0; 
+}
+
+.conws-workspaces-table .conws-table-tabletoolbar {
+  height: 64px;
+}
+
+.conws-workspaces-table.conws-table-rowselection-toolbar-visible .conws-table-rowselection-toolbar {
+  height: 3em;
+}
+
+
+.conws-workspaces-table.csui-show-header.conws-table-rowselection-toolbar-visible .conws-table-tabletoolbar {
+  height: 64px;
+}
+
+
+.conws-workspaces-table .conws-alternating-toolbars,
+.conws-workspaces-table .conws-table-tabletoolbar,
+.conws-workspaces-table .conws-table-rowselection-toolbar {
+  transition: height 0.3s ease-out;
+}
+
+
+
+.conws-workspaces-table.conws-table-rowselection-toolbar-visible .conws-table-tabletoolbar .csui-tabletoolbar {
+  margin-top: -40px;
+}
+.conws-workspaces-table.csui-show-header.conws-table-rowselection-toolbar-visible .conws-table-tabletoolbar .csui-tabletoolbar {
+  margin-top: 8px;
+}
+.conws-workspaces-table .conws-table-tabletoolbar .csui-tabletoolbar {
+  height: 48px;
+  margin-top: 8px;
+  transition: margin-top 0.3s ease-out;
+}
+
+
+.conws-workspaces-table.csui-transitioning {
+  overflow-y: hidden;
+}
+
+.conws-workspaces-table.csui-no-animation .conws-table-tabletoolbar .csui-tabletoolbar,
+.conws-workspaces-table.csui-no-animation .conws-alternating-toolbars,
+.conws-workspaces-table.csui-no-animation .conws-table-tabletoolbar,
+.conws-workspaces-table.csui-no-animation .conws-table-rowselection-toolbar {
+  transition: none;
+}
+
+.conws-workspaces-table .csui-table-tableview {
+  flex: 1 1 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.conws-workspaces-table .conws-alternating-toolbars .conws-table-tabletoolbar > div {
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  width: 100%;
+}
+
+
+.conws-workspaces-table .conws-table-tabletoolbar .csui-rightToolbar .csui-toolbar .icon.icon-tileCollapse {
+  width: 32px;
+  height: 32px;
+}
+
+
+.conws-workspaces-table .conws-alternating-toolbars .conws-table-tabletoolbar,
+.conws-workspaces-table .conws-alternating-toolbars .conws-table-rowselection-toolbar,
+.conws-workspaces-table .conws-alternating-toolbars .csui-tabletoolbar {
+  background-color: #ffffff;
+}

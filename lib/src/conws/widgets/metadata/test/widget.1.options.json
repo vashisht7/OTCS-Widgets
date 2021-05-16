@@ -1,0 +1,66 @@
+{
+  "content": {
+    "title": {
+      "en": "Overview",
+      "de": "Uebersicht"
+    },
+    "hideEmptyFields": true,
+    "metadata": [
+      {
+        "type": "attribute",
+        "categoryId": 12345,
+        "attributeId": 1
+      },
+      {
+        "type": "attribute",
+        "categoryId": 12345,
+        "attributeId": 2,
+        "readOnly": true
+      },
+      {
+        "type": "attribute",
+        "categoryId": 12345,
+        "attributeId": 3,
+        "label": "Model No."
+      },
+      {
+        "type": "attribute",
+        "categoryId": 12345,
+        "attributeId": 4,
+        "label": "Part No."
+      },
+      {
+        "type": "group",
+        "label": "Construction Data",
+        "attributes": [
+          {
+            "type": "attribute",
+            "categoryId": 12345,
+            "attributeId": 6,
+            "label": "Year of Construction"
+          },
+          {
+            "type": "attribute",
+            "categoryId": 12345,
+            "attributeId": 7,
+            "label": {
+              "en": "Month of Construction",
+              "de": "Herstellungsmonat"
+            }
+          }
+        ]
+      },
+      {
+        "type": "group",
+        "label": "Model Data",
+        "attributes": [
+          {
+            "type": "attribute",
+            "categoryId": 12345,
+            "attributeId": 3
+          }
+        ]
+      }
+    ]
+  }
+}

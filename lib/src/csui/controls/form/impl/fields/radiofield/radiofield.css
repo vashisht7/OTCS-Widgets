@@ -1,0 +1,158 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .cs-formfield.cs-radio-group {
+  height: auto;
+}
+
+.binf-widgets .cs-formfield.cs-radio-group ul {
+  width: 100%;
+  display: block;
+}
+
+.binf-widgets .cs-formfield.cs-radio-group li.horizontal-radio {
+  padding-right: 64px;
+  width: 50%;
+  flex: 1;
+}
+
+.binf-widgets .cs-formfield.cs-radio-group li {
+  left: 0;
+  right: 0;
+  position: relative;
+  margin-bottom: 8px;
+}
+.binf-widgets .cs-formfield.cs-radio-group li:last-child {
+  margin-bottom: 0px;
+}
+
+.binf-widgets .cs-formfield.cs-radio-group label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  padding-left: 26px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: normal;
+  font-size: 14px;
+  color: #333333;
+}
+
+.binf-widgets .cs-formfield.cs-radio-group div.cs-radio-item-container {
+  
+  max-height: 40px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.binf-widgets .cs-formfield.cs-radio-group div.cs-full-height {
+  max-height: none;
+}
+
+.binf-widgets .cs-formfield.cs-radio-group label input[type="radio"].radio-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  opacity: 0;
+  height: 24px;
+  width: 100%;
+}
+
+.binf-widgets .cs-formfield.cs-radio-group label.radio-item-error {
+  color: #df3324;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  padding-left: 26px;
+  margin-bottom: 8px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.binf-widgets .cs-formfield.cs-radio-group label span.cs-radio-container {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 0;
+  top: 0;
+}
+
+.binf-widgets .cs-formfield.cs-radio-group label span.cs-radio-container span.outer {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: calc(50% - 18px / 2);
+  top: calc(50% - 18px / 2);
+  border: 1px solid #757575;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.binf-widgets .cs-formfield.cs-radio-group label.radio-item-error span.cs-radio-container span.outer {
+  border-color: #df3324;
+  background-color: #FAE9EA;
+}
+
+.binf-widgets .cs-formfield.cs-radio-group label span.cs-radio-container span.inner {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: calc(50% - 10px / 2);
+  top: calc(50% - 10px / 2);
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.cs-radio-group label input:checked ~ span.cs-radio-container span.outer span.inner {
+  background: #757575;
+}
+
+.cs-radio-group label.radio-item-error input:checked ~ span.cs-radio-container span.outer span.inner {
+  background-color: #df3324;
+}
+
+.cs-radio-group label:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.cs-radio-group .cs-field-write-inner .validation-error-message {
+  display: block;
+  color: #df3324;
+  font-size: .75rem;
+  margin-top: -6px;
+  line-height: 1.25rem;
+}
+
+.binf-widgets .cs-radio-group input[type="radio"][disabled] {
+  cursor: context-menu;
+}
+
+.binf-widgets .cs-radio-group li.cs-active-radio {
+  border: 1px dotted #666666;
+}
+
+.binf-widgets .cs-formfield-readonly.cs-formfield.cs-radio-group label {
+  color: #666666;
+}
+
+.binf-widgets .cs-formfield-readonly.cs-formfield.cs-radio-group label span.cs-radio-container span.outer {
+  background-color: #cccccc;
+  border-color: #b8b8b8;
+  cursor: default;
+}
+
+.binf-widgets .cs-formfield-readonly.cs-radio-group label input:checked ~ span.cs-radio-container span.outer {
+  background-color: transparent;
+}
+
+.binf-widgets .cs-formfield-readonly.cs-radio-group label input:checked ~ span.cs-radio-container span.outer span.inner {
+  background-color: #a9a9a9;
+}
+

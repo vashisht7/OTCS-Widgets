@@ -1,0 +1,83 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.cs-favorites .tile-header {
+  cursor: pointer;
+}
+
+.cs-favorites .tile-content .binf-list-group .csui-item-standard.binf-list-group-item {
+  height: 48px;
+  padding: 0 16px 0 16px;
+  margin: 1px 0 0 0;
+  border: 0;
+}
+
+.cs-favorites .tile-content .binf-list-group .csui-item-standard.binf-list-group-item span:active {
+  outline-style: none;
+}
+
+.cs-favorites .tile-content .binf-list-group > a.csui-item-standard:hover {
+  background-color: #d7d7d7;
+}
+
+.cs-favorites .tile-content .binf-list-group a.csui-item-standard:focus,
+.cs-favorites .tile-content .binf-list-group a.csui-item-standard.binf-active:focus {
+  outline: 1px dotted #333333;
+}
+
+.cs-favorites .tile-content .binf-list-group .csui-item-standard.binf-list-group-item a {
+  height: 100%;
+}
+
+.cs-favorites .tile-content .binf-list-group .csui-item-standard.binf-list-group-item .csui-icon-group,
+.cs-favorites .tile-content .binf-list-group .csui-item-standard.binf-list-group-item .csui-icon-group .csui-icon {
+  height: 32px;
+  width: 32px;
+  margin: 8px 8px 0 0;
+  background-repeat: no-repeat;
+}
+
+.cs-favorites .tile-content .binf-list-group .csui-item-standard.binf-list-group-item .csui-icon-group .csui-icon {
+  margin: 0;
+}
+
+.cs-favorites .tile-content .csui-item-standard.binf-list-group-item .list-item-title {
+  font-size: 14px;
+  margin: 6px 0 0 0;
+  vertical-align: middle;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.binf-widgets .cs-favorites.cs-list .csui-item-standard.csui-tile-with-more-btn .csui-tileview-contains-more-btn .list-item-title {
+  width: calc(100% - 84px); 
+}
+
+.cs-favorites .tile-content .binf-list-group .cs-content .cs-list-group .cs-emptylist-container .cs-emptylist-placeholder {
+  display: none;
+}
+
+.cs-favorites .tile-content .binf-list-group .cs-content .cs-list-group .cs-emptylist-container .cs-emptylist-text {
+  height: 22px;
+  margin: 8px 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.cs-favorites .tile-content .binf-list-group .cs-content .cs-list-group .cs-emptylist-container .cs-emptylist-text p {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.binf-widgets .cs-favorites.cs-list .csui-item-standard .csui-tileview-contains-more-btn .csui-tileview-more-btn .csui-inline-menu {
+  padding: 8px 0 0 4px;
+}
+
+.binf-widgets .cs-favorites.cs-list .csui-item-standard .csui-tileview-contains-more-btn .csui-tileview-more-btn .csui-inline-menu .csui-menu-btn-region {
+  position: absolute;
+  right: 20px;
+  display: inline;
+}

@@ -1,0 +1,16 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.conws-addoreditrole-emptyroleparticipants .conws-empty_team {
+    height: 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.binf-widgets .conws-addoreditrole-roleparticipants-members-body .conws-addoreditrole-emptyroleparticipants-msg { 
+    display: block; 
+    color: #666666;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    white-space: nowrap;
+    }

@@ -1,0 +1,101 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+
+
+.conws-add-workspace.conws-initializing .cs-metadata-item-name .title-edit-div
+{
+  visibility: hidden;
+}
+
+.conws-reference-initial .conws-label-search,
+.conws-reference-replace .conws-label-buttons
+{
+  display: inline-block;
+  color: #333333;
+  font-size: 1.125rem;
+  line-height: 2rem;
+  vertical-align: middle;
+  max-width: 16rem;
+  overflow: hidden;
+  
+  
+  text-overflow: ellipsis;
+}
+
+.conws-reference-replace .conws-label-buttons
+{
+  display: inline-block;
+  width: 25%;
+}
+
+.conws-reference .binf-btn {
+  height: 2em;
+  padding: 0 1.5em;
+  margin-left: 1em;
+  vertical-align: middle;
+  border-radius: 1em;
+  line-height: 0.75em;
+}
+
+.conws-reference .binf-btn-default:active,
+.conws-reference .binf-btn-default {
+  background-color: #ffffff;
+  border: 1px solid #0072aa;
+  color: #0072aa;
+}
+
+.conws-reference .binf-btn-default:focus {
+  background-color: #ffffff;
+  border: 1px solid #004b71;
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 164, 216, 1);
+  -moz-box-shadow: 0px 0px 2px 2px rgba(0, 164, 216, 1);
+  box-shadow: 0px 0px 2px 2px rgba(0, 164, 216, 1);
+  color: #0072aa;
+  outline: 0;
+}
+
+.conws-reference .binf-btn-default:hover {
+  background-color: #ffffff;
+  border: 1px solid #004b71;
+  color: #004b71;
+}
+
+.conws-reference .binf-btn-default:disabled {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  color: #a9a9a9;
+}
+
+.conws-reference .binf-btn-primary,
+.conws-reference .binf-btn-primary:active {
+  background-color: #0072aa;
+  color: #ffffff;
+  box-shadow: none;
+}
+
+.conws-reference .binf-btn-primary:hover {
+  background-color: #004b71;
+  color: #ffffff;
+  box-shadow: none;
+}
+
+.conws-reference .binf-btn-primary:focus {
+  outline: 0;
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 164, 216, 1);
+  -moz-box-shadow: 0px 0px 2px 2px rgba(0, 164, 216, 1);
+  box-shadow: 0px 0px 2px 2px rgba(0, 164, 216, 1);
+  background-colour: #0072aa;
+}
+
+.conws-reference .binf-btn-primary:disabled {
+  background-color: #a9a9a9;
+  color: #ffffff;
+  box-shadow: none;
+}
+
+.binf-widgets .conws-reference-override-note
+{
+  padding-top: 1em;
+}
+
+

@@ -1,0 +1,2076 @@
+{
+  "perspective": {
+    "type": "tabbed-flow",
+    "options": {
+      "header": {
+        "widget": {
+          "type": "conws\/widgets\/header"
+        }
+      },
+      "tabs": [
+        {
+          "title": "Team",
+          "widgets": [
+            {
+              "type": "conws\/widgets\/team"
+            }
+          ]
+        },
+        {
+          "title": "Metadata",
+          "widgets": [
+            {
+              "type": "conws/widgets/metadata"
+            }
+          ]
+        },
+        {
+          "title": "Documents",
+          "widgets": [
+            {
+              "type": "csui/widgets/nodestable"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "socialActionsResponse": {
+    "available_settings": {
+      "attachementsEnabled": true,
+      "commentCount": 1,
+      "commentingOpen": true,
+      "commentsEnabled": true,
+      "CSID": 153423,
+      "likesEnabled": true,
+      "shortcutsEnabled": true,
+      "taggingEnabled": true,
+      "threadingEnabled": true
+    }
+  },
+  "addableNodeTypes": {
+    "data": {
+      "compound_document": "api/v1/forms/nodes/create?type=136&parent_id=153423",
+      "document": "api/v1/forms/nodes/create?type=144&parent_id=153423",
+      "folder": "api/v1/forms/nodes/create?type=0&parent_id=153423",
+      "physical_item": "api/v1/forms/nodes/create?type=411&parent_id=153423",
+      "shortcut": "api/v1/forms/nodes/create?type=1&parent_id=153423",
+      "tasklist": "api/v1/forms/nodes/create?type=204&parent_id=153423",
+      "url": "api/v1/forms/nodes/create?type=140&parent_id=153423"
+    },
+    "definitions": {
+      "compound_document": {
+        "body": "",
+        "content_type": "",
+        "display_hint": "",
+        "display_href": "",
+        "handler": "form",
+        "image": "/img/webdoc/cd.gif",
+        "method": "GET",
+        "name": "Compound Document",
+        "parameters": {},
+        "tab_href": "",
+        "type": 136
+      },
+      "document": {
+        "body": "",
+        "content_type": "",
+        "display_hint": "",
+        "display_href": "",
+        "handler": "form",
+        "image": "/img/webdoc/doc.gif",
+        "method": "GET",
+        "name": "Document",
+        "parameters": {},
+        "tab_href": "",
+        "type": 144
+      },
+      "folder": {
+        "body": "",
+        "content_type": "",
+        "display_hint": "",
+        "display_href": "",
+        "handler": "form",
+        "image": "/img/webdoc/folder.gif",
+        "method": "GET",
+        "name": "Folder",
+        "parameters": {},
+        "tab_href": "",
+        "type": 0
+      },
+      "physical_item": {
+        "body": "",
+        "content_type": "",
+        "display_hint": "",
+        "display_href": "",
+        "handler": "form",
+        "image": "/img/physicalobjects/physical_item.gif",
+        "method": "GET",
+        "name": "Physical Item",
+        "parameters": {},
+        "tab_href": "",
+        "type": 411
+      },
+      "shortcut": {
+        "body": "",
+        "content_type": "",
+        "display_hint": "",
+        "display_href": "",
+        "handler": "form",
+        "image": "/img/tinyali.gif",
+        "method": "GET",
+        "name": "Shortcut",
+        "parameters": {},
+        "tab_href": "",
+        "type": 1
+      },
+      "tasklist": {
+        "body": "",
+        "content_type": "",
+        "display_hint": "",
+        "display_href": "",
+        "handler": "form",
+        "image": "/img/task/16tasklist.gif",
+        "method": "GET",
+        "name": "Task List",
+        "parameters": {},
+        "tab_href": "",
+        "type": 204
+      },
+      "url": {
+        "body": "",
+        "content_type": "",
+        "display_hint": "",
+        "display_href": "",
+        "handler": "form",
+        "image": "/img/webdoc/url.gif",
+        "method": "GET",
+        "name": "URL",
+        "parameters": {},
+        "tab_href": "",
+        "type": 140
+      }
+    },
+    "definitions_map": {},
+    "definitions_order": [
+      "compound_document",
+      "document",
+      "folder",
+      "physical_item",
+      "shortcut",
+      "tasklist",
+      "url"
+    ]
+  },
+  "actionsResponse": {
+    "links": {
+      "data": {
+        "self": {
+          "body": "",
+          "content_type": "",
+          "href": "/api/v2/nodes/153423?perspective=&actions",
+          "method": "GET",
+          "name": ""
+        }
+      }
+    },
+    "results": {
+      "actions": {
+        "data": {
+          "addcategory": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "/api/v2/nodes/153423/categories",
+            "method": "POST",
+            "name": "Add Category"
+          },
+          "audit": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "/api/v2/nodes/153423/audit?limit=1000",
+            "method": "GET",
+            "name": "Audit"
+          },
+          "comment": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "",
+            "method": "POST",
+            "name": "Comments"
+          },
+          "copy": {
+            "body": "",
+            "content_type": "",
+            "form_href": "/api/v2/forms/nodes/copy?id=153423",
+            "href": "/api/v2/nodes",
+            "method": "POST",
+            "name": "Copy"
+          },
+          "delete": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "/api/v2/nodes/153423",
+            "method": "DELETE",
+            "name": "Delete"
+          },
+          "makefavorite": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "/api/v2/members/favorites/153423",
+            "method": "POST",
+            "name": "Add to Favorites"
+          },
+          "more": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "",
+            "method": "",
+            "name": "..."
+          },
+          "move": {
+            "body": "",
+            "content_type": "",
+            "form_href": "/api/v2/forms/nodes/move?id=153423",
+            "href": "/api/v2/nodes/153423",
+            "method": "PUT",
+            "name": "Move"
+          },
+          "open": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "/api/v2/nodes/153423/nodes",
+            "method": "GET",
+            "name": "Open"
+          },
+          "permissions": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "",
+            "method": "",
+            "name": "Permissions"
+          },
+          "properties": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "/api/v2/nodes/153423",
+            "method": "GET",
+            "name": "Properties"
+          },
+          "rename": {
+            "body": "",
+            "content_type": "",
+            "form_href": "/api/v2/forms/nodes/rename?id=153423",
+            "href": "/api/v2/nodes/153423",
+            "method": "PUT",
+            "name": "Rename"
+          }
+        },
+        "map": {
+          "default_action": "",
+          "more": [
+            "properties",
+            "audit"
+          ]
+        },
+        "order": [
+          "open",
+          "addcategory",
+          "rename",
+          "makefavorite",
+          "copy",
+          "move",
+          "permissions",
+          "delete",
+          "comment",
+          "more"
+        ]
+      },
+      "data": {
+        "categories": [
+          {
+            "38885_12": [
+              null
+            ],
+            "38885_13": [
+              null
+            ],
+            "38885_16": "",
+            "38885_17": "",
+            "38885_18": "",
+            "38885_19": "",
+            "38885_2": "",
+            "38885_3": "",
+            "38885_4": "",
+            "38885_5": "000000000010000496",
+            "38885_6": "EQUI",
+            "38885_7": "",
+            "38885_8": "OscillographSD",
+            "38885_9_1_10": [
+              "000000000010000496 1 (string)",
+              "000000000010000496 2 (string)",
+              "000000000010000496 3 (string)"
+            ],
+            "38885_9_1_11": [
+              "1995-08-25T12:00:00"
+            ],
+            "38885_9_1_15": [
+              18
+            ]
+          }
+        ],
+        "columns": [
+          {
+            "data_type": 2,
+            "key": "type",
+            "name": "Type",
+            "sort_key": "x5519"
+          },
+          {
+            "data_type": -1,
+            "key": "name",
+            "name": "Name",
+            "sort_key": "x5516"
+          },
+          {
+            "data_type": -1,
+            "key": "size_formatted",
+            "name": "Size",
+            "sort_key": "x5517"
+          },
+          {
+            "data_type": 401,
+            "key": "modify_date",
+            "name": "Modified",
+            "sort_key": "x5515"
+          },
+          {
+            "data_type": 2,
+            "key": "comments",
+            "name": "Comments"
+          }
+        ],
+        "properties": {
+          "container": true,
+          "container_size": 5,
+          "create_date": "2016-08-25T09:41:06",
+          "create_user_id": 1000,
+          "description": "",
+          "description_multilingual": {
+            "en": ""
+          },
+          "favorite": false,
+          "id": 153423,
+          "mime_type": null,
+          "modify_date": "2016-09-26T09:01:32",
+          "modify_user_id": 1000,
+          "name": "Equipment 000000000010000496",
+          "name_multilingual": {
+            "en": "Equipment 000000000010000496"
+          },
+          "owner_group_id": 1001,
+          "owner_user_id": 1000,
+          "parent_id": 38274,
+          "reserved": false,
+          "reserved_date": null,
+          "reserved_user_id": 0,
+          "size": 5,
+          "size_formatted": "5 Items",
+          "type": 848,
+          "type_name": "Business Workspace",
+          "versions_control_advanced": false,
+          "volume_id": -2000,
+          "wnd_comments": 1
+        }
+      },
+      "perspective": {
+        "options": {
+          "header": {
+            "widget": {
+              "options": {
+                "workspace": {
+                  "properties": {
+                    "description": "{description}",
+                    "title": "{name}",
+                    "type": "{business_properties.workspace_type_name}"
+                  }
+                }
+              },
+              "type": "conws/widgets/header"
+            }
+          },
+          "tabs": [
+            {
+              "columns": [
+                {
+                  "heights": {
+                    "lg": "half",
+                    "md": "half",
+                    "sm": "three-quarters",
+                    "xs": "full"
+                  },
+                  "sizes": {
+                    "lg": 4,
+                    "md": 4,
+                    "sm": 6,
+                    "xl": 4,
+                    "xs": 12
+                  },
+                  "widget": {
+                    "options": {
+                      "showTitleIcon": true,
+                      "showWorkspaceIcon": true,
+                      "title": "Team"
+                    },
+                    "type": "conws/widgets/team"
+                  }
+                },
+                {
+                  "heights": {
+                    "lg": "half",
+                    "md": "half",
+                    "sm": "three-quarters",
+                    "xs": "full"
+                  },
+                  "sizes": {
+                    "lg": 8,
+                    "md": 8,
+                    "sm": 12,
+                    "xl": 8,
+                    "xs": 12
+                  },
+                  "widget": {
+                    "options": {
+                      "title": "Metadata"
+                    },
+                    "type": "conws/widgets/metadata"
+                  }
+                }
+              ],
+              "title": "Overview"
+            },
+            {
+              "columns": [
+                {
+                  "heights": {
+                    "lg": "half",
+                    "md": "half",
+                    "sm": "three-quarters",
+                    "xs": "full"
+                  },
+                  "sizes": {
+                    "lg": 12,
+                    "md": 12,
+                    "sm": 12,
+                    "xl": 12,
+                    "xs": 12
+                  },
+                  "widget": {
+                    "options": {},
+                    "type": "csui/widgets/nodestable"
+                  }
+                }
+              ],
+              "title": "Documents"
+            },
+            {
+              "columns": [
+                {
+                  "heights": {
+                    "lg": "half",
+                    "md": "half",
+                    "sm": "three-quarters",
+                    "xs": "full"
+                  },
+                  "sizes": {
+                    "lg": 3,
+                    "md": 4,
+                    "sm": 6,
+                    "xl": 3,
+                    "xs": 12
+                  },
+                  "widget": {
+                    "options": {
+                      "relationType": "child",
+                      "title": {
+                        "en": "Functional Location Child"
+                      },
+                      "workspaceTypeId": "4"
+                    },
+                    "type": "conws/widgets/relatedworkspaces"
+                  }
+                },
+                {
+                  "heights": {
+                    "lg": "half",
+                    "md": "half",
+                    "sm": "three-quarters",
+                    "xs": "full"
+                  },
+                  "sizes": {
+                    "lg": 3,
+                    "md": 4,
+                    "sm": 6,
+                    "xl": 3,
+                    "xs": 12
+                  },
+                  "widget": {
+                    "options": {
+                      "relationType": "parent",
+                      "title": {
+                        "en": "Functional Location Parent"
+                      },
+                      "workspaceTypeId": "4"
+                    },
+                    "type": "conws/widgets/relatedworkspaces"
+                  }
+                }
+              ],
+              "title": "Related"
+            }
+          ]
+        },
+        "type": "tabbed"
+      }
+    }
+  },
+  "businessWorkpsaceResponse": {
+    "id": 153423,
+    "isLinked": false,
+    "type": 848,
+    "workspace_type_id": 1
+  },
+  "businessWorkspaceMetadataResponse": {
+    "links": {
+      "data": {
+        "self": {
+          "body": "",
+          "content_type": "",
+          "href": "/api/v2/businessworkspaces/153423?metadata&fields=categories&include_icon=true&expand=properties{create_user_id,modify_user_id,owner_group_id,owner_user_id,reserved_user_id}",
+          "method": "GET",
+          "name": ""
+        }
+      }
+    },
+    "results": {
+      "actions": {
+        "data": {
+          "add-role": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "/api/v2/businessworkspaces/153423/roles",
+            "method": "POST",
+            "name": "Add Role"
+          },
+          "delete-icon": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "/api/v2/businessworkspaces/153423/icons",
+            "method": "DELETE",
+            "name": "Delete Icon"
+          },
+          "update-icon": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "/api/v2/businessworkspaces/153423/icons",
+            "method": "PUT",
+            "name": "Update Icon"
+          },
+          "upload-icon": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "/api/v2/businessworkspaces/153423/icons",
+            "method": "POST",
+            "name": "Upload Icon"
+          }
+        },
+        "map": {},
+        "order": []
+      },
+      "data": {
+        "business_properties": {
+          "business_object_id": "000000000010000496",
+          "business_object_type_id": 3,
+          "business_object_type_name": "Equipment (EQUI)",
+          "display_url": "http://mucr3t5g.eng-muc-test.opentext.net:8000/sap/bc/gui/sap/its/webgui?~logingroup=SPACE&~transaction=%2fOTX%2fRM_WSC_START_BO+KEY%3d000000000010000496%3bOBJTYPE%3dEQUI&~OkCode=ONLI",
+          "has_default_display": true,
+          "has_default_search": true,
+          "isEarly": false,
+          "workspace_type_id": 3,
+          "workspace_type_name": "Equipment (EQUI)",
+          "workspace_type_name_multilingual": {
+            "en": null
+          },
+          "workspace_type_widget_icon_content": "data:image/jpeg;base64,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"
+        },
+        "categories": {
+          "38885": {
+            "38885_12": [
+              null
+            ],
+            "38885_13": [
+              null
+            ],
+            "38885_16": "",
+            "38885_17": "",
+            "38885_18": "",
+            "38885_19": "",
+            "38885_2": "",
+            "38885_3": "",
+            "38885_4": "",
+            "38885_5": "000000000010000496",
+            "38885_6": "EQUI",
+            "38885_7": "",
+            "38885_8": "OscillographSD",
+            "38885_9_1_10": [
+              "000000000010000496 1 (string)",
+              "000000000010000496 2 (string)",
+              "000000000010000496 3 (string)"
+            ],
+            "38885_9_1_11": [
+              "1995-08-25T12:00:00"
+            ],
+            "38885_9_1_15": [
+              18
+            ]
+          }
+        },
+        "properties": {
+          "container": true,
+          "container_size": 5,
+          "create_date": "2016-08-25T09:41:06",
+          "create_user_id": 1000,
+          "create_user_id_expand": {
+            "birth_date": null,
+            "business_email": null,
+            "business_fax": null,
+            "business_phone": null,
+            "cell_phone": null,
+            "first_name": null,
+            "gender": null,
+            "group_id": 1001,
+            "home_address_1": null,
+            "home_address_2": null,
+            "home_fax": null,
+            "home_phone": null,
+            "id": 1000,
+            "last_name": null,
+            "middle_name": null,
+            "name": "Admin",
+            "name_formatted": "Admin",
+            "office_location": null,
+            "pager": null,
+            "personal_email": null,
+            "personal_interests": null,
+            "personal_url_1": null,
+            "personal_url_2": null,
+            "personal_url_3": null,
+            "personal_website": null,
+            "photo_url": null,
+            "time_zone": null,
+            "title": null,
+            "type": 0,
+            "type_name": "User"
+          },
+          "description": "",
+          "description_multilingual": {
+            "en": ""
+          },
+          "favorite": false,
+          "guid": null,
+          "icon": "/img/otsapxecm/wksp_equipment.png",
+          "icon_large": "/img/otsapxecm/wksp_equipment_large.png",
+          "id": 153423,
+          "modify_date": "2016-09-26T09:01:32",
+          "modify_user_id": 1000,
+          "modify_user_id_expand": {
+            "birth_date": null,
+            "business_email": null,
+            "business_fax": null,
+            "business_phone": null,
+            "cell_phone": null,
+            "first_name": null,
+            "gender": null,
+            "group_id": 1001,
+            "home_address_1": null,
+            "home_address_2": null,
+            "home_fax": null,
+            "home_phone": null,
+            "id": 1000,
+            "last_name": null,
+            "middle_name": null,
+            "name": "Admin",
+            "name_formatted": "Admin",
+            "office_location": null,
+            "pager": null,
+            "personal_email": null,
+            "personal_interests": null,
+            "personal_url_1": null,
+            "personal_url_2": null,
+            "personal_url_3": null,
+            "personal_website": null,
+            "photo_url": null,
+            "time_zone": null,
+            "title": null,
+            "type": 0,
+            "type_name": "User"
+          },
+          "name": "Equipment 000000000010000496",
+          "name_multilingual": {
+            "en": "Equipment 000000000010000496"
+          },
+          "owner_group_id": 1001,
+          "owner_group_id_expand": {
+            "id": 1001,
+            "leader_id": null,
+            "name": "DefaultGroup",
+            "name_formatted": "DefaultGroup",
+            "type": 1,
+            "type_name": "Group"
+          },
+          "owner_user_id": 1000,
+          "owner_user_id_expand": {
+            "birth_date": null,
+            "business_email": null,
+            "business_fax": null,
+            "business_phone": null,
+            "cell_phone": null,
+            "first_name": null,
+            "gender": null,
+            "group_id": 1001,
+            "home_address_1": null,
+            "home_address_2": null,
+            "home_fax": null,
+            "home_phone": null,
+            "id": 1000,
+            "last_name": null,
+            "middle_name": null,
+            "name": "Admin",
+            "name_formatted": "Admin",
+            "office_location": null,
+            "pager": null,
+            "personal_email": null,
+            "personal_interests": null,
+            "personal_url_1": null,
+            "personal_url_2": null,
+            "personal_url_3": null,
+            "personal_website": null,
+            "photo_url": null,
+            "time_zone": null,
+            "title": null,
+            "type": 0,
+            "type_name": "User"
+          },
+          "parent_id": 38274,
+          "reserved": false,
+          "reserved_date": null,
+          "reserved_user_id": 0,
+          "reserved_user_id_expand": {},
+          "type": 848,
+          "type_name": "Business Workspace",
+          "versions_control_advanced": false,
+          "volume_id": -2000
+        }
+      },
+      "metadata": {
+        "categories": {
+          "38885": {
+            "38885": {
+              "key": "38885",
+              "multi_value": false,
+              "multi_value_length_default": 1,
+              "multi_value_length_fixed": true,
+              "multi_value_length_max": 1,
+              "name": "Equipment(EQUI)",
+              "next_id": 20,
+              "persona": "category",
+              "read_only": true,
+              "required": false,
+              "type": -18,
+              "valid_values": [],
+              "version_number": 14
+            },
+            "38885_12": {
+              "allow_undefined": false,
+              "bulk_shared": false,
+              "default_value": null,
+              "description": null,
+              "hidden": false,
+              "include_time": true,
+              "key": "38885_12",
+              "key_value_pairs": false,
+              "multi_value": true,
+              "multi_value_length_default": 1,
+              "multi_value_length_fixed": false,
+              "multi_value_length_max": 50,
+              "name": "TestPropMVDateTime",
+              "persona": "",
+              "read_only": false,
+              "required": false,
+              "type": -7,
+              "type_name": "Date",
+              "valid_values": [],
+              "valid_values_name": []
+            },
+            "38885_13": {
+              "allow_undefined": false,
+              "bulk_shared": false,
+              "default_value": null,
+              "description": null,
+              "hidden": false,
+              "key": "38885_13",
+              "key_value_pairs": false,
+              "max_value": null,
+              "min_value": null,
+              "multi_value": true,
+              "multi_value_length_default": 1,
+              "multi_value_length_fixed": false,
+              "multi_value_length_max": 50,
+              "name": "TestPropMVInteger",
+              "persona": "",
+              "read_only": false,
+              "required": false,
+              "type": 2,
+              "type_name": "Integer",
+              "valid_values": [],
+              "valid_values_name": []
+            },
+            "38885_16": {
+              "allow_undefined": false,
+              "bulk_shared": false,
+              "default_value": null,
+              "description": null,
+              "hidden": false,
+              "key": "38885_16",
+              "key_value_pairs": false,
+              "max_length": 32,
+              "min_length": null,
+              "multiline": false,
+              "multilingual": false,
+              "multi_value": false,
+              "multi_value_length_default": 1,
+              "multi_value_length_fixed": true,
+              "multi_value_length_max": 1,
+              "name": "Manufacturer of Asset",
+              "password": false,
+              "persona": "",
+              "read_only": false,
+              "regex": "",
+              "required": false,
+              "type": -1,
+              "type_name": "String",
+              "valid_values": [],
+              "valid_values_name": []
+            },
+            "38885_17": {
+              "allow_undefined": false,
+              "bulk_shared": false,
+              "default_value": null,
+              "description": null,
+              "hidden": false,
+              "key": "38885_17",
+              "key_value_pairs": false,
+              "max_length": 32,
+              "min_length": null,
+              "multiline": false,
+              "multilingual": false,
+              "multi_value": false,
+              "multi_value_length_default": 1,
+              "multi_value_length_fixed": true,
+              "multi_value_length_max": 1,
+              "name": "Language",
+              "password": false,
+              "persona": "",
+              "read_only": false,
+              "regex": "",
+              "required": false,
+              "type": -1,
+              "type_name": "String",
+              "valid_values": [],
+              "valid_values_name": []
+            },
+            "38885_18": {
+              "allow_undefined": false,
+              "bulk_shared": false,
+              "default_value": null,
+              "description": null,
+              "hidden": false,
+              "key": "38885_18",
+              "key_value_pairs": false,
+              "max_length": 32,
+              "min_length": null,
+              "multiline": false,
+              "multilingual": false,
+              "multi_value": false,
+              "multi_value_length_default": 1,
+              "multi_value_length_fixed": true,
+              "multi_value_length_max": 1,
+              "name": "Description_ML",
+              "password": false,
+              "persona": "",
+              "read_only": false,
+              "regex": "",
+              "required": false,
+              "type": -1,
+              "type_name": "String",
+              "valid_values": [],
+              "valid_values_name": []
+            },
+            "38885_19": {
+              "allow_undefined": false,
+              "bulk_shared": false,
+              "default_value": null,
+              "description": null,
+              "hidden": false,
+              "key": "38885_19",
+              "key_value_pairs": false,
+              "max_length": 32,
+              "min_length": null,
+              "multiline": false,
+              "multilingual": false,
+              "multi_value": false,
+              "multi_value_length_default": 1,
+              "multi_value_length_fixed": true,
+              "multi_value_length_max": 1,
+              "name": "Icon",
+              "password": false,
+              "persona": "",
+              "read_only": false,
+              "regex": "",
+              "required": false,
+              "type": -1,
+              "type_name": "String",
+              "valid_values": [],
+              "valid_values_name": []
+            },
+            "38885_2": {
+              "allow_undefined": false,
+              "bulk_shared": false,
+              "default_value": null,
+              "description": null,
+              "hidden": false,
+              "key": "38885_2",
+              "key_value_pairs": false,
+              "max_length": 32,
+              "min_length": null,
+              "multiline": false,
+              "multilingual": false,
+              "multi_value": false,
+              "multi_value_length_default": 1,
+              "multi_value_length_fixed": true,
+              "multi_value_length_max": 1,
+              "name": "Manufacturer model number",
+              "password": false,
+              "persona": "",
+              "read_only": false,
+              "regex": "",
+              "required": false,
+              "type": -1,
+              "type_name": "String",
+              "valid_values": [],
+              "valid_values_name": []
+            },
+            "38885_3": {
+              "allow_undefined": false,
+              "bulk_shared": false,
+              "default_value": null,
+              "description": null,
+              "hidden": false,
+              "key": "38885_3",
+              "key_value_pairs": false,
+              "max_length": 32,
+              "min_length": null,
+              "multiline": false,
+              "multilingual": false,
+              "multi_value": false,
+              "multi_value_length_default": 1,
+              "multi_value_length_fixed": true,
+              "multi_value_length_max": 1,
+              "name": "Manufacturer part number",
+              "password": false,
+              "persona": "",
+              "read_only": false,
+              "regex": "",
+              "required": false,
+              "type": -1,
+              "type_name": "String",
+              "valid_values": [],
+              "valid_values_name": []
+            },
+            "38885_4": {
+              "allow_undefined": false,
+              "bulk_shared": false,
+              "default_value": null,
+              "description": null,
+              "hidden": false,
+              "key": "38885_4",
+              "key_value_pairs": false,
+              "max_length": 32,
+              "min_length": null,
+              "multiline": false,
+              "multilingual": false,
+              "multi_value": false,
+              "multi_value_length_default": 1,
+              "multi_value_length_fixed": true,
+              "multi_value_length_max": 1,
+              "name": "Manufacturer serial number",
+              "password": false,
+              "persona": "",
+              "read_only": false,
+              "regex": "",
+              "required": false,
+              "type": -1,
+              "type_name": "String",
+              "valid_values": [],
+              "valid_values_name": []
+            },
+            "38885_5": {
+              "allow_undefined": false,
+              "bulk_shared": false,
+              "default_value": null,
+              "description": null,
+              "hidden": false,
+              "key": "38885_5",
+              "key_value_pairs": false,
+              "max_length": 32,
+              "min_length": null,
+              "multiline": false,
+              "multilingual": false,
+              "multi_value": false,
+              "multi_value_length_default": 1,
+              "multi_value_length_fixed": true,
+              "multi_value_length_max": 1,
+              "name": "Object key",
+              "password": false,
+              "persona": "",
+              "read_only": false,
+              "regex": "",
+              "required": false,
+              "type": -1,
+              "type_name": "String",
+              "valid_values": [],
+              "valid_values_name": []
+            },
+            "38885_6": {
+              "allow_undefined": false,
+              "bulk_shared": false,
+              "default_value": null,
+              "description": null,
+              "hidden": false,
+              "key": "38885_6",
+              "key_value_pairs": false,
+              "max_length": 32,
+              "min_length": null,
+              "multiline": false,
+              "multilingual": false,
+              "multi_value": false,
+              "multi_value_length_default": 1,
+              "multi_value_length_fixed": true,
+              "multi_value_length_max": 1,
+              "name": "Object Type",
+              "password": false,
+              "persona": "",
+              "read_only": false,
+              "regex": "",
+              "required": false,
+              "type": -1,
+              "type_name": "String",
+              "valid_values": [],
+              "valid_values_name": []
+            },
+            "38885_7": {
+              "allow_undefined": false,
+              "bulk_shared": false,
+              "default_value": null,
+              "description": null,
+              "hidden": false,
+              "key": "38885_7",
+              "key_value_pairs": false,
+              "max_length": 32,
+              "min_length": null,
+              "multiline": false,
+              "multilingual": false,
+              "multi_value": false,
+              "multi_value_length_default": 1,
+              "multi_value_length_fixed": true,
+              "multi_value_length_max": 1,
+              "name": "Serial number",
+              "password": false,
+              "persona": "",
+              "read_only": false,
+              "regex": "",
+              "required": false,
+              "type": -1,
+              "type_name": "String",
+              "valid_values": [],
+              "valid_values_name": []
+            },
+            "38885_8": {
+              "allow_undefined": false,
+              "bulk_shared": false,
+              "default_value": null,
+              "description": null,
+              "hidden": false,
+              "key": "38885_8",
+              "key_value_pairs": false,
+              "max_length": 32,
+              "min_length": null,
+              "multiline": false,
+              "multilingual": false,
+              "multi_value": false,
+              "multi_value_length_default": 1,
+              "multi_value_length_fixed": true,
+              "multi_value_length_max": 1,
+              "name": "Description of technical object",
+              "password": false,
+              "persona": "",
+              "read_only": false,
+              "regex": "",
+              "required": false,
+              "type": -1,
+              "type_name": "String",
+              "valid_values": [],
+              "valid_values_name": []
+            },
+            "38885_9": {
+              "key": "38885_9",
+              "multi_value": true,
+              "multi_value_length_default": 1,
+              "multi_value_length_fixed": false,
+              "multi_value_length_max": 30,
+              "name": "TestPropGroup",
+              "next_id": null,
+              "persona": "set",
+              "read_only": true,
+              "required": false,
+              "type": -18,
+              "valid_values": []
+            },
+            "38885_9_x_10": {
+              "allow_undefined": false,
+              "bulk_shared": false,
+              "default_value": null,
+              "description": null,
+              "hidden": false,
+              "key": "38885_9_x_10",
+              "key_value_pairs": false,
+              "max_length": 254,
+              "min_length": null,
+              "multiline": false,
+              "multilingual": false,
+              "multi_value": true,
+              "multi_value_length_default": 1,
+              "multi_value_length_fixed": false,
+              "multi_value_length_max": 50,
+              "name": "TestGPropMVString",
+              "password": false,
+              "persona": "",
+              "read_only": false,
+              "regex": "",
+              "required": false,
+              "type": -1,
+              "type_name": "String",
+              "valid_values": [],
+              "valid_values_name": []
+            },
+            "38885_9_x_11": {
+              "allow_undefined": false,
+              "bulk_shared": false,
+              "default_value": null,
+              "description": null,
+              "hidden": false,
+              "include_time": false,
+              "key": "38885_9_x_11",
+              "key_value_pairs": false,
+              "multi_value": true,
+              "multi_value_length_default": 1,
+              "multi_value_length_fixed": false,
+              "multi_value_length_max": 50,
+              "name": "TestGPropDate",
+              "persona": "",
+              "read_only": false,
+              "required": false,
+              "type": -7,
+              "type_name": "Date",
+              "valid_values": [],
+              "valid_values_name": []
+            },
+            "38885_9_x_15": {
+              "allow_undefined": false,
+              "bulk_shared": false,
+              "default_value": null,
+              "description": null,
+              "hidden": false,
+              "key": "38885_9_x_15",
+              "key_value_pairs": false,
+              "max_value": null,
+              "min_value": null,
+              "multi_value": true,
+              "multi_value_length_default": 1,
+              "multi_value_length_fixed": false,
+              "multi_value_length_max": 50,
+              "name": "TestGPropInteger",
+              "persona": "",
+              "read_only": false,
+              "required": false,
+              "type": 2,
+              "type_name": "Integer",
+              "valid_values": [],
+              "valid_values_name": []
+            }
+          }
+        },
+        "properties": {
+          "container": {
+            "allow_undefined": false,
+            "bulk_shared": false,
+            "default_value": null,
+            "description": null,
+            "hidden": false,
+            "key": "container",
+            "key_value_pairs": false,
+            "multi_value": false,
+            "name": "Container",
+            "persona": "",
+            "read_only": true,
+            "required": false,
+            "type": 5,
+            "type_name": "Boolean",
+            "valid_values": [],
+            "valid_values_name": []
+          },
+          "container_size": {
+            "allow_undefined": false,
+            "bulk_shared": false,
+            "default_value": null,
+            "description": null,
+            "hidden": false,
+            "key": "container_size",
+            "key_value_pairs": false,
+            "max_value": null,
+            "min_value": null,
+            "multi_value": false,
+            "name": "Container Size",
+            "persona": "",
+            "read_only": true,
+            "required": false,
+            "type": 2,
+            "type_name": "Integer",
+            "valid_values": [],
+            "valid_values_name": []
+          },
+          "create_date": {
+            "allow_undefined": false,
+            "bulk_shared": false,
+            "default_value": null,
+            "description": null,
+            "hidden": false,
+            "include_time": true,
+            "key": "create_date",
+            "key_value_pairs": false,
+            "multi_value": false,
+            "name": "Created",
+            "persona": "",
+            "read_only": true,
+            "required": false,
+            "type": -7,
+            "type_name": "Date",
+            "valid_values": [],
+            "valid_values_name": []
+          },
+          "create_user_id": {
+            "allow_undefined": false,
+            "bulk_shared": false,
+            "default_value": null,
+            "description": null,
+            "hidden": false,
+            "key": "create_user_id",
+            "key_value_pairs": false,
+            "max_value": null,
+            "min_value": null,
+            "multi_value": false,
+            "name": "Created By",
+            "persona": "user",
+            "read_only": true,
+            "required": false,
+            "type": 2,
+            "type_name": "Integer",
+            "valid_values": [],
+            "valid_values_name": []
+          },
+          "description": {
+            "allow_undefined": false,
+            "bulk_shared": false,
+            "default_value": null,
+            "description": null,
+            "hidden": false,
+            "key": "description",
+            "key_value_pairs": false,
+            "max_length": null,
+            "min_length": null,
+            "multiline": true,
+            "multilingual": true,
+            "multi_value": false,
+            "name": "Description",
+            "password": false,
+            "persona": "",
+            "read_only": false,
+            "regex": "",
+            "required": false,
+            "type": -1,
+            "type_name": "String",
+            "valid_values": [],
+            "valid_values_name": []
+          },
+          "favorite": {
+            "allow_undefined": false,
+            "bulk_shared": false,
+            "default_value": null,
+            "description": null,
+            "hidden": false,
+            "key": "favorite",
+            "key_value_pairs": false,
+            "multi_value": false,
+            "name": "Favorite",
+            "persona": "",
+            "read_only": true,
+            "required": false,
+            "type": 5,
+            "type_name": "Boolean",
+            "valid_values": [],
+            "valid_values_name": []
+          },
+          "guid": {
+            "allow_undefined": false,
+            "bulk_shared": false,
+            "default_value": null,
+            "description": null,
+            "hidden": false,
+            "key": "guid",
+            "key_value_pairs": false,
+            "multi_value": false,
+            "name": "GUID",
+            "persona": "",
+            "read_only": false,
+            "required": false,
+            "type": -95,
+            "type_name": "GUID",
+            "valid_values": [],
+            "valid_values_name": []
+          },
+          "icon": {
+            "allow_undefined": false,
+            "bulk_shared": false,
+            "default_value": null,
+            "description": null,
+            "hidden": false,
+            "key": "icon",
+            "key_value_pairs": false,
+            "max_length": null,
+            "min_length": null,
+            "multiline": false,
+            "multilingual": false,
+            "multi_value": false,
+            "name": "Icon",
+            "password": false,
+            "persona": "",
+            "read_only": false,
+            "regex": "",
+            "required": false,
+            "type": -1,
+            "type_name": "String",
+            "valid_values": [],
+            "valid_values_name": []
+          },
+          "icon_large": {
+            "allow_undefined": false,
+            "bulk_shared": false,
+            "default_value": null,
+            "description": null,
+            "hidden": false,
+            "key": "icon_large",
+            "key_value_pairs": false,
+            "max_length": null,
+            "min_length": null,
+            "multiline": false,
+            "multilingual": false,
+            "multi_value": false,
+            "name": "Large Icon",
+            "password": false,
+            "persona": "",
+            "read_only": false,
+            "regex": "",
+            "required": false,
+            "type": -1,
+            "type_name": "String",
+            "valid_values": [],
+            "valid_values_name": []
+          },
+          "id": {
+            "allow_undefined": false,
+            "bulk_shared": false,
+            "default_value": null,
+            "description": null,
+            "hidden": false,
+            "key": "id",
+            "key_value_pairs": false,
+            "max_value": null,
+            "min_value": null,
+            "multi_value": false,
+            "name": "ID",
+            "persona": "node",
+            "read_only": false,
+            "required": false,
+            "type": 2,
+            "type_name": "Integer",
+            "valid_values": [],
+            "valid_values_name": []
+          },
+          "modify_date": {
+            "allow_undefined": false,
+            "bulk_shared": false,
+            "default_value": null,
+            "description": null,
+            "hidden": false,
+            "include_time": true,
+            "key": "modify_date",
+            "key_value_pairs": false,
+            "multi_value": false,
+            "name": "Modified",
+            "persona": "",
+            "read_only": true,
+            "required": false,
+            "type": -7,
+            "type_name": "Date",
+            "valid_values": [],
+            "valid_values_name": []
+          },
+          "modify_user_id": {
+            "allow_undefined": false,
+            "bulk_shared": false,
+            "default_value": null,
+            "description": null,
+            "hidden": false,
+            "key": "modify_user_id",
+            "key_value_pairs": false,
+            "max_value": null,
+            "min_value": null,
+            "multi_value": false,
+            "name": "Modified By",
+            "persona": "user",
+            "read_only": false,
+            "required": false,
+            "type": 2,
+            "type_name": "Integer",
+            "valid_values": [],
+            "valid_values_name": []
+          },
+          "name": {
+            "allow_undefined": false,
+            "bulk_shared": false,
+            "default_value": null,
+            "description": null,
+            "hidden": false,
+            "key": "name",
+            "key_value_pairs": false,
+            "max_length": null,
+            "min_length": null,
+            "multiline": false,
+            "multilingual": true,
+            "multi_value": false,
+            "name": "Name",
+            "password": false,
+            "persona": "",
+            "read_only": false,
+            "regex": "",
+            "required": false,
+            "type": -1,
+            "type_name": "String",
+            "valid_values": [],
+            "valid_values_name": []
+          },
+          "owner_group_id": {
+            "allow_undefined": false,
+            "bulk_shared": false,
+            "default_value": null,
+            "description": null,
+            "hidden": false,
+            "key": "owner_group_id",
+            "key_value_pairs": false,
+            "max_value": null,
+            "min_value": null,
+            "multi_value": false,
+            "name": "Owned By",
+            "persona": "group",
+            "read_only": false,
+            "required": false,
+            "type": 2,
+            "type_name": "Integer",
+            "valid_values": [],
+            "valid_values_name": []
+          },
+          "owner_user_id": {
+            "allow_undefined": false,
+            "bulk_shared": false,
+            "default_value": null,
+            "description": null,
+            "hidden": false,
+            "key": "owner_user_id",
+            "key_value_pairs": false,
+            "max_value": null,
+            "min_value": null,
+            "multi_value": false,
+            "name": "Owned By",
+            "persona": "user",
+            "read_only": true,
+            "required": false,
+            "type": 2,
+            "type_name": "Integer",
+            "valid_values": [],
+            "valid_values_name": []
+          },
+          "parent_id": {
+            "allow_undefined": false,
+            "bulk_shared": false,
+            "default_value": null,
+            "description": null,
+            "hidden": false,
+            "key": "parent_id",
+            "key_value_pairs": false,
+            "max_value": null,
+            "min_value": null,
+            "multi_value": false,
+            "name": "Parent ID",
+            "persona": "node",
+            "read_only": false,
+            "required": false,
+            "type": 2,
+            "type_name": "Integer",
+            "valid_values": [],
+            "valid_values_name": []
+          },
+          "reserved": {
+            "allow_undefined": false,
+            "bulk_shared": false,
+            "default_value": null,
+            "description": null,
+            "hidden": false,
+            "key": "reserved",
+            "key_value_pairs": false,
+            "multi_value": false,
+            "name": "Reserved",
+            "persona": "",
+            "read_only": false,
+            "required": false,
+            "type": 5,
+            "type_name": "Boolean",
+            "valid_values": [],
+            "valid_values_name": []
+          },
+          "reserved_date": {
+            "allow_undefined": false,
+            "bulk_shared": false,
+            "default_value": null,
+            "description": null,
+            "hidden": false,
+            "include_time": true,
+            "key": "reserved_date",
+            "key_value_pairs": false,
+            "multi_value": false,
+            "name": "Reserved",
+            "persona": "",
+            "read_only": true,
+            "required": false,
+            "type": -7,
+            "type_name": "Date",
+            "valid_values": [],
+            "valid_values_name": []
+          },
+          "reserved_user_id": {
+            "allow_undefined": false,
+            "bulk_shared": false,
+            "default_value": null,
+            "description": null,
+            "hidden": false,
+            "key": "reserved_user_id",
+            "key_value_pairs": false,
+            "max_value": null,
+            "min_value": null,
+            "multi_value": false,
+            "name": "Reserved By",
+            "persona": "member",
+            "read_only": true,
+            "required": false,
+            "type": 2,
+            "type_name": "Integer",
+            "valid_values": [],
+            "valid_values_name": []
+          },
+          "type": {
+            "allow_undefined": false,
+            "bulk_shared": false,
+            "default_value": null,
+            "description": null,
+            "hidden": true,
+            "key": "type",
+            "key_value_pairs": false,
+            "max_value": null,
+            "min_value": null,
+            "multi_value": false,
+            "name": "Type",
+            "persona": "",
+            "read_only": true,
+            "required": false,
+            "type": 2,
+            "type_name": "Integer",
+            "valid_values": [],
+            "valid_values_name": []
+          },
+          "type_name": {
+            "allow_undefined": false,
+            "bulk_shared": false,
+            "default_value": null,
+            "description": null,
+            "hidden": false,
+            "key": "type_name",
+            "key_value_pairs": false,
+            "max_length": null,
+            "min_length": null,
+            "multiline": false,
+            "multilingual": false,
+            "multi_value": false,
+            "name": "Type",
+            "password": false,
+            "persona": "",
+            "read_only": true,
+            "regex": "",
+            "required": false,
+            "type": -1,
+            "type_name": "String",
+            "valid_values": [],
+            "valid_values_name": []
+          },
+          "versions_control_advanced": {
+            "allow_undefined": false,
+            "bulk_shared": false,
+            "default_value": null,
+            "description": null,
+            "hidden": false,
+            "key": "versions_control_advanced",
+            "key_value_pairs": false,
+            "multi_value": false,
+            "name": "Versions Control Advanced",
+            "persona": "",
+            "read_only": false,
+            "required": false,
+            "type": 5,
+            "type_name": "Boolean",
+            "valid_values": [],
+            "valid_values_name": []
+          },
+          "volume_id": {
+            "allow_undefined": false,
+            "bulk_shared": false,
+            "default_value": null,
+            "description": null,
+            "hidden": false,
+            "key": "volume_id",
+            "key_value_pairs": false,
+            "max_value": null,
+            "min_value": null,
+            "multi_value": false,
+            "name": "VolumeID",
+            "persona": "node",
+            "read_only": false,
+            "required": false,
+            "type": 2,
+            "type_name": "Integer",
+            "valid_values": [],
+            "valid_values_name": []
+          }
+        }
+      },
+      "metadata_order": {
+        "properties": null
+      }
+    }
+  },
+  "rolesResponse": {
+    "links": {
+      "self": {
+        "body": "",
+        "content_type": "",
+        "href": "/api/v2/businessworkspaces/153423/roles?fields=members",
+        "method": "GET",
+        "name": ""
+      }
+    },
+    "results": [
+      {
+        "actions": {
+          "delete-role": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "/api/v2/businessworkspaces/153423/roles/6424618",
+            "method": "DELETE",
+            "name": "Delete Role"
+          },
+          "edit-role": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "/api/v2/businessworkspaces/153423/roles/6424618",
+            "method": "PUT",
+            "name": "Edit Role"
+          }
+        },
+        "data": {
+          "members": [
+            {
+              "display_name": "",
+              "business_email": "pbond@elink.loc",
+              "business_fax": null,
+              "business_phone": null,
+              "deleted": false,
+              "first_name": "Peter",
+              "group_id": 1001,
+              "group_name": "DefaultGroup",
+              "id": 6325586,
+              "last_name": "Bond",
+              "middle_name": null,
+              "name": "pbond",
+              "office_location": null,
+              "photo_id": "../../../utils/previewpane/test/images/bond-peter.png",
+              "privilege_login": true,
+              "privilege_modify_groups": false,
+              "privilege_modify_users": false,
+              "privilege_public_access": true,
+              "privilege_system_admin_rights": false,
+              "privilege_user_admin_rights": false,
+              "time_zone": -1,
+              "title": null,
+              "type": 0,
+              "type_name": "User"
+            },
+            {
+              "display_name": "",
+              "business_email": "larmstrong@elink.loc",
+              "business_fax": null,
+              "business_phone": null,
+              "deleted": false,
+              "first_name": "Liz",
+              "group_id": 1001,
+              "group_name": "DefaultGroup",
+              "id": 6326140,
+              "last_name": "Armstrong",
+              "middle_name": null,
+              "name": "larmstrong",
+              "office_location": null,
+              "photo_id": "../../../utils/previewpane/test/images/armstrong-liz.png",
+              "privilege_login": true,
+              "privilege_modify_groups": false,
+              "privilege_modify_users": false,
+              "privilege_public_access": true,
+              "privilege_system_admin_rights": false,
+              "privilege_user_admin_rights": false,
+              "time_zone": -1,
+              "title": null,
+              "type": 0,
+              "type_name": "User"
+            },
+            {
+              "display_name": "",
+              "business_email": "ngalleos@elink.loc",
+              "business_fax": null,
+              "business_phone": null,
+              "deleted": false,
+              "first_name": "Nick",
+              "group_id": 1001,
+              "group_name": "DefaultGroup",
+              "id": 6420739,
+              "last_name": "Galleos",
+              "middle_name": null,
+              "name": "ngalleos",
+              "office_location": null,
+              "photo_id": "../../../utils/previewpane/test/images/galleos-nick.png",
+              "privilege_login": true,
+              "privilege_modify_groups": false,
+              "privilege_modify_users": false,
+              "privilege_public_access": true,
+              "privilege_system_admin_rights": false,
+              "privilege_user_admin_rights": false,
+              "time_zone": -1,
+              "title": null,
+              "type": 0,
+              "type_name": "User"
+            }
+          ],
+          "properties": {
+            "description": "",
+            "id": 6424618,
+            "inherited_from_id": null,
+            "leader": true,
+            "name": "Key Account Manager",
+            "perms": 258207
+          }
+        }
+      },
+      {
+        "actions": {
+          "delete-role": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "/api/v2/businessworkspaces/1/roles/6423832",
+            "method": "DELETE",
+            "name": "Delete Role"
+          },
+          "edit-role": {
+            "body": "",
+            "content_type": "",
+            "form_href": "",
+            "href": "/api/v2/businessworkspaces/1/roles/6423832",
+            "method": "PUT",
+            "name": "Edit Role"
+          }
+        },
+        "data": {
+          "members": [
+            {
+              "display_name": "",
+              "business_email": null,
+              "business_fax": null,
+              "business_phone": null,
+              "deleted": false,
+              "first_name": "Steve",
+              "group_id": 1001,
+              "group_name": "DefaultGroup",
+              "id": 6326139,
+              "last_name": "Maxwell",
+              "middle_name": null,
+              "name": "smaxwell",
+              "office_location": null,
+              "photo_id": "../../../utils/previewpane/test/images/steve-maxwell.png",
+              "privilege_login": true,
+              "privilege_modify_groups": false,
+              "privilege_modify_users": false,
+              "privilege_public_access": true,
+              "privilege_system_admin_rights": false,
+              "privilege_user_admin_rights": false,
+              "time_zone": -1,
+              "title": null,
+              "type": 0,
+              "type_name": "User"
+            },
+            {
+              "display_name": "",
+              "business_email": "ngalleos@elink.loc",
+              "business_fax": null,
+              "business_phone": null,
+              "deleted": false,
+              "first_name": "Nick",
+              "group_id": 1001,
+              "group_name": "DefaultGroup",
+              "id": 6420739,
+              "last_name": "Galleos",
+              "middle_name": null,
+              "name": "ngalleos",
+              "office_location": null,
+              "photo_id": "../../../utils/previewpane/test/images/galleos-nick.png",
+              "privilege_login": true,
+              "privilege_modify_groups": false,
+              "privilege_modify_users": false,
+              "privilege_public_access": true,
+              "privilege_system_admin_rights": false,
+              "privilege_user_admin_rights": false,
+              "time_zone": -1,
+              "title": null,
+              "type": 0,
+              "type_name": "User"
+            },
+            {
+              "display_name": "",
+              "business_email": "nlang@elink.loc",
+              "business_fax": null,
+              "business_phone": null,
+              "deleted": false,
+              "first_name": "Neil",
+              "group_id": 1001,
+              "group_name": "DefaultGroup",
+              "id": 6421069,
+              "last_name": "Lang",
+              "middle_name": null,
+              "name": "nlang",
+              "office_location": null,
+              "photo_id": "../../../utils/previewpane/test/images/lang-neil.png",
+              "privilege_login": true,
+              "privilege_modify_groups": false,
+              "privilege_modify_users": false,
+              "privilege_public_access": true,
+              "privilege_system_admin_rights": false,
+              "privilege_user_admin_rights": false,
+              "time_zone": -1,
+              "title": null,
+              "type": 0,
+              "type_name": "User"
+            }
+          ],
+          "properties": {
+            "description": "",
+            "id": 6423832,
+            "inherited_from_id": null,
+            "leader": false,
+            "name": "Sales",
+            "perms": 258207
+          }
+        }
+      }
+    ]
+  },
+  "businessworkspacetypes": [
+    {
+      "id": 7,
+      "name": "Notification",
+      "rm_enabled": true,
+      "templates": [
+        {
+          "id": 288969,
+          "name": "Notification D9A",
+          "subType": 848
+        }
+      ]
+    }
+  ],
+  "members_favorites": {
+    "links": {
+      "data": {
+        "self": {
+          "body": "",
+          "content_type": "",
+          "href": "/api/v2/members/favorites/tabs?fields=properties",
+          "method": "GET",
+          "name": ""
+        }
+      }
+    },
+    "results": []
+  },
+  "facets": {
+  "facets": {
+    "available_values": [
+      {
+        "2449": [
+          {
+            "name": "Adobe PDF",
+            "percentage": 16.6666666666667,
+            "total": 1,
+            "value": "9"
+          },
+          {
+            "name": "Microsoft Word",
+            "percentage": 16.6666666666667,
+            "total": 1,
+            "value": "23"
+          }
+        ]
+      },
+      {
+        "2446": [
+          {
+            "name": "Folder",
+            "percentage": 66.6666666666667,
+            "total": 4,
+            "value": "0"
+          },
+          {
+            "name": "Document",
+            "percentage": 33.3333333333333,
+            "total": 2,
+            "value": "144"
+          }
+        ]
+      },
+      {
+        "2450": [
+          {
+            "name": "Office",
+            "percentage": 33.3333333333333,
+            "total": 2,
+            "value": "331"
+          },
+          {
+            "name": "Images",
+            "percentage": 16.6666666666667,
+            "total": 1,
+            "value": "332"
+          }
+        ]
+      }
+    ],
+    "properties": {
+      "2446": {
+        "data_source": "sys_ObjectType",
+        "data_source_type": 305,
+        "display_mode": 1,
+        "display_priority": 50,
+        "id": 2446,
+        "items_to_show": 5,
+        "name": "Content Type",
+        "name_multilingual": {
+          "en": "Content Type"
+        },
+        "show_as_numbers": true,
+        "show_text_in_more": false,
+        "type": 305
+      },
+      "2449": {
+        "data_source": "dc_1",
+        "data_source_type": 400,
+        "display_mode": 1,
+        "display_priority": 50,
+        "id": 2449,
+        "items_to_show": 5,
+        "name": "Application",
+        "name_multilingual": {
+          "en": "Application"
+        },
+        "show_as_numbers": true,
+        "show_text_in_more": false,
+        "type": 400
+      },
+      "2450": {
+        "data_source": "dc_336",
+        "data_source_type": 400,
+        "display_mode": 1,
+        "display_priority": 50,
+        "id": 2450,
+        "items_to_show": 5,
+        "name": "Document Type",
+        "name_multilingual": {
+          "en": "Document Type"
+        },
+        "show_as_numbers": true,
+        "show_text_in_more": false,
+        "type": 400
+      }
+    },
+    "selected_values": []
+  }
+}
+
+}
+
+

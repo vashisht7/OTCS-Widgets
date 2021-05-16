@@ -1,0 +1,14 @@
+{
+  "type": "left-center-right",
+  "options": {
+    "center": {
+      "kind": "fullpage",
+      "options":{
+      },
+      "type": "xecmpf/widgets/eac"
+    },
+    "left":{},
+    "right":{}
+  }
+}
+  

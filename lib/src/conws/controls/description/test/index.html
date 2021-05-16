@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>XECMPF Search</title>
+  <link rel="stylesheet" href="../../../../csui/themes/carbonfiber/theme.css">
+  <script src="../../../../csui/lib/require.js"></script>
+  <script data-csui-path="../../../../csui" src="../../../../csui/config.js"></script>
+  <script src="../../../../csui/helpers.js"></script>
+
+  <script type="text/javascript">
+    require.config({
+      paths: {
+        xecmpf: '../../../../src',
+        esoc: '../../../../esoc',
+        conws: '../../../../src',
+        csui: '../../../../csui'
+      },
+      config: {
+        'csui/utils/contexts/factories/connector': {
+          connection: {
+            url: '//server/otcs/cs/api/v1',
+            crossDomain: true,
+            supportPath: '/support',
+            session: {
+              ticket: 'dummy'
+            }
+          }
+        }
+      }
+    });
+
+    csui.onReady(
+        ['csui/lib/marionette', '../description.view'],
+        function ( Marionette, DescriptionView) {
+          var contentRegion = new Marionette.Region({
+            el: '#content'
+          });
+          
+          var options = {
+                complete_desc: "this is sample description.", 
+                has_more_desc: false, 
+                collapsedHeightIsOneLine: true, 
+                hideShowLess: true
+            };
+
+          var descriptionView = new DescriptionView(options);
+          contentRegion.show(descriptionView);
+        }
+    );
+  </script>
+</head>
+
+<body class="binf-widgets">
+<div class="binf-container-fluid grid-rows">
+  <div class="binf-row">
+    <div class="binf-col-sm-8 binf-col-md-8 binf-col-lg-8" id="content"></div>
+  </div>
+</div>
+</body>
+
+</body>
+</html>
+
+
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

@@ -1,0 +1,64 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .xecmpf-businessattachments .binf-modal-content {
+  height: calc(100vh - 119px)
+}
+
+.binf-widgets .xecmpf-businessattachments .binf-modal-body {
+  height: 100%;
+}
+
+.binf-widgets .xecmpf-businessattachments .binf-modal-body > div {
+  height: 100%;
+}
+
+.binf-widgets .xecmpf-boattachmentstable {
+  height: 100%; 
+  width: 100%;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+}
+
+.binf-widgets .xecmpf-boattachmentstable #botableview {
+  display: flex;
+  display: -webkit-flex;
+  flex: 1 1 100%;
+  -webkit-flex: 1 1 100%;
+  min-height: 90px;
+  
+}
+
+.binf-widgets .xecmpf-boattachmentstable #bopaginationview {
+  flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+}
+
+.binf-widgets .xecmpf-boattachmentstable #bopaginationview .binf-pagination {
+  margin: 0;
+}
+
+.xecmpf-boattachmentstable .binf-table.dataTable .csui-table-cell-type {
+  min-width: 6em;
+  max-width: 6em;
+}
+
+.xecmpf-businessattachments .binf-modal-content .xecmpf-alternating-toolbars .xecmpf-rowselection-toolbar {
+  height: 48px;
+  display: none; 
+}
+
+
+.binf-widgets .xecmpf-businessattachments .binf-modal-content .tile-header.binf-modal-header {
+  display: none;
+}
+
+.binf-widgets .xecmpf-businessattachments .binf-modal-content .binf-modal-body  .tile-type-image .tile-type-icon.tile-type-icon-img img {
+  height:32px;
+  width:32px;
+}
+
+.binf-widgets .xecmpf-businessattachments .binf-modal-content .binf-modal-body  .tile-type-image .tile-type-icon{
+   padding:0;
+}

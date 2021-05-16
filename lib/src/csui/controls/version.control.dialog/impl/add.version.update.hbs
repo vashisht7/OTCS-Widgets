@@ -1,0 +1,19 @@
+<div class='binf-row'>
+  <div class="binf-col-sm-12 binf-control-label">
+    {{selectVersionlabel}}
+  </div>
+  <div class="binf-col-sm-12 csui-version-update">
+    <label class="binf-radio-inline">
+      <input type="radio" name="version" value="true" checked> {{minorVersion}} </input>
+    </label>
+    <label class="binf-radio-inline">
+      <input type="radio" name="version" value="false"> {{majorVersion}} </input>
+    </label>
+  </div>
+  <div class="binf-col-sm-12 csui-version-reserve {{#if isNotReserved }} binf-hidden {{/if}}">
+    <input type="checkbox" name="reserve" checked> {{unreserve}}
+  </div>
+</div>
+
+
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

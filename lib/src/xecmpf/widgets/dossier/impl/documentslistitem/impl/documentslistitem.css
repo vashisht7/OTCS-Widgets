@@ -1,0 +1,72 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.xecmpf-document-list-item {
+  list-style: none;
+}
+
+
+.xecmpf-document-list-item .xecmpf-document-preview {
+  padding-top: 1em;
+}
+
+
+.xecmpf-document-list-item .xecmpf-document-metadata {
+  margin: 0.5em 1em;
+  overflow: hidden;
+}
+
+
+.xecmpf-document-list-item .document-favorite {
+  width: 2em;
+  float: left;
+}
+
+.xecmpf-document-list-item .document-favorite > a > span {
+  display: block;
+  width: 2em;
+  height: 2em;
+}
+
+.xecmpf-document-list-item .document-favorite .socialFav{
+     width: 2em;
+    height: 2em;
+    display: block;
+}
+
+
+
+.xecmpf-document-list-item .xecmpf-document-metadata .document-category-attributes {
+  display: inline-block;
+  width: calc(100% - 2em);
+}
+
+.xecmpf-document-list-item .xecmpf-document-metadata .document-category-attributes > table {
+  width: 100%;
+}
+
+.xecmpf-document-list-item .xecmpf-document-metadata .document-category-attributes > table tr {
+  line-height: 1.2em;
+}
+
+.xecmpf-document-list-item .xecmpf-document-metadata .document-category-attributes > table td.label,
+.xecmpf-document-list-item .xecmpf-document-metadata .document-category-attributes > table td.value {
+  font-size: 0.750rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: default;
+}
+
+.xecmpf-document-list-item .xecmpf-document-metadata .document-category-attributes > table td.label {
+  width: 40%;
+  max-width: 6.40em;
+  color: #757575;
+  text-align: right;
+}
+
+.xecmpf-document-list-item .xecmpf-document-metadata .document-category-attributes > table td.value {
+  padding-left: 1em;
+  width: 60%;
+  max-width: 9.60em;
+  color: #000000;
+  text-align: left;
+}

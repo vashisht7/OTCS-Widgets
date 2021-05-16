@@ -1,0 +1,16 @@
+{
+  "links": {
+    "data": {
+      "self": {
+        "body": "",
+        "content_type": "",
+        "href": "\/api\/v2\/businessworkspaces",
+        "method": "POST",
+        "name": ""
+      }
+    }
+  },
+  "results": {
+    "id": 235724
+  }
+}

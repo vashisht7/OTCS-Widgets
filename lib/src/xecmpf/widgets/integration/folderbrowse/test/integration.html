@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Carbon Fibre</title>
+
+  <link rel="stylesheet" href="../../../../../csui/themes/carbonfiber/theme.css">
+  <link rel="stylesheet" data-csui-theme-overrides=true
+        href="http://10.96.11.142:8080/img2/csui/themes/smartui.themes/alberi/overrides.css">
+  <script src="../../../../../csui/lib/require.js"></script>
+  <script src="../../../../../csui/config.js?crossOrigin=true"
+          data-csui-path="../../../../../csui"></script>
+
+  <style>
+
+  </style>
+
+  <script>
+
+    require.config({
+
+      paths: {
+
+        xecmpf: '../../../..',
+        conws: '../../../../../conws',
+        csui: '../../../../../csui',
+        esoc: '../../../../../esoc'
+
+      },
+      config: {
+        "csui/models/server.module/server.module.collection": {
+          "modules": {
+            "xecmpf": {
+              "version": "16.0.0"
+            }
+          }
+        },
+        'csui/utils/commands': {
+          extensions: {
+            "csui": [
+              "csui/integration/folderbrowser/commands/go.to.node.history"
+            ],
+            "xecmpf": [
+              "xecmpf/utils/commands/folderbrowse/search.container",
+              "xecmpf/utils/commands/folderbrowse/open.full.page.workspace"
+            ]
+          }
+        },
+        "csui/widgets/nodestable/toolbaritems": {
+          "extensions": {
+            "csui": [
+              "csui/integration/folderbrowser/impl/nodestable.toolitems"
+            ],
+            "xecmpf": [
+              "xecmpf/widgets/integration/folderbrowse/toolbaritems"
+            ]
+          }
+        },
+        "csui/integration/folderbrowser/commands/go.to.node.history": {
+          enabled: true
+        }, 
+        "xecmpf/utils/commands/folderbrowse/search.container": {
+          enabled: true
+        },
+        "xecmpf/utils/commands/folderbrowse/open.full.page.workspace": {
+          enabled: true,
+          fullPageOverlay: false
+        }
+      }
+    });
+
+    require(['csui/integration/folderbrowser/folderbrowser.widget'],
+        function (FolderBrowserWidget) {
+          var folderBrowser = new FolderBrowserWidget({
+            start: {id: 2000},
+            connection: {
+              url: 'http://10.96.11.142:8080/OTCS16Dev/livelink/api/v1',
+              supportPath: '/img2'			  
+            },
+			breadcrumb:false
+          });
+          folderBrowser.show({placeholder: '#content'});
+        });
+  </script>
+</head>
+<body class="binf-widgets" style="height:500px">
+<div class="binf-container-fluid grid-rows">
+  <button id="closeBrowser" style="float:right; top:10px">close</button>
+  <div class="binf-row">
+    <div id="content" class="binf-row-xs-full"></div>
+  </div>
+</div>
+</body>
+
+</html>
+
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

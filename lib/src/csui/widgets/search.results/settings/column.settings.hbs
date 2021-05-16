@@ -1,0 +1,21 @@
+<ul class="binf-dropdown-menu csui-search-displayed-columns binf-hidden">
+  <li data-value="displayed-column">
+    <a class="csui-Displayed-columns-first" href="javascript:void(0);">
+      <span class="icon arrow_back"></span>
+      <span class="csui-Displayed-column-title">{{label}}</span>
+    </a>
+  </li>
+  <li>
+    <a class="csui-add-extra-column" href="javascript:void(0);">
+      <span class="icon icon-toolbarAdd"></span>
+    </a>
+  </li>
+  {{#each selected}}
+    <li data-value="column">
+      <a class="csui-Displayed-columns" href="javascript:void(0);">
+        <span class="csui-edit-column-type"> {{name}} </span>
+      </a>
+    </li>
+  {{/each}}
+</ul>
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

@@ -1,0 +1,59 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .cs-dialog.csui-zipanddownload-dialog .binf-modal-content .tile-header .tile-title {
+  font-weight: initial;
+  color: #333333;
+}
+
+.binf-widgets .cs-dialog.csui-zipanddownload-dialog .binf-modal-content .tile-header .tile-title {
+  line-height: 48px;
+}
+
+.binf-widgets .cs-dialog.csui-zipanddownload-dialog .binf-modal-content .tile-header .tile-title .csui-zipanddownload-details > * {
+  font-size: 14px;
+  font-weight: initial;  
+}
+
+.binf-widgets .cs-dialog.csui-zipanddownload-dialog .binf-modal-content .tile-header .tile-title .csui-zipanddownload-details > *:first-child {
+  margin-right: 20px;
+}
+
+.binf-widgets .cs-dialog.csui-zipanddownload-dialog .binf-modal-content .tile-header {
+  border-radius: 3px 3px 0 0;
+  background-color: #dce4e8;
+  height: 48px;
+  padding-left: 24px;
+}
+
+.binf-widgets .cs-dialog.csui-zipanddownload-dialog .binf-modal-content .tile-header .cs-header-control span{
+  float: left;
+}
+
+.binf-widgets .cs-dialog.csui-zipanddownload-dialog .binf-modal-content .tile-header .cs-header-control {
+  line-height: 48px;
+  float: right;
+  margin: 0;
+  font-size: 14px;
+  padding-right: 10px;
+}
+
+.binf-widgets .cs-dialog.csui-zipanddownload-dialog .binf-modal-content .tile-header .cs-header-control .csui-size {
+  font-weight: bold;
+  padding-right: 18px;
+}
+
+
+.binf-widgets .binf-modal.csui-zipanddownload-dialog {
+  z-index: 1300;
+  overflow: auto;
+}
+
+.binf-widgets .cs-dialog .csui-acc-tab-region .cs-header-control.csui-zipanddownload-details {
+  float: right;
+  line-height: 63px;
+}
+
+.binf-widgets .cs-dialog .csui-acc-tab-region .cs-header-control.csui-zipanddownload-details .csui-size {
+  font-weight: 600;
+  padding-left: 14px;
+}

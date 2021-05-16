@@ -1,0 +1,74 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .wfstatus-popover .popover.large {
+  height: 22.8rem;
+  width: 24.38rem;
+}
+
+.binf-widgets .wfstatus-popover .popover.small {
+  height: 11.05rem;
+}
+
+.binf-widgets .wfstatus-popover .popover.wfstatus-list-step-card-size-large {
+  height: 26.87rem;
+}
+
+.binf-widgets .wfstatus-popover .popover.wfstatus-list-step-card-size-single {
+  height: 6.7175rem;
+}
+
+.binf-widgets .wfstatus-popover .popover.wfstatus-list-step-card-size-double {
+  height: 14rem;
+}
+
+.binf-widgets .wfstatus-popover .popover.wfstatus-list-step-card-size-triple {
+  height: 20.4rem;
+}
+
+[id^="wfstatus-popover-mask_"] {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+.binf-widgets .wfstatus-popover-class,
+.binf-widgets .wfstatus-popover {
+  background-color: #ffffff;
+  box-shadow: 0 4px 23px 5px rgba(0, 0, 0, 0.4), 0 2px 6px rgba(0, 0, 0, 0.15);
+  z-index: 1045;
+  overflow: hidden;
+}
+
+.binf-widgets .wfstatus-popover-arrow {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0.625rem;
+  z-index: 1045;
+}
+
+.binf-widgets .wfstatus-popover-arrow-right {
+  border-top: 11px solid transparent;
+  border-bottom: 11px solid transparent;
+  border-left: 11px solid #ffffff;
+}
+
+.binf-widgets .wfstatus-popover-arrow-left {
+  border-top: 11px solid transparent;
+  border-bottom: 11px solid transparent;
+  border-right: 11px solid #ffffff;
+}
+
+.binf-widgets .wfstatus-popover-arrow-up {
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  border-bottom: 11px solid #ffffff;
+}
+
+.binf-widgets .wfstatus-popover-arrow-down {
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  border-top: 11px solid #ffffff;
+}

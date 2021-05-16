@@ -1,0 +1,68 @@
+.binf-widgets .otcsw--noteview {
+  /* Make more space around the welcome message than the default Bootstrap
+     panel offers */
+  padding: 1em;
+  /* Make the panel look nicer */
+  background-color: #fff;
+  /* Fill up the parent tile extents. */
+  
+}
+.leftColumn {
+  float: left;
+  padding: 1em;
+  width: 100%;
+  height: 560px;
+}
+
+.centerColumn{
+  float: left;
+  padding: 1em;
+  width: 100%;
+  height: 560px;
+}
+
+.rightColumn{
+  float: left;
+  padding: 1em;
+  width: 100%;    
+  height: 560px;
+}
+.flex-container {
+  display: flex;
+  background-color: white;
+}
+
+.viewer-flex-container {
+  display: flex;
+}
+
+.center-header-toolbar {
+  display: flex;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background-color: #dfe7ea;
+}
+
+.center-collapse-btn {
+  width: 50px;
+  float: left;
+}
+
+.right-collapse-btn {
+  width: 50px;
+  float: right;
+}
+
+.flex-container > div {
+  border:1px solid black;
+  margin: 2px;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}

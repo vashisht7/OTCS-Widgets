@@ -1,0 +1,60 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.xecmpf-documents-tile.cs-tile .tile-header {
+  
+  background: rgb(255, 255, 255);
+  border: none;
+  
+}
+
+.xecmpf-documents-tile.cs-tile .tile-header .tile-title {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding-left: 0.8em;
+}
+
+.xecmpf-documents-tile.cs-tile .tile-header .tile-title h4 {
+  width: 100%;
+  color: #333333;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: normal;
+}
+
+.xecmpf-documents-tile.cs-tile .tile-content {
+  
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.xecmpf-documents-tile.cs-tile .list-group-container {
+  height: 100%;
+}
+
+
+.xecmpf-documents-tile.cs-tile .tile-header .tile-properties {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: #666666;
+  padding-left: 0.8em;
+}
+
+.xecmpf-documents-tile.cs-tile .tile-header .tile-properties .count {
+  font-size: 0.750em;
+}
+
+.xecmpf-documents-tile.cs-tile .tile-header .tile-properties .count-label {
+  font-size: 0.750em;
+  margin-left: 0.3em;
+}
+
+
+.xecmpf-documents-tile.cs-tile .xecmpf-document-list-group .xecmpf-document-list-item {
+  
+  border-bottom: 1px solid #608aa1;
+}

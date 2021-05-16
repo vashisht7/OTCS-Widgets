@@ -1,0 +1,82 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.csui-table-cell-_toggledetails .expand-details-row-toggle {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.binf-widgets .csui-nodetable.csui-table-spacing-narrow .csui-table-cell-_toggledetails {
+  min-width: calc(6px + 15px + 6px); 
+  max-width: calc(6px + 15px + 6px); 
+}
+
+.binf-widgets .csui-nodetable.csui-table-spacing-medium .csui-table-cell-_toggledetails {
+  min-width: calc(8px + 18px + 8px); 
+  max-width: calc(8px + 18px + 8px); 
+}
+
+.binf-widgets .csui-nodetable.csui-table-spacing-wide .csui-table-cell-_toggledetails {
+  min-width: calc(14px + 21px + 14px); 
+  max-width: calc(14px + 21px + 14px); 
+}
+
+.binf-widgets .csui-nodetable.csui-table-spacing-narrow .csui-table-cell-_toggledetails:first-child,
+.binf-widgets .csui-nodetable.csui-table-spacing-narrow .csui-table-cell-_toggledetails.csui-table-cell-last-visible {
+  min-width: calc(20px + 15px + 6px); 
+  max-width: calc(20px + 15px + 6px); 
+}
+
+.binf-widgets .csui-nodetable.csui-table-spacing-medium .csui-table-cell-_toggledetails:first-child,
+.binf-widgets .csui-nodetable.csui-table-spacing-medium .csui-table-cell-_toggledetails.csui-table-cell-last-visible {
+  min-width: calc(20px + 18px + 8px); 
+  max-width: calc(20px + 18px + 8px); 
+}
+
+.binf-widgets .csui-nodetable.csui-table-spacing-wide .csui-table-cell-_toggledetails:first-child,
+.binf-widgets .csui-nodetable.csui-table-spacing-wide .csui-table-cell-_toggledetails.csui-table-cell-last-visible {
+  min-width: calc(20px + 21px + 14px); 
+  max-width: calc(20px + 21px + 14px); 
+}
+
+
+.binf-widgets .csui-nodetable .binf-table tr:not(.csui-details-row) .csui-table-cell-_toggledetails {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+.csui-nodetable.csui-table-spacing-narrow .binf-table tr > .csui-table-cell-_toggledetails .expand-details-row-toggle {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.csui-nodetable.csui-table-spacing-medium .binf-table tr > .csui-table-cell-_toggledetails .expand-details-row-toggle {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.csui-nodetable.csui-table-spacing-wide .binf-table tr > .csui-table-cell-_toggledetails .expand-details-row-toggle {
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+
+.csui-nodetable .binf-table tr > .csui-table-cell-_toggledetails:first-child .expand-details-row-toggle {
+  padding-left: 20px;
+}
+
+
+.csui-nodetable .binf-table tr > .csui-table-cell-_toggledetails.csui-table-cell-last-visible .expand-details-row-toggle {
+  padding-right: 20px;
+}
+
+.csui-table-cell-_toggledetails .icon-expandArrowDown {
+  vertical-align: middle;
+}
+
+.binf-widgets .csui-nodetable .csui-table-cell-_toggledetails .csui-icon {
+  height: calc(3em - 21px);
+  width: calc(3em - 21px);
+}

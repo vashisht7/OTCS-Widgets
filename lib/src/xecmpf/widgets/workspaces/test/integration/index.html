@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="http://vmuscs.eng-muc.opentext.net:80/otcs/cs.exe/widgets?crossOrigin=true"></script>
+    <link rel="stylesheet" href="HTTP://vmuscs.eng-muc.opentext.net:80/img/csui/themes/carbonfiber/theme.css" >
+    <link data-csui-theme-overrides="true" rel="stylesheet" href="HTTP:/vmuscs.eng-muc.opentext.net:80/img/otsapxecm/sapwidgetthemes/sap_bluecrystal/overrides.css" >
+
+    
+
+    <script src="../../../../../csui/lib/require.js"></script>
+    <script src="../../../../../csui/config.js" data-csui-path="../../../../../csui"></script>
+    <script src="../../../../../csui/helpers.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100%;
+            overflow-y: hidden;
+            overflow-x: hidden;
+            padding-right: 0px !important;
+        }
+    </style>
+
+    <script>
+
+        var url = 'http://vmuscs.eng-muc.opentext.net:80';
+        var supportPath = '/img';
+        var classifLib = url + supportPath + '/classification/bundles/classifications-all.js';
+        var connection1 = {
+            url: 'http://vmuscs.eng-muc.opentext.net:80/otcs/cs.exe/api/v1',
+//            session: {
+//                ticket: 'dummy'
+//            },
+            supportPath: '/img'
+        };
+        csui.require.config({
+            paths: {
+                xecmpf: '../../../../../src',
+                conws: '../../../../../conws',
+                csui: '../../../../../csui',
+                classifications: url + supportPath + '/classification'
+            },
+            'csui/utils/contexts/factories/connector': {
+                connection: connection1,
+            },
+            'csui/utils/contexts/factories/node': {
+                attributes: {id: 11111}
+            },
+
+            deps: [ classifLib  ]
+        });
+
+        if (csui.define)
+            define = csui.define;
+
+        csui.setLanguage('en_US');
+        csui.onReady2(["csui/lib/jquery",
+                    'xecmpf/widgets/workspaces/workspaces.widget',
+                    'csui/utils/contexts/page/page.context'],
+
+                function ($, WorkspacesWidget, PageContext) {
+
+                    var context = new PageContext({
+                        factories: {
+                            connector: {
+                                connection: connection1
+                            },
+                            assignTo: function (model) {
+                                if (model.connector) {
+                                    if (model.connector === this) {
+                                        return;
+                                    }
+                                }
+                                model.connector = this;
+                            }
+                        }
+                    });
+
+                    var workspacesWidget = new WorkspacesWidget({
+                        context: context,
+                        data: {
+//                            busObjectId: '0000000110',
+//                            busObjectType: 'KNA1',
+//                            extSystemId: 'D9A'
+                            busObjectId: '000010000037',
+                            busObjectType: 'BUS2038',
+                            extSystemId: 'D7K-HTTP'
+                        }
+                    });
+                    workspacesWidget.show({placeholder: '#widgetWMainWindow'});
+                    context.fetch();
+                });
+    </script>
+</head>
+<body class="binf-widgets">
+    <div id="widgetWMainWindow" style="height:100vh"></div>
+</body>
+</html>
+
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

@@ -1,0 +1,154 @@
+{
+  "$schema": "http://opentext.com/cs/json-schema/draft-04/schema#",
+  "title": "Test Widget",
+  "description": "{{widgetDescription}}",
+  "kind": "tile",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "shortcutTheme": {
+        "title": "Theme",
+        "description": "Theme Desc",
+        "type": "string",
+        "enum": [
+          "csui-shortcut-theme-stone1",
+          "csui-shortcut-theme-stone2",
+          "csui-shortcut-theme-teal1",
+          "csui-shortcut-theme-teal2",
+          "csui-shortcut-theme-pink1",
+          "csui-shortcut-theme-pink2",
+          "csui-shortcut-theme-indigo1",
+          "csui-shortcut-theme-indigo2"
+        ]
+      },
+      "displayName": {
+        "title": "Displayname",
+        "type": "string"
+      },
+      "type": {
+        "title": "Fallback",
+        "description": "Fallback Desc",
+        "type": "integer",
+        "enum": [
+          141,
+          142,
+          133
+        ],
+        "default": 141
+      },
+      "settings": {
+        "title": "{{feedSettingsTitle}}",
+        "description": "{{feedSettingsDescription}}",
+        "type": "object",
+        "properties": {
+          "enableComments": {
+            "title": "{{enableCommentsTitle}}",
+            "description": "{{enableCommentsDescription}}",
+            "type": "boolean",
+            "default": true
+          },
+          "enableFilters": {
+            "title": "{{enableFiltersTitle}}",
+            "description": "{{enableFiltersDescription}}",
+            "type": "boolean",
+            "default": false
+          }
+        }
+      },
+      "shortcutItems": {
+        "title": "{{shortcutItemsTitle}}",
+        "description": "{{shortcutItemsDescription}}",
+        "type": "array",
+        "minItems": 1,
+        "maxItems": 4,
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "title": "{{idTitle}}",
+              "description": "{{idDescription}}",
+              "type": "integer"
+            },
+            "type": {
+              "title": "{{typeTitle}}",
+              "description": "{{typeDescription}}",
+              "type": "integer",
+              "enum": [
+                141,
+                142,
+                133
+              ],
+              "default": 141
+            },
+            "displayName": {
+              "title": "{{displayNameTitle}}",
+              "type": "string"
+            }
+          },
+          "oneOf": [
+            {
+              "required": [
+                "id"
+              ]
+            },
+            {
+              "required": [
+                "type"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "required": [
+      "displayName"
+    ]
+  },
+  "options": {
+    "fields": {
+      "shortcutTheme": {
+        "optionLabels": [
+          "Stone1",
+          "Stone2",
+          "Teal1",
+          "Teal2",
+          "Pink1",
+          "Pink2",
+          "Indigo1",
+          "Indigo2"
+        ]
+      },
+      "type": {
+        "type": "csui-unknown-type",
+        "optionLabels": [
+          "Enterprise",
+          "Personal",
+          "Category"
+        ]
+      },
+      "shortcutItems": {
+        "items": {
+          "fields": {
+            "id": {
+              "type": "otcs_node_picker",
+              "type_control": {
+                "parameters": {
+                  "select_types": []
+                }
+              }
+            },
+            "type": {
+              "type": "select",
+              "optionLabels": [
+                "{{typeEnterpriseVolume}}",
+                "{{typePersonalVolume}}",
+                "{{typeCategoryVolume}}"
+              ]
+            }
+          },
+          "type": "csui-unknown-type"
+        }
+      }
+    }
+  }
+}

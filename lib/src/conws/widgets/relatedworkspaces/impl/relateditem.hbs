@@ -1,0 +1,84 @@
+<div class="conws-relateditem-action-area">
+  <a class="conws-nostyle" href="{{defaultActionUrl}}">
+    <div class="conws-relateditem-border">
+      <div class="conws-relateditem-top">
+        <div class="conws-title conws-left">
+          {{#if title.value}}
+            <span class="conws-value">
+              <span class="conws-previewpane-default-position">{{title.value}}</span>
+            </span>
+            {{#if title.label}}
+              
+              <div class="conws-spacer"></div>
+            {{/if}}
+          {{/if}}
+          {{#if title.label}}
+            <span class="conws-label">{{title.label}}</span>
+          {{/if}}
+          {{#if description.value}}
+            
+            <div class="conws-description-spacer"></div>
+          {{/if}}
+        </div>
+
+        {{#if topRight}}
+          <div class="conws-right">
+            {{#if topRight.value}}
+              <span class="conws-value">{{topRight.value}}</span>
+              {{#if topRight.label}}
+                
+                <div class="conws-spacer"></div>
+              {{/if}}
+            {{/if}}
+            {{#if topRight.label}}
+              <span class="conws-label">{{topRight.label}}</span>
+            {{/if}}
+          </div>
+        {{/if}}
+      </div>
+
+      <div class="conws-relateditem-center">
+        {{#if description.value}}
+          <div class="conws-body">{{description.value}}</div>
+        {{/if}}
+      </div>
+
+      <div class="conws-relateditem-bottom">
+        {{#if bottomLeft}}
+          <div class="conws-left">
+            {{#if bottomLeft.label}}
+              <span class="conws-label">{{bottomLeft.label}}</span>
+              {{#if bottomLeft.value}}
+                
+                <div class="conws-spacer"></div>
+              {{/if}}
+            {{/if}}
+            {{#if bottomLeft.value}}
+              <span class="conws-value">{{bottomLeft.value}}</span>
+            {{/if}}
+          </div>
+        {{/if}}
+        {{#if bottomRight}}
+          <div class="conws-right">
+            {{#if bottomRight.label}}
+              <span class="conws-label">{{bottomRight.label}}</span>
+              {{#if bottomRight.value}}
+                
+                <div class="conws-spacer"></div>
+              {{/if}}
+            {{/if}}
+            {{#if bottomRight.value}}
+              <span class="conws-value">{{bottomRight.value}}</span>
+            {{/if}}
+          </div>
+        {{/if}}
+      </div>
+    </div>
+  </a>
+</div>
+
+{{#if notLastItem}}
+  <div class="conws-relateditem-divider"></div>
+{{/if}}
+
+<!-- Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. -->

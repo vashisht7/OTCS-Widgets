@@ -1,0 +1,7 @@
+{
+  "generator-csui-extension": {
+    "projectName": "otcssamples",
+    "projectDescription": "CS UI greetings extension module",
+    "modulePrefix": "otcss"
+  }
+}

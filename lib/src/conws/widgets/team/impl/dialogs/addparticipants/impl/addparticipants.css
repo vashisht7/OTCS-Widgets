@@ -1,0 +1,114 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .conws-addparticipants .conws-modal-dialog .binf-modal-content {
+  height: calc(100vh - 205px);
+  max-height: 730px;
+  min-height: 320px;
+}
+
+.binf-widgets .conws-addparticipants {
+  top: 4rem;
+}
+
+.conws-addparticipants .binf-modal-header {
+  height: 7.0rem;
+  padding: 0 15px;
+  border-bottom: 1px solid #cccccc;
+}
+
+.conws-addparticipants .binf-modal-header,
+.conws-addparticipants .binf-modal-footer {
+  background-color: #f5f5f5;
+}
+
+.conws-addparticipants .binf-modal-title {
+  height: 3.0rem;
+}
+
+.conws-addparticipants .binf-modal-title:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.conws-addparticipants .conws-participant .esoc-user-profile-pic-container img,
+.conws-addparticipants .conws-participant .esoc-user-profile-pic-container span {
+  height: 2rem;
+  width: 2rem;
+}
+
+.conws-addparticipants .conws-addparticipants-search {
+  width: 100%
+}
+
+.conws-addparticipants .conws-addparticipants-userpicker,
+.conws-addparticipants .conws-addparticipants-rolepicker {
+  float: left;
+  width: calc(50% - 3.75rem);
+}
+
+.conws-addparticipants .conws-addparticipants-userpicker {
+  height: 3.0rem;
+  margin-right: 3.75rem;
+}
+
+.conws-addparticipants .conws-addparticipants-rolepicker {
+  height: 2.0rem;
+  margin-right: 3.75rem;
+}
+
+.conws-addparticipants .conws-addparticipants-rolepicker-help {
+  font-size: 0.75rem;
+}
+
+.conws-addparticipants .conws-addparticipants-userpicker .cs-search,
+.conws-addparticipants .conws-addparticipants-rolepicker .cs-search {
+  outline: 0;
+  color: #333333;
+  box-sizing: border-box;
+  border: 1px solid #a7a9ac;
+  border-radius: 3px;
+  padding: 0 0.5rem;
+  height: 1.75rem !important;
+  font-size: 0.75rem !important;
+}
+
+.conws-addparticipants .conws-addparticipants-userpicker .cs-search {
+  width: calc(100% - 2.25rem);
+}
+
+.conws-addparticipants .conws-addparticipants-userpicker .cs-search-clear {
+  top: 0.375rem;
+}
+
+.conws-addparticipants .conws-addparticipants-userpicker .cs-search-icon {
+  width: 1em;
+  height: 1em;
+  top: 0.375em;
+}
+
+.conws-addparticipants .conws-addparticipants-userpicker .scroll-container {
+  top: 1.75rem;
+}
+
+.conws-addparticipants .binf-modal-body {
+  position: relative;
+  margin-right: 0px !important;
+  background-color: #ffffff;
+  padding: 0;
+  height: calc(100% - 176px);
+}
+
+.conws-addparticipants .conws-addparticipants-members {
+  background-color: #ffffff;
+  width: 100%;
+  
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.conws-addparticipants .binf-list-group {
+  margin: 0;
+}

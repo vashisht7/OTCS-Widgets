@@ -1,0 +1,22 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+@media (min-width: 1200px) {
+
+    .conws-feeds .binf-media-heading,
+    .conws-feeds .media-comment {
+        display: inline;
+    }
+
+    .conws-feeds .media-comment {
+        margin-left: 20px;
+    }
+
+    .conws-feeds .cs-date {
+        display: block;
+        margin-top: 5px;
+    }
+}
+
+.binf-widgets .binf-media-body{
+    padding-top: 8px;
+}

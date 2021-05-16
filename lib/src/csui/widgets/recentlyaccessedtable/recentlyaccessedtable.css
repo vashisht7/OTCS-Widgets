@@ -1,0 +1,50 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.csui-recently-accessed-table-view {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+
+.binf-widgets .csui-recentlyaccessedtable {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex: 1 1 auto;
+  overflow: auto;
+}
+
+
+.binf-widgets .binf-modal-dialog .csui-recentlyaccessedtable {
+  height: calc(100vh - 183px);
+  width: 100%;
+  position: static;
+}
+
+.binf-widgets .csui-recentlyaccessedtable > #tableviewRA {
+  display: flex;
+  flex: 1 1 100%;
+  min-height: 90px;
+}
+
+.binf-widgets .csui-recentlyaccessedtable > #paginationviewRA {
+  flex: 0 0 auto;
+}
+
+.binf-widgets .csui-recentlyaccessedtable > #paginationviewRA .binf-pagination {
+  margin: 0;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .binf-widgets .csui-recentlyaccessedtable {
+    height: calc(100vh - 315px);
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  .binf-widgets .csui-recentlyaccessedtable {
+    height: calc(100vh - 315px);
+  }
+}

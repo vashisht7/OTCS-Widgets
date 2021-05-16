@@ -1,0 +1,302 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .binf-navbar-right {
+  padding-right: 0;
+}
+
+.binf-widgets .binf-nav > div {
+  position: relative;
+  display: block;
+  float: left;
+}
+
+.binf-navbar .binf-navbar-nav > div:not(.csui-help) > a {
+  padding-top: 7px;
+  padding-bottom: 10px;
+}
+
+.binf-navbar .binf-navbar-nav > div:not(.csui-help) > .breadcrumbs-handle > a {
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  height: 60px;
+}
+
+.binf-widgets .binf-nav > div > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  line-height: 26px;
+  color: #777777;
+}
+
+.binf-nav > div > * > a.nav-profile {
+  display: inline-block;
+  height: 60px;
+  float: left;
+  padding: 7px 10px 6px;
+  margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .binf-widgets .binf-navbar-left {
+    float: left;
+  }
+
+  .binf-widgets .binf-navbar-right {
+    float: right;
+    margin-right: -15px;
+  }
+
+  .binf-navbar-left > li, .binf-navbar-right > li {
+    float: left;
+  }
+
+  .csui-global-message.csui-progresspanel {
+    min-width: 100%;
+    width: 100%;
+  }
+
+  .csui-progressrow .csui-names-progress {
+    width: 80%;
+    padding: 0;
+  }
+
+  .csui-progressrow .csui-names {
+    width: 80%;
+  }
+
+  .csui-progressrow .csui-progress {
+    width: 15%;
+  }
+
+  .csui-progressbar .csui-progress-static .csui-progress-textbar {
+    margin: 0;
+  }
+
+  .csui-progressrow .csui-error {
+    margin-left: 2em;
+  }
+
+  .csui-error .csui-progressrow .csui-names-progress {
+    width: 100%;
+    padding: 0;
+  }
+
+  .csui-error .csui-progressrow .csui-states-actions {
+    padding: 0;
+  }
+
+  .binf-navbar-nav .binf-open .binf-dropdown-menu {
+    right: 0;
+    left: auto;
+    position: absolute;
+    float: left;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, .15);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .csui-error .csui-progressrow .csui-progresscell {
+    padding-left: 0.1em;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .binf-navbar .binf-navbar-nav .tile-breadcrumb {
+    display: none;
+  }
+}
+
+.binf-navbar .csui-navbar-message {
+  float: none;
+  overflow: hidden;
+}
+
+
+.binf-navbar .csui-search-box .csui-input[style*="display: none"] ~ .icon-search {
+  display: block;
+  position: initial;
+  margin-top: 6px;
+  margin-right: -20px;
+}
+
+.binf-widgets .csui-navbar .binf-nav .csui-help a:focus {
+    outline: none;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-left: 6px;
+    margin-right: 6px;
+    padding-top: 6px;
+    border: 1px solid #e1e1e1;
+    border-radius: 50%;
+}
+
+.binf-widgets .csui-navbar .binf-nav .csui-home-item a.csui-home:focus {
+    outline: none;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-left: 6px;
+    margin-right: 6px;
+    padding-top: 6px;
+    border: 1px solid #e1e1e1;
+    border-radius: 50%;
+}
+
+.binf-widgets .csui-navbar .binf-nav .tile-breadcrumb .breadcrumbs-handle {
+    padding-left: 9px;
+    padding-right: 9px;
+ }
+
+.binf-widgets .csui-navbar .binf-nav .tile-breadcrumb .breadcrumbs-handle:focus {
+    outline: none;
+    padding-left: 8px;
+    padding-right: 8px;
+    border: 1px solid #e1e1e1;
+    border-radius: 50%;
+}
+
+.binf-widgets .csui-navbar .binf-nav .tile-breadcrumb .breadcrumbs-handle:hover {
+    border: none;
+}
+
+.binf-widgets .csui-navbar .binf-nav .csui-search .csui-search-box a.csui-header-search-icon:focus {
+  outline: none;
+  border: 1px solid #e1e1e1;
+  border-radius: 50%;
+}
+
+.binf-widgets .csui-navbar .binf-nav .csui-search .csui-search-box .search-bar .search-bar-content .csui-search-box-slice-popover:focus {
+  outline: 1px dotted #e1e1e1;
+}
+
+.binf-widgets .csui-navbar .binf-nav .csui-search .csui-search-box .search-bar .search-bar-content .csui-clearer:focus {
+  outline: 1px dotted #e1e1e1;
+  outline-offset: 2px;
+}
+
+.binf-widgets .csui-navbar .binf-nav .csui-favorites .csui-favorites-view div.csui-favorites-icon-container:focus {
+    outline: none;
+    padding-top: 7px;
+    padding-left: 7px;
+    border: 1px solid #e1e1e1;
+    border-radius: 50%;
+}
+
+.binf-widgets .csui-navbar .binf-nav .csui-profile a.nav-profile:focus {
+    outline: none;
+    padding-left: 6px;
+    padding-right: 7px;
+    margin-left: 9px;
+    margin-right: 8px;
+    padding-top: 6px;
+    border: 1px solid #e1e1e1;
+    border-radius: 50%;
+    z-index: 1001;
+}
+
+.binf-widgets .csui-navbar .binf-nav .csui-profile a.nav-profile[aria-expanded=true] {
+    outline: none;
+    border: none;
+    border-radius: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 7px;
+    background-color: #ffffff;
+}
+
+.binf-navbar .csui-search-box .csui-input {
+  width: 100%;
+}
+
+.binf-widgets .csui-global-message {
+  position: absolute;
+}
+
+.csui-navbar.binf-navbar {
+  z-index: 3;
+}
+
+
+.binf-widgets .csui-navbar.binf-navbar {
+  background: transparent;
+  margin: 0;
+  border: 1px solid transparent;
+}
+
+.binf-navbar .binf-navbar-nav {
+  margin: 0;
+}
+
+.binf-navbar .binf-navbar-nav a.csui-home,
+.binf-navbar .binf-navbar-nav .tile-breadcrumb,
+.binf-navbar .csui-search {
+  height: 60px;
+}
+
+.binf-widgets div:focus {
+  outline: 1px dotted #333333;
+  outline-offset: -1px;
+}
+
+.binf-navbar .binf-navbar-nav > li:not(.csui-help) > a,
+.binf-navbar .binf-navbar-nav > li:not(.csui-help) > .breadcrumbs-handle > a {
+  padding-top: 7px;
+  padding-bottom: 10px;
+}
+
+.binf-navbar .binf-navbar-nav > li:not(.csui-help) > .breadcrumbs-handle > a {
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 60px;
+}
+
+.binf-widgets .binf-navbar-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.binf-navbar .binf-navbar-nav.binf-navbar-right > li.csui-search {
+  flex-grow: 1;
+  flex-basis: auto;
+}
+
+
+.binf-navbar-brand.binf-collapse.csui-logo-left,
+.binf-navbar-brand.binf-collapse.csui-logo-right {
+  display: block;
+  visibility: visible;
+}
+
+
+.binf-navbar .binf-navbar-brand.csui-logo-left .csui-logo,
+.binf-navbar .binf-navbar-brand.csui-logo-right .csui-logo {
+  position: absolute;
+  top: 0;
+}
+
+.binf-navbar .binf-navbar-brand.csui-logo-left .csui-logo {
+  left: 33px;
+}
+
+.binf-navbar .binf-navbar-brand.csui-logo-right .csui-logo {
+  right: 33px;
+}
+
+.binf-widgets .binf-btn.btn-hide-breadcrumb:active,
+.binf-widgets .binf-btn.btn-show-breadcrumb:active {
+  padding: 4px 10px;
+  border-width: 2px;
+}
+
+.binf-widgets .binf-btn.btn-hide-breadcrumb,
+.binf-widgets .binf-btn.btn-show-breadcrumb {
+  padding: 5px 11px;
+}

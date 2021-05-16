@@ -1,0 +1,540 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .wfstatus-progress-view {
+  height: calc(100vh - 12rem);
+  opacity: 0;
+}
+
+.wfstatusitem-progress-panel .wfstatusitem-tabpanel {
+  float: right;
+}
+
+.binf-widgets .wfstatusitem-body {
+  border-right: 1px solid #eaebec;
+  height: 42rem;
+  width: calc(100% - 17rem);
+  height: calc(100vh - 12rem);
+}
+
+.binf-widgets .wfstatusitem-tabpanel {
+  background-color: #ffffff;
+  width: 17rem;
+  padding: 0 0 0 0;
+  height: calc(100vh - 15rem);
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.binf-widgets .wfstatusitem-tabpanel .tab-links {
+  border-bottom: 0.062rem #e2e2e2;
+  background-color: #e2e2e2;
+}
+
+.binf-widgets .wfstatusitem-tabpanel .tab-links .tab-links-bar {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  width: calc(100% - 1.5rem);
+}
+
+.binf-widgets .wfstatusitem-tabpanel .tab-links .tab-links-bar.with-left-toolbar {
+  width: calc(100% - 1.5rem - 1.5rem);
+}
+
+.binf-widgets .wfstatusitem-tabpanel .tab-links .tab-links-bar ul.binf-nav {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 500%;
+}
+
+.binf-widgets .wfstatusitem-tabpanel .tab-links .tab-links-bar .fadeout {
+  position: absolute;
+  right: 0rem;
+  width: 35px;
+  height: 3.75rem;
+  z-index: 9;
+  pointer-events: none;
+  display: inline-block;
+}
+
+.binf-widgets .wfstatusitem-tabpanel .tab-links .left-toolbar {
+  float: left;
+  display: inline-block;
+  height: 4rem;
+}
+
+.binf-widgets .wfstatusitem-tabpanel .tab-links .right-toolbar {
+  height: 4rem;
+  display: inline-block;
+  position: absolute;
+}
+.binf-widgets .wfstatusitem-tabpanel .tab-links .goto_previous_div .goto_previous_page,
+.binf-widgets .wfstatusitem-tabpanel .tab-links .goto_next_div .goto_next_page,
+.binf-widgets .wfstatusitem-tabpanel .tab-links .add {
+  display: inline-block;
+  margin-top: 1rem;
+  width: 14px;
+  height: 14px;
+}
+
+.binf-widgets .wfstatusitem-tabpanel .tab-links .goto_previous_div {
+  z-index: 2;
+  height: 4rem;
+}
+
+.binf-widgets .wfstatusitem-tabpanel .tab-links .goto_previous_div .goto_previous_page {
+  margin-left: .5rem;
+}
+
+.binf-widgets .wfstatusitem-tabpanel .tab-links .goto_previous_div:hover,
+.binf-widgets .wfstatusitem-tabpanel .tab-links .goto_previous_div:focus,
+.binf-widgets .wfstatusitem-tabpanel .tab-links .goto_previous_div .goto_previous_page:hover,
+.binf-widgets .wfstatusitem-tabpanel .tab-links .goto_previous_div .goto_previous_page:focus,
+.binf-widgets .wfstatusitem-tabpanel .tab-links .goto_next_div:hover,
+.binf-widgets .wfstatusitem-tabpanel .tab-links .goto_next_div:focus,
+.binf-widgets .wfstatusitem-tabpanel .tab-links .goto_next_div .goto_next_page:hover,
+.binf-widgets .wfstatusitem-tabpanel .tab-links .goto_next_div .goto_next_page:focus,
+.binf-widgets .wfstatusitem-tabpanel .tab-links .add:hover,
+.binf-widgets .wfstatusitem-tabpanel .tab-links .add:focus {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.binf-widgets .wfstatusitem-tabpanel .tab-links .goto_next_div {
+  height: 4rem;
+  z-index: 2;
+}
+
+.binf-widgets .wfstatusitem-tabpanel .tab-links .goto_next_div .goto_next_page {
+  margin-left: .5rem;
+}
+
+.binf-widgets .wfstatusitem-tabpanel .binf-nav-pills > li.binf-active > a,
+.binf-widgets .wfstatusitem-tabpanel .binf-nav-pills > li.binf-active > a:hover,
+.binf-widgets .wfstatusitem-tabpanel .binf-nav-pills > li.binf-active > a:focus
+.binf-widgets .wfstatusitem-tabpanel .wfstatusitem-tabpanel li.binf-active {
+  background-color: #e2e2e2;
+  color: #000000;
+  font-weight: bold;
+  border-bottom: 0.25rem solid #232e72;
+  padding: 1rem 0 0 0;
+  font-size: 0.875em;
+}
+
+.binf-widgets .wfstatusitem-tabpanel .binf-nav-pills > li.binf-active > span {
+  font-weight: bold
+}
+
+.binf-widgets .wfstatusitem-attachments {
+  color: #000000;
+}
+
+.binf-widgets .wfstatusitem-action-hide {
+ height: calc(100vh - 15rem);
+}
+
+.binf-widgets .wfstatusitem-action-show {
+  height: calc(100vh - 18rem);
+}
+
+.binf-widgets .wfstatusitem-attachments-content {
+  color: #000000;
+}
+
+.binf-widgets .wfstatus-progress-view-dialog-back {
+  cursor: pointer;
+}
+
+.wfstatusitem-tabpanel .wfstatusitem-details-rec {
+  line-height: 1.5rem;
+  display: grid;
+  font-size: 0.875rem;
+  padding-top: 1rem;
+  width: 100%;
+  padding: 1rem 1rem 0 3rem;
+}
+
+.wfstatusitem-tabpanel .wfstatusitem-details-rec .wfstatusitem-details-label {
+  display: inline-block;
+  width: 100%;
+  color: #757575;
+}
+
+.wfstatusitem-tabpanel .wfstatusitem-details-rec .wfstatusitem-details-field {
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 0.875rem;
+}
+
+.wfstatusitem-tabpanel .wfstatusitem-details-rec .wfstatusitem-details-value {
+  color: #000000;
+}
+
+.wfstatusitem-tabpanel .wfstatusitem-userprofile-img {
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  margin-right: 0.125rem;
+  margin-top: -0.125rem;
+  vertical-align: middle;
+}
+
+.wfstatusitem-tabpanel .wfstatusitem-details-rec .wfstatusitem-userprofile-default-avatar {
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  margin-right: 0.125rem;
+  margin-top: 0.125rem;
+  vertical-align: middle;
+  display: inline-flex;
+}
+
+.wfstatusitem-body .wfstatusitem-progressbar {
+  font-size: 1rem;
+  z-index: 1;
+}
+
+.wfstatusitem-progressbar .wfstatusitem-date {
+  width: 21.4rem;
+  color: #333333;
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+  font-size: 1.125rem;
+}
+
+.wfstatusitem-progressbar .wfstatusitem-step-row {
+  display: inline-flex;
+}
+
+.wfstatusitem-progressbar .wfstatusitem-step-left-label {
+  width: 7.875rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.wfstatusitem-progressbar .wfstatusitem-stopped-label {
+  font-weight: bold;
+}
+
+.wfstatusitem-progressbar .wfstatusitem-step-circle {
+  width: 0.875rem;
+  height: 0.875rem;
+  background-color: #71747b;
+  border-radius: 1rem;
+  margin-right: 0.75rem;
+}
+
+.wfstatusitem-progressbar .wfstatusitem-step-circle.wfstatusitem-link, .wfstatusitem-next-step-label,
+.wfstatusitem-completed-step-label, .wfstatusitem-stopped-step-label, .wfstatusitem-current-step-label {
+  background-repeat: no-repeat;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.wfstatusitem-progressbar .wfstatusitem-step-circle.wfstatusitem-completed-step-icon {
+  background-image: url(image/icons/timeline_complete56.svg);
+}
+
+.wfstatusitem-progressbar .wfstatusitem-step-circle.wfstatusitem-stopped-step-icon {
+  background-image: url(image/icons/status_stopped24_new.svg);
+}
+
+.wfstatusitem-progressbar .wfstatusitem-step-circle.wfstatusitem-current-step-icon {
+  background-image: url(image/icons/timeline_current56.svg);
+}
+
+.wfstatusitem-progressbar .wfstatusitem-step-circle.wfstatusitem-next-step-icon {
+  background-image: url(image/icons/status_future18_dis.svg);
+}
+
+.wfstatusitem-progressbar .wfstatusitem-step-right-label {
+  width: 8rem;
+}
+
+.wfstatusitem-progressbar .wfstatusitem-bar {
+  width: 0.25rem;
+  height: 6rem;
+  background-color: #a9aeb9;
+  margin-left: 8.2rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.wfstatusitem-step-circle.wfstatusitem-focus-icon {
+  width: 5rem;
+  height: 4rem;
+  margin-left: -1.563rem;
+}
+
+.wfstatusitem-step-right-label.wfstatusitem-focus-arrow {
+  background: #cbd3d9;
+  vertical-align: baseline;
+  padding: 0 0.5625rem 0 1.3rem;
+  top: 0.5625rem;
+  left: -2.438rem;
+  z-index: -1;
+  height: 3rem;
+  color: #2e3d98;
+  font-weight: bold;
+  font-style: inherit;
+  font-size: 1rem;
+  position: relative;
+  border: 1px solid #cbd3d9;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.wfstatusitem-step-right-label.wfstatusitem-focus-arrow:after, .wfstatusitem-step-right-label.wfstatusitem-focus-arrow:before {
+  left: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  left: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.wfstatusitem-step-right-label.wfstatusitem-focus-arrow:after {
+  border-width: 1.438rem;
+  border-left-color: #cbd3d9;
+  border-top-width: 1.5rem;
+  margin-top: -1.5rem;
+}
+
+.wfstatusitem-step-right-label.wfstatusitem-focus-arrow:before {
+  border-width: 1.6rem;
+  border-left-color: #ffffff;
+  border-top-width: 1.75rem;
+  border-le-width: 1.75rem;
+  border-left-width: 1.56rem;
+  margin-top: -1.75rem;
+}
+
+.wfstatusitem-body .wfstatusitem-step-cards {
+  position: relative;
+  top: 11.7rem;
+  margin-left: 0.45rem;
+  overflow: hidden;
+}
+
+.wfstatusitem-body .wfstatus-usercard-layout .wfstatus-usercard .wfstatus-mini-profile-user {
+  background-color: #f5f5f5;
+  border-left: 0.34em solid #2e3d98;
+  height: 8.69rem;
+  border-bottom: 1px solid #cbd3d9;
+}
+
+.wfstatusitem-body .wfstatus-usercard-layout .wfstatus-usercard {
+  position: relative;
+}
+
+.wfstatusitem-body .wfstatus-usercard-layout .wfstatus-usercard:after, .wfstatus-usercard-layout .wfstatus-usercard:before {
+  right: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.wfstatusitem-body .wfstatus-usercard-layout .wfstatus-usercard:after {
+  border-right-color: #2e3d98;
+  border-width: 0.687rem;
+  margin-top: 3.56rem;
+}
+
+.wfstatusitem-body .wfstatusitem-content {
+  display: inline-flex;
+  margin-left: 2rem;
+  height: calc(100vh - 13rem);
+}
+
+.wfstatusitem-content .wfstatusitem-progressbar {
+  width: 16.63rem;
+}
+
+.binf-widgets .wfstatusitem-tabpanel .binf-nav-pills > li > a {
+  border-radius: 0;
+  margin-left: 1rem;
+  font-size: 0.875em;
+  outline: 0;
+  padding: 1rem 0 0;
+}
+
+.binf-widgets .wfstatusitem-tabpanel .binf-nav-pills > li {
+  display: flex;
+}
+
+.binf-widgets .wfstatusitem-tabpanel .binf-nav-pills > li > span {
+  font-size: 0.875em;
+  border-radius: 0.5em;
+  background-color: #cbd3d9;
+  margin-left: 0.5rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  padding: 0.25rem 0.25rem 0 0.25rem;
+}
+
+.binf-widgets .wfstatusitem-tabpanel .binf-nav-pills > li > a:hover {
+  color: #333333;
+  border-bottom: 0.25rem solid #0084ce;
+  font-weight: normal;
+  background-color: #e2e2e2
+}
+
+.binf-widgets .wfstatusitem-tabpanel .binf-nav-pills > li > a:active {
+  color: #333333;
+  border-bottom: 0.25rem solid #111b58;
+  font-weight: normal;
+  background-color: #e2e2e2
+}
+
+.wfstatusitem-tabpanel .binf-tab-content {
+  background-color: #f5f5f5;
+}
+
+.wfstatusitem-tabpanel .wfstatusitem-details {
+  padding-top: 0.5rem;
+}
+
+.binf-widgets .wfstatusitem-attachments .workitem-attachments-description {
+  padding-top: 0.375rem;
+}
+
+.binf-widgets .wfstatusitem-attachments .workitem-attachments-item {
+  padding: 0.25rem 1rem 0.375rem 1rem;
+  height: 3.75rem;
+  display: flex;
+  border-bottom: 1px solid #cbd3d9
+}
+
+.binf-widgets .wfstatusitem-step-row-main {
+  display: inline-flex;
+}
+
+.binf-widgets .wfstatusitem-tabpanel .workitem-attachments-item .workitem-attachment-name {
+  font-weight: bold;
+}
+
+.binf-widgets .wfstatusitem-attachments .csui-icon-group .csui-icon,
+.binf-widgets .wfstatusitem-attachments .csui-icon-group {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.wfstatusitem-attachments span.workitem-attachments-description-ro {
+  cursor: default;
+  color: #666666;
+  background-color: #f5f5f5;
+}
+
+.binf-widgets .wfstatusitem-attachments .workitem-attachments-item:hover {
+  box-shadow: 0 0 0 0;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .binf-widgets .cs-dialog.wfstatus-progress-view-dialog .binf-modal-lg .binf-modal-body {
+    height: calc(100vh - 12rem);
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  .binf-widgets .cs-dialog.wfstatus-progress-view-dialog .binf-modal-lg .binf-modal-body {
+    height: calc(100vh - 12rem);
+  }
+}
+
+.binf-widgets .cs-dialog.wfstatus-progress-view-dialog {
+  height: 100vh;
+}
+
+.binf-widgets .wfstatus-progress-view .binf-modal-footer {
+  width: 17rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+}
+
+_:-ms-fullscreen, :root .binf-widgets .wfstatusitem-step-row-main {
+  display: table;
+}
+
+_:-ms-input-placeholder, :root .wfstatusitem-progressbar .wfstatusitem-step-right-label {
+  width: 8.5rem;
+}
+
+_:-ms-fullscreen, :root .wfstatusitem-progress-panel .wfstatusitem-step {
+  display: table-cell;
+}
+
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+  .wfstatusitem-step-circle.wfstatusitem-focus-icon {
+    margin-left: -2.0625rem;
+    margin-top: -1.35rem;
+    width: 5rem;
+    height: 4rem;
+  }
+}
+
+_:-ms-fullscreen, :root .wfstatusitem-step-right-label.wfstatusitem-focus-arrow {
+  background: #cbd3d9;
+  vertical-align: baseline;
+  padding: 0 0.5625rem 0 1.3rem;
+  top: 0.5rem;
+  left: -2.438rem;
+  z-index: -1;
+  height: 3rem;
+  color: #2e3d98;
+  font-weight: bold;
+  font-style: inherit;
+  font-size: 1rem;
+  position: relative;
+  border: 1px solid #cbd3d9;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+_:-ms-fullscreen, :root .wfstatusitem-step-right-label.wfstatusitem-next-step-label.wfstatusitem-focus-arrow,
+.wfstatusitem-step-right-label.wfstatusitem-completed-step-label.wfstatusitem-focus-arrow,
+.wfstatusitem-step-right-label.wfstatusitem-stopped-step-label.wfstatusitem-focus-arrow {
+  background: #cbd3d9;
+  vertical-align: baseline;
+  padding: 0 0.5625rem 0 1.3rem;
+  top: -0.4375rem;
+  left: -2.438rem;
+  z-index: -1;
+  height: 3rem;
+  color: #2e3d98;
+  font-weight: bold;
+  font-style: inherit;
+  font-size: 1rem;
+  position: relative;
+  border: 1px solid #cbd3d9;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+span.wfstatusitem-profile-textname {
+  vertical-align : text-top;
+}

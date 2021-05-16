@@ -1,0 +1,124 @@
+{
+  "links": {
+    "data": {
+      "self": {
+        "body": "",
+        "content_type": "",
+        "href": "\/api\/v2\/nodes\/45807?actions=addcategory&actions=addversion&actions=open&actions=copy&actions=delete&actions=download&actions=edit&actions=editactivex&actions=rename&actions=move&actions=permissions&actions=properties&actions=reserve&actions=unreserve&actions=collectioncancollect&actions=removefromcollection&expand=properties{original_id}&fields=properties",
+        "method": "GET",
+        "name": ""
+      }
+    }
+  },
+  "results": {
+    "actions": {
+      "data": {
+        "addcategory": {
+          "body": "",
+          "content_type": "",
+          "form_href": "",
+          "href": "\/api\/v2\/nodes\/45807\/categories",
+          "method": "POST",
+          "name": "Add Category"
+        },
+        "copy": {
+          "body": "",
+          "content_type": "",
+          "form_href": "\/api\/v2\/forms\/nodes\/copy?id=45807",
+          "href": "\/api\/v2\/nodes",
+          "method": "POST",
+          "name": "Copy"
+        },
+        "delete": {
+          "body": "",
+          "content_type": "",
+          "form_href": "",
+          "href": "\/api\/v2\/nodes\/45807",
+          "method": "DELETE",
+          "name": "Delete"
+        },
+        "move": {
+          "body": "",
+          "content_type": "",
+          "form_href": "\/api\/v2\/forms\/nodes\/move?id=45807",
+          "href": "\/api\/v2\/nodes\/45807",
+          "method": "PUT",
+          "name": "Move"
+        },
+        "open": {
+          "body": "",
+          "content_type": "",
+          "form_href": "",
+          "href": "\/api\/v2\/nodes\/45807\/nodes",
+          "method": "GET",
+          "name": "Open"
+        },
+        "properties": {
+          "body": "",
+          "content_type": "",
+          "form_href": "",
+          "href": "\/api\/v2\/nodes\/45807",
+          "method": "GET",
+          "name": "Properties"
+        },
+        "rename": {
+          "body": "",
+          "content_type": "",
+          "form_href": "\/api\/v2\/forms\/nodes\/rename?id=45807",
+          "href": "\/api\/v2\/nodes\/45807",
+          "method": "PUT",
+          "name": "Rename"
+        }
+      },
+      "map": {
+        "default_action": "",
+        "more": ["properties"]
+      },
+      "order": ["open", "addcategory", "rename", "copy", "move", "delete"]
+    },
+    "data": {
+      "properties": {
+        "container": true,
+        "container_size": 7,
+        "create_date": "2018-03-02T09:47:16",
+        "create_user_id": 25873,
+        "description": "",
+        "description_multilingual": {
+          "ar": "",
+          "en": ""
+        },
+        "external_create_date": null,
+        "external_identity": "",
+        "external_identity_type": "",
+        "external_modify_date": null,
+        "external_source": "",
+        "favorite": true,
+        "id": 45807,
+        "mime_type": null,
+        "modify_date": "2018-04-12T09:42:04",
+        "modify_user_id": 1000,
+        "name": "Customer 0000001000",
+        "name_multilingual": {
+          "ar": "",
+          "en": "Customer 0000001000"
+        },
+        "owner": "Admin",
+        "owner_group_id": 1001,
+        "owner_user_id": 1000,
+        "parent_id": 25532,
+        "permissions_model": "advanced",
+        "reserved": false,
+        "reserved_date": null,
+        "reserved_shared_collaboration": false,
+        "reserved_user_id": 0,
+        "rm_enabled": false,
+        "size": 7,
+        "size_formatted": "7 Items",
+        "type": 848,
+        "type_name": "Business Workspace",
+        "versions_control_advanced": false,
+        "volume_id": -45807
+      }
+    }
+  }
+}

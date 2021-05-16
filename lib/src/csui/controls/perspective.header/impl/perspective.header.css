@@ -1,0 +1,53 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .cs-perspective-panel .csui-perspective-toolbar-container {
+  width:100%;
+  position: relative;
+  height: 100%;
+}
+
+.csui-perspective-toolbar-container .cs-title-inner-container {
+  margin: auto;
+  height: 3em;
+  display: flex;
+  align-items: center;
+}
+
+.binf-widgets .csui-perspective-toolbar-container .cs-back-button-container {
+  display: inline-flex;
+  position: absolute;
+  height: 100%;
+  width: 36px;
+}
+
+.csui-perspective-toolbar .cs-go-back {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  margin: auto;
+}
+
+.binf-widgets .csui-perspective-toolbar-container .title {
+  font-size: 1.65em;
+  padding-left: 8px;
+  margin: auto;
+}
+
+.csui-perspective-toolbar .title-icon {
+  font-size: 2em;
+  float: left;
+  height: 1.5em;
+}
+
+.binf-widgets .cs-perspective-panel .csui-perspective-toolbar {
+  flex-basis: 3em;
+  background: white;
+}
+
+.binf-widgets .cs-perspective-panel .binf-modal-dialog .csui-perspective-toolbar {
+  display: none;
+}
+
+.binf-widgets .cs-perspective-panel .cs-title-container {
+  display: flex;
+}

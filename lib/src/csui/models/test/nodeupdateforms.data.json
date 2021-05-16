@@ -1,0 +1,24 @@
+{
+  "forms": [
+    {
+      "data": {
+        "1": {
+        }
+      },
+      "schema": {
+        "properties": {
+          "1": {
+            "title": "Test"
+          }
+        }
+      },
+      "options": {
+        "fields": {
+          "1": {
+          }
+        }  
+      },
+      "role_name": "categories"
+    }
+  ]
+}

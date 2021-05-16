@@ -1,0 +1,42 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .csui-pman-widget {
+  height: 100%;
+  background: #ffffff;
+}
+
+.binf-widgets .binf-has-error .csui-pman-widget {
+  border: 1px solid #df3324;
+}
+
+.binf-widgets .csui-pman-widget-msg {
+  position: absolute;
+  top: calc(50% - 57px);
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #666666;
+  line-height: 20px;
+  font-size: 18px !important;
+}
+
+.binf-widgets .csui-pman-widget .tile-header {
+  padding: 0 12px;
+  background-color: #DCE4E8;
+  height: 48px;
+  border: 0 none;
+}
+
+.binf-widgets .csui-pman-widget .tile-header .tile-title {
+  float: left;
+  margin: 0;
+  display: table;
+  width: 100%;
+}
+
+.binf-widgets .csui-pman-widget .tile-title .csui-heading {
+  line-height: 32px;
+  vertical-align: middle;
+  color: #00639B;
+  font-weight: normal;
+}

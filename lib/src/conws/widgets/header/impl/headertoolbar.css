@@ -1,0 +1,244 @@
+/* Copyright (c) 2016-2017  OpenText Corp. All Rights Reserved. */
+
+.binf-widgets .tab-panel .conws-header-toolbar-extension .binf-dropdown-menu {
+  right: 0;
+  left: auto;
+}
+
+.binf-widgets .conws-header-toolbar .csui-filterToolbar,
+.binf-widgets .conws-header-toolbar .csui-addToolbar,
+.binf-widgets .conws-header-toolbar .csui-leftToolbar,
+.binf-widgets .conws-header-toolbar .csui-otherToolbar,
+.binf-widgets .conws-header-toolbar .csui-toolbar-caption {
+  display: none;
+  width: 0px;
+}
+
+.binf-widgets .conws-header .conws-header-toolbar .conws-rightToolbar,
+.binf-widgets .conws-header .conws-header-toolbar .conws-tabletoolbar {
+  height: 32px;
+}
+
+.binf-widgets .conws-tabletoolbar .csui-toolbar.binf-nav > li > a, .binf-widgets .csui-toolbar.binf-nav > li > .custom-view-region {
+  padding: 0 10px;
+}
+
+.binf-widgets .csui-toolbar.binf-nav > li.conws-header-reminder > .custom-view-region .csui-node-state-followup,
+.binf-widgets .csui-toolbar.binf-nav > li.conws-header-reminder > .custom-view-region .csui-node-state-followup .cs-followup-link {
+  padding: 0;
+}
+
+
+.binf-widgets .conws-header .conws-header-toolbar .conws-rightToolbar {
+  float: left;
+  width: auto;
+}
+
+.binf-widgets .conws-header .conws-header-toolbar .conws-header-dropdown-menu {
+  float: left;
+}
+
+.binf-widgets .tab-panel .conws-header-toolbar-extension .conws-rightToolbar {
+  height: 48px;
+  float: left;
+}
+
+.binf-widgets .tab-panel .conws-header-toolbar-extension .conws-header-dropdown-menu {
+  float: left;
+}
+
+.binf-widgets .conws-header .conws-header-toolbar .conws-delayedActionsToolbar {
+  height: 32px;
+  float: left;
+}
+
+.binf-widgets .conws-header .conws-header-toolbar .csui-more-dropdown-menu .csui-loading-parent-wrapper {
+  display: inline-block;
+}
+
+.binf-widgets .conws-header .conws-header-toolbar .binf-dropdown-menu {
+  right: 0;
+  left: auto;
+}
+
+.binf-widgets .conws-header .conws-header-toolbar .conws-delayedActionsToolbar .tile-nav.binf-nav-pills > li > a {
+  padding: 0;
+}
+
+.binf-widgets .conws-header .conws-header-toolbar .conws-delayedActionsToolbar .tile-nav.binf-nav-pills > li > a:after {
+  content: " ";
+  top: 1px;
+  margin-left: -10px;
+  border-top-width: 0;
+  border-bottom-color: #ffffff;
+}
+
+.binf-widgets .conws-header .conws-header-toolbar > .csui-acc-tab-region {
+  height: 100%;
+  padding: 0;
+  float: right;
+}
+
+.binf-widgets .conws-header-toolbar .conws-tabletoolbar {
+  font-size: 13px;  
+}
+
+.binf-widgets .conws-header .conws-header-toolbar .conws-tabletoolbar {
+  height: 27px;
+  vertical-align: middle;
+  border-bottom: 0px;
+  background-color: inherit;
+  display: none;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.binf-widgets .conws-tabletoolbar.tile-nav .csui-svg-icon {
+  font-size: inherit;
+}
+
+.binf-widgets .cs-collapse .conws-header .conws-header-status-indicators-section {
+  display: inline-flex;
+  float: left;
+}
+
+.binf-widgets .conws-header .conws-header-status-indicators-section .divider-show {
+  width: 0.125em;
+  background-color: #808080;
+  height: 26px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 8px;
+  margin-right: 8px;
+  visibility: inherit;
+}
+
+.binf-widgets .cs-collapse .conws-header .conws-header-toolbar .conws-tabletoolbar {
+  display: inline-block;
+}
+
+.binf-widgets .tab-panel .conws-header-toolbar-extension .conws-tabletoolbar {
+  border-bottom: 0px;
+  background-color: transparent;
+  padding: 0px;
+}
+
+.binf-widgets .tab-panel .conws-header-toolbar-extension .conws-delayedActionsToolbar {
+  height: 48px;
+  float: left;
+}
+
+.binf-widgets .tab-panel .conws-header-toolbar-extension .conws-delayedActionsToolbar .icon-toolbar-more {
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  width: 32px;
+  height: 32px;
+}
+
+.binf-widgets .tab-panel .conws-header-toolbar-extension .conws-delayedActionsToolbar .tile-nav.binf-nav-pills > li > a {
+  padding: 0;
+}
+
+.binf-widgets .tab-panel .conws-header-toolbar-extension {
+  padding-left: 0px;
+  padding-right: 0px;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: inline-block;
+}
+
+.binf-widgets .cs-collapse .tab-panel .conws-header-toolbar-extension {
+  display: none;
+}
+
+
+
+.binf-widgets .conws-header .conws-header-toolbar {
+  float: right;
+  display: flex;
+  flex: 1 0 auto;
+
+}
+
+.binf-widgets .cs-collapse .tab-panel .conws-header-toolbar-extension,
+.binf-widgets .cs-collapse .conws-header .conws-header-childView-container,
+.binf-widgets .conws-header .conws-header-toolbar .conws-tabletoolbar {
+  display: none;
+}
+
+.binf-widgets .tab-panel .conws-header-toolbar-extension {
+  display: inline-flex;
+  -webkit-animation: fadeIn 0.7s;
+  animation: fadeIn 0.7s;
+}
+
+.binf-widgets .cs-collapse .conws-header .conws-header-toolbar .conws-tabletoolbar {
+  display: block;
+  -webkit-animation: fadeIn 0.7s;
+  animation: fadeIn 0.7s;
+}
+
+.binf-widgets .conws-delayedActionsToolbar .binf-widgets .tile-nav .binf-dropdown-menu {
+  right: 0px;
+  left: auto;
+}
+
+
+.binf-widgets .tab-panel .conws-header-toolbar-extension .conws-delayedActionsToolbar .icon-toolbar-more,
+.binf-widgets .conws-header .conws-header-toolbar .conws-delayedActionsToolbar .icon-toolbar-more {
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  width: 32px;
+  height: 32px
+}
+
+.binf-widgets .tab-panel .conws-header-toolbar-extension .conws-delayedActionsToolbar .icon-toolbar-more,
+.binf-widgets .conws-header .conws-header-toolbar .conws-delayedActionsToolbar .icon-toolbar-more {
+  background: url('../../../image/icons/toolbar_more.svg') no-repeat center;
+}
+
+.binf-widgets .tab-panel .conws-header-toolbar-extension .conws-delayedActionsToolbar .icon-toolbar-more:hover,
+.binf-widgets .tab-panel .conws-header-toolbar-extension .conws-delayedActionsToolbar .icon-toolbar-more:focus,
+.binf-widgets .tab-panel .conws-header-toolbar-extension .conws-delayedActionsToolbar .binf-open > a .icon-toolbar-more,
+.binf-widgets .conws-header .conws-header-toolbar .conws-delayedActionsToolbar .icon-toolbar-more:hover,
+.binf-widgets .conws-header .conws-header-toolbar .conws-delayedActionsToolbar .icon-toolbar-more:focus,
+.binf-widgets .conws-tabletoolbar .conws-delayedActionsToolbar .csui-toolbar.binf-nav > li.binf-open > a .icon-toolbar-more {
+  background: url('../../../image/icons/toolbar_more_mo.svg') no-repeat center;
+}
+
+.binf-widgets .tab-panel .conws-header-toolbar-extension .conws-delayedActionsToolbar .icon-toolbar-more:active,
+.binf-widgets .conws-header .conws-header-toolbar .conws-delayedActionsToolbar .icon-toolbar-more:active {
+  opacity: 0.9;
+}
+
+.binf-widgets .tab-panel .conws-header-toolbar-extension .conws-delayedActionsToolbar li.csui-wrapper > a:hover{
+  background-color: transparent;
+}
+.binf-widgets .tab-panel .conws-header-toolbar-extension .conws-delayedActionsToolbar li.csui-wrapper > a:focus {
+  outline: 1px dotted #ffffff;
+  outline-offset: -1px;
+}
+
+
+.binf-widgets .tab-panel .conws-header-toolbar-extension .conws-delayedActionsToolbar .binf-open > a,
+.binf-widgets .conws-tabletoolbar .conws-delayedActionsToolbar .csui-toolbar.binf-nav > li > a {
+  background-color: transparent !important;
+  box-shadow: none;
+  border: 0;
+}
+
+.binf-widgets .cs-tabbed-perspective.cs-collapse .conws-header-wrapper .conws-tabletoolbar .conws-delayedActionsToolbar .csui-toolbar.binf-nav > li > a {
+  margin: 0 6px;
+}
+.binf-widgets .conws-delayedActionsToolbar li.csui-wrapper ul.csui-more-dropdown-menu li a.csui-toolitem {
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+  padding: 4px 16px;
+}
+
+.binf-widgets .conws-delayedActionsToolbar li.csui-wrapper ul.csui-more-dropdown-menu li a.csui-toolitem:hover {
+  background-color: #b2bec5;
+}
+
